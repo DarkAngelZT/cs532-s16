@@ -193,9 +193,9 @@
 % To have just one problem per page, simply put a \clearpage after each problem
 
 \begin{homeworkProblem}
-Demonstrate that you know how to use "curl" well enough to
+Demonstrate that you know how to use ``curl" well enough to
 correctly POST data to a form.  Show that the HTML response that
-is returned is "correct".  That is, the server should take the
+is returned is ``correct".  That is, the server should take the
 arguments you POSTed and build a response accordingly.  Save the
 HTML response to a file and then view that file in a browser and
 take a screen shot.
@@ -210,9 +210,9 @@ The original form is on the\\ \textsf{https://www.cs.tut.fi/~jkorpela/forms/test
 \end{figure}
 
 Using code(And save it in a bash for convenience):\\
-\textbf{curl -i -d "Comments=This\%20is\\
+\textbf{curl -i -d ``Comments=This\%20is\\
 Zetan's\\
-test\%20line" -d "box=yes" http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi}\\
+test\%20line" -d ``box=yes" http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi}\\
 The option \textbf{-i} requires the header of the response, and the option \textbf{-d} pushes the data in to the form.\\
 And the form will return a table contains all the data I submitted.\\
 Also, the console shows the progress while waiting for response.\\
@@ -237,15 +237,15 @@ Write a Python program that:
   2. extracts all the links from the page
   3. lists all the links that result in PDF files, and prints out
      the bytes for each of the links.  (note: be sure to follow
-     all the redirects until the link terminates with a "200 OK".)
+     all the redirects until the link terminates with a ``200 OK".)
   4. show that the program works on 3 different URIs, one of which
      needs to be: 
      http://www.cs.odu.edu/~mln/teaching/cs532-s16/test/pdfs.html
 \centerline{SOLUTION}
 First, we choose the requests package instead of urllib2. \textbf{requests} can fetch redirect link automatically,
 so we don't have to deal with the 300 response in code.\\
-Then we are going to read the header of the response, get the value of "Content-type" field, if it's "Application/pdf", then it is a pdf file.\\
-The third step is to check whether the link to pdf is available. If so, get the "content-length" field as its size and print the result.
+Then we are going to read the header of the response, get the value of ``Content-type" field, if it's "Application/pdf", then it is a pdf file.\\
+The third step is to check whether the link to pdf is available. If so, get the ``content-length" field as its size and print the result.
 \newpage
 \pythonscript{a1_p2}{python script to list the pdf link}
 Below is the result of testing \textit{a1\_p2.py} on 3 different URIs:\\
@@ -270,7 +270,7 @@ Below is the result of testing \textit{a1\_p2.py} on 3 different URIs:\\
 %----------------------------------------------------------------------------------------
 
 \begin{homeworkProblem}
-Consider the "bow-tie" graph in the Broder et al. paper (fig 9):\\
+Consider the ``bow-tie" graph in the Broder et al. paper (fig 9):\\
     http://www9.org/w9cdrom/160/160.html\\
 \\
     Now consider the following graph:\\
@@ -302,15 +302,14 @@ Consider the "bow-tie" graph in the Broder et al. paper (fig 9):\\
 \end{figure}
     For the above graph, give the values for:\\
 \\
-    IN: \{M,O,P\} The node that can reach the SCC, but can't reach from SCC\\
-    SCC: \{A,B,C,G\} The core of the net, every node can reach each other\\
-    OUT: \{D,H\}The node that can reach from the SCC, but can't link back to SCC\\
-    Tendrils: \{I,J,K,L\}nodes that cannot reach the SCC, and cannot be reached from the SCC\\
-    Tubes: \{N\}  A portion of IN to a portion of OUT without touching SCC\\
-    Disconnected:\{E,F\} All the other nodes that cannot reach the nodes mentioned above\\
+    IN: \{M,O,P\} The node that can reach the SCC, but can't reach from SCC\cite{Broder2000}\\
+    SCC: \{A,B,C,G\} The core of the net, every node can reach each other\cite{Broder2000}\\
+    OUT: \{D,H\}The node that can reach from the SCC, but can't link back to SCC\cite{Broder2000}\\
+    Tendrils: \{I,J,K,L\}nodes that cannot reach the SCC, and cannot be reached from the SCC\cite{Broder2000}\\
+    Tubes: \{N\}  A portion of IN to a portion of OUT without touching SCC\cite{Broder2000}\\
+    Disconnected:\{E,F\} All the other nodes that cannot reach the nodes mentioned above\cite{Broder2000}\\
 \end{homeworkProblem}
-\begin{thebibliography}{9}
-\bibitem{Graph structure in the web}
-Graph structure in the web. (n.d.) Retrieved January 23, 2016, from \url{http://http://www9.org/w9cdrom/160/160.html}
-\end{thebibliography}
+
+\bibliographystyle{plain}
+\bibliography{ref}
 \end{document}

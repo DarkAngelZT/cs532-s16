@@ -1,0 +1,651 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="https://www.openrec.tv/viewapp/images/v4/favicon.ico" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta name="format-detection" content="telephone=no" />
+<meta property="og:site_name" content="OPENREC.tv" />
+<meta property="og:url" content="https://www.openrec.tv/" />
+<meta property="og:title" content="OPENREC.tv (オープンレック)｜ゲーム実況＆プレイ動画" />
+<meta property="og:image" content="https://www.openrec.tv/viewapp/images/v4/ogp_openrectv.png" />
+<meta property="og:description" content="OPENREC.tv（オープンレックティービー）は、ゲーム実況やプレイ動画、ライブ配信が楽しめる、新しい動画コミュニティプラットフォームです。" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="app" />
+<meta name="twitter:site" content="@OPENREC" />
+<meta name="twitter:description" content="OPENREC.tv（オープンレックティービー）は、ゲーム実況やプレイ動画、ライブ配信が楽しめる、新しい動画コミュニティプラットフォームです。" />
+<meta name="twitter:app:country" content="JP" />
+<meta name="twitter:app:name:iphone" content="OPENREC.tv" />
+<meta name="twitter:app:id:iphone" content="912776162" />
+<meta name="twitter:app:url:iphone" content="jp.co.cyber-z.openrec://top?id=" />
+<meta name="twitter:app:name:ipad" content="OPENREC.tv" />
+<meta name="twitter:app:id:ipad" content="912776162" />
+<meta name="twitter:app:url:ipad" content="jp.co.cyber-z.openrec://top?id=" />
+<meta name="twitter:app:name:googleplay" content="OPENREC.tv" />
+<meta name="twitter:app:id:googleplay" content="jp.co.cyber_z.openrecviewapp" />
+<meta name="twitter:app:url:googleplay" content="https://play.google.com/store/apps/details?id=jp.co.cyber_z.openrecviewapp" />
+<meta property="keywords" content="OPENREC,オープンレック,ゲーム攻略" />
+        <title>OPENREC.tv (オープンレック)｜ゲーム実況＆プレイ動画</title>
+                        <meta content="OPENREC.tv（オープンレックティービー）は、ゲーム実況やプレイ動画、ライブ配信が楽しめる、新しい動画コミュニティプラットフォームです。" name="description">
+        
+        
+        <link href="https://www.openrec.tv/viewapp/css/v4/all.css?t=20160215" rel="stylesheet" type="text/css" /><link href="https://www.openrec.tv/viewapp/css/v4/lib/glide.core.css" rel="stylesheet" type="text/css" /><link href="https://www.openrec.tv/viewapp/css/v4/lib/glide.theme.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript">
+        var gbl_scheme = "jp.co.cyber-z.openrec://top?id=";
+var gbl_android_package = "jp.co.cyber_z.openrecviewapp";
+var gbl_uri = "/404_page";
+var gbl_universal = "0";
+        </script>
+        
+        <script src="https://www.openrec.tv/viewapp/js/v4/lib/jquery-2.1.4.min.js"></script>
+        <script src="https://www.openrec.tv/viewapp/js/v4/lib/jquery-ui.min.js"></script>
+        <script src="https://www.openrec.tv/viewapp/js/v4/lib/glide.min.js"></script>
+        <script src="https://www.openrec.tv/viewapp/js/v4/lib/socket.io.js"></script>
+        <script src="https://www.openrec.tv/viewapp/js/v4/lib/jquery.infinitescroll.min.js"></script>
+        <script src="https://www.openrec.tv/viewapp/js/v4/all.js?t=20160215"></script>
+        <script src="https://content.jwplatform.com/libraries/xxrMkVd2.js"></script>
+                
+                <script type="text/javascript">
+            // Google Analytics
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-56427332-4', 'auto');
+                ga('send', 'pageview');
+        </script>
+            </head>
+    <body
+                >
+        <div class="l-header js-header">
+  <input type="hidden" name="header_public_url" id="header_public_url" value="https://www.openrec.tv/" />
+  <input type="hidden" name="header_base_url" id="header_base_url" value="https://www.openrec.tv/viewapp/" />
+  <input type="hidden" name="header_user_name" id="header_user_name" value="" />
+  <div class="l-header__banner">
+    <a href="https://www.openrec.tv/" class="l-header__banner__logo"><img src="https://www.openrec.tv/viewapp/images/v4/logo-pc.png" alt="OPENREC.tv"/></a>
+        <a class="l-header__banner__openAppBt">アプリを開く</a>
+    <a class="l-header__banner__installBt">インストール</a>
+      </div>
+  <div class="l-header__content">
+    <h1><a href="https://www.openrec.tv/"><img src="https://www.openrec.tv/viewapp/images/v4/logo-pc.png" alt="OPENREC.tv"/></a></h1>
+    <p class="l-header__content__box  m-sp m-tb js-headerContent">
+      <i></i><input type="text" placeholder="ゲーム、動画、チャンネルを検索" value="" class="l-header__content__box__input  js-headerSearchInput" autocapitalize="off" autocorrect="off" maxlength="100">
+    </p>
+    <p class="l-header__content__box  m-pc js-headerContentPc">
+      <i></i><input type="text" placeholder="ゲーム、動画、チャンネルを検索" value="" class="l-header__content__box__input  js-headerSearchInputPc" autocapitalize="off" autocorrect="off" maxlength="100">
+    </p>
+    <div class="l-header__content__out js-logout">
+      <p class="l-header__content__menu js-headerMenuBt"></p>
+      <p class="l-header__content__signupPc js-menuSignup">新規登録</p>
+      <p class="l-header__content__loginPc js-menuLoginPc">ログイン</p>
+      <p class="l-header__content__otherPc js-menuOtherPc"></p>
+    </div>
+    <div class="l-header__content__in js-login isHidden">
+      <p class="l-header__content__menu js-headerMenuBt"></p>
+      <p class="l-header__content__playbt js-headerLiveBt isHidden">
+        <a href="https://www.openrec.tv/dashboard/live">配信する</a>
+      </p>
+      <!-- <p class="l-header__content__favorite js-headerFavorite"></p> -->
+      <!--
+      <p class="l-header__content__profile js-headerProfileInfo"></p>
+       -->
+      <div class="l-header__content__pf js-pfHeader">
+				<div class="l-header__content__pf__box">
+					<p class="l-header__content__pf__box__img js-menu__icon"></p>
+					<p class="l-header__content__pf__box__name js-menu__name js-browserSupport"></p>
+					<p class="l-header__content__pf__box__Icon js-pfArrowIcon"></p>
+				</div>
+			</div>
+
+    </div>
+  </div>
+
+  <ul class="l-header__other js-headerOtherPc">
+      <li class="l-header__other__menu">
+        <ul class="l-header__other__menu__list">
+          <li><a href="https://www.openrec.tv/news">NEWS</a></li>
+          <li><a href="https://www.openrec.tv/contact">お問い合わせ</a></li>
+          <li><a href="https://cyber-z.co.jp/privacy" target="_blank">プライバシーポリシー</a></li>
+          <li><a href="https://www.openrec.tv/policy">利用規約</a></li>
+          <li><a href="https://cyber-z.co.jp/" target="_blank">運営会社</a></li>
+        </ul>
+        <div class="l-header__other__menu__copyright">
+          Copyright © CyberZ, inc. All Rights Reserved.
+        </div>
+        <div class="l-header__other__menu__license">
+          <p class="l-header__other__menu__license__img">
+						<img src="https://www.openrec.tv/viewapp/images/v4/jasrac_v4.png" width="32" height="32" alt="Licensed by JASRAC"/>
+          </p>
+          <p class="l-header__other__menu__license__text">
+          	JASRAC許諾  第9016719001Y45125号
+          </p>
+        </div>
+  </ul>
+
+  <ul class="l-header__other js-headerOtherLoggingPc">
+      <li class="l-header__other__setup">
+      <div class="l-header__other__setup__list">
+      	<a href="">
+      		<p class="l-header__other__setup__list__mypage">マイページへ</p>
+      	</a>
+        <a href="https://www.openrec.tv/profile">
+        	<p class="l-header__other__setup__list__accountsetup">プロフィール設定</p>
+        </a>
+        <p class="l-header__other__setup__list__logout js-menu__logout">ログアウト</p>
+      </div>
+    </li>
+    <li class="l-header__other__menu">
+      <ul class="l-header__other__menu__list">
+        <li><a href="https://www.openrec.tv/news">NEWS</a></li>
+        <li><a href="https://www.openrec.tv/contact">お問い合わせ</a></li>
+        <li><a href="https://cyber-z.co.jp/privacy">プライバシーポリシー</a></li>
+        <li><a href="https://www.openrec.tv/policy">利用規約</a></li>
+        <li><a href="https://cyber-z.co.jp" target="_blank">運営会社</a></li>
+      </ul>
+      <div class="l-header__other__menu__copyright">
+        Copyright © CyberZ, inc. All Rights Reserved.
+      </div>
+      <div class="l-header__other__menu__license">
+				<p class="l-header__other__menu__license__img">
+					<img src="https://www.openrec.tv/viewapp/images/v4/jasrac_v4.png" width="32" height="32" alt="Licensed by JASRAC"/>
+				</p>
+				<p class="l-header__other__menu__license__text">
+					JASRAC許諾  第9016719001Y45125号
+				</p>
+			</div>
+  </ul>
+
+  <ul class="l-header__menu isHidden js-headerMenuList">
+    <div class="js-sp__menu__logout">
+      <li class="l-modal__menu__login js-menu__login">
+        <p class="l-modal__menu__login__box">
+          ログイン
+        </p>
+      </li>
+      <li class="l-modal__menu__signup js-menu__signup">
+        <p class="l-modal__menu__signup__box js-menuSignup">
+          新規登録
+        </p>
+      </li>
+      <li class="l-modal__menu__border"></li>
+      <li class="l-modal__menu__other js-menu__other">
+        <p class="l-modal__menu__other__box">
+          その他
+        </p>
+      </li>
+    </div>
+
+
+
+    <div class="js-sp__menu__login isHidden">
+      <li class="l-modal__menu__profile js-menu__profile">
+        <div class="l-modal__menu__profile__box">
+          <a href="">
+            <p class="l-modal__menu__profile__box__img js-menu__icon"></p>
+            <p class="l-modal__menu__profile__box__text">
+              <span class="l-modal__menu__profile__box__text__title">
+                マイページへ
+              </span>
+              <span class="l-modal__menu__profile__box__text__name js-menu__name"></span>
+            </p>
+          </a>
+        </div>
+      </li>
+      <li class="l-modal__menu__profileSetup js-menu__setup">
+        <a href="https://www.openrec.tv/profile" class="l-modal__menu__profileSetup__box">
+          プロフィール設定
+        </a>
+      </li>
+      <!-- <li class="l-modal__menu__favorite js-menu__favorite">
+        <a href="https://www.openrec.tv/favorite" class="l-modal__menu__favorite__box">
+          お気に入りボックス
+        </a>
+      </li> -->
+
+      <li class="l-modal__menu__other js-menu__other js-menu__otherIsLogin">
+        <p class="l-modal__menu__other__box">
+          	その他
+        </p>
+      </li>
+      <li class="l-modal__menu__logout js-menu__logout">
+        <div class="l-modal__menu__logout__box">
+          ログアウト
+        </div>
+      </li>
+    </div>
+    <div class="js-sp__menu__default isHidden js-otherMenuList">
+      <li class="l-modal__menu__titleOther">
+        <p class="l-modal__menu__titleOther__box">
+          その他
+        </p>
+      </li>
+      <li class="l-modal__menu__border"></li>
+      <li class="l-modal__menu__news js-menu__nes">
+        <a href="https://www.openrec.tv/news" class="l-modal__menu__news__box">
+          NEWS
+        </a>
+      </li>
+      <li class="l-modal__menu__contact js-menu__nes">
+        <a href="https://www.openrec.tv/contact" class="l-modal__menu__contact__box">
+          お問い合わせ
+        </a>
+      </li>
+      <li class="l-modal__menu__privacy js-menu__privacy">
+        <a href="https://cyber-z.co.jp/privacy" target="_blank" class="l-modal__menu__privacy__box">
+          プライバシーポリシー
+        </a>
+      </li>
+      <li class="l-modal__menu__rule js-menu__rule">
+        <a href="https://www.openrec.tv/policy" class="l-modal__menu__rule__box">
+          利用規約
+        </a>
+      </li>
+      <li class="l-modal__menu__company js-menu__company">
+        <a href="https://cyber-z.co.jp/" target="_blank" class="l-modal__menu__company__box">
+    			運営会社
+        </a>
+      </li>
+      <li class="l-modal__menu__licenseImg"><img src="https://www.openrec.tv/viewapp/images/v4/jasrac_v4.png" width="32" height="32" alt="Licensed by JASRAC"/></li>
+			<li class="l-modal__menu__licenseText">JASRAC許諾第9016719001Y45125号</li>
+      <li class="l-modal__menu__copyright">
+        Copyright © CyberZ, inc. All Rights Reserved.
+      </li>
+    </div>
+    <li class="l-modal__menu__space js-headerMenuSpace"></li>
+  </ul>
+
+  <div class="l-header__favorite isHidden m-pc js-headerFavoriteList modal">
+    <div class="l-header__favorite__content x-scroll">
+    
+                現在、お気に入り情報はありません。
+        </div>
+  </div>
+
+
+
+  <div class="l-header__search  m-sp m-tb isHidden js-headerSearchList">
+
+        <dl class="l-header__search__content__history js-historyPc">
+        <dt>検索履歴</dt>
+        <div class="js-history__contents">
+        </div>
+    </dl>
+    <div class="l-header__search__space js-headerSearchSpace"></div>
+  </div>
+
+  <div class="l-header__empty isHidden js-headerSearchEmpty">
+    <div class="l-header__empty__img"></div>
+    <div class="l-header__empty__text">
+      検索した情報がないです。
+    </div>
+  </div>
+  <div class="l-header__search m-pc isHidden js-headerSearchListPc">
+    <div class="l-header__search__pcContent">
+          <dl class="l-header__search__pcContent__history js-historySp">
+        <dt>検索履歴</dt>
+        <div class="js-history__contents"></div>
+      </dl>
+      <dl class="l-header__search__pcContent__rgTitle isHidden js-rgTitlePc">
+        <dt>関連ゲームタイトル</dt>
+        <dd>
+          <ul class="js-header__search__game">
+          </ul>
+        </dd>
+      </dl>
+
+
+
+      <dl class="l-header__search__pcContent__rgchannel isHidden js-rgchannelPc">
+        <dt>関連チャンネル</dt>
+        <dd>
+          <ul class="l-header__search__pcContent__rgchannel__list js-header__search__channel">
+          </ul>
+        </dd>
+      </dl>
+
+      <dl class="l-header__search__pcContent__rgkeywold isHidden js-rgkeywoldPc">
+        <dt>関連キーワード</dt>
+        <dd>
+          <ul class="js-header__search__suggest">
+          </ul>
+        </dd>
+      </dl>
+      <dl class="l-header__search__loading js-header__loading isHidden" >
+        <div class="sk-spinner sk-spinner-pulse"></div>
+      </dl>
+    </div>
+  </div>
+
+
+   <div class="c-header__modal isHidden js-withdrawalModal">
+   	<div class="c-header__modal__content">
+			<div class="l-header__withdrawal">
+				<p class="l-header__withdrawal__title">本当に退会しますか？</p>
+				<div class="l-header__withdrawal__box">
+					<p class="l-header__withdrawal__box__content">
+						<span class="l-header__withdrawal__box__content__no js-withdrawalModalCancel">いいえ</span>
+					</p>
+					<p class="l-header__withdrawal__box__content">
+						<span class="l-header__withdrawal__box__content__yes js-withdrawalModel">はい</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+  <div class="c-header__modal isHidden js-registerCompletion">
+    <div class="c-header__modal__content js-headerModelContent">
+       <ul class="c-header__modal__content__provisionalComp">
+        <li class="c-header__modal__content__provisionalComp__title">
+          <span>仮登録完了</span>
+        </li>
+         <li class="c-header__modal__content__provisionalComp__content">
+            登録メールアドレスへ確認メールを送信しました。<br />
+           メールより本登録のお手続きをお願いします。
+         </li>
+         <li class="c-header__modal__content__provisionalComp__alert">
+           ※確認メールが届かない場合は、以下をご確認ください。
+         </li>
+        </ul>
+        <ul class="c-header__modal__content__alert">
+          <li>・ご入力いただいたメールアドレスに誤りがなかったか</li>
+          <li>・「@openrec.jp」ドメインからのメールが迷惑フォルダに分類されていないか</li>
+          <li>・「@openrec.jp」ドメインからのメールがドメイン拒否設定によりブロックされていないか</li>
+        </ul>
+        <div class="c-header__modal__content__button">
+          <input type="submit" value="メールを再送信する" class="btn primary js-modalreMailSendButton"/>
+          <input type="hidden" class="js-modalreMailSendHidden" value="" />
+        </div>
+        <p class="c-header__modal__content__close js-provisionalCompCloseBt"></p>
+
+    </div>
+  </div>
+
+  <div class="c-header__modal y-scroll isHidden js-loginContent modal js-modalScrollContent">
+    <div class="c-header__modal__content isAutoHeight js-headerModelContent">
+      <ul class="c-header__modal__content__login js-modalContent">
+        <li class="c-header__modal__content__login__title">
+          <span>ログイン</span>
+        </li>
+        <li class="c-header__modal__content__login__sns">
+          <div class="c-header__modal__content__login__sns__box">
+            <p class="c-header__modal__content__login__sns__box__facebook js-modalLoginContentSnsFacebook"></p>
+            <p class="c-header__modal__content__login__sns__box__twitter js-modalLoginContentSnsTwitter"></p>
+            <p class="c-header__modal__content__login__sns__box__google js-modalLoginContentSnsGoogle"></p>
+            <p class="c-header__modal__content__login__sns__box__yahoo js-modalLoginContentSnsYahoo"></p>
+          </div>
+        </li>
+        <li class="c-header__modal__content__login__email ">
+          <input type="text" placeholder="メールアドレス" class="c-header__modal__content__login__email__input error js-headerLoginEmail" autocapitalize="off" autocorrect="off" maxlength="200"/>
+        </li>
+        <li class="c-errorMsg js-headerLoginEmailError"></li>
+        <li class="c-header__modal__content__login__password ">
+          <input type="password" placeholder="パスワード" class="c-header__modal__content__login__password__input error js-headerLoginPassword" autocapitalize="off" autocorrect="off" maxlength="100"/>
+        </li>
+        <li class="c-errorMsg js-headerLoginPasswordError"></li>
+        <li class="c-header__modal__content__login__account">
+          <p class="c-header__modal__content__login__account__button js-modalLoginAccountButton">
+            ログイン
+          </p>
+        </li>
+
+        <li class="c-header__modal__content__login__forget">
+          パスワードを忘れた方は<span class="js-passwordForget">こちら</span>
+        </li>
+        <li class="c-header__modal__content__login__createAccount m-pc">
+          アカウントをお持ちですか?&nbsp;<span class="js-menuSignup">アカウントを作成する</span>
+        </li>
+        <li class="c-modal__scrollSpace  js-modalScrollSpace"></li>
+      </ul>
+      <p class="c-header__modal__content__close js-loginCloseBt"></p>
+    </div>
+  </div>
+
+  <div class="c-header__modal isHidden js-passwordResetContent modal">
+    <div class="c-header__modal__content">
+      <ul class="c-header__modal__content__passwordReset">
+        <li class="c-header__modal__content__passwordReset__title">
+          <span>パスワード再設定</span>
+        </li>
+        <li class="c-header__modal__content__passwordReset__msg">
+          安全性の高いパスワードは、<br />
+          英数字と記号の組み合わせたものです。
+        </li>
+        <li class="c-header__modal__content__passwordReset__password error">
+          <input type="password" placeholder="新しいパスワード" class="c-header__modal__content__passwordReset__Password__input error js-passwordInput" autocapitalize="off" autocorrect="off" maxlength="100"/>
+        </li>
+        <li class="c-header__modal__content__passwordReset__password error">
+          <input type="password" placeholder="新しいパスワード再入力" class="c-header__modal__content__passwordReset__Password__input error js-rePasswordInput" autocapitalize="off" autocorrect="off" maxlength="100"/>
+        </li>
+        <li class="c-header__modal__content__passwordReset__input">
+          <p class="c-header__modal__content__passwordReset__input__button js-modalResetButton">
+            パスワード再設定
+          </p>
+        </li>
+      </ul>
+      <p class="c-header__modal__content__close js-passwordResetCloseBt"></p>
+    </div>
+  </div>
+
+
+  <div class="c-header__modal isHidden js-passwordForgetContent modal">
+    <div class="c-header__modal__content js-headerModelContent">
+      <ul class="c-header__modal__content__passwordForget">
+        <li class="c-header__modal__content__passwordForget__title">
+          <span>パスワード再設定</span>
+        </li>
+        <li class="c-header__modal__content__passwordForget__msg">
+          登録したメールアドレスを入力し、<br />送信してください。パスワード再設定URLが<br />記載されたメールを送信します。
+        </li>
+        <li class="c-header__modal__content__passwordForget__password">
+          <input type="text" placeholder="メールアドレス" class="c-header__modal__content__passwordForget__password__input js-modalPasswordResetMailAddressInput" autocapitalize="off" autocorrect="off" maxlength="200"/>
+        </li>
+        <li class="c-errorMsg js-modalPasswordResetMailAddressError"></li>
+        <li class="c-header__modal__content__passwordForget__input">
+          <p class="c-header__modal__content__passwordForget__input__button js-modalPasswordResetButton">
+            再設定する
+          </p>
+        </li>
+      </ul>
+      <p class="c-header__modal__content__close js-passwordForgetCloseBt"></p>
+    </div>
+  </div>
+
+  <div class="c-header__modal isHidden js-passwordForgetContentComplete modal">
+    <div class="c-header__modal__content js-headerModelContent">
+      <ul class="c-header__modal__content__passwordForget">
+        <li class="c-header__modal__content__passwordForget__title">
+          <span>パスワード再設定</span>
+        </li>
+        <li class="c-header__modal__content__passwordForget__msg">
+          入力していただいたメールアドレスに、パスワード再設定用URLを記載されたメールを送信しましたのでご確認ください。
+        </li>
+      </ul>
+      <p class="c-header__modal__content__close js-passwordForgetCloseBt"></p>
+    </div>
+  </div>
+
+  <div class="c-header__modal isHidden js-noFlashContent modal">
+    <div class="c-header__modal__content js-headerModelContent">
+      <ul class="c-header__modal__content__passwordForget">
+        <li class="c-header__modal__content__passwordForget__title">
+          <span>動画再生について</span>
+        </li>
+        <li class="c-header__modal__content__passwordForget__msg">
+          本サイトの動画再生にはFlash Playerが必要となることがあります。
+          再生できない場合は、<a href="https://get.adobe.com/jp/flashplayer/" target="_blank" style="color: #ffc511;">こちら</a>より最新のFlash Playerをイントールしてください。
+        </li>
+      </ul>
+      <p class="c-header__modal__content__close js-noFlashContentCloseBt"></p>
+    </div>
+  </div>
+
+  <div class="c-header__modal y-scroll isHidden js-signupContent modal js-modalScrollContent">
+    <div class="c-header__modal__content js-headerModelContent">
+     <div class="js-signupForm">
+	     <ul class="c-header__modal__content__login js-modalContent">
+	        <li class="c-header__modal__content__login__title">
+	          <span>新規登録</span>
+	        </li>
+	        <li class="c-header__modal__content__login__sns">
+	          <div class="c-header__modal__content__login__sns__box">
+	            <p class="c-header__modal__content__login__sns__box__facebook js-modalLoginContentSnsFacebook"></p>
+	            <p class="c-header__modal__content__login__sns__box__twitter js-modalLoginContentSnsTwitter"></p>
+	            <p class="c-header__modal__content__login__sns__box__google js-modalLoginContentSnsGoogle"></p>
+	            <p class="c-header__modal__content__login__sns__box__yahoo js-modalLoginContentSnsYahoo"></p>
+	          </div>
+	        </li>
+	        <li class="c-header__modal__content__login__subtitle">必須項目</li>
+	        <li class="c-header__modal__content__login__email">
+	          <input type="text" placeholder="メールアドレス" class="c-header__modal__content__login__email__input error js-headerSignupEmail" autocapitalize="off" autocorrect="off" maxlength="200"/>
+	        </li>
+	        <li class="c-errorMsg js-headerSignupEmailError"></li>
+	        <li class="c-header__modal__content__login__username">
+	          <input type="text" placeholder="名前" class="c-header__modal__content__login__username__input error js-headerSignupUsername" autocapitalize="off" autocorrect="off" maxlength="20"/>
+	        </li>
+	        <li class="c-errorMsg js-headerSignupUsernameError"></li>
+	        <li class="c-header__modal__content__login__password">
+	          <input type="password" placeholder="パスワード" class="c-header__modal__content__login__password__input error js-headerSignupPassword" autocapitalize="off" autocorrect="off" maxlength="100"/>
+	        </li>
+	        <li class="c-errorMsg js-headerSignupPasswordError"></li>
+	        <li class="c-header__modal__content__login__password">
+	          <input type="password" placeholder="パスワード再入力" class="c-header__modal__content__login__password__input error js-headerSignupRePassword" autocapitalize="off" autocorrect="off" maxlength="100"/>
+	        </li>
+	        <li class="c-errorMsg js-headerSignupRePasswordError"></li>
+	        <li class="c-header__modal__content__login__account">
+	          <p class="c-header__modal__content__login__account__button js-modalSignupButton">
+	            アカウント作成
+	          </p>
+	        </li>
+	        <li class="c-header__modal__content__login__termsofuse m-pc">
+	          OPENRECの<a href="https://www.openrec.tv/policy" target="_blank">利用規約</a>・<a href="https://cyber-z.co.jp/privacy" target="_blank">プライバシーポリシー</a>に<br />
+	          同意頂いた上で、次にお進みください。
+	        </li>
+	      </ul>
+      </div>
+      <p class="c-header__modal__content__close js-signupCloseBt"></p>
+    </div>
+  </div>
+
+  <div class="user_status isHidden">
+    <p class="user_name isHidden"></p>
+    <p class="user_icon isHidden"></p>
+    <p class="user_agent isHidden"></p>
+  </div>
+</div>
+        <div class="c-alert js-alert">
+  <div class="c-alert__box js-alert__box ">
+    <div class="c-alert__msg js-alert__message">
+    </div>
+    <p class="c-alert__close js-chartAlertClose"></p>
+  </div>
+</div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Language" content="ja">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="format-detection" content="telephone=no" />
+        <title>404 NOT FOUND</title>
+        <style>
+            html {
+              background: #2d2d2d;
+            }
+            body {
+              font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+              font-size: 12px;
+              background-position: center top;
+              background-repeat: no-repeat;
+              background-size: 320px auto;
+            }
+
+            .back-gray--error-system {
+              text-align: center;
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              margin: auto;
+            }
+            .back-gray--error-system span {
+              display: block;
+              margin: 0 auto 14px;
+            }
+            .back-gray--error-system p {
+              color: #b3b3b3;
+              font-size: 15px;
+              font-weight: lighter;
+            }
+            .back-gray--error-system p a {
+              color: #1fa9f8;
+            }
+            .back-gray--error-system {
+              height: 251px;
+            }
+            .back-gray--error-system .icon__error-page--1 {
+              background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABsFBMVEUAAACgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKAAAAAPFYpQAAAAjnRSTlMAJrUPJOTJHOK+Cs0HPvayBkKvA036pU78ngEpYHuGeVAUW/2XBWrVt17soAxp0BVw03jdprTyyoNACXL3DW058TdDLrPX4AiVLYjIgqRh6RGwb/6SZ38WjEt8KkpG3B6hfmixawLvGZCfWK77onFIBNs46vDhw09MZSCE3nPSqV9HvYsfiZOZRZw/DjzB3v/GaQAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAJ8SURBVEjHpZb9WxJBEMe3LBRDwAipywK5I00hkKIylXwpMrN37MXeMyuz9+g9e39/2b+5m5092Ot6YFjnB25nbz/PsnPfmVnG2KrVLUzX1qzlPl26tY1z7m/Xg9dxMH9AC+4ICjoU1qI7kV4f0aI3RAXdpUfHNgp6k2GPN3dv2RpP9DRBJ01BW6ltvWLAzb4OOr0dmX5es4E0mc5wj+3Ikumclx6k03mJ7NxlFXbjcA9dtXthfe8QDPcNjwjaN0qPeS5XdFbvH0PV6ml+HOkhLZhNrACOdOnDhoVKmyStPnCwVCodqrpTyCZpW/lg8WHHm8YPfYSYaAOwOC6dGUdkRw0SfAzWHkdJ5WsStUj0CaGpk/A/TyF3WvyWSVtPOQVBJtj0LD7PUOCzmMyWTO1zMk3HxklbnzfVfIzj2YNUlcy6srloz8yNdBLZaqSkZeyZC7WXxsVE4lI9Wn6jy/hwy6sMUzP1aKGOUACFHb2ivJGay9ejoSAEmHEVFnYr89ecw+Qanx4SMuM9D9h1Aj0/rHg3lDiascb0gjJ2NIehuHmrMa3EAdVzmxmLYrDYBHvHrOZXZAlGd+lbx7AB3xO5mYY7CL9PZR+4m3cRnHkiK68NoYfSbwXvEY19jGwhXJ15UqlUnpLYwEqaTlqwz/QaFsLPtVgJEyvRv7bgd9ORFw0Kgntr0Uh48KWQ+qs+cF6T6Rak+Zvy8lwhSigILssOem86ZHmy7FsvnSHTo+8UDC86/D096B8+Yt/i/Z96rKYat7DPyS9fvy1/T9nl+we5GP3H5GUlqkkv4bendyLVwiGkf+rRqNq2lBbd7tfPF8Z++XjwtyZra/4PxOsvlrJt+FMRd1wAAAAASUVORK5CYII=) no-repeat;
+              width: 54px;
+              height: 50px;
+              background-size: 54px auto;
+              margin: 0 auto 19px;
+            }
+            .back-gray--error-system h2 {
+              background: none;
+              font-size: 19px;
+              font-weight: bold;
+              color: #b3b3b3;
+              width: auto;
+              padding: 0 0 1px;
+              margin: 0;
+            }
+            .back-gray--error-system p {
+              line-height: 22px;
+              margin: 0;
+            }
+            .back-gray--error-system .icon__error-page--2 {
+              background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABsFBMVEUAAACgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKAAAAAPFYpQAAAAjnRSTlMAJrUPJOTJHOK+Cs0HPvayBkKvA036pU78ngEpYHuGeVAUW/2XBWrVt17soAxp0BVw03jdprTyyoNACXL3DW058TdDLrPX4AiVLYjIgqRh6RGwb/6SZ38WjEt8KkpG3B6hfmixawLvGZCfWK77onFIBNs46vDhw09MZSCE3nPSqV9HvYsfiZOZRZw/DjzB3v/GaQAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAJ8SURBVEjHpZb9WxJBEMe3LBRDwAipywK5I00hkKIylXwpMrN37MXeMyuz9+g9e39/2b+5m5092Ot6YFjnB25nbz/PsnPfmVnG2KrVLUzX1qzlPl26tY1z7m/Xg9dxMH9AC+4ICjoU1qI7kV4f0aI3RAXdpUfHNgp6k2GPN3dv2RpP9DRBJ01BW6ltvWLAzb4OOr0dmX5es4E0mc5wj+3Ikumclx6k03mJ7NxlFXbjcA9dtXthfe8QDPcNjwjaN0qPeS5XdFbvH0PV6ml+HOkhLZhNrACOdOnDhoVKmyStPnCwVCodqrpTyCZpW/lg8WHHm8YPfYSYaAOwOC6dGUdkRw0SfAzWHkdJ5WsStUj0CaGpk/A/TyF3WvyWSVtPOQVBJtj0LD7PUOCzmMyWTO1zMk3HxklbnzfVfIzj2YNUlcy6srloz8yNdBLZaqSkZeyZC7WXxsVE4lI9Wn6jy/hwy6sMUzP1aKGOUACFHb2ivJGay9ejoSAEmHEVFnYr89ecw+Qanx4SMuM9D9h1Aj0/rHg3lDiascb0gjJ2NIehuHmrMa3EAdVzmxmLYrDYBHvHrOZXZAlGd+lbx7AB3xO5mYY7CL9PZR+4m3cRnHkiK68NoYfSbwXvEY19jGwhXJ15UqlUnpLYwEqaTlqwz/QaFsLPtVgJEyvRv7bgd9ORFw0Kgntr0Uh48KWQ+qs+cF6T6Rak+Zvy8lwhSigILssOem86ZHmy7FsvnSHTo+8UDC86/D096B8+Yt/i/Z96rKYat7DPyS9fvy1/T9nl+we5GP3H5GUlqkkv4bendyLVwiGkf+rRqNq2lBbd7tfPF8Z++XjwtyZra/4PxOsvlrJt+FMRd1wAAAAASUVORK5CYII=) no-repeat;
+              width: 35px;
+              height: 36px;
+              background-size: 35px auto;
+              margin: 0 auto 1px;
+            }
+            .back-gray--error-system .back-gray__reload-link {
+              margin: 39px 0 0;
+              padding: 0 20px;
+              display: inline-block;
+              text-decoration: none;
+            }
+            .back-gray--error-system .back-gray__reload-link h3 {
+              color: #597ef8;
+              font-size: 12px;
+              font-weight: bold;
+              padding: 0 0 2px;
+              margin: 0;
+            }
+            .back-gray--error-system .back-gray__reload-link p {
+              font-size: 11px;
+              color: #597ef8;
+              margin: -4px 0 0 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="clearfix back-gray">
+                    <div class="back-gray--error-system">
+            <span class="icon__error-page--1"></span>
+            <h2 style="margin: 0 0 5px;">404 NOT FOUND</h2>
+            <p>お探しのページは見つかりません。</p>
+          </div>
+        
+      </div>
+    </body>
+</html>
+            </body>
+</html>

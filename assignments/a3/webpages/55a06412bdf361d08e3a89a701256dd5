@@ -1,0 +1,842 @@
+<!doctype html>
+
+<!--[if lt IE 7]><html lang="en-US"
+ xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://ogp.me/ns/fb#" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html lang="en-US"
+ xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://ogp.me/ns/fb#" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html lang="en-US"
+ xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://ogp.me/ns/fb#" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US"
+ xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://ogp.me/ns/fb#" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" class="no-js"><!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+
+				<meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQcHVFFTCBAIXVJVAAQF"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:24,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:11,2:10,3:8,4:12,5:3,6:25,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){if(window.addEventListener){var e=t("handle"),n=t("ee");t(1),window.addEventListener("click",function(){e("inc",["ck"])},!1),window.addEventListener("hashchange",function(){e("inc",["hc"])},!1),n.on("pushState-start",function(){e("inc",["ps"])})}},{1:9,ee:"QJf3ax",handle:"D5DuLP"}],6:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],7:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3);var a=Event;n.on("fn-start",function(t){var e=t[0];e instanceof a&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof a&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:11,2:10,3:9,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t,e){function n(){return s}if(t[1]){var r=t[1];if("function"==typeof r){var s=a(r,"nr@wrapped",function(){return i(r,"fn-",n,r.name||"anonymous")});this.wrapped=t[1]=s,o.emit("initEventContext",[t,e],this.wrapped)}else"function"==typeof r.handleEvent&&i.inPlace(r,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:26,ee:"QJf3ax",gos:"7eSDFh"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState","replaceState"],"-")},{1:26,ee:"QJf3ax"}],10:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:26,ee:"QJf3ax"}],11:[function(t,e){function n(t,e,n){t[0]=i(t[0],"fn-",null,n)}function r(t,e,n){function r(){return a}this.ctx={};var a={"nr@context":this.ctx};o.emit("initTimerContext",[t,n],a),t[0]=i(t[0],"fn-",r,n)}var o=t("ee").create(),i=t(1)(o);e.exports=o,i.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),i.inPlace(window,["setInterval"],"setInterval-"),i.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),o.on("setInterval-start",n),o.on("setTimer-start",r)},{1:26,ee:"QJf3ax"}],12:[function(t,e){function n(){f.inPlace(this,p,"fn-",o)}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),e.hasOwnProperty("addEventListener")&&u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:8,2:26,ee:"QJf3ax"}],13:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1),u=window.XMLHttpRequest;t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof u&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof u&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof u&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:14,3:12,4:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],14:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],15:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:24,2:25,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-768.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:24,2:15,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],24:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],25:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],26:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@original",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=t,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:25,ee:"QJf3ax"}]},{},["G9z0Bl",4,13,7,6,5]);</script>
+
+
+		<title>Can You Create / Publish An Independent Comic And Remain Sane? - Bleeding Cool Comic Book, Movie, TV News</title>
+
+				<meta name="viewport" content="width=device-width"/>
+
+				<link rel="apple-touch-icon" href="http://cdn.bleedingcool.net/wp-content/themes/bleeding-cool-theme-hub-new/library/images/apple-icon-touch.png">
+		<link rel="icon" href="http://cdn.bleedingcool.net/wp-content/themes/bleeding-cool-theme-hub-new/favicon.png">
+		<!--[if IE]>
+			<link rel="shortcut icon" href="http://cdn.bleedingcool.net/wp-content/themes/bleeding-cool-theme-hub-new/favicon.ico">
+		<![endif]-->
+				<meta name="msapplication-TileColor" content="#f01d4f">
+		<meta name="msapplication-TileImage" content="http://cdn.bleedingcool.net/wp-content/themes/bleeding-cool-theme-hub-new/library/images/win8-tile-icon.png">
+		<link rel="shortcut icon" href="http://cdn.bleedingcool.net/favicon.ico">
+
+		<!-- Tyche Tag -->
+		<script type="text/javascript" src="http://cdn.intergi.com/utils/tyche.js"></script>
+
+				
+<!-- This site is optimized with the Yoast SEO Premium plugin v2.3.5 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="news_keywords" content="comics, diskordia, entertainment, kickstarter, riveniis, film" />
+<link rel="original-source" href="http://www.bleedingcool.com/2016/02/07/can-you-create-publish-an-independent-comic-and-remain-sane/" />
+<meta name="description" content="By Rivenis How to create and publish a comic independently without losing your sanity: Let me start out by saying that I’m lying to you. If you want to hav"/>
+<link rel="canonical" href="http://www.bleedingcool.com/2016/02/07/can-you-create-publish-an-independent-comic-and-remain-sane/" />
+<link rel="publisher" href="https://plus.google.com/+bleedingcool/"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Can You Create / Publish An Independent Comic And Remain Sane? - Bleeding Cool Comic Book, Movie, TV News" />
+<meta property="og:description" content="By Rivenis How to create and publish a comic independently without losing your sanity: Let me start out by saying that I’m lying to you. If you want to hav" />
+<meta property="og:url" content="http://www.bleedingcool.com/2016/02/07/can-you-create-publish-an-independent-comic-and-remain-sane/" />
+<meta property="og:site_name" content="Bleeding Cool Comic Book, Movie, TV News" />
+<meta property="article:publisher" content="https://www.facebook.com/bleedingcoolnews" />
+<meta property="article:author" content="Mark Seifert" />
+<meta property="article:tag" content="Comics" />
+<meta property="article:tag" content="Diskordia" />
+<meta property="article:tag" content="entertainment" />
+<meta property="article:tag" content="kickstarter" />
+<meta property="article:tag" content="Riveniis" />
+<meta property="article:section" content="Comics" />
+<meta property="article:published_time" content="2016-02-07T17:00:37+00:00" />
+<meta property="article:modified_time" content="2016-02-08T10:20:40+00:00" />
+<meta property="og:updated_time" content="2016-02-08T10:20:40+00:00" />
+<meta property="fb:admins" content="100000448608664" />
+<meta property="og:image" content="http://cdn.bleedingcool.net/wp-content/uploads/2016/02/DiskordiaBookcover.jpg" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:description" content="By Rivenis How to create and publish a comic independently without losing your sanity: Let me start out by saying that I’m lying to you. If you want to hav"/>
+<meta name="twitter:title" content="Can You Create / Publish An Independent Comic And Remain Sane? - Bleeding Cool Comic Book, Movie, TV News"/>
+<meta name="twitter:site" content="@bleedingcool"/>
+<meta name="twitter:domain" content="Bleeding Cool Comic Book, Movie, TV News"/>
+<meta name="twitter:image" content="http://cdn.bleedingcool.net/wp-content/uploads/2016/02/DiskordiaBookcover.jpg"/>
+<meta name="twitter:creator" content="@bleedingcool"/>
+<!-- / Yoast SEO Premium plugin. -->
+
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.bleedingcool.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='ajax-load-more-css'  href='http://cdn.bleedingcool.net/wp-content/plugins/ajax-load-more/core/css/ajax-load-more.css' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='http://cdn.bleedingcool.net/wp-includes/css/dashicons.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='googleFonts2-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A700%2C800' type='text/css' media='all' />
+<link rel='stylesheet' id='googleFonts3-css'  href='http://fonts.googleapis.com/css?family=Archivo+Black%3A400' type='text/css' media='all' />
+<link rel='stylesheet' id='prefix-font-awesome-css'  href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wptoolset-field-datepicker-css'  href='http://cdn.bleedingcool.net/wp-content/plugins/wp-views/embedded/toolset/toolset-common/toolset-forms/css/wpt-jquery-ui/jquery-ui-1.11.4.custom.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mediaelement-css'  href='http://cdn.bleedingcool.net/wp-includes/js/mediaelement/mediaelementplayer.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='http://cdn.bleedingcool.net/wp-includes/js/mediaelement/wp-mediaelement.css' type='text/css' media='all' />
+<link rel='stylesheet' id='views-pagination-style-css'  href='http://cdn.bleedingcool.net/wp-content/plugins/wp-views/embedded/res/css/wpv-pagination.css' type='text/css' media='all' />
+<link rel='stylesheet' id='muut-forum-css-css'  href='//cdn.muut.com/latest/moot.css' type='text/css' media='all' />
+<link rel='stylesheet' id='muut-frontend-style-css'  href='http://cdn.bleedingcool.net/wp-content/plugins/muut/resources/frontend-style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bones-stylesheet-css'  href='http://cdn.bleedingcool.net/wp-content/themes/bleeding-cool-theme-hub-new/library/css/style-2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bc-grid-system-css'  href='http://cdn.bleedingcool.net/wp-content/themes/bleeding-cool-theme-hub-new/library/css/bc-grid-system.css' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='bones-ie-only-css'  href='http://cdn.bleedingcool.net/wp-content/themes/bleeding-cool-theme-hub-new/library/css/ie.css' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='mega-menu-styles-css'  href='http://cdn.bleedingcool.net/wp-content/themes/bleeding-cool-theme-hub-new/library/css/mega-menu-style.css' type='text/css' media='all' />
+<!-- This site uses the Google Analytics by Yoast plugin v5.4.6 - Universal enabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+	__gaTracker('create', 'UA-2500043-10', 'auto');
+	__gaTracker('set', 'forceSSL', true);
+	__gaTracker('require', 'displayfeatures');
+	__gaTracker('require', 'linkid', 'linkid.js');
+	__gaTracker('set', 'dimension1', 'Dan Wickline');
+	__gaTracker('set', 'dimension2', 'comics');
+	__gaTracker('set', 'dimension3', 'Comics,Diskordia,entertainment,kickstarter,Riveniis');
+	__gaTracker('set', 'dimension4', '2016-02-07T17:00:37+00:00');
+	__gaTracker('send','pageview');
+
+</script>
+<!-- / Google Analytics by Yoast -->
+<script type="text/javascript"></script><script type='text/javascript' src='http://cdn.bleedingcool.net/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='http://cdn.bleedingcool.net/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='http://cdn.bleedingcool.net/wp-includes/js/hoverIntent.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var megamenu = {"effect":{"fade":{"in":{"animate":{"opacity":"show"},"css":{"display":"none"}},"out":{"animate":{"opacity":"hide"}},"speed":"fast"},"slide":{"in":{"animate":{"height":"show"},"css":{"display":"none"}},"out":{"animate":{"height":"hide"}},"speed":"fast"}},"timeout":"300","interval":"100"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://cdn.bleedingcool.net/wp-content/plugins/megamenu/js/maxmegamenu.js'></script>
+<script type='text/javascript' src='http://cdn.bleedingcool.net/wp-content/themes/bleeding-cool-theme-hub-new/library/js/libs/modernizr.custom.min.js'></script>
+<script type="text/javascript" src="http://cdn.bleedingcool.net/wp-content/plugins/audio-player/assets/audio-player.js?ver=2.0.4.6"></script>
+<script type="text/javascript">AudioPlayer.setup("http://www.bleedingcool.com/wp-content/plugins/audio-player/assets/player.swf?ver=2.0.4.6", {width:"290",animation:"yes",encode:"yes",initialvolume:"60",remaining:"no",noinfo:"no",buffer:"5",checkpolicy:"no",rtl:"no",bg:"E5E5E5",text:"333333",leftbg:"CCCCCC",lefticon:"333333",volslider:"666666",voltrack:"FFFFFF",rightbg:"B4B4B4",rightbghover:"999999",righticon:"333333",righticonhover:"FFFFFF",track:"FFFFFF",loader:"009900",border:"CCCCCC",tracker:"DDDDDD",skip:"666666",pagebg:"FFFFFF",transparentpagebg:"yes"});</script>
+<meta name="fragment" content="!"><!-- Vipers Video Quicktags v6.5.2 | http://www.viper007bond.com/wordpress-plugins/vipers-video-quicktags/ -->
+<style type="text/css">
+.vvqbox { display: block; max-width: 100%; visibility: visible !important; margin: 10px auto; } .vvqbox img { max-width: 100%; height: 100%; } .vvqbox object { max-width: 100%; } 
+</style>
+<script type="text/javascript">
+// <![CDATA[
+	var vvqflashvars = {};
+	var vvqparams = { wmode: "opaque", allowfullscreen: "true", allowscriptaccess: "always" };
+	var vvqattributes = {};
+	var vvqexpressinstall = "http://www.bleedingcool.com/wp-content/plugins/vipers-video-quicktags/resources/expressinstall.swf";
+// ]]>
+</script>
+		
+				
+
+
+
+<!-- Place this tag in your head or just before your close body tag -->
+<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+<meta name="google-site-verification" content="xC4QJeYDnVm58lbkOY8Dc1DRQOLe0l7UTTDF5kl90fA" /></head>
+
+<body class="single single-post postid-503667 single-format-standard muut-enabled has-muut has-moot" itemscope itemtype="http://schema.org/WebPage">
+
+	<!-- New-BC-Skin-FP -->
+
+<!-- New-BC-Skin-ROS [async] -->
+<script type="text/javascript">if (!window.AdButler){(function(){var s = document.createElement("script"); s.async = true; s.type = "text/javascript";s.src = 'http://ab166388.adbutler-exciton.com/app.js';var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n);}());}</script>
+<script type="text/javascript">
+var AdButler = AdButler || {}; AdButler.ads = AdButler.ads || [];
+var abkw = window.abkw || '';
+var plc179383 = window.plc179383 || 0;
+document.write('<div id="placement_179383_'+plc179383+'"></div>');
+AdButler.ads.push({handler: function(opt){ AdButler.register(166388, 179383, [1,1], 'placement_179383_'+opt.place, opt); }, opt: { place: plc179383++, keywords: abkw, domain: 'ab166388.adbutler-exciton.com' }});
+</script>
+
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5480b423513bb355" async="async"></script>
+
+  
+  <script type='text/javascript'>
+  //<![CDATA[
+    (function(){
+    window.gravityInsightsParams = {
+      'type': 'content',
+      'action': '',
+      'site_guid': '57020bff1e029c1a9e960be81d4858f9'
+    };
+    var adServerReq,bUrl,doUseGravityUserGuid,includeJs,jq,type,ug,wlPrefix,wlUrl,_ref,_ref1,_ref2;bUrl="https:"===document.location.protocol?"https://b-ssl.grvcdn.com/moth-min.js":"http://b.grvcdn.com/moth-min.js";ug=(doUseGravityUserGuid=!0===gravityInsightsParams.useGravityUserGuid?1:0)?"":gravityInsightsParams.user_guid||(null!=(_ref=/grvinsights=([^;]+)/.exec(document.cookie))?_ref[1]:void 0)||"";wlUrl=(wlPrefix="","");
+    includeJs=function(a){var b;b=document.createElement("script");b.async=!0;b.src=a;a=document.getElementsByTagName("script")[0];return a.parentNode.insertBefore(b,a)};bUrl&&includeJs(bUrl);wlUrl&&(window.gravityInsightsParams.sidebar&&(window.gravityInsightsParams.wlStartTime=(new Date).getTime()),includeJs(wlUrl));})();
+  //]]>
+</script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="container">
+
+<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+	<div id="inner-header" class="cf bc-top-menu">
+
+		  				<nav role="navigation" class="tabs__wrap">
+					<ul class="menu-bar  primary-nav">
+    					<li class="menu-item item-1">
+       						<div class="bc-logo">
+								<a href="/" class="tabs__link"><img src="http://cdn.bleedingcool.net/wp-content/themes/bleeding-cool-theme/library/images/bleeding-cool-logo.png" ></a>
+							</div>
+    					</li>
+    					<li class="menu-item item-2">
+        					<a href="/category/comics/" class="tabs__link expander-comics"><i class="fa fa-star"></i><p>comics</p></a>
+    					</li>
+    					<li class="menu-item item-3">
+        					<a href="/category/film/" class="tabs__link expander-film"><i class="fa fa-film"></i><p>film</p></a>
+    					</li>
+    					<li class="menu-item item-3x">
+        					<a href="/category/tv-2/" class="tabs__link expander-tv"><i class="fa fa-desktop"></i><p>tv</p></a>
+    					</li>
+                        <li class="menu-item item-4">
+                            <a href="/category/games-2/" class="tabs__link expander-games"><i class="fa fa-gamepad"></i><p>games</p></a>
+                        </li>
+    					<li class="menu-item item-5">
+       							<div class="cgc-ad">
+									<a href="http://www.cgccomics.com" class="tabs__link"><img src="/bc-cgc-ad.gif" ></a>
+								</div>
+    					</li>
+					</ul>
+				</nav>
+
+
+<div class ="dropdown-menu-box-comics responsive-menu">
+<ul id="menu-comics-menu" class="comic-tag-list">
+<li class="menu-tag call-out-color"><a href="http://www.bleedingcool.com/category/comics/">Comics</a></li>		
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/marvel/">Marvel</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/dc-comics/">DC</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/image/">Image</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/dark-horse/">Dark Horse</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/idw/">IDW</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/valiant/">Valiant</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/dynamite/">Dynamite</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/boom/">Boom</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/avatar-press/">Avatar</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/digital-comics/">Digital</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/cosplay/">Cosplay</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/cosplay/">Cosplay</a></li>
+</ul>
+
+</div>
+
+<div class ="dropdown-menu-box-film responsive-menu">
+<ul id="menu-comics-menu" class="comic-tag-list">
+<li class="menu-tag call-out-color"><a href="http://www.bleedingcool.com/category/film/">TV/Film</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/star-wars/">Star Wars</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/shield/">SHIELD</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/guardians-of-the-galaxy/">GotG</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/avengers/">Avengers</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/doctor-strange/">Doctor Strange</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/ant-man/">Ant Man</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/arrow/">Arrow</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/constantine/">Constantine</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/Flash/">Flash</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/Gotham/">Gotham</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/doctor-who/">Doctor Who</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/mad-max/">Mad Max</a></li>
+</ul>
+</div>
+		<div id="top-ad-container" style="min-height:85px; background-color:transparent;">
+<div class="top-banner-ad-container wrap" style="min-height:85px; background-color:transparent;">
+					<!-- New-BC-Leaderboard-FP-Above -->
+
+<!-- New-BC-ROS-Leaderboard -->
+<div style='width:720px; min-height:90px; margin:0 auto;'>
+<!-- New-BC-Leaderboard-ROS-Above [async] -->
+<script type="text/javascript">if (!window.AdButler){(function(){var s = document.createElement("script"); s.async = true; s.type = "text/javascript";s.src = 'http://ab166388.adbutler-exciton.com/app.js';var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n);}());}</script>
+<script type="text/javascript">
+var AdButler = AdButler || {}; AdButler.ads = AdButler.ads || [];
+var abkw = window.abkw || '';
+var plc179392 = window.plc179392 || 0;
+document.write('<div id="placement_179392_'+plc179392+'"></div>');
+AdButler.ads.push({handler: function(opt){ AdButler.register(166388, 179392, [728,90], 'placement_179392_'+opt.place, opt); }, opt: { place: plc179392++, keywords: abkw, domain: 'ab166388.adbutler-exciton.com' }});
+</script>
+</div>
+
+
+<!-- <div style='width:970px; min-height:60px; margin:0 auto;'>
+<a href="http://www.bleedingcool.com/category/top-100"><img width="100%" src="http://cdn.bleedingcool.net/top-100-header-arrow.png" ></a>
+</div> -->
+
+</div>
+</div>
+		<div id="secondary-header-menu" class="secondary-menu wrap">
+	<a class="second-menu-links" href="http://www.bleedingcool.com/contact/"><i class="fa fa-comment-o"></i> Submit tip</a> <a class="second-menu-links" href="http://www.bleedingcool.com/contact/"><i class="fa fa-envelope"></i> Contact</a>
+	<div class="bc-search-form"><form role="search" method="get" class="search-form" action="http://www.bleedingcool.com/">
+	<label>
+		<input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:" />
+	</label>
+	<div class="search-submit-override">
+	<input type="submit" class="search-submit" value="&#xf002;" />
+	</div>
+</form></div>
+</div>			
+	</div>
+</header>
+	
+
+
+
+			<div id="content">
+
+				<div id="inner-content" class="wrap cf">
+
+
+					<main id="main" class="t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+
+						<div id="main-content" class="content-holder">
+
+						
+							
+              
+              <article id="post-503667" class="cf post-503667 post type-post status-publish format-standard has-post-thumbnail hentry category-comics tag-comics tag-diskordia tag-entertainment tag-kickstarter tag-riveniis" role="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
+
+                <header class="article-header entry-header">
+
+                  <h1 class="entry-title single-title" itemprop="headline" rel="bookmark">Can You Create / Publish An Independent Comic And Remain Sane?</h1>
+
+                  <p class="byline entry-meta vcard">
+
+                    Posted <time class="updated entry-time" datetime="2016-02-07" itemprop="datePublished">February 7, 2016</time> by <span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person"><a href="http://www.bleedingcool.com" title="Visit Dan Wickline&#8217;s website" rel="author external">Dan Wickline</a></span>
+                  </p>
+
+                  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div style="width:100%; background-color:black; padding:5px; margin-bottom:8px;">
+<a style="font-family: 'Archivo Black', sans-serif; color:white; font-size:18px; text-decoration:none; padding-right:10px;" href="#comment-anchor"><i class="fa fa-comment"></i> 11 Comments</a>
+<a style="font-family: 'Archivo Black', sans-serif; color:white; font-size:18px; text-decoration:none; padding-right:10px;" href="http://www.bleedingcool.com/bleeding-cool-forum/"><i class="fa fa-comments"></i> Forum</a>
+<a style="font-family: 'Archivo Black', sans-serif; color:#383838; font-size:18px; text-decoration:none; padding-right:10px;" href="http://www.bleedingcool.com/forums/forum/comics-the-front-page/front-page-comic-news"></i>Old Forum</a>
+</div>
+
+<div class="addthis_sharing_toolbox"></div>   
+
+
+
+
+                </header> 
+                <section class="entry-content cf" itemprop="articleBody">
+                  <p><em>By Rivenis</em><br />
+<a href="http://www.bleedingcool.com/2016/02/07/can-you-create-publish-an-independent-comic-and-remain-sane/pic1-3/" rel="attachment wp-att-503668"><img class="aligncenter size-large wp-image-503668" src="http://cdn.bleedingcool.net/wp-content/uploads/2016/02/pic1-600x337.jpg" alt="pic1" width="600" height="337" /></a>How to create and publish a comic independently without losing your sanity:</p>
+<p>Let me start out by saying that I’m lying to you. If you want to have any chance at succeeding with your comic you have to be a little crazy to begin with. You have to believe that somehow you’re that specially talented little snowflake who will succeed against overwhelming odds to make your dreams come true while simultaneously having a maniacal amount of drive and self-motivation to keep at it while all the evidence in the world points to the exact contrary conclusion. It’s a tough business. However the goal of this article is not to send you running in abject terror for the hills even if that would be the smart thing to do. No, I’d like to try and prepare and daresay encourage those of you with the creative itch to dip an extremity or two into this black pool of despair….wait I did it again. Never mind, let’s get on with it.<br />
+<a href="http://www.bleedingcool.com/2016/02/07/can-you-create-publish-an-independent-comic-and-remain-sane/pic2-3/" rel="attachment wp-att-503669"><img class="aligncenter size-large wp-image-503669" src="http://cdn.bleedingcool.net/wp-content/uploads/2016/02/pic2-600x262.jpg" alt="pic2" width="600" height="262" /></a><br />
+First a little info about the fellow who seems to think he can tell you something you don’t already know. My name is Rivenis and my experience comes from working on my own independent comic series Diskordia which is currently running on kickstarter to print the first book. I first started publishing it in 2010 and now have 14 issues completed and published online. I know that working in a team carries its own unique challenges and rewards but for the purposes of this article we’re focusing on the one man operation, the so-called cartoonist who does everything by him/herself from conceptualizing the story to lettering the pages and marketing. Believe me this is A LOT of work for one mad genius (Or wannabe). I’ll be lining up some of the inevitable pitfalls and some advice on how to navigate them.<br />
+<a href="http://www.bleedingcool.com/2016/02/07/can-you-create-publish-an-independent-comic-and-remain-sane/pic3-2/" rel="attachment wp-att-503670"><img class="aligncenter size-large wp-image-503670" src="http://cdn.bleedingcool.net/wp-content/uploads/2016/02/pic3-600x243.jpg" alt="pic3" width="600" height="243" /></a></p>
+<p><strong>1) You will be ignored.</strong><br />
+Don’t expect to come onto the scene with your amazingly unique voice and sick drawing skills and to make a giant instantaneous splash. Just don’t. Behind every ‘new’ creator that you’ve discovered that seemed to make it big overnight is a much longer story of grinding and building up a following over time. There may indeed be the odd unicorn creator whose comic instantly became famous overnight. I’ve just never met or heard of them. I’ve witnessed creators whose disappointment was so intense from the lack of positive feedback that it killed their motivation entirely. You can get ahead of the curve by avoiding this all together. When you start out no one will care about you and no one will read your comic, but you will make it anyway for the singular reason that it is what you are meant to do on this earth. Everything else is secondary.</p>
+<p><strong>2) You will have to make sacrifices.</strong><br />
+No getting around this. You will have to find the time to hone your skills and produce your comic. And to do it with anything approaching the level of consistency required to have even a slither of a chance of succeeding you will have to make it a priority. Personally speaking my sacrifice is mainly monetary. To say I’ve been living on a tight budget for the last five years would be euphemistic at best. There’s also the matter of a social life. If you are holding down a full time job while working on the comic in your spare time prepare to kiss that goodbye. It’s not as hopeless as it seems though. With extremely good time management and planning you can juggle pretty much anything. You just have to decide on your own hierarchy of priorities and stick to it.</p>
+<p><strong><a href="http://www.bleedingcool.com/2016/02/07/can-you-create-publish-an-independent-comic-and-remain-sane/15-72/" rel="attachment wp-att-503671"><img class="aligncenter size-large wp-image-503671" src="http://cdn.bleedingcool.net/wp-content/uploads/2016/02/151-600x464.jpg" alt="15" width="600" height="464" /></a>3) You will burn out</strong><br />
+An average issue of a full color comic takes hundreds of hours to produce. If you’re doing it all yourself while marketing it on social media like the demon you’ll have to be to make progress then eventually your mind will implode as if a black hole spontaneously appeared inside of it. Burnout is horrible; it’s what happens when you spend all of your creative mana so to speak and are turned into this pathetic thing that can’t even think of a new idea without feeling mental agony. I get depressed all the time and shrug it off but burnout makes me want to have never been born. If you haven’t experienced it for yourself then it would be hard for you to understand and also you would be extremely lucky. When I first started working on Diskordia I would rely on manic bursts of inspiration to work tirelessly on the books only to stop briefly to sleep and sometimes eat. Needless to say I crashed hard after every release. Do not make my mistake. The key to avoiding burnout is to pace yourself. Work less hours but work them consistently. Take regular breaks and even a day off here and there. Listen to your body and mind and be vigilant for the tell-tale signs of mental fatigue. Don’t rely on mania to get you to the finish line; it’s like holding down the Nos button on your creativity. Working smart will also increase your productivity. The first 2 issues of Diskordia were released between 2010 and 2011. That’s one year per issue while I was working stupid. The next 12 issues of the series were released between 2012 and 2015 with my new smarter schedule. Notice the difference? Heck it’s a rare day for me to work more than 6 hours. Your creative resource is infinitely renewable but if you work smart you can avoid ever having an empty tank.</p>
+<p><strong>4) You will get depressed</strong><br />
+Not as creatively devastating as the last example but unlike burnout depression is pretty much unavoidable. In fact some would say it’s integral to the ebb and flow of creative work. Your goal will be to stay as productive as possible while being assaulted by the feelings of worthlessness and inadequacy that will constantly assault you while you dedicate so much of yourself to this thing that you’re not entirely sure isn’t utter garbage. My advice: Talk to people, preferably people who understand your struggle. Find a support system, with the internet now there’s nothing stopping you from finding others on the same journey as yourself. I can personally attest to the awesomeness of the indie comic community. There are people who are just itching to help you succeed simply because you are brave enough to step into the industry. So don’t be a dick. Really I think that bares repeating. There’s no faster way to kill your career than to make enemies in this tight knit community. Be good to people and they will be good to you.</p>
+<p><strong><a href="http://www.bleedingcool.com/2016/02/07/can-you-create-publish-an-independent-comic-and-remain-sane/rockstars-of-the-dreamtime-ii/" rel="attachment wp-att-503674"><img class="aligncenter size-large wp-image-503674" src="http://cdn.bleedingcool.net/wp-content/uploads/2016/02/Rockstars-of-the-Dreamtime-II-600x311.jpg" alt="Rockstars-of-the-Dreamtime-II" width="600" height="311" /></a>5) Your body will fail you</strong><br />
+Crouching for endless hours on end in front of a monitor using your hands in a repeat motion; this is the story for most artists. The younger ones among us won’t even consider the long term deficits of this gruelling way of doing things. And they are numerous. Back and wrist injuries are most common. Some can be serious enough to halt productivity for weeks or months. The solution is easy. Take plenty of breaks and never work for more than an hour without getting up and taking a short lap or two around the room. Commit to regular daily wrist stretching exercises. Don’t know what these are? Just google them. There are tons of resources on this topic available. In fact exercise your whole body and eat well. This benefits everyone. The fitter and healthier you are the more productive you’ll be.</p>
+<p><strong>6) You will suck at selling your comic</strong><br />
+Selling your work effectively is a skill that will take you years just to become competent at. Most creatives are also introverts who would rather spend all their time making the art in their secluded little caves. If you’re a cartoonist who wants to share their work you simply don’t have the luxury of ignoring this discipline. NO ONE will be better at selling your own work than you. No one will be able to draw on the passion well as effectively as the one whose passion brought the work into being. There are plenty of resources online with invaluable tips on selling your work to people. Practice your pitch on your friends. Practice in front of a mirror. Leap at any chance to speak publicly no matter how terrifying it is. You will get better. You’re still gonna suck though but that’s okay. Personally speaking I’m terrible at this. I couldn’t summarise my own work off the top of my head if you were pointing a bazooka at it. Hopefully though through all the rambling, bumbling and stammering your passion will still shine through and that is what resonates with people. You have something that the big guys at Marvel and DC will never have: a vested interest beyond the bottom line.</p>
+<p>I hope these tips or whatever the hell they ended up being were helpful for those of you interested in this field. And if you’d like you can take a look at my own contribution to the void Diskordia. It’s a surreal fantasy webcomic series that as I mentioned before is currently on kickstarter. Good luck with your own works.</p>
+<p>Diskordia link: <a href="http://diskordiacomic.com/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://diskordiacomic.com/', 'http://diskordiacomic.com/');" target="_blank">http://diskordiacomic.com/</a><br />
+Kickstarter link: <a href="https://www.kickstarter.com/projects/801407046/diskordia-book-1" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://www.kickstarter.com/projects/801407046/diskordia-book-1', 'https://www.kickstarter.com/projects/801407046/diskordia-book-1');" target="_blank">https://www.kickstarter.com/projects/801407046/diskordia-book-1</a></p>
+<a href="http://www.bleedingcool.com/2016/02/07/can-you-create-publish-an-independent-comic-and-remain-sane/diskordiabookcover/" rel="attachment wp-att-503672"><img class="aligncenter size-large wp-image-503672" src="http://cdn.bleedingcool.net/wp-content/uploads/2016/02/DiskordiaBookcover-600x917.jpg" alt="DiskordiaBookcover" width="600" height="917" /></a> <a href="http://www.bleedingcool.com/2016/02/07/can-you-create-publish-an-independent-comic-and-remain-sane/diskordia-days/" rel="attachment wp-att-503673"><img class="aligncenter size-large wp-image-503673" src="http://cdn.bleedingcool.net/wp-content/uploads/2016/02/Diskordia-Days-600x600.jpg" alt="Diskordia-Days" width="600" height="600" /></a>
+                
+                </section> 
+                <footer class="article-footer">
+
+
+
+
+                </footer> 
+
+<!--JavaScript Tag // Tag for network 5205: Intergi // Website: Avatar Press, Inc // Page: bleedingcool // Placement: bleedingcool_inarticle (3529295) // created at: Apr 14, 2015 11:48:39 AM-->
+<script language="javascript"><!--
+document.write('<scr'+'ipt language="javascript1.1" src="http://ads.intergi.com/addyn/3.0/5205/3529295/0/277/ADTECH;loc=100;target=_blank;key=key1+key2+key3+key4;grp=[group];misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://ads.intergi.com/adlink/3.0/5205/3529295/0/277/ADTECH;loc=300;key=key1+key2+key3+key4;grp=[group]" target="_blank"><img src="http://ads.intergi.com/adserv/3.0/5205/3529295/0/277/ADTECH;loc=300;key=key1+key2+key3+key4;grp=[group]" border="0" width="2" height="2"></a></noscript>
+<!-- End of JavaScript Tag -->
+
+              
+              </article> 
+
+<a name="comment-anchor"></a>
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_jumbo_share"></div>
+
+		<section id="comments" class="comments">
+	<div id="comments-div" class="comments-area">
+		<div id="respond"><section id="muut_comments"><a id="muut_comments" class=" muut" href="/i/bleeding-cool/www.bleedingcool.com/503667:comments" data-show_online="false" data-show_title="true" title="Post: Can You Create / Publish An Independent Comic And Remain Sane?" data-channel="Comments" data-upload="true" >Comments</a></section></div>	</div>
+</section>
+						
+						
+<!-- New-BC-468x60 -->
+<div style='width:468px; height:60px; margin:0 auto;'>
+<!-- New-BC-468x60 [async] -->
+<script type="text/javascript">if (!window.AdButler){(function(){var s = document.createElement("script"); s.async = true; s.type = "text/javascript";s.src = 'http://ab166388.adbutler-exciton.com/app.js';var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n);}());}</script>
+<script type="text/javascript">
+var AdButler = AdButler || {}; AdButler.ads = AdButler.ads || [];
+var abkw = window.abkw || '';
+var plc179380 = window.plc179380 || 0;
+document.write('<div id="placement_179380_'+plc179380+'"></div>');
+AdButler.ads.push({handler: function(opt){ AdButler.register(166388, 179380, [468,60], 'placement_179380_'+opt.place, opt); }, opt: { place: plc179380++, keywords: abkw, domain: 'ab166388.adbutler-exciton.com' }});
+</script>
+</div>
+
+<div class="gravity-main-holder"> <!-- Begin Gravity main holder -->
+<div id="grv-personalization-56"></div>
+<script type='text/javascript'>
+if( !(navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) )
+{
+
+  //<![CDATA[
+    (function(){
+    window.gravityInsightsParams = {
+      'type': 'content',
+      'action': '',
+      'site_guid': '57020bff1e029c1a9e960be81d4858f9'
+    };
+    var adServerReq,bUrl,doUseGravityUserGuid,includeJs,jq,type,ug,wlPrefix,wlUrl,_ref,_ref1,_ref2;bUrl="";ug=(doUseGravityUserGuid=!0===gravityInsightsParams.useGravityUserGuid?1:0)?"":gravityInsightsParams.user_guid||(null!=(_ref=/grvinsights=([^;]+)/.exec(document.cookie))?_ref[1]:void 0)||"";
+    wlUrl=(wlPrefix="http://rma-api.gravity.com/v1/api/intelligence",jq=(null!=(_ref1=window.jQuery)?null!=(_ref2=_ref1.fn)?_ref2.jquery:void 0:void 0)||"",type="iframe",adServerReq=gravityInsightsParams.ad||"",""+wlPrefix+"/wl?jq="+jq+"&sg="+gravityInsightsParams.site_guid+"&ug="+ug+"&ugug="+doUseGravityUserGuid+"&pl=56&id=grv-personalization-56"+("&type="+type+"&ad="+adServerReq+"&x="+(new Date).getTime()));
+    includeJs=function(a){var b;b=document.createElement("script");b.async=!0;b.src=a;a=document.getElementsByTagName("script")[0];return a.parentNode.insertBefore(b,a)};bUrl&&includeJs(bUrl);wlUrl&&(window.gravityInsightsParams.sidebar&&(window.gravityInsightsParams.wlStartTime=(new Date).getTime()),includeJs(wlUrl));})();
+  //]]>
+}
+</script>
+</div><!-- End gravity main holder -->
+
+<div id="extra-main-content" class="extra-main-attributes"><!-- EXTRA CONTENT MODULE -->
+
+ 	<div id="post-506179" >
+ 	<a href="http://www.bleedingcool.com/2016/02/16/transformers-spinoff-to-focus-on-bumblebee-produced-at-a-lower-cost/" title="Transformers Spinoff To Focus On Bumblebee; Produced At A Lower Cost" >
+		<div class="small-post bc-mag-sider-box border-fade">
+	
+							<div class="post-image">
+				<img width="120" height="120" src="http://cdn.bleedingcool.net/wp-content/uploads/2016/02/Bumblebee-120x120.jpg" class="attachment-thumbnail wp-post-image" alt="Bumblebee" />				</div><!-- post-image -->
+					<h2 class="entry-title">Transformers Spinoff To Focus On Bumblebee; Produced At A Lower Cost</h2>
+	</a>
+	</div><!-- small-post -->		
+	</div><!-- #post-## -->
+ 	<div id="post-505929" >
+ 	<a href="http://www.bleedingcool.com/2016/02/16/unsolicited-opinions-on-israel-the-comic-meme-of-2016/" title="&#8220;Unsolicited Opinions On Israel&#8221; &#8211; The Comic Meme Of 2016?" >
+		<div class="small-post bc-mag-sider-box border-fade">
+	
+							<div class="post-image">
+				<img width="120" height="120" src="http://cdn.bleedingcool.net/wp-content/uploads/2016/02/IMG_00631-600x555-120x120.jpg" class="attachment-thumbnail wp-post-image" alt="" />				</div><!-- post-image -->
+					<h2 class="entry-title">&#8220;Unsolicited Opinions On Israel&#8221; &#8211; The Comic Meme Of 2016?</h2>
+	</a>
+	</div><!-- small-post -->		
+	</div><!-- #post-## -->
+ 	<div id="post-506102" >
+ 	<a href="http://www.bleedingcool.com/2016/02/16/is-warner-bros-ready-to-blink-on-its-justice-league-plan/" title="Is Warner Bros. Ready To Blink On Its Justice League Plan?" >
+		<div class="small-post bc-mag-sider-box border-fade">
+	
+							<div class="post-image">
+				<img width="120" height="120" src="http://cdn.bleedingcool.net/wp-content/uploads/2016/02/jl-120x120.jpg" class="attachment-thumbnail wp-post-image" alt="jl" />				</div><!-- post-image -->
+					<h2 class="entry-title">Is Warner Bros. Ready To Blink On Its Justice League Plan?</h2>
+	</a>
+	</div><!-- small-post -->		
+	</div><!-- #post-## -->
+ 	<div id="post-506044" >
+ 	<a href="http://www.bleedingcool.com/2016/02/16/stephen-kramer-glickman-talks-max-brooks-and-cinema-purgatorio-and-everyone-gets-free-comics/" title="Stephen Kramer Glickman Talks Max Brooks And Cinema Purgatorio &#8211; And Everyone Gets Free Comics!" >
+		<div class="small-post bc-mag-sider-box border-fade">
+	
+							<div class="post-image">
+				<img width="120" height="120" src="http://cdn.bleedingcool.net/wp-content/uploads/2016/02/0222-120x120.jpg" class="attachment-thumbnail wp-post-image" alt="" />				</div><!-- post-image -->
+					<h2 class="entry-title">Stephen Kramer Glickman Talks Max Brooks And Cinema Purgatorio &#8211; And Everyone Gets Free Comics!</h2>
+	</a>
+	</div><!-- small-post -->		
+	</div><!-- #post-## -->
+ 	<div id="post-506098" >
+ 	<a href="http://www.bleedingcool.com/2016/02/16/mr-freeze-earns-his-name-in-new-gotham-preview/" title="Mr. Freeze Earns His Name In New Gotham Preview" >
+		<div class="small-post bc-mag-sider-box border-fade">
+	
+							<div class="post-image">
+				<img width="120" height="120" src="http://cdn.bleedingcool.net/wp-content/uploads/2016/02/mrfreeze-120x120.png" class="attachment-thumbnail wp-post-image" alt="mrfreeze" />				</div><!-- post-image -->
+					<h2 class="entry-title">Mr. Freeze Earns His Name In New Gotham Preview</h2>
+	</a>
+	</div><!-- small-post -->		
+	</div><!-- #post-## -->
+ 	<div id="post-505913" >
+ 	<a href="http://www.bleedingcool.com/2016/02/16/dc-comics-cut-wonder-womans-costume-back-for-49/" title="DC Comics Cut Wonder Woman&#8217;s Costume Back For #49" >
+		<div class="small-post bc-mag-sider-box border-fade">
+	
+							<div class="post-image">
+				<img width="120" height="120" src="http://cdn.bleedingcool.net/wp-content/uploads/2016/02/Wonder_Woman_Vol_4-48_Cover-1_Teaser-600x9101-120x120.jpg" class="attachment-thumbnail wp-post-image" alt="" />				</div><!-- post-image -->
+					<h2 class="entry-title">DC Comics Cut Wonder Woman&#8217;s Costume Back For #49</h2>
+	</a>
+	</div><!-- small-post -->		
+	</div><!-- #post-## -->
+ 	<div id="post-506094" >
+ 	<a href="http://www.bleedingcool.com/2016/02/16/by-land-sea-and-balloon-pee-wee-herman-returns-in-pee-wees-big-holiday-trailer/" title="By Land, Sea And Balloon, Pee-Wee Herman Returns In Pee-Wee&#8217;s Big Holiday Trailer" >
+		<div class="small-post bc-mag-sider-box border-fade">
+	
+							<div class="post-image">
+				<img width="120" height="120" src="http://cdn.bleedingcool.net/wp-content/uploads/2016/02/0221-120x120.jpg" class="attachment-thumbnail wp-post-image" alt="" />				</div><!-- post-image -->
+					<h2 class="entry-title">By Land, Sea And Balloon, Pee-Wee Herman Returns In Pee-Wee&#8217;s Big Holiday Trailer</h2>
+	</a>
+	</div><!-- small-post -->		
+	</div><!-- #post-## -->
+ 	<div id="post-505729" >
+ 	<a href="http://www.bleedingcool.com/2016/02/16/the-tipping-point-from-john-cassaday-paul-pope-eddie-campbell-and-more-launches-this-weekend/" title="The Tipping Point From John Cassaday, Paul Pope, Eddie Campbell And More Launches This Weekend" >
+		<div class="small-post bc-mag-sider-box border-fade">
+	
+							<div class="post-image">
+				<img width="120" height="120" src="http://cdn.bleedingcool.net/wp-content/uploads/2016/02/ttp-120x120.png" class="attachment-thumbnail wp-post-image" alt="ttp" />				</div><!-- post-image -->
+					<h2 class="entry-title">The Tipping Point From John Cassaday, Paul Pope, Eddie Campbell And More Launches This Weekend</h2>
+	</a>
+	</div><!-- small-post -->		
+	</div><!-- #post-## -->
+ 	<div id="post-505815" >
+ 	<a href="http://www.bleedingcool.com/2016/02/15/saw-movie-now-want-read-deadpool-comics/" title="You Saw The Movie, Now You Want To Read Some Deadpool Comics&#8230;" >
+		<div class="small-post bc-mag-sider-box border-fade">
+	
+							<div class="post-image">
+				<img width="120" height="120" src="http://cdn.bleedingcool.net/wp-content/uploads/2016/02/dc42e53b04586ff03f486a206a897507._QL80_TTD_-120x120.jpg" class="attachment-thumbnail wp-post-image" alt="dc42e53b04586ff03f486a206a897507._QL80_TTD_" />				</div><!-- post-image -->
+					<h2 class="entry-title">You Saw The Movie, Now You Want To Read Some Deadpool Comics&#8230;</h2>
+	</a>
+	</div><!-- small-post -->		
+	</div><!-- #post-## -->
+ 	<div id="post-505777" >
+ 	<a href="http://www.bleedingcool.com/2016/02/15/presidents-day-variant-covers/" title="President&#8217;s Day Variant Covers?" >
+		<div class="small-post bc-mag-sider-box border-fade">
+	
+							<div class="post-image">
+				<img width="120" height="120" src="http://cdn.bleedingcool.net/wp-content/uploads/2016/02/Presd-120x120.jpg" class="attachment-thumbnail wp-post-image" alt="Presd" />				</div><!-- post-image -->
+					<h2 class="entry-title">President&#8217;s Day Variant Covers?</h2>
+	</a>
+	</div><!-- small-post -->		
+	</div><!-- #post-## -->
+
+</div> <!-- END EXTRA CONTENT MODULE -->
+
+
+
+					</div>
+					</main>
+
+					<div id="sidebar1" class="sidebar t-1of3 d-2of7 last-col cf" role="complementary">
+
+
+<!-- New-BC-Medium-Rect-FP-Above -->
+<div class="sidebar-above-medium-rect-ad-unit">
+<!-- New-BC-Medium-Rect-ROS-Above [async] -->
+<script type="text/javascript">if (!window.AdButler){(function(){var s = document.createElement("script"); s.async = true; s.type = "text/javascript";s.src = 'http://ab166388.adbutler-exciton.com/app.js';var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n);}());}</script>
+<script type="text/javascript">
+var AdButler = AdButler || {}; AdButler.ads = AdButler.ads || [];
+var abkw = window.abkw || '';
+var plc179377 = window.plc179377 || 0;
+document.write('<div id="placement_179377_'+plc179377+'"></div>');
+AdButler.ads.push({handler: function(opt){ AdButler.register(166388, 179377, [300,250], 'placement_179377_'+opt.place, opt); }, opt: { place: plc179377++, keywords: abkw, domain: 'ab166388.adbutler-exciton.com' }});
+</script>
+</div>
+
+
+
+<div class="sidebar-social-follow"> <!-- Begin Social Follow Unit -->
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_custom_follow"></div>
+</div> <!-- End Social Follow Unit -->
+
+
+<div class="sidebar-combo-unit"> <!-- Begin Sidebar Combo Unit -->
+
+<div class="gravity-sidebar-container"> <!-- Begin Gravity Container -->
+<div id="grv-personalization-42"></div>
+<script type='text/javascript'>
+if( !(navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) )
+{
+
+  //<![CDATA[
+    (function(){
+    window.gravityInsightsParams = {
+      'type': 'content',
+      'action': '',
+      'site_guid': '57020bff1e029c1a9e960be81d4858f9'
+    };
+    var adServerReq,bUrl,doUseGravityUserGuid,includeJs,jq,type,ug,wlPrefix,wlUrl,_ref,_ref1,_ref2;bUrl="";ug=(doUseGravityUserGuid=!0===gravityInsightsParams.useGravityUserGuid?1:0)?"":gravityInsightsParams.user_guid||(null!=(_ref=/grvinsights=([^;]+)/.exec(document.cookie))?_ref[1]:void 0)||"";
+    wlUrl=(wlPrefix="http://rma-api.gravity.com/v1/api/intelligence",jq=(null!=(_ref1=window.jQuery)?null!=(_ref2=_ref1.fn)?_ref2.jquery:void 0:void 0)||"",type="iframe",adServerReq=gravityInsightsParams.ad||"",""+wlPrefix+"/wl?jq="+jq+"&sg="+gravityInsightsParams.site_guid+"&ug="+ug+"&ugug="+doUseGravityUserGuid+"&pl=42&id=grv-personalization-42"+("&type="+type+"&ad="+adServerReq+"&x="+(new Date).getTime()));
+    includeJs=function(a){var b;b=document.createElement("script");b.async=!0;b.src=a;a=document.getElementsByTagName("script")[0];return a.parentNode.insertBefore(b,a)};bUrl&&includeJs(bUrl);wlUrl&&(window.gravityInsightsParams.sidebar&&(window.gravityInsightsParams.wlStartTime=(new Date).getTime()),includeJs(wlUrl));})();
+  //]]>
+}  
+</script>
+</div> <!-- End Gravity Container -->
+
+<div class="skinny-skyscraper"><!-- Begin Skinny Skyscraper -->
+<!-- New-BC-120x600 -->
+<!-- New-BC-120x600 [async] -->
+<script type="text/javascript">if (!window.AdButler){(function(){var s = document.createElement("script"); s.async = true; s.type = "text/javascript";s.src = 'http://ab166388.adbutler-exciton.com/app.js';var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n);}());}</script>
+<script type="text/javascript">
+var AdButler = AdButler || {}; AdButler.ads = AdButler.ads || [];
+var abkw = window.abkw || '';
+var plc179379 = window.plc179379 || 0;
+document.write('<div id="placement_179379_'+plc179379+'"></div>');
+AdButler.ads.push({handler: function(opt){ AdButler.register(166388, 179379, [120,600], 'placement_179379_'+opt.place, opt); }, opt: { place: plc179379++, keywords: abkw, domain: 'ab166388.adbutler-exciton.com' }});
+</script>
+</div><!-- End Skinny Skyscraper -->
+
+<div class="vertical-menu">
+<a href="/category/comics" >Comics</a> <a href="/category/film" >TV/Film</a> <a href="/category/games" >Games</a> <a href="/forums" >Forums</a>
+</div>					
+
+</div> 	<!-- End Sidebar Combo Unit -->		
+
+<div class="sidebar-below-ad-unit"> <!-- Begin Sidebar below ad Unit -->
+<!-- New-BC-Medium-Rect-FP-Below -->
+<!-- New-BC-Medium-Rect-FP-Below -->
+<!-- New-BC-Medium-Rect-FP-Below [async] -->
+<script type="text/javascript">if (!window.AdButler){(function(){var s = document.createElement("script"); s.async = true; s.type = "text/javascript";s.src = 'http://ab166388.adbutler-exciton.com/app.js';var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n);}());}</script>
+<script type="text/javascript">
+var AdButler = AdButler || {}; AdButler.ads = AdButler.ads || [];
+var abkw = window.abkw || '';
+var plc179376 = window.plc179376 || 0;
+document.write('<div id="placement_179376_'+plc179376+'"></div>');
+AdButler.ads.push({handler: function(opt){ AdButler.register(166388, 179376, [300,250], 'placement_179376_'+opt.place, opt); }, opt: { place: plc179376++, keywords: abkw, domain: 'ab166388.adbutler-exciton.com' }});
+</script>
+</div><!-- End Sidebar below ad Unit -->
+
+
+
+
+
+</div>
+
+				</div>
+
+			</div>
+
+<!--JavaScript Tag // Tag for network 5205: Intergi // Website: Avatar Press, Inc // Page: bleedingcool // Placement: bleedingcool_custom (3462349) // created at: Jan 6, 2015 11:18:03 AM-->
+<script language="javascript"><!--
+document.write('<scr'+'ipt language="javascript1.1" src="http://ads.intergi.com/addyn/3.0/5205/3462349/0/509/ADTECH;loc=100;target=_blank;key=key1+key2+key3+key4;grp=[group];misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://ads.intergi.com/adlink/3.0/5205/3462349/0/509/ADTECH;loc=300;key=key1+key2+key3+key4;grp=[group]" target="_blank"><img src="http://ads.intergi.com/adserv/3.0/5205/3462349/0/509/ADTECH;loc=300;key=key1+key2+key3+key4;grp=[group]" border="0" width="2" height="1"></a></noscript>
+<!-- End of JavaScript Tag -->			
+
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+
+	<div id="inner-footer" class="wrap cf">
+
+		<div id="top-ad-container">
+
+            <div class="gravity-main-holder"> <!-- Begin Gravity main holder -->
+<div id="grv-personalization-56"></div>
+<script type='text/javascript'>
+if( !(navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) )
+{
+
+  //<![CDATA[
+    (function(){
+    window.gravityInsightsParams = {
+      'type': 'content',
+      'action': '',
+      'site_guid': '57020bff1e029c1a9e960be81d4858f9'
+    };
+    var adServerReq,bUrl,doUseGravityUserGuid,includeJs,jq,type,ug,wlPrefix,wlUrl,_ref,_ref1,_ref2;bUrl="";ug=(doUseGravityUserGuid=!0===gravityInsightsParams.useGravityUserGuid?1:0)?"":gravityInsightsParams.user_guid||(null!=(_ref=/grvinsights=([^;]+)/.exec(document.cookie))?_ref[1]:void 0)||"";
+    wlUrl=(wlPrefix="http://rma-api.gravity.com/v1/api/intelligence",jq=(null!=(_ref1=window.jQuery)?null!=(_ref2=_ref1.fn)?_ref2.jquery:void 0:void 0)||"",type="iframe",adServerReq=gravityInsightsParams.ad||"",""+wlPrefix+"/wl?jq="+jq+"&sg="+gravityInsightsParams.site_guid+"&ug="+ug+"&ugug="+doUseGravityUserGuid+"&pl=56&id=grv-personalization-56"+("&type="+type+"&ad="+adServerReq+"&x="+(new Date).getTime()));
+    includeJs=function(a){var b;b=document.createElement("script");b.async=!0;b.src=a;a=document.getElementsByTagName("script")[0];return a.parentNode.insertBefore(b,a)};bUrl&&includeJs(bUrl);wlUrl&&(window.gravityInsightsParams.sidebar&&(window.gravityInsightsParams.wlStartTime=(new Date).getTime()),includeJs(wlUrl));})();
+  //]]>
+}
+</script>
+</div><!-- End gravity main holder -->	
+            <div class="top-banner-ad-container wrap">
+<!-- New-BC-Leaderboard-ROS-Below -->
+<div style='width:728px; height:90px; margin:0 auto;'>
+<!-- New-BC-Leaderboard-FP-Below [async] -->
+<script type="text/javascript">if (!window.AdButler){(function(){var s = document.createElement("script"); s.async = true; s.type = "text/javascript";s.src = 'http://ab166388.adbutler-exciton.com/app.js';var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(s, n);}());}</script>
+<script type="text/javascript">
+var AdButler = AdButler || {}; AdButler.ads = AdButler.ads || [];
+var abkw = window.abkw || '';
+var plc179371 = window.plc179371 || 0;
+document.write('<div id="placement_179371_'+plc179371+'"></div>');
+AdButler.ads.push({handler: function(opt){ AdButler.register(166388, 179371, [728,90], 'placement_179371_'+opt.place, opt); }, opt: { place: plc179371++, keywords: abkw, domain: 'ab166388.adbutler-exciton.com' }});
+</script>
+</div>
+
+</div>              				<nav role="navigation" class="tabs__wrap">
+					<ul class="menu-bar  primary-nav">
+    					<li class="menu-item item-1">
+       						<div class="bc-logo">
+								<a href="/" class="tabs__link"><img src="http://cdn.bleedingcool.net/wp-content/themes/bleeding-cool-theme/library/images/bleeding-cool-logo.png" ></a>
+							</div>
+    					</li>
+    					<li class="menu-item item-2">
+        					<a href="/category/comics/" class="tabs__link expander-comics"><i class="fa fa-star"></i><p>comics</p></a>
+    					</li>
+    					<li class="menu-item item-3">
+        					<a href="/category/film/" class="tabs__link expander-film"><i class="fa fa-film"></i><p>film</p></a>
+    					</li>
+    					<li class="menu-item item-3x">
+        					<a href="/category/tv-2/" class="tabs__link expander-tv"><i class="fa fa-desktop"></i><p>tv</p></a>
+    					</li>
+                        <li class="menu-item item-4">
+                            <a href="/category/games-2/" class="tabs__link expander-games"><i class="fa fa-gamepad"></i><p>games</p></a>
+                        </li>
+    					<li class="menu-item item-5">
+       							<div class="cgc-ad">
+									<a href="http://www.cgccomics.com" class="tabs__link"><img src="/bc-cgc-ad.gif" ></a>
+								</div>
+    					</li>
+					</ul>
+				</nav>
+
+
+<div class ="dropdown-menu-box-comics responsive-menu">
+<ul id="menu-comics-menu" class="comic-tag-list">
+<li class="menu-tag call-out-color"><a href="http://www.bleedingcool.com/category/comics/">Comics</a></li>		
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/marvel/">Marvel</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/dc-comics/">DC</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/image/">Image</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/dark-horse/">Dark Horse</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/idw/">IDW</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/valiant/">Valiant</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/dynamite/">Dynamite</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/boom/">Boom</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/avatar-press/">Avatar</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/digital-comics/">Digital</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/cosplay/">Cosplay</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/cosplay/">Cosplay</a></li>
+</ul>
+
+</div>
+
+<div class ="dropdown-menu-box-film responsive-menu">
+<ul id="menu-comics-menu" class="comic-tag-list">
+<li class="menu-tag call-out-color"><a href="http://www.bleedingcool.com/category/film/">TV/Film</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/star-wars/">Star Wars</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/shield/">SHIELD</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/guardians-of-the-galaxy/">GotG</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/avengers/">Avengers</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/doctor-strange/">Doctor Strange</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/ant-man/">Ant Man</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/arrow/">Arrow</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/constantine/">Constantine</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/Flash/">Flash</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/Gotham/">Gotham</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/doctor-who/">Doctor Who</a></li>
+<li class="menu-tag"><a href="http://www.bleedingcool.com/tag/mad-max/">Mad Max</a></li>
+</ul>
+</div>
+        </div>
+
+	</div>
+</footer>
+			
+</div>
+		
+
+				<script type="text/html" id="tmpl-wp-playlist-current-item">
+	<# if ( data.image ) { #>
+	<img src="{{ data.thumb.src }}"/>
+	<# } #>
+	<div class="wp-playlist-caption">
+		<span class="wp-playlist-item-meta wp-playlist-item-title">&#8220;{{ data.title }}&#8221;</span>
+		<# if ( data.meta.album ) { #><span class="wp-playlist-item-meta wp-playlist-item-album">{{ data.meta.album }}</span><# } #>
+		<# if ( data.meta.artist ) { #><span class="wp-playlist-item-meta wp-playlist-item-artist">{{ data.meta.artist }}</span><# } #>
+	</div>
+</script>
+<script type="text/html" id="tmpl-wp-playlist-item">
+	<div class="wp-playlist-item">
+		<a class="wp-playlist-caption" href="{{ data.src }}">
+			{{ data.index ? ( data.index + '. ' ) : '' }}
+			<# if ( data.caption ) { #>
+				{{ data.caption }}
+			<# } else { #>
+				<span class="wp-playlist-item-title">&#8220;{{{ data.title }}}&#8221;</span>
+				<# if ( data.artists && data.meta.artist ) { #>
+				<span class="wp-playlist-item-artist"> &mdash; {{ data.meta.artist }}</span>
+				<# } #>
+			<# } #>
+		</a>
+		<# if ( data.meta.length_formatted ) { #>
+		<div class="wp-playlist-item-length">{{ data.meta.length_formatted }}</div>
+		<# } #>
+	</div>
+</script>
+<div id="muut_hidden_embed_div" class="" style="display: none;"><a class="muut-url" href="/i/bleeding-cool">Forum</a></div><script type='text/javascript' src='//cdn.muut.com/latest/moot.en.min.js'></script>
+<script type='text/javascript' src='http://cdn.bleedingcool.net/wp-content/plugins/muut/resources/muut-sso.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var alm_localize = {"ajaxurl":"http:\/\/www.bleedingcool.com\/wp-admin\/admin-ajax.php","alm_nonce":"b3f045074b","pluginurl":"http:\/\/www.bleedingcool.com\/wp-content\/plugins\/ajax-load-more","scrolltop":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://cdn.bleedingcool.net/wp-content/plugins/ajax-load-more/core/js/ajax-load-more.min.js'></script>
+<script type='text/javascript' src='http://cdn.bleedingcool.net/wp-content/plugins/ajax-load-more-seo/js/alm-seo.js'></script>
+<script type='text/javascript' src='http://cdn.bleedingcool.net/wp-content/themes/bleeding-cool-theme-hub-new/library/js/jquery.fittext.js'></script>
+<script type='text/javascript' src='http://cdn.bleedingcool.net/wp-content/themes/bleeding-cool-theme-hub-new/library/js/textFit.js'></script>
+<script type='text/javascript' src='http://cdn.bleedingcool.net/wp-content/themes/bleeding-cool-theme-hub-new/library/js/textFit.min.js'></script>
+<script type='text/javascript' src='http://cdn.bleedingcool.net/wp-includes/js/jquery/ui/core.min.js'></script>
+<script type='text/javascript' src='http://cdn.bleedingcool.net/wp-includes/js/jquery/ui/datepicker.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mejsL10n = {"language":"en-US","strings":{"Close":"Close","Fullscreen":"Fullscreen","Download File":"Download File","Download Video":"Download Video","Play\/Pause":"Play\/Pause","Mute Toggle":"Mute Toggle","None":"None","Turn off Fullscreen":"Turn off Fullscreen","Go Fullscreen":"Go Fullscreen","Unmute":"Unmute","Mute":"Mute","Captions\/Subtitles":"Captions\/Subtitles"}};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/"};
+var mejsL10n = {"language":"en-US","strings":{"Close":"Close","Fullscreen":"Fullscreen","Download File":"Download File","Download Video":"Download Video","Play\/Pause":"Play\/Pause","Mute Toggle":"Mute Toggle","None":"None","Turn off Fullscreen":"Turn off Fullscreen","Go Fullscreen":"Go Fullscreen","Unmute":"Unmute","Mute":"Mute","Captions\/Subtitles":"Captions\/Subtitles"}};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://cdn.bleedingcool.net/wp-includes/js/mediaelement/mediaelement-and-player.min.js'></script>
+<script type='text/javascript' src='http://cdn.bleedingcool.net/wp-includes/js/mediaelement/wp-mediaelement.js'></script>
+<script type='text/javascript' src='http://cdn.bleedingcool.net/wp-includes/js/underscore.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://cdn.bleedingcool.net/wp-includes/js/wp-util.min.js'></script>
+<script type='text/javascript' src='http://cdn.bleedingcool.net/wp-includes/js/backbone.min.js'></script>
+<script type='text/javascript' src='http://cdn.bleedingcool.net/wp-includes/js/mediaelement/wp-playlist.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpv_pagination_local = {"front_ajaxurl":"http:\/\/www.bleedingcool.com\/wp-admin\/admin-ajax.php","ajax_pagination_url":"http:\/\/www.bleedingcool.com\/wpv-ajax-pagination\/","calendar_image":"http:\/\/www.bleedingcool.com\/wp-content\/plugins\/wp-views\/embedded\/res\/img\/calendar.gif","calendar_text":"Select date","datepicker_min_date":null,"datepicker_max_date":null};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://cdn.bleedingcool.net/wp-content/plugins/wp-views/embedded/res/js/wpv-pagination-embedded.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var muut_frontend_functions_localized = {"comments":"Comments","admin":"Admin","just_now":"just now","minutes_abbreviation":"m","hours_abbreviation":"h","days_abbreviation":"d","weeks_abbreviation":"w"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://cdn.bleedingcool.net/wp-content/plugins/muut/resources/frontend-functions.js'></script>
+<script type='text/javascript' src='http://cdn.bleedingcool.net/wp-content/plugins/muut/resources/muut-widgets-initialize.js'></script>
+<script type='text/javascript' src='http://cdn.bleedingcool.net/wp-content/themes/bleeding-cool-theme-hub-new/library/js/scripts.js'></script>
+<script type='text/javascript' src='http://cdn.bleedingcool.net/wp-content/themes/bleeding-cool-theme-hub-new/library/js/jquery.jscroll.js'></script>
+<script type="text/javascript">var muut_object = jQuery();if ( typeof ajaxurl == "undefined" ) { var ajaxurl = "http://www.bleedingcool.com/wp-admin/admin-ajax.php"; }function muutObj() { if( typeof muut_object.path == "undefined" ) { if ( typeof muut() != "undefined" ) { muut_object = muut(); } } return muut_object; }</script><script type="text/javascript"></script>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(112177); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/112177ns.gif" /></p></noscript>
+
+
+
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e9068e7f04","applicationID":"8937752","transactionName":"Y1cDMkNRDUJUAERbXlodIAVFWQxfGhBZXFZYVw==","queueTime":0,"applicationTime":443,"atts":"TxAARAtLHkw=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-768.min.js"}</script></body>
+
+</html> <!-- end of site. what a ride! -->
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Database Caching 1/21 queries in 0.041 seconds using memcached (Request-wide DOING_CRON)
+Object Caching 1553/1605 objects using memcached
+Content Delivery Network via cdn.bleedingcool.net
+
+ Served from: bleedingcool.com @ 2016-02-16 17:02:18 by W3 Total Cache -->

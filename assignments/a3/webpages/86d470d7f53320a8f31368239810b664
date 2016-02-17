@@ -1,0 +1,47 @@
+
+<script type="text/javascript">
+
+function ajaxFunction(){
+	var ajaxRequest;  // The variable that makes Ajax possible!
+//	alert ("now");
+	try{
+		// Opera 8.0+, Firefox, Safari
+		ajaxRequest = new XMLHttpRequest();
+	} catch (e){
+		// Internet Explorer Browsers
+		try{
+			ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
+		} catch (e) {
+			try{
+				ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
+			} catch (e){
+				// Something went wrong
+				alert("Your browser broke!");
+				return false;
+			}
+		}
+	}
+	// Create a function that will receive data sent from the server
+	ajaxRequest.onreadystatechange = function(){
+		if(ajaxRequest.readyState == 4){
+//			alert (ajaxRequest.responseText);
+			window.location.href = ajaxRequest.responseText;
+				
+		}
+	}
+	
+	var newString= location.search.replace(/&nbsp/,"");
+//	var longform="/getLink.cgi?"+location.search;
+	var longform="/getLink.cgi?"+newString;
+//	alert (longform);	
+	ajaxRequest.open("GET", longform, true);
+	ajaxRequest.send(null);
+}
+//alert (location.search);	
+if (location.search != "")
+{
+	ajaxFunction();
+}else{
+	window.open("http://newzbots.com","_self")
+}
+</script>

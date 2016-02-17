@@ -1,0 +1,810 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!-- start: showthread -->
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Manoranaj movie</title>
+<!-- start: headerinclude -->
+<link rel="alternate" type="application/rss+xml" title="Latest Threads (RSS 2.0)" href="http://www.forum.trackdish.com/syndication.php" />
+<link rel="alternate" type="application/atom+xml" title="Latest Threads (Atom 1.0)" href="http://www.forum.trackdish.com/syndication.php?type=atom1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<script type="text/javascript" src="http://www.forum.trackdish.com/jscripts/jquery.js?ver=1800"></script>
+<script type="text/javascript" src="http://www.forum.trackdish.com/jscripts/jquery.plugins.min.js?ver=1800"></script>
+<script type="text/javascript" src="http://www.forum.trackdish.com/jscripts/general.js?ver=1800"></script>
+
+<script type="text/javascript" src="http://www.forum.trackdish.com/jscripts/mood.js?ver=1800"></script><link type="text/css" rel="stylesheet" href="cache/themes/global/thanks/thx.css" />
+<script type="text/javascript" src="jscripts/thx.js"></script>
+<link type="text/css" rel="stylesheet" href="http://www.forum.trackdish.com/cache/themes/theme42/css3.min.css" />
+<link type="text/css" rel="stylesheet" href="http://www.forum.trackdish.com/cache/themes/theme42/global.min.css" />
+<link type="text/css" rel="stylesheet" href="http://www.forum.trackdish.com/cache/themes/theme1/star_ratings.min.css" />
+<link type="text/css" rel="stylesheet" href="http://www.forum.trackdish.com/cache/themes/theme1/showthread.min.css" />
+
+
+<script type="text/javascript">
+<!--
+	lang.unknown_error = "An unknown error has occurred.";
+
+	lang.select2_match = "One result is available, press enter to select it.";
+	lang.select2_matches = "{1} results are available, use up and down arrow keys to navigate.";
+	lang.select2_nomatches = "No matches found";
+	lang.select2_inputtooshort_single = "Please enter one or more character";
+	lang.select2_inputtooshort_plural = "Please enter {1} or more characters";
+	lang.select2_inputtoolong_single = "Please delete one character";
+	lang.select2_inputtoolong_plural = "Please delete {1} characters";
+	lang.select2_selectiontoobig_single = "You can only select one item";
+	lang.select2_selectiontoobig_plural = "You can only select {1} items";
+	lang.select2_loadmore = "Loading more results…";
+	lang.select2_searching = "Searching…";
+
+	var cookieDomain = ".forum.trackdish.com";
+	var cookiePath = "/";
+	var cookiePrefix = "";
+	var deleteevent_confirm = "Are you sure you want to delete this event?";
+	var removeattach_confirm = "Are you sure you want to remove the selected attachment from this post?";
+	var loading_text = 'Loading. <br />Please Wait..';
+	var saving_changes = 'Saving changes..';
+	var use_xmlhttprequest = "1";
+	var my_post_key = "0d0fa7701d125d6044b37f356a717949";
+	var rootpath = "http://www.forum.trackdish.com";
+	var imagepath = "http://www.forum.trackdish.com/images/flatzure";
+  	var yes_confirm = "Yes";
+	var no_confirm = "No";
+	var MyBBEditor = null;
+	var spinner_image = "http://www.forum.trackdish.com/images/flatzure/spinner.gif";
+	var spinner = "<img src='" + spinner_image +"' alt='' />";
+// -->
+</script>
+<!-- end: headerinclude -->
+<script type="text/javascript">
+// <!--
+	lang.processing = 'Processing...';
+// -->
+</script>
+
+<!-- start: ratemf_head -->
+<link type='text/css' rel='stylesheet' href='inc/plugins/ratemf/ratemf.css' />
+<script type='text/javascript'>
+  var ratemf_time = '1455666951',
+  tid = '1040';
+
+  function ratemf_rate(pid, rid) {
+    jQuery.ajax({
+      url: 'http://www.forum.trackdish.com/xmlhttp.php',
+      type: 'post',
+      data: {
+        plugin: 'ratemf',
+        my_post_key: my_post_key,
+        type: 'rate',
+        pid: pid,
+        rid: rid
+      },
+      beforeSend: function() { jQuery('#post_'+pid).find('.ratemf_rates_list').html('Rating...'); },
+      success: function(data) {
+        if(typeof data.success == 'string') {
+          jQuery('#post_'+pid).find('.ratemf_rates_list').html(data.success);
+          ratemf_refresh();
+        } else {
+          jQuery('#post_'+pid).find('.ratemf_rates_list').html(data.error);
+        }
+      },
+      error: function() {
+        jQuery('#post_'+pid).find('.ratemf_rates_list').html('error');
+      }
+    });
+  }
+
+  setInterval(ratemf_refresh, 1000*5);
+
+  function ratemf_refresh() {
+    jQuery.ajax({
+      url: 'http://www.forum.trackdish.com/xmlhttp.php',
+      type: 'post',
+      data: {
+        plugin: 'ratemf',
+        my_post_key: my_post_key,
+        type: 'refresh',
+        tid: tid,
+        timestamp: ratemf_time
+      },
+      success: function(data) {
+        if(typeof data.time == 'number') {
+          ratemf_time = data.time;
+
+          delete data.time;
+          jQuery.each(data, function(k, value) {
+
+            var rate_post_element = jQuery('#post_'+value.post_id);
+            var rate_rating_element = rate_post_element.find('.ratemf_users_rating_rate_id_'+value.rate_id);
+            var rate_list_element = rate_post_element.find('.ratemf_users_list_rate_id_'+value.rate_id);
+
+            if(typeof value.del_time == 'string') {
+              var remove_rating_count = parseInt(rate_rating_element.find('strong').text(), 10)-1;
+
+              if(remove_rating_count == 0) {
+                rate_rating_element.remove();
+                rate_list_element.remove();
+              } else {
+                rate_rating_element = rate_rating_element.find('strong');
+                rate_rating_element.html(remove_rating_count);
+
+                rate_list_element.find('.ratemf_users_list_id_'+value.postbit_uid).remove();
+                rate_list_element.find('.ratemf_users_list_title').find('strong').html(remove_rating_count);
+              }
+            } else {
+              if(rate_rating_element.length > 0) {
+                rate_rating_element = rate_rating_element.find('strong');
+                rate_rating_element.html(parseInt(rate_rating_element.text() ,10)+1);
+
+                rate_list_element.find('.ratemf_users_list_title').find('strong').html(parseInt(rate_list_element.find('.ratemf_users_list_title').find('strong').text(),10)+1);
+              } else {
+                rate_post_element.find('.ratemf_users_rating').prepend(' \
+                  <li title="'+value.rate_postbit+'" class="ratemf_users_rating_rate_id_'+value.rate_id+'"> \
+                    <img src="http://www.forum.trackdish.com/images/rating/'+value.rate_image+'"> x<strong>1</strong> \
+                  </li>');
+
+                rate_post_element.find('.ratemf_users_list_container').prepend(' \
+                  <ul class="ratemf_users_list ratemf_users_list_rate_id_'+value.rate_id+'"> \
+                    <li title="'+value.rate_postbit+'" class="ratemf_users_list_title"> \
+                      <img src="http://www.forum.trackdish.com/images/rating/'+value.rate_image+'"> x<strong>1</strong> \
+                    </li> \
+                  </ul>');
+              }
+
+              rate_post_element.find('.ratemf_users_list_container').find('.ratemf_users_list_rate_id_'+value.rate_id).append(' \
+                <li class="ratemf_users_list_id_'+value.postbit_uid+'"> \
+                  <a href="http://www.forum.trackdish.com/member.php?action=profile&uid='+value.postbit_uid+'"> \
+                    '+value.postbit_username+' \
+                  </a> \
+                </li>');
+            }
+          });
+        }
+      }
+    });
+
+  }
+</script>
+<!-- end: ratemf_head -->
+
+<script type="text/javascript">
+<!--
+	var quickdelete_confirm = "Are you sure you want to delete this post?";
+	var quickrestore_confirm = "Are you sure you want to restore this post?";
+	var allowEditReason = "1";
+	lang.save_changes = "Save Changes";
+	lang.cancel_edit = "Cancel Edit";
+	lang.quick_edit_update_error = "There was an error editing your reply:";
+	lang.quick_reply_post_error = "There was an error posting your reply:";
+	lang.quick_delete_error = "There was an error deleting your reply:";
+	lang.quick_delete_success = "The post was deleted successfully.";
+	lang.quick_delete_thread_success = "The thread was deleted successfully.";
+	lang.quick_restore_error = "There was an error restoring your reply:";
+	lang.quick_restore_success = "The post was restored successfully.";
+	lang.editreason = "Edit Reason";
+// -->
+</script>
+<!-- jeditable (jquery) -->
+<script type="text/javascript" src="http://www.forum.trackdish.com/jscripts/report.js?ver=1800"></script>
+<script src="http://www.forum.trackdish.com/jscripts/jeditable/jeditable.min.js"></script>
+<script type="text/javascript" src="http://www.forum.trackdish.com/jscripts/thread.js?ver=1800"></script>
+<body>
+ 
+    <!-- Tapatalk smart banner body start --> 
+<script type="text/javascript">
+    if(typeof(app_ios_id) != "undefined") {
+		tapatalkDetect();
+	}
+    </script>
+ 
+    <!-- Tapatalk smart banner body end --> 
+	<!-- start: header -->
+<a name="top" id="top"></a>
+	
+
+<div id="header">
+	
+                     <div class="hd">
+
+
+			<div class="logo" style="float: left;"><a href="http://www.forum.trackdish.com/index.php"><img src="http://www.forum.trackdish.com/images/flatzure/logo.png" alt="TrackDish Forum | Satellite discussion | Free to Air channels in C and Ku Band Satellite" title="TrackDish Forum | Satellite discussion | Free to Air channels in C and Ku Band Satellite" /></a></div>
+
+
+
+<div align="right"><form action="http://www.google.co.in" id="cse-search-box" target="_blank">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-1568180419720647:7019593696" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="30" />
+    <input type="submit" name="sa" value="Search" />
+  </div>
+</form>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">google.load("elements", "1", {packages: "transliteration"});</script>
+<script type="text/javascript" src="http://www.google.com/cse/t13n?form=cse-search-box&t13n_langs=am%2Cel%2Cml%2Cpa%2Cta%2Cte%2Cru%2Cmr%2Cgu%2Car%2Chi%2Cbn%2Cne%2Csa%2Cti%2Csr%2Cur%2Cfa%2Ckn%2Cen"></script>
+
+<script type="text/javascript" src="http://www.google.co.in/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+</div>
+
+
+			<div class="menu" style="float: right;">
+				<ul>
+					
+				</ul>
+			</div>
+               </div></div>
+                <!-- start: nav -->
+
+<div class="navigation">
+<!-- start: nav_bit -->
+<a href="http://www.forum.trackdish.com/index.php">TrackDish Forum | Satellite discussion | Free to Air channels in C and Ku Band Satellite</a><!-- start: nav_sep -->
+»
+<!-- end: nav_sep -->
+<!-- end: nav_bit --><!-- start: nav_bit -->
+<a href="Forum-indian-dth-services-direct-to-home-services"><font color="dfe3ee"><font size="4px">Indian DTH Services - Direct To Home Services</font></font></a><!-- start: nav_sep -->
+»
+<!-- end: nav_sep -->
+<!-- end: nav_bit --><!-- start: nav_bit -->
+<a href="Forum-dd-freedish-dd-direct-plus-dth-free-dth-service"><font color="B4045F"><font size="2px">DD FreeDish (DD Direct Plus DTH) - Free DTH Service</font></font></a><!-- start: nav_dropdown -->
+ <img src="http://www.forum.trackdish.com/images/flatzure/arrow_down.png" alt="v" title="" class="pagination_breadcrumb_link" id="breadcrumb_multipage" /><!-- start: multipage_breadcrumb -->
+<div id="breadcrumb_multipage_popup" class="pagination pagination_breadcrumb" style="display: none;">
+<!-- start: multipage_page_link_current -->
+ <a href="forum-9.html" class="pagination_current">1</a>
+<!-- end: multipage_page_link_current --><!-- start: multipage_page -->
+<a href="forum-9-page-2.html" class="pagination_page">2</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="forum-9-page-3.html" class="pagination_page">3</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="forum-9-page-4.html" class="pagination_page">4</a>
+<!-- end: multipage_page --><!-- start: multipage_page -->
+<a href="forum-9-page-5.html" class="pagination_page">5</a>
+<!-- end: multipage_page --><!-- start: multipage_end -->
+...  <a href="forum-9-page-8.html" class="pagination_last">8</a>
+<!-- end: multipage_end --><!-- start: multipage_nextpage -->
+<a href="forum-9-page-2.html" class="pagination_next">Next &raquo;</a>
+<!-- end: multipage_nextpage -->
+</div>
+<script type="text/javascript">
+// <!--
+	if(use_xmlhttprequest == "1")
+	{
+		$("#breadcrumb_multipage").popupMenu();
+	}
+// -->
+</script>
+<!-- end: multipage_breadcrumb -->
+<!-- end: nav_dropdown -->
+<!-- end: nav_bit --><!-- start: nav_sep_active -->
+»
+<!-- end: nav_sep_active --><!-- start: nav_bit_active -->
+<span class="active">Breaking News :&nbsp;Manoranaj movie</span>
+<!-- end: nav_bit_active -->
+</div>
+<!-- end: nav -->
+		<hr class="hidden" />
+		<br class="clear" />
+
+
+
+                <div id="container">
+		<div id="content">
+                        <div id="panel">
+				<!-- start: header_welcomeblock_guest -->
+<div style="float: left;">
+<form action="member.php" method="post">
+<input type="text" class="login" name="username" value="Login" onfocus="if(this.value=='' || this.value == 'Login') this.value=''" onblur="if(this.value == '') {this.value=this.defaultValue}" onkeyup="keyUp();" />
+<input type="password" class="login" name="password" value="Password" onfocus="if(this.value=='' || this.value == 'Password') this.value=''" onblur="if(this.value == '') {this.value=this.defaultValue}" onkeyup="keyUp();" />
+<input type="submit" class="ok" value="Log In" />
+<input type="hidden" name="action" value="do_login" />
+<input type="hidden" name="url" value="" />
+
+<a href="http://www.forum.trackdish.com/mygpconnect.php?action=login"><img src="images/mygp.png" border="3"></a> 
+<a href="http://www.forum.trackdish.com/myfbconnect.php?action=login"><img src="images/myfb.png" border="1"></a>
+<a href="http://www.forum.trackdish.com/mytwconnect.php?action=login"><img src="images/mytw.png" border="1"></a>
+</form></div>
+<div style="float: right;">
+<a href="http://www.forum.trackdish.com/member.php?action=register" class="reg">Register</a></div>
+<!-- end: header_welcomeblock_guest -->
+			</div><br />
+			
+			
+			
+			
+			
+
+<br class="clear" />
+<div align="center">Advertisements</div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive-trackdish -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1568180419720647"
+     data-ad-slot="3846745299"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br class="clear" />
+<!-- end: header -->
+	
+<div class="name_topic">Breaking News :&nbsp;Manoranaj movie</div>
+        <div class="mulrep">
+	<div class="float_left">
+		
+	</div>
+	<div class="float_right">
+		
+	</div>
+
+	<!-- start: showthread_ratethread -->
+<div style="margin-top: 6px; padding-right: 10px;" class="float_right">
+		<script type="text/javascript">
+		<!--
+			lang.ratings_update_error = "";
+		// -->
+		</script>
+		<script type="text/javascript" src="http://www.forum.trackdish.com/jscripts/rating.js?ver=1804"></script>
+		<strong class="float_left" style="padding-right: 10px;">Thread Rating:</strong>
+		<div class="inline_rating">
+			<ul class="star_rating star_rating_notrated" id="rating_thread_1040">
+				<li style="width: 60%" class="current_rating" id="current_rating_1040">1 Vote(s) - 3 Average</li>
+				<li><a class="one_star" title="1 star out of 5" href="./ratethread.php?tid=1040&amp;rating=1&amp;my_post_key=0d0fa7701d125d6044b37f356a717949">1</a></li>
+				<li><a class="two_stars" title="2 stars out of 5" href="./ratethread.php?tid=1040&amp;rating=2&amp;my_post_key=0d0fa7701d125d6044b37f356a717949">2</a></li>
+				<li><a class="three_stars" title="3 stars out of 5" href="./ratethread.php?tid=1040&amp;rating=3&amp;my_post_key=0d0fa7701d125d6044b37f356a717949">3</a></li>
+				<li><a class="four_stars" title="4 stars out of 5" href="./ratethread.php?tid=1040&amp;rating=4&amp;my_post_key=0d0fa7701d125d6044b37f356a717949">4</a></li>
+				<li><a class="five_stars" title="5 stars out of 5" href="./ratethread.php?tid=1040&amp;rating=5&amp;my_post_key=0d0fa7701d125d6044b37f356a717949">5</a></li>
+			</ul>
+		</div>
+</div>
+<!-- end: showthread_ratethread -->
+        </div>
+	<div id="posts">
+		<!-- start: postbit -->
+
+<table border="0" cellspacing="0" cellpadding="0" class="tbordsi" style="border-top-width: 0; " id="post_2519">
+	<tr>
+		<td class="post_ltop"  width="180px" valign="top"><a name="pid2519" id="pid2519"></a>
+		<strong><span class="largetext"><a href="http://www.forum.trackdish.com/User-lndhulet"><span style="color: orange;"><img src="images/uicons/member+.png"> lndhulet</span></a></span></strong><br />
+		<span class="smalltext">
+			TrackDish Newly Joined Member<br />
+			<img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><br />
+			<!-- start: postbit_groupimage -->
+<img src="images/groupimages/english/member+.png" alt="Member++++" title="Member++++" />
+<!-- end: postbit_groupimage -->
+			<!-- start: postbit_avatar -->
+<div class="author_avatar"><a href="User-lndhulet"><img src="https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=100" alt="" width="100" height="100" /></a></div>
+<!-- end: postbit_avatar --><br />
+			<!-- start: postbit_author_user -->
+Posts: 5<br />
+	Joined: Jan 2016
+	<!-- start: postbit_reputation -->
+<br />Reputation: <!-- start: postbit_reputation_formatted_link -->
+<a href="reputation.php?uid=1251"><strong class="reputation_neutral">0</strong></a>
+<!-- end: postbit_reputation_formatted_link -->
+<!-- end: postbit_reputation -->
+<!-- end: postbit_author_user --><!-- start: thanks_postbit_count -->
+<div><span class="smalltext">Thanks: 0<br />
+	Given 0 thank(s) in 0 post(s)<br /></span></div>
+<!-- end: thanks_postbit_count --><br /><!-- start: postbit_mood -->
+Mood: None<br />
+<!-- end: postbit_mood -->
+		</span>
+	</td><td style="width:10px;"></td>
+	<td class="post_rtop" valign="top">
+<div class="thead"><!-- start: postbit_posturl -->
+<div class="float_right" style="vertical-align: top">
+<strong><a href="Thread-breaking-news-manoranaj-movie?pid=2519#pid2519" title="Manoranaj movie">#1</a></strong>
+
+</div>
+<!-- end: postbit_posturl --><span class="smalltext">08-02-16, 09:11 AM </span></div>
+			<br />
+			<div id="pid_2519" class="post_body">
+				Good Morning <br />
+‪#‎Manoranjan_Movies‬ To be Placed on DD Free Dish at TV Test 501 slot <br />
+Check n enjoy<br />
+<br />
+Laxmi narayan suman (Kota. Rajasthan)
+			</div>
+			
+			
+			<div style="text-align: right; vertical-align: bottom; margin-right: 5px;" id="post_meta_2519">
+				<div id="edited_by_2519"></div>
+				<div class="ratemf_postbit">
+      <ul class="ratemf_users_rating">
+        
+        <li class="ratemf_users_rating_show">
+           <input id="ratemf_list_2519" type="checkbox">
+           <label for="ratemf_list_2519">(list)</label>
+           
+      <div class="ratemf_users_list_container">
+        
+      </div>
+        </li>
+      </ul></div>
+			</div>
+</td>
+</tr>
+<tr>
+<td class="post_lbot"></td>
+<td style="width:10px;"></td>
+	<td class="post_rbot">
+		<table width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr valign="bottom">
+				<td align="right"><!-- start: postbit_quote -->
+<a href="newreply.php?tid=1040&amp;replyto=2519" title="Quote this message in a reply" class="postbit_quote"><span>Reply</span></a>
+<!-- end: postbit_quote --></td>
+
+			</tr>
+		</table>
+	</td>
+</tr>
+</table>
+<!-- end: postbit -->
+
+	</div>
+
+	<table border="0" cellspacing="0" cellpadding="4" class="tbordsi" style="border-top-width: 0;">
+		<tr>
+			<td colspan="2">
+				<!-- start: showthread_search -->
+	<div class="float_right">
+		<form action="search.php" method="post">
+			<input type="hidden" name="action" value="thread" />
+			<input type="hidden" name="tid" value="1040" />
+			<input type="text" name="keywords" value="Enter Keywords" onfocus="if(this.value == 'Enter Keywords') { this.value = ''; }" onblur="if(this.value=='') { this.value='Enter Keywords'; }" class="textbox" size="25" />
+			<input type="submit" class="button" value="Search Thread" />
+		</form>
+	</div>
+<!-- end: showthread_search -->
+				<div>
+					
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div style="padding:4px 4px 0 0;" class="float_right">
+		
+	</div>
+
+
+<div class="fb-like" data-href="https://www.trackdish.com" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
+<div class="fb-like" data-href="https://www.facebook.com/trackdish" data-layout="button" data-action="recommend" data-show-faces="false" data-share="true"></div>
+<div class="fb-follow" data-href="https://www.facebook.com/pradeepfyou" data-layout="button" data-show-faces="false"></div>
+
+<a class="twitter-follow-button"
+  href="https://twitter.com/trackdish_com"
+  data-show-count="false"
+  data-lang="en">
+</a>
+<script>window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));</script>
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+  <g:plusone></g:plusone>
+<g:follow href="https://plus.google.com/+Trackdish" rel="author"></g:follow>
+
+
+
+
+	<br style="clear: both;" />
+	<!-- start: showthread_bookmarks -->
+<br />
+<table border="0" cellspacing="0" cellpadding="4" class="tborder">
+<tr>
+<td class="thead"><span class="smalltext"><strong>Bookmarks</strong></span></td>
+</tr>
+<tr>
+<td class="trow1" border="0" width="100%">
+<ul style="list-style-type:none; margin:0px; padding:1px;">
+<!-- start: showthread_bookmarks_item -->
+<li style="width:25%; float:left;"><a href="https://www.dthnews.com"><img src="images/star.png" alt="Submit Thread to DTH News">&nbsp;DTH News</a></li>
+<!-- end: showthread_bookmarks_item --><!-- start: showthread_bookmarks_item -->
+<li style="width:25%; float:left;"><a href="http://www.facebook.com/trackdish"><img src="images/bookmarks/facebook.png" alt="Submit Thread to TrackDish">&nbsp;TrackDish</a></li>
+<!-- end: showthread_bookmarks_item --><!-- start: showthread_bookmarks_item -->
+<li style="width:25%; float:left;"><a href="http://www.marginprice.com"><img src="images/star.png" alt="Submit Thread to Buy Set-Top Box">&nbsp;Buy Set-Top Box</a></li>
+<!-- end: showthread_bookmarks_item --><!-- start: showthread_bookmarks_item -->
+<li style="width:25%; float:left;"><a href="http://www.freetoair.in"><img src="images/star.png" alt="Submit Thread to Free-To-Air">&nbsp;Free-To-Air</a></li>
+<!-- end: showthread_bookmarks_item -->
+</ul>
+</td>
+</tr>
+</table>
+<!-- end: showthread_bookmarks -->
+	
+	<!-- start: showthread_similarthreads -->
+<br />
+<table border="0" cellspacing="0" cellpadding="4" class="tborder">
+<tr>
+<td class="thead" align="center" colspan="6"><strong>Possibly Related Threads...</strong></td>
+</tr>
+<tr>
+<td class="tcat" align="center" colspan="2"><span class="smalltext"><strong>Thread</strong></span></td>
+<td class="tcat" align="center"><span class="smalltext"><strong>Author</strong></span></td>
+<td class="tcat" align="center"><span class="smalltext"><strong>Replies</strong></span></td>
+<td class="tcat" align="center"><span class="smalltext"><strong>Views</strong></span></td>
+<td class="tcat" align="center"><span class="smalltext"><strong>Last Post</strong></span></td>
+</tr>
+<!-- start: showthread_similarthreads_bit -->
+<tr>
+	<td align="center" class="trow1" width="2%">&nbsp;</td>
+	<td class="trow1"><a href="Thread-manoranaj-movie-channel">Manoranaj movie channel</a></td>
+	<td align="center" class="trow1"><a href="http://www.forum.trackdish.com/User-lndhulet">lndhulet</a></td>
+	<td align="center" class="trow1"><a href="javascript:MyBB.whoPosted(1039);">0</a></td>
+	<td align="center" class="trow1">208</td>
+	<td class="trow1" style="white-space: nowrap">
+		<span class="smalltext">08-02-16, 08:33 AM<br />
+		<a href="Thread-manoranaj-movie-channel?action=lastpost">Last Post</a>: <a href="http://www.forum.trackdish.com/User-lndhulet">lndhulet</a></span>
+	</td>
+	</tr>
+<!-- end: showthread_similarthreads_bit -->
+</table>
+<!-- end: showthread_similarthreads -->
+	<br />
+	<div class="float_left">
+		<ul class="thread_tools">
+			<li class="printable"><a href="printthread.php?tid=1040">View a Printable Version</a></li>
+			<li class="sendthread"><a href="sendthread.php?tid=1040">Send this Thread to a Friend</a></li>
+			<li class="subscription_add"><a href="usercp2.php?action=addsubscription&amp;tid=1040&amp;my_post_key=0d0fa7701d125d6044b37f356a717949">Subscribe to this thread</a></li>
+		</ul>
+	</div>
+
+	<div class="float_right" style="text-align: right;">
+		
+		<!-- start: forumjump_advanced -->
+<form action="forumdisplay.php" method="get">
+<span class="smalltext"><strong>Forum Jump:</strong></span>
+<select name="fid" class="forumjump">
+<option value="-4">Private Messages</option>
+<option value="-3">User Control Panel</option>
+<option value="-5">Who's Online</option>
+<option value="-2">Search</option>
+<option value="-1">Forum Home</option>
+<!-- start: forumjump_bit -->
+<option value="12" > TrackDish - Tracking Your Dish with us  </option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="20" >-- New Launch Channels or Test Card Details in C &amp; Ku-Band Satellites</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="11" >-- C Band Satellites Reception :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="68" >-- Satellite Dish Tracking Useful Tips and Tricks</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="64" >-- Ku Band Satellites Reception :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="67" >-- DVB-T and DVB-T2 Terrestrial Signal Reception :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="23" >-- Euroasian Satellite Updates :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="24" >---- Paksat IR @ 38° East</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="25" >---- Intelsat 12 @ 45° East</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="26" >---- Insat 3E, Yamal 402, G-Sat 8 @ 55° East</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="27" >---- Yamal 402 @ 55° East</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="28" >---- NSS 12 @ 57° East</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="29" >---- Intelsat 17 @ 66° East</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="30" >---- Intelsat 20 @ 68.5° East</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="31" >---- Insat 4CR @ 74° East</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="32" >---- ABS 1 @ 75° East</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="33" >---- Apstar 7 @ 76.5° East</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="34" >---- Insat 3B,	Insat 4A, Insat 2E @ 83° East</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="35" >---- ST 1 @ 88° East</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="36" >---- Measat 3 @ 91° East</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="38" >---- Insat 4B, Insat 3A @ 93.5° East	</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="37" >---- Nss 6 @ 95° East</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="39" >---- ProtoStar 1 @ 98° East</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="40" >---- Asiasat 5 @ 100.5° East</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="41" >---- AsiaStar @ 105° East</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="42" >---- Asiasat 3S @ 105.5° East</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="43" >---- SES 7 @ 107.7° East</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="44" >---- NSS 11 @ 108° East</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="45" >---- Koreasat 5. Palapa D @ 113° East</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="22" >-- Set-Top Box Firmwares / Software Upgrades:</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="13" >-- Set-Top Box &amp; Other Satellite TV Equipments :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="10" > Indian DTH Services - Direct To Home Services</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="9" selected="selected">-- DD FreeDish (DD Direct Plus DTH) - Free DTH Service</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="8" >-- Dish TV SD and Dish Tru HD  - DTH Service By Zee Network :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="7" >-- Tata Sky - Tata Sky+ - Tata Sky HD - DTH Service by TATA :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="4" >--  Airtel Digital TV SD / HD - Digital TV From Airtel :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="3" >-- Videocon D2H -D2H HD or 3D - DTH Service from Videocon :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="5" >-- Sun Direct and Sun Direct HD - DTH From Sun Network :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="6" >-- Reliance Digital TV SD / HD DTH Service From Reliance Group :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="18" >-- DTH Complaints</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="71" >-- General Dth Discussion</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="65" > Other DTH Services</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="47" >--  Dialog DTH - DTH Service From Sri Lanka :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="77" >-- ABS Freedish</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="66" >-- Home TV and Dish Nepal - DTH Service from Nepal :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="72" >-- Dish TV Sri Lanka :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="58" > IPTV - TV Channels via Internet</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="59" >-- Airtel IPTV :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="60" >-- MTNL IPTV :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="61" >  CATV- Cable TV - TV Channels via Cable TV</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="62" >-- DEN Network :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="63" >-- Hathway Cable Network :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="55" > Mobile TV / DVB-H / TV Channels on Mobile</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="56" >-- Dish Online / Mobile Application :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="57" >-- TATA Sky Mobile :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="48" > TV Programs Updates - What's New</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="49" >-- North India Television Updates :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="52" >-- South India Television Updates :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="51" > Others Updates</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="53" >-- Mobile :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="73" >---- Lumia / Window 10</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="75" >---- iPhone</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="76" >---- Firefox OS</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="74" >---- Android</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="69" >-- Online Shopping Coupons :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="54" >-- Broadband Services :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="14" > News and Announcements</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="16" >-- Latest Updates :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="50" >-- Talk and Win Prize - Sponser by Marginprice.com :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="70" >-- Government Jobs Notifications :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="19" >-- Announcements and Poll :</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="15" > Suggestions &amp; Feedback's</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="17" >-- Feedback's</option>
+<!-- end: forumjump_bit --><!-- start: forumjump_bit -->
+<option value="46" >-- SOLID Customer Support and Services</option>
+<!-- end: forumjump_bit -->
+</select>
+<!-- start: gobutton -->
+<input type="submit" class="button" value="Go" />
+<!-- end: gobutton -->
+</form>
+<script type="text/javascript">
+$(".forumjump").change(function() {
+	var option = $(this).val();
+
+	if(option < 0)
+	{
+		window.location = 'forumdisplay.php?fid='+option;
+	}
+	else
+	{
+		window.location = 'forum-'+option+'.html';
+	}
+});
+</script>
+<!-- end: forumjump_advanced -->
+	</div>
+	<br style="clear: both;" />
+	<!-- start: showthread_usersbrowsing -->
+<br />
+<span class="smalltext">Users browsing this thread: 1 Guest(s)</span>
+<br />
+<!-- end: showthread_usersbrowsing --><!-- PLUGIN_USERS_BROWSED_TOPIC -->
+	<!-- start: footer -->
+<br class="clear" />
+                        <div id="footer">
+			<div class="bottommenu">
+				<div>
+					<span class="smalltext"><a href="/">Trackdish : DTH and Dish Tracking Satellite Forum</a> | <a href="#top">Return to Top</a> | <a href="#content"></a> | <a href="misc.php?action=switch_version&amp;my_post_key=3e3e05998b2511285f3e12d9c24e4174">Mobile Version</a> | <a href="http://www.forum.trackdish.com/misc.php?action=syndication">RSS Syndication</a></span>
+				</div>
+			</div>
+
+<div class="float_right"></div>
+			<div id="copyright">
+				<!-- MyBB is free software developed and maintained by a volunteer community. 
+					 It would be much appreciated by the MyBB Group if you left the full copyright and "powered by" notice intact, 
+					 to show your support for MyBB.  If you choose to remove or modify the copyright below, 
+					 you may be refused support on the MyBB Community Forums.
+					 
+					 This is free software, support us and we'll support you. -->
+Powered By <a href="http://mybb.com/" target="_blank">MyBB</a>, &copy; 2002-2016 <a href="http://mybb.com/" target="_blank">MyBB Group</a>.<br />
+				<!-- End powered by -->
+						Flatzure theme by <b><a href="http://ikeeu.ml/">iKeeu</a></b>
+<!-- The following piece of code allows MyBB to run scheduled tasks. DO NOT REMOVE --><!-- start: task_image -->
+<img src="http://www.forum.trackdish.com/task.php" width="1" height="1" alt="" />
+<!-- end: task_image --><!-- End task image code -->
+
+		</div></div>
+		</div></div>
+
+<div><div align="center">Advertisements</div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive-trackdish -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1568180419720647"
+     data-ad-slot="3846745299"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<br class="clear" />
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33109215-7', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- end: footer -->
+  <script type="text/javascript">
+	// <!--
+		if(use_xmlhttprequest == "1")
+		{
+			$("#thread_modes").popupMenu();
+		}
+	// -->
+	</script>
+	<script type="text/javascript">
+		$(".author_avatar img").error(function () {
+			$(this).unbind("error").closest('.author_avatar').remove();
+		});
+	</script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5&appId=137522596429401";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</body>
+</html>
+<!-- end: showthread -->

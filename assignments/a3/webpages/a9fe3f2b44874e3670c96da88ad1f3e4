@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="kaypornApp">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="/assets/41b62f0c/css/video.css"/>
+<link rel="stylesheet" type="text/css" href="/assets/41b62f0c/css/jkit.css"/>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.2.2/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="/assets/41b62f0c/css/pornstars.css"/>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css"/>
+<link rel="stylesheet" type="text/css" href="/assets/41b62f0c/css/radiobuttons.css"/>
+<link rel="stylesheet" type="text/css" href="/assets/41b62f0c/css/app.css"/>
+<link rel="stylesheet" type="text/css" href="/assets/41b62f0c/css/medias.css"/>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="/assets/41b62f0c/css/home.css"/>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.min.css"/>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+<script type="text/javascript" src="/assets/41b62f0c/js/app/app.js"></script>
+<script type="text/javascript" src="/assets/41b62f0c/js/app/services/videos.js"></script>
+<script type="text/javascript" src="/assets/41b62f0c/js/app/controllers/searchCtrl.js"></script>
+<script type="text/javascript" src="/assets/41b62f0c/js/angular-local-storage.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-cookies.min.js"></script>
+<script type="text/javascript" src="/assets/41b62f0c/js/app/directives/loadVideoTemplate.js"></script>
+<script type="text/javascript" src="/assets/41b62f0c/js/app/filters/uppercase.js"></script>
+<script type="text/javascript" src="/assets/41b62f0c/js/app/directives/ng-infinite-scroll.min.js"></script>
+<title>Lisa Ann porn videos - PornKay</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+ 
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<meta name="juicyads-site-verification" content="f04014480a8ca4350968c91206764b04">
+ 
+<link rel="shortcut icon" href="/favicon.ico">
+ 
+<script type="text/javascript">
+        _atrk_opts = { atrk_acct:"SThVk1a4SBe0Io", domain:"pornkay.net",dynamic: true};
+        (function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+    </script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=SThVk1a4SBe0Io" style="display:none" height="1" width="1" alt=""/></noscript>
+ 
+<meta name="ero_verify" content="8a72bf68e053a87ad6e3ec7dba538030"/>
+<script type="text/javascript">
+        var topUrlRedirect="http://frtyb.com/go/gZ56_boDnP_jfih/porn_survey/";
+
+    </script>
+<script type="text/javascript">
+        var _prvar=_prvar||new Object();
+        (function(pa,s){if(document.getElementById('pr26690554'))return false;
+            pa=document.createElement('script');pa.type='text/javascript';pa.async=true;pa.id='pr26690554';pa.src='//prscripts.com/pub.js';
+            s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(pa,s);})();
+    </script>
+</head>
+<body>
+ 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54a843c820d05fdc" async="async"></script>
+ 
+<header>
+<div id="head">
+<div class="logo">
+<a href="/"><img src="/assets/41b62f0c/images/logo.png"></a>
+</div>
+<form id="search-form-sub" method="get" action="/search">
+<div class="search">
+<input type="text" value="Lisa Ann" onblur="if (this.value == '') this.value = 'Search Pornkay';" onfocus="if (this.value == 'Search Pornkay') this.value = '';" id="textfield" name="query">
+<input type="hidden" value="videos" id="headerTypeForm"/>
+<div id="searchTypeSwitch">
+<div class="videos" id="searchTypeStatus"><span class="dropdown-arrow down"></span>
+</div>
+<ul style="" id="searchTypeDropdown">
+<li id="stVideos">Videos</li>
+<li id="stPornstars">Pornstars</li>
+</ul>
+</div>
+<div onclick="document.getElementById('search-form-sub').submit()" class="searchbut"><img src="/assets/41b62f0c/images/search.png"></div>
+</div>
+</form>
+<div style="clear: both;"></div>
+</div>
+<div id="nav">
+<div class="navwrap">
+<ul class="navlinks">
+<li><a href="/"><img class="ina" src="/assets/41b62f0c/images/home-active.png"><img class="act" src="/assets/41b62f0c/images/home.png">Home</a></li>
+<li><a href="/pornstars"><img class="ina" src="/assets/41b62f0c/images/pornstar-active.png"><img class="act" src="/assets/41b62f0c/images/pornstar.png">Pornstars</a></li>
+<li><a target="_blank" href="http://www.kaybabes.com"><img class="ina" src="/assets/41b62f0c/images/hd-videos-active.png"><img class="act" src="/assets/41b62f0c/images/hd-videos-dark.png">Hd Galleries</a></li>
+<li><a target="_blank" href="/ref/sexCams"><img class="ina" src="/assets/41b62f0c/images/livesex-active.png"><img class="act" src="/assets/41b62f0c/images/livesex-dark.png">Sex Cams</a></li>
+<li><a target="_blank" href="/ref/meetAndFuck"><img class="ina" src="/assets/41b62f0c/images/fdate-active.png"><img class="act" src="/assets/41b62f0c/images/fdate-dark.png">Meet &amp; Fuck</a></li>
+</ul>
+</div>
+</div>
+</header>
+<script>
+    $(document).ready(function(){
+        $("#stPornstars").click(function(){
+            $("#searchTypeStatus").removeClass("videos").addClass("pornstars");
+            $("#headerTypeForm").val("pornstars");
+            $("#searchTypeDropdown").toggle();
+
+        });
+        $("#stVideos").click(function(){
+            $("#searchTypeStatus").removeClass("pornstars").addClass("videos");
+            $("#headerTypeForm").val("videos");
+            $("#searchTypeDropdown").toggle();
+
+        });
+        $("#searchTypeStatus").click(function(){
+            $("#searchTypeDropdown").toggle();
+        })
+    })
+</script> 
+<div class="container" id="full-container" style="">
+<script>
+    var firstLoadData = {"videos":[{"site":"Pornhub","duration":"00:00:15","icon":"pornhub","images_sequences":"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16","base_path":"http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201102\/19\/215204\/240x180\/","average_rating":100,"imageWithIndex":"http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201102\/19\/215204\/original\/{index}.jpg?m=eWdT8daaaa&mh=FPZSzlcq_OiudAps","firstImage":"http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201102\/19\/215204\/original\/1.jpg?m=eWdT8daaaa&mh=FPZSzlcq_OiudAps","rating":100,"views":4407,"is_hd":false,"url":"http:\/\/www.pornkay.net\/videos\/view\/59115\/Lisa_Ann","id":59115,"title":"Lisa Ann","publish_time":1298070000,"_dataType":"Pornhub","id_video":"1544718912","images":["http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201102\/19\/215204\/240x180\/1.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201102\/19\/215204\/240x180\/2.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201102\/19\/215204\/240x180\/3.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201102\/19\/215204\/240x180\/4.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201102\/19\/215204\/240x180\/5.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201102\/19\/215204\/240x180\/6.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201102\/19\/215204\/240x180\/7.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201102\/19\/215204\/240x180\/8.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201102\/19\/215204\/240x180\/9.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201102\/19\/215204\/240x180\/10.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201102\/19\/215204\/240x180\/11.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201102\/19\/215204\/240x180\/12.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201102\/19\/215204\/240x180\/13.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201102\/19\/215204\/240x180\/14.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201102\/19\/215204\/240x180\/15.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201102\/19\/215204\/240x180\/16.jpg"],"related":[577713,3988881,2032085,2460711,4662201,4141442,152010,3200989,3215034,3430973,7314516,3542023,6519318,3490102,206675,5242441,579340,1577469,3174155,3595360],"_id":"54036cd15b839e3b2e9fc2bb"},{"site":"Spankwire","duration":"00:12:35","icon":"spankwire","images_sequences":"1,2,3,4,5,6,7,8,9,10","base_path":"http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201105\/04\/268982\/originals\/","average_rating":88,"imageWithIndex":"http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201105\/04\/268982\/originals\/{index}.jpg","firstImage":"http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201105\/04\/268982\/originals\/1.jpg","rating":88,"views":145033,"is_hd":false,"url":"http:\/\/www.pornkay.net\/videos\/view\/4498445\/Lisa_Ann","id":4498445,"title":"Lisa Ann","publish_time":0,"_dataType":"Spankwire","id_video":268982,"images":["http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201105\/04\/268982\/originals\/1.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201105\/04\/268982\/originals\/2.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201105\/04\/268982\/originals\/3.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201105\/04\/268982\/originals\/4.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201105\/04\/268982\/originals\/5.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201105\/04\/268982\/originals\/6.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201105\/04\/268982\/originals\/7.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201105\/04\/268982\/originals\/8.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201105\/04\/268982\/originals\/9.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201105\/04\/268982\/originals\/10.jpg"],"related":[577713,3988881,2032085,2460711,4662201,4141442,152010,3200989,3215034,3430973,7314516,3542023,6519318,3490102,206675,5242441,579340,1577469,3174155,3595360],"_id":"541d82315a4addc4166b0c3b"},{"site":"Youjizz","duration":"00:31:34","icon":"youjizz","images_sequences":"1,2,3,4,5,6,7,8","base_path":"http:\/\/cdna.pics.youjizz.com\/3\/f\/0\/","average_rating":60,"imageWithIndex":"http:\/\/cdna.pics.youjizz.com\/3\/f\/0\/3f0a9c109ca0042e21eaa2872eadf7b01396592127-480-272-301-h264.flv-{index}.jpg","firstImage":"http:\/\/cdna.pics.youjizz.com\/3\/f\/0\/3f0a9c109ca0042e21eaa2872eadf7b01396592127-480-272-301-h264.flv-1.jpg","rating":60,"views":6036,"is_hd":false,"url":"http:\/\/www.pornkay.net\/videos\/view\/5268214\/Lisa_Ann","id":5268214,"title":"Lisa Ann","publish_time":0,"_dataType":"Youjizz","id_video":"16342141","images":["http:\/\/cdna.pics.youjizz.com\/3\/f\/0\/3f0a9c109ca0042e21eaa2872eadf7b01396592127-480-272-301-h264.flv-1.jpg","http:\/\/cdna.pics.youjizz.com\/3\/f\/0\/3f0a9c109ca0042e21eaa2872eadf7b01396592127-480-272-301-h264.flv-2.jpg","http:\/\/cdna.pics.youjizz.com\/3\/f\/0\/3f0a9c109ca0042e21eaa2872eadf7b01396592127-480-272-301-h264.flv-3.jpg","http:\/\/cdna.pics.youjizz.com\/3\/f\/0\/3f0a9c109ca0042e21eaa2872eadf7b01396592127-480-272-301-h264.flv-4.jpg","http:\/\/cdna.pics.youjizz.com\/3\/f\/0\/3f0a9c109ca0042e21eaa2872eadf7b01396592127-480-272-301-h264.flv-5.jpg","http:\/\/cdna.pics.youjizz.com\/3\/f\/0\/3f0a9c109ca0042e21eaa2872eadf7b01396592127-480-272-301-h264.flv-6.jpg","http:\/\/cdna.pics.youjizz.com\/3\/f\/0\/3f0a9c109ca0042e21eaa2872eadf7b01396592127-480-272-301-h264.flv-7.jpg","http:\/\/cdna.pics.youjizz.com\/3\/f\/0\/3f0a9c109ca0042e21eaa2872eadf7b01396592127-480-272-301-h264.flv-8.jpg"],"related":[577713,3988881,2032085,2460711,4662201,4141442,152010,3200989,3215034,3430973,7314516,3542023,6519318,3490102,206675,5242441,579340,1577469,3174155,3595360],"_id":"5434a7515a4add4b09ce7529"},{"site":"Youjizz","duration":"00:25:00","icon":"youjizz","images_sequences":"1,2,3,4,5,6,7,8","base_path":"http:\/\/cdna.pics.youjizz.com\/5\/1\/4\/","average_rating":80,"imageWithIndex":"http:\/\/cdna.pics.youjizz.com\/5\/1\/4\/5142bec2d433b901be4ac16c02-646-364-400-h264.flv-{index}.jpg","firstImage":"http:\/\/cdna.pics.youjizz.com\/5\/1\/4\/5142bec2d433b901be4ac16c02-646-364-400-h264.flv-1.jpg","rating":80,"views":10066,"is_hd":false,"url":"http:\/\/www.pornkay.net\/videos\/view\/5323545\/Lisa_Ann","id":5323545,"title":"Lisa Ann","publish_time":0,"_dataType":"Youjizz","id_video":"6177571","images":["http:\/\/cdna.pics.youjizz.com\/5\/1\/4\/5142bec2d433b901be4ac16c02-646-364-400-h264.flv-1.jpg","http:\/\/cdna.pics.youjizz.com\/5\/1\/4\/5142bec2d433b901be4ac16c02-646-364-400-h264.flv-2.jpg","http:\/\/cdna.pics.youjizz.com\/5\/1\/4\/5142bec2d433b901be4ac16c02-646-364-400-h264.flv-3.jpg","http:\/\/cdna.pics.youjizz.com\/5\/1\/4\/5142bec2d433b901be4ac16c02-646-364-400-h264.flv-4.jpg","http:\/\/cdna.pics.youjizz.com\/5\/1\/4\/5142bec2d433b901be4ac16c02-646-364-400-h264.flv-5.jpg","http:\/\/cdna.pics.youjizz.com\/5\/1\/4\/5142bec2d433b901be4ac16c02-646-364-400-h264.flv-6.jpg","http:\/\/cdna.pics.youjizz.com\/5\/1\/4\/5142bec2d433b901be4ac16c02-646-364-400-h264.flv-7.jpg","http:\/\/cdna.pics.youjizz.com\/5\/1\/4\/5142bec2d433b901be4ac16c02-646-364-400-h264.flv-8.jpg"],"related":[577713,3988881,2032085,2460711,4662201,4141442,152010,3200989,3215034,3430973,7314516,3542023,6519318,3490102,206675,5242441,579340,1577469,3174155,3595360],"_id":"5434bf595a4adde10acd3603"},{"site":"Cliphunter","duration":"00:09:58","icon":"cliphunter","images_sequences":"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16","base_path":"http:\/\/p4a.gexo.com\/11427\/","average_rating":86,"imageWithIndex":"http:\/\/p4a.gexo.com\/11427\/1142791_{index}.jpg","firstImage":"http:\/\/p4a.gexo.com\/11427\/1142791_1.jpg","rating":86,"views":3048,"is_hd":false,"url":"http:\/\/www.pornkay.net\/videos\/view\/5102724\/Lisa_Ann","id":5102724,"title":"Lisa Ann","publish_time":1391468400,"_dataType":"Cliphunter","id_video":1942783,"images":["http:\/\/p4a.gexo.com\/11427\/1142791_1.jpg","http:\/\/p4a.gexo.com\/11427\/1142791_2.jpg","http:\/\/p4a.gexo.com\/11427\/1142791_3.jpg","http:\/\/p4a.gexo.com\/11427\/1142791_4.jpg","http:\/\/p4a.gexo.com\/11427\/1142791_5.jpg","http:\/\/p4a.gexo.com\/11427\/1142791_6.jpg","http:\/\/p4a.gexo.com\/11427\/1142791_7.jpg","http:\/\/p4a.gexo.com\/11427\/1142791_8.jpg","http:\/\/p4a.gexo.com\/11427\/1142791_9.jpg","http:\/\/p4a.gexo.com\/11427\/1142791_10.jpg","http:\/\/p4a.gexo.com\/11427\/1142791_11.jpg","http:\/\/p4a.gexo.com\/11427\/1142791_12.jpg","http:\/\/p4a.gexo.com\/11427\/1142791_13.jpg","http:\/\/p4a.gexo.com\/11427\/1142791_14.jpg","http:\/\/p4a.gexo.com\/11427\/1142791_15.jpg","http:\/\/p4a.gexo.com\/11427\/1142791_16.jpg"],"related":[577713,3988881,2032085,2460711,4662201,4141442,152010,3200989,3215034,3430973,7314516,3542023,6519318,3490102,206675,5242441,579340,1577469,3174155,3595360],"_id":"5421ece55a4add52421d4a53"},{"site":"Tube8","duration":"00:37:32","icon":"tube8","images_sequences":"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16","base_path":"http:\/\/cdn2.image.tube8.phncdn.com\/201012\/09\/533122\/\/240x180\/","average_rating":79,"imageWithIndex":"http:\/\/cdn2.image.tube8.phncdn.com\/201012\/09\/533122\/\/240x180\/{index}.jpg","firstImage":"http:\/\/cdn2.image.tube8.phncdn.com\/201012\/09\/533122\/\/240x180\/1.jpg","rating":79,"views":36761,"is_hd":false,"url":"http:\/\/www.pornkay.net\/videos\/view\/230592\/Lisa_Ann","id":230592,"title":"Lisa Ann","publish_time":1291849200,"_dataType":"Tube8","id_video":533122,"images":["http:\/\/cdn2.image.tube8.phncdn.com\/201012\/09\/533122\/\/240x180\/1.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201012\/09\/533122\/\/240x180\/2.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201012\/09\/533122\/\/240x180\/3.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201012\/09\/533122\/\/240x180\/4.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201012\/09\/533122\/\/240x180\/5.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201012\/09\/533122\/\/240x180\/6.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201012\/09\/533122\/\/240x180\/7.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201012\/09\/533122\/\/240x180\/8.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201012\/09\/533122\/\/240x180\/9.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201012\/09\/533122\/\/240x180\/10.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201012\/09\/533122\/\/240x180\/11.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201012\/09\/533122\/\/240x180\/12.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201012\/09\/533122\/\/240x180\/13.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201012\/09\/533122\/\/240x180\/14.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201012\/09\/533122\/\/240x180\/15.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201012\/09\/533122\/\/240x180\/16.jpg"],"related":[577713,3988881,2032085,2460711,4662201,4141442,152010,3200989,3215034,3430973,7314516,3542023,6519318,3490102,206675,5242441,579340,1577469,3174155,3595360],"_id":"54040e135b839e99509fabc2"},{"site":"Pornhub","duration":"00:29:36","icon":"pornhub","images_sequences":"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16","base_path":"http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201305\/26\/12635551\/240x180\/","average_rating":93,"imageWithIndex":"http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201305\/26\/12635551\/original\/{index}.jpg?m=eWdT8daaaa&mh=FPZSzlcq_OiudAps","firstImage":"http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201305\/26\/12635551\/original\/1.jpg?m=eWdT8daaaa&mh=FPZSzlcq_OiudAps","rating":93,"views":103561,"is_hd":false,"url":"http:\/\/www.pornkay.net\/videos\/view\/594164\/Lisa_Ann","id":594164,"title":"Lisa Ann","publish_time":1369519200,"_dataType":"Pornhub","id_video":"674817496","images":["http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201305\/26\/12635551\/240x180\/1.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201305\/26\/12635551\/240x180\/2.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201305\/26\/12635551\/240x180\/3.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201305\/26\/12635551\/240x180\/4.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201305\/26\/12635551\/240x180\/5.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201305\/26\/12635551\/240x180\/6.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201305\/26\/12635551\/240x180\/7.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201305\/26\/12635551\/240x180\/8.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201305\/26\/12635551\/240x180\/9.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201305\/26\/12635551\/240x180\/10.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201305\/26\/12635551\/240x180\/11.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201305\/26\/12635551\/240x180\/12.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201305\/26\/12635551\/240x180\/13.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201305\/26\/12635551\/240x180\/14.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201305\/26\/12635551\/240x180\/15.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201305\/26\/12635551\/240x180\/16.jpg"],"related":[577713,3988881,2032085,2460711,4662201,4141442,152010,3200989,3215034,3430973,7314516,3542023,6519318,3490102,206675,5242441,579340,1577469,3174155,3595360],"_id":"5406c74a5b839e5c399f7c3b"},{"site":"Tube8","duration":"00:07:58","icon":"tube8","images_sequences":"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16","base_path":"http:\/\/cdn2.image.tube8.phncdn.com\/201108\/14\/1359231\/\/240x180\/","average_rating":95,"imageWithIndex":"http:\/\/cdn2.image.tube8.phncdn.com\/201108\/14\/1359231\/\/240x180\/{index}.jpg","firstImage":"http:\/\/cdn2.image.tube8.phncdn.com\/201108\/14\/1359231\/\/240x180\/1.jpg","rating":95,"views":55050,"is_hd":false,"url":"http:\/\/www.pornkay.net\/videos\/view\/609730\/Lisa_Ann","id":609730,"title":"Lisa Ann","publish_time":1313272800,"_dataType":"Tube8","id_video":1359231,"images":["http:\/\/cdn2.image.tube8.phncdn.com\/201108\/14\/1359231\/\/240x180\/1.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201108\/14\/1359231\/\/240x180\/2.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201108\/14\/1359231\/\/240x180\/3.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201108\/14\/1359231\/\/240x180\/4.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201108\/14\/1359231\/\/240x180\/5.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201108\/14\/1359231\/\/240x180\/6.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201108\/14\/1359231\/\/240x180\/7.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201108\/14\/1359231\/\/240x180\/8.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201108\/14\/1359231\/\/240x180\/9.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201108\/14\/1359231\/\/240x180\/10.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201108\/14\/1359231\/\/240x180\/11.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201108\/14\/1359231\/\/240x180\/12.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201108\/14\/1359231\/\/240x180\/13.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201108\/14\/1359231\/\/240x180\/14.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201108\/14\/1359231\/\/240x180\/15.jpg","http:\/\/cdn2.image.tube8.phncdn.com\/201108\/14\/1359231\/\/240x180\/16.jpg"],"related":[577713,3988881,2032085,2460711,4662201,4141442,152010,3200989,3215034,3430973,7314516,3542023,6519318,3490102,206675,5242441,579340,1577469,3174155,3595360],"_id":"5407143f5b839e88718b4691"},{"site":"Pornhub","duration":"00:05:01","icon":"pornhub","images_sequences":"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16","base_path":"http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201405\/01\/26262532\/240x180\/","average_rating":85,"imageWithIndex":"http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201405\/01\/26262532\/original\/{index}.jpg?m=eWdT8daaaa&mh=FPZSzlcq_OiudAps","firstImage":"http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201405\/01\/26262532\/original\/1.jpg?m=eWdT8daaaa&mh=FPZSzlcq_OiudAps","rating":85,"views":12475,"is_hd":false,"url":"http:\/\/www.pornkay.net\/videos\/view\/1087463\/Lisa_Ann","id":1087463,"title":"Lisa Ann","publish_time":1398895200,"_dataType":"Pornhub","id_video":"755096400","images":["http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201405\/01\/26262532\/240x180\/1.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201405\/01\/26262532\/240x180\/2.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201405\/01\/26262532\/240x180\/3.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201405\/01\/26262532\/240x180\/4.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201405\/01\/26262532\/240x180\/5.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201405\/01\/26262532\/240x180\/6.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201405\/01\/26262532\/240x180\/7.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201405\/01\/26262532\/240x180\/8.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201405\/01\/26262532\/240x180\/9.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201405\/01\/26262532\/240x180\/10.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201405\/01\/26262532\/240x180\/11.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201405\/01\/26262532\/240x180\/12.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201405\/01\/26262532\/240x180\/13.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201405\/01\/26262532\/240x180\/14.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201405\/01\/26262532\/240x180\/15.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201405\/01\/26262532\/240x180\/16.jpg"],"related":[577713,3988881,2032085,2460711,4662201,4141442,152010,3200989,3215034,3430973,7314516,3542023,6519318,3490102,206675,5242441,579340,1577469,3174155,3595360],"_id":"540799f55b839e2b3e8b4c25"},{"site":"Youporn","duration":"00:05:01","icon":"youporn","images_sequences":"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16","base_path":"http:\/\/cdn4.image.youporn.phncdn.com\/201310\/02\/8888699\/original\/","average_rating":73,"imageWithIndex":"http:\/\/cdn4.image.youporn.phncdn.com\/201310\/02\/8888699\/original\/{index}.jpg?m=eWdT8daaaa&mh=FPZSzlcq_OiudAps","firstImage":"http:\/\/cdn4.image.youporn.phncdn.com\/201310\/02\/8888699\/original\/1.jpg?m=eWdT8daaaa&mh=FPZSzlcq_OiudAps","rating":73,"views":3844,"is_hd":false,"url":"http:\/\/www.pornkay.net\/videos\/view\/1577450\/Lisa_Ann","id":1577450,"title":"Lisa Ann","publish_time":1380664800,"_dataType":"Youporn","id_video":"8888699","images":["http:\/\/cdn4.image.youporn.phncdn.com\/201310\/02\/8888699\/original\/1.jpg","http:\/\/cdn5.image.youporn.phncdn.com\/201310\/02\/8888699\/original\/2.jpg","http:\/\/cdn5.image.youporn.phncdn.com\/201310\/02\/8888699\/original\/3.jpg","http:\/\/cdn5.image.youporn.phncdn.com\/201310\/02\/8888699\/original\/4.jpg","http:\/\/cdn5.image.youporn.phncdn.com\/201310\/02\/8888699\/original\/5.jpg","http:\/\/cdn4.image.youporn.phncdn.com\/201310\/02\/8888699\/original\/6.jpg","http:\/\/cdn4.image.youporn.phncdn.com\/201310\/02\/8888699\/original\/7.jpg","http:\/\/cdn5.image.youporn.phncdn.com\/201310\/02\/8888699\/original\/8.jpg","http:\/\/cdn5.image.youporn.phncdn.com\/201310\/02\/8888699\/original\/9.jpg","http:\/\/cdn4.image.youporn.phncdn.com\/201310\/02\/8888699\/original\/10.jpg","http:\/\/cdn4.image.youporn.phncdn.com\/201310\/02\/8888699\/original\/11.jpg","http:\/\/cdn4.image.youporn.phncdn.com\/201310\/02\/8888699\/original\/12.jpg","http:\/\/cdn4.image.youporn.phncdn.com\/201310\/02\/8888699\/original\/13.jpg","http:\/\/cdn5.image.youporn.phncdn.com\/201310\/02\/8888699\/original\/14.jpg","http:\/\/cdn5.image.youporn.phncdn.com\/201310\/02\/8888699\/original\/15.jpg","http:\/\/cdn5.image.youporn.phncdn.com\/201310\/02\/8888699\/original\/16.jpg"],"related":[577713,3988881,2032085,2460711,4662201,4141442,152010,3200989,3215034,3430973,7314516,3542023,6519318,3490102,206675,5242441,579340,1577469,3174155,3595360],"_id":"5407fb605b839e170c8b68a7"},{"site":"Tube8","duration":"00:24:56","icon":"tube8","images_sequences":"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16","base_path":"http:\/\/cdn1.image.tube8.phncdn.com\/201311\/28\/16922531\/\/240x180\/","average_rating":96,"imageWithIndex":"http:\/\/cdn1.image.tube8.phncdn.com\/201311\/28\/16922531\/\/240x180\/{index}.jpg","firstImage":"http:\/\/cdn1.image.tube8.phncdn.com\/201311\/28\/16922531\/\/240x180\/1.jpg","rating":96,"views":386493,"is_hd":false,"url":"http:\/\/www.pornkay.net\/videos\/view\/1986904\/Lisa_Ann","id":1986904,"title":"Lisa Ann","publish_time":1385593200,"_dataType":"Tube8","id_video":16922531,"images":["http:\/\/cdn1.image.tube8.phncdn.com\/201311\/28\/16922531\/\/240x180\/1.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201311\/28\/16922531\/\/240x180\/2.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201311\/28\/16922531\/\/240x180\/3.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201311\/28\/16922531\/\/240x180\/4.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201311\/28\/16922531\/\/240x180\/5.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201311\/28\/16922531\/\/240x180\/6.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201311\/28\/16922531\/\/240x180\/7.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201311\/28\/16922531\/\/240x180\/8.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201311\/28\/16922531\/\/240x180\/9.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201311\/28\/16922531\/\/240x180\/10.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201311\/28\/16922531\/\/240x180\/11.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201311\/28\/16922531\/\/240x180\/12.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201311\/28\/16922531\/\/240x180\/13.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201311\/28\/16922531\/\/240x180\/14.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201311\/28\/16922531\/\/240x180\/15.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201311\/28\/16922531\/\/240x180\/16.jpg"],"related":[577713,3988881,2032085,2460711,4662201,4141442,152010,3200989,3215034,3430973,7314516,3542023,6519318,3490102,206675,5242441,579340,1577469,3174155,3595360],"_id":"540892295b839ea9338b67ad"},{"site":"Pornhub","duration":"00:26:09","icon":"pornhub","images_sequences":"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16","base_path":"http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201304\/03\/11023411\/240x180\/","average_rating":96,"imageWithIndex":"http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201304\/03\/11023411\/original\/{index}.jpg?m=eWdT8daaaa&mh=FPZSzlcq_OiudAps","firstImage":"http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201304\/03\/11023411\/original\/1.jpg?m=eWdT8daaaa&mh=FPZSzlcq_OiudAps","rating":96,"views":21143,"is_hd":false,"url":"http:\/\/www.pornkay.net\/videos\/view\/2395709\/LISA_ANN","id":2395709,"title":"LISA ANN","publish_time":1364940000,"_dataType":"Pornhub","id_video":"129086671","images":["http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201304\/03\/11023411\/240x180\/1.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201304\/03\/11023411\/240x180\/2.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201304\/03\/11023411\/240x180\/3.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201304\/03\/11023411\/240x180\/4.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201304\/03\/11023411\/240x180\/5.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201304\/03\/11023411\/240x180\/6.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201304\/03\/11023411\/240x180\/7.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201304\/03\/11023411\/240x180\/8.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201304\/03\/11023411\/240x180\/9.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201304\/03\/11023411\/240x180\/10.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201304\/03\/11023411\/240x180\/11.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201304\/03\/11023411\/240x180\/12.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201304\/03\/11023411\/240x180\/13.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201304\/03\/11023411\/240x180\/14.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201304\/03\/11023411\/240x180\/15.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201304\/03\/11023411\/240x180\/16.jpg"],"related":[577713,3988881,2032085,2460711,4662201,4141442,152010,3200989,3215034,3430973,7314516,3542023,6519318,3490102,206675,5242441,579340,1577469,3174155,3595360],"_id":"540919e95b839e8b748b593c"},{"site":"Pornhub","duration":"00:08:00","icon":"pornhub","images_sequences":"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16","base_path":"http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201401\/18\/22111482\/240x180\/","average_rating":0,"imageWithIndex":"http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201401\/18\/22111482\/original\/{index}.jpg?m=eWdT8daaaa&mh=FPZSzlcq_OiudAps","firstImage":"http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201401\/18\/22111482\/original\/1.jpg?m=eWdT8daaaa&mh=FPZSzlcq_OiudAps","rating":100,"views":0,"is_hd":false,"url":"http:\/\/www.pornkay.net\/videos\/view\/3582076\/Lisa_Ann","id":3582076,"title":"Lisa Ann","publish_time":1389999600,"_dataType":"Pornhub","id_video":"1098188429","images":["http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201401\/18\/22111482\/240x180\/1.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201401\/18\/22111482\/240x180\/2.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201401\/18\/22111482\/240x180\/3.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201401\/18\/22111482\/240x180\/4.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201401\/18\/22111482\/240x180\/5.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201401\/18\/22111482\/240x180\/6.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201401\/18\/22111482\/240x180\/7.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201401\/18\/22111482\/240x180\/8.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201401\/18\/22111482\/240x180\/9.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201401\/18\/22111482\/240x180\/10.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201401\/18\/22111482\/240x180\/11.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201401\/18\/22111482\/240x180\/12.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201401\/18\/22111482\/240x180\/13.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201401\/18\/22111482\/240x180\/14.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201401\/18\/22111482\/240x180\/15.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201401\/18\/22111482\/240x180\/16.jpg"],"related":[577713,3988881,2032085,2460711,4662201,4141442,152010,3200989,3215034,3430973,7314516,3542023,6519318,3490102,206675,5242441,579340,1577469,3174155,3595360],"_id":"540a536e5b839e9c0a8b6556"},{"site":"Spankwire","duration":"00:28:51","icon":"spankwire","images_sequences":"1,2,3,4,5,6,7,8,9,10","base_path":"http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201307\/31\/1077996\/originals\/","average_rating":34,"imageWithIndex":"http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201307\/31\/1077996\/originals\/{index}.jpg","firstImage":"http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201307\/31\/1077996\/originals\/1.jpg","rating":34,"views":33408,"is_hd":false,"url":"http:\/\/www.pornkay.net\/videos\/view\/4613241\/Lisa_Ann","id":4613241,"title":"Lisa Ann","publish_time":1387666800,"_dataType":"Spankwire","id_video":1077996,"images":["http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201307\/31\/1077996\/originals\/1.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201307\/31\/1077996\/originals\/2.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201307\/31\/1077996\/originals\/3.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201307\/31\/1077996\/originals\/4.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201307\/31\/1077996\/originals\/5.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201307\/31\/1077996\/originals\/6.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201307\/31\/1077996\/originals\/7.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201307\/31\/1077996\/originals\/8.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201307\/31\/1077996\/originals\/9.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201307\/31\/1077996\/originals\/10.jpg"],"related":[577713,3988881,2032085,2460711,4662201,4141442,152010,3200989,3215034,3430973,7314516,3542023,6519318,3490102,206675,5242441,579340,1577469,3174155,3595360],"_id":"541dc7e05a4add2a1f588235"},{"site":"Pornhub","duration":"00:31:05","icon":"pornhub","images_sequences":"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16","base_path":"http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201202\/10\/4280946\/240x180\/","average_rating":80,"imageWithIndex":"http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201202\/10\/4280946\/original\/{index}.jpg?m=eWdT8daaaa&mh=FPZSzlcq_OiudAps","firstImage":"http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201202\/10\/4280946\/original\/1.jpg?m=eWdT8daaaa&mh=FPZSzlcq_OiudAps","rating":80,"views":23527,"is_hd":false,"url":"http:\/\/www.pornkay.net\/videos\/view\/1434755\/Lisa_Ann","id":1434755,"title":"Lisa Ann","publish_time":1328828400,"_dataType":"Pornhub","id_video":"2072360868","images":["http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201202\/10\/4280946\/240x180\/1.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201202\/10\/4280946\/240x180\/2.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201202\/10\/4280946\/240x180\/3.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201202\/10\/4280946\/240x180\/4.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201202\/10\/4280946\/240x180\/5.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201202\/10\/4280946\/240x180\/6.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201202\/10\/4280946\/240x180\/7.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201202\/10\/4280946\/240x180\/8.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201202\/10\/4280946\/240x180\/9.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201202\/10\/4280946\/240x180\/10.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201202\/10\/4280946\/240x180\/11.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201202\/10\/4280946\/240x180\/12.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201202\/10\/4280946\/240x180\/13.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201202\/10\/4280946\/240x180\/14.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201202\/10\/4280946\/240x180\/15.jpg","http:\/\/thumb0.cdn1b.image.pornhub.phncdn.com\/videos\/\/201202\/10\/4280946\/240x180\/16.jpg"],"related":[577713,3988881,2032085,2460711,4662201,4141442,152010,3200989,3215034,3430973,7314516,3542023,6519318,3490102,206675,5242441,579340,1577469,3174155,3595360],"_id":"5407df965b839ea95f8b635d"},{"site":"Youporn","duration":"00:37:36","icon":"youporn","images_sequences":"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16","base_path":"http:\/\/cdn4.image.youporn.phncdn.com\/201311\/27\/9044794\/original\/","average_rating":85,"imageWithIndex":"http:\/\/cdn4.image.youporn.phncdn.com\/201311\/27\/9044794\/original\/{index}.jpg?m=eWdT8daaaa&mh=FPZSzlcq_OiudAps","firstImage":"http:\/\/cdn4.image.youporn.phncdn.com\/201311\/27\/9044794\/original\/1.jpg?m=eWdT8daaaa&mh=FPZSzlcq_OiudAps","rating":85,"views":74618,"is_hd":false,"url":"http:\/\/www.pornkay.net\/videos\/view\/1654309\/Lisa_Ann","id":1654309,"title":"Lisa Ann","publish_time":1385506800,"_dataType":"Youporn","id_video":"9044794","images":["http:\/\/cdn4.image.youporn.phncdn.com\/201311\/27\/9044794\/original\/1.jpg","http:\/\/cdn4.image.youporn.phncdn.com\/201311\/27\/9044794\/original\/2.jpg","http:\/\/cdn5.image.youporn.phncdn.com\/201311\/27\/9044794\/original\/3.jpg","http:\/\/cdn4.image.youporn.phncdn.com\/201311\/27\/9044794\/original\/4.jpg","http:\/\/cdn5.image.youporn.phncdn.com\/201311\/27\/9044794\/original\/5.jpg","http:\/\/cdn5.image.youporn.phncdn.com\/201311\/27\/9044794\/original\/6.jpg","http:\/\/cdn5.image.youporn.phncdn.com\/201311\/27\/9044794\/original\/7.jpg","http:\/\/cdn5b.image.youporn.phncdn.com\/201311\/27\/9044794\/original\/8.jpg","http:\/\/cdn4.image.youporn.phncdn.com\/201311\/27\/9044794\/original\/9.jpg","http:\/\/cdn5.image.youporn.phncdn.com\/201311\/27\/9044794\/original\/10.jpg","http:\/\/cdn4.image.youporn.phncdn.com\/201311\/27\/9044794\/original\/11.jpg","http:\/\/cdn5.image.youporn.phncdn.com\/201311\/27\/9044794\/original\/12.jpg","http:\/\/cdn5.image.youporn.phncdn.com\/201311\/27\/9044794\/original\/13.jpg","http:\/\/cdn4.image.youporn.phncdn.com\/201311\/27\/9044794\/original\/14.jpg","http:\/\/cdn5.image.youporn.phncdn.com\/201311\/27\/9044794\/original\/15.jpg","http:\/\/cdn4.image.youporn.phncdn.com\/201311\/27\/9044794\/original\/16.jpg"],"related":[3679961,3499313,119806,152035,3173612,1434755,3496525,1654309,1081753,1975322,4604104,7642721,3426657,3505263,3582076,1087463,1577450,4498445,5323545,4613241],"_id":"5408098b5b839e694b8b4b35"},{"site":"Tube8","duration":"00:25:53","icon":"tube8","images_sequences":"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16","base_path":"http:\/\/cdn1.image.tube8.phncdn.com\/201310\/23\/16020731\/\/240x180\/","average_rating":94,"imageWithIndex":"http:\/\/cdn1.image.tube8.phncdn.com\/201310\/23\/16020731\/\/240x180\/{index}.jpg","firstImage":"http:\/\/cdn1.image.tube8.phncdn.com\/201310\/23\/16020731\/\/240x180\/1.jpg","rating":94,"views":124093,"is_hd":false,"url":"http:\/\/www.pornkay.net\/videos\/view\/1975322\/Lisa_Ann","id":1975322,"title":"Lisa Ann","publish_time":1382479200,"_dataType":"Tube8","id_video":16020731,"images":["http:\/\/cdn1.image.tube8.phncdn.com\/201310\/23\/16020731\/\/240x180\/1.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201310\/23\/16020731\/\/240x180\/2.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201310\/23\/16020731\/\/240x180\/3.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201310\/23\/16020731\/\/240x180\/4.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201310\/23\/16020731\/\/240x180\/5.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201310\/23\/16020731\/\/240x180\/6.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201310\/23\/16020731\/\/240x180\/7.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201310\/23\/16020731\/\/240x180\/8.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201310\/23\/16020731\/\/240x180\/9.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201310\/23\/16020731\/\/240x180\/10.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201310\/23\/16020731\/\/240x180\/11.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201310\/23\/16020731\/\/240x180\/12.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201310\/23\/16020731\/\/240x180\/13.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201310\/23\/16020731\/\/240x180\/14.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201310\/23\/16020731\/\/240x180\/15.jpg","http:\/\/cdn1.image.tube8.phncdn.com\/201310\/23\/16020731\/\/240x180\/16.jpg"],"related":[3679961,3499313,152035,3173612,1434755,1081753,1975322,4604104,7642721,3426657,1654309,3496525,119806,60153,206675,5242441,579340,1577469,3174155,3595360],"_id":"54088cf95b839ea9338b5598"},{"site":"Spankwire","duration":"00:30:16","icon":"spankwire","images_sequences":"1,2,3,4,5,6,7,8,9,10","base_path":"http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201303\/09\/764636\/originals\/","average_rating":89,"imageWithIndex":"http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201303\/09\/764636\/originals\/{index}.jpg","firstImage":"http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201303\/09\/764636\/originals\/1.jpg","rating":89,"views":305328,"is_hd":false,"url":"http:\/\/www.pornkay.net\/videos\/view\/4604104\/lisa_ann","id":4604104,"title":"lisa ann","publish_time":1363474800,"_dataType":"Spankwire","id_video":764636,"images":["http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201303\/09\/764636\/originals\/1.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201303\/09\/764636\/originals\/2.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201303\/09\/764636\/originals\/3.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201303\/09\/764636\/originals\/4.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201303\/09\/764636\/originals\/5.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201303\/09\/764636\/originals\/6.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201303\/09\/764636\/originals\/7.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201303\/09\/764636\/originals\/8.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201303\/09\/764636\/originals\/9.jpg","http:\/\/cdn3.image.spankwire.phncdn.com\/m=eaf88f\/201303\/09\/764636\/originals\/10.jpg"],"related":[3679961,3499313,152035,3173612,1434755,1081753,4604104,7642721,3426657,1654309,119806,3496525,1975322,2752300,128154,3476959,1577529,357490,1604521,5564406],"_id":"541dbe005a4add651d32f4dc"},{"site":"Cliphunter","duration":"00:37:33","icon":"cliphunter","images_sequences":"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16","base_path":"http:\/\/p4a.gexo.com\/10446\/","average_rating":86,"imageWithIndex":"http:\/\/p4a.gexo.com\/10446\/1044683_{index}.jpg","firstImage":"http:\/\/p4a.gexo.com\/10446\/1044683_1.jpg","rating":86,"views":22854,"is_hd":false,"url":"http:\/\/www.pornkay.net\/videos\/view\/3496525\/lisa_ann","id":3496525,"title":"lisa ann","publish_time":1382652000,"_dataType":"Cliphunter","id_video":1867104,"images":["http:\/\/p4a.gexo.com\/10446\/1044683_1.jpg","http:\/\/p4a.gexo.com\/10446\/1044683_2.jpg","http:\/\/p4a.gexo.com\/10446\/1044683_3.jpg","http:\/\/p4a.gexo.com\/10446\/1044683_4.jpg","http:\/\/p4a.gexo.com\/10446\/1044683_5.jpg","http:\/\/p4a.gexo.com\/10446\/1044683_6.jpg","http:\/\/p4a.gexo.com\/10446\/1044683_7.jpg","http:\/\/p4a.gexo.com\/10446\/1044683_8.jpg","http:\/\/p4a.gexo.com\/10446\/1044683_9.jpg","http:\/\/p4a.gexo.com\/10446\/1044683_10.jpg","http:\/\/p4a.gexo.com\/10446\/1044683_11.jpg","http:\/\/p4a.gexo.com\/10446\/1044683_12.jpg","http:\/\/p4a.gexo.com\/10446\/1044683_13.jpg","http:\/\/p4a.gexo.com\/10446\/1044683_14.jpg","http:\/\/p4a.gexo.com\/10446\/1044683_15.jpg","http:\/\/p4a.gexo.com\/10446\/1044683_16.jpg"],"related":[3679961,3499313,119806,152035,3173612,1434755,3496525,1081753,1975322,4604104,7642721,3426657,1654309,60153,206675,5242441,579340,1577469,3174155,3595360],"_id":"540a3e7f5a4add307c8bd15f"},{"site":"Cliphunter","duration":"00:16:32","icon":"cliphunter","images_sequences":"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16","base_path":"http:\/\/p4a.gexo.com\/10449\/","average_rating":82,"imageWithIndex":"http:\/\/p4a.gexo.com\/10449\/1044937_{index}.jpg","firstImage":"http:\/\/p4a.gexo.com\/10449\/1044937_1.jpg","rating":82,"views":15490,"is_hd":false,"url":"http:\/\/www.pornkay.net\/videos\/view\/3499313\/lisa_ann","id":3499313,"title":"lisa ann","publish_time":1382652000,"_dataType":"Cliphunter","id_video":1867279,"images":["http:\/\/p4a.gexo.com\/10449\/1044937_1.jpg","http:\/\/p4a.gexo.com\/10449\/1044937_2.jpg","http:\/\/p4a.gexo.com\/10449\/1044937_3.jpg","http:\/\/p4a.gexo.com\/10449\/1044937_4.jpg","http:\/\/p4a.gexo.com\/10449\/1044937_5.jpg","http:\/\/p4a.gexo.com\/10449\/1044937_6.jpg","http:\/\/p4a.gexo.com\/10449\/1044937_7.jpg","http:\/\/p4a.gexo.com\/10449\/1044937_8.jpg","http:\/\/p4a.gexo.com\/10449\/1044937_9.jpg","http:\/\/p4a.gexo.com\/10449\/1044937_10.jpg","http:\/\/p4a.gexo.com\/10449\/1044937_11.jpg","http:\/\/p4a.gexo.com\/10449\/1044937_12.jpg","http:\/\/p4a.gexo.com\/10449\/1044937_13.jpg","http:\/\/p4a.gexo.com\/10449\/1044937_14.jpg","http:\/\/p4a.gexo.com\/10449\/1044937_15.jpg","http:\/\/p4a.gexo.com\/10449\/1044937_16.jpg"],"related":[577713,3988881,2032085,2460711,4662201,4141442,152010,3200989,3215034,3430973,7314516,3542023,6519318,3490102,206675,5242441,579340,1577469,3174155,3595360],"_id":"540a3f525a4add307c8bd207"}],"query":"Lisa Ann","pornstar":false,"pornstarName":false,"count":14756,"h":5822668361,"sites":[],"categories":[]} ;
+
+</script>
+<div style="text-align: center; margin: 5px;margin-top:120px">
+<script type="text/javascript">
+        document.write('<scr'+'ipt src="http://seethisinaction.com/servlet/view/banner/javascript/zone?zid=3812&pid=0&custom1=1249397_3812_RON_HEA&custom2=1249397&custom3=728x90iframe&random='+Math.floor(89999999*Math.random()+10000000)+'&millis='+new Date().getTime()+'&referrer='+encodeURIComponent(document.location)+'" type="text/javascript"></scr'+'ipt>');
+    </script>
+</div>
+<div ng-controller="searchCtrl">
+<div class="row-fluid">
+ 
+ 
+<div id="side-section" class="span2 videos-filters">
+<ul class="nav nav-list">
+<li class="nav-header">Sort by</li>
+<li ng-class="{active: orderByFilter=='best'}"><a href="#" ng-click="orderBy('best')"><i class="icon-tasks"></i> Best Match</a></li>
+<li ng-class="{active: orderByFilter=='recently'}"><a href="#" ng-click="orderBy('recently')"><i class="icon-time"></i> Recently added</a></li>
+<li ng-class="{active: orderByFilter=='popular'}"><a href="#" ng-click="orderBy('popular')"><i class="icon-heart-empty"></i> Most Popular</a></li>
+<li ng-class="{active: orderByFilter=='rating'}"><a href="#" ng-click="orderBy('rating')"><i class="icon-star-empty"></i> Highest Rating</a></li>
+</ul>
+<div class="module-top"><i class="icon-time"></i>Duration</div>
+<div class="module duration-module">
+<ul class="list-menu source-list">
+<li ng-class="{active: duration=='all'}">
+<a ng-click="selectDuration('all')" class="">
+All
+<span class="out-square">
+<span class="in-square"></span>
+</span>
+</a>
+</li>
+<li ng-class="{active: duration=='short'}">
+<a ng-click="selectDuration('short')" class="">
+Short (< 5 min)
+                        <span class="out-square">
+                            <span class="in-square"></span>
+                        </span>
+                    </a>
+                </li>
+                <li ng-class="{active: duration=='medium'}">
+                    <a ng-click="selectDuration('medium')" class="">
+                        Medium (5 - 20 min)
+                        <span class="out-square">
+                            <span class="in-square"></span>
+                        </span>
+                    </a>
+                </li>
+                <li ng-class="{active: duration=='long'}">
+                    <a ng-click="selectDuration('long')" class="">
+                        Long (> 20 min)
+                        <span class="out-square">
+                            <span class="in-square"></span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+                <div class="divider"></div>
+                <span style="width:100%"  class="nav-header">Exact Duration(min)</span>
+                <input type="text" ng-model="start_time" style="width: 38%" class="input-small" placeholder="Min">
+                <input type="text" ng-model="end_time" style="width: 38%" class="input-small" placeholder="Max">
+
+        <div class="centered">
+            <button ng-click="loadVideos()" type="button" class="btn btn-primary">
+                <span class="icon-filter"></span> Apply
+            </button>
+         </div>
+    </div>
+
+    <div class="module-top"><i class="icon-play-circle"></i>Video quality</div>
+    <div class="module">
+        <ul  class="list-menu source-list">
+            <li ng-class="{active: selectedHd==false}">
+                <a  ng-click="selectHD(false)" class="">
+                    All ({{count}})
+                    <span class="out-square"><span class="in-square"></span></span>
+                </a>
+            </li>
+
+            <li ng-class="{active: selectedHd==true}">
+                <a  ng-click="selectHD(true)" class="">
+                    HD Only
+                    <span class="out-square"><span class="in-square"></span></span>
+                </a>
+            </li>
+        </ul>
+     </div>
+    <div class="module-top"><i class="icon-time"></i>Freshness</div>
+    <div class="module">
+        <ul  class="list-menu source-list">
+            <li ng-class="{active: selectedFreshness==false}">
+                <a data-sexorientation="straight" ng-click="selectFreshness(false)" class="">
+                    Any Time
+                    <span class="out-square"><span class="in-square"></span></span>
+                </a>
+            </li>
+            <li ng-class="{active: selectedFreshness=='today'}">
+                <a data-sexorientation="straight" ng-click="selectFreshness('today')" class="">
+                    Today
+                    <span class="out-square"><span class="in-square"></span></span>
+                </a>
+            </li>
+            <li ng-class="{active: selectedFreshness=='yesterday'}">
+                <a data-sexorientation="straight" ng-click="selectFreshness('yesterday')" class="">
+                    Yesterday
+                    <span class="out-square"><span class="in-square"></span></span>
+                </a>
+            </li>
+            <li ng-class="{active: selectedFreshness=='this_week'}">
+                <a data-sexorientation="straight" ng-click="selectFreshness('this_week')" class="">
+                    This week
+                    <span class="out-square"><span class="in-square"></span></span>
+                </a>
+            </li>
+            <li ng-class="{active: selectedFreshness=='this_month'}">
+                <a data-sexorientation="straight" ng-click="selectFreshness('this_month')" class="">
+                    This month
+                    <span class="out-square"><span class="in-square"></span></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="module-top"><i class="icon-globe"></i>Source</div>
+    <div class="module">
+        <ul  class="list-menu source-list">
+            <li ng-class="{active: selectedSites.length==0}">
+                <a data-sexorientation="straight" ng-click="selectAllSites()" class="">
+                    All ({{count}})
+                    <span class="out-square">
+									<span class="in-square"></span>
+								</span>
+                </a>
+            </li>
+            <li ng-class="{active: site.selected}" ng-repeat="site in sites">
+                <a data-sexorientation="straight" ng-click="selectSite($index)" class="">
+                    {{site.key  | makeUppercase}}  ({{site.doc_count}})								<span class="out-square">
+									<span class="in-square"></span>
+								</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="module-top"><i class="icon-list-alt"></i>Categories</div>
+    <div class="module">
+        <ul  class="list-menu source-list">
+            <li ng-class="{active: selectedCategories.length==0}">
+                <a data-sexorientation="straight" ng-click="selectAllCategories()" class="">
+                    All ({{count}})
+                    <span class="out-square">
+									<span class="in-square"></span>
+								</span>
+                </a>
+            </li>
+            <li ng-class="{active: category.selected}" ng-repeat="category in categories | limitTo : limitCategories">
+                <a data-sexorientation="straight" ng-click="selectCategory($index)" class="">
+                    {{category.key | makeUppercase}}  ({{category.doc_count}})								<span class="out-square">
+									<span class="in-square"></span>
+								</span>
+                </a>
+            </li>
+
+        </ul>
+        <a ng-show="showAllCategoriesBtn" ng-click="showAllCategories()">Show All</a>
+    </div>
+</div>
+<div class="span10 main-section"  >
+
+
+    <!-- Options bar (Left Section) -->
+
+    <div class="options-bar">
+        <strong ng-if="query!=''">Results for: {{query}}</strong>
+        <strong ng-if="pornstarName!=''">All {{pornstarName}} Videos</strong>
+
+        <span><strong>{{count}}</strong> Videos Found</span>
+    </div>
+
+    <!-- End Options Bar -->
+
+    <!-- Start Left Section -->
+
+    <div class="row-fluid" infinite-scroll='nextPage()'  id="searchwrapper">
+        <ul  style="margin: 0px" >
+                <li ng-repeat="video in videos"  class="span3">
+                    <div class="thumbnail">
+                        <div class="thumbnail-img">
+                            <a  href="{{video.url}}">
+                                <img class="sequences" id="img{{video.id}}" load-video
+                                      width="240" height="180" data-index="0"
+                                        ng-src="{{video.firstImage}}"
+                                    />
+
+                            </a>
+                            <span class="vd_dr"><img ng-if="video.is_hd" src="/assets/41b62f0c/images/hd_icon.jpg" alt="HD PORNKAY" />{{video.duration}}</span>
+
+                        </div>
+                        <div class="caption">
+                            <h6><a href="">{{video.title}}</a></h6>
+                            <div class="video-info">
+                                <div class="thumb-partner-wrapper">
+                                    <div class="thumb-wrapper ">
+                                        <div class="sprite-main-results float-right thumb"></div>
+                                        <div class="float-right rating-value">{{video.rating}}%</div>
+                                    </div>
+                                </div>
+                                <div class="lenght-upload-wrapper">
+                                    <div class="clear info-box">
+                                        <img ng-src="/assets/41b62f0c/icons/{{video.icon}}.png" title="{{video.icon}}">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                </li>
+        </ul>
+
+
+    </div>
+    <div class="centered" id="loading-more" ng-show="busy">
+        <img src="/assets/41b62f0c/images/loading.gif" />
+        Loading videos...
+    </div>
+
+    <div class="centered"  ng-show="no_videos">
+        No results found
+    </div>
+
+
+</div>
+
+</div>
+<hr>
+</div>    <div style="text-align: center;">
+        <iframe width="950" scrolling="no" height="250" frameborder="0" src="http://ads2.contentabc.com/ads?spot_id=897077" allowtransparency="true" marginheight="0" marginwidth="0" name="spot_id_897077"> </iframe>
+    </div>
+    </div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span6"> <p class="copyright"><img class="foot-logo" src="/assets/41b62f0c/images/logo-ts.png" alt="The World's Biggest Porn Search Engine"/> &copy; 2014 <strong>PornKay</strong> The World's Biggest Porn Search Engine </p></div>
+
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- Include Javascript/JQuery Assets
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.2.2/bootstrap.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-jkit/1.1.8/jquery.jkit.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="/assets/41b62f0c/js/jquery.flipbook.js"></script>
+<script src="/assets/41b62f0c/js/jquery.lazyload.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+<script src="/assets/41b62f0c/js/functions.js"></script>
+<script src="/assets/41b62f0c/js/resolver.js"></script>
+
+
+<script type="text/javascript">
+    $("[data-rel=tooltip]").tooltip();
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('body').jKit();
+        var k = new FlipBook({element: ".lazy", flipbookPattern: "data-flipbook", flipbookValues: "data-flipbook-values", defaultAttribute: "data-original", speed: 600, notRestricted: true});
+        $("img.lazy").lazyload();
+        k.init();
+        /*
+        $('#appendedInputButtons').legacyautocomplete('/videos/autoComplete',{selectFirst:false,width:"313px"}).result(function(event,resultList,result){
+           $("#form-search-site").submit();
+        })*/
+
+
+        $(".hotlink").click(function(){
+            ga('send', 'event', 'link', $(this).text(),  $(this).attr("href"));
+
+
+        });
+        $(".hotban").click(function(){
+            ga('send', 'event', 'img', $(this).parent().attr("href"), $(this).attr("src"));
+
+
+        });
+
+    });
+</script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-55847041-1', 'auto');
+    ga('send', 'pageview');
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

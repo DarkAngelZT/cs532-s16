@@ -1,0 +1,1782 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Good Year</title>	
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!--<link rel="icon" type="image/png" href="http://example.com/myicon.png">-->
+        <!--<link rel="shortcut icon" href="/goodyear_icon.png" type="image/x-png">-->
+        <!-- <link rel="shortcut icon" href="/goodyear_16.ico" type="image/x-icon"> -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href="css/style.css" rel="stylesheet">
+       	<link rel='shortcut icon' href='favicon.ico' type='image/x-icon' >
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-73383431-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+	</head>
+<body>
+<input type="hidden" id="hdTotalTime" />
+<div class="container-fluid hidden-xs pad-0">
+
+<div class="tyer-img-main">
+	<img src="img/bg-hompg1.png" class="img-responsive w-100">
+
+	<!-- car 1 -->
+
+	<a href="javascript:void(0);" class="cr-1" data-toggle="modal" data-target="#video-1">
+		<img src="img/tyers/Car-1.png" style="height:158px">
+	</a>
+
+	<a href="javascript:void(0);" class="cr-2" data-toggle="modal" data-target="#video-2">
+		<img src="img/tyers/Car-2.png" style="height:158px">
+	</a>
+
+    <a href="javascript:void(0);" class="cr-3 tyre-video3 mytooltip" data-placement="top" title="AutoExpo 2016" data-toggle="tooltip" data-target="#video-3">
+        <img src="img/tyers/vth-2.png">
+    </a>
+
+    <a href="javascript:void(0);" class="cr-4 tyre-video4 mytooltip" data-placement="top" title="Electro Wheel" data-toggle="tooltip" data-target="#video-4">
+        <img src="img/tyers/vth-3.png">
+    </a>
+
+	<!-- tyer 1 -->
+
+    <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Aviation" class="tyre tyer-1 mytooltip" data-target="#prod-tyr-1">
+        <img src="img/tyers/tyre-0.png">
+    </a>
+
+	<!-- tyer 2 -->
+
+	<a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="NASCAR" class="tyre tyer-2 mytooltip" data-target="#prod-tyr-2">
+		<img src="img/tyers/tyre-2.png">
+	</a>
+
+	<!-- tyer 3 -->
+
+    <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="RunOnFlat" class="tyre tyer-3 mytooltip" data-target="#prod-tyr-3">
+        <img src="img/tyers/tyre-3.png">
+    </a>
+
+	<!-- tyer 4 -->
+
+	<a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="BH03" class="tyre tyer-4 mytooltip" data-target="#prod-tyr-4">
+		<img src="img/tyers/tyre-4.png">
+	</a>
+
+	<!-- tyer 5 -->
+
+	<a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Triple Tube" class="tyre tyer-5 mytooltip" data-target="#prod-tyr-5">
+		<img src="img/tyers/tyre-5.png">
+	</a>
+
+	<!-- tyer 6 -->
+
+	<a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Assurance Triple Max" class="tyre tyer-6 mytooltip" data-target="#prod-tyr-6">
+		<img src="img/tyers/tyre-6.png">
+	</a>
+
+	<!-- tyer 7 -->
+
+	<a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Wrangler ATSA" class="tyre tyer-7 mytooltip" data-target="#prod-tyr-7">
+		<img src="img/tyers/tyre-7.png">
+	</a>	
+
+	<!-- tyer 8 -->
+
+	<a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Eagle Efficient Grip" class="tyre tyer-8 mytooltip" data-target="#prod-tyr-8">
+		<img src="img/tyers/tyre-8.png">
+	</a>
+
+	<!-- tyer 9 -->
+
+    <a id="divFirst" href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="ELECTRO WHEEL" class="tyer-9 mytooltip" ><!--data-target="#game-modal"-->
+        <img src="img/tyers/tyre-9.png">
+    </a>
+
+</div>
+
+<!--		Headings Desktop		-->
+
+	<div class="text-center">
+		<h1 class="main-hdng-1">
+            GoodYear Brings The Experience of Auto Expo 2016 Online
+		</h1>
+
+		<h1 class="main-hdng-2">
+			#GyatExpo16
+		</h1>
+	</div>
+
+<!--		Twitter Blogs Desktop		-->
+
+	<div class="tw-bbg">
+		<div class="tw-b-cont">
+
+			<div class="text-center">
+				<div class="mr-tl-tw ">
+					<div class="cmn-ttl-des cmn-ttl-txc-bl">Tweets</div>
+				</div>
+			</div>
+
+           <div class="tweets">
+		   </div>
+		</div>
+	</div>
+
+<!--		Footer Desktop		-->
+
+	<footer class="footer-bg">
+		<div class="col-sm-9 txt-left col-xs-9 col-tiny">
+			<span class="f-text">
+				© 2016 The Goodyear Tyre & Rubber Company.
+				All rights reserved.
+			</span>
+		</div>
+
+		<div class="col-sm-3 col-xs-3 col-tiny">
+			<ul class="footer-social-nav">
+				<li>
+					<a href="https://www.facebook.com/GoodyearJoyOfJourney" target="_blank">
+						<img src="img/mobile/f-fb-ico.png">
+					</a>
+				</li>
+
+				<li>
+					<a href="https://twitter.com/GoodYearJOJ" target="_blank">
+						<img src="img/mobile/f-tw-ico.png">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+</div><!-- @end Main Container-fluid -->
+
+<!-- 	Info Modal	 -->
+
+<div id="prod-dinfo-modal" class="modal fade" tabindex="-1" role="dialog">
+	<div class="col-md-10 col-md-offset-1">
+
+		<button type="button" class="close mdcls" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+
+		<div class="modal-content md-bg tyre-modal" id="prod-tyr-1">
+			<div class="modal-body">
+				<div class="text-center">
+					<span class="modal-ttl mod-ttl-yellow">Showcase</span>
+				</div>
+
+				<div class="col-md-12 pd-tpbtm-md">
+					<div class="col-md-6 text-center">
+						<img src="img/1.png" class="img-responsive dis-ib">
+					</div>
+
+					<div class="col-md-6 pd-tp-mod">
+						<span class="modal-mdno">
+							Aviation- Flight Leader
+						</span>
+
+						<div>
+							<span class="modal-md-tbld">
+								Soaring high
+							</span>
+						</div>
+
+						<p class="modal-discr-md">
+							Cutting edge technology resulted in its unique cord-shaped body, which helps reduce stress, as this new-age aviation tyre cycles from tension to compression. The specially compounded tread design and large contact area ensures versatility for many runway types.
+						</p>
+					</div>
+				</div>
+
+				<div class="text-right">
+					<button class="btn btn-cmn" id="back-s-1">
+						<i class="glyphicon glyphicon-menu-left"></i>
+						Back 
+					</button>
+
+					<button class="btn btn-cmn" id="next-s-1">
+						Next 
+						<i class="glyphicon glyphicon-menu-right"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal-content md-bg tyre-modal" id="prod-tyr-2">
+			<div class="modal-body">
+				<div class="text-center">
+					<span class="modal-ttl mod-ttl-yellow">Showcase</span>
+				</div>
+
+				<div class="col-md-12 pd-tpbtm-md">
+					<div class="col-md-6 text-center">
+						<img src="img/2.png" class="img-responsive dis-ib">
+					</div>
+
+					<div class="col-md-6 pd-tp-mod">
+						<span class="modal-mdno">
+							GoodYear Race Tyres
+						</span>
+
+						<div>
+							<span class="modal-md-tbld">
+								Speed’s own ally.
+							</span>
+						</div>
+
+						<p class="modal-discr-md">
+							Optimized to deliver speeds over 200 mph, these race tyres have no tread pattern for maximum rubber contact and superior grip.
+						</p>
+					</div>
+				</div>
+
+				<div class="text-right">
+					<button class="btn btn-cmn" id="back-s-2">
+						<i class="glyphicon glyphicon-menu-left"></i>
+						Back 
+					</button>
+
+					<button class="btn btn-cmn" id="next-s-2">
+						Next 
+						<i class="glyphicon glyphicon-menu-right"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal-content md-bg tyre-modal" id="prod-tyr-3">
+			<div class="modal-body">
+				<div class="text-center">
+					<span class="modal-ttl mod-ttl-yellow">Showcase</span>
+				</div>
+
+				<div class="col-md-12 pd-tpbtm-md">
+					<div class="col-md-6 text-center">
+						<img src="img/3.png" class="img-responsive dis-ib">
+					</div>
+
+					<div class="col-md-6 pd-tp-mod">
+						<span class="modal-mdno">
+							RunOnFlat Tyres
+						</span>
+
+						<div>
+							<span class="modal-md-tbld">
+								Puncturing prejudices
+							</span>
+						</div>
+
+						<p class="modal-discr-md">
+							RunOnFlat technology from Goodyear enables you to keep on driving your car even if you have a flat without any loss in vehicle stability. Because nothing should stop you from reaching your destination safely. 
+						</p>
+					</div>
+				</div>
+
+				<div class="text-right">
+					<button class="btn btn-cmn" id="back-s-3">
+						<i class="glyphicon glyphicon-menu-left"></i>
+						Back 
+					</button>
+
+					<button class="btn btn-cmn" id="next-s-3">
+						Next 
+						<i class="glyphicon glyphicon-menu-right"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal-content md-bg tyre-modal" id="prod-tyr-4">
+			<div class="modal-body">
+				<div class="text-center">
+					<span class="modal-ttl mod-ttl-yellow">Showcase</span>
+				</div>
+
+				<div class="col-md-12 pd-tpbtm-md">
+					<div class="col-md-6 text-center">
+						<img src="img/4.png" class="img-responsive dis-ib">
+					</div>
+
+					<div class="col-md-6 pd-tp-mod">
+						<span class="modal-mdno">
+							BH03
+						</span>
+
+						<div>
+							<span class="modal-md-tbld">
+								The wheel, reinvented.
+							</span>
+						</div>
+
+						<p class="modal-discr-md">
+							The BH03 is a revolutionary product concept that just changed the game. After much research and a vision for the future of automobiles, we created a tyre that could generate electricity while it’s in motion!
+						</p>
+					</div>
+				</div>
+
+				<div class="text-right">
+					<button class="btn btn-cmn" id="back-s-4">
+						<i class="glyphicon glyphicon-menu-left"></i>
+						Back 
+					</button>
+
+					<button class="btn btn-cmn" id="next-s-4">
+						Next 
+						<i class="glyphicon glyphicon-menu-right"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal-content md-bg tyre-modal" id="prod-tyr-5">
+			<div class="modal-body">
+				<div class="text-center">
+					<span class="modal-ttl mod-ttl-yellow">Showcase</span>
+				</div>
+
+				<div class="col-md-12 pd-tpbtm-md">
+					<div class="col-md-6 text-center">
+						<img src="img/5.png" class="img-responsive dis-ib">
+					</div>
+
+					<div class="col-md-6 pd-tp-mod">
+						<span class="modal-mdno">
+							Triple Tube
+						</span>
+
+						<div>
+							<span class="modal-md-tbld">
+								Tyres, smarter than ever.
+							</span>
+						</div>
+
+						<p class="modal-discr-md">
+							Equipped with three tubes, the Triple Tube is thrice as smart as any other tyre. Designed to adapt like a pro to various road conditions, we present innovation technology at its best!
+						</p>
+					</div>
+				</div>
+
+				<div class="text-right">
+					<button class="btn btn-cmn" id="back-s-5">
+						<i class="glyphicon glyphicon-menu-left"></i>
+						Back 
+					</button>
+
+					<button class="btn btn-cmn" id="next-s-5">
+						Next 
+						<i class="glyphicon glyphicon-menu-right"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal-content md-bg tyre-modal" id="prod-tyr-6">
+			<div class="modal-body">
+				<div class="text-center">
+					<span class="modal-ttl mod-ttl-yellow">Showcase</span>
+				</div>
+
+				<div class="col-md-12 pd-tpbtm-md">
+					<div class="col-md-6 text-center">
+						<img src="img/6.png" class="img-responsive dis-ib">
+					</div>
+
+					<div class="col-md-6 pd-tp-mod">
+						<span class="modal-mdno">
+							Assurance TripleMax
+						</span>
+
+						<div>
+							<span class="modal-md-tbld">
+								Control has a new name.
+							</span>
+						</div>
+
+						<p class="modal-discr-md">
+							The Goodyear Assurance TripleMax tyres have been designed to offer excellent braking ability and improved fuel efficiency. Power braking in wet road conditions is a benefit that sets these tyres apart.
+						</p>
+					</div>
+				</div>
+
+				<div class="text-right">
+					<button class="btn btn-cmn" id="back-s-6">
+						<i class="glyphicon glyphicon-menu-left"></i>
+						Back 
+					</button>
+
+					<button class="btn btn-cmn" id="next-s-6">
+						Next 
+						<i class="glyphicon glyphicon-menu-right"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal-content md-bg tyre-modal" id="prod-tyr-7">
+			<div class="modal-body">
+				<div class="text-center">
+					<span class="modal-ttl mod-ttl-yellow">Showcase</span>
+				</div>
+
+				<div class="col-md-12 pd-tpbtm-md">
+					<div class="col-md-6 text-center">
+						<img src="img/7.png" class="img-responsive dis-ib">
+					</div>
+
+					<div class="col-md-6 pd-tp-mod">
+						<span class="modal-mdno">
+							Wrangle AT/SA Owl
+						</span>
+
+						<div>
+							<span class="modal-md-tbld">
+								Matching aggression with style.
+							</span>
+						</div>
+
+						<p class="modal-discr-md">
+							This 4x4 tyre has strength to take on all terrains, and offers an equally impressive on-road handling. Featuring the SilentArmor Technology, it allows you to confidently tackle tough terrains.
+						</p>
+					</div>
+				</div>
+
+				<div class="text-right">
+					<button class="btn btn-cmn" id="back-s-7">
+						<i class="glyphicon glyphicon-menu-left"></i>
+						Back 
+					</button>
+
+					<button class="btn btn-cmn" id="next-s-7">
+						Next 
+						<i class="glyphicon glyphicon-menu-right"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal-content md-bg tyre-modal" id="prod-tyr-8">
+			<div class="modal-body">
+				<div class="text-center">
+					<span class="modal-ttl mod-ttl-yellow">Showcase</span>
+				</div>
+
+				<div class="col-md-12 pd-tpbtm-md">
+					<div class="col-md-6 text-center">
+						<img src="img/8.png" class="img-responsive dis-ib">
+					</div>
+
+					<div class="col-md-6 pd-tp-mod">
+						<span class="modal-mdno">
+							Eagle Efficient Grip ROF SCT
+						</span>
+
+						<div>
+							<span class="modal-md-tbld">
+								Performance sans the noise.
+							</span>
+						</div>
+
+						<p class="modal-discr-md">
+							Super quiet, maximum grip and great riding comfort describe these tyres. Engineered with advanced “QuietTred” technology, The Eagle Efficient Grip are quiet and comfortable as can be.
+						</p>
+					</div>
+				</div>
+
+				<div class="text-right">
+					<button class="btn btn-cmn" id="back-s-8">
+						<i class="glyphicon glyphicon-menu-left"></i>
+						Back 
+					</button>
+
+					<button class="btn btn-cmn" id="next-s-8">
+						Next 
+						<i class="glyphicon glyphicon-menu-right"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 	Game Modal	 -->
+
+<div id="game-modal" class="modal fade" tabindex="-1" role="dialog">
+	<div class="col-md-10 col-md-offset-1">
+
+        <button type="button" class="close mdcls" data-dismiss="modal" aria-label="Close" id="cls-bl">
+            <span aria-hidden="true">&times;</span>
+        </button>
+
+        <button type="button" class="close mdcls-w" data-dismiss="modal" aria-label="Close" id="cls-w">
+            <span aria-hidden="true">&times;</span>
+        </button>		
+
+		<div class="modal-content md-bg" id="pg-s1">
+			<div class="modal-body">
+				<div class="text-center pd-btm-mdpoptl">
+					<span class="modal-ttl mod-ttl-yellow">electro wheel</span>
+				</div>
+
+				<div class="col-md-12">
+					<p class="elw-desc">
+						Ever seen a tyre that produces electricity? Try this game or better still, visit our stall at the Auto Expo for the experience.
+					</p>
+
+					<h5 class="elw-tn">How to play</h5>
+
+					<p class="elw-desc">
+						Play against a user or the computer. Use your mouse scroll to rotate your wheel and produce electricity to light up the LEDs before your opponent. 
+					</p>
+
+					<div class="text-left pd-tpbtm-mdpocta">
+						<a href="javascript:void(0);" class="plnv-btn" id="play-game-pg" >
+							<b>Play Now</b>
+						</a>
+                        <a href="javascript:void(0);" class="plnv-btn Leaderboard">
+                            <b> Leaderboard </b>
+                        </a>
+					</div>
+				</div>
+
+				<div class="text-right">
+					<button class="btn btn-cmn" id="back-pg" data-toggle="modal" data-target="#game-modal">
+						<i class="glyphicon glyphicon-menu-left"></i>
+						Back 
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal-content md-bg" id="pg-s2">
+			<div class="text-center pd-btm-mdpoptl bg-white">
+				<span class="modal-ttl mod-ttl-black">electro wheel</span><br />
+                <span class="no" style="display:none;"></span><br />
+			</div>
+            <!--Time to Go..<p id="st"></p>-->
+            <div class="text-center bg-white">
+                <b>  Time to Go.. <span id="startGame" class="mod-ttl-black"> </span></b>
+            </div>
+                <div class="modal-body bg-white">
+                    <div class="game1">
+                        <!--    Player 1    -->
+                        <div class="col-md-4">
+                            <div class="row bg-white mar-t-15">
+                                <div class="col-xs-4">
+                                    <!--    Player 1    -->
+                                    <div class="attendance pl-main">
+                                        <div class="attendance-bar">
+                                            <div class="attendance-level">
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                            </div>
+                                            <div class="attendance-cage-css player3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-8">
+                                    <div class="text-center">
+                                        <img src="img/da-des.png" class="ad-des-gp">
+                                        <img src="img/mobile/t1_st.png" class="image-click main-p-w" />
+                                    </div>
+                                    <div class="text-center">
+                                        <span class="player-scr-txt-m">
+                                            Your<br />
+                                            Score: <span class="player3-score"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--    Player 2    -->
+                        <div class="col-md-4">
+                            <div class="row bg-white mar-t-15">
+                                <div class="col-xs-4">
+                                    <!--    Player 2    -->
+                                    <div class="attendance pl-main">
+                                        <div class="attendance-bar">
+                                            <div class="attendance-level">
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                            </div>
+                                            <div class="attendance-cage-css player2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-8">
+                                    <div class="text-center">
+                                        <img src="img/mobile/t1.gif" class="gm-tr-img-m-des trimg-pd static-img" />
+                                    </div>
+                                    <div class="text-center">
+                                        <span class="player-scr-txt-m gr-col">
+                                            Player2<br />
+                                            Score: <span class="player2-score"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--    Player 3    -->
+                        <div class="col-md-4">
+                            <div class="row bg-white mar-t-15">
+                                <div class="col-xs-4">
+                                    <!--    Player 3    -->
+                                    <div class="attendance pl-main">
+                                        <div class="attendance-bar">
+                                            <div class="attendance-level">
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                                <div class="bar-main"></div>
+                                            </div>
+                                            <div class="attendance-cage-css player1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-8">
+                                    <div class="text-center">
+                                        <img src="img/mobile/t1.gif" class="gm-tr-img-m-des trimg-pd static-img" />
+                                    </div>
+                                    <div class="text-center">
+                                        <span class="player-scr-txt-m gr-col">
+                                            Player 3<br />
+                                            Score: <span class="player1-score"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <button class="btn btn-cmn-w" id="back-pg-g">
+                            <i class="glyphicon glyphicon-menu-left"></i>
+                            Back
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+		<div class="modal-content md-bg" id="suc">
+			<div class="modal-body">
+				<div class="text-center pd-btm-mdpoptl">
+					<span class="modal-ttl mod-ttl-yellow">electro wheel</span>
+				</div>
+
+				<div class="col-md-12">
+
+					<h1 class="congo-loss"><b>Congratulations</b></h1>
+
+					<p class="elw-desc">
+						You’ve successfully completed the task in <span id="sec"></span>! Stay ready, for you might have free <span>Ray Ban Sunglasses</span> coming your way!
+						<br><br>
+						Keep checking the leaderboard for updates on winners.
+					</p>
+
+					<div class="text-left pd-s3">
+						<a href="javascript:void(0);" class="plnv-btn mr-pg-btn" id="tr-agn-suc">
+							<i class="glyphicon glyphicon-repeat trg"></i>
+							<b>Try Again</b>
+						</a>
+
+						<a href="javascript:void(0);" class="plnv-btn mr-pg-btn" id="ent-dtl-suc">
+							<b>Enter Details</b>
+						</a>
+                        <a href="javascript:void(0);" class="plnv-btn mr-pg-btn Leaderboard">
+                            <b>Leaderboard</b>
+                        </a>
+                        <a href="javascript:void(0);" class="plnv-btn mr-pg-btn fb-sh">
+                            <i class="fa fa-facebook"></i>
+                            <b>Facebook</b>
+                        </a>
+                        <a href="http://www.goodyearatexpo16.com/" class="plnv-btn mr-pg-btn">
+                            <i class="fa fa-twitter"></i>
+                            <b>Twitter</b>
+                        </a>	
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="modal-content md-bg" id="lose">
+			<div class="modal-body">
+				<div class="text-center pd-btm-mdpoptl">
+					<span class="modal-ttl mod-ttl-yellow">electro wheel</span>
+				</div>
+
+				<div class="col-md-12">
+
+					<h1 class="congo-loss"><b>Give it another shot!</b></h1>
+
+					<!-- <p class="elw-desc">
+						You've successfully completed the task! Stay ready for your might have freen <span>JBL Flip 2 Speakers</span> coming you way
+						<br><br>
+						keep checking the leadernoard for updates on winners.
+					</p> -->
+
+					<div class="text-left pd-s3">
+						<a href="javascript:void(0);" class="plnv-btn mr-pg-btn" id="tr-agn-lose">
+							<i class="glyphicon glyphicon-repeat trg"></i>
+							<b>TRY AGAIN</b>
+						</a>
+                        <a href="javascript:void(0);" class="plnv-btn mr-pg-btn Leaderboard">
+                            <b>Leaderboard</b>
+                        </a>	
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+        <div class="modal-content md-bg" id="winners" style="display:none">
+            <div class="modal-body">
+                <div class="text-center pd-btm-mdpoptl">
+                    <span class="modal-ttl mod-ttl-yellow">Winners</span>
+                </div>
+                <div class="col-md-12">
+
+                    <div>
+                        <h1 class="congo-loss"><b>Winners List!</b></h1>
+                        <p class="modal-discr-md">Winners of the week</p>
+
+                        <div id="tbl">
+                        </div>
+                        <!--<table class="table table-hover" style="background-color:white; max-width: 90%;">
+                            <thead>
+                                <tr>
+                                    <th>Firstname</th>
+                                    <th>Lastname</th>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="name1"></td>
+                                    <td id="seconds1"></td>
+                                    <td id="email1"></td>
+                                </tr>
+                                <tr>
+                                    <td id="name2"></td>
+                                    <td id="seconds2"></td>
+                                    <td id="name2"></td>
+                                </tr>
+                                <tr>
+                                    <td id="name3"></td>
+                                    <td id="seconds3"></td>
+                                    <td id="email3"></td>
+                                </tr>
+                            </tbody>
+                        </table>-->
+                    </div>
+                    <!--<div class="text-right">
+                        <button class="btn btn-cmn" id="back-game" data-toggle="modal" data-target="#game-modal">
+                            <i class="glyphicon glyphicon-menu-left"></i>
+                            Back
+                        </button>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-content md-bg" id="thank" style="display:none">
+            <div class="modal-body">
+                <div class="text-center pd-btm-mdpoptl">
+                    <span class="modal-ttl mod-ttl-yellow">electro wheel</span>
+                </div>
+                <div class="col-md-12">
+
+                    <div class="container">
+                        <h1 class="congo-loss" style="margin-bottom: 20px;">
+                            <b>Thank You!</b>
+                        </h1>
+                    </div>
+                    <!--<div class="text-left pd-s3">
+                    <a href="javascript:void(0);" class="plnv-btn mr-pg-btn" id="tr-agn-lose">
+                        <i class="glyphicon glyphicon-repeat trg"></i>
+                        <b>Ok</b>
+                    </a>
+                </div>-->
+                </div>
+            </div>
+        </div>
+		<div class="modal-content md-bg" id="enter-details">
+			<div class="modal-body">
+				<div class="text-center pd-btm-mdpoptl">
+					<span class="modal-ttl mod-ttl-yellow">electro wheel</span>
+				</div>
+
+				<div class="col-md-12">
+					<h1 class="congo-loss pd-rw-fpg"><b>Enter Details</b></h1>
+
+					<form method="post" enctype="text/plain">
+						<div class="oveflow-hd">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="name" class="inp-lbl-pg">
+										Name
+									</label>
+									<input type="text" class="form-control input-pg" id="name" name="name">
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="email" class="inp-lbl-pg">
+										E-Mail
+									</label>
+									<input type="email" class="form-control input-pg" id="email" name="email">
+								</div>
+							</div>
+						</div>
+
+						<div class="oveflow-hd">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="phone" class="inp-lbl-pg">
+										Contact no.
+									</label>
+									<input type="tel" class="form-control input-pg" id="phone" name="phone">
+								</div>
+							</div>
+						</div>
+
+						<!-- Ajax post -->
+
+						<div class="text-left pd-s4 clear">
+                            <button type="button" class="plnv-btn mr-pg-btn saveUserDetails" id="save-dtl">
+                                <b>Save Details</b>
+                            </button>
+						</div>
+					</form>
+				</div>
+
+				<div class="text-right">
+					<button class="btn btn-cmn" id="back-pg-ed">
+						<i class="glyphicon glyphicon-menu-left"></i>
+						Back 
+					</button>
+				</div>
+			</div>
+		</div>		
+	</div>
+</div>
+
+<!-- 	Video Modal	 -->
+
+<div id="video-1" class="modal fade" tabindex="-1" role="dialog">
+	<div class="col-md-10 col-md-offset-1">
+
+        <button type="button" class="close mdcls" data-dismiss="modal" aria-label="Close" id="cls-bl" onclick="stopvideo1();">
+            <span aria-hidden="true">&times;</span>
+        </button>
+
+		<div class="modal-content md-bg">
+			<div class="modal-body">
+				<div class="col-md-12">
+                    <iframe id="iframe1" width="100%" height="400" src="https://www.youtube.com/embed/dpEnQvXK9E?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="video-2" class="modal fade" tabindex="-1" role="dialog">
+	<div class="col-md-10 col-md-offset-1">
+
+        <button type="button" class="close mdcls" data-dismiss="modal" aria-label="Close" id="cls-bl" onclick="stopvideo2();">
+            <span aria-hidden="true">&times;</span>
+        </button>
+
+		<div class="modal-content md-bg">
+			<div class="modal-body">
+				<div class="col-md-12">
+                    <iframe id="iframe2" width="100%" height="400"
+                            src="https://www.youtube.com/embed/HS9nYaRsdmk?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allowfullscreen></iframe> 
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div id="video-3" class="modal fade" tabindex="-1" role="dialog">
+	<div class="col-md-10 col-md-offset-1">
+
+        <button type="button" class="close mdcls" data-dismiss="modal" aria-label="Close" id="cls-bl" onclick="stopvideo3();">
+            <span aria-hidden="true">&times;</span>
+        </button>
+
+		<div class="modal-content md-bg">
+			<div class="modal-body">
+				<div class="col-md-12">
+                    <iframe id="iframe3" width="100%" height="400"
+                            src="https://www.youtube.com/embed/ezHc-kxOat4?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allowfullscreen></iframe> <!--https://www.youtube.com/embed/HS9nYaRsdmk?enablejsapi=1&version=3&playerapiid=ytplayer-->
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div id="video-4" class="modal fade" tabindex="-1" role="dialog">
+	<div class="col-md-10 col-md-offset-1">
+
+        <button type="button" class="close mdcls" data-dismiss="modal" aria-label="Close" id="cls-bl" onclick="stopvideo4();">
+            <span aria-hidden="true">&times;</span>
+        </button>
+
+		<div class="modal-content md-bg">
+			<div class="modal-body">
+				<div class="col-md-12">
+                    <iframe id="iframe4" width="100%" height="400"
+                            src="https://www.youtube.com/embed/pkoaJiqQIvo?enablejsapi=1&version=3&playerapiid=ytplayer" frameborder="0" allowfullscreen></iframe><!--https://www.youtube.com/embed/HS9nYaRsdmk?enablejsapi=1&version=3&playerapiid=ytplayer-->
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<!--   
+//////////////////////////////////////
+=============> Mobile Layout   
+//////////////////////////////////////
+-->
+
+<div class="container-fluid pad-0 hidden-sm hidden-md hidden-lg">
+<!--   Header   -->
+	<header class="navbar navbar-static-top mynavbar" id="top" role="banner">
+		<div class="container">
+			<div class="navbar-header nav-hd">
+				<button class="navbar-toggle collapsed nbr-tgl" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+					<span class="sr-only">
+						Toggle navigation
+					</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="../" class="navbar-brand logo">
+					<img src="img/mobile/logo.png" class="logo-mr" />
+				</a>
+			</div>
+			<nav id="bs-navbar" class="collapse navbar-collapse nv-colps">
+				<ul class="nav navbar-nav main-nav">
+					<li>
+						<a href="#videos-section">
+							Videos
+						</a>
+					</li>
+
+					<li>
+						<a href="#electrowheel">
+							Electro Wheel
+						</a>
+					</li>
+
+					<li>
+						<a href="#showcase">
+							Showcase
+						</a>
+					</li>
+
+					<li>
+						<a href="#tweet">
+							Tweets
+						</a>
+					</li>
+				</ul>
+
+				<div class="social">
+					<span class="so-ttl">Follow Us</span>
+					<ul class="social-nav">
+						<li>
+							<a href="https://www.facebook.com/GoodyearJoyOfJourney" target="_blank">
+								<img src="img/mobile/facebook-white.png" />
+							</a>
+						</li>
+
+						<li>
+							<a href="https://twitter.com/GoodYearJOJ" target="_blank">
+								<img src="img/mobile/twitter-white.png" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav> 
+		</div> 
+	</header>
+
+<!--		Bammer		-->
+
+	<div class="design design-pad-btm">
+		<div class="container-fluid banner text-center">
+			<div class="section-content">
+				<img src="img/mobile/banner-top1.png" class="banner-logo" />
+				<h2 class="banner-hdng">
+                    GoodYear Brings The Experience <br/>
+                    of Auto Expo 2016 Online <br/>
+					<span>#GyatExpo16</span>
+				</h2>
+			</div>
+		</div>
+	</div>
+
+<!--		Video Slider		-->
+
+	<div id="videos" class="cmn-ttl-mar">
+	<div class="cmn-ttl-mar" id="videos-section">
+		<div class="cmn-ttl cmn-ttl-txc-bk">Videos</div>
+	</div>
+
+	<div class="container-fluid text-center bg-white">
+		<div class="section-content">
+			<div class="row">
+				<div class="col-xs-12">
+					<div id="banner" class="carousel slide" data-ride="carousel">
+
+						<!-- Indicators -->
+
+						<ol class="carousel-indicators dot-nav">
+						<li data-target="#banner" data-slide-to="0" class="active"></li>
+						<li data-target="#banner" data-slide-to="1"></li>
+                        <li data-target="#banner" data-slide-to="2"></li>
+                        <li data-target="#banner" data-slide-to="3"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<iframe width="100%" height="258" src="https://www.youtube.com/embed/cdpEnQvXK9E" frameborder="0" allowfullscreen></iframe>
+							</div>
+
+							<div class="item">
+								<iframe width="100%" height="258" src="https://www.youtube.com/embed/HS9nYaRsdmk" frameborder="0" allowfullscreen></iframe>
+							</div>
+
+                            <div class="item">
+                                <iframe width="100%" height="258" src="https://www.youtube.com/embed/pkoaJiqQIvo" frameborder="0" allowfullscreen></iframe>
+                            </div>
+
+                            <div class="item">
+                                <iframe width="100%" height="258" src="https://www.youtube.com/embed/ezHc-kxOat4" frameborder="0" allowfullscreen></iframe>
+                            </div>
+
+						</div>
+					</div>
+
+					<div class="col-sm-12 def-hd" id="video-single">
+						<iframe width="100%" height="258" src="https://www.youtube.com/embed/cdpEnQvXK9E" frameborder="0" allowfullscreen></iframe>
+
+						<iframe width="100%" height="258" src="https://www.youtube.com/embed/HS9nYaRsdmk" frameborder="0" allowfullscreen></iframe>
+
+                        <iframe width="100%" height="258" src="https://www.youtube.com/embed/pkoaJiqQIvo" frameborder="0" allowfullscreen></iframe>
+
+                        <iframe width="100%" height="258" src="https://www.youtube.com/embed/ezHc-kxOat4" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="text-center">
+		<a href="javscript:void(0)" class="view-all-btn" id="view-all-btn">
+			View All
+		</a>
+	</div>
+
+<!--		Electro Wheel Game		-->
+
+	<div class="design design-pad-top-btm" id="electrowheel">
+		<div class="cmn-ttl-pd-outr bg-blue-gm overflow-hd">
+			<div class="cmn-ttl cmn-ttl-txc-bl pull-left">Electro Wheel</div>
+			<span class="back-btn" id="back-wd">< back</span>
+			<span class="back-btn" id="back-wd-2">< back</span>
+		</div>
+
+		<div class="container-fluid section3 bg-blue" id="infoview">
+			<div class="section-body">
+				<div class="content">
+					<p class="elw-desc">
+						Ever seen a tyre that produces electricity? Try this game or better still, visit our stall at the Auto Expo for the experience.
+					</p>
+
+					<h5 class="elw-tn">How to play</h5>
+
+					<p class="elw-desc">
+						Play against a user or the computer. Use your mouse scroll to rotate your wheel and produce electricity to light up the LEDs before your opponent. 
+					</p>
+
+					<div class="text-center mr-pn-outr">
+						<a href="javascript:void(0);" class="plnv-btn" id="play-game">
+							<img src="img/mobile/updw-arw.png" class="dis-ib mr-pn-img">
+							Play Now
+						</a>
+                        <a href="javascript:void(0);" class="plnv-btn Leaderboard">
+                            Leaderboard
+                        </a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+<!--	Game View	-->
+
+		<div class="col-sm-12 gm-outr" id="gameview">
+			<div class="game1">
+				<div class="col-xs-5">
+
+					<!--    Player 1    -->
+
+					<div class="row bg-white mar-t-15">
+						<div class="col-xs-4">
+							<div class="attendance pl-1">
+								<div class="attendance-bar">
+									<div class="attendance-level">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+									</div>
+									<div class="attendance-cage-css player1">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xs-8">
+							<div class="text-center">
+                                <img src="img/mobile/t1.gif" class="gm-tr-img static-image static-img" />
+							</div>
+
+							<div class="text-center">
+								<span class="player-scr-txt">Player1<br />
+									Score: <span class="player1-score"></span>
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<!--    Player 2    -->
+
+					<div class="row bg-white mar-t-15">
+						<div class="col-xs-4">
+							<div class="attendance pl-2">
+								<div class="attendance-bar">
+									<div class="attendance-level">
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+										<div class="bar"></div>
+									</div>
+									<div class="attendance-cage-css player2">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-8">
+							<div class="text-center">
+                                <img src="img/mobile/t1.gif" class="gm-tr-img static-image static-img" />
+							</div>
+
+							<div class="text-center">
+								<span class="player-scr-txt">Player2<br />
+									Score: <span class="player2-score"></span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-7">
+					<div class="row bg-white mar-t-15 mar-l-0 ">
+						<div class="col-xs-4">
+
+							<!--    Player 3    -->
+
+							<div class="attendance pl-main">
+								<div class="attendance-bar">
+									<div class="attendance-level">
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+										<div class="bar-main"></div>
+									</div>
+									<div class="attendance-cage-css player3">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-8">
+							<div class="text-center">
+								<img src="img/mobile/mob-gm-arw.png" class="arw-gm">
+<!--                                 <img src="img/mobile/t1.gif" id="static-img" class="image-click gm-tr-img-m static-img" /> -->
+
+                                <img src="img/mobile/t1_st.png" id="static-img" class="image-click mob-gm-img-m" />
+							</div>
+
+							<div class="text-center">
+								<span class="player-scr-txt-m">Your<br />
+									Score: <span class="player3-score"></span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="game-decision">
+				<div class="decision-text">
+				</div>
+
+				<div class="text-left" id="lose-mob">
+					<a href="javascript:void(0);" class="plnv-btn mr-pg-btn" id="tr-agn-lose-mob">
+						<i class="glyphicon glyphicon-repeat trg"></i>
+						<b>Try Again</b>
+					</a>
+				</div>
+
+				<div class="text-left" id="suc-mob">
+					<a href="javascript:void(0);" class="plnv-btn mr-pg-btn" id="tr-agn-suc-mob">
+						<i class="glyphicon glyphicon-repeat trg"></i>
+						<b>Try Again</b>
+					</a>
+
+					<a href="javascript:void(0);" class="plnv-btn mr-pg-btn" id="ed-mob-btn">
+						<b>Enter Details</b>
+					</a>	
+                    <a href="javascript:void(0);" class="plnv-btn mr-pg-btn Leaderboard">
+                        <b>Leaderboard</b>
+                    </a>	
+				</div>
+
+				<div class="col-md-12" id="ed-mob">
+					<form method="post" enctype="text/plain">
+						<div class="oveflow-hd">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="name" class="inp-lbl-pg">
+										Name
+									</label>
+									<input type="text" class="form-control input-pg" id="name-mob" name="name">
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="email" class="inp-lbl-pg">
+										E-Mail
+									</label>
+									<input type="email" class="form-control input-pg" id="email-mob" name="email">
+								</div>
+							</div>
+						</div>
+
+						<div class="oveflow-hd">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="phone" class="inp-lbl-pg">
+										Contact no.
+									</label>
+									<input type="tel" class="form-control input-pg" id="phone-mob" name="phone">
+								</div>
+							</div>
+						</div>
+
+						<!-- Ajax post -->
+
+						<div class="text-left pd-s4 clear">
+                            <button type="button" class="plnv-btn mr-pg-btn saveUserDetails-mob" id="save-dtl">
+                                <b>Save Details</b>
+                            </button>
+						</div>
+					</form>
+				</div>
+
+
+
+			</div>
+		</div>
+	</div><!-- @end Design -->
+
+<!--		Carousel For Mob Product Details 	-->
+
+	<div class="design design-pad-btm" id="showcase">
+		<div class="cmn-ttl-pd-outr bg-white">
+			<div class="cmn-ttl cmn-ttl-txc-bg">Showcase</div>
+		</div>
+
+		<div class="container-fluid text-center bg-white pad-t-10">
+			<div class="section-content">
+				<div class="row">
+					<div class="col-xs-12">
+						<div id="product-descr" class="carousel slide" data-ride="carousel">
+
+							<!-- Indicators -->
+
+	<!-- 						<ol class="carousel-indicators">
+							<li data-target="#product-descr" data-slide-to="0" class="active"></li>
+							<li data-target="#product-descr" data-slide-to="1"></li>
+							<li data-target="#product-descr" data-slide-to="2"></li>
+							</ol> -->
+
+							<!-- Wrapper for slides -->
+
+							<div class="carousel-inner" role="listbox">
+
+								<div class="item active">
+									<div class="col-sm-12">
+										<div class="text-center">
+											<img src="img/1.png" class="img-responsive dis-ib car-img-shcs">
+										</div>
+
+											<div class="text-left brdr-btm">
+											<h1 class="product-model-num">
+												Aviation- Flight Leader
+											</h1>
+										</div>
+
+										<div class="text-left">
+											<span class="prd-des-ttl">
+												Soaring high
+											</span>
+
+											<p class="prod-descr">
+												Cutting edge technology resulted in its unique cord-shaped body, which helps reduce stress, as this new-age aviation tyre cycles from tension to compression. The specially compounded tread design and large contact area ensures versatility for many runway
+											</p>
+										</div>
+									</div>
+								</div>
+								
+								<div class="item">
+									<div class="col-sm-12">
+										<div class="text-center">
+											<img src="img/2.png" class="img-responsive dis-ib car-img-shcs">
+										</div>
+
+										<div class="text-left brdr-btm">
+											<h1 class="product-model-num">
+												GoodYear Race Tyres
+											</h1>
+										</div>
+										<div class="text-left">
+											<span class="prd-des-ttl">
+												Speed’s own ally.
+											</span>
+											<p class="prod-descr">
+												Optimized to deliver speeds over 200 mph, these race tyres have no tread pattern for maximum rubber contact and superior grip.
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="col-sm-12">
+										<div class="text-center">
+											<img src="img/3.png" class="img-responsive dis-ib car-img-shcs">
+										</div>
+
+										<div class="text-left brdr-btm">
+											<h1 class="product-model-num">
+												RunOnFlat Tyres
+											</h1>
+										</div>
+										<div class="text-left">
+											<span class="prd-des-ttl">
+												Puncturing prejudices
+											</span>
+											<p class="prod-descr">
+												RunOnFlat technology from Goodyear enables you to keep on driving your car even if you have a flat without any loss in vehicle stability. Because nothing should stop you from reaching your destination safely. 
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="col-sm-12">
+										<div class="text-center">
+											<img src="img/4.png" class="img-responsive dis-ib car-img-shcs">
+										</div>
+
+										<div class="text-left brdr-btm">
+											<h1 class="product-model-num">
+												BH03
+											</h1>
+										</div>
+
+										<div class="text-left">
+											<span class="prd-des-ttl">
+												The wheel, reinvented.
+											</span>
+
+											<p class="prod-descr">
+												The BH03 is a revolutionary product concept that just changed the game. After much research and a vision for the future of automobiles, we created a tyre that could generate electricity while it’s in motion!
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="col-sm-12">
+										<div class="text-center">
+											<img src="img/5.png" class="img-responsive dis-ib car-img-shcs">
+										</div>
+
+										<div class="text-left brdr-btm">
+											<h1 class="product-model-num">
+												Triple Tube
+											</h1>
+										</div>
+										<div class="text-left">
+											<span class="prd-des-ttl">
+												Tyres, smarter than ever.
+											</span>
+											<p class="prod-descr">
+												Equipped with three tubes, the Triple Tube is thrice as smart as any other tyre. Designed to adapt like a pro to various road conditions, we present innovation technology at its best! 
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="col-sm-12">
+										<div class="text-center">
+											<img src="img/6.png" class="img-responsive dis-ib car-img-shcs">
+										</div>
+
+										<div class="text-left brdr-btm">
+											<h1 class="product-model-num">
+												Assurance TripleMax
+											</h1>
+										</div>
+										<div class="text-left">
+											<span class="prd-des-ttl">
+												Control has a new name.
+											</span>
+											<p class="prod-descr">
+												The Goodyear Assurance TripleMax tyres have been designed to offer excellent braking ability and improved fuel efficiency. Power braking in wet road conditions is a benefit that sets these tyres apart.
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="col-sm-12">
+										<div class="text-center">
+											<img src="img/7.png" class="img-responsive dis-ib car-img-shcs">
+										</div>
+
+										<div class="text-left brdr-btm">
+											<h1 class="product-model-num">
+												Wrangle AT/SA Owl
+											</h1>
+										</div>
+										<div class="text-left">
+											<span class="prd-des-ttl">
+												Matching aggression with style.
+											</span>
+											<p class="prod-descr">
+												This 4x4 tyre has strength to take on all terrains, and offers an equally impressive on-road handling. Featuring the SilentArmor Technology, it allows you to confidently tackle tough terrains.
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="col-sm-12">
+										<div class="text-center">
+											<img src="img/8.png" class="img-responsive dis-ib car-img-shcs">
+										</div>
+
+										<div class="text-left brdr-btm">
+											<h1 class="product-model-num">
+												Eagle Efficient Grip ROF SCT
+											</h1>
+										</div>
+										<div class="text-left">
+											<span class="prd-des-ttl">
+												Performance sans the noise.
+											</span>
+											<p class="prod-descr">
+												Super quiet, maximum grip and great riding comfort describe these tyres. Engineered with advanced “QuietTred” technology, The Eagle Efficient Grip are quiet and comfortable as can be.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Controls -->
+
+							<a class="left carousel-control cr-cntrl" href="#product-descr" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true">
+								</span>
+								<span class="sr-only">
+									Previous
+								</span>
+							</a>
+
+							<a class="right carousel-control cr-cntrl" href="#product-descr" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true">
+								</span>
+								<span class="sr-only">
+									Next
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+<!--		Twitter-blogs		-->
+
+	<div class="design" id="tweet">
+		<div class="cmn-ttl-pd-outr bg-blue">
+			<div class="cmn-ttl cmn-ttl-txc-bl">Tweets</div>
+		</div>
+
+		<div class="container-fluid section3 bg-blue tweets_mobi">
+			
+		</div>
+	</div>
+
+	<footer class="mob-footer-bg">
+		<div class="col-sm-9 txt-left col-xs-9 col-tiny">
+			<span class="f-text">
+				© 2016 The Goodyear Tyre & Rubber Company.
+				All rights reserved.
+			</span>
+		</div>
+
+		<div class="col-sm-3 col-xs-3 col-tiny">
+			<ul class="footer-social-nav">
+				<li>
+					<a href="https://www.facebook.com/GoodyearJoyOfJourney" target="_blank">
+						<img src="img/mobile/f-fb-ico.png">
+					</a>
+				</li>
+
+				<li>
+					<a href="https://twitter.com/GoodYearJOJ" target="_blank">
+						<img src="img/mobile/f-tw-ico.png">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+</div><!-- Main Container Fluid mobile -->
+
+
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/fb-sdk-all.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/website.js"></script>
+</body>
+</html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Top Speed - Mobile drag racing game from T-Bull - Turn on, tune it, race out!</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Top Speed - Extreme drag racing mobile game for Android, Windows Phone, BlackBerry and iOS. Drive dragsters and stock cars. Turn on, tune in, race out!">
+        <meta name="author" content="T-Bull">
+        <link rel="shortcut icon" href="favicon.ico" />
+        <!-- Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=103622143031561";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#page-top">
+                        <img alt="Top Speed" id="logo" src="img/logo.png">
+                        <img alt="Top Speed" id="logo2" src="img/logo2.png">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#download">Download</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#features">Features</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#trailer">Trailer</a>
+                        </li>
+                    </ul>	
+                    <ul class="nav navbar-nav navbar-right">	
+                        <li class="page-scroll">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#presskit">Press kit</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>	
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <section id="home"></section><!-- Home -->
+        <!--Video Section-->
+        <section class="home-section video-section">
+            <!-- <div class="overlay-bg"></div>
+            <div class="pattern-overlay">
+                <a id="bgndVideo" class="player" data-property="{videoURL:'http://www.youtube.com/watch?v=GayVoZsTrAk',containment:'.video-section', quality:'hd720', autoPlay:true, mute:true, opacity:1}">bg</a>
+            -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div id="scrolltextfade" style="opacity: 1;">
+                            <h1 id="txt-home">
+                                <span class="char">T</span>
+                                <span class="char">O</span>
+                                <span class="char">P</span>
+                                <span class="char">&nbsp;</span>
+                                <span class="char">S</span>
+                                <span class="char">P</span>
+                                <span class="char">E</span>
+                                <span class="char">E</span>
+                                <span class="char">D</span>
+                            </h1>
+                            <h2 class="sub-text">Drag Racing Experience</h2>
+                            <!-- <div class="main-download-list">
+                                <a class="" href="" title="Amazon">
+                                    <img src="img/badge_amazon.png" alt="Amazon" />
+                                </a>
+                            </div> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+
+        </section>
+        <!--Video Section Ends Here--><!-- end Home -->
+
+        <section id="download" class="download-section"><!-- Download -->
+            <div class="container">
+                <div class="row">
+
+                    <div class="icons-section">
+                        <i class="icon-image-download brdr-no-rounds"></i>
+                    </div>
+
+                    <h1>Download</h1>
+
+                    <div class="ff-container">
+
+                        <ul class="ff-items">
+                            <li class="ff-item-type-3">
+                                <a class="" href="http://www.amazon.com/Top-Speed-Drag-Fast-Racing/dp/B0127IOK4O" title="Amazon">
+                                    <img src="img/badge_amazon.png" alt="Amazon" />
+                                </a>
+                            </li>
+                            <li class="ff-item-type-3">
+                                <a class="" href="https://itunes.apple.com/us/app/top-speed-drag-fast-racing/id1001516447?ls=1&mt=8" title="AppStore">
+                                    <img src="img/badge_appstore.png" alt="AppStore" />
+                                </a>
+                            </li>
+                            <li class="ff-item-type-3">
+                                <a class="" href="https://appworld.blackberry.com/webstore/content/59964996" title="BlackBerry">
+                                    <img src="img/badge_bb.png" alt="BlackBerry" />
+                                </a>
+                            </li>
+                            <li class="ff-item-type-3">
+                                <a class="" href="https://play.google.com/store/apps/details?id=com.tbegames.and.top_speed_racing" title="Google Play">
+                                    <img src="img/badge_google_play.png" alt="Google Play" />
+                                </a>
+                            </li>
+                            <li class="ff-item-type-3">
+                                <a class="" href="https://itunes.apple.com/app/top-speed-drag-fast-racing/id1008143687" title="Mac AppStore">
+                                    <img src="img/badge_mac_appstore.png" alt="Mac AppStore" />
+                                </a>
+                            </li>
+                            <li class="ff-item-type-3">
+                                <a class="" href="https://www.microsoft.com/en-US/store/Apps/Top-Speed-Drag-Fast-Racing/9WZDNCRD8PNR" title="Windows Store">
+                                    <img src="img/badge_windows_store.png" alt="Windows Store" />
+                                </a>
+                            </li>
+                            <li class="ff-item-type-3">
+                                <a href="http://apps.opera.com/badge.php?a=c&v=dark&did=88069&pid=749726" title="Opera Mobile Store">
+                                    <img src="img/badge_opera.png" alt="Opera Mobile Store">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section><!-- end Download -->
+
+        <section id="features" class="features-section"><!-- Features -->
+            <div class="container">
+                <div class="row">
+
+                    <div class="icons-section">
+                        <i class="icon-image-features brdr-no-rounds"></i>
+                    </div>
+
+                    <h1>Features</h1>
+
+                    <div class="service-ico">
+
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <div class="services-box">
+                                <i class="icon-career"></i>
+                                <h4>Career</h4>
+                                <p>Race and conquer 5 city districts, each with its own unique theme and gang crew</p>
+                            </div>		
+                        </div>	
+
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <div class="services-box">
+                                <i class='icon-cars'></i>
+                                <h4>Cars</h4>
+                                <p>Pick from 69 cars: stock rides, dragsters and police vehicles.</p>
+                            </div>		
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <div class="services-box">
+                                <i class='icon-custom'></i>
+                                <h4>Custom</h4>
+                                <p>Let your creativity flow through a ton of tuning and customization options</p>
+                            </div>		
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                            <div class="services-box">
+                                <i class='icon-mostwanted'></i>
+                                <h4>Most wanted</h4>
+                                <p>Jump into adrenaline inducing Most Wanted police chases</p>
+                            </div>		
+                        </div>
+
+
+                    </div>	
+
+                </div>
+            </div>
+        </section><!-- end Features -->
+
+        <section id="trailer" class="trailer-section"><!-- trailer -->
+            <div class="container">
+                <div class="row">
+
+                    <div class="icons-section">
+                        <i class="icon-image-movie brdr-no-rounds"></i>
+                    </div>
+
+                    <h1>Trailer</h1>
+
+                    <iframe id="trailer_iframe" src="https://www.youtube.com/embed/Ou_ffzpmlLY" frameborder="0" allowfullscreen></iframe>
+
+                </div>
+            </div>
+        </section><!-- end trailer -->
+
+        <section id="about" class="about-section"><!-- About -->
+            <div class="container">
+
+
+                <div class="icons-section">
+                    <i class="icon-image-about brdr-no-rounds"></i>
+                </div>
+                <h1>About</h1>
+                <div class="row">		
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="about-info text-center">
+                            Dominate your criminally insane rivals in extreme head-to-head drag races. Reach impossible speeds by expertly timing gear changes and bursts of nitro. Drive 69 cars, beat 20 criminal overlords and become the biggest fish in the city.
+                        </p> 
+                        <ul class="about-info text-center">
+                            <li><span>Let your creativity flow through a ton of tuning and customization options</span></li>
+                            <li><span>Drive in 5 city districts, each with its own unique theme and gang crew</span></li>
+                            <li><span>Pick from 69 cars: stock rides, dragsters and police vehicles</span></li>
+                            <li><span>Adrenaline inducing Most Wanted police chases</span></li>
+                            <li><span>A real-life inspired aircraft carrier to race on</span></li>
+                            <li><span>Mind blowing 3D HD visuals</span></li>
+                            <li><span>Epic arcade game modes</span></li>
+                        </ul>
+                        <p class="about-info text-center">
+                            Top Speed is setting the new standard within drag racing genre. Have you ever wanted to participate in underground races against unpredictable mafia mobs? Drive top class luxury cars and show everybody who's the boss? Jump right behind the wheel and get ready to have your breath taken away the moment you push that nitro button.
+                        </p>
+                        <p class="about-info text-center">
+                            In Top Speed you can tune and mod your ride to your liking. Increase the engine's power, upgrade your gear box and nitro, repaint your car, slap on some decals if you need to. All of it will have a definite impact on the realistic driving simulation. When you unlock elite dragsters you can also reach for the most hardcore visual mods from the black market. All of the goods from the criminal nation are for your disposal - you just make sure to make good use of them.
+                        </p>
+                        <p class="about-info text-center">
+                            Choose any car you want from an astounding selection of 69 rides - you can drive classic stock cars, new heavily modded dragsters and even national police vehicles from 5 different countries. Your skills will be tested, so get ready for the most intense drag racing game of 2015! Turn on, tune it, race out!
+                        </p>
+                    </div>	
+
+                </div>	  
+            </div>
+        </section><!-- end About -->
+
+        <section id="presskit" class="presskit-section"><!-- presskit -->
+            <div class="container">
+                <div class="row">
+
+                    <div class="icons-section">
+                        <i class="icon-image-presskit brdr-no-rounds"></i>
+                    </div>
+
+                    <h1>Press kit</h1>
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="plan">
+                            <div class="options-plan">
+                                <p>Go to our press kit page and download all files</p>
+                            </div>
+                        </div>	
+                        <a href="press_kit.html" title="Top Speed Press Kit">
+                            <div class="sign-up">Press kit</div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section><!-- end presskit -->
+
+        <section id="contact" class="contact-section"><!-- Contact -->
+            <div class="container">
+
+                <div class="icons-section">
+                    <i class="icon-image-contact brdr-no-rounds"></i>
+                </div>
+
+                <footer>
+                    <h1>Contact</h1>
+
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 contact-details">
+                            <a href="mailto:contact@t-bull.com"><i class="icon-uniE6B7"></i></a>
+                            <span>
+                                <em>contact@t-bull.com</em>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Facebook Page Likes -->
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="fb-page" data-href="https://www.facebook.com/topspeedgame" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/topspeedgame"><a href="https://www.facebook.com/topspeedgame">Top Speed</a></blockquote></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="row">	
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="social-net">
+                                <!-- <a target="_blank" href="" ><img src="img/icon_behance.png" alt="Behance" /></a> -->
+                                <a target="_blank" href="https://www.facebook.com/topspeedgame" ><img src="img/icon_facebook.png" alt="Facebook" /></a>
+                                <a target="_blank" href="https://plus.google.com/+TbullGames" ><img src="img/icon_google_plus.png" alt="Google Plus" /></a>
+                                <a target="_blank" href="https://instagram.com/tbullgames" ><img src="img/icon_instagram.png" alt="Intragram" /></a>
+                                <a target="_blank" href="https://www.linkedin.com/company/t-bull" ><img src="img/icon_linkedin.png" alt="Linkedin" /></a>
+                                <!-- <a target="_blank" href="https://pl.pinterest.com/tbullgames" ><img src="img/icon_pinterest.png" alt=Pinterest /></a> -->
+                                <a target="_blank" href="https://twitter.com/tbullgames" ><img src="img/icon_twitter.png" alt="Twitter" /></a>
+                                <a target="_blank" href="https://www.youtube.com/user/ThunderBullGames" ><img src="img/icon_youtube.png" alt="YouTube" /></a>
+                            </div>
+                        </div>
+                    </div>	
+
+                    <div class="row">	  
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="copyright">Copyright 2015 <a target="_blank" href="http://t-bull.com" title="T-Bull - best racing games and shooters for mobile">T-Bull</a></div>
+                        </div>
+                    </div>	
+                </footer>
+
+            </div>		
+
+        </section><!-- end Contact -->
+
+
+
+        <!-- JavaScript Files -->
+        <script src="js/jquery.min-2.1.1.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/easing.min.js"></script><!-- For Smooth Scrolling --> 
+        <script src="js/colorbox.js"></script> <!-- Colorbox - For Embed Video and Photo -->
+        <script type="text/javascript" src="js/contact_form.js"></script><!-- For Contact Form -->
+        <script src="js/scrolling-nav.js"></script><!-- For Scrolling and Navigation -->
+        <script src='js/placeholder.js'></script><!-- For Placeholder -->
+        <script src="js/mb.YTPlayer.js"></script> <!-- For Background Video -->
+
+        <script>  <!-- Colorbox - For Embed Video and Photo (settings) -->
+        $(document).ready(function(){
+            //Examples of how to assign the Colorbox event to elements
+            /*$(".group1").colorbox({rel:'group1'});
+                $(".group2").colorbox({rel:'group2', transition:"fade"});
+                $(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+                $(".group4").colorbox({rel:'group4', slideshow:true});
+                $(".ajax").colorbox();
+                $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+                $(".vimeo").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+                $(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+                $(".inline").colorbox({inline:true, width:"50%"});
+                $(".callbacks").colorbox({
+                    onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+                    onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+                    onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+                    onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+                    onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+                });
+
+                $('.non-retina').colorbox({rel:'group5', transition:'none'})
+                $('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+                //Example of preserving a JavaScript event for inline calls.
+                $("#click").click(function(){ 
+                    $('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+                    return false;
+                });*/
+        
+        });
+        </script> <!-- end Colorbox - For Embed Video and Photo -->
+
+        <script type="text/javascript"><!-- Colorbox - For make Embed Video and Photo Responsive -->
+        // Make ColorBox responsive
+        jQuery.colorbox.settings.maxWidth  = '95%';
+        jQuery.colorbox.settings.maxHeight = '95%';
+
+        // ColorBox resize function
+        var resizeTimer;
+        function resizeColorBox()
+        {
+            if (resizeTimer) clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function() {
+                if (jQuery('#cboxOverlay').is(':visible')) {
+                    jQuery.colorbox.resize({width:'90%', height:'90%'}); 
+                }
+            }, 300)
+        }
+
+        // Resize Colorbox when resizing window or changing mobile device orientation
+        jQuery(window).resize(resizeColorBox);
+        window.addEventListener("orientationchange", resizeColorBox, false);
+        </script><!-- end Colorbox - For make Embed Video and Photo Responsive -->
+
+        <!-- Parallax -->
+        <script type="text/javascript">
+        /**
+         * Author: Heather Corey
+         * jQuery Simple Parallax Plugin
+         *
+         */
+ 
+        (function($) {
+ 
+            $.fn.parallax = function(options) {
+ 
+                var windowHeight = $(window).height();
+ 
+                // Establish default settings
+                var settings = $.extend({
+                    speed        : 0.15
+                }, options);
+ 
+                // Iterate over each object in collection
+                return this.each( function() {
+ 
+                    // Save a reference to the element
+                    var $this = $(this);
+ 
+                    // Set up Scroll Handler
+                    $(document).scroll(function(){
+ 
+                        var scrollTop = $(window).scrollTop();
+                        var offset = $this.offset().top;
+                        var height = $this.outerHeight();
+ 
+                        // Check if above or below viewport
+                        if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
+                            return;
+                        }
+ 
+                        var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
+ 
+                        // Apply the Y Background Position to Set the Parallax Effect
+                        $this.css('background-position', 'center ' + yBgPosition + 'px');
+                
+                    });
+                });
+            }
+        }(jQuery));
+
+        /* $('.pricing-section,.services-section').parallax({
+speed :	0.15
+});*/
+        </script>
+        <!-- end Parallax -->
+
+        <!-- For Scroll Text Fade -->
+        <script type="text/javascript">
+        if($('#scrolltextfade, #scrolltextfade2, #scrolltextfade3').css('position')=='absolute'){$('#scrolltextfade, #scrolltextfade2, #scrolltextfade3').hide();}
+    
+        else
+        {
+            $(window).scroll(function(){
+                var opacity=1.3-($(window).scrollTop()/330);
+                $('#scrolltextfade, #scrolltextfade2, #scrolltextfade3').fadeTo(5,opacity);});
+        }
+        </script>
+        <!-- end For Scroll Text Fade -->
+
+        <!-- For Placeholder -->
+        <script type="text/javascript">
+        $('input, textarea').placeholder();
+        </script>
+        <!-- end For Placeholder -->
+
+        <script type="text/javascript"> <!-- JS call For Background Video -->
+        $(document).ready(function () {
+            $(".player").mb_YTPlayer();
+        });
+        </script> <!-- end JS call For Background Video -->
+
+        <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-52251178-2']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,1209 @@
+
+
+
+  
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	
+		
+		
+		
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+	<title>Cafe &#039;OK&#039; :: 네이버 만화</title>
+	<link rel="shortcut icon" href="http://www.naver.com/favicon.ico?1" type="image/x-icon">
+	<script type="text/javascript">
+		document.domain = "naver.com";
+		var loggedIn = "N";var authenticate = "N";
+	</script>
+	<meta property="og:title" content="Cafe &#039;OK&#039;" > 
+<meta property="og:type" content="article" >
+<meta property="og:url" content="http://comic.naver.com/challenge/list.nhn?titleId=671120" > 
+<meta property="og:image" content="http://thumb.comic.naver.net/nas/user_contents_data/challenge_comic/2016/01/22/fffiesta/thumbnail_title_fffiesta_224917_.jpg" > 
+<meta property="og:description" content="서로 돕고 살아가는 어떤 마을에 이사온 고양이 비비가 카페를 차린 후,
+그녀의 유일한 종업원 늑대씨와 벌이는 연애 에피소드" > 
+<meta property="og:article:author" content="네이버 만화" >
+<meta property="og:article:author:url" content="http://comic.naver.com" >
+
+  		
+		<link rel="stylesheet" style="text/css" href="/compress/css/comic/today_20160113160419.css">
+		<link rel="stylesheet" style="text/css" href="/compress/css/comic/common_20160113160419.css">
+		<link rel="stylesheet" style="text/css" href="/compress/css/comic/comic_20160113160419.css">
+		<link rel="stylesheet" style="text/css" href="/compress/css/comic/likeit_20160113160419.css">
+		<link rel="stylesheet" style="text/css" href="/compress/css/comic/likeit_comic_20160113160419.css">			
+		
+	
+  		
+  			<!-- comicArticleListJsFile -->
+			<script type="text/javascript" src="/compress/javascript/release/comic_article_list_20160113160419.js"  charset="utf-8" ></script>
+  		  	
+  	<script type="text/javascript">
+	// nclick
+
+	//<![CDATA[
+	var nsc = "decide.me";
+	var levelName = "CHALLENGE";
+	if(levelName == "BEST_CHALLENGE"){
+		nsc = "comic.best_list";
+	}else if(levelName == "CHALLENGE"){
+		nsc = "comic.chal_list";
+	}else if(levelName == "WEBTOON"){
+		nsc = "comic.toon_list";
+	}
+
+	var ccsrv = "cc.naver.com";
+	//]]>
+</script>
+<script type="text/javascript">
+	var isLogin = 'false';
+	var isAdultWebtoon = 'N';
+	var isOver19 = 'false';
+	var isParty = 'true';
+	var levelName = "challenge";
+	
+	var artistData = [
+       
+          {"artistId" : 297401,
+           "nickname": 'fffiesta'}
+           
+    ];
+
+    var actionRunner;
+
+
+    WebtoonArtistActionRunner = $Class ({
+        $init : function(titleId) {
+            this._titleId = titleId;
+	    },
+
+	    artistForFavorite : function(element) {
+	    	$Element("author_layer_inner").html("");
+	    	$Element("author_layer").css("border", "");
+            $Element("author_layer_inner").css("border", "1px solid #b6b6b6");
+	    	for (var i = 0; i < artistData.length; i++) {
+		    	var liElement = new $Element("<li>");
+		    	var aElement = new $Element("<a>");
+		    	aElement.attr("href", "javascript:actionRunner.addFavoriteArtist('" + artistData[i].artistId + "')");
+		    	aElement.html("관심작가 등록&lt;" + artistData[i].nickname + "&gt;")
+
+		    	liElement.append(aElement);
+		    	
+		    	$Element("author_layer_inner").append(liElement);
+
+                if (i==9) {
+                    $Element("author_layer").css("border", "1px solid #b6b6b6");
+                    $Element("author_layer_inner").css("border", "0");
+                }
+	    	}
+		    artistLayer.show(element);
+	    },
+	  	//관심 웹툰 추가
+        addFavoriteWebtoon : function (titleId) {
+	    	var width = (screen.width / 2) - 800;
+			var height = (screen.height / 2) - 510;
+		    if (!false) {
+			    if(confirm('로그인 해야 이용할 수 있습니다. 로그인 하시겠습니까?')) {
+			    	window.open("https://nid.naver.com/nidlogin.login?svctype=64&url=http://comic.naver.com/mypage/favoriteArtist.nhn?m=insert%26titleId="+titleId,"addFavorite" ,"directories=no,toolbar=no,scrollbars=no,width=370,height=180,top="+height+",left="+width);
+				}
+		    } else {
+				window.open("/mypage/favoriteArtist.nhn?m=insert&titleId="+titleId,"addFavorite" ,"directories=no,toolbar=no,scrollbars=no,width=370,height=180,top="+height+",left="+width);
+		    }
+	    },
+	    
+	    artistForArtistTitle : function(element) {
+			$Element("author_layer_inner").html("");
+			$Element("author_layer").css("border", "");
+			$Element("author_layer_inner").css("border", "1px solid #b6b6b6");
+	    	if(artistData.length == 0) {
+	    		var liElement = new $Element("<li>");
+                var spanElement = new $Element("<span>");
+                spanElement.html("작가의 다른 작품이 없습니다.");
+                liElement.append(spanElement);
+                $Element("author_layer_inner").append(liElement);
+	        	artistLayer.show(element);
+	    	} else if(artistData.length == 1) {
+	    		location.href = "/artistTitle.nhn?artistId=" + artistData[0].artistId;	    		
+	    	} else {
+					for (var i = 0; i < artistData.length; i++) {
+						var liElement = new $Element("<li>");
+						var aElement = new $Element("<a>");
+						aElement.attr("href", "/artistTitle.nhn?artistId=" + artistData[i].artistId);
+						aElement.html("&lt;" + artistData[i].nickname + "&gt;의 다른작품");
+						liElement.append(aElement);
+						$Element("author_layer_inner").append(liElement);
+						if (i==9) {
+							$Element("author_layer").css("border", "1px solid #b6b6b6");
+							$Element("author_layer_inner").css("border", "0");
+						}
+	              }
+	        artistLayer.show(element);
+	    	}
+	    	return false;
+	    },
+	     
+	    addFavoriteArtist : function(artistId) {
+		    if (!isLogin) {
+			    if( confirm('로그인 해야 이용할 수 있습니다. 로그인 하시겠습니까?') ) {
+			        location.href = "https://nid.naver.com/nidlogin.login?mode=form&url="+encodeURIComponent(location.href);
+                }
+		    } else {
+		        location.href = '/mypage/favoriteArtist.nhn?m=insert&artistId=' + artistId +
+		                        '&titleId=' + this._titleId + '&nextUrl=' + encodeURIComponent(location.href)  ;
+		    }
+                
+	    }
+	});
+			
+	
+	function loadThisWindow () {
+	    actionRunner = new WebtoonArtistActionRunner("671120");
+	    
+		(function(oData) {
+			window.__oLikeItData = oData;
+			var s = document.createElement("script");
+			s.type = "text/javascript";
+			s.charset = "utf-8";
+			s.src = oData.domain + "/static/js/likeIt.v2.desktop.init.js?v="+ (new Date()).toDateString().replace(/\s/g,"");
+			(document.head || document.getElementsByTagName("head")[0]).appendChild(s);
+		})({
+			serviceId : "COMIC"
+			, displayId : "COMIC"
+			, contentId : "671120"
+			, domain :"http://comic.like.naver.com"
+			, lang : "ko"
+			, viewType : ""
+			
+		 });
+
+		if(levelName == "bestChallenge") {
+			function potenupArea() {
+				if ($Element("potenupAreaBtn").className() == "btn_potenup") {
+					$Element("potenupAreaBtn").className($Element("potenupAreaBtn").className() + " on");
+				} else {
+					$Element("potenupAreaBtn").className("btn_potenup");
+				}
+
+			}
+
+			$Fn(potenupArea).attach($Element("potenupAreaBtn"), "click");
+
+			$Fn(potenupArea).attach($Element("potenupAreaCloseBtn"), "click");
+		}
+	}
+
+	var popupObject = new nhn_naver_commcast_feed_popup();  // 팝업처리 객체 생성
+
+	function applyFeed(){
+		if(isAdultWebtoon == 'Y'){
+			if (isLogin == 'false') {
+				location.href = "https://nid.naver.com/nidlogin.login?viewtype=3&svctype=128&url="+encodeURIComponent(location.href);
+			}else if ( (isLogin == 'true') && (isOver19 == 'false') ){
+				location.href = "/"+levelName.toLowerCase()+"/detail.nhn?titleId="+671120+"&no=1";
+			}else if ( (isLogin == 'true') && (isParty == 'true') ){
+				location.href = "/"+levelName.toLowerCase()+"/detail.nhn?titleId="+671120+"&no=1"; 
+		    }else{
+		    	var params = {
+	  			  popupType   : 'C',
+	  			  callbackUrl  : '',
+	  			  serviceId   : 'webtoon',
+	  			  feedGroupId  : 'comic',
+	  			  feedGroupName  : 'comic',
+	  			  feedId    : ['671120'],
+	  			  feedName   : ["Cafe &#039;OK&#039;"],
+	  			  feedUrl   : ["http://comic.naver.com/challenge/list.nhn?titleId=671120"],
+	  			  selected   : ['Y']
+	  			};
+	  			//popupObject.popupFeedWindow(params);
+	  			popupObject.popupFeedWindow(params,{charEnc:'UTF-8',feedPopupHost:'relation.commcast.naver.com'});  
+		    }
+		}else{
+			var params = {
+			  popupType   : 'C',
+			  callbackUrl  : '',
+			  serviceId   : 'webtoon',
+			  feedGroupId  : 'comic',
+			  feedGroupName  : 'comic',
+			  feedId    : ['671120'],
+			  feedName   : ["Cafe &#039;OK&#039;"],
+			  feedUrl   : ["http://comic.naver.com/challenge/list.nhn?titleId=671120"],
+			  selected   : ['Y']
+			};
+			//popupObject.popupFeedWindow(params);  
+			popupObject.popupFeedWindow(params,{charEnc:'UTF-8',feedPopupHost:'relation.commcast.naver.com'});
+		}		
+	}
+		
+	$Fn(loadThisWindow).attach(window,"load");
+
+	/**
+	 * 북스토어로 이동 가능한지 확인해서 이동
+	 *
+	 * @params nbooksId {String} 북스 상품 ID
+	 */
+	function moveBookstore(nbooksId) {
+		 var result;
+		$Ajax('http://nstore.naver.com/isService.json', {
+			type : 'jsonp',
+			method : 'get',
+			onload : function(oRes) {
+				result = oRes.json();
+			}
+		}).request({
+			'productTypeCode' : 'COMIC',
+			'originalProductId' : nbooksId
+		});
+		
+		
+		var oInterval = setInterval(function() {
+			if (result) {
+				if (result == 'true') {
+					window.open('http://nstore.naver.com/comic/detail.nhn?originalProductId=' + nbooksId, '_blank');
+				} else if (result == 'false') {
+					alert('N스토어에 상품을 등록 중입니다. 잠시만 기다려주세요.');
+				}
+				clearInterval(oInterval);
+				oInterval = null;
+			}
+		}, 100);
+	}
+
+
+
+</script>
+	
+  	<script type="text/javascript" src="/compress/javascript/release/comic_gnb_20160113160419.js"></script>
+  	<script type="text/javascript" language="javascript" src="http://help.naver.com/common/js/cs_ops_inoti.js?20160113160419"></script>
+  	
+	
+	<link rel="stylesheet" href="/css/effecttoon/effects.css" />
+    <link rel="stylesheet" href="/css/effecttoon/loading.css" />
+    <link rel="stylesheet" href="/css/effecttoon/oz.css" />
+    
+    
+	
+	
+	
+	
+	
+	
+	
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body onload="">
+
+
+
+
+
+
+<div id="wrap" >
+
+	
+		
+		
+		<div id="u_skip">
+		    <a href="#header" onclick="document.getElementById('header').tabIndex=-1;document.getElementById('header').focus();return false;"><span>메인 메뉴로 바로가기</span></a>
+    		<a href="#content" onclick="document.getElementById('content').tabIndex=-1;document.getElementById('content').focus();return false;"><span>본문으로 바로가기</span></a>
+		</div>
+
+		
+	
+	<div id="header">
+        <div id="gnb">
+        		<script type="text/javascript">
+        		var gnb_option = { 
+    			 gnb_service : "comic", 
+				 gnb_logout :  encodeURIComponent(window.location.href),
+				 gnb_login :   window.location.href,
+				 gnb_template : "gnb_utf8",
+				 gnb_brightness : 1,
+				gnb_item_hide_option: 0
+        		};	
+        		</script>
+                <script type="text/javascript" charset="utf-8" src="http://static.gn.naver.net/template/gnb_utf8.nhn?20160113160419"></script>	
+		</div>
+		<div id="snb_wrap">
+                <h1>
+                        <a onclick="clickcr(this,'STA.naverlogo','','',event)" href="http://www.naver.com" title="NAVER" class="h_naver"><span class="blind">NAVER</span></a>
+                        <a  onclick="clickcr(this,'STA.comic','','',event)"  href="/index.nhn" title="만화" class="h_comic"><span class="blind">만화</span></a>
+                        <em class="bar">|</em>
+                        <a  onclick="clickcr(this,'STA.novel','','',event)" href="http://novel.naver.com/" title="웹소설" class="h_novel"><span class="blind">웹소설</span></a>
+                </h1>
+		
+		
+               <form id="searchForm" name="search" method="get" action="/search.nhn">
+                        <fieldset>
+                                <legend>검색</legend>
+                                <div class="snb_search_box">
+                                        <div class="snb_search_box_sub">
+                            
+							
+							
+							
+							
+							
+							
+                                        
+                                             
+                                                <!-- //Search Option -->                        
+                                                <input type="text" name="keyword" accessKey="g" title="검색어 입력" value="" maxlength="18" class="snb_search_text" style="ime-mode:active;">
+                                        </div>
+                                        <input onclick="clickcr(this,'LNB.ser','','',event)"  type="button" title="검색" alt="검색" class="btn_search" id="search_bar_button" >
+                                        
+                                </div>
+                        </fieldset>
+                </form>
+        </div>			
+        
+		<div id="author_layer" style="text-align:left; display:none;">
+		    <ul id="author_layer_inner">&nbsp;</ul>
+		</div>        
+		
+		<script type="text/javascript">
+		<!--
+			function goNstore(url) {
+				var nstorePopup = window.open("http://nstore.naver.com" + url, "nstore", "left=0, top=0, menubar=yes, resizable=yes, scrollbars=yes, status=yes, titlebar=yes, toolbar=yes, directories=yes, location=yes");
+				nstorePopup.focus();
+			}
+		//-->
+		</script>
+		
+		
+		<div id="menu">
+			<!--메뉴-->
+			<ul class="menu">
+			<li class="menu_frst"><a onclick="clickcr(this,'LNB.home','','',event);" href="/index.nhn" ><em>만화 홈</em></a></li> 
+		          <li class="menu_scnd"><a onclick="clickcr(this,'LNB.toon','','',event);" href="/webtoon/weekday.nhn" ><em>웹툰</em></a></li> 
+		          <li class="menu_thrd"><a onclick="clickcr(this,'LNB.best','','',event);" href="/genre/bestChallenge.nhn" ><em>베스트 도전</em></a></li> 
+		          <li class="menu_frth"><a onclick="clickcr(this,'LNB.chal','','',event);" href="/genre/challenge.nhn" class="current"><em>도전만화</em></a></li>
+		          <li class="menu_review"><a onclick="clickcr(this,'LNB.review','','',event);" href="/recommendreview/list.nhn" ><em>추천리뷰</em></a></li>
+		          <li class="menu_svnth"><a onclick="clickcr(this,'LNB.my','','',event);" href="/mypage/mypage.nhn" ><em>마이페이지</em></a></li> 
+		          <li class="menu_nine"><em>N스토어</em></li>                      
+		          <li class="menu_fifth"><a onclick="clickcr(this,'LNB.char','','',event); goNstore('/comic/recommendList.nhn')" href="#"><em>단행본 만화</em></a></li> 
+		          <li class="menu_sixth"><a onclick="clickcr(this,'LNB.novel','','',event); goNstore('/novel/recommendList.nhn')" href="#"><em>장르소설</em></a></li> 
+			</ul>
+			<!--//메뉴 -->
+		</div>        
+
+		
+		
+		<div class="notice_info">
+			<span class="blind">공지사항</span>
+			<div id="rolling" class="rolling">
+			<ul class="notice_rolling" style="width:1000px">
+			
+			
+			<li>
+			<a onclick="clickcr(this,'STA.txt','','',event)" href="http://comic.naver.com/webtoon/list.nhn?titleId=670144" title="랑또표 소년만화 <가담항설>" class="notice_txt"><span class="ico_notice"></span>랑또표 소년만화 <가담항설></a>
+			</li>
+			
+			<li>
+			<a onclick="clickcr(this,'STA.txt','','',event)" href="http://comic.naver.com/webtoon/list.nhn?titleId=670146" title="정신줄을 놓은 동화 <놓정동화>" class="notice_txt"><span class="ico_notice"></span>정신줄을 놓은 동화 <놓정동화></a>
+			</li>
+			
+			<li>
+			<a onclick="clickcr(this,'STA.txt','','',event)" href="http://comic.naver.com/webtoon/list.nhn?titleId=670149" title="사람을 살리는 테러리스트 <테러맨>" class="notice_txt"><span class="ico_notice"></span>사람을 살리는 테러리스트 <테러맨></a>
+			</li>
+			
+			<li>
+			<a onclick="clickcr(this,'STA.txt','','',event)" href="http://comic.naver.com/webtoon/list.nhn?titleId=670152" title="본격 RPG 어드벤쳐 <열렙전사>" class="notice_txt"><span class="ico_notice"></span>본격 RPG 어드벤쳐 <열렙전사></a>
+			</li>
+			
+			<li>
+			<a onclick="clickcr(this,'STA.txt','','',event)" href="http://comic.naver.com/webtoon/list.nhn?titleId=670131&weekday=thu" title="10년을 기다려온 대단원의 시작 <천국의 신화>" class="notice_txt"><span class="ico_notice"></span>10년을 기다려온 대단원의 시작 <천국의 신화></a>
+			</li>
+			
+			
+						
+			</ul>
+			</div>
+		</div>
+		
+		
+	<!-- //상단 메뉴 /challenge/list.nhn-->
+	
+	</div>
+	<hr>
+	
+	<div id="container" > 
+		<div id="content" >
+				
+				
+				
+				
+					
+
+
+        
+
+                <!-- 서브탭 메뉴 -->
+                    <div class="snb">		
+						<ul class="spot">
+							<li class=""><a onclick="clickcr(this,'gen.all','','',event)" href="/genre/challenge.nhn">전체만화</a></li>
+							<li class=""><a onclick="clickcr(this,'gen.episode','','',event)" href="/genre/challenge.nhn?m=episode" class="other">에피소드</a></li>
+							<li class="on"><a onclick="clickcr(this,'gen.omnibus','','',event)" href="/genre/challenge.nhn?m=omnibus" class="other">옴니버스</a></li>
+							<li class=""><a onclick="clickcr(this,'gen.story','','',event)" href="/genre/challenge.nhn?m=story" class="other">스토리</a></li>
+						</ul>
+						<ul>
+							<li class=""><a onclick="clickcr(this,'gen.daily','','',event)" href="/genre/challenge.nhn?m=daily">일상</a></li>
+							<li class=""><a onclick="clickcr(this,'gen.comic','','',event)" href="/genre/challenge.nhn?m=comic">개그</a></li>
+							<li class=""><a onclick="clickcr(this,'gen.fantasy','','',event)" href="/genre/challenge.nhn?m=fantasy">판타지</a></li>
+							<li class=""><a onclick="clickcr(this,'gen.action','','',event)" href="/genre/challenge.nhn?m=action">액션</a></li>
+							<li class=""><a onclick="clickcr(this,'gen.drama','','',event)" href="/genre/challenge.nhn?m=drama">드라마</a></li>
+							<li class=""><a onclick="clickcr(this,'gen.pure','','',event)" href="/genre/challenge.nhn?m=pure">순정</a></li>
+							<li class=""><a onclick="clickcr(this,'gen.sensibility','','',event)" href="/genre/challenge.nhn?m=sensibility">감성</a></li>
+							<li class=""><a onclick="clickcr(this,'gen.thrill','','',event)" href="/genre/challenge.nhn?m=thrill">스릴러</a></li>
+							<li class=""><a onclick="clickcr(this,'gen.historical','','',event)" href="/genre/challenge.nhn?m=historical">시대극</a></li>
+							<li class=""><a onclick="clickcr(this,'gen.sports','','',event)" href="/genre/challenge.nhn?m=sports">스포츠</a></li>
+						</ul>	
+					</div>
+                     <div class="ucc_msgnotice">
+                     	
+                     	<img src="http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/txt_ucc3.gif" height="14" alt="도전만화는 누구나 참여할 수 있는 창작만화(UCC)게시판 입니다.">
+                     </div>
+				
+				
+			
+			<!-- body -->
+			<!-- 상세 정보영역 -->
+			<div class="comicinfo" style="">
+			    <div class="thumb">
+					<a onclick="clickcr(this,'inf.img','','',event)" href="/challenge/list.nhn?titleId=671120">
+						<img src="http://thumb.comic.naver.net/nas/user_contents_data/challenge_comic/2016/01/22/fffiesta/thumbnail_title_fffiesta_224917_.jpg" title="Cafe &#039;OK&#039;" alt="Cafe &#039;OK&#039;" width="98" height="79" onERROR="this.src='http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/non98_79.gif'">
+						<span class="mask"></span>
+						</a>
+				</div>
+			    <div class="detail">
+
+			        <h2>
+			        Cafe &#039;OK&#039;<span class="wrt_nm">
+							fffiesta</span>
+						</h2>
+			        <p>서로 돕고 살아가는 어떤 마을에 이사온 고양이 비비가 카페를 차린 후,
+그녀의 유일한 종업원 늑대씨와 벌이는 연애 에피소드</p>
+			        
+				<ul class="btn_group">
+				
+				<li><a href="#" onclick="clickcr(this,'inf.zzim','','',event); return actionRunner.addFavoriteWebtoon('671120');" title="관심웹툰" class="book_maker"><span >관심웹툰</span></a></li>
+				<li><a href="/challenge/detail.nhn?titleId=671120&no=1" onclick="clickcr(this,'inf.first','','',event)" title="첫회보기" class="first"><span >첫회보기</span></a></li>
+				<li><a href="#" onclick="clickcr(this,'inf.artist','','',event); return actionRunner.artistForArtistTitle(this)" id="other_content" title="작가의 다른 작품" class="other2"><span >작가의 다른 작품</span></a></li>
+				<!-- [D] pre_view 클래스에 완결인 경우 end 클래스 추가 및 span에 설명 변경-->
+					<li>
+                        	</li> 				
+		  			<li>
+		  				<div class="u_likeit_module">					
+						</div>
+
+					</li>
+				
+				</ul>
+     
+
+			    </div>
+			</div>
+			<!-- //상세 정보영역 -->
+			<!-- 리스트 -->
+			<table cellpadding="0" cellspacing="0" class="viewList">
+			<caption><span class="blind">회차별 목록</span></caption>
+			<col width="99"><col width="*"><col width="141"><col width="76">
+			<thead>
+			<tr>
+				<th scope="col">이미지</th>
+				<th scope="col">제목</th>
+				<th scope="col">별점</th>
+				<th scope="col">등록일</th>
+			</tr>			
+			</thead>
+			<tr>
+				<td colspan="4" class="blank"></td>
+			</tr>							
+			<tr>
+				<td>
+					<a href="/challenge/detail.nhn?titleId=671120&no=8" onclick="clickcr(this,'lst.img','671120','8',event)">
+						<img src="http://thumb.comic.naver.net/nas/user_contents_data/challenge_comic/2016/02/12/fffiesta/thumbnail_inst_fffiesta_194400_.jpg" title="#6 - 부엉이와 어떤 쥐" alt="#6 - 부엉이와 어떤 쥐" width="71" height="41" onERROR="this.src='http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/non71_41.gif'">
+						<span class="mask"></span>
+					</a>
+					</td>
+				<td class="title">
+						<a href="/challenge/detail.nhn?titleId=671120&no=8"onclick="clickcr(this,'lst.title','671120','8',event)">#6 - 부엉이와 어떤 쥐</a>
+							</td>
+						<td>
+							<div class="rating_type"> 
+								<span class="star"><em style="width:97.28%">평점</em></span>  
+		                        <strong>9.73</strong>  
+							</div> 
+						</td> 
+						<td class="num">2016.02.12</td>
+					</tr>
+			<tr>
+				<td>
+					<a href="/challenge/detail.nhn?titleId=671120&no=6" onclick="clickcr(this,'lst.img','671120','6',event)">
+						<img src="http://thumb.comic.naver.net/nas/user_contents_data/challenge_comic/2016/02/05/fffiesta/thumbnail_inst_fffiesta_185749_.jpg" title="#5 - Brand new world" alt="#5 - Brand new world" width="71" height="41" onERROR="this.src='http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/non71_41.gif'">
+						<span class="mask"></span>
+					</a>
+					</td>
+				<td class="title">
+						<a href="/challenge/detail.nhn?titleId=671120&no=6"onclick="clickcr(this,'lst.title','671120','6',event)">#5 - Brand new world</a>
+							</td>
+						<td>
+							<div class="rating_type"> 
+								<span class="star"><em style="width:98.54%">평점</em></span>  
+		                        <strong>9.85</strong>  
+							</div> 
+						</td> 
+						<td class="num">2016.02.05</td>
+					</tr>
+			<tr>
+				<td>
+					<a href="/challenge/detail.nhn?titleId=671120&no=5" onclick="clickcr(this,'lst.img','671120','5',event)">
+						<img src="http://thumb.comic.naver.net/nas/user_contents_data/challenge_comic/2016/01/28/fffiesta/thumbnail_inst_fffiesta_213105_.jpg" title="#4 - 어느 걱정 많은 고양이" alt="#4 - 어느 걱정 많은 고양이" width="71" height="41" onERROR="this.src='http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/non71_41.gif'">
+						<span class="mask"></span>
+					</a>
+					</td>
+				<td class="title">
+						<a href="/challenge/detail.nhn?titleId=671120&no=5"onclick="clickcr(this,'lst.title','671120','5',event)">#4 - 어느 걱정 많은 고양이</a>
+							</td>
+						<td>
+							<div class="rating_type"> 
+								<span class="star"><em style="width:99.01%">평점</em></span>  
+		                        <strong>9.90</strong>  
+							</div> 
+						</td> 
+						<td class="num">2016.01.28</td>
+					</tr>
+			<tr>
+				<td>
+					<a href="/challenge/detail.nhn?titleId=671120&no=4" onclick="clickcr(this,'lst.img','671120','4',event)">
+						<img src="http://thumb.comic.naver.net/nas/user_contents_data/challenge_comic/2016/01/28/fffiesta/thumbnail_inst_fffiesta_211917_.jpg" title="#3 - 언제나 처음 처럼" alt="#3 - 언제나 처음 처럼" width="71" height="41" onERROR="this.src='http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/non71_41.gif'">
+						<span class="mask"></span>
+					</a>
+					</td>
+				<td class="title">
+						<a href="/challenge/detail.nhn?titleId=671120&no=4"onclick="clickcr(this,'lst.title','671120','4',event)">#3 - 언제나 처음 처럼</a>
+							</td>
+						<td>
+							<div class="rating_type"> 
+								<span class="star"><em style="width:98.73%">평점</em></span>  
+		                        <strong>9.87</strong>  
+							</div> 
+						</td> 
+						<td class="num">2016.01.28</td>
+					</tr>
+			<tr>
+				<td>
+					<a href="/challenge/detail.nhn?titleId=671120&no=3" onclick="clickcr(this,'lst.img','671120','3',event)">
+						<img src="http://thumb.comic.naver.net/nas/user_contents_data/challenge_comic/2016/01/22/fffiesta/thumbnail_inst_fffiesta_220511_.jpg" title="#2 - 찬 바람 불 때는 브런치" alt="#2 - 찬 바람 불 때는 브런치" width="71" height="41" onERROR="this.src='http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/non71_41.gif'">
+						<span class="mask"></span>
+					</a>
+					</td>
+				<td class="title">
+						<a href="/challenge/detail.nhn?titleId=671120&no=3"onclick="clickcr(this,'lst.title','671120','3',event)">#2 - 찬 바람 불 때는 브런치</a>
+							</td>
+						<td>
+							<div class="rating_type"> 
+								<span class="star"><em style="width:98.63%">평점</em></span>  
+		                        <strong>9.86</strong>  
+							</div> 
+						</td> 
+						<td class="num">2016.01.22</td>
+					</tr>
+			<tr>
+				<td>
+					<a href="/challenge/detail.nhn?titleId=671120&no=2" onclick="clickcr(this,'lst.img','671120','2',event)">
+						<img src="http://thumb.comic.naver.net/nas/user_contents_data/challenge_comic/2016/01/15/fffiesta/thumbnail_inst_fffiesta_225840_.jpg" title="#1 - 크리스마스 초콜렛 트리" alt="#1 - 크리스마스 초콜렛 트리" width="71" height="41" onERROR="this.src='http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/non71_41.gif'">
+						<span class="mask"></span>
+					</a>
+					</td>
+				<td class="title">
+						<a href="/challenge/detail.nhn?titleId=671120&no=2"onclick="clickcr(this,'lst.title','671120','2',event)">#1 - 크리스마스 초콜렛 트리</a>
+							</td>
+						<td>
+							<div class="rating_type"> 
+								<span class="star"><em style="width:98.19%">평점</em></span>  
+		                        <strong>9.82</strong>  
+							</div> 
+						</td> 
+						<td class="num">2016.01.15</td>
+					</tr>
+			<tr>
+				<td>
+					<a href="/challenge/detail.nhn?titleId=671120&no=1" onclick="clickcr(this,'lst.img','671120','1',event)">
+						<img src="http://thumb.comic.naver.net/nas/user_contents_data/challenge_comic/2016/01/10/fffiesta/thumbnail_inst_fffiesta_231500_.jpg" title="- 프롤로그" alt="- 프롤로그" width="71" height="41" onERROR="this.src='http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/non71_41.gif'">
+						<span class="mask"></span>
+					</a>
+					</td>
+				<td class="title">
+						<a href="/challenge/detail.nhn?titleId=671120&no=1"onclick="clickcr(this,'lst.title','671120','1',event)">- 프롤로그</a>
+							</td>
+						<td>
+							<div class="rating_type"> 
+								<span class="star"><em style="width:97.92%">평점</em></span>  
+		                        <strong>9.79</strong>  
+							</div> 
+						</td> 
+						<td class="num">2016.01.09</td>
+					</tr>
+			</table>
+			<!-- //리스트 -->
+
+			<div class="pagenavigation">
+				<span class="current">1</span><span class="blind">현재 선택된 페이지</span>
+</div>
+		</div>
+		<!-- side menu -->
+		
+		<div id="aside">
+			
+			
+			
+						
+			
+				
+
+
+  
+      
+
+			<!-- 배너 -->
+			
+			
+			<div id="addiv" name="addiv"><iframe id=f240240 name=f240240 src=http://ad.naver.com/adshow?unit=567A width=240 height=240 border=0 frameborder=0 scrolling=no marginheight=0 marginwidth=0 align=center></iframe></div>
+			<!-- //배너 -->			
+				
+
+
+    
+
+			
+			 <div class="asideButton">
+                 
+                     
+                     
+                        <a id="uploadLinkId" onclick="clickcr(this,'olk.upload','','',event)" href="#" ><img src="http://static.naver.net/comic/images/2012/img_right_upload.gif" title="만화올리기" alt="만화올리기" width="240" height="43"></a>
+                     
+                 
+			 </div>
+			
+			
+				
+
+
+  
+      
+
+			<!-- 롤링이미지 -->
+			
+			<div class="asideRolling">
+				<a onclick="clickcr(this,'olk.banner','','',event)" href="http://comic.naver.com/webtoon/list.nhn?titleId=670150&weekday=sat" ><img src="http://static.comic.naver.net/staticImages/COMICWEB/NAVER/banner/20160123/20160123233625.jpg" width="240" height="97" alt="광고"></a>
+
+			</div>
+				
+
+
+  
+     
+   
+
+			<!-- 인기급상승만화 -->
+			<div class="asideBox">
+				<h4 class="asideBoxTitle"><img src="http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/subtlt_r_best.gif" title="인기급상승만화" alt="인기급상승만화" width="78" height="11"></h4>
+				<div>
+					<ul class="asideBoxTab"><!-- 선택된 메뉴에는 choice라는 클래스명을 사용합니다 -->
+						<li id="realTimeRankChoiceTabFavorite" class="choice"><a id="realTimeRankChoiceTabFavoriteClick" onclick="clickcr(this,'rnk.rep','','',event)" href="#"><img src="http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/tab_txt_favor.gif" title="인기순" alt="인기순" width="31" height="12"></a></li>
+						<li id="realTimeRankChoiceTabUpdate"><a id="realTimeRankChoiceTabUpdateClick" onclick="clickcr(this,'rnk.upd','','',event)" href="#" ><img src="http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/tab_txt_update.gif" title="업데이트순" alt="업데이트순" width="52" height="12"></a></li>
+					</ul>
+
+					<ol id="realTimeRankFavorite" class="asideBoxRank">
+					
+										
+					<li class="rank01">					
+					<a onclick="clickcr(this,'rnk*p.cont','671921','1',event)" href="/challenge/detail.nhn?titleId=671921&no=17" title="우리는 알록달록-이게 뭔">우리는 알록달록-이게 뭔</a>
+					<span class="rankBox">
+					<img src="http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/arrow_no.gif" title="변동없음" alt="변동없음" width="7" height="10"> 0
+					</span>
+					</li>
+					
+										
+					<li class="rank02">					
+					<a onclick="clickcr(this,'rnk*p.cont','603953','2',event)" href="/challenge/detail.nhn?titleId=603953&no=21" title="타락해주세요! 나의 천사님!-첫째 날">타락해주세요! 나의 천사님!-첫째 날</a>
+					<span class="rankBox">
+					<img src="http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/arrow_no.gif" title="변동없음" alt="변동없음" width="7" height="10"> 0
+					</span>
+					</li>
+					
+										
+					<li class="rank03">					
+					<a onclick="clickcr(this,'rnk*p.cont','672804','3',event)" href="/challenge/detail.nhn?titleId=672804&no=7" title="[BL]껴안아주고싶어-[BL]껴안아주고싶어 6">[BL]껴안아주고싶어-[BL]껴안아주고싶어 6</a>
+					<span class="rankBox">
+					<img src="http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/arrow_no.gif" title="변동없음" alt="변동없음" width="7" height="10"> 0
+					</span>
+					</li>
+					
+										
+					<li class="rank04">					
+					<a onclick="clickcr(this,'rnk*p.cont','672407','4',event)" href="/challenge/detail.nhn?titleId=672407&no=31" title="[BL] A군과 B군-30화">[BL] A군과 B군-30화</a>
+					<span class="rankBox">
+					<img src="http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/arrow_up.gif" title="순위상승" width="7" height="10">1
+					</span>
+					</li>
+					
+										
+					<li class="rank05">					
+					<a onclick="clickcr(this,'rnk*p.cont','674105','5',event)" href="/challenge/detail.nhn?titleId=674105&no=1" title="[BL]어쩌다보니--">[BL]어쩌다보니--</a>
+					<span class="rankBox">
+					<img src="http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/arrow_down.gif" title="순위하락" width="7" height="10">1
+					</span>
+					</li>
+					
+										
+					<li class="rank06">					
+					<a onclick="clickcr(this,'rnk*p.cont','671376','6',event)" href="/challenge/detail.nhn?titleId=671376&no=6" title="에르나크-06">에르나크-06</a>
+					<span class="rankBox">
+					<img src="http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/arrow_up.gif" title="순위상승" width="7" height="10">1
+					</span>
+					</li>
+					
+										
+					<li class="rank07">					
+					<a onclick="clickcr(this,'rnk*p.cont','673782','7',event)" href="/challenge/detail.nhn?titleId=673782&no=3" title="[BL]호모나게이뭐야-03. 잘먹겠스미다.">[BL]호모나게이뭐야-03. 잘먹겠스미다.</a>
+					<span class="rankBox">
+					<img src="http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/arrow_down.gif" title="순위하락" width="7" height="10">1
+					</span>
+					</li>
+					
+										
+					<li class="rank08">					
+					<a onclick="clickcr(this,'rnk*p.cont','638478','8',event)" href="/challenge/detail.nhn?titleId=638478&no=32" title="[BL]내 여동생의 남자친구-13화">[BL]내 여동생의 남자친구-13화</a>
+					<span class="rankBox">
+					<img src="http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/arrow_no.gif" title="변동없음" alt="변동없음" width="7" height="10"> 0
+					</span>
+					</li>
+					
+										
+					<li class="rank09">					
+					<a onclick="clickcr(this,'rnk*p.cont','672224','9',event)" href="/challenge/detail.nhn?titleId=672224&no=3" title="현실판타지-신소효 (1)">현실판타지-신소효 (1)</a>
+					<span class="rankBox">
+					<img src="http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/arrow_no.gif" title="변동없음" alt="변동없음" width="7" height="10"> 0
+					</span>
+					</li>
+					
+										
+					<li class="rank10">					
+					<a onclick="clickcr(this,'rnk*p.cont','670195','10',event)" href="/challenge/detail.nhn?titleId=670195&no=10" title="룸메이트-#9. 첫 Kiss">룸메이트-#9. 첫 Kiss</a>
+					<span class="rankBox">
+					<img src="http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/arrow_no.gif" title="변동없음" alt="변동없음" width="7" height="10"> 0
+					</span>
+					</li>
+					
+					</ol>					
+					<ol id="realTimeRankUpdate" class="asideBoxRank" style="display:none;">
+					
+															
+					<li class="rank01">					
+					<a onclick="clickcr(this,'rnk*u.cont','666934','1',event)" href="/challenge/detail.nhn?titleId=666934&no=101" title="샹강샹강-광장거리">샹강샹강-광장거리</a>
+					<span class="timeBox">
+					24분전
+					</span></li>
+					
+															
+					<li class="rank02">					
+					<a onclick="clickcr(this,'rnk*u.cont','639714','2',event)" href="/challenge/detail.nhn?titleId=639714&no=175" title="포 엔드-171">포 엔드-171</a>
+					<span class="timeBox">
+					1시간전
+					</span></li>
+					
+															
+					<li class="rank03">					
+					<a onclick="clickcr(this,'rnk*u.cont','673945','3',event)" href="/challenge/detail.nhn?titleId=673945&no=9" title="시크릿 서비스-1. 간절한 마음 - 1">시크릿 서비스-1. 간절한 마음 - 1</a>
+					<span class="timeBox">
+					2시간전
+					</span></li>
+					
+															
+					<li class="rank04">					
+					<a onclick="clickcr(this,'rnk*u.cont','671619','4',event)" href="/challenge/detail.nhn?titleId=671619&no=5" title="파란만장 파키스탄 [ㅎㅎ하우스]-4회 - 오늘도 무사히">파란만장 파키스탄 [ㅎㅎ하우스]-4회 - 오늘도 무사히</a>
+					<span class="timeBox">
+					3시간전
+					</span></li>
+					
+															
+					<li class="rank05">					
+					<a onclick="clickcr(this,'rnk*u.cont','637384','5',event)" href="/challenge/detail.nhn?titleId=637384&no=26" title="비밀수업-9화. 갈등의 시작(3)">비밀수업-9화. 갈등의 시작(3)</a>
+					<span class="timeBox">
+					4시간전
+					</span></li>
+					
+															
+					<li class="rank06">					
+					<a onclick="clickcr(this,'rnk*u.cont','674105','6',event)" href="/challenge/detail.nhn?titleId=674105&no=1" title="[BL]어쩌다보니--">[BL]어쩌다보니--</a>
+					<span class="timeBox">
+					4시간전
+					</span></li>
+					
+															
+					<li class="rank07">					
+					<a onclick="clickcr(this,'rnk*u.cont','672804','7',event)" href="/challenge/detail.nhn?titleId=672804&no=7" title="[BL]껴안아주고싶어-[BL]껴안아주고싶어 6">[BL]껴안아주고싶어-[BL]껴안아주고싶어 6</a>
+					<span class="timeBox">
+					4시간전
+					</span></li>
+					
+															
+					<li class="rank08">					
+					<a onclick="clickcr(this,'rnk*u.cont','673341','8',event)" href="/challenge/detail.nhn?titleId=673341&no=4" title="연습입니다-연습">연습입니다-연습</a>
+					<span class="timeBox">
+					5시간전
+					</span></li>
+					
+															
+					<li class="rank09">					
+					<a onclick="clickcr(this,'rnk*u.cont','603953','9',event)" href="/challenge/detail.nhn?titleId=603953&no=21" title="타락해주세요! 나의 천사님!-첫째 날">타락해주세요! 나의 천사님!-첫째 날</a>
+					<span class="timeBox">
+					5시간전
+					</span></li>
+					
+															
+					<li class="rank10">					
+					<a onclick="clickcr(this,'rnk*u.cont','674101','10',event)" href="/challenge/detail.nhn?titleId=674101&no=2" title="02년생의 그림연습-2016.01.27">02년생의 그림연습-2016.01.27</a>
+					<span class="timeBox">
+					5시간전
+					</span></li>
+										
+					</ol>
+					
+				</div>
+			</div>
+			<!-- //인기급상승만화 -->
+				
+
+
+  
+     
+
+   
+
+			<!-- 추천 웹툰 -->
+			<div class="asideBox">
+				<h4 class="asideBoxTitle"><img id="recommand_ageImg" src="http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/h_30.gif" width="107" height="11" alt="30대 인기만화">
+					<div class="tab_nv">
+						<a id="recommandWebtoonRankLeftTabClick" href="#" class="btn_prv" title="이전" alt="이전">이전</a><a id="recommandWebtoonRankRightTabClick" href="#" class="btn_nxt" title="다음">다음</a>
+					</div>
+				</h4>
+				<div>
+				<ul class="asideBoxTab">
+					<li id="recommandWebtoonRankMTabOver" class="choice"><img src="http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/tab_txt_m.png" width="21" height="11" alt="남자" title="남자"></li>
+					<li id="recommandWebtoonRankWTabOver"><img src="http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/tab_txt_w.png" width="21" height="11" alt="여자" title="여자"></li>
+					</ul>
+					<ol id="recommandWebtoonRank" class="asideBoxRank asideBoxRank2">
+					
+					
+					<li id="recommandLi_0" class="rank01">	
+						<div class="thumb6">				
+							<a id="recommand_link_0" href="/webtoon/detail.nhn?titleId=626907&no=83" title="복학왕">
+								<img onerror="this.src='http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/blank.gif'"  id="recommand_thumbnail_0" src="http://thumb.comic.naver.net/webtoon/626907/thumbnail/title_thumbnail_20150407141027_t83x90.jpg" width="30" height="33" alt="복학왕">
+								<span class="mask"></span>
+							</a>
+						</div>
+						<div class="rc_info">
+							<a id="recommand_titleName_0" href="/webtoon/detail.nhn?titleId=626907&no=83" class="tit" title="복학왕">복학왕</a>
+							<em><a id="recommand_painter_0" href="#" onclick="return artistAction.viewArtist('626907', this);" title="기안84">기안84</a></em>
+							<span class="rankBox2">
+							<img id="recommand_img_0" src="http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/arrow_no.gif" title="변동없음" alt="변동없음"><em id="recommand_rank_0">0</em>
+							</span>
+						</div>
+					</li>
+					
+					
+					<li id="recommandLi_1" class="rank02">	
+						<div class="thumb6">				
+							<a id="recommand_link_1" href="/webtoon/detail.nhn?titleId=665618&no=18" title="웃지 않는 개그반 시즌3">
+								<img onerror="this.src='http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/blank.gif'"  id="recommand_thumbnail_1" src="http://thumb.comic.naver.net/webtoon/665618/thumbnail/title_thumbnail_20151020181150_t83x90.jpg" width="30" height="33" alt="웃지 않는 개그반 시즌3">
+								<span class="mask"></span>
+							</a>
+						</div>
+						<div class="rc_info">
+							<a id="recommand_titleName_1" href="/webtoon/detail.nhn?titleId=665618&no=18" class="tit" title="웃지 않는 개그반 시즌3">웃지 않는 개그반 시즌3</a>
+							<em><a id="recommand_painter_1" href="#" onclick="return artistAction.viewArtist('665618', this);" title="현용민">현용민</a></em>
+							<span class="rankBox2">
+							<img id="recommand_img_1" src="http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/arrow_no.gif" title="변동없음" alt="변동없음"><em id="recommand_rank_1">0</em>
+							</span>
+						</div>
+					</li>
+					
+					
+					<li id="recommandLi_2" class="rank03">	
+						<div class="thumb6">				
+							<a id="recommand_link_2" href="/webtoon/detail.nhn?titleId=642598&no=116" title="조선왕조실톡">
+								<img onerror="this.src='http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/blank.gif'"  id="recommand_thumbnail_2" src="http://thumb.comic.naver.net/webtoon/642598/thumbnail/title_thumbnail_20160117000448_t83x90.jpg" width="30" height="33" alt="조선왕조실톡">
+								<span class="mask"></span>
+							</a>
+						</div>
+						<div class="rc_info">
+							<a id="recommand_titleName_2" href="/webtoon/detail.nhn?titleId=642598&no=116" class="tit" title="조선왕조실톡">조선왕조실톡</a>
+							<em><a id="recommand_painter_2" href="#" onclick="return artistAction.viewArtist('642598', this);" title="무적핑크">무적핑크</a></em>
+							<span class="rankBox2">
+							<img id="recommand_img_2" src="http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/arrow_no.gif" title="변동없음" alt="변동없음"><em id="recommand_rank_2">0</em>
+							</span>
+						</div>
+					</li>
+					
+					
+					<li id="recommandLi_3" class="rank04">	
+						<div class="thumb6">				
+							<a id="recommand_link_3" href="/webtoon/detail.nhn?titleId=449854&no=208" title="돌아온 럭키짱">
+								<img onerror="this.src='http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/blank.gif'"  id="recommand_thumbnail_3" src="http://thumb.comic.naver.net/webtoon/449854/thumbnail/title_thumbnail_20120302192957_t83x90.jpg" width="30" height="33" alt="돌아온 럭키짱">
+								<span class="mask"></span>
+							</a>
+						</div>
+						<div class="rc_info">
+							<a id="recommand_titleName_3" href="/webtoon/detail.nhn?titleId=449854&no=208" class="tit" title="돌아온 럭키짱">돌아온 럭키짱</a>
+							<em><a id="recommand_painter_3" href="#" onclick="return artistAction.viewArtist('449854', this);" title="김성모">김성모</a></em>
+							<span class="rankBox2">
+							<img id="recommand_img_3" src="http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/arrow_no.gif" title="변동없음" alt="변동없음"><em id="recommand_rank_3">0</em>
+							</span>
+						</div>
+					</li>
+					
+					
+					<li id="recommandLi_4" class="rank05">	
+						<div class="thumb6">				
+							<a id="recommand_link_4" href="/webtoon/detail.nhn?titleId=671421&no=5" title="언덕 위의 제임스">
+								<img onerror="this.src='http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/blank.gif'"  id="recommand_thumbnail_4" src="http://thumb.comic.naver.net/webtoon/671421/thumbnail/title_thumbnail_20160115181358_t83x90.jpg" width="30" height="33" alt="언덕 위의 제임스">
+								<span class="mask"></span>
+							</a>
+						</div>
+						<div class="rc_info">
+							<a id="recommand_titleName_4" href="/webtoon/detail.nhn?titleId=671421&no=5" class="tit" title="언덕 위의 제임스">언덕 위의 제임스</a>
+							<em><a id="recommand_painter_4" href="#" onclick="return artistAction.viewArtist('671421', this);" title="쿠당탕">쿠당탕</a></em>
+							<span class="rankBox2">
+							<img id="recommand_img_4" src="http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/arrow_no.gif" title="변동없음" alt="변동없음"><em id="recommand_rank_4">0</em>
+							</span>
+						</div>
+					</li>
+					
+					</ol>										
+				</div>
+			</div>
+			<script>
+			new naver.comic.RecommandWebtoonRankLayer(0, "http://thumb.comic.naver.net");
+			</script>
+			<!-- //추천 웹툰 -->
+				
+
+
+  
+ 
+			<!-- 공지사항 -->
+			<div class="asideBox">
+				<h4 class="asideBoxTitle"><img src="http://static.comic.naver.net/staticImages/COMICWEB/NAVER/img/common/subtlt_r_notice.gif" title="공지사항" alt="공지사항" width="43" height="12"></h4>
+
+				<a onclick="clickcr(this,'sna.more','','',event)" href="/notice.nhn" class="asideBoxMore"><span class="blind">공지사항</span> 더보기</a>
+				<ul class="asideBoxNotice">
+					
+										
+							<li><a onclick="clickcr(this,'sna.not','10000000000030558776','1',event)" href="/notice.nhn?docId=10000000000030558776" title="2016년 1월 베스트 도전만화 승격작 안내" >
+									<Strong>
+										2016년 1월 베스트 도전만화 승격작 안내
+									</Strong>
+								</a></li>
+						
+					
+										
+							<li><a onclick="clickcr(this,'sna.not','10000000000030550249','2',event)" href="/notice.nhn?docId=10000000000030550249" title="2016년 2월 스토어 유료화 전환 작품 안내" >
+									
+										2016년 2월 스토어 유료화 전환 작품 안내
+									
+								</a></li>
+						
+					
+										
+							<li><a onclick="clickcr(this,'sna.not','10000000000030548155','3',event)" href="/notice.nhn?docId=10000000000030548155" title="겟!짤 오픈 기념 이벤트 당첨자 발표" >
+									
+										겟!짤 오픈 기념 이벤트 당첨자 발표
+									
+								</a></li>
+						
+					
+										
+							<li><a onclick="clickcr(this,'sna.not','10000000000030531469','4',event)" href="/notice.nhn?docId=10000000000030531469" title="베스트도전 지원 프로그램 &lt;포텐업 1기&gt; 발표" >
+									
+										베스트도전 지원 프로그램 &lt;포텐업 1기&gt; 발표
+									
+								</a></li>
+						
+					
+										
+							<li><a onclick="clickcr(this,'sna.not','10000000000030531425','5',event)" href="/notice.nhn?docId=10000000000030531425" title="네이버웹툰 베스트도전 지원 프로그램 &lt;포텐업&gt; 안내" >
+									
+										네이버웹툰 베스트도전 지원 프로그램 &lt;포텐업&gt; 안내
+									
+								</a></li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+										
+				</ul>
+			</div>
+			<!-- //공지사항 -->
+				
+
+
+
+
+<!-- FAQ Start -->
+<div class="asideButton3"> 
+	<a class="btn_faq" onclick="clickcr(this,'sna.faq','','',event); OPS.viewOPS('ops', {url : 'https://help.naver.com/support/service/main.nhn', param : 'serviceNo=799'}); return false;" href="#"><span class="blind">만화FAQ</span></a> 
+</div>    
+<!-- //FAQ End --> 
+
+<!-- //FAQ 버튼 -->
+<!-- 이용안내 -->           
+<div class="asideButton3">
+	<img src="http://static.naver.net/comic/images/img_bnr.gif" width="238" height="54" alt="네이버북스 모바일앱 언제 어디서나 편리하게 이용하세요"> 
+	<ul> 
+		 <li class="itm"><span>안드로이드 앱</span><a onclick="clickcr(this,'sna.android','','',event)" href="https://play.google.com/store/apps/details?id=com.nhn.android.nbooks&feature=search_result#?t=W251bGwsMSwxLDEsImNvbS5uaG4uYW5kcm9pZC5uYm9va3MiXQ"  target="_blank"><span class="blind">설치하기</span></a></li>
+		 <li class="itm2"><span>아이폰/아이패드 앱</span><a onclick="clickcr(this,'sna.ios','','',event)" href="http://comic.naver.com/notice.nhn?docId=10000000000024589016"><span class="blind">이용안내</span></a></li> 
+	</ul> 
+</div>
+<!-- //이용안내 -->  
+			
+			
+		</div>
+		
+	</div>
+
+<!--유료화구간 레이어 팝업-->
+
+<!-- //유료화구간 레이어 팝업 -->
+	
+	<!-- Footer -->
+	
+
+
+
+
+
+<!-- FOOTER Start -->
+<div id="footer">
+	<ul>
+		<li><a href="http://www.naver.com/rules/service.html" onClick="clickcr(this,'fot.agreement','','',event)"><strong>이용약관</strong></a></li>
+		<li><a href="http://www.naver.com/rules/privacy.html" onclick="clickcr(this,'fot.privacy','','',event)" target="rules"><strong>개인정보취급방침</strong></a></li>
+		<li><a href="http://www.naver.com/rules/disclaimer.html" onclick="clickcr(this,'fot.disclaimer','','',event)" target="rules"><strong>책임의 한계와 법적고지</strong></a></li>
+		<li><a href="#" onclick="clickcr(this,'fot.help','','',event); OPS.viewOPS('ops', {url : 'https://help.naver.com/support/service/main.nhn', param : 'serviceNo=799'}); return false;" target="rules"><strong>만화 고객센터</strong></a></li>
+	</ul>
+	<p class="copyright_law">
+		본 콘텐츠의 저작권은 저자 또는 제공처에 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 법적책임을 질 수 있습니다.
+	</p>
+	<p class="info">
+		사업자등록번호 : 220-81-62517<span>통신판매업 신고번호</span> : 경기성남 제 2006 - 692호<span>대표이사 : 김상헌</span><span><a href="http://www.ftc.go.kr/info/bizinfo/communicationList.jsp">사업자등록정보 확인</a></span><br>
+		주소 : 경기도 성남시 분당구 불정로 6 네이버 그린팩토리 463-867 16층<span>대표전화 : 1588-3820</span>
+	</p> 
+	<address>
+		<a href="http://www.navercorp.com/" target="_blank" class="logo" onclick="clickcr(this,'fot.nhn','','',event)">NAVER</a>
+		Copyright &copy;
+		<a href="http://www.navercorp.com/" target="_blank" onclick="clickcr(this,'fot.nhncorp','','',event)"><strong>NAVER Corp.</strong></a>
+		<span>All Rights Reserved.</span>
+	</address>
+	
+</div>
+<!-- //FOOTER End -->
+<script type="text/javascript">
+var agent = navigator.userAgent.toLowerCase();
+
+function loadEvent(){
+	try{
+		getGNB();
+	}catch(ex){
+		
+	}
+	new naver.comic.RealtimeRankLayer();
+	if ( $("uploadLinkId") ){
+		$Fn(naver.comic.oEventHandler.goUpload).attach($("uploadLinkId"),"click");
+	}
+	naver.comic.oArtistAction = new naver.comic.Artist();
+	artistAction = naver.comic.oArtistAction;
+	naver.comic.oSearchBar = new naver.comic.SearchBarOptionActHandler();
+
+	
+	naver.comic.oRollingTextBanner = new naver.comic.TextBanner();
+	naver.comic.oRollingTextBanner.start();
+	$Fn(function(oEvent ) {
+		naver.comic.oRollingTextBanner.stop();
+		oEvent.stop();
+	}).attach($$.getSingle(".rolling"),"mouseover");
+	$Fn(function(oEvent ) {
+		naver.comic.oRollingTextBanner.stop();
+		oEvent.stop();
+	}).attach($$.getSingle(".notice_txt"),"focus");
+	$Fn(function(oEvent ) {
+		if( !naver.comic.oRollingTextBanner.getRegister()  ){
+			naver.comic.oRollingTextBanner.start();
+		}
+		oEvent.stop();
+	}).attach($$.getSingle(".rolling"),"mouseout");
+	
+	
+	// GNB 이벤트 재정의.
+	$Fn(function(oEvent){
+		var aWtChild = $Element("gnb" ).child(function (v){return true;});
+		var wtSrc = $Element(oEvent.element);
+		var bContain = false;
+		for (var i = 0 ; i < aWtChild.length ;i++){
+			if ( aWtChild[i].$value() == wtSrc.$value()){
+				bContain = true;
+				break;				
+			}
+		}
+		if ( !bContain && gnbAllLayerClose ){
+			gnbAllLayerClose();		
+			
+		}	
+
+	}).attach(document,"click");
+}			
+$Fn(loadEvent).attach(window,'load');
+</script>
+
+    
+
+<script type="text/javascript" src="/compress/javascript/lcslog_20160113160419.js"></script>
+<script type="text/javascript">
+try{
+lcs_do();
+}catch(ex){
+	
+}
+</script>
+</body>
+</html>

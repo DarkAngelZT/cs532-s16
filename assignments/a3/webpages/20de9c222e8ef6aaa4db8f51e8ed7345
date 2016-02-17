@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>不動産投資セミナー - Ritlweb 動画検索</title>
+<meta name="keywords" content="不動産投資セミナー,動画,検索,結果,Ritlweb" />
+<meta name="description" content="不動産投資セミナーを12の動画サイトで一度に検索、結果を一覧にして表示。　不動産投資セミナーの動画ムービーを徹底的に探せます。　また、不動産投資セミナー関連の話題をジャンル毎に調べることも可能。" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link rel="stylesheet" href="/css/search.css" type="text/css" />
+<link rel="alternate" media="handheld" href="http://movie.ritlweb.com/m/search.php?i=%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC" />
+<link rel="shortcut icon" href="/favicon.ico" />
+</head>
+<body>
+<div id="container">
+<div id="top"><img src="/img/new.gif" width="28" height="11" alt="new" /><a href="http://user.ritlweb.com/login.php">ログイン/新規登録</a>　|　<a href="http://www.ritlweb.com/" title="Ritlwebトップへ">Ritlweb リトルウェブ</a></div>
+<a href="http://movie.ritlweb.com/" title="Ritlweb 動画検索"><img src="/movie.gif" id="logo" name="logo" width="175" height="70" alt="Ritlweb 動画検索" /></a>
+<form action="/search.php" method="get" id="f" name="f">
+<input type="text" id="textbox" name="i" size="60" maxlength="200" tabindex="1" accesskey="i" value="不動産投資セミナー" />
+<input type="submit" id="s" name="s" tabindex="2" accesskey="s" value="同時検索" />
+</form>
+<div class="view"></div>
+<h1>動画検索 - 不動産投資セミナー</h1>
+<div id="content">
+<div id="left">
+<div id="ritlboxt">Ritlweb</div>
+<div id="ritlbox">
+<ul>
+<li><a href="http://openlist.ritlweb.com/">オープンリスト</a></li>
+<li><a href="http://profile.ritlweb.com/">プロフィール検索</a></li>
+<li><a href="http://today.ritlweb.com/">今日の話題</a></li>
+</ul>
+</div>
+<div id="cateboxt">同時検索</div>
+<div id="catebox">
+<ul>
+<li><a href="http://mysearch.ritlweb.com/search/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC">マイセレクト</a></li>
+<li><a href="http://kensaku.ritlweb.com/search/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC">検索エンジン</a></li>
+<li><a href="http://blog.ritlweb.com/search/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC">ブログ</a></li>
+<li><a href="http://news.ritlweb.com/search/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC">ニュース</a></li>
+<li><a href="http://tv.ritlweb.com/search/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC">テレビ</a></li>
+<li><a href="http://bbs.ritlweb.com/search/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC">掲示板</a></li>
+<li><a href="http://faq.ritlweb.com/search/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC">質問、回答</a></li>
+<li><a href="http://bookmark.ritlweb.com/search/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC">ブックマーク</a></li>
+<li><a href="http://merumaga.ritlweb.com/search/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC">メルマガ</a></li>
+<li><a href="http://shopping.ritlweb.com/search/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC">ショッピング</a></li>
+<li><a href="http://auction.ritlweb.com/search/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC">オークション</a></li>
+<li><a href="http://music.ritlweb.com/search/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC">音楽</a></li>
+<li><a href="http://image.ritlweb.com/search/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC">画像</a></li>
+<li id="circle">動画</li>
+<li><a href="http://coupon.ritlweb.com/search/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC">クーポン</a></li>
+</ul>
+</div>
+<div class="leftboxt">ピックアップ</div>
+<div class="leftbox">
+・<a href="http://ad.ritlweb.net/mayotakarakuji/" target="_blank" rel="nofollow">インターネット宝くじ</a><br />
+・<a href="http://ad.ritlweb.net/taiken1/" target="_blank" rel="nofollow">体験告白サイト</a><br />
+</div>
+<div id="bmboxt">検索結果をつぶやく</div>
+<div id="bmbox">
+<div id="twit"><a href="http://twitter.com/share?count=none&amp;url=http%3A%2F%2Fmovie.ritlweb.com%2Fsearch%2F%25E4%25B8%258D%25E5%258B%2595%25E7%2594%25A3%25E6%258A%2595%25E8%25B3%2587%25E3%2582%25BB%25E3%2583%259F%25E3%2583%258A%25E3%2583%25BC&amp;text=%E3%80%8C%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%80%8D%E3%82%92%E8%A4%87%E6%95%B0%E3%81%AE%E5%8B%95%E7%94%BB%E3%82%B5%E3%82%A4%E3%83%88%E3%81%A7%E8%AA%BF%E3%81%B9%E3%81%A6%E3%81%BF%E3%81%9F%E3%83%BB%E3%83%BB%E3%83%BB%E3%80%80%E2%87%92%E3%80%80&amp;lang=ja" class="twitter-share-button" rel="nofollow">ツイート</a></div>
+<div id="mixi"><a href="javascript:void(0);" onclick="window.open('http://mixi.jp/share.pl?u=http%3A%2F%2Fmovie.ritlweb.com%2Fsearch%2F%25E4%25B8%258D%25E5%258B%2595%25E7%2594%25A3%25E6%258A%2595%25E8%25B3%2587%25E3%2582%25BB%25E3%2583%259F%25E3%2583%258A%25E3%2583%25BC&amp;k=ab79b728187d78ba9a1ff1adfa55850603bbe1ec','share',['width=632','height=456','location=yes','resizable=yes','toolbar=no','menubar=no','scrollbars=no','status=no'].join(','));"><img src="/img/mixickb.png" alt="mixiチェック" /></a></div>
+<div id="facebook"><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fmovie.ritlweb.com%2Fsearch%2F%25E4%25B8%258D%25E5%258B%2595%25E7%2594%25A3%25E6%258A%2595%25E8%25B3%2587%25E3%2582%25BB%25E3%2583%259F%25E3%2583%258A%25E3%2583%25BC" target="_blank"><img src="/img/fbshare.gif" alt="facebookシェア" /></a></div>
+<div id="gpurasu"><g:plusone size="tall" annotation="none"></g:plusone></div>
+<a href="mailto:?Subject=&amp;body=%81%60%81u%95s%93%AE%8EY%93%8A%8E%91%83Z%83%7E%83i%81%5B%81v%8DD%82%AB%82%C8%82%A0%82%CC%90l%82%D6%82%B1%82%CC%83y%81%5B%83W%82%F0%8F%D0%89%EE%82%B5%82%C4%82%AD%82%BE%82%B3%82%A2%81B%81%60%0A%0A%0A%95%A1%90%94%82%CC%93%AE%89%E6%83T%83C%83g%82%C5%81u%95s%93%AE%8EY%93%8A%8E%91%83Z%83%7E%83i%81%5B%81v%82%F0%92T%82%B9%82%C4%95%D6%97%98%82%C5%82%B7%81B%0Ahttp://movie.ritlweb.com/search/%25E4%25B8%258D%25E5%258B%2595%25E7%2594%25A3%25E6%258A%2595%25E8%25B3%2587%25E3%2582%25BB%25E3%2583%259F%25E3%2583%258A%25E3%2583%25BC" id="mail" name="mail" title="友達に紹介">メールで伝える</a>
+<div id="bm">
+<a href="http://b.hatena.ne.jp/append?http%3A%2F%2Fmovie.ritlweb.com%2Fsearch%2F%25E4%25B8%258D%25E5%258B%2595%25E7%2594%25A3%25E6%258A%2595%25E8%25B3%2587%25E3%2582%25BB%25E3%2583%259F%25E3%2583%258A%25E3%2583%25BC" target="_blank" title="はてなブックマークに登録する"><img src="/img/bmhatena.gif" width="16" height="16" alt="はてなブックマーク" /></a>
+<a href="http://bookmarks.yahoo.co.jp/bookmarklet/showpopup?t=%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC+-+Ritlweb+%E5%8B%95%E7%94%BB%E6%A4%9C%E7%B4%A2&amp;u=http%3A%2F%2Fmovie.ritlweb.com%2Fsearch%2F%25E4%25B8%258D%25E5%258B%2595%25E7%2594%25A3%25E6%258A%2595%25E8%25B3%2587%25E3%2582%25BB%25E3%2583%259F%25E3%2583%258A%25E3%2583%25BC&amp;opener=bm&amp;ei=UTF-8" target="_blank" title="Yahoo!ブックマークに登録する"><img src="/img/bmyahoo.gif" width="16" height="16" alt="Yahoo!ブックマーク" /></a>
+<a href="http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http%3A%2F%2Fmovie.ritlweb.com%2Fsearch%2F%25E4%25B8%258D%25E5%258B%2595%25E7%2594%25A3%25E6%258A%2595%25E8%25B3%2587%25E3%2582%25BB%25E3%2583%259F%25E3%2583%258A%25E3%2583%25BC&amp;title=%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC+-+Ritlweb+%E5%8B%95%E7%94%BB%E6%A4%9C%E7%B4%A2" target="_blank" title="Google Bookmarks に追加"><img src="/img/bmgoogle.gif" width="16" height="16" alt="Google Bookmarks" /></a>
+<a href="http://del.icio.us/post?url=http%3A%2F%2Fmovie.ritlweb.com%2Fsearch%2F%25E4%25B8%258D%25E5%258B%2595%25E7%2594%25A3%25E6%258A%2595%25E8%25B3%2587%25E3%2582%25BB%25E3%2583%259F%25E3%2583%258A%25E3%2583%25BC&amp;title=%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC+-+Ritlweb+%E5%8B%95%E7%94%BB%E6%A4%9C%E7%B4%A2" target="_blank" title="deliciousに登録する"><img src="/img/bmdelicious.gif" width="16" height="16" alt="del.icio.us" /></a>
+</div>
+</div>
+</div>
+<div id="main">
+<div id="search"><span class="orangeb">[ 不動産投資セミナー ]</span> の<span class="font2">動画</span><span id="load">は今、ここで見つかります。</span></div>
+<table id="maintable" cellspacing="1" summary="複数の動画を同時に検索">
+<tbody>
+<tr>
+<td class="td1"><a href="http://movie.ritlweb.net/youtube/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC" target="_blank" rel="nofollow">YouTube</a></td>
+<td class="td2"><iframe frameborder="0" scrolling="no" src="http://movie.rcount.com/youtube.php?co=%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC&amp;no=11&amp;p=56670" title="ユーチューブ">結果</iframe></td>
+</tr>
+<tr>
+<td class="td1"><a href="http://movie.ritlweb.net/nicovideo/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC" target="_blank" rel="nofollow">ニコニコ動画</a></td>
+<td class="td2"><iframe frameborder="0" scrolling="no" src="http://movie.rcount.com/nicovideo.php?co=%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC&amp;no=3&amp;p=56670" title="ニコニコ動画">結果</iframe></td>
+</tr>
+<tr>
+<td class="td1"><a href="http://movie.ritlweb.net/youku/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC" target="_blank" rel="nofollow">youku</a></td>
+<td class="td2"><iframe frameborder="0" scrolling="no" src="http://movie.rcount.com/youku.php?co=%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC&amp;no=12&amp;p=56670" title="youku">結果</iframe></td>
+</tr>
+<tr>
+<td class="td1"><a href="http://movie.ritlweb.net/pandora/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC" target="_blank" rel="nofollow">PANDORA.TV</a></td>
+<td class="td2"><iframe frameborder="0" scrolling="no" src="http://movie.rcount.com/pandora.php?co=%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC&amp;no=4&amp;p=56670" title="PANDORA">結果</iframe></td>
+</tr>
+<tr>
+<td class="td1"><a href="http://movie.ritlweb.net/dailymotion/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC" target="_blank" rel="nofollow">Dailymotion</a></td>
+<td class="td2"><iframe frameborder="0" scrolling="no" src="http://movie.rcount.com/dailymotion.php?co=%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC&amp;no=5&amp;p=56670" title="デイリーモーション">結果</iframe></td>
+</tr>
+<tr>
+<td class="td1"><a href="http://movie.ritlweb.net/yahoo/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC" target="_blank" rel="nofollow">YAHOO動画</a></td>
+<td class="td2"><iframe frameborder="0" height="15" width="120" scrolling="no" src="http://movie.rcount.com/yahoo.php?co=%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC&amp;no=10&amp;p=56670" title="ヤフー動画">結果</iframe></td>
+</tr>
+<tr>
+<td class="td1"><a href="http://movie.ritlweb.net/fc2/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC" target="_blank" rel="nofollow">FC2動画</a></td>
+<td class="td2"><iframe frameborder="0" scrolling="no" src="http://movie.rcount.com/fc2.php?co=%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC&amp;no=2&amp;p=56670" title="fc2動画">結果</iframe></td>
+</tr>
+<tr>
+<td class="td1"><a href="http://movie.ritlweb.net/dmm/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC" target="_blank" rel="nofollow">DMM.com動画</a></td>
+<td class="td2"><iframe frameborder="0" scrolling="no" src="http://movie.rcount.com/dmm.php?co=%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC&amp;no=9&amp;p=56670" title="DMM.com">結果</iframe></td>
+</tr>
+<tr>
+<td class="td1"><a href="http://movie.ritlweb.net/himado/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC" target="_blank" rel="nofollow">ひまわり動画</a></td>
+<td class="td2"><iframe frameborder="0" scrolling="no" src="http://movie.rcount.com/himado.php?co=%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC&amp;no=7&amp;p=56670" title="himado">結果</iframe></td>
+</tr>
+<tr>
+<td class="td1"><a href="http://movie.ritlweb.net/veoh/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC" target="_blank" rel="nofollow">Veoh</a></td>
+<td class="td2"><iframe frameborder="0" scrolling="no" src="http://movie.rcount.com/veoh.php?co=%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC&amp;no=13&amp;p=56670" title="Veoh">結果</iframe></td>
+</tr>
+<tr>
+<td class="td1"><a href="http://movie.ritlweb.net/ustream/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC" target="_blank" rel="nofollow">USTREAM</a></td>
+<td class="td2"><iframe frameborder="0" scrolling="no" src="http://movie.rcount.com/ustream.php?co=%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC&amp;no=8&amp;p=56670" title="ユーストリーム">結果</iframe></td>
+</tr>
+<tr>
+<td class="td1"><a href="http://movie.ritlweb.net/google/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC" target="_blank" rel="nofollow">Googleビデオ</a></td>
+<td class="td2"><iframe frameborder="0" scrolling="no" src="http://movie.rcount.com/google.php?co=%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC&amp;no=6&amp;p=56670" title="グーグルビデオ">結果</iframe></td>
+</tr>
+</tbody>
+</table>
+<script type="text/javascript" src="/search.js"></script>
+<script type="text/javascript" src="/rjquery.js"></script>
+<div id="toieba">[ 不動産投資セミナー ] といえば ・・・</div>
+<div class="ninkiword">
+<a href="/search/%E3%83%84%E3%82%A4%E3%83%BC%E3%83%88">ツイート</a>　
+<a href="/search/%E5%A5%B3%E6%80%A7%E5%96%B6%E6%A5%AD%E3%83%9E%E3%83%B3">女性営業マン</a>　
+<a href="/search/2016%E5%B9%B4">2016年</a>　
+<a href="/search/%E3%83%9E%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E7%B5%8C%E5%96%B6">マンション経営</a>　
+<a href="/search/livwebch">livwebch</a>　
+</div>
+<div id="kanren">[ 不動産投資セミナー ] 関連キーワード</div>
+<div class="ninkiword">
+<a href="/search/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC">不動産投資セミナー</a>　
+<a href="/search/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC+%E6%9D%B1%E4%BA%AC+%E7%84%A1%E6%96%99">不動産投資セミナー 東京 無料</a>　
+<a href="/search/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E7%A6%8F%E5%B2%A1">不動産投資セミナー福岡</a>　
+<a href="/search/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC+%E6%9C%89%E6%96%99">不動産投資セミナー 有料</a>　
+<a href="/search/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E5%90%8D%E5%8F%A4%E5%B1%8B">不動産投資セミナー名古屋</a>　
+</div>
+
+<div id="centrepr">[ 不動産投資セミナー ] をもっともっと知りたい！ <img src="/img/new.gif" width="28" height="11" alt="new" /></div>
+<div class="ninkiword">
+・<a href="http://www.doreder.com/search/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC" target="_blank">検索ドレダーで [ 不動産投資セミナー ] をチェック</a>
+</div>
+<form method="post" action="http://user.ritlweb.com/login.php" target="_blank">
+<div id="memory">マイリストに追加</div>
+<div class="res">
+<input type="text" id="addKey" name="addKey" maxlength="20" value="不動産投資セミナー" /> を <select name="listNo" class="selectbox">
+<option value="0" selected="selected">好きな動画</option>
+</select>
+ に <input type="submit" id="keymemo" name="keymemo" value="追加" />
+<span id="helpMylist">マイリストとは？</span><br />
+<textarea id="addKeyDesc" name="addKeyDesc" cols="30" rows="2"></textarea>
+<input type="hidden" name="externalAdd" value="on" />
+<input type="hidden" name="addKeyLinkcate" value="movie" />
+<input type="hidden" name="refurl" value="http://movie.ritlweb.com/search/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC" />
+<input type="hidden" name="defaultListTitle" value="好きな動画" />
+</div>
+</form>
+<script type="text/javascript">
+<!--
+var msg = 'キーワード「不動産投資セミナー」にメモをつけて自分専用のリストに記録しておくことができます。　<br /><br />よく検索する言葉を記録しておくことで、いつでもすぐに呼び出し検索できるようになります。　あなたにとって重要なこと、もっと知りたいこと、好きなものや欲しいものなどどんどん記録してみてください。<br /><br />→　<a href="http://user.ritlweb.com/login.php?defaultListTitle=%E5%A5%BD%E3%81%8D%E3%81%AA%E5%8B%95%E7%94%BB" target="_blank">はじめての方はこちら</a>';
+
+fncDefaultListmsg(msg);
+//-->
+</script>
+<div id="hint">ヒント</div>
+<div class="hintbox">
+<span class="orange">[ 不動産投資セミナー ]</span> 以外の動画を探す → 画面上の検索ボックスで再検索。<br />
+<span class="orange">[ 不動産投資セミナー ]</span> をもっと知りたい → 画面左の同時検索を変更。
+<div class="ga">[ <a href="http://www.ritlweb.com/help/kensakukotu.html">検索結果が見つからない場合はこちら ＜検索のコツ！＞</a> ]</div><div class="ga2">[ <a href="http://www.ritlweb.com/help/searchinfo/">あなたの問題を解決するヒント ＜こんな時はこの同時検索！＞</a> ]</div><div class="ga2">[ <a href="http://user.ritlweb.com/">検索をもっと便利に ＜Ritlwebアカウント＞</a> ]</div></div>
+</div>
+</div>
+<div id="right">
+<div id="nextt">今日の話題</div>
+<div id="nextimg">
+<a href="http://today.ritlweb.com/book/">次の話題へ<br />
+<img src="/img/nextimg.gif" width="35" height="37" alt="本" /></a>
+</div>
+</div>
+<div id="hutta">
+<div id="huttaborder">
+<form action="/search.php" id="lform" name="lform">
+<input name="linkcode" type="text" size="50" tabindex="4" accesskey="l" value="&lt;a href=&quot;http://movie.ritlweb.com/search/%E4%B8%8D%E5%8B%95%E7%94%A3%E6%8A%95%E8%B3%87%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC&quot; target=&quot;_blank&quot;&gt;不動産投資セミナー 動画検索&lt;/a&gt;" class="linktagu" readonly="readonly" />　/　[ 動画検索 - 不動産投資セミナー ] へのリンクタグ
+</form>
+<a href="http://www.ritlweb.com/">Ritlweb</a> - <a href="http://www.ritlweb.com/help/">使い方ガイド</a> - <a href="/rank/">動画 ランキング</a> - <a href="http://www.ritlweb.com/help/link.html">検索ボックスの配布</a> - <a href="http://www.ritlweb.com/help/offer.php">サイトを推薦</a> - <a href="http://www.ritlweb.com/help/adinfo.html">広告掲載について</a>
+<p>Copyright (C) 2016 Ritlweb All Rights Reserved.</p>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<script type="text/javascript">
+window.___gcfg = {lang: 'ja'};
+(function() {
+var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+po.src = 'https://apis.google.com/js/plusone.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-995799-10']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+</body>
+</html>

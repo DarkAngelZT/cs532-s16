@@ -1,0 +1,1459 @@
+<!DOCTYPE html><html lang="en" data-cast-api-enabled="true"><head><style name="www-roboto">@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v15/zN7GBFwfMP4uA6AR0HCoLQ.ttf)format('truetype');}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUaCWcynf_cDxXwCLxiixG1c.ttf)format('truetype');}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v15/W4wDsBUluyw0tK3tykhXEfesZW2xOQ-xsNqO47m55DA.ttf)format('truetype');}@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0Z0EAVxt0G0biEntp43Qt6E.ttf)format('truetype');}</style><script name="www-roboto">if (document.fonts && document.fonts.load) {document.fonts.load("400 10pt Roboto", "E");document.fonts.load("500 10pt Roboto", "E");}</script><script>var ytcsi = {gt: function(n) {n = (n || '') + 'data_';return ytcsi[n] || (ytcsi[n] = {tick: {},span: {},info: {}});},tick: function(l, t, n) {ytcsi.gt(n).tick[l] = t || +new Date();},span: function(l, s, e, n) {ytcsi.gt(n).span[l] = (e ? e : +new Date()) - ytcsi.gt(n).tick[s];},setSpan: function(l, s, n) {ytcsi.gt(n).span[l] = s;},info: function(k, v, n) {ytcsi.gt(n).info[k] = v;},setStart: function(s, t, n) {ytcsi.info('yt_sts', s, n);ytcsi.tick('_start', t, n);}};(function(w, d) {ytcsi.perf = w.performance || w.mozPerformance ||w.msPerformance || w.webkitPerformance;ytcsi.setStart('dhs', ytcsi.perf ? ytcsi.perf.timing.responseStart : null);var isPrerender = (d.visibilityState || d.webkitVisibilityState) == 'prerender';var vName = d.webkitVisibilityState ? 'webkitvisibilitychange' : 'visibilitychange';if (isPrerender) {ytcsi.info('prerender', 1);var startTick = function() {ytcsi.setStart('dhs');d.removeEventListener(vName, startTick);};d.addEventListener(vName, startTick, false);}if (d.addEventListener) {d.addEventListener(vName, function() {ytcsi.tick('vc');}, false);}})(window, document);</script><script>var ytcfg = {d: function() {return (window.yt && yt.config_) || ytcfg.data_ || (ytcfg.data_ = {});},get: function(k, o) {return (k in ytcfg.d()) ? ytcfg.d()[k] : o;},set: function() {var a = arguments;if (a.length > 1) {ytcfg.d()[a[0]] = a[1];} else {for (var k in a[0]) {ytcfg.d()[k] = a[0][k];}}}};</script>    <script>
+      ytcfg.set("SMALLER_SESSION_TEMPDATA_NAME", true);
+    </script>
+  <script>ytcfg.set("EXP_QUICK_FETCH_BISCOTTI", false);ytcfg.set("LACT", null);</script>
+  
+
+
+
+
+  <script>
+        (function(){var b={f:"content-snap-width-1",h:"content-snap-width-2",j:"content-snap-width-3"};function f(){var a=[],c;for(c in b)a.push(b[c]);return a}
+function g(a){var c=f().concat(["guide-pinned","show-guide"]),d=c.length,e=[];a.replace(/\S+/g,function(a){for(var k=0;k<d;k++)if(a==c[k])return;e.push(a)});
+return e}
+;function l(a,c,d){var e=document.getElementsByTagName("html")[0],h=g(e.className);a&&1251<=(window.innerWidth||document.documentElement.clientWidth)&&(h.push("guide-pinned"),c&&h.push("show-guide"));d&&(d=(window.innerWidth||document.documentElement.clientWidth)-21-50,1251<=(window.innerWidth||document.documentElement.clientWidth)&&a&&c&&(d-=230),h.push(1262<=d?"content-snap-width-3":1056<=d?"content-snap-width-2":"content-snap-width-1"));e.className=h.join(" ")}
+var m=["yt","www","masthead","sizing","runBeforeBodyIsReady"],n=this;m[0]in n||!n.execScript||n.execScript("var "+m[0]);for(var p;m.length&&(p=m.shift());)m.length||void 0===l?n[p]?n=n[p]:n=n[p]={}:n[p]=l;})();
+
+      try {window.ytbuffer = {};ytbuffer.handleClick = function(e) {var element = e.target || e.srcElement;while (element.parentElement) {if (/(^| )yt-can-buffer( |$)/.test(element.className)) {window.ytbuffer = {bufferedClick: e};element.className += ' yt-is-buffered';break;}element = element.parentElement;}};if (document.addEventListener) {document.addEventListener('click', ytbuffer.handleClick);} else {document.attachEvent('onclick', ytbuffer.handleClick);}} catch(e) {}
+
+    yt.www.masthead.sizing.runBeforeBodyIsReady(false,false,true);
+  </script>
+
+      <script src="//s.ytimg.com/yts/jsbin/scheduler-vflI19FXK/scheduler.js" type="text/javascript" name="scheduler/scheduler"></script>
+
+
+    <script>var ytimg = {};ytimg.count = 1;ytimg.preload = function(src) {var img = new Image();var count = ++ytimg.count;ytimg[count] = img;img.onload = img.onerror = function() {delete ytimg[count];};img.src = src;};</script>
+
+
+          <script src="//s.ytimg.com/yts/jsbin/player-en_US-vfl329t6E/base.js" name="player/base"></script>
+
+
+
+  <link rel="stylesheet" href="//s.ytimg.com/yts/cssbin/www-core-vfldEcLbm.css" name="www-core">
+      <link rel="stylesheet" href="//s.ytimg.com/yts/cssbin/www-player-vflaN8wfC.css" name="www-player">
+
+  <link rel="stylesheet" href="//s.ytimg.com/yts/cssbin/www-pageframe-vflUA8MqU.css" name="www-pageframe">
+      <script>ytimg.preload("https:\/\/r13---sn-p5qlsn6s.googlevideo.com\/crossdomain.xml");ytimg.preload("https:\/\/r13---sn-p5qlsn6s.googlevideo.com\/generate_204");</script>
+
+
+<title>The All-New 2016 Toyota Prius | Hunters | Toyota - YouTube</title><link rel="search" type="application/opensearchdescription+xml" href="https://www.youtube.com/opensearch?locale=en_US" title="YouTube Video Search"><link rel="shortcut icon" href="https://s.ytimg.com/yts/img/favicon-vflz7uhzw.ico" type="image/x-icon">     <link rel="icon" href="//s.ytimg.com/yts/img/favicon_32-vfl8NGn4k.png" sizes="32x32"><link rel="icon" href="//s.ytimg.com/yts/img/favicon_48-vfl1s0rGh.png" sizes="48x48"><link rel="icon" href="//s.ytimg.com/yts/img/favicon_96-vfldSA3ca.png" sizes="96x96"><link rel="icon" href="//s.ytimg.com/yts/img/favicon_144-vflWmzoXw.png" sizes="144x144"><meta name="theme-color" content="#e62117"><link rel="canonical" href="https://www.youtube.com/watch?v=BGNahDImVhs"><link rel="alternate" media="handheld" href="http://m.youtube.com/watch?v=BGNahDImVhs"><link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.youtube.com/watch?v=BGNahDImVhs"><link rel="shortlink" href="https://youtu.be/BGNahDImVhs">      <meta name="title" content="The All-New 2016 Toyota Prius | Hunters | Toyota">
+
+      <meta name="description" content="Introducing the all-new 2016 Toyota Prius. Defies expectations and redefines the rules of the open road. SUBSCRIBE: http://bit.ly/ToyotaSubscribe About Toyot...">
+
+      <meta name="keywords" content="all new 2016 toyota prius, hunters, prius police car, toyota video, prius police chase, toyota hybrid, prius performance, prius panther, prius highway patrol...">
+
+        <link rel="alternate" href="android-app://com.google.android.youtube/http/www.youtube.com/watch?v=BGNahDImVhs">
+    <link rel="alternate" href="ios-app://544007664/vnd.youtube/www.youtube.com/watch?v=BGNahDImVhs">
+
+      <link rel="alternate" type="application/json+oembed" href="http://www.youtube.com/oembed?format=json&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DBGNahDImVhs" title="The All-New 2016 Toyota Prius | Hunters | Toyota">
+  <link rel="alternate" type="text/xml+oembed" href="http://www.youtube.com/oembed?format=xml&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DBGNahDImVhs" title="The All-New 2016 Toyota Prius | Hunters | Toyota">
+
+        <meta property="og:site_name" content="YouTube">
+      <meta property="og:url" content="https://www.youtube.com/watch?v=BGNahDImVhs">
+    <meta property="og:title" content="The All-New 2016 Toyota Prius | Hunters | Toyota">
+    <meta property="og:image" content="https://i.ytimg.com/vi/BGNahDImVhs/hqdefault.jpg">
+
+      <meta property="og:description" content="Introducing the all-new 2016 Toyota Prius. Defies expectations and redefines the rules of the open road. SUBSCRIBE: http://bit.ly/ToyotaSubscribe About Toyot...">
+
+    <meta property="al:ios:app_store_id" content="544007664">
+    <meta property="al:ios:app_name" content="YouTube">
+      <meta property="al:ios:url" content="vnd.youtube://www.youtube.com/watch?v=BGNahDImVhs&amp;feature=applinks">
+
+      <meta property="al:android:url" content="vnd.youtube://www.youtube.com/watch?v=BGNahDImVhs&amp;feature=applinks">
+    <meta property="al:android:app_name" content="YouTube">
+    <meta property="al:android:package" content="com.google.android.youtube">
+    <meta property="al:web:url" content="https://www.youtube.com/watch?v=BGNahDImVhs&amp;feature=applinks">
+
+    <meta property="og:type" content="video">
+        <meta property="og:video:url" content="https://www.youtube.com/embed/BGNahDImVhs">
+        <meta property="og:video:secure_url" content="https://www.youtube.com/embed/BGNahDImVhs">
+        <meta property="og:video:type" content="text/html">
+        <meta property="og:video:width" content="1280">
+        <meta property="og:video:height" content="720">
+        <meta property="og:video:url" content="http://www.youtube.com/v/BGNahDImVhs?version=3&amp;autohide=1">
+        <meta property="og:video:secure_url" content="https://www.youtube.com/v/BGNahDImVhs?version=3&amp;autohide=1">
+        <meta property="og:video:type" content="application/x-shockwave-flash">
+        <meta property="og:video:width" content="1280">
+        <meta property="og:video:height" content="720">
+
+        <meta property="og:video:tag" content="all new 2016 toyota prius">
+        <meta property="og:video:tag" content="hunters">
+        <meta property="og:video:tag" content="prius police car">
+        <meta property="og:video:tag" content="toyota video">
+        <meta property="og:video:tag" content="prius police chase">
+        <meta property="og:video:tag" content="toyota hybrid">
+        <meta property="og:video:tag" content="prius performance">
+        <meta property="og:video:tag" content="prius panther">
+        <meta property="og:video:tag" content="prius highway patrol">
+        <meta property="og:video:tag" content="pablo schreiber">
+        <meta property="og:video:tag" content="james ransone">
+        <meta property="og:video:tag" content="chris bauer">
+        <meta property="og:video:tag" content="toyoda">
+
+    <meta property="fb:app_id" content="87741124305">
+
+        <meta name="twitter:card" content="player">
+    <meta name="twitter:site" content="@youtube">
+    <meta name="twitter:url" content="https://www.youtube.com/watch?v=BGNahDImVhs">
+    <meta name="twitter:title" content="The All-New 2016 Toyota Prius | Hunters | Toyota">
+    <meta name="twitter:description" content="Introducing the all-new 2016 Toyota Prius. Defies expectations and redefines the rules of the open road. SUBSCRIBE: http://bit.ly/ToyotaSubscribe About Toyot...">
+    <meta name="twitter:image" content="https://i.ytimg.com/vi/BGNahDImVhs/hqdefault.jpg">
+    <meta name="twitter:app:name:iphone" content="YouTube">
+    <meta name="twitter:app:id:iphone" content="544007664">
+    <meta name="twitter:app:name:ipad" content="YouTube">
+    <meta name="twitter:app:id:ipad" content="544007664">
+      <meta name="twitter:app:url:iphone" content="vnd.youtube://www.youtube.com/watch?v=BGNahDImVhs&amp;feature=applinks">
+      <meta name="twitter:app:url:ipad" content="vnd.youtube://www.youtube.com/watch?v=BGNahDImVhs&amp;feature=applinks">
+    <meta name="twitter:app:name:googleplay" content="YouTube">
+    <meta name="twitter:app:id:googleplay" content="com.google.android.youtube">
+    <meta name="twitter:app:url:googleplay" content="https://www.youtube.com/watch?v=BGNahDImVhs">
+      <meta name="twitter:player" content="https://www.youtube.com/embed/BGNahDImVhs">
+      <meta name="twitter:player:width" content="1280">
+      <meta name="twitter:player:height" content="720">
+
+  
+        <link rel="stylesheet" href="//s.ytimg.com/yts/cssbin/www-watch-transcript-vflp9_n_i.css" name="www-watch-transcript">
+
+</head>  <body dir="ltr" id="body" class="  ltr  gecko gecko-2  exp-responsive exp-scrollable-guide   site-center-aligned site-as-giant-card appbar-hidden    visibility-logging-enabled   not-nirvana-dogfood  not-yt-legacy-css      flex-width-enabled      flex-width-enabled-snap    delayed-frame-styles-not-in  " data-spf-name="watch">
+<div id="early-body"></div><div id="body-container"><div id="a11y-announcements-container" role="alert"><div id="a11y-announcements-message"></div></div><form name="logoutForm" method="POST" action="/logout"><input type="hidden" name="action_logout" value="1"></form><div id="masthead-positioner">    
+  <div id="yt-masthead-container" class="clearfix yt-base-gutter">  <button id="a11y-skip-nav" class="skip-nav" data-target-id="main" tabindex="3">
+Skip navigation
+  </button>
+<div id="yt-masthead"><div class="yt-masthead-logo-container ">  <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-text yt-uix-button-empty yt-uix-button-has-icon appbar-guide-toggle appbar-guide-clickable-ancestor" type="button" onclick=";return false;" id="appbar-guide-button" aria-label="Guide" aria-controls="appbar-guide-menu"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-appbar-guide yt-sprite"></span></span></button>
+  <div id="appbar-main-guide-notification-container"></div>
+<span id="yt-masthead-logo-fragment"><a href="/" class="yt-uix-sessionlink masthead-logo-renderer       spf-link " data-sessionlink="itct=CAUQsV4iEwjR3ZiSu_3KAhWPnr4KHYUdCfIo-B0" id="logo-container" title="YouTube Home">  <span class="logo masthead-logo-renderer-logo yt-sprite" title="YouTube Home"></span>
+</a></span></div><div id="yt-masthead-signin"><a href="//www.youtube.com/upload" class="yt-uix-button   yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default" data-sessionlink="feature=mhsb&amp;ei=D7TDVpGaMY-9-gWFu6SQDw" id="upload-btn"><span class="yt-uix-button-content">Upload</span></a><div class="signin-container "><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-primary" type="button" onclick=";window.location.href=this.getAttribute(&#39;href&#39;);return false;" role="link" href="https://accounts.google.com/ServiceLogin?uilel=3&amp;hl=en&amp;service=youtube&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dsign_in_button%26next%3D%252Fwatch%253Fv%253DBGNahDImVhs%2526feature%253Dyoutu.be%2526siteid%253DDLR_RSS_Link_ToyotaNews%26hl%3Den%26action_handle_signin%3Dtrue%26app%3Ddesktop&amp;passive=true"><span class="yt-uix-button-content">Sign in</span></button></div></div><div id="yt-masthead-content"><form id="masthead-search" class="search-form consolidated-form" action="/results" onsubmit="if (document.getElementById(&#39;masthead-search-term&#39;).value == &#39;&#39;) return false;" data-clicktracking="CAEQ7VAiEwjR3ZiSu_3KAhWPnr4KHYUdCfIo-B0"><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default search-btn-component search-button" type="submit" onclick="if (document.getElementById(&#39;masthead-search-term&#39;).value == &#39;&#39;) return false; document.getElementById(&#39;masthead-search&#39;).submit(); return false;;return true;" tabindex="2" dir="ltr" id="search-btn"><span class="yt-uix-button-content">Search</span></button><div id="masthead-search-terms" class="masthead-search-terms-border" dir="ltr"><input id="masthead-search-term" autocomplete="off"  onkeydown="if (!this.value &amp;&amp; (event.keyCode == 40 || event.keyCode == 32 || event.keyCode == 34)) {this.onkeydown = null; this.blur();}" class="search-term masthead-search-renderer-input yt-uix-form-input-bidi" name="search_query" value="" type="text" tabindex="1" placeholder="" title="Search"></div></form></div></div></div>
+    <div id="masthead-appbar-container" class="clearfix"><div id="masthead-appbar"><div id="appbar-content" class=""></div></div></div>
+
+</div><div id="masthead-positioner-height-offset"></div><div id="page-container"><div id="page" class="  watch        video-BGNahDImVhs clearfix"><div id="guide" class="yt-scrollbar">    <div id="appbar-guide-menu" class="appbar-menu appbar-guide-menu-layout appbar-guide-clickable-ancestor">
+    <div id="guide-container">
+      <div class="guide-module-content guide-module-loading">
+          <p class="yt-spinner ">
+        <span class="yt-spinner-img  yt-sprite" title="Loading icon"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+      </div>
+    </div>
+  </div>
+
+</div><div class="alerts-wrapper"><div id="alerts" class="content-alignment">    
+  <div id="editor-progress-alert-container"></div>
+  <div class="yt-alert yt-alert-default yt-alert-warn hid " id="editor-progress-alert-template">  <div class="yt-alert-icon">
+    <span class="icon master-sprite yt-sprite"></span>
+  </div>
+<div class="yt-alert-content" role="alert"></div><div class="yt-alert-buttons"><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-close close yt-uix-close" type="button" onclick=";return false;" aria-label="Close" data-close-parent-class="yt-alert"><span class="yt-uix-button-content">Close</span></button></div></div>
+
+    <div id="edit-confirmation-alert"></div>
+  <div class="yt-alert yt-alert-actionable yt-alert-info hid " id="edit-confirmation-alert-template">  <div class="yt-alert-icon">
+    <span class="icon master-sprite yt-sprite"></span>
+  </div>
+<div class="yt-alert-content" role="alert">    <div class="yt-alert-message">
+    </div>
+</div><div class="yt-alert-buttons">  <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-alert-info yt-uix-button-has-icon edit-confirmation-yes" type="button" onclick=";return false;"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-watch-like-invert yt-sprite"></span></span><span class="yt-uix-button-content">Yeah, keep it</span></button>
+  <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-alert-info yt-uix-button-has-icon edit-confirmation-no" type="button" onclick=";return false;"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-watch-unlike-invert yt-sprite"></span></span><span class="yt-uix-button-content">Undo</span></button>
+<button class="yt-uix-button yt-uix-button-size-default yt-uix-button-close close yt-uix-close" type="button" onclick=";return false;" aria-label="Close" data-close-parent-class="yt-alert"><span class="yt-uix-button-content">Close</span></button></div></div>
+
+
+
+</div></div><div id="header"></div><div id="player" class="  content-alignment       watch-small  " role="complementary"><div id="theater-background" class="player-height"></div>  <div id="player-mole-container">
+    <div id="player-unavailable" class="    hid    player-width player-height    player-unavailable ">
+              <img class="icon meh" src="//s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" data-icon="//s.ytimg.com/yts/img/meh7-vflGevej7.png" alt="">
+  <div class="content">
+    <h1 id="unavailable-message" class="message">
+              This video is unavailable.
+
+    </h1>
+    <div id="unavailable-submessage" class="submessage">
+    </div>
+  </div>
+
+
+    </div>
+
+    <div id="player-api" class="player-width player-height off-screen-target player-api" tabIndex="-1"></div>
+        <script>if (window.ytcsi) {window.ytcsi.tick("cfg", null, '');}</script>
+    <script>var ytplayer = ytplayer || {};ytplayer.config = {"url":"https:\/\/s.ytimg.com\/yts\/swfbin\/player-vfllZmHkO\/watch_as3.swf","url_v8":"https:\/\/s.ytimg.com\/yts\/swfbin\/player-vfllZmHkO\/cps.swf","attrs":{"id":"movie_player"},"params":{"allowscriptaccess":"always","bgcolor":"#000000","allowfullscreen":"true"},"sts":16846,"assets":{"js":"\/\/s.ytimg.com\/yts\/jsbin\/player-en_US-vfl329t6E\/base.js","css":"\/\/s.ytimg.com\/yts\/cssbin\/www-player-vflaN8wfC.css"},"messages":{"player_fallback":["Adobe Flash Player or an HTML5 supported browser is required for video playback.\u003cbr\u003e\u003ca href=\"http:\/\/get.adobe.com\/flashplayer\/\"\u003eGet the latest Flash Player \u003c\/a\u003e\u003cbr\u003e\u003ca href=\"\/html5\"\u003eLearn more about upgrading to an HTML5 browser\u003c\/a\u003e"]},"html5":true,"url_v9as2":"https:\/\/s.ytimg.com\/yts\/swfbin\/player-vfllZmHkO\/cps.swf","args":{"hl":"en_US","probe_url":"https:\/\/r5---sn-ab5l6m7z.googlevideo.com\/videogoodput?id=o-AMTGvmaZNpBVTB6vufuUA4WpqNVOKXua7htvDoF8ZnLX\u0026source=goodput\u0026range=0-4999\u0026expire=1455669791\u0026ip=128.82.34.148\u0026ms=pm\u0026mm=35\u0026pl=24\u0026nh=EAQ\u0026sparams=id,source,range,expire,ip,ms,mm,pl,nh\u0026signature=46C98704901F0EFE917E9F63F3E18DA46A376F21.68D41D27DCEF729BA418FDA043CDE7CCC110574C\u0026key=cms1","innertube_api_version":"v1","length_seconds":"70","innertube_api_key":"AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8","remarketing_url":"https:\/\/googleads.g.doubleclick.net\/pagead\/viewthroughconversion\/962985656\/?backend=innertube\u0026cname=1\u0026cver=1_20160216\u0026data=backend%3Dinnertube%3Bcname%3D1%3Bcver%3D1_20160216%3Bptype%3Dview%3Btype%3Dview%3Butuid%3D1pOTJteEef10zJM0cHs4iQ%3Butvid%3DBGNahDImVhs\u0026foc_id=1pOTJteEef10zJM0cHs4iQ\u0026label=followon_view\u0026ptype=view","enablecsi":"1","watermark":",https:\/\/s.ytimg.com\/yts\/img\/watermark\/youtube_watermark-vflHX6b6E.png,https:\/\/s.ytimg.com\/yts\/img\/watermark\/youtube_hd_watermark-vflAzLcD6.png","apiary_host_firstparty":"","iv3_module":"1","ldpj":"0","itct":"CAMQu2kiEwjR3ZiSu\/3KAhWPnr4KHYUdCfIo+B0=","gapi_hint_params":"m;\/_\/scs\/abc-static\/_\/js\/k=gapi.gapi.en.L3Aa5s3lbWU.O\/m=__features__\/am=AAQ\/rt=j\/d=1\/rs=AHpOoo-0iTqp-gUUTt97zQ-o996_icWxBA","focEnabled":"1","ucid":"UC1pOTJteEef10zJM0cHs4iQ","allow_embed":"1","fflags":"cleanup_text_overlay_spam_signals=false\u0026dash_html5_refresh_mapping_min_buffer=0\u0026event_log_respect_caller_args=true\u0026tv_player_heartbeats=true\u0026hover_card_on_button_hover=false\u0026loop_video_settings_menu=false\u0026enable_dynamic_ad_break=false\u0026dynamic_ad_break_pause_threshold_sec=0\u0026new_ended_replay=false\u0026video_wall_moving_thumbnails_autoplay=false\u0026combined_teaser_link=false\u0026mweb_cougar_big_controls=false\u0026product_listing_ads_cards_drawer_auto_open=true\u0026html5_deadzone_multiplier=1.0\u0026enable_audio_cast=true\u0026send_presence_signal_vis_desktop=true\u0026better_mobile_in_player=false\u0026html5_enable_aac_51_clear=false\u0026html5_strip_emsg=true\u0026video_wall_moving_thumbnails_hover=false\u0026new_stop_video3=true\u0026share_panel_continue_playback=true\u0026html5_live_nonzero_first_segment_start_time=false\u0026creator_endscreens_enabled=false\u0026cards_drawer_auto_open=false\u0026hover_card_for_video_card_teaser=false\u0026html5_dash_mpd_version=3\u0026video_wall_pagination=false\u0026merge_button_with_teaser=false\u0026html5_multicam=true\u0026trueview_shopping_v2_rendering=false\u0026mweb_uniplayer_disable_adaptation=false\u0026log_teaser_hover=false\u0026dynamic_ad_break_seek_threshold_sec=0\u0026html5_force_play_on_suspend_event_limited=false\u0026html5_crossorigin_video=false\u0026ui_logging=false\u0026html5_enable_cros_vp9=false\u0026disable_skip_on_short_adsense=false\u0026disable_new_pause_state3=true\u0026native_controls_assume_media_volume=true\u0026tote_otf_inline_hls_manifests=true\u0026sidebar_renderers=true\u0026always_request_animation_frame=false\u0026yto_enable_watch_offer_module=true\u0026yto_enable_unlimited_landing_page_yto_features=true\u0026log_backfill_requests=true\u0026endscreen_redirect=false\u0026html5_ad_error_releases=false\u0026cards_drawer_auto_open_offset=-10000\u0026enable_spherical3d_ie=true\u0026enable_why_this_ad_for_desktop=true\u0026yto_feature_hub_channel=false\u0026player_scaling_360p_to_720p=false\u0026use_cougar_ads_ui=false\u0026video_wall_redesign=false\u0026container_overflow=false\u0026html5_live_only_stick_to_head=true\u0026enable_ad_video_end_renderers=false\u0026video_wall_storyboards_mouse_x=false\u0026html5_request_sizing_multiplier=0.8\u0026log_it_display_tree=true\u0026html5_nonfatal_invalid_state=true\u0026doubleclick_gpt_retagging=false\u0026moving_thumbnails_autonav=false\u0026yto_enable_ytr_promo_refresh_assets=true\u0026enable_yt_music_lp=true\u0026mweb_generate_cpn_on_page=false\u0026preload_based_on_input=false\u0026legacy_poster_behavior=true\u0026disable_webgl_hack=false\u0026html5_force_play_on_suspend_event=false\u0026white_noise_with_interval=false\u0026big_buffers_for_anchovy=false\u0026dash_html5_refresh_mapping_interval=0\u0026html5_playing_event_buffer_underrun=true\u0026probability_to_show_skip_as_nonskip_on_short_adsense=0.0\u0026enable_stereo3d_ie_firefox_opera=true\u0026use_html5_ad_break_service=false\u0026show_ads_pay_this_creator_info_card=false\u0026cards_drawer_auto_open_duration=-1\u0026quick_play_click=true\u0026html5_always_underrun_on_empty_buffer=false\u0026mweb_cougar=false\u0026new_cue_range_manager=true\u0026autonav_notifications=false\u0026related_menu=false\u0026teaser_on_button_hover=false\u0026html5_live_disable_dg_pacing=false\u0026ios_path_probe_enabled=true\u0026enable_spherical3d_firefox_opera=false\u0026enable_html5_spherical_direction_logging=true\u0026drawer_peek=false","loaderUrl":"https:\/\/www.youtube.com\/watch?v=BGNahDImVhs\u0026feature=youtu.be\u0026siteid=DLR_RSS_Link_ToyotaNews","csi_page_type":"watch,watch7_html5","ssl":"1","eventid":"D7TDVpGaMY-9-gWFu6SQDw","no_get_video_log":"1","ismb":"13630000","vmap":"\u003c?xml version=\"1.0\" encoding=\"UTF-8\"?\u003e\u003cvmap:VMAP xmlns:vmap=\"http:\/\/www.iab.net\/videosuite\/vmap\" xmlns:yt=\"http:\/\/youtube.com\" version=\"1.0\"\u003e\u003c\/vmap:VMAP\u003e","caption_audio_tracks":"v=0\u0026i=0","view_count":"997287","iv_module":"https:\/\/s.ytimg.com\/yts\/swfbin\/player-vfllZmHkO\/iv_module.swf","idpj":"-7","cl":"114770446","ptk":"youtube_none","cc_fonts_url":"https:\/\/s.ytimg.com\/yts\/swfbin\/player-vfllZmHkO\/fonts708.swf","fmt_list":"22\/1280x720\/9\/0\/115,43\/640x360\/99\/0\/0,18\/640x360\/9\/0\/115,5\/426x240\/7\/0\/0,36\/320x180\/99\/1\/0,17\/176x144\/99\/1\/0","t":"1","apiary_host":"","author":"Toyota USA","cr":"US","ttsurl":"https:\/\/www.youtube.com\/api\/timedtext?hl=en_US\u0026asr_langs=pt%2Cnl%2Ces%2Cru%2Cfr%2Cja%2Cen%2Cit%2Cko%2Cde\u0026signature=037481F51C22CD58666BA92B239C706C210F8EB4.921A8F50C660CB9408E41BDA004F8C4584F1DE9E\u0026key=yttt1\u0026v=BGNahDImVhs\u0026caps=asr\u0026expire=1455691391\u0026sparams=asr_langs%2Ccaps%2Cv%2Cexpire","caption_tracks":"lc=en\u0026n=English+%28auto-generated%29\u0026k=asr\u0026t=1\u0026u=https%3A%2F%2Fwww.youtube.com%2Fapi%2Ftimedtext%3Fhl%3Den_US%26asr_langs%3Dpt%252Cnl%252Ces%252Cru%252Cfr%252Cja%252Cen%252Cit%252Cko%252Cde%26signature%3D037481F51C22CD58666BA92B239C706C210F8EB4.921A8F50C660CB9408E41BDA004F8C4584F1DE9E%26key%3Dyttt1%26v%3DBGNahDImVhs%26caps%3Dasr%26expire%3D1455691391%26sparams%3Dasr_langs%252Ccaps%252Cv%252Cexpire%26kind%3Dasr%26lang%3Den\u0026v=a.en","plid":"AAUr67JHhkRoSN4U","iurlhq":"https:\/\/i.ytimg.com\/vi\/BGNahDImVhs\/hqdefault.jpg","cos":"X11","fexp":"9416126,9416984,9420452,9421978,9422596,9423661,9423662,9425731,9425737,9427119,9427667,9428046,9428168,9428431,9428732,9428941","iurlsd":"https:\/\/i.ytimg.com\/vi\/BGNahDImVhs\/sddefault.jpg","account_playback_token":"QUFFLUhqbExTUEFWYUNBdXRybEFKZWN4eE42MjlVdmlkQXxBQ3Jtc0ttcmRLUUpFaFlhYmNKbnpfdi1maVRETTZHMWg5UGtqVDh0MVJWTUg1VVlGUEVlb3lNSnF6TzBtODdFcE42THhUcUdIQVBBc3lXVktKeFJGOHBLbHRRZ1B1aUVZdGozbDlPVG5YUXZrbVA1N3dtN3lKMA==","rmktEnabled":"1","enablejsapi":"1","cc_font":"Arial Unicode MS, arial, verdana, _sans","loudness":"-24.3689994812","iurl":"https:\/\/i.ytimg.com\/vi\/BGNahDImVhs\/hqdefault.jpg","pyv_ad_channel":"","tmi":"1","avg_rating":"3.97711443901","allow_ratings":"1","vid":"BGNahDImVhs","innertube_context_client_version":"1.20160216","caption_translation_languages":"lc=af\u0026n=Afrikaans,lc=sq\u0026n=Albanian,lc=ar\u0026n=Arabic,lc=hy\u0026n=Armenian,lc=az\u0026n=Azerbaijani,lc=eu\u0026n=Basque,lc=be\u0026n=Belarusian,lc=bn\u0026n=Bengali,lc=bs\u0026n=Bosnian,lc=bg\u0026n=Bulgarian,lc=my\u0026n=Burmese,lc=ca\u0026n=Catalan,lc=ceb\u0026n=Cebuano,lc=zh-Hans\u0026n=Chinese+%28Simplified%29,lc=zh-Hant\u0026n=Chinese+%28Traditional%29,lc=hr\u0026n=Croatian,lc=cs\u0026n=Czech,lc=da\u0026n=Danish,lc=nl\u0026n=Dutch,lc=en\u0026n=English,lc=eo\u0026n=Esperanto,lc=et\u0026n=Estonian,lc=fil\u0026n=Filipino,lc=fi\u0026n=Finnish,lc=fr\u0026n=French,lc=gl\u0026n=Galician,lc=ka\u0026n=Georgian,lc=de\u0026n=German,lc=el\u0026n=Greek,lc=gu\u0026n=Gujarati,lc=ht\u0026n=Haitian+Creole,lc=ha\u0026n=Hausa,lc=iw\u0026n=Hebrew,lc=hi\u0026n=Hindi,lc=hmn\u0026n=Hmong,lc=hu\u0026n=Hungarian,lc=is\u0026n=Icelandic,lc=ig\u0026n=Igbo,lc=id\u0026n=Indonesian,lc=ga\u0026n=Irish,lc=it\u0026n=Italian,lc=ja\u0026n=Japanese,lc=jv\u0026n=Javanese,lc=kn\u0026n=Kannada,lc=kk\u0026n=Kazakh,lc=km\u0026n=Khmer,lc=ko\u0026n=Korean,lc=lo\u0026n=Lao,lc=la\u0026n=Latin,lc=lv\u0026n=Latvian,lc=lt\u0026n=Lithuanian,lc=mk\u0026n=Macedonian,lc=mg\u0026n=Malagasy,lc=ms\u0026n=Malay,lc=ml\u0026n=Malayalam,lc=mt\u0026n=Maltese,lc=mi\u0026n=Maori,lc=mr\u0026n=Marathi,lc=mn\u0026n=Mongolian,lc=ne\u0026n=Nepali,lc=no\u0026n=Norwegian,lc=ny\u0026n=Nyanja,lc=fa\u0026n=Persian,lc=pl\u0026n=Polish,lc=pt\u0026n=Portuguese,lc=pa\u0026n=Punjabi,lc=ro\u0026n=Romanian,lc=ru\u0026n=Russian,lc=sr\u0026n=Serbian,lc=si\u0026n=Sinhala,lc=sk\u0026n=Slovak,lc=sl\u0026n=Slovenian,lc=so\u0026n=Somali,lc=st\u0026n=Southern+Sotho,lc=es\u0026n=Spanish,lc=su\u0026n=Sundanese,lc=sw\u0026n=Swahili,lc=sv\u0026n=Swedish,lc=tg\u0026n=Tajik,lc=ta\u0026n=Tamil,lc=te\u0026n=Telugu,lc=th\u0026n=Thai,lc=tr\u0026n=Turkish,lc=uk\u0026n=Ukrainian,lc=ur\u0026n=Urdu,lc=uz\u0026n=Uzbek,lc=vi\u0026n=Vietnamese,lc=cy\u0026n=Welsh,lc=yi\u0026n=Yiddish,lc=yo\u0026n=Yoruba,lc=zu\u0026n=Zulu","token":"1","cc_load_policy":"2","title":"The All-New 2016 Toyota Prius | Hunters | Toyota","host_language":"en","vm":"CAEQAA","uid":"1pOTJteEef10zJM0cHs4iQ","sdetail":"f:youtu.be,","iv_invideo_url":"https:\/\/www.youtube.com\/annotations_invideo?cap_hist=1\u0026video_id=BGNahDImVhs","cc3_module":"1","feature":"youtu.be","of":"GC6OCn1lTVgpgJyrp2hYjw","keywords":"all new 2016 toyota prius,hunters,prius police car,toyota video,prius police chase,toyota hybrid,prius performance,prius panther,prius highway patrol,pablo schreiber,james ransone,chris bauer,toyoda","cc_asr":"1","atc":"a=3\u0026b=UHyQSJJQln3EFZvIbNp76pq56Gk\u0026c=1455666191\u0026d=1\u0026e=BGNahDImVhs\u0026c3a=18\u0026c1a=1\u0026c6a=1\u0026hh=_TwJi_SdYTtuPHSq4Dfx5o-QlN0","url_encoded_fmt_stream_map":"type=video%2Fmp4%3B+codecs%3D%22avc1.64001F%2C+mp4a.40.2%22\u0026itag=22\u0026fallback_host=tc.v15.cache4.googlevideo.com\u0026url=https%3A%2F%2Fr13---sn-p5qlsn6s.googlevideo.com%2Fvideoplayback%3Fsignature%3DA89CA9B56774847227906EA70E27D90083D69180.6AE5FA4A290C780A32B2AACC3D9D3D99161BCD74%26key%3Dyt6%26nh%3DIgpwZjAxLmlhZDI2Kg0zOC44OC4yMTQuMjQx%26fexp%3D9416126%252C9416984%252C9420452%252C9421978%252C9422596%252C9423661%252C9423662%252C9425731%252C9425737%252C9427119%252C9427667%252C9428046%252C9428168%252C9428431%252C9428732%252C9428941%26lmt%3D1455352165454376%26source%3Dyoutube%26dur%3D70.124%26requiressl%3Dyes%26ratebypass%3Dyes%26itag%3D22%26sver%3D3%26upn%3Dy0rF3a6N3TM%26expire%3D1455687791%26id%3Do-AGE_lzNpDst6dvY1lGH6WhQhOEy9FJGWQO8vdM4_72sC%26mm%3D31%26mn%3Dsn-p5qlsn6s%26ms%3Dau%26mt%3D1455666100%26mv%3Dm%26pl%3D22%26ip%3D128.82.34.148%26initcwndbps%3D1703750%26ipbits%3D0%26mime%3Dvideo%252Fmp4%26sparams%3Ddur%252Cid%252Cinitcwndbps%252Cip%252Cipbits%252Citag%252Clmt%252Cmime%252Cmm%252Cmn%252Cms%252Cmv%252Cnh%252Cpl%252Cratebypass%252Crequiressl%252Csource%252Cupn%252Cexpire\u0026quality=hd720,type=video%2Fwebm%3B+codecs%3D%22vp8.0%2C+vorbis%22\u0026itag=43\u0026fallback_host=tc.v13.cache7.googlevideo.com\u0026url=https%3A%2F%2Fr13---sn-p5qlsn6s.googlevideo.com%2Fvideoplayback%3Fsignature%3D21858C9049977F7672BB427582D96F0603FF8005.9D9BDA31828D74399DE8887288DC1ACAF6C452BE%26key%3Dyt6%26nh%3DIgpwZjAxLmlhZDI2Kg0zOC44OC4yMTQuMjQx%26fexp%3D9416126%252C9416984%252C9420452%252C9421978%252C9422596%252C9423661%252C9423662%252C9425731%252C9425737%252C9427119%252C9427667%252C9428046%252C9428168%252C9428431%252C9428732%252C9428941%26lmt%3D1454644141127285%26source%3Dyoutube%26dur%3D0.000%26requiressl%3Dyes%26ratebypass%3Dyes%26itag%3D43%26sver%3D3%26upn%3Dy0rF3a6N3TM%26expire%3D1455687791%26id%3Do-AGE_lzNpDst6dvY1lGH6WhQhOEy9FJGWQO8vdM4_72sC%26mm%3D31%26mn%3Dsn-p5qlsn6s%26ms%3Dau%26mt%3D1455666100%26mv%3Dm%26pl%3D22%26ip%3D128.82.34.148%26initcwndbps%3D1703750%26ipbits%3D0%26mime%3Dvideo%252Fwebm%26sparams%3Ddur%252Cid%252Cinitcwndbps%252Cip%252Cipbits%252Citag%252Clmt%252Cmime%252Cmm%252Cmn%252Cms%252Cmv%252Cnh%252Cpl%252Cratebypass%252Crequiressl%252Csource%252Cupn%252Cexpire\u0026quality=medium,type=video%2Fmp4%3B+codecs%3D%22avc1.42001E%2C+mp4a.40.2%22\u0026itag=18\u0026fallback_host=tc.v1.cache1.googlevideo.com\u0026url=https%3A%2F%2Fr13---sn-p5qlsn6s.googlevideo.com%2Fvideoplayback%3Fsignature%3D535B5F59A6F02C7B6E299AF46344CC00AAED600C.CC6588A602CE1B583D1352BB4AC03409219347A8%26key%3Dyt6%26nh%3DIgpwZjAxLmlhZDI2Kg0zOC44OC4yMTQuMjQx%26fexp%3D9416126%252C9416984%252C9420452%252C9421978%252C9422596%252C9423661%252C9423662%252C9425731%252C9425737%252C9427119%252C9427667%252C9428046%252C9428168%252C9428431%252C9428732%252C9428941%26lmt%3D1455352132433934%26source%3Dyoutube%26dur%3D70.124%26requiressl%3Dyes%26ratebypass%3Dyes%26itag%3D18%26sver%3D3%26upn%3Dy0rF3a6N3TM%26expire%3D1455687791%26id%3Do-AGE_lzNpDst6dvY1lGH6WhQhOEy9FJGWQO8vdM4_72sC%26mm%3D31%26mn%3Dsn-p5qlsn6s%26ms%3Dau%26mt%3D1455666100%26mv%3Dm%26pl%3D22%26ip%3D128.82.34.148%26initcwndbps%3D1703750%26ipbits%3D0%26mime%3Dvideo%252Fmp4%26sparams%3Ddur%252Cid%252Cinitcwndbps%252Cip%252Cipbits%252Citag%252Clmt%252Cmime%252Cmm%252Cmn%252Cms%252Cmv%252Cnh%252Cpl%252Cratebypass%252Crequiressl%252Csource%252Cupn%252Cexpire\u0026quality=medium,type=video%2Fx-flv\u0026itag=5\u0026fallback_host=tc.v3.cache4.googlevideo.com\u0026url=https%3A%2F%2Fr13---sn-p5qlsn6s.googlevideo.com%2Fvideoplayback%3Fsignature%3DB53BF46C6A4ADF7F400BCD5D5E1BC1FC6B3CEC3F.32AE9F34DF9BE73FC1F24554D7157BFFBE2CA5D0%26key%3Dyt6%26nh%3DIgpwZjAxLmlhZDI2Kg0zOC44OC4yMTQuMjQx%26fexp%3D9416126%252C9416984%252C9420452%252C9421978%252C9422596%252C9423661%252C9423662%252C9425731%252C9425737%252C9427119%252C9427667%252C9428046%252C9428168%252C9428431%252C9428732%252C9428941%26lmt%3D1454643597791312%26source%3Dyoutube%26dur%3D70.113%26requiressl%3Dyes%26itag%3D5%26sver%3D3%26upn%3Dy0rF3a6N3TM%26expire%3D1455687791%26id%3Do-AGE_lzNpDst6dvY1lGH6WhQhOEy9FJGWQO8vdM4_72sC%26mm%3D31%26mn%3Dsn-p5qlsn6s%26ms%3Dau%26mt%3D1455666100%26mv%3Dm%26pl%3D22%26ip%3D128.82.34.148%26initcwndbps%3D1703750%26ipbits%3D0%26mime%3Dvideo%252Fx-flv%26sparams%3Ddur%252Cid%252Cinitcwndbps%252Cip%252Cipbits%252Citag%252Clmt%252Cmime%252Cmm%252Cmn%252Cms%252Cmv%252Cnh%252Cpl%252Crequiressl%252Csource%252Cupn%252Cexpire\u0026quality=small,type=video%2F3gpp%3B+codecs%3D%22mp4v.20.3%2C+mp4a.40.2%22\u0026itag=36\u0026fallback_host=tc.v4.cache5.googlevideo.com\u0026url=https%3A%2F%2Fr13---sn-p5qlsn6s.googlevideo.com%2Fvideoplayback%3Fsignature%3D3C936CC94553F14E69B2C5E0C641A3D6C01E3142.85FEA03A3ACD99B4F4C2F3BD32DC17B60536297F%26key%3Dyt6%26nh%3DIgpwZjAxLmlhZDI2Kg0zOC44OC4yMTQuMjQx%26fexp%3D9416126%252C9416984%252C9420452%252C9421978%252C9422596%252C9423661%252C9423662%252C9425731%252C9425737%252C9427119%252C9427667%252C9428046%252C9428168%252C9428431%252C9428732%252C9428941%26lmt%3D1454643599395730%26source%3Dyoutube%26dur%3D70.170%26requiressl%3Dyes%26itag%3D36%26sver%3D3%26upn%3Dy0rF3a6N3TM%26expire%3D1455687791%26id%3Do-AGE_lzNpDst6dvY1lGH6WhQhOEy9FJGWQO8vdM4_72sC%26mm%3D31%26mn%3Dsn-p5qlsn6s%26ms%3Dau%26mt%3D1455666100%26mv%3Dm%26pl%3D22%26ip%3D128.82.34.148%26initcwndbps%3D1703750%26ipbits%3D0%26mime%3Dvideo%252F3gpp%26sparams%3Ddur%252Cid%252Cinitcwndbps%252Cip%252Cipbits%252Citag%252Clmt%252Cmime%252Cmm%252Cmn%252Cms%252Cmv%252Cnh%252Cpl%252Crequiressl%252Csource%252Cupn%252Cexpire\u0026quality=small,type=video%2F3gpp%3B+codecs%3D%22mp4v.20.3%2C+mp4a.40.2%22\u0026itag=17\u0026fallback_host=tc.v20.cache6.googlevideo.com\u0026url=https%3A%2F%2Fr13---sn-p5qlsn6s.googlevideo.com%2Fvideoplayback%3Fsignature%3DB192E0E260003B006033DDA6E1AD3DEF2BE59132.D392DD399B0A78B364060464258440AE4B9E2CF2%26key%3Dyt6%26nh%3DIgpwZjAxLmlhZDI2Kg0zOC44OC4yMTQuMjQx%26fexp%3D9416126%252C9416984%252C9420452%252C9421978%252C9422596%252C9423661%252C9423662%252C9425731%252C9425737%252C9427119%252C9427667%252C9428046%252C9428168%252C9428431%252C9428732%252C9428941%26lmt%3D1454643597006839%26source%3Dyoutube%26dur%3D70.170%26requiressl%3Dyes%26itag%3D17%26sver%3D3%26upn%3Dy0rF3a6N3TM%26expire%3D1455687791%26id%3Do-AGE_lzNpDst6dvY1lGH6WhQhOEy9FJGWQO8vdM4_72sC%26mm%3D31%26mn%3Dsn-p5qlsn6s%26ms%3Dau%26mt%3D1455666100%26mv%3Dm%26pl%3D22%26ip%3D128.82.34.148%26initcwndbps%3D1703750%26ipbits%3D0%26mime%3Dvideo%252F3gpp%26sparams%3Ddur%252Cid%252Cinitcwndbps%252Cip%252Cipbits%252Citag%252Clmt%252Cmime%252Cmm%252Cmn%252Cms%252Cmv%252Cnh%252Cpl%252Crequiressl%252Csource%252Cupn%252Cexpire\u0026quality=small","show_pyv_in_related":false,"thumbnail_url":"https:\/\/i.ytimg.com\/vi\/BGNahDImVhs\/default.jpg","iurlmq":"https:\/\/i.ytimg.com\/vi\/BGNahDImVhs\/mqdefault.jpg","timestamp":"1455666191","storyboard_spec":"https:\/\/i.ytimg.com\/sb\/BGNahDImVhs\/storyboard3_L$L\/$N.jpg|48#27#100#10#10#0#default#rS-wjRxX6R88xc5knhwd5mS4w6Y|80#45#71#10#10#1000#M$M#BS5jBf2Tx-YvNgI-1zaP0lpJJsw|160#90#71#5#5#1000#M$M#UxhHz-1y0YiMg41WVOus3ydinUY","cc_module":"https:\/\/s.ytimg.com\/yts\/swfbin\/player-vfllZmHkO\/subtitle_module.swf","is_listed":"1","default_audio_track_index":"0","baseUrl":"https:\/\/googleads.g.doubleclick.net\/pagead\/viewthroughconversion\/962985656\/","pltype":"contentugc","videostats_playback_base_url":"https:\/\/s.youtube.com\/api\/stats\/playback?vm=CAEQAA\u0026cl=114770446\u0026len=71\u0026ei=D7TDVpGaMY-9-gWFu6SQDw\u0026feature=youtu.be\u0026of=GC6OCn1lTVgpgJyrp2hYjw\u0026plid=AAUr67JHhkRoSN4U\u0026fexp=9416126%2C9416984%2C9420452%2C9421978%2C9422596%2C9423661%2C9423662%2C9425731%2C9425737%2C9427119%2C9427667%2C9428046%2C9428168%2C9428431%2C9428732%2C9428941\u0026sdetail=f%3Ayoutu.be%2C\u0026docid=BGNahDImVhs\u0026el=detailpage\u0026ns=yt","video_id":"BGNahDImVhs","c":"WEB","iv_load_policy":"1","player_error_log_fraction":"1.0","adaptive_fmts":"index=711-898\u0026init=0-710\u0026projection_type=1\u0026lmt=1455352244111659\u0026clen=17546145\u0026fps=24\u0026url=https%3A%2F%2Fr13---sn-p5qlsn6s.googlevideo.com%2Fvideoplayback%3Fgir%3Dyes%26signature%3D4F2561D4BBB5CC0A5A6202FFECB17CC696615362.D287D7F53E9C4E48EDEBB1C2641AFF5126801465%26key%3Dyt6%26nh%3DIgpwZjAxLmlhZDI2Kg0zOC44OC4yMTQuMjQx%26fexp%3D9416126%252C9416984%252C9420452%252C9421978%252C9422596%252C9423661%252C9423662%252C9425731%252C9425737%252C9427119%252C9427667%252C9428046%252C9428168%252C9428431%252C9428732%252C9428941%26lmt%3D1455352244111659%26source%3Dyoutube%26dur%3D70.028%26requiressl%3Dyes%26itag%3D137%26sver%3D3%26upn%3Dy0rF3a6N3TM%26expire%3D1455687791%26keepalive%3Dyes%26id%3Do-AGE_lzNpDst6dvY1lGH6WhQhOEy9FJGWQO8vdM4_72sC%26mm%3D31%26mn%3Dsn-p5qlsn6s%26ms%3Dau%26mt%3D1455666100%26mv%3Dm%26clen%3D17546145%26pl%3D22%26ip%3D128.82.34.148%26initcwndbps%3D1703750%26ipbits%3D0%26mime%3Dvideo%252Fmp4%26sparams%3Dclen%252Cdur%252Cgir%252Cid%252Cinitcwndbps%252Cip%252Cipbits%252Citag%252Ckeepalive%252Clmt%252Cmime%252Cmm%252Cmn%252Cms%252Cmv%252Cnh%252Cpl%252Crequiressl%252Csource%252Cupn%252Cexpire\u0026type=video%2Fmp4%3B+codecs%3D%22avc1.640028%22\u0026size=1920x1080\u0026itag=137\u0026quality_label=1080p\u0026bitrate=2938001,index=243-455\u0026init=0-242\u0026projection_type=1\u0026lmt=1454644358971186\u0026clen=17206025\u0026fps=24\u0026url=https%3A%2F%2Fr13---sn-p5qlsn6s.googlevideo.com%2Fvideoplayback%3Fgir%3Dyes%26signature%3D664AF99CD6F3C3D590E8CF07161AF30190AD804F.7AE47DDF86569C7B471FA7B43192D430B5FD6E4D%26key%3Dyt6%26nh%3DIgpwZjAxLmlhZDI2Kg0zOC44OC4yMTQuMjQx%26fexp%3D9416126%252C9416984%252C9420452%252C9421978%252C9422596%252C9423661%252C9423662%252C9425731%252C9425737%252C9427119%252C9427667%252C9428046%252C9428168%252C9428431%252C9428732%252C9428941%26lmt%3D1454644358971186%26source%3Dyoutube%26dur%3D69.987%26requiressl%3Dyes%26itag%3D248%26sver%3D3%26upn%3Dy0rF3a6N3TM%26expire%3D1455687791%26keepalive%3Dyes%26id%3Do-AGE_lzNpDst6dvY1lGH6WhQhOEy9FJGWQO8vdM4_72sC%26mm%3D31%26mn%3Dsn-p5qlsn6s%26ms%3Dau%26mt%3D1455666100%26mv%3Dm%26clen%3D17206025%26pl%3D22%26ip%3D128.82.34.148%26initcwndbps%3D1703750%26ipbits%3D0%26mime%3Dvideo%252Fwebm%26sparams%3Dclen%252Cdur%252Cgir%252Cid%252Cinitcwndbps%252Cip%252Cipbits%252Citag%252Ckeepalive%252Clmt%252Cmime%252Cmm%252Cmn%252Cms%252Cmv%252Cnh%252Cpl%252Crequiressl%252Csource%252Cupn%252Cexpire\u0026type=video%2Fwebm%3B+codecs%3D%22vp9%22\u0026size=1920x1080\u0026itag=248\u0026quality_label=1080p\u0026bitrate=2951764,index=709-896\u0026init=0-708\u0026projection_type=1\u0026lmt=1455352247916139\u0026clen=9297306\u0026fps=24\u0026url=https%3A%2F%2Fr13---sn-p5qlsn6s.googlevideo.com%2Fvideoplayback%3Fgir%3Dyes%26signature%3DBB0CE334A32B07EA138978DB1159C968EF4C176E.7525275CEEDABCA93E9F53705F0C31CF31599210%26key%3Dyt6%26nh%3DIgpwZjAxLmlhZDI2Kg0zOC44OC4yMTQuMjQx%26fexp%3D9416126%252C9416984%252C9420452%252C9421978%252C9422596%252C9423661%252C9423662%252C9425731%252C9425737%252C9427119%252C9427667%252C9428046%252C9428168%252C9428431%252C9428732%252C9428941%26lmt%3D1455352247916139%26source%3Dyoutube%26dur%3D70.028%26requiressl%3Dyes%26itag%3D136%26sver%3D3%26upn%3Dy0rF3a6N3TM%26expire%3D1455687791%26keepalive%3Dyes%26id%3Do-AGE_lzNpDst6dvY1lGH6WhQhOEy9FJGWQO8vdM4_72sC%26mm%3D31%26mn%3Dsn-p5qlsn6s%26ms%3Dau%26mt%3D1455666100%26mv%3Dm%26clen%3D9297306%26pl%3D22%26ip%3D128.82.34.148%26initcwndbps%3D1703750%26ipbits%3D0%26mime%3Dvideo%252Fmp4%26sparams%3Dclen%252Cdur%252Cgir%252Cid%252Cinitcwndbps%252Cip%252Cipbits%252Citag%252Ckeepalive%252Clmt%252Cmime%252Cmm%252Cmn%252Cms%252Cmv%252Cnh%252Cpl%252Crequiressl%252Csource%252Cupn%252Cexpire\u0026type=video%2Fmp4%3B+codecs%3D%22avc1.4d401f%22\u0026size=1280x720\u0026itag=136\u0026quality_label=720p\u0026bitrate=1595648,index=243-454\u0026init=0-242\u0026projection_type=1\u0026lmt=1454644317926365\u0026clen=9141984\u0026fps=24\u0026url=https%3A%2F%2Fr13---sn-p5qlsn6s.googlevideo.com%2Fvideoplayback%3Fgir%3Dyes%26signature%3D963ADDC6459077650C9D0D050A7DD0A697440BAC.4D7A0F5E813EFAB07E11E4192AD215084C861A0F%26key%3Dyt6%26nh%3DIgpwZjAxLmlhZDI2Kg0zOC44OC4yMTQuMjQx%26fexp%3D9416126%252C9416984%252C9420452%252C9421978%252C9422596%252C9423661%252C9423662%252C9425731%252C9425737%252C9427119%252C9427667%252C9428046%252C9428168%252C9428431%252C9428732%252C9428941%26lmt%3D1454644317926365%26source%3Dyoutube%26dur%3D69.987%26requiressl%3Dyes%26itag%3D247%26sver%3D3%26upn%3Dy0rF3a6N3TM%26expire%3D1455687791%26keepalive%3Dyes%26id%3Do-AGE_lzNpDst6dvY1lGH6WhQhOEy9FJGWQO8vdM4_72sC%26mm%3D31%26mn%3Dsn-p5qlsn6s%26ms%3Dau%26mt%3D1455666100%26mv%3Dm%26clen%3D9141984%26pl%3D22%26ip%3D128.82.34.148%26initcwndbps%3D1703750%26ipbits%3D0%26mime%3Dvideo%252Fwebm%26sparams%3Dclen%252Cdur%252Cgir%252Cid%252Cinitcwndbps%252Cip%252Cipbits%252Citag%252Ckeepalive%252Clmt%252Cmime%252Cmm%252Cmn%252Cms%252Cmv%252Cnh%252Cpl%252Crequiressl%252Csource%252Cupn%252Cexpire\u0026type=video%2Fwebm%3B+codecs%3D%22vp9%22\u0026size=1280x720\u0026itag=247\u0026quality_label=720p\u0026bitrate=1592200,index=709-896\u0026init=0-708\u0026projection_type=1\u0026lmt=1455352247238815\u0026clen=4940778\u0026fps=24\u0026url=https%3A%2F%2Fr13---sn-p5qlsn6s.googlevideo.com%2Fvideoplayback%3Fgir%3Dyes%26signature%3D2A88EC90CE12EFF4E00EFB7E6E0C83EF332E9E39.D7E4E4BAD0F83118E4D77B9AC82F51D32F0181B9%26key%3Dyt6%26nh%3DIgpwZjAxLmlhZDI2Kg0zOC44OC4yMTQuMjQx%26fexp%3D9416126%252C9416984%252C9420452%252C9421978%252C9422596%252C9423661%252C9423662%252C9425731%252C9425737%252C9427119%252C9427667%252C9428046%252C9428168%252C9428431%252C9428732%252C9428941%26lmt%3D1455352247238815%26source%3Dyoutube%26dur%3D70.028%26requiressl%3Dyes%26itag%3D135%26sver%3D3%26upn%3Dy0rF3a6N3TM%26expire%3D1455687791%26keepalive%3Dyes%26id%3Do-AGE_lzNpDst6dvY1lGH6WhQhOEy9FJGWQO8vdM4_72sC%26mm%3D31%26mn%3Dsn-p5qlsn6s%26ms%3Dau%26mt%3D1455666100%26mv%3Dm%26clen%3D4940778%26pl%3D22%26ip%3D128.82.34.148%26initcwndbps%3D1703750%26ipbits%3D0%26mime%3Dvideo%252Fmp4%26sparams%3Dclen%252Cdur%252Cgir%252Cid%252Cinitcwndbps%252Cip%252Cipbits%252Citag%252Ckeepalive%252Clmt%252Cmime%252Cmm%252Cmn%252Cms%252Cmv%252Cnh%252Cpl%252Crequiressl%252Csource%252Cupn%252Cexpire\u0026type=video%2Fmp4%3B+codecs%3D%22avc1.4d401e%22\u0026size=854x480\u0026itag=135\u0026quality_label=480p\u0026bitrate=870949,index=243-454\u0026init=0-242\u0026projection_type=1\u0026lmt=1454644317872178\u0026clen=4648285\u0026fps=24\u0026url=https%3A%2F%2Fr13---sn-p5qlsn6s.googlevideo.com%2Fvideoplayback%3Fgir%3Dyes%26signature%3D9DF3804BFF88621997F6C58D5D4DB05B8A003725.5E8A96C18F9FD2A6489307FC92BE71CA7B76B0D1%26key%3Dyt6%26nh%3DIgpwZjAxLmlhZDI2Kg0zOC44OC4yMTQuMjQx%26fexp%3D9416126%252C9416984%252C9420452%252C9421978%252C9422596%252C9423661%252C9423662%252C9425731%252C9425737%252C9427119%252C9427667%252C9428046%252C9428168%252C9428431%252C9428732%252C9428941%26lmt%3D1454644317872178%26source%3Dyoutube%26dur%3D69.987%26requiressl%3Dyes%26itag%3D244%26sver%3D3%26upn%3Dy0rF3a6N3TM%26expire%3D1455687791%26keepalive%3Dyes%26id%3Do-AGE_lzNpDst6dvY1lGH6WhQhOEy9FJGWQO8vdM4_72sC%26mm%3D31%26mn%3Dsn-p5qlsn6s%26ms%3Dau%26mt%3D1455666100%26mv%3Dm%26clen%3D4648285%26pl%3D22%26ip%3D128.82.34.148%26initcwndbps%3D1703750%26ipbits%3D0%26mime%3Dvideo%252Fwebm%26sparams%3Dclen%252Cdur%252Cgir%252Cid%252Cinitcwndbps%252Cip%252Cipbits%252Citag%252Ckeepalive%252Clmt%252Cmime%252Cmm%252Cmn%252Cms%252Cmv%252Cnh%252Cpl%252Crequiressl%252Csource%252Cupn%252Cexpire\u0026type=video%2Fwebm%3B+codecs%3D%22vp9%22\u0026size=854x480\u0026itag=244\u0026quality_label=480p\u0026bitrate=761266,index=709-896\u0026init=0-708\u0026projection_type=1\u0026lmt=1455352248067064\u0026clen=2530510\u0026fps=24\u0026url=https%3A%2F%2Fr13---sn-p5qlsn6s.googlevideo.com%2Fvideoplayback%3Fgir%3Dyes%26signature%3D804B4A65E035B466BD1E859FB65F09F7AB8FF0F2.7609C60C35D20ABCB890B054077C512C328839A6%26key%3Dyt6%26nh%3DIgpwZjAxLmlhZDI2Kg0zOC44OC4yMTQuMjQx%26fexp%3D9416126%252C9416984%252C9420452%252C9421978%252C9422596%252C9423661%252C9423662%252C9425731%252C9425737%252C9427119%252C9427667%252C9428046%252C9428168%252C9428431%252C9428732%252C9428941%26lmt%3D1455352248067064%26source%3Dyoutube%26dur%3D70.028%26requiressl%3Dyes%26itag%3D134%26sver%3D3%26upn%3Dy0rF3a6N3TM%26expire%3D1455687791%26keepalive%3Dyes%26id%3Do-AGE_lzNpDst6dvY1lGH6WhQhOEy9FJGWQO8vdM4_72sC%26mm%3D31%26mn%3Dsn-p5qlsn6s%26ms%3Dau%26mt%3D1455666100%26mv%3Dm%26clen%3D2530510%26pl%3D22%26ip%3D128.82.34.148%26initcwndbps%3D1703750%26ipbits%3D0%26mime%3Dvideo%252Fmp4%26sparams%3Dclen%252Cdur%252Cgir%252Cid%252Cinitcwndbps%252Cip%252Cipbits%252Citag%252Ckeepalive%252Clmt%252Cmime%252Cmm%252Cmn%252Cms%252Cmv%252Cnh%252Cpl%252Crequiressl%252Csource%252Cupn%252Cexpire\u0026type=video%2Fmp4%3B+codecs%3D%22avc1.4d401e%22\u0026size=640x360\u0026itag=134\u0026quality_label=360p\u0026bitrate=445839,index=243-454\u0026init=0-242\u0026projection_type=1\u0026lmt=1454644317850653\u0026clen=2773501\u0026fps=24\u0026url=https%3A%2F%2Fr13---sn-p5qlsn6s.googlevideo.com%2Fvideoplayback%3Fgir%3Dyes%26signature%3D37FAA304D93F1F5A71037015633F239A2DE4866D.B1A7823292EA8315EBBBCBEEAA20C60BF0097F92%26key%3Dyt6%26nh%3DIgpwZjAxLmlhZDI2Kg0zOC44OC4yMTQuMjQx%26fexp%3D9416126%252C9416984%252C9420452%252C9421978%252C9422596%252C9423661%252C9423662%252C9425731%252C9425737%252C9427119%252C9427667%252C9428046%252C9428168%252C9428431%252C9428732%252C9428941%26lmt%3D1454644317850653%26source%3Dyoutube%26dur%3D69.987%26requiressl%3Dyes%26itag%3D243%26sver%3D3%26upn%3Dy0rF3a6N3TM%26expire%3D1455687791%26keepalive%3Dyes%26id%3Do-AGE_lzNpDst6dvY1lGH6WhQhOEy9FJGWQO8vdM4_72sC%26mm%3D31%26mn%3Dsn-p5qlsn6s%26ms%3Dau%26mt%3D1455666100%26mv%3Dm%26clen%3D2773501%26pl%3D22%26ip%3D128.82.34.148%26initcwndbps%3D1703750%26ipbits%3D0%26mime%3Dvideo%252Fwebm%26sparams%3Dclen%252Cdur%252Cgir%252Cid%252Cinitcwndbps%252Cip%252Cipbits%252Citag%252Ckeepalive%252Clmt%252Cmime%252Cmm%252Cmn%252Cms%252Cmv%252Cnh%252Cpl%252Crequiressl%252Csource%252Cupn%252Cexpire\u0026type=video%2Fwebm%3B+codecs%3D%22vp9%22\u0026size=640x360\u0026itag=243\u0026quality_label=360p\u0026bitrate=436563,index=709-896\u0026init=0-708\u0026projection_type=1\u0026lmt=1455352247266843\u0026clen=2025860\u0026fps=24\u0026url=https%3A%2F%2Fr13---sn-p5qlsn6s.googlevideo.com%2Fvideoplayback%3Fgir%3Dyes%26signature%3DDBF119360FF7C6C6C0E4234A2C49F1CF746230C4.6699D54F70A64C514A603B4DBAD4C767CE52182A%26key%3Dyt6%26nh%3DIgpwZjAxLmlhZDI2Kg0zOC44OC4yMTQuMjQx%26fexp%3D9416126%252C9416984%252C9420452%252C9421978%252C9422596%252C9423661%252C9423662%252C9425731%252C9425737%252C9427119%252C9427667%252C9428046%252C9428168%252C9428431%252C9428732%252C9428941%26lmt%3D1455352247266843%26source%3Dyoutube%26dur%3D70.028%26requiressl%3Dyes%26itag%3D133%26sver%3D3%26upn%3Dy0rF3a6N3TM%26expire%3D1455687791%26keepalive%3Dyes%26id%3Do-AGE_lzNpDst6dvY1lGH6WhQhOEy9FJGWQO8vdM4_72sC%26mm%3D31%26mn%3Dsn-p5qlsn6s%26ms%3Dau%26mt%3D1455666100%26mv%3Dm%26clen%3D2025860%26pl%3D22%26ip%3D128.82.34.148%26initcwndbps%3D1703750%26ipbits%3D0%26mime%3Dvideo%252Fmp4%26sparams%3Dclen%252Cdur%252Cgir%252Cid%252Cinitcwndbps%252Cip%252Cipbits%252Citag%252Ckeepalive%252Clmt%252Cmime%252Cmm%252Cmn%252Cms%252Cmv%252Cnh%252Cpl%252Crequiressl%252Csource%252Cupn%252Cexpire\u0026type=video%2Fmp4%3B+codecs%3D%22avc1.4d4015%22\u0026size=426x240\u0026itag=133\u0026quality_label=240p\u0026bitrate=250277,index=242-453\u0026init=0-241\u0026projection_type=1\u0026lmt=1454644317726589\u0026clen=1530291\u0026fps=24\u0026url=https%3A%2F%2Fr13---sn-p5qlsn6s.googlevideo.com%2Fvideoplayback%3Fgir%3Dyes%26signature%3D820D53A7E1C18230936A169825A0B258C1DD686C.1F812CD8D711FB4F782D4FB8515345E3583A0804%26key%3Dyt6%26nh%3DIgpwZjAxLmlhZDI2Kg0zOC44OC4yMTQuMjQx%26fexp%3D9416126%252C9416984%252C9420452%252C9421978%252C9422596%252C9423661%252C9423662%252C9425731%252C9425737%252C9427119%252C9427667%252C9428046%252C9428168%252C9428431%252C9428732%252C9428941%26lmt%3D1454644317726589%26source%3Dyoutube%26dur%3D69.987%26requiressl%3Dyes%26itag%3D242%26sver%3D3%26upn%3Dy0rF3a6N3TM%26expire%3D1455687791%26keepalive%3Dyes%26id%3Do-AGE_lzNpDst6dvY1lGH6WhQhOEy9FJGWQO8vdM4_72sC%26mm%3D31%26mn%3Dsn-p5qlsn6s%26ms%3Dau%26mt%3D1455666100%26mv%3Dm%26clen%3D1530291%26pl%3D22%26ip%3D128.82.34.148%26initcwndbps%3D1703750%26ipbits%3D0%26mime%3Dvideo%252Fwebm%26sparams%3Dclen%252Cdur%252Cgir%252Cid%252Cinitcwndbps%252Cip%252Cipbits%252Citag%252Ckeepalive%252Clmt%252Cmime%252Cmm%252Cmn%252Cms%252Cmv%252Cnh%252Cpl%252Crequiressl%252Csource%252Cupn%252Cexpire\u0026type=video%2Fwebm%3B+codecs%3D%22vp9%22\u0026size=426x240\u0026itag=242\u0026quality_label=240p\u0026bitrate=250209,index=671-858\u0026init=0-670\u0026projection_type=1\u0026lmt=1455352247215330\u0026clen=919125\u0026fps=24\u0026url=https%3A%2F%2Fr13---sn-p5qlsn6s.googlevideo.com%2Fvideoplayback%3Fgir%3Dyes%26signature%3D3EC7ACCF774B7CC116BF5144F83C05FD20CC3943.BBA44ECF035080800BFB9B20100FF9CDB0C43292%26key%3Dyt6%26nh%3DIgpwZjAxLmlhZDI2Kg0zOC44OC4yMTQuMjQx%26fexp%3D9416126%252C9416984%252C9420452%252C9421978%252C9422596%252C9423661%252C9423662%252C9425731%252C9425737%252C9427119%252C9427667%252C9428046%252C9428168%252C9428431%252C9428732%252C9428941%26lmt%3D1455352247215330%26source%3Dyoutube%26dur%3D70.028%26requiressl%3Dyes%26itag%3D160%26sver%3D3%26upn%3Dy0rF3a6N3TM%26expire%3D1455687791%26keepalive%3Dyes%26id%3Do-AGE_lzNpDst6dvY1lGH6WhQhOEy9FJGWQO8vdM4_72sC%26mm%3D31%26mn%3Dsn-p5qlsn6s%26ms%3Dau%26mt%3D1455666100%26mv%3Dm%26clen%3D919125%26pl%3D22%26ip%3D128.82.34.148%26initcwndbps%3D1703750%26ipbits%3D0%26mime%3Dvideo%252Fmp4%26sparams%3Dclen%252Cdur%252Cgir%252Cid%252Cinitcwndbps%252Cip%252Cipbits%252Citag%252Ckeepalive%252Clmt%252Cmime%252Cmm%252Cmn%252Cms%252Cmv%252Cnh%252Cpl%252Crequiressl%252Csource%252Cupn%252Cexpire\u0026type=video%2Fmp4%3B+codecs%3D%22avc1.4d400c%22\u0026size=256x144\u0026itag=160\u0026quality_label=144p\u0026bitrate=111803,index=242-452\u0026init=0-241\u0026projection_type=1\u0026lmt=1454644317675280\u0026clen=756886\u0026fps=12\u0026url=https%3A%2F%2Fr13---sn-p5qlsn6s.googlevideo.com%2Fvideoplayback%3Fgir%3Dyes%26signature%3DB2DEE8C5A65B7487F5B987DC832EF7EC46FD4FC4.354B6F81454185E32C0E563248929DE80252319D%26key%3Dyt6%26nh%3DIgpwZjAxLmlhZDI2Kg0zOC44OC4yMTQuMjQx%26fexp%3D9416126%252C9416984%252C9420452%252C9421978%252C9422596%252C9423661%252C9423662%252C9425731%252C9425737%252C9427119%252C9427667%252C9428046%252C9428168%252C9428431%252C9428732%252C9428941%26lmt%3D1454644317675280%26source%3Dyoutube%26dur%3D69.987%26requiressl%3Dyes%26itag%3D278%26sver%3D3%26upn%3Dy0rF3a6N3TM%26expire%3D1455687791%26keepalive%3Dyes%26id%3Do-AGE_lzNpDst6dvY1lGH6WhQhOEy9FJGWQO8vdM4_72sC%26mm%3D31%26mn%3Dsn-p5qlsn6s%26ms%3Dau%26mt%3D1455666100%26mv%3Dm%26clen%3D756886%26pl%3D22%26ip%3D128.82.34.148%26initcwndbps%3D1703750%26ipbits%3D0%26mime%3Dvideo%252Fwebm%26sparams%3Dclen%252Cdur%252Cgir%252Cid%252Cinitcwndbps%252Cip%252Cipbits%252Citag%252Ckeepalive%252Clmt%252Cmime%252Cmm%252Cmn%252Cms%252Cmv%252Cnh%252Cpl%252Crequiressl%252Csource%252Cupn%252Cexpire\u0026type=video%2Fwebm%3B+codecs%3D%22vp9%22\u0026size=256x144\u0026itag=278\u0026quality_label=144p\u0026bitrate=109454,projection_type=1\u0026lmt=1455352110845630\u0026itag=140\u0026url=https%3A%2F%2Fr13---sn-p5qlsn6s.googlevideo.com%2Fvideoplayback%3Fgir%3Dyes%26signature%3D4F7757A4081157879D8FA014384096EE4C46256D.2E31E9C3B90A41BC7DD28FA891F38C9B6BC4F4FA%26key%3Dyt6%26nh%3DIgpwZjAxLmlhZDI2Kg0zOC44OC4yMTQuMjQx%26fexp%3D9416126%252C9416984%252C9420452%252C9421978%252C9422596%252C9423661%252C9423662%252C9425731%252C9425737%252C9427119%252C9427667%252C9428046%252C9428168%252C9428431%252C9428732%252C9428941%26lmt%3D1455352110845630%26source%3Dyoutube%26dur%3D70.124%26requiressl%3Dyes%26itag%3D140%26sver%3D3%26upn%3Dy0rF3a6N3TM%26expire%3D1455687791%26keepalive%3Dyes%26id%3Do-AGE_lzNpDst6dvY1lGH6WhQhOEy9FJGWQO8vdM4_72sC%26mm%3D31%26mn%3Dsn-p5qlsn6s%26ms%3Dau%26mt%3D1455666100%26mv%3Dm%26clen%3D1114480%26pl%3D22%26ip%3D128.82.34.148%26initcwndbps%3D1703750%26ipbits%3D0%26mime%3Daudio%252Fmp4%26sparams%3Dclen%252Cdur%252Cgir%252Cid%252Cinitcwndbps%252Cip%252Cipbits%252Citag%252Ckeepalive%252Clmt%252Cmime%252Cmm%252Cmn%252Cms%252Cmv%252Cnh%252Cpl%252Crequiressl%252Csource%252Cupn%252Cexpire\u0026type=audio%2Fmp4%3B+codecs%3D%22mp4a.40.2%22\u0026bitrate=134275\u0026clen=1114480\u0026index=592-719\u0026init=0-591,projection_type=1\u0026lmt=1454644115298197\u0026itag=171\u0026url=https%3A%2F%2Fr13---sn-p5qlsn6s.googlevideo.com%2Fvideoplayback%3Fgir%3Dyes%26signature%3DAA5467B3708FE64C7110C2E4CFF052E3B9BB25D0.B3D161294946755BCE80C8E28A84C7893761B843%26key%3Dyt6%26nh%3DIgpwZjAxLmlhZDI2Kg0zOC44OC4yMTQuMjQx%26fexp%3D9416126%252C9416984%252C9420452%252C9421978%252C9422596%252C9423661%252C9423662%252C9425731%252C9425737%252C9427119%252C9427667%252C9428046%252C9428168%252C9428431%252C9428732%252C9428941%26lmt%3D1454644115298197%26source%3Dyoutube%26dur%3D70.056%26requiressl%3Dyes%26itag%3D171%26sver%3D3%26upn%3Dy0rF3a6N3TM%26expire%3D1455687791%26keepalive%3Dyes%26id%3Do-AGE_lzNpDst6dvY1lGH6WhQhOEy9FJGWQO8vdM4_72sC%26mm%3D31%26mn%3Dsn-p5qlsn6s%26ms%3Dau%26mt%3D1455666100%26mv%3Dm%26clen%3D801815%26pl%3D22%26ip%3D128.82.34.148%26initcwndbps%3D1703750%26ipbits%3D0%26mime%3Daudio%252Fwebm%26sparams%3Dclen%252Cdur%252Cgir%252Cid%252Cinitcwndbps%252Cip%252Cipbits%252Citag%252Ckeepalive%252Clmt%252Cmime%252Cmm%252Cmn%252Cms%252Cmv%252Cnh%252Cpl%252Crequiressl%252Csource%252Cupn%252Cexpire\u0026type=audio%2Fwebm%3B+codecs%3D%22vorbis%22\u0026bitrate=110454\u0026clen=801815\u0026index=4452-4584\u0026init=0-4451,projection_type=1\u0026lmt=1454644115492891\u0026itag=249\u0026url=https%3A%2F%2Fr13---sn-p5qlsn6s.googlevideo.com%2Fvideoplayback%3Fgir%3Dyes%26signature%3D35980CECAD69F37C0196CDA97943C9DCFE1D8458.1F1176DA779839E41490831376D71EF97B40F89B%26key%3Dyt6%26nh%3DIgpwZjAxLmlhZDI2Kg0zOC44OC4yMTQuMjQx%26fexp%3D9416126%252C9416984%252C9420452%252C9421978%252C9422596%252C9423661%252C9423662%252C9425731%252C9425737%252C9427119%252C9427667%252C9428046%252C9428168%252C9428431%252C9428732%252C9428941%26lmt%3D1454644115492891%26source%3Dyoutube%26dur%3D70.081%26requiressl%3Dyes%26itag%3D249%26sver%3D3%26upn%3Dy0rF3a6N3TM%26expire%3D1455687791%26keepalive%3Dyes%26id%3Do-AGE_lzNpDst6dvY1lGH6WhQhOEy9FJGWQO8vdM4_72sC%26mm%3D31%26mn%3Dsn-p5qlsn6s%26ms%3Dau%26mt%3D1455666100%26mv%3Dm%26clen%3D387888%26pl%3D22%26ip%3D128.82.34.148%26initcwndbps%3D1703750%26ipbits%3D0%26mime%3Daudio%252Fwebm%26sparams%3Dclen%252Cdur%252Cgir%252Cid%252Cinitcwndbps%252Cip%252Cipbits%252Citag%252Ckeepalive%252Clmt%252Cmime%252Cmm%252Cmn%252Cms%252Cmv%252Cnh%252Cpl%252Crequiressl%252Csource%252Cupn%252Cexpire\u0026type=audio%2Fwebm%3B+codecs%3D%22opus%22\u0026bitrate=51929\u0026clen=387888\u0026index=272-402\u0026init=0-271,projection_type=1\u0026lmt=1454644118074408\u0026itag=250\u0026url=https%3A%2F%2Fr13---sn-p5qlsn6s.googlevideo.com%2Fvideoplayback%3Fgir%3Dyes%26signature%3DB1B9679284CD68E4446D2A2E164EAB4F52DC22A2.8A4C97814B195201F332381E690931634052E174%26key%3Dyt6%26nh%3DIgpwZjAxLmlhZDI2Kg0zOC44OC4yMTQuMjQx%26fexp%3D9416126%252C9416984%252C9420452%252C9421978%252C9422596%252C9423661%252C9423662%252C9425731%252C9425737%252C9427119%252C9427667%252C9428046%252C9428168%252C9428431%252C9428732%252C9428941%26lmt%3D1454644118074408%26source%3Dyoutube%26dur%3D70.081%26requiressl%3Dyes%26itag%3D250%26sver%3D3%26upn%3Dy0rF3a6N3TM%26expire%3D1455687791%26keepalive%3Dyes%26id%3Do-AGE_lzNpDst6dvY1lGH6WhQhOEy9FJGWQO8vdM4_72sC%26mm%3D31%26mn%3Dsn-p5qlsn6s%26ms%3Dau%26mt%3D1455666100%26mv%3Dm%26clen%3D495810%26pl%3D22%26ip%3D128.82.34.148%26initcwndbps%3D1703750%26ipbits%3D0%26mime%3Daudio%252Fwebm%26sparams%3Dclen%252Cdur%252Cgir%252Cid%252Cinitcwndbps%252Cip%252Cipbits%252Citag%252Ckeepalive%252Clmt%252Cmime%252Cmm%252Cmn%252Cms%252Cmv%252Cnh%252Cpl%252Crequiressl%252Csource%252Cupn%252Cexpire\u0026type=audio%2Fwebm%3B+codecs%3D%22opus%22\u0026bitrate=69007\u0026clen=495810\u0026index=272-404\u0026init=0-271,projection_type=1\u0026lmt=1454644115750856\u0026itag=251\u0026url=https%3A%2F%2Fr13---sn-p5qlsn6s.googlevideo.com%2Fvideoplayback%3Fgir%3Dyes%26signature%3D66247D44564ECB8CD10EB41872C63AC35086EF5C.54E5197E1610B49604C558F8F6CC6FEFA7D42538%26key%3Dyt6%26nh%3DIgpwZjAxLmlhZDI2Kg0zOC44OC4yMTQuMjQx%26fexp%3D9416126%252C9416984%252C9420452%252C9421978%252C9422596%252C9423661%252C9423662%252C9425731%252C9425737%252C9427119%252C9427667%252C9428046%252C9428168%252C9428431%252C9428732%252C9428941%26lmt%3D1454644115750856%26source%3Dyoutube%26dur%3D70.081%26requiressl%3Dyes%26itag%3D251%26sver%3D3%26upn%3Dy0rF3a6N3TM%26expire%3D1455687791%26keepalive%3Dyes%26id%3Do-AGE_lzNpDst6dvY1lGH6WhQhOEy9FJGWQO8vdM4_72sC%26mm%3D31%26mn%3Dsn-p5qlsn6s%26ms%3Dau%26mt%3D1455666100%26mv%3Dm%26clen%3D945092%26pl%3D22%26ip%3D128.82.34.148%26initcwndbps%3D1703750%26ipbits%3D0%26mime%3Daudio%252Fwebm%26sparams%3Dclen%252Cdur%252Cgir%252Cid%252Cinitcwndbps%252Cip%252Cipbits%252Citag%252Ckeepalive%252Clmt%252Cmime%252Cmm%252Cmn%252Cms%252Cmv%252Cnh%252Cpl%252Crequiressl%252Csource%252Cupn%252Cexpire\u0026type=audio%2Fwebm%3B+codecs%3D%22opus%22\u0026bitrate=135979\u0026clen=945092\u0026index=272-404\u0026init=0-271"},"min_version":"8.0.0"};ytplayer.load = function() {yt.player.Application.create("player-api", ytplayer.config);ytplayer.config.loaded = true;};(function() {if (!!window.yt && yt.player && yt.player.Application) {ytplayer.load();}}());</script>
+
+
+    <div id="watch-queue-mole" class="video-mole mole-collapsed hid"><div id="watch-queue" class="watch-playlist player-height"><div class="main-content"><div class="watch-queue-header"><div class="watch-queue-info"><div class="watch-queue-info-icon"><span class="tv-queue-list-icon yt-sprite"></span></div><h3 class="watch-queue-title">Watch Queue</h3><h3 class="tv-queue-title">Queue</h3><span class="tv-queue-details"></span></div><div class="watch-queue-control-bar control-bar-button"><div class="watch-queue-mole-info"><div class="watch-queue-control-bar-icon"><span class="watch-queue-icon yt-sprite"></span></div><div class="watch-queue-title-container"><span class="watch-queue-count"></span><span class="watch-queue-title">Watch Queue</span><span class="tv-queue-title">Queue</span></div></div>  <span class="dark-overflow-action-menu">
+    
+    
+    <button aria-expanded="false" class="flip control-bar-button yt-uix-button yt-uix-button-dark-overflow-action-menu yt-uix-button-size-default yt-uix-button-has-icon no-icon-markup yt-uix-button-empty" type="button" aria-haspopup="true" onclick=";return false;" aria-label="Actions for the queue" ><span class="yt-uix-button-arrow yt-sprite"></span><ul class="watch-queue-menu yt-uix-button-menu yt-uix-button-menu-dark-overflow-action-menu hid" role="menu" aria-haspopup="true"><li role="menuitem"><span class="watch-queue-menu-choice overflow-menu-choice yt-uix-button-menu-item" data-action="remove-all" onclick=";return false;" >Remove all</span></li><li role="menuitem"><span class="watch-queue-menu-choice overflow-menu-choice yt-uix-button-menu-item" data-action="disconnect" onclick=";return false;" >Disconnect</span></li></ul></button>
+  </span>
+  <div class="watch-queue-controls">
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-empty yt-uix-button-has-icon control-bar-button prev-watch-queue-button yt-uix-button-opacity yt-uix-tooltip yt-uix-tooltip" type="button" onclick=";return false;" title="Previous video"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-watch-queue-prev yt-sprite"></span></span></button>
+
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-empty yt-uix-button-has-icon control-bar-button play-watch-queue-button yt-uix-button-opacity yt-uix-tooltip yt-uix-tooltip" type="button" onclick=";return false;" title="Play"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-watch-queue-play yt-sprite"></span></span></button>
+
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-empty yt-uix-button-has-icon control-bar-button pause-watch-queue-button yt-uix-button-opacity yt-uix-tooltip hid yt-uix-tooltip" type="button" onclick=";return false;" title="Pause"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-watch-queue-pause yt-sprite"></span></span></button>
+
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-empty yt-uix-button-has-icon control-bar-button next-watch-queue-button yt-uix-button-opacity yt-uix-tooltip yt-uix-tooltip" type="button" onclick=";return false;" title="Next video"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-watch-queue-next yt-sprite"></span></span></button>
+  </div>
+</div></div><div class="watch-queue-items-container yt-scrollbar-dark yt-scrollbar"><ol class="watch-queue-items-list playlist-videos-list yt-uix-scroller" data-scroll-action="yt.www.watchqueue.loadThumbnails">  <p class="yt-spinner ">
+        <span class="yt-spinner-img  yt-sprite" title="Loading icon"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+</ol></div></div>  <div class="hid">
+    <div id="watch-queue-title-msg">
+Watch Queue
+    </div>
+
+    <div id="tv-queue-title-msg">Queue</div>
+
+    <div id="watch-queue-count-msg">
+__count__/__total__
+    </div>
+
+    <div id="watch-queue-loading-template">
+      <!--
+          <p class="yt-spinner ">
+        <span class="yt-spinner-img  yt-sprite" title="Loading icon"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+      -->
+    </div>
+  </div>
+</div></div>
+    <div id="player-playlist" class="  content-alignment    watch-player-playlist  ">
+          
+
+    </div>
+
+  </div>
+
+  <div class="clear"></div>
+</div><div id="content" class="  content-alignment" role="main">      <div id="placeholder-player">
+    <div class="player-api player-width player-height"></div>
+  </div>
+
+  <div id="watch7-container" class="">
+      <div id="watch7-main-container">
+    <div id="watch7-main" class="clearfix">
+      <div id="watch7-preview" class="player-width player-height hid">
+      </div>
+      <div id="watch7-content" class="watch-main-col " itemscope itemid="" itemtype="http://schema.org/VideoObject"
+      >
+            <link itemprop="url" href="https://www.youtube.com/watch?v=BGNahDImVhs">
+    <meta itemprop="name" content="The All-New 2016 Toyota Prius | Hunters | Toyota">
+    <meta itemprop="description" content="Introducing the all-new 2016 Toyota Prius. Defies expectations and redefines the rules of the open road. SUBSCRIBE: http://bit.ly/ToyotaSubscribe About Toyot...">
+    <meta itemprop="paid" content="False">
+
+      <meta itemprop="channelId" content="UC1pOTJteEef10zJM0cHs4iQ">
+      <meta itemprop="videoId" content="BGNahDImVhs">
+
+      <meta itemprop="duration" content="PT1M11S">
+      <meta itemprop="unlisted" content="False">
+
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <link itemprop="url" href="http://www.youtube.com/user/ToyotaUSA">
+        </span>
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <link itemprop="url" href="https://plus.google.com/109401964142949249458">
+        </span>
+
+    <link itemprop="thumbnailUrl" href="https://i.ytimg.com/vi/BGNahDImVhs/hqdefault.jpg">
+    <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
+      <link itemprop="url" href="https://i.ytimg.com/vi/BGNahDImVhs/hqdefault.jpg">
+      <meta itemprop="width" content="480">
+      <meta itemprop="height" content="360">
+    </span>
+
+      <link itemprop="embedURL" href="https://www.youtube.com/embed/BGNahDImVhs">
+      <meta itemprop="playerType" content="HTML5 Flash">
+      <meta itemprop="width" content="1280">
+      <meta itemprop="height" content="720">
+
+      <meta itemprop="isFamilyFriendly" content="True">
+      <meta itemprop="regionsAllowed" content="AD,AE,AF,AG,AI,AL,AM,AO,AQ,AR,AS,AT,AU,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CA,CC,CD,CF,CG,CH,CI,CK,CL,CM,CN,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH,ER,ES,ET,FI,FJ,FK,FM,FO,FR,GA,GB,GD,GE,GF,GG,GH,GI,GL,GM,GN,GP,GQ,GR,GS,GT,GU,GW,GY,HK,HM,HN,HR,HT,HU,ID,IE,IL,IM,IN,IO,IQ,IR,IS,IT,JE,JM,JO,JP,KE,KG,KH,KI,KM,KN,KP,KR,KW,KY,KZ,LA,LB,LC,LI,LK,LR,LS,LT,LU,LV,LY,MA,MC,MD,ME,MF,MG,MH,MK,ML,MM,MN,MO,MP,MQ,MR,MS,MT,MU,MV,MW,MX,MY,MZ,NA,NC,NE,NF,NG,NI,NL,NO,NP,NR,NU,NZ,OM,PA,PE,PF,PG,PH,PK,PL,PM,PN,PR,PS,PT,PW,PY,QA,RE,RO,RS,RU,RW,SA,SB,SC,SD,SE,SG,SH,SI,SJ,SK,SL,SM,SN,SO,SR,SS,ST,SV,SX,SY,SZ,TC,TD,TF,TG,TH,TJ,TK,TL,TM,TN,TO,TR,TT,TV,TW,TZ,UA,UG,UM,US,UY,UZ,VA,VC,VE,VG,VI,VN,VU,WF,WS,YE,YT,ZA,ZM,ZW">
+      <meta itemprop="interactionCount" content="997287">
+      <meta itemprop="datePublished" content="2016-02-07">
+      <meta itemprop="genre" content="Autos &amp; Vehicles">
+
+              <div id="watch7-speedyg-area">
+      <div class="yt-alert yt-alert-actionable yt-alert-info hid " id="speedyg-template">  <div class="yt-alert-icon">
+    <span class="icon master-sprite yt-sprite"></span>
+  </div>
+<div class="yt-alert-content" role="alert">    <div class="yt-alert-message">
+    </div>
+</div><div class="yt-alert-buttons"><a href="https://www.google.com/get/videoqualityreport/?v=BGNahDImVhs" class="yt-uix-button   yt-uix-sessionlink yt-uix-button-alert-info yt-uix-button-size-small" data-sessionlink="ei=D7TDVpGaMY-9-gWFu6SQDw" id="speedyg-link" target="_blank"><span class="yt-uix-button-content">Find out why</span></a><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-close close yt-uix-close" type="button" onclick=";return false;" aria-label="Close" data-close-parent-class="yt-alert"><span class="yt-uix-button-content">Close</span></button></div></div>
+    </div>
+
+        <div id="watch-header" class="yt-card yt-card-has-padding">
+      <div id="watch7-headline" class="clearfix">
+    <div id="watch-headline-title">
+      <h1 class="yt watch-title-container" >
+        
+
+  <span id="eow-title" class="watch-title " dir="ltr" title="The All-New 2016 Toyota Prius | Hunters | Toyota">
+    The All-New 2016 Toyota Prius | Hunters | Toyota
+  </span>
+
+      </h1>
+    </div>
+  </div>
+
+    <div id="watch7-user-header" class=" spf-link ">  <a href="/user/ToyotaUSA" class="yt-uix-sessionlink yt-user-photo g-hovercard      spf-link " data-ytid="UC1pOTJteEef10zJM0cHs4iQ" data-sessionlink="itct=CDEQ4TkiEwjR3ZiSu_3KAhWPnr4KHYUdCfIo-B0">
+      <span class="video-thumb  yt-thumb yt-thumb-48 g-hovercard"
+      data-ytid="UC1pOTJteEef10zJM0cHs4iQ"
+    >
+    <span class="yt-thumb-square">
+      <span class="yt-thumb-clip">
+        <img data-thumb="https://yt3.ggpht.com/-XIj2RtLOqb4/AAAAAAAAAAI/AAAAAAAAAAA/A3kivkO57So/s88-c-k-no/photo.jpg" width="48" height="48" src="https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Toyota USA" >
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+
+  </a>
+  <div class="yt-user-info">
+    <a href="/channel/UC1pOTJteEef10zJM0cHs4iQ" class="yt-uix-sessionlink g-hovercard      spf-link " data-ytid="UC1pOTJteEef10zJM0cHs4iQ" data-sessionlink="itct=CDEQ4TkiEwjR3ZiSu_3KAhWPnr4KHYUdCfIo-B0" >Toyota USA</a>
+       
+      <span class="yt-channel-title-icon-verified yt-uix-tooltip yt-sprite" data-tooltip-text="Verified" aria-label="Verified"></span>
+  </div>
+<span id="watch7-subscription-container"><span class=" yt-uix-button-subscription-container"><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-subscribe-branded yt-uix-button-has-icon no-icon-markup yt-uix-subscription-button yt-can-buffer" type="button" onclick=";return false;" aria-live="polite" aria-busy="false" data-clicktracking="itct=CDIQmysiEwjR3ZiSu_3KAhWPnr4KHYUdCfIo-B0yBXdhdGNo" data-channel-external-id="UC1pOTJteEef10zJM0cHs4iQ" data-href="https://accounts.google.com/ServiceLogin?uilel=3&amp;hl=en&amp;service=youtube&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Fnext%3D%252Fchannel%252FUC1pOTJteEef10zJM0cHs4iQ%26hl%3Den%26feature%3Dsubscribe%26app%3Ddesktop%26continue_action%3DQUFFLUhqbW51XzNuQjluaHlNaGRiMXVpOUN3eTlkYjlLd3xBQ3Jtc0trbTMyQ1pva0EzaVVCcG5KZ3lFWFZPNHlveXRudHFTeEVhZlFzSHc0QXpvTHpja043UVNzLU5oN1lxRHlUbDBLcGp3MzdlcFI1X1d5dUJfOEpiS01YY01XVEpfZUs5cENXcHRsTVd6eUs4YU5MbldJZXJMd3hiY01sN2h1ZC1RRlZiQThERFdFYTdFNEpxMlJvNVdyN3JRWGNWSzhkaWxPVWhIUUtoNUZxWi1abkx4WXZ3b3NxVklNNXBHWEJ3LVRtV3ZVTHM4QkxuekdadFN5cDI1RGhSSV94ZW1B%26action_handle_signin%3Dtrue&amp;passive=true" data-style-type="branded"><span class="yt-uix-button-content"><span class="subscribe-label" aria-label="Subscribe">Subscribe</span><span class="subscribed-label" aria-label="Unsubscribe">Subscribed</span><span class="unsubscribe-label" aria-label="Unsubscribe">Unsubscribe</span></span></button><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon yt-uix-subscription-preferences-button" type="button" onclick=";return false;" aria-live="polite" aria-busy="false" aria-role="button" aria-label="Subscription preferences" data-channel-external-id="UC1pOTJteEef10zJM0cHs4iQ"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-subscription-preferences yt-sprite"></span></span></button><span class="yt-subscription-button-subscriber-count-branded-horizontal yt-subscriber-count" title="146,308" aria-label="146,308" tabindex="0">146,308</span><span class="yt-subscription-button-subscriber-count-branded-horizontal yt-short-subscriber-count" title="146K" aria-label="146K" tabindex="0">146K</span>  
+  <div class="yt-uix-overlay "  data-overlay-style="primary" data-overlay-shape="tiny">
+    
+        <div class="yt-dialog hid ">
+    <div class="yt-dialog-base">
+      <span class="yt-dialog-align"></span>
+      <div class="yt-dialog-fg" role="dialog">
+        <div class="yt-dialog-fg-content">
+          <div class="yt-dialog-loading">
+              <div class="yt-dialog-waiting-content">
+      <p class="yt-spinner ">
+        <span class="yt-spinner-img  yt-sprite" title="Loading icon"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+  </div>
+
+          </div>
+          <div class="yt-dialog-content">
+              <div class="subscription-preferences-overlay-content-container">
+    <div class="subscription-preferences-overlay-loading ">
+        <p class="yt-spinner ">
+        <span class="yt-spinner-img  yt-sprite" title="Loading icon"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+    </div>
+    <div class="subscription-preferences-overlay-content">
+    </div>
+  </div>
+
+          </div>
+          <div class="yt-dialog-working">
+              <div class="yt-dialog-working-overlay"></div>
+  <div class="yt-dialog-working-bubble">
+    <div class="yt-dialog-waiting-content">
+        <p class="yt-spinner ">
+        <span class="yt-spinner-img  yt-sprite" title="Loading icon"></span>
+
+    <span class="yt-spinner-message">
+        Working...
+    </span>
+  </p>
+
+      </div>
+  </div>
+
+          </div>
+        </div>
+        <div class="yt-dialog-focus-trap" tabindex="0"></div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+</span></span></div>
+    <div id="watch8-action-buttons" class="watch-action-buttons clearfix"><div id="watch8-secondary-actions" class="watch-secondary-actions yt-uix-button-group" data-button-toggle-group="optional">    <span class="yt-uix-clickcard">
+      <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-opacity yt-uix-button-has-icon no-icon-markup yt-uix-clickcard-target addto-button pause-resume-autoplay yt-uix-tooltip" type="button" onclick=";return false;" title="Add to" data-orientation="vertical" data-position="bottomleft"><span class="yt-uix-button-content">Add to</span></button>
+        <div class="signin-clickcard yt-uix-clickcard-content">
+    <h3 class="signin-clickcard-header">Want to watch this again later?</h3>
+    <div class="signin-clickcard-message">
+      Sign in to add this video to a playlist.
+    </div>
+    <a href="https://accounts.google.com/ServiceLogin?uilel=3&amp;hl=en&amp;service=youtube&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3D__FEATURE__%26next%3D%252Fwatch%253Fv%253DBGNahDImVhs%2526feature%253Dyoutu.be%2526siteid%253DDLR_RSS_Link_ToyotaNews%26hl%3Den%26action_handle_signin%3Dtrue%26app%3Ddesktop&amp;passive=true" class="yt-uix-button  signin-button yt-uix-sessionlink yt-uix-button-primary yt-uix-button-size-default" data-sessionlink="ei=D7TDVpGaMY-9-gWFu6SQDw"><span class="yt-uix-button-content">Sign in</span></a>
+  </div>
+
+    </span>
+  <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-opacity yt-uix-button-has-icon no-icon-markup pause-resume-autoplay action-panel-trigger action-panel-trigger-share   yt-uix-tooltip" type="button" onclick=";return false;" title="Share
+" data-trigger-for="action-panel-share" data-button-toggle="true"><span class="yt-uix-button-content">Share
+</span></button>
+<div class="yt-uix-menu " >  <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-opacity yt-uix-button-has-icon no-icon-markup pause-resume-autoplay yt-uix-menu-trigger yt-uix-tooltip" type="button" onclick=";return false;" id="action-panel-overflow-button" aria-pressed="false" aria-haspopup="true" role="button" title="More actions"><span class="yt-uix-button-content">More</span></button>
+<div class="yt-uix-menu-content yt-ui-menu-content yt-uix-menu-content-hidden" role="menu"><ul id="action-panel-overflow-menu">  <li>
+      <span class="yt-uix-clickcard" data-card-class=report-card>
+          <button type="button" class="yt-ui-menu-item has-icon action-panel-trigger action-panel-trigger-report report-button yt-uix-clickcard-target"
+ data-orientation="horizontal" data-position="topright">
+    <span class="yt-ui-menu-item-label">Report</span>
+  </button>
+
+          <div class="signin-clickcard yt-uix-clickcard-content">
+    <h3 class="signin-clickcard-header">Need to report the video?</h3>
+    <div class="signin-clickcard-message">
+      Sign in to report inappropriate content.
+    </div>
+    <a href="https://accounts.google.com/ServiceLogin?uilel=3&amp;hl=en&amp;service=youtube&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3D__FEATURE__%26next%3D%252Fwatch%253Fv%253DBGNahDImVhs%2526feature%253Dyoutu.be%2526siteid%253DDLR_RSS_Link_ToyotaNews%26hl%3Den%26action_handle_signin%3Dtrue%26app%3Ddesktop&amp;passive=true" class="yt-uix-button  signin-button yt-uix-sessionlink yt-uix-button-primary yt-uix-button-size-default" data-sessionlink="ei=D7TDVpGaMY-9-gWFu6SQDw"><span class="yt-uix-button-content">Sign in</span></a>
+  </div>
+
+      </span>
+  </li>
+  <li>
+        <button type="button" class="yt-ui-menu-item has-icon yt-uix-menu-close-on-select action-panel-trigger action-panel-trigger-transcript"
+ data-trigger-for="action-panel-transcript">
+    <span class="yt-ui-menu-item-label">Transcript</span>
+  </button>
+
+  </li>
+</ul></div></div></div><div id="watch8-sentiment-actions"><div id="watch7-views-info"><div class="watch-view-count">997,287</div>
+  <div class="video-extras-sparkbars">
+    <div class="video-extras-sparkbar-likes" style="width: 74.4278606965%"></div>
+    <div class="video-extras-sparkbar-dislikes" style="width: 25.5721393035%"></div>
+  </div>
+</div>
+
+
+
+
+
+  <span class="like-button-renderer " data-button-toggle-group="optional" >
+    <span class="yt-uix-clickcard">
+      <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-opacity yt-uix-button-has-icon no-icon-markup like-button-renderer-like-button like-button-renderer-like-button-unclicked yt-uix-clickcard-target   yt-uix-tooltip" type="button" onclick=";return false;" title="I like this" aria-label="like this video along with 748 other people" data-orientation="vertical" data-position="bottomright" data-force-position="true"><span class="yt-uix-button-content">748</span></button>
+          <div class="signin-clickcard yt-uix-clickcard-content">
+    <h3 class="signin-clickcard-header">Like this video?</h3>
+    <div class="signin-clickcard-message">
+      Sign in to make your opinion count.
+    </div>
+    <a href="https://accounts.google.com/ServiceLogin?uilel=3&amp;hl=en&amp;service=youtube&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3D__FEATURE__%26next%3D%252Fwatch%253Fv%253DBGNahDImVhs%2526feature%253Dyoutu.be%2526siteid%253DDLR_RSS_Link_ToyotaNews%26hl%3Den%26action_handle_signin%3Dtrue%26app%3Ddesktop&amp;passive=true" class="yt-uix-button  signin-button yt-uix-sessionlink yt-uix-button-primary yt-uix-button-size-default" data-sessionlink="ei=D7TDVpGaMY-9-gWFu6SQDw"><span class="yt-uix-button-content">Sign in</span></a>
+  </div>
+
+    </span>
+    <span class="yt-uix-clickcard">
+      <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-opacity yt-uix-button-has-icon no-icon-markup like-button-renderer-like-button like-button-renderer-like-button-clicked yt-uix-button-toggled  hid yt-uix-tooltip" type="button" onclick=";return false;" title="Unlike" aria-label="like this video along with 748 other people" data-orientation="vertical" data-position="bottomright" data-force-position="true"><span class="yt-uix-button-content">749</span></button>
+    </span>
+    <span class="yt-uix-clickcard">
+      <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-opacity yt-uix-button-has-icon no-icon-markup like-button-renderer-dislike-button like-button-renderer-dislike-button-unclicked yt-uix-clickcard-target   yt-uix-tooltip" type="button" onclick=";return false;" title="I dislike this" aria-label="dislike this video along with 257 other people" data-orientation="vertical" data-position="bottomright" data-force-position="true"><span class="yt-uix-button-content">257</span></button>
+          <div class="signin-clickcard yt-uix-clickcard-content">
+    <h3 class="signin-clickcard-header">Don't like this video?</h3>
+    <div class="signin-clickcard-message">
+      Sign in to make your opinion count.
+    </div>
+    <a href="https://accounts.google.com/ServiceLogin?uilel=3&amp;hl=en&amp;service=youtube&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3D__FEATURE__%26next%3D%252Fwatch%253Fv%253DBGNahDImVhs%2526feature%253Dyoutu.be%2526siteid%253DDLR_RSS_Link_ToyotaNews%26hl%3Den%26action_handle_signin%3Dtrue%26app%3Ddesktop&amp;passive=true" class="yt-uix-button  signin-button yt-uix-sessionlink yt-uix-button-primary yt-uix-button-size-default" data-sessionlink="ei=D7TDVpGaMY-9-gWFu6SQDw"><span class="yt-uix-button-content">Sign in</span></a>
+  </div>
+
+    </span>
+    <span class="yt-uix-clickcard">
+      <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-opacity yt-uix-button-has-icon no-icon-markup like-button-renderer-dislike-button like-button-renderer-dislike-button-clicked yt-uix-button-toggled  hid yt-uix-tooltip" type="button" onclick=";return false;" title="I dislike this" aria-label="dislike this video along with 257 other people" data-orientation="vertical" data-position="bottomright" data-force-position="true"><span class="yt-uix-button-content">258</span></button>
+    </span>
+  </span>
+</div></div>
+  </div>
+
+
+
+      <div id="watch-action-panels" class="watch-action-panels yt-uix-button-panel hid yt-card yt-card-has-padding">
+      <div id="action-panel-share" class="action-panel-content hid">
+      <div id="watch-actions-share-loading">
+    <div class="action-panel-loading">
+        <p class="yt-spinner ">
+        <span class="yt-spinner-img  yt-sprite" title="Loading icon"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+    </div>
+  </div>
+  <div id="watch-actions-share-panel"></div>
+
+  </div>
+
+        <div id="action-panel-transcript" class="action-panel-content hid">
+    <div id="watch-actions-transcript-loading">
+      <div class="action-panel-loading">
+          <p class="yt-spinner ">
+        <span class="yt-spinner-img  yt-sprite" title="Loading icon"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+      </div>
+    </div>
+      <div id="watch-actions-transcript" class="hid">
+    <h2 class="yt-card-title">
+Transcript
+    </h2>
+      <div id="caption-line-template" class="hid">
+    <!--
+    <div class="caption-line-time">
+      <div class="caption-line-start">__start__</div>
+    </div>
+    <div class="editable-line-text">
+      <span class="editable-line-text-original">__original__</span>
+      <label class="editable-line-text-current hid">__current__</label>
+      <textarea class="editable-line-text-input hid">__input__</textarea>
+    </div>
+    -->
+  </div>
+
+
+
+    <div id="watch-transcript-container" class="yt-scrollbar" >
+      <div id="watch-transcript-not-found" class="hid">
+The interactive transcript could not be loaded.
+      </div>
+
+      
+    </div>
+  </div>
+
+  </div>
+
+      <div id="action-panel-stats" class="action-panel-content hid">
+    <div class="action-panel-loading">
+        <p class="yt-spinner ">
+        <span class="yt-spinner-img  yt-sprite" title="Loading icon"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+    </div>
+  </div>
+
+      <div id="action-panel-report" class="action-panel-content hid"
+      data-auth-required="true"
+  >
+    <div class="action-panel-loading">
+        <p class="yt-spinner ">
+        <span class="yt-spinner-img  yt-sprite" title="Loading icon"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+    </div>
+  </div>
+
+    
+  <div id="action-panel-rental-required" class="action-panel-content hid">
+      <div id="watch-actions-rental-required">
+    <strong>Rating is available when the video has been rented.</strong>
+  </div>
+
+  </div>
+
+  <div id="action-panel-error" class="action-panel-content hid">
+    <div class="action-panel-error">
+      This feature is not available right now. Please try again later.
+    </div>
+  </div>
+
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup yt-uix-button-opacity yt-uix-close" type="button" onclick=";return false;" id="action-panel-dismiss" aria-label="Close" data-close-parent-id="watch8-action-panels"></button>
+  </div>
+
+  <div id="action-panel-details" class="action-panel-content yt-uix-expander yt-card yt-card-has-padding yt-uix-expander-collapsed"><div id="watch-description" class="yt-uix-button-panel"><div id="watch-description-content"><div id="watch-description-clip"><div id="watch-uploader-info"><strong class="watch-time-text">Published on Feb 7, 2016</strong></div><div id="watch-description-text" class=""><p id="eow-description" >Introducing the all-new 2016 Toyota Prius. Defies expectations and redefines the rules of the open road.<br /><br />SUBSCRIBE: <a href="http://bit.ly/ToyotaSubscribe" class="yt-uix-sessionlink  " data-sessionlink="ei=D7TDVpGaMY-9-gWFu6SQDw" target="_blank" rel="nofollow">http://bit.ly/ToyotaSubscribe</a><br /><br />About Toyota:<br />We’re in the business of making great cars and trucks. But we also work every day to apply and share our know-how in ways that benefit people, the community and our planet in order to build a better tomorrow. We’ve been a part of life in America for over 50 years. And while we’re passionate about making great cars and trucks, our story is about much more than our vehicles. <br /><br />Connect with Toyota USA online:<br />Visit the Toyota WEBSITE: <a href="http://bit.ly/ToyotaSite" class="yt-uix-sessionlink  " data-sessionlink="ei=D7TDVpGaMY-9-gWFu6SQDw" target="_blank" rel="nofollow">http://bit.ly/ToyotaSite</a><br />Like Toyota on FACEBOOK: <a href="http://bit.ly/ToyotaUSAFB" class="yt-uix-sessionlink  " data-sessionlink="ei=D7TDVpGaMY-9-gWFu6SQDw" target="_blank" rel="nofollow">http://bit.ly/ToyotaUSAFB</a><br />Follow Toyota on TWITTER: <a href="http://bit.ly/ToyotaTwitter" class="yt-uix-sessionlink  " data-sessionlink="ei=D7TDVpGaMY-9-gWFu6SQDw" target="_blank" rel="nofollow">http://bit.ly/ToyotaTwitter</a><br />Follow Toyota on INSTAGRAM: <a href="http://bit.ly/ToyotaInsta" class="yt-uix-sessionlink  " data-sessionlink="ei=D7TDVpGaMY-9-gWFu6SQDw" target="_blank" rel="nofollow">http://bit.ly/ToyotaInsta</a><br />+1 Toyota on GOOGLE+: <a href="http://bit.ly/ToyotaUSAGplus" class="yt-uix-sessionlink  " data-sessionlink="ei=D7TDVpGaMY-9-gWFu6SQDw" target="_blank" rel="nofollow">http://bit.ly/ToyotaUSAGplus</a><br /><br />The All-New 2016 Toyota Prius | Hunters | Toyota (:60)<br /><a href="http://www.youtube.com/user/ToyotaUSA" class="yt-uix-sessionlink  " data-sessionlink="ei=D7TDVpGaMY-9-gWFu6SQDw" target="_blank" rel="nofollow">http://www.youtube.com/user/ToyotaUSA</a></p></div>  <div id="watch-description-extras" >
+    <ul class="watch-extras-section">
+            <li class="watch-meta-item yt-uix-expander-body">
+    <h4 class="title">
+      Category
+    </h4>
+    <ul class="content watch-info-tag-list">
+        <li><a href="/channel/UCHiJaXgDo_JnsfOmSe-HgzA" class="yt-uix-sessionlink g-hovercard      spf-link " data-ytid="UCHiJaXgDo_JnsfOmSe-HgzA" data-sessionlink="ei=D7TDVpGaMY-9-gWFu6SQDw" >Autos &amp; Vehicles</a></li>
+    </ul>
+  </li>
+
+            <li class="watch-meta-item yt-uix-expander-body">
+    <h4 class="title">
+      License
+    </h4>
+    <ul class="content watch-info-tag-list">
+        <li>Standard YouTube License</li>
+    </ul>
+  </li>
+
+    </ul>
+  </div>
+</div></div></div>  <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-expander yt-uix-expander-head yt-uix-expander-collapsed-body yt-uix-gen204" type="button" onclick=";return false;" data-gen204="feature=watch-show-more-metadata"><span class="yt-uix-button-content">Show more</span></button>
+  <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-expander yt-uix-expander-head yt-uix-expander-body" type="button" onclick=";return false;"><span class="yt-uix-button-content">Show less</span></button>
+</div>
+
+              <div class="cmt_iframe_holder" data-href="http://www.youtube.com/watch?v=BGNahDImVhs&amp;feature=youtu.be&amp;siteid=DLR_RSS_Link_ToyotaNews" data-viewtype="FILTERED" style="display: none;"></div>
+
+    <div id="watch-discussion" class="branded-page-box yt-card">
+              
+  <div class="comments-iframe-container">
+    <div id="comments-test-iframe"></div>
+    <div id="distiller-spinner" class="action-panel-loading">
+        <p class="yt-spinner ">
+        <span class="yt-spinner-img  yt-sprite" title="Loading icon"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+    </div>
+  </div>
+
+
+    </div>
+
+
+      </div>
+      <div id="watch7-sidebar" class="watch-sidebar">
+            <div id="placeholder-playlist" class="watch-playlist player-height  hid"></div>
+
+
+  <div id="watch7-sidebar-contents" class="watch-sidebar-gutter   yt-card yt-card-has-padding    yt-uix-expander yt-uix-expander-collapsed">
+      <div id="watch7-sidebar-offer">
+        
+      </div>
+
+    <div id="watch7-sidebar-ads">
+      
+    </div>
+    <div id="watch7-sidebar-modules">
+          <div class="watch-sidebar-section">
+    <div class="autoplay-bar">
+      <div class="checkbox-on-off">
+       <label for="autoplay-checkbox">Autoplay</label>
+       <span class="autoplay-hovercard yt-uix-hovercard">
+          <span class="autoplay-info-icon yt-uix-button-opacity yt-uix-hovercard-target yt-sprite" data-orientation="vertical" data-position="topright"></span>
+<span class="yt-uix-hovercard-content">When autoplay is enabled, a suggested video will automatically play next.</span>        </span>
+          <span class="yt-uix-checkbox-on-off ">
+<input id="autoplay-checkbox" class="" type="checkbox"  checked><label for="autoplay-checkbox" id="autoplay-checkbox-label"><span class="checked"></span><span class="toggle"></span><span class="unchecked"></span></label>  </span>
+
+      </div>
+      <h4 class="watch-sidebar-head">
+          Up next
+      </h4>
+            <div class="watch-sidebar-body">
+      <ul class="video-list">
+        <li class="video-list-item related-list-item show-video-time">
+          
+
+    <div class="content-wrapper">
+    <a href="/watch?v=hyNshwyrtGY" class="yt-uix-sessionlink  content-link spf-link        spf-link " data-sessionlink="itct=CBcQpDAYACITCNHdmJK7_coCFY-evgodhR0J8ij4HTIHYXV0b25hdkibrJmRw9DWsQQ" title="Arctic Challenge | 2017 Tacoma TRD Pro | Toyota" rel="spf-prefetch" data-visibility-tracking="CBcQpDAYACITCNHdmJK7_coCFY-evgodhR0J8ij4HUDm6K7l8JDbkYcB" >
+  <span dir="ltr" class="title" aria-describedby="description-id-29690">
+    Arctic Challenge | 2017 Tacoma TRD Pro | Toyota
+  </span>
+  <span class="accessible-description" id="description-id-29690">
+     - Duration: 5:01.
+  </span>
+  <span class="stat attribution"><span class="g-hovercard" data-name="autonav" data-ytid="UC1pOTJteEef10zJM0cHs4iQ">Toyota USA</span></span>
+  <span class="stat view-count">77,487 views</span>
+</a>
+  </div>
+  <div class="thumb-wrapper">
+
+    <a href="/watch?v=hyNshwyrtGY" class="yt-uix-sessionlink  vve-check thumb-link spf-link        spf-link " data-sessionlink="itct=CBcQpDAYACITCNHdmJK7_coCFY-evgodhR0J8ij4HTIHYXV0b25hdkibrJmRw9DWsQQ" tabindex="-1" rel="spf-prefetch" data-visibility-tracking="CBcQpDAYACITCNHdmJK7_coCFY-evgodhR0J8ij4HUDm6K7l8JDbkYcB" aria-hidden="true"><span class="yt-uix-simple-thumb-wrap yt-uix-simple-thumb-related" tabindex="0" data-vid="hyNshwyrtGY"><img height="90" src="https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" data-thumb="//i.ytimg.com/vi/hyNshwyrtGY/default.jpg" alt="" aria-hidden="true" width="120" ></span></a>
+        <span class="video-time">
+      5:01
+    </span>
+
+  </div>
+
+
+        </li>
+      </ul>
+    </div>
+
+    </div>
+  </div>
+
+        
+          <div class="watch-sidebar-section">
+      <hr class="watch-sidebar-separation-line">
+    <div class="watch-sidebar-body">
+      <ul id="watch-related" class="video-list">
+            <li class="video-list-item related-list-item  show-video-time related-list-item-compact-video">
+
+    <div class="content-wrapper">
+    <a href="/watch?v=xFyY7_hc-14" class="yt-uix-sessionlink  content-link spf-link        spf-link " data-sessionlink="itct=CCsQpDAYACITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" title="Fueled by the Future | Back to the Future | Presented by Toyota Mirai | Toyota" rel="spf-prefetch" data-visibility-tracking="CCsQpDAYACITCNHdmJK7_coCFY-evgodhR0J8ij4HUDe9vPC_52mrsQB" >
+  <span dir="ltr" class="title" aria-describedby="description-id-854968">
+    Fueled by the Future | Back to the Future | Presented by Toyota Mirai | Toyota
+  </span>
+  <span class="accessible-description" id="description-id-854968">
+     - Duration: 4:56.
+  </span>
+  <span class="stat attribution"><span class="g-hovercard" data-name="relmfu" data-ytid="UC1pOTJteEef10zJM0cHs4iQ">Toyota USA</span></span>
+  <span class="stat view-count">5,102,617 views</span>
+</a>
+  </div>
+  <div class="thumb-wrapper">
+
+    <a href="/watch?v=xFyY7_hc-14" class="yt-uix-sessionlink  vve-check thumb-link spf-link        spf-link " data-sessionlink="itct=CCsQpDAYACITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" tabindex="-1" rel="spf-prefetch" data-visibility-tracking="CCsQpDAYACITCNHdmJK7_coCFY-evgodhR0J8ij4HUDe9vPC_52mrsQB" aria-hidden="true"><span class="yt-uix-simple-thumb-wrap yt-uix-simple-thumb-related" tabindex="0" data-vid="xFyY7_hc-14"><img height="90" src="https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" data-thumb="//i.ytimg.com/vi/xFyY7_hc-14/default.jpg" alt="" aria-hidden="true" width="120" ></span></a>
+        <span class="video-time">
+      4:56
+    </span>
+
+  </div>
+
+</li><li class="video-list-item related-list-item  show-video-time related-list-item-compact-video">
+
+    <div class="content-wrapper">
+    <a href="/watch?v=KxIIi6SVuII" class="yt-uix-sessionlink  content-link spf-link        spf-link " data-sessionlink="itct=CCoQpDAYASITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" title="The All-New 2016 Prius | Heck on Wheels #GoPriusGo | Toyota" rel="spf-prefetch" data-visibility-tracking="CCoQpDAYASITCNHdmJK7_coCFY-evgodhR0J8ij4HUCC8dakupGCiSs=" >
+  <span dir="ltr" class="title" aria-describedby="description-id-965431">
+    The All-New 2016 Prius | Heck on Wheels #GoPriusGo | Toyota
+  </span>
+  <span class="accessible-description" id="description-id-965431">
+     - Duration: 1:41.
+  </span>
+  <span class="stat attribution"><span class="g-hovercard" data-name="relmfu" data-ytid="UC1pOTJteEef10zJM0cHs4iQ">Toyota USA</span></span>
+  <span class="stat view-count">1,666,169 views</span>
+</a>
+  </div>
+  <div class="thumb-wrapper">
+
+    <a href="/watch?v=KxIIi6SVuII" class="yt-uix-sessionlink  vve-check thumb-link spf-link        spf-link " data-sessionlink="itct=CCoQpDAYASITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" tabindex="-1" rel="spf-prefetch" data-visibility-tracking="CCoQpDAYASITCNHdmJK7_coCFY-evgodhR0J8ij4HUCC8dakupGCiSs=" aria-hidden="true"><span class="yt-uix-simple-thumb-wrap yt-uix-simple-thumb-related" tabindex="0" data-vid="KxIIi6SVuII"><img height="90" src="https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" data-thumb="//i.ytimg.com/vi/KxIIi6SVuII/default.jpg" alt="" aria-hidden="true" width="120" ></span></a>
+        <span class="video-time">
+      1:41
+    </span>
+
+  </div>
+
+</li><li class="video-list-item related-list-item  show-video-time related-list-item-compact-video">
+
+    <div class="content-wrapper">
+    <a href="/watch?v=MYeM-8hO3hM" class="yt-uix-sessionlink  content-link spf-link        spf-link " data-sessionlink="itct=CCkQpDAYAiITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" title="The All-New 2016 Toyota Prius | The Longest Chase #GoPriusGo | Toyota" rel="spf-prefetch" data-visibility-tracking="CCkQpDAYAiITCNHdmJK7_coCFY-evgodhR0J8ij4HUCTvLvCvJ_jwzE=" >
+  <span dir="ltr" class="title" aria-describedby="description-id-653127">
+    The All-New 2016 Toyota Prius | The Longest Chase #GoPriusGo | Toyota
+  </span>
+  <span class="accessible-description" id="description-id-653127">
+     - Duration: 1:41.
+  </span>
+  <span class="stat attribution"><span class="g-hovercard" data-name="relmfu" data-ytid="UC1pOTJteEef10zJM0cHs4iQ">Toyota USA</span></span>
+  <span class="stat view-count">5,049,872 views</span>
+</a>
+  </div>
+  <div class="thumb-wrapper">
+
+    <a href="/watch?v=MYeM-8hO3hM" class="yt-uix-sessionlink  vve-check thumb-link spf-link        spf-link " data-sessionlink="itct=CCkQpDAYAiITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" tabindex="-1" rel="spf-prefetch" data-visibility-tracking="CCkQpDAYAiITCNHdmJK7_coCFY-evgodhR0J8ij4HUCTvLvCvJ_jwzE=" aria-hidden="true"><span class="yt-uix-simple-thumb-wrap yt-uix-simple-thumb-related" tabindex="0" data-vid="MYeM-8hO3hM"><img height="90" src="https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" data-thumb="//i.ytimg.com/vi/MYeM-8hO3hM/default.jpg" alt="" aria-hidden="true" width="120" ></span></a>
+        <span class="video-time">
+      1:41
+    </span>
+
+  </div>
+
+</li><li class="video-list-item related-list-item  show-video-time related-list-item-compact-video">
+
+    <div class="content-wrapper">
+    <a href="/watch?v=V8t9aF9Rfew" class="yt-uix-sessionlink  content-link spf-link        spf-link " data-sessionlink="itct=CCgQpDAYAyITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" title="Higher I 2016 Prius I Toyota (:60)" rel="spf-prefetch" data-visibility-tracking="CCgQpDAYAyITCNHdmJK7_coCFY-evgodhR0J8ij4HUDs-8X6ha3f5Vc=" >
+  <span dir="ltr" class="title" aria-describedby="description-id-329243">
+    Higher I 2016 Prius I Toyota (:60)
+  </span>
+  <span class="accessible-description" id="description-id-329243">
+     - Duration: 1:10.
+  </span>
+  <span class="stat attribution"><span class="g-hovercard" data-name="relmfu" data-ytid="UC1pOTJteEef10zJM0cHs4iQ">Toyota USA</span></span>
+  <span class="stat view-count">64,183 views</span>
+</a>
+  </div>
+  <div class="thumb-wrapper">
+
+    <a href="/watch?v=V8t9aF9Rfew" class="yt-uix-sessionlink  vve-check thumb-link spf-link        spf-link " data-sessionlink="itct=CCgQpDAYAyITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" tabindex="-1" rel="spf-prefetch" data-visibility-tracking="CCgQpDAYAyITCNHdmJK7_coCFY-evgodhR0J8ij4HUDs-8X6ha3f5Vc=" aria-hidden="true"><span class="yt-uix-simple-thumb-wrap yt-uix-simple-thumb-related" tabindex="0" data-vid="V8t9aF9Rfew"><img height="90" src="https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" data-thumb="//i.ytimg.com/vi/V8t9aF9Rfew/default.jpg" alt="" aria-hidden="true" width="120" ></span></a>
+        <span class="video-time">
+      1:10
+    </span>
+
+  </div>
+
+</li><li class="video-list-item related-list-item  show-video-time related-list-item-compact-video">
+
+    <div class="content-wrapper">
+    <a href="/watch?v=sa6UQPZ_6Po" class="yt-uix-sessionlink  content-link spf-link        spf-link " data-sessionlink="itct=CCcQpDAYBCITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" title="Toyota Avalon Present’s Music in Motion starring Jay Electronica | 2016 Toyota Avalon | Toyota" rel="spf-prefetch" data-visibility-tracking="CCcQpDAYBCITCNHdmJK7_coCFY-evgodhR0J8ij4HUD60f-zj4il17EB" >
+  <span dir="ltr" class="title" aria-describedby="description-id-181507">
+    Toyota Avalon Present’s Music in Motion starring Jay Electronica | 2016 Toyota Avalon | Toyota
+  </span>
+  <span class="accessible-description" id="description-id-181507">
+     - Duration: 3:34.
+  </span>
+  <span class="stat attribution"><span class="g-hovercard" data-name="relmfu" data-ytid="UC1pOTJteEef10zJM0cHs4iQ">Toyota USA</span></span>
+  <span class="stat view-count">123,144 views</span>
+</a>
+  </div>
+  <div class="thumb-wrapper">
+
+    <a href="/watch?v=sa6UQPZ_6Po" class="yt-uix-sessionlink  vve-check thumb-link spf-link        spf-link " data-sessionlink="itct=CCcQpDAYBCITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" tabindex="-1" rel="spf-prefetch" data-visibility-tracking="CCcQpDAYBCITCNHdmJK7_coCFY-evgodhR0J8ij4HUD60f-zj4il17EB" aria-hidden="true"><span class="yt-uix-simple-thumb-wrap yt-uix-simple-thumb-related" tabindex="0" data-vid="sa6UQPZ_6Po"><img height="90" src="https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" data-thumb="//i.ytimg.com/vi/sa6UQPZ_6Po/default.jpg" alt="" aria-hidden="true" width="120" ></span></a>
+        <span class="video-time">
+      3:34
+    </span>
+
+  </div>
+
+</li><li class="video-list-item related-list-item  show-video-time related-list-item-compact-video">
+
+    <div class="content-wrapper">
+    <a href="/watch?v=hRIRvluRYFM" class="yt-uix-sessionlink  content-link spf-link        spf-link " data-sessionlink="itct=CCYQpDAYBSITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" title="The All-New 2016 Toyota Prius | The Longest Chase | Toyota" rel="spf-prefetch" data-visibility-tracking="CCYQpDAYBSITCNHdmJK7_coCFY-evgodhR0J8ij4HUDTwMXc5beEiYUB" >
+  <span dir="ltr" class="title" aria-describedby="description-id-58106">
+    The All-New 2016 Toyota Prius | The Longest Chase | Toyota
+  </span>
+  <span class="accessible-description" id="description-id-58106">
+     - Duration: 1:11.
+  </span>
+  <span class="stat attribution"><span class="g-hovercard" data-name="relmfu" data-ytid="UC1pOTJteEef10zJM0cHs4iQ">Toyota USA</span></span>
+  <span class="stat view-count">107,423 views</span>
+</a>
+  </div>
+  <div class="thumb-wrapper">
+
+    <a href="/watch?v=hRIRvluRYFM" class="yt-uix-sessionlink  vve-check thumb-link spf-link        spf-link " data-sessionlink="itct=CCYQpDAYBSITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" tabindex="-1" rel="spf-prefetch" data-visibility-tracking="CCYQpDAYBSITCNHdmJK7_coCFY-evgodhR0J8ij4HUDTwMXc5beEiYUB" aria-hidden="true"><span class="yt-uix-simple-thumb-wrap yt-uix-simple-thumb-related" tabindex="0" data-vid="hRIRvluRYFM"><img height="90" src="https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" data-thumb="//i.ytimg.com/vi/hRIRvluRYFM/default.jpg" alt="" aria-hidden="true" width="120" ></span></a>
+        <span class="video-time">
+      1:11
+    </span>
+
+  </div>
+
+</li><li class="video-list-item related-list-item  show-video-time related-list-item-compact-video">
+
+    <div class="content-wrapper">
+    <a href="/watch?v=5WQWX81M8R8" class="yt-uix-sessionlink  content-link spf-link        spf-link " data-sessionlink="itct=CCUQpDAYBiITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" title="(Chinese) Higher I 2016 Prius I Toyota (:60)" rel="spf-prefetch" data-visibility-tracking="CCUQpDAYBiITCNHdmJK7_coCFY-evgodhR0J8ij4HUCf4rPq_MuFsuUB" >
+  <span dir="ltr" class="title" aria-describedby="description-id-157009">
+    (Chinese) Higher I 2016 Prius I Toyota (:60)
+  </span>
+  <span class="accessible-description" id="description-id-157009">
+     - Duration: 1:11.
+  </span>
+  <span class="stat attribution"><span class="g-hovercard" data-name="relmfu" data-ytid="UC1pOTJteEef10zJM0cHs4iQ">Toyota USA</span></span>
+  <span class="stat view-count">14,018 views</span>
+</a>
+  </div>
+  <div class="thumb-wrapper">
+
+    <a href="/watch?v=5WQWX81M8R8" class="yt-uix-sessionlink  vve-check thumb-link spf-link        spf-link " data-sessionlink="itct=CCUQpDAYBiITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" tabindex="-1" rel="spf-prefetch" data-visibility-tracking="CCUQpDAYBiITCNHdmJK7_coCFY-evgodhR0J8ij4HUCf4rPq_MuFsuUB" aria-hidden="true"><span class="yt-uix-simple-thumb-wrap yt-uix-simple-thumb-related" tabindex="0" data-vid="5WQWX81M8R8"><img height="90" src="https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" data-thumb="//i.ytimg.com/vi/5WQWX81M8R8/default.jpg" alt="" aria-hidden="true" width="120" ></span></a>
+        <span class="video-time">
+      1:11
+    </span>
+
+  </div>
+
+</li><li class="video-list-item related-list-item  show-video-time related-list-item-compact-video">
+
+    <div class="content-wrapper">
+    <a href="/watch?v=TKssGedlBrk" class="yt-uix-sessionlink  content-link spf-link        spf-link " data-sessionlink="itct=CCQQpDAYByITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" title="All-New 2016 Toyota Prius World Premiere Event | Toyota" rel="spf-prefetch" data-visibility-tracking="CCQQpDAYByITCNHdmJK7_coCFY-evgodhR0J8ij4HUC5jZS7noPL1Uw=" >
+  <span dir="ltr" class="title" aria-describedby="description-id-628409">
+    All-New 2016 Toyota Prius World Premiere Event | Toyota
+  </span>
+  <span class="accessible-description" id="description-id-628409">
+     - Duration: 1:28.
+  </span>
+  <span class="stat attribution"><span class="g-hovercard" data-name="relmfu" data-ytid="UC1pOTJteEef10zJM0cHs4iQ">Toyota USA</span></span>
+  <span class="stat view-count">176,121 views</span>
+</a>
+  </div>
+  <div class="thumb-wrapper">
+
+    <a href="/watch?v=TKssGedlBrk" class="yt-uix-sessionlink  vve-check thumb-link spf-link        spf-link " data-sessionlink="itct=CCQQpDAYByITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" tabindex="-1" rel="spf-prefetch" data-visibility-tracking="CCQQpDAYByITCNHdmJK7_coCFY-evgodhR0J8ij4HUC5jZS7noPL1Uw=" aria-hidden="true"><span class="yt-uix-simple-thumb-wrap yt-uix-simple-thumb-related" tabindex="0" data-vid="TKssGedlBrk"><img height="90" src="https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" data-thumb="//i.ytimg.com/vi/TKssGedlBrk/default.jpg" alt="" aria-hidden="true" width="120" ></span></a>
+        <span class="video-time">
+      1:28
+    </span>
+
+  </div>
+
+</li><li class="video-list-item related-list-item  show-video-time related-list-item-compact-video">
+
+    <div class="content-wrapper">
+    <a href="/watch?v=ZDlNu4HUbsM" class="yt-uix-sessionlink  content-link spf-link        spf-link " data-sessionlink="itct=CCMQpDAYCCITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" title="Toyota Service Tips 101 | Batteries | 2016  Dealer Version" rel="spf-prefetch" data-visibility-tracking="CCMQpDAYCCITCNHdmJK7_coCFY-evgodhR0J8ij4HUDD3dGOuLfTnGQ=" >
+  <span dir="ltr" class="title" aria-describedby="description-id-837007">
+    Toyota Service Tips 101 | Batteries | 2016  Dealer Version
+  </span>
+  <span class="accessible-description" id="description-id-837007">
+     - Duration: 2:42.
+  </span>
+  <span class="stat attribution"><span class="g-hovercard" data-name="relmfu" data-ytid="UC1pOTJteEef10zJM0cHs4iQ">Toyota USA</span></span>
+  <span class="stat view-count">1,246 views</span>
+</a>
+  </div>
+  <div class="thumb-wrapper">
+
+    <a href="/watch?v=ZDlNu4HUbsM" class="yt-uix-sessionlink  vve-check thumb-link spf-link        spf-link " data-sessionlink="itct=CCMQpDAYCCITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" tabindex="-1" rel="spf-prefetch" data-visibility-tracking="CCMQpDAYCCITCNHdmJK7_coCFY-evgodhR0J8ij4HUDD3dGOuLfTnGQ=" aria-hidden="true"><span class="yt-uix-simple-thumb-wrap yt-uix-simple-thumb-related" tabindex="0" data-vid="ZDlNu4HUbsM"><img height="90" src="https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" data-thumb="//i.ytimg.com/vi/ZDlNu4HUbsM/default.jpg" alt="" aria-hidden="true" width="120" ></span></a>
+        <span class="video-time">
+      2:42
+    </span>
+
+  </div>
+
+</li><li class="video-list-item related-list-item  show-video-time related-list-item-compact-video">
+
+    <div class="content-wrapper">
+    <a href="/watch?v=4sjLaIZzl6w" class="yt-uix-sessionlink  content-link spf-link        spf-link " data-sessionlink="itct=CCIQpDAYCSITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" title="(Chinese) Higher I 2016 Prius I Toyota (:30)" rel="spf-prefetch" data-visibility-tracking="CCIQpDAYCSITCNHdmJK7_coCFY-evgodhR0J8ij4HUCsr86ziO2y5OIB" >
+  <span dir="ltr" class="title" aria-describedby="description-id-54783">
+    (Chinese) Higher I 2016 Prius I Toyota (:30)
+  </span>
+  <span class="accessible-description" id="description-id-54783">
+     - Duration: 0:41.
+  </span>
+  <span class="stat attribution"><span class="g-hovercard" data-name="relmfu" data-ytid="UC1pOTJteEef10zJM0cHs4iQ">Toyota USA</span></span>
+  <span class="stat view-count">6,726 views</span>
+</a>
+  </div>
+  <div class="thumb-wrapper">
+
+    <a href="/watch?v=4sjLaIZzl6w" class="yt-uix-sessionlink  vve-check thumb-link spf-link        spf-link " data-sessionlink="itct=CCIQpDAYCSITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" tabindex="-1" rel="spf-prefetch" data-visibility-tracking="CCIQpDAYCSITCNHdmJK7_coCFY-evgodhR0J8ij4HUCsr86ziO2y5OIB" aria-hidden="true"><span class="yt-uix-simple-thumb-wrap yt-uix-simple-thumb-related" tabindex="0" data-vid="4sjLaIZzl6w"><img height="90" src="https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" data-thumb="//i.ytimg.com/vi/4sjLaIZzl6w/default.jpg" alt="" aria-hidden="true" width="120" ></span></a>
+        <span class="video-time">
+      0:41
+    </span>
+
+  </div>
+
+</li><li class="video-list-item related-list-item  show-video-time related-list-item-compact-video">
+
+    <div class="content-wrapper">
+    <a href="/watch?v=d3qE9Nka1tI" class="yt-uix-sessionlink  content-link spf-link        spf-link " data-sessionlink="itct=CCEQpDAYCiITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" title="The All-New 2016 Toyota Prius | The Longest Chase | Toyota" rel="spf-prefetch" data-visibility-tracking="CCEQpDAYCiITCNHdmJK7_coCFY-evgodhR0J8ij4HUDSrevIzZ6hvXc=" >
+  <span dir="ltr" class="title" aria-describedby="description-id-235268">
+    The All-New 2016 Toyota Prius | The Longest Chase | Toyota
+  </span>
+  <span class="accessible-description" id="description-id-235268">
+     - Duration: 0:41.
+  </span>
+  <span class="stat attribution"><span class="g-hovercard" data-name="relmfu" data-ytid="UC1pOTJteEef10zJM0cHs4iQ">Toyota USA</span></span>
+  <span class="stat view-count">397,809 views</span>
+</a>
+  </div>
+  <div class="thumb-wrapper">
+
+    <a href="/watch?v=d3qE9Nka1tI" class="yt-uix-sessionlink  vve-check thumb-link spf-link        spf-link " data-sessionlink="itct=CCEQpDAYCiITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" tabindex="-1" rel="spf-prefetch" data-visibility-tracking="CCEQpDAYCiITCNHdmJK7_coCFY-evgodhR0J8ij4HUDSrevIzZ6hvXc=" aria-hidden="true"><span class="yt-uix-simple-thumb-wrap yt-uix-simple-thumb-related" tabindex="0" data-vid="d3qE9Nka1tI"><img height="90" src="https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" data-thumb="//i.ytimg.com/vi/d3qE9Nka1tI/default.jpg" alt="" aria-hidden="true" width="120" ></span></a>
+        <span class="video-time">
+      0:41
+    </span>
+
+  </div>
+
+</li><li class="video-list-item related-list-item  show-video-time related-list-item-compact-video">
+
+    <div class="content-wrapper">
+    <a href="/watch?v=RMU8woxM6sw" class="yt-uix-sessionlink  content-link spf-link        spf-link " data-sessionlink="itct=CCAQpDAYCyITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" title="Toyota Service Tips 101 | Tires | 2016 Dealer Version" rel="spf-prefetch" data-visibility-tracking="CCAQpDAYCyITCNHdmJK7_coCFY-evgodhR0J8ij4HUDM1bPiqJjP4kQ=" >
+  <span dir="ltr" class="title" aria-describedby="description-id-897939">
+    Toyota Service Tips 101 | Tires | 2016 Dealer Version
+  </span>
+  <span class="accessible-description" id="description-id-897939">
+     - Duration: 2:13.
+  </span>
+  <span class="stat attribution"><span class="g-hovercard" data-name="relmfu" data-ytid="UC1pOTJteEef10zJM0cHs4iQ">Toyota USA</span></span>
+  <span class="stat view-count">5,905 views</span>
+</a>
+  </div>
+  <div class="thumb-wrapper">
+
+    <a href="/watch?v=RMU8woxM6sw" class="yt-uix-sessionlink  vve-check thumb-link spf-link        spf-link " data-sessionlink="itct=CCAQpDAYCyITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" tabindex="-1" rel="spf-prefetch" data-visibility-tracking="CCAQpDAYCyITCNHdmJK7_coCFY-evgodhR0J8ij4HUDM1bPiqJjP4kQ=" aria-hidden="true"><span class="yt-uix-simple-thumb-wrap yt-uix-simple-thumb-related" tabindex="0" data-vid="RMU8woxM6sw"><img height="90" src="https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" data-thumb="//i.ytimg.com/vi/RMU8woxM6sw/default.jpg" alt="" aria-hidden="true" width="120" ></span></a>
+        <span class="video-time">
+      2:13
+    </span>
+
+  </div>
+
+</li><li class="video-list-item related-list-item  show-video-time related-list-item-compact-video">
+
+    <div class="content-wrapper">
+    <a href="/watch?v=XGoJp_U01IU" class="yt-uix-sessionlink  content-link spf-link        spf-link " data-sessionlink="itct=CB8QpDAYDCITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" title="Moon | Toyota" rel="spf-prefetch" data-visibility-tracking="CB8QpDAYDCITCNHdmJK7_coCFY-evgodhR0J8ij4HUCFqdOp_7SCtVw=" >
+  <span dir="ltr" class="title" aria-describedby="description-id-958965">
+    Moon | Toyota
+  </span>
+  <span class="accessible-description" id="description-id-958965">
+     - Duration: 0:26.
+  </span>
+  <span class="stat attribution"><span class="g-hovercard" data-name="relmfu" data-ytid="UC1pOTJteEef10zJM0cHs4iQ">Toyota USA</span></span>
+  <span class="stat view-count">2,421 views</span>
+</a>
+  </div>
+  <div class="thumb-wrapper">
+
+    <a href="/watch?v=XGoJp_U01IU" class="yt-uix-sessionlink  vve-check thumb-link spf-link        spf-link " data-sessionlink="itct=CB8QpDAYDCITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" tabindex="-1" rel="spf-prefetch" data-visibility-tracking="CB8QpDAYDCITCNHdmJK7_coCFY-evgodhR0J8ij4HUCFqdOp_7SCtVw=" aria-hidden="true"><span class="yt-uix-simple-thumb-wrap yt-uix-simple-thumb-related" tabindex="0" data-vid="XGoJp_U01IU"><img height="90" src="https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" data-thumb="//i.ytimg.com/vi/XGoJp_U01IU/default.jpg" alt="" aria-hidden="true" width="120" ></span></a>
+        <span class="video-time">
+      0:26
+    </span>
+
+  </div>
+
+</li><li class="video-list-item related-list-item  show-video-time related-list-item-compact-video">
+
+    <div class="content-wrapper">
+    <a href="/watch?v=y73b18DNKTA" class="yt-uix-sessionlink  content-link spf-link        spf-link " data-sessionlink="itct=CB4QpDAYDSITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" title="“Rise Up” with Kwang-soo Lee | RAV4 Hybrid | Toyota (:52)" rel="spf-prefetch" data-visibility-tracking="CB4QpDAYDSITCNHdmJK7_coCFY-evgodhR0J8ij4HUCw0rSG_Pr23ssB" >
+  <span dir="ltr" class="title" aria-describedby="description-id-199258">
+    “Rise Up” with Kwang-soo Lee | RAV4 Hybrid | Toyota (:52)
+  </span>
+  <span class="accessible-description" id="description-id-199258">
+     - Duration: 1:03.
+  </span>
+  <span class="stat attribution"><span class="g-hovercard" data-name="relmfu" data-ytid="UC1pOTJteEef10zJM0cHs4iQ">Toyota USA</span></span>
+  <span class="stat view-count">9,959 views</span>
+</a>
+  </div>
+  <div class="thumb-wrapper">
+
+    <a href="/watch?v=y73b18DNKTA" class="yt-uix-sessionlink  vve-check thumb-link spf-link        spf-link " data-sessionlink="itct=CB4QpDAYDSITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" tabindex="-1" rel="spf-prefetch" data-visibility-tracking="CB4QpDAYDSITCNHdmJK7_coCFY-evgodhR0J8ij4HUCw0rSG_Pr23ssB" aria-hidden="true"><span class="yt-uix-simple-thumb-wrap yt-uix-simple-thumb-related" tabindex="0" data-vid="y73b18DNKTA"><img height="90" src="https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" data-thumb="//i.ytimg.com/vi/y73b18DNKTA/default.jpg" alt="" aria-hidden="true" width="120" ></span></a>
+        <span class="video-time">
+      1:03
+    </span>
+
+  </div>
+
+</li><li class="video-list-item related-list-item  show-video-time related-list-item-compact-video">
+
+    <div class="content-wrapper">
+    <a href="/watch?v=mdkafv__wew" class="yt-uix-sessionlink  content-link spf-link        spf-link " data-sessionlink="itct=CB0QpDAYDiITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" title="(Chinese) Higher I 2016 Prius I Toyota (:15)" rel="spf-prefetch" data-visibility-tracking="CB0QpDAYDiITCNHdmJK7_coCFY-evgodhR0J8ij4HUDsg___78_G7JkB" >
+  <span dir="ltr" class="title" aria-describedby="description-id-344834">
+    (Chinese) Higher I 2016 Prius I Toyota (:15)
+  </span>
+  <span class="accessible-description" id="description-id-344834">
+     - Duration: 0:26.
+  </span>
+  <span class="stat attribution"><span class="g-hovercard" data-name="relmfu" data-ytid="UC1pOTJteEef10zJM0cHs4iQ">Toyota USA</span></span>
+  <span class="stat view-count">9,858 views</span>
+</a>
+  </div>
+  <div class="thumb-wrapper">
+
+    <a href="/watch?v=mdkafv__wew" class="yt-uix-sessionlink  vve-check thumb-link spf-link        spf-link " data-sessionlink="itct=CB0QpDAYDiITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" tabindex="-1" rel="spf-prefetch" data-visibility-tracking="CB0QpDAYDiITCNHdmJK7_coCFY-evgodhR0J8ij4HUDsg___78_G7JkB" aria-hidden="true"><span class="yt-uix-simple-thumb-wrap yt-uix-simple-thumb-related" tabindex="0" data-vid="mdkafv__wew"><img height="90" src="https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" data-thumb="//i.ytimg.com/vi/mdkafv__wew/default.jpg" alt="" aria-hidden="true" width="120" ></span></a>
+        <span class="video-time">
+      0:26
+    </span>
+
+  </div>
+
+</li><li class="video-list-item related-list-item  show-video-time related-list-item-compact-video">
+
+    <div class="content-wrapper">
+    <a href="/watch?v=71B3QT4Ce2k" class="yt-uix-sessionlink  content-link spf-link        spf-link " data-sessionlink="itct=CBwQpDAYDyITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" title="Toyota Avalon Present’s Music in Motion starring Doug E. Fresh | 2016 Toyota Avalon | Toyota" rel="spf-prefetch" data-visibility-tracking="CBwQpDAYDyITCNHdmJK7_coCFY-evgodhR0J8ij4HUDp9onwk-idqO8B" >
+  <span dir="ltr" class="title" aria-describedby="description-id-329039">
+    Toyota Avalon Present’s Music in Motion starring Doug E. Fresh | 2016 Toyota Avalon | Toyota
+  </span>
+  <span class="accessible-description" id="description-id-329039">
+     - Duration: 2:47.
+  </span>
+  <span class="stat attribution"><span class="g-hovercard" data-name="relmfu" data-ytid="UC1pOTJteEef10zJM0cHs4iQ">Toyota USA</span></span>
+  <span class="stat view-count">75,220 views</span>
+</a>
+  </div>
+  <div class="thumb-wrapper">
+
+    <a href="/watch?v=71B3QT4Ce2k" class="yt-uix-sessionlink  vve-check thumb-link spf-link        spf-link " data-sessionlink="itct=CBwQpDAYDyITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" tabindex="-1" rel="spf-prefetch" data-visibility-tracking="CBwQpDAYDyITCNHdmJK7_coCFY-evgodhR0J8ij4HUDp9onwk-idqO8B" aria-hidden="true"><span class="yt-uix-simple-thumb-wrap yt-uix-simple-thumb-related" tabindex="0" data-vid="71B3QT4Ce2k"><img height="90" src="https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" data-thumb="//i.ytimg.com/vi/71B3QT4Ce2k/default.jpg" alt="" aria-hidden="true" width="120" ></span></a>
+        <span class="video-time">
+      2:47
+    </span>
+
+  </div>
+
+</li><li class="video-list-item related-list-item  show-video-time related-list-item-compact-video">
+
+    <div class="content-wrapper">
+    <a href="/watch?v=kvr451EN9IE" class="yt-uix-sessionlink  content-link spf-link        spf-link " data-sessionlink="itct=CBsQpDAYECITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" title="Higher I 2016 Prius I Toyota (:30)" rel="spf-prefetch" data-visibility-tracking="CBsQpDAYECITCNHdmJK7_coCFY-evgodhR0J8ij4HUCB6beI9Zy-_ZIB" >
+  <span dir="ltr" class="title" aria-describedby="description-id-75574">
+    Higher I 2016 Prius I Toyota (:30)
+  </span>
+  <span class="accessible-description" id="description-id-75574">
+     - Duration: 0:41.
+  </span>
+  <span class="stat attribution"><span class="g-hovercard" data-name="relmfu" data-ytid="UC1pOTJteEef10zJM0cHs4iQ">Toyota USA</span></span>
+  <span class="stat view-count">7,008 views</span>
+</a>
+  </div>
+  <div class="thumb-wrapper">
+
+    <a href="/watch?v=kvr451EN9IE" class="yt-uix-sessionlink  vve-check thumb-link spf-link        spf-link " data-sessionlink="itct=CBsQpDAYECITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" tabindex="-1" rel="spf-prefetch" data-visibility-tracking="CBsQpDAYECITCNHdmJK7_coCFY-evgodhR0J8ij4HUCB6beI9Zy-_ZIB" aria-hidden="true"><span class="yt-uix-simple-thumb-wrap yt-uix-simple-thumb-related" tabindex="0" data-vid="kvr451EN9IE"><img height="90" src="https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" data-thumb="//i.ytimg.com/vi/kvr451EN9IE/default.jpg" alt="" aria-hidden="true" width="120" ></span></a>
+        <span class="video-time">
+      0:41
+    </span>
+
+  </div>
+
+</li><li class="video-list-item related-list-item  show-video-time related-list-item-compact-video">
+
+    <div class="content-wrapper">
+    <a href="/watch?v=zeVkjz0DPxU" class="yt-uix-sessionlink  content-link spf-link        spf-link " data-sessionlink="itct=CBoQpDAYESITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" title="The All-New 2016 Toyota Prius | Hunters | Toyota" rel="spf-prefetch" data-visibility-tracking="CBoQpDAYESITCNHdmJK7_coCFY-evgodhR0J8ij4HUCV_ozo85HZ8s0B" >
+  <span dir="ltr" class="title" aria-describedby="description-id-874992">
+    The All-New 2016 Toyota Prius | Hunters | Toyota
+  </span>
+  <span class="accessible-description" id="description-id-874992">
+     - Duration: 0:41.
+  </span>
+  <span class="stat attribution"><span class="g-hovercard" data-name="relmfu" data-ytid="UC1pOTJteEef10zJM0cHs4iQ">Toyota USA</span></span>
+  <span class="stat view-count">179,761 views</span>
+</a>
+  </div>
+  <div class="thumb-wrapper">
+
+    <a href="/watch?v=zeVkjz0DPxU" class="yt-uix-sessionlink  vve-check thumb-link spf-link        spf-link " data-sessionlink="itct=CBoQpDAYESITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" tabindex="-1" rel="spf-prefetch" data-visibility-tracking="CBoQpDAYESITCNHdmJK7_coCFY-evgodhR0J8ij4HUCV_ozo85HZ8s0B" aria-hidden="true"><span class="yt-uix-simple-thumb-wrap yt-uix-simple-thumb-related" tabindex="0" data-vid="zeVkjz0DPxU"><img height="90" src="https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" data-thumb="//i.ytimg.com/vi/zeVkjz0DPxU/default.jpg" alt="" aria-hidden="true" width="120" ></span></a>
+        <span class="video-time">
+      0:41
+    </span>
+
+  </div>
+
+</li><li class="video-list-item related-list-item  show-video-time related-list-item-compact-video">
+
+    <div class="content-wrapper">
+    <a href="/watch?v=JMHmsP3VS9I" class="yt-uix-sessionlink  content-link spf-link        spf-link " data-sessionlink="itct=CBkQpDAYEiITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" title="The All-New 2016 Toyota Prius | Phenomenon | Toyota" rel="spf-prefetch" data-visibility-tracking="CBkQpDAYEiITCNHdmJK7_coCFY-evgodhR0J8ij4HUDSl9Xuj9b54CQ=" >
+  <span dir="ltr" class="title" aria-describedby="description-id-619417">
+    The All-New 2016 Toyota Prius | Phenomenon | Toyota
+  </span>
+  <span class="accessible-description" id="description-id-619417">
+     - Duration: 0:41.
+  </span>
+  <span class="stat attribution"><span class="g-hovercard" data-name="relmfu" data-ytid="UC1pOTJteEef10zJM0cHs4iQ">Toyota USA</span></span>
+  <span class="stat view-count">285,250 views</span>
+</a>
+  </div>
+  <div class="thumb-wrapper">
+
+    <a href="/watch?v=JMHmsP3VS9I" class="yt-uix-sessionlink  vve-check thumb-link spf-link        spf-link " data-sessionlink="itct=CBkQpDAYEiITCNHdmJK7_coCFY-evgodhR0J8ij4HTIGcmVsbWZ1SJusmZHD0NaxBA" tabindex="-1" rel="spf-prefetch" data-visibility-tracking="CBkQpDAYEiITCNHdmJK7_coCFY-evgodhR0J8ij4HUDSl9Xuj9b54CQ=" aria-hidden="true"><span class="yt-uix-simple-thumb-wrap yt-uix-simple-thumb-related" tabindex="0" data-vid="JMHmsP3VS9I"><img height="90" src="https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" data-thumb="//i.ytimg.com/vi/JMHmsP3VS9I/default.jpg" alt="" aria-hidden="true" width="120" ></span></a>
+        <span class="video-time">
+      0:41
+    </span>
+
+  </div>
+
+</li>
+                  <div id="watch-more-related" class="hid">
+    <li id="watch-more-related-loading">
+Loading more suggestions...
+    </li>
+  </div>
+  <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-expander" type="button" onclick=";return false;" id="watch-more-related-button" data-button-action="yt.www.watch.related.loadMore" data-continuation="CBQSFhILQkdOYWhESW1WaHPAAQDIAQDgAQEYAA%3D%3D"><span class="yt-uix-button-content">Show more</span></button>
+
+      </ul>
+    </div>
+  </div>
+
+    </div>
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="watch7-hidden-extras">
+      <div style="visibility: hidden; height: 0px; padding: 0px; overflow: hidden;">
+  </div>
+
+  </div>
+
+
+  </div>
+
+</div></div></div></div>  <div id="footer-container" class="yt-base-gutter force-layer"><div id="footer"><div id="footer-main"><div id="footer-logo"><a href="/" id="footer-logo-link" title="YouTube home" data-sessionlink="ei=D7TDVpGaMY-9-gWFu6SQDw&amp;ved=CAIQpmEiEwjR3ZiSu_3KAhWPnr4KHYUdCfIo-B0" class="yt-uix-sessionlink"><span class="footer-logo-icon yt-sprite"></span></a></div>  <ul class="pickers yt-uix-button-group" data-button-toggle-group="optional">
+      <li>
+            <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-has-icon" type="button" onclick=";return false;" id="yt-picker-language-button" data-button-menu-id="arrow-display" data-button-action="yt.www.picker.load" data-picker-position="footer" data-picker-key="language" data-button-toggle="true"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-footer-language yt-sprite"></span></span><span class="yt-uix-button-content">  <span class="yt-picker-button-label">
+Language:
+  </span>
+  English
+</span><span class="yt-uix-button-arrow yt-sprite"></span></button>
+
+
+      </li>
+      <li>
+            <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default" type="button" onclick=";return false;" id="yt-picker-country-button" data-button-menu-id="arrow-display" data-button-action="yt.www.picker.load" data-picker-position="footer" data-picker-key="country" data-button-toggle="true"><span class="yt-uix-button-content">  <span class="yt-picker-button-label">
+Country:
+  </span>
+  Worldwide
+</span><span class="yt-uix-button-arrow yt-sprite"></span></button>
+
+
+      </li>
+      <li>
+            <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default" type="button" onclick=";return false;" id="yt-picker-safetymode-button" data-button-menu-id="arrow-display" data-button-action="yt.www.picker.load" data-picker-position="footer" data-picker-key="safetymode" data-button-toggle="true"><span class="yt-uix-button-content">  <span class="yt-picker-button-label">
+Restricted Mode:
+  </span>
+Off
+</span><span class="yt-uix-button-arrow yt-sprite"></span></button>
+
+
+      </li>
+  </ul>
+<a href="/feed/history" class="yt-uix-button  footer-history yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default yt-uix-button-has-icon" data-sessionlink="ei=D7TDVpGaMY-9-gWFu6SQDw"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-footer-history yt-sprite"></span></span><span class="yt-uix-button-content">History</span></a>    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-has-icon yt-uix-button-reverse yt-google-help-link inq-no-click " type="button" onclick=";return false;" id="google-help" data-ghelp-anchor="google-help" data-ghelp-tracking-param="" data-load-chat-support=""><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-questionmark yt-sprite"></span></span><span class="yt-uix-button-content">Help
+</span></button>
+      <div id="yt-picker-language-footer" class="yt-picker" style="display: none">
+      <p class="yt-spinner ">
+        <span class="yt-spinner-img  yt-sprite" title="Loading icon"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+  </div>
+
+      <div id="yt-picker-country-footer" class="yt-picker" style="display: none">
+      <p class="yt-spinner ">
+        <span class="yt-spinner-img  yt-sprite" title="Loading icon"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+  </div>
+
+      <div id="yt-picker-safetymode-footer" class="yt-picker" style="display: none">
+      <p class="yt-spinner ">
+        <span class="yt-spinner-img  yt-sprite" title="Loading icon"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+  </div>
+
+</div><div id="footer-links"><ul id="footer-links-primary">  <li><a href="//www.youtube.com/yt/about/">About</a></li>
+  <li><a href="//www.youtube.com/yt/press/">
+Press
+  </a></li>
+  <li><a href="//www.youtube.com/yt/copyright/">Copyright</a></li>
+  <li><a href="//www.youtube.com/yt/creators/">
+Creators
+  </a></li>
+  <li><a href="//www.youtube.com/yt/advertise/">
+Advertise
+  </a></li>
+  <li><a href="//www.youtube.com/yt/dev/">Developers</a></li>
+  <li><a href="https://plus.google.com/+youtube" dir="ltr">+YouTube</a></li>
+</ul><ul id="footer-links-secondary">  <li><a href="/t/terms">Terms</a></li>
+  <li><a href="https://www.google.com/intl/en/policies/privacy/">Privacy</a></li>
+  <li><a href="//www.youtube.com/yt/policyandsafety/">
+Policy &amp; Safety
+  </a></li>
+  <li><a href="//support.google.com/youtube/?hl=en" onclick="return yt.www.feedback.start(59);" class="reportbug">Send feedback</a></li>
+  <li><a href="/testtube">Try something new!</a></li>
+  <li></li>
+</ul></div></div></div>
+
+
+      <div class="yt-dialog hid " id="feed-privacy-lb">
+    <div class="yt-dialog-base">
+      <span class="yt-dialog-align"></span>
+      <div class="yt-dialog-fg" role="dialog">
+        <div class="yt-dialog-fg-content">
+          <div class="yt-dialog-loading">
+              <div class="yt-dialog-waiting-content">
+      <p class="yt-spinner ">
+        <span class="yt-spinner-img  yt-sprite" title="Loading icon"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+  </div>
+
+          </div>
+          <div class="yt-dialog-content">
+              <div id="feed-privacy-dialog">
+  </div>
+
+          </div>
+          <div class="yt-dialog-working">
+              <div class="yt-dialog-working-overlay"></div>
+  <div class="yt-dialog-working-bubble">
+    <div class="yt-dialog-waiting-content">
+        <p class="yt-spinner ">
+        <span class="yt-spinner-img  yt-sprite" title="Loading icon"></span>
+
+    <span class="yt-spinner-message">
+        Working...
+    </span>
+  </p>
+
+      </div>
+  </div>
+
+          </div>
+        </div>
+        <div class="yt-dialog-focus-trap" tabindex="0"></div>
+      </div>
+    </div>
+  </div>
+
+
+<div id="hidden-component-template-wrapper" class="hid">    <div id="shared-addto-watch-later-login" class="hid">
+      <a class="sign-in-link" href="https://accounts.google.com/ServiceLogin?uilel=3&amp;hl=en&amp;service=youtube&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Ffeature%3Dplaylist%26next%3D%252Fwatch%253Fv%253DBGNahDImVhs%2526feature%253Dyoutu.be%2526siteid%253DDLR_RSS_Link_ToyotaNews%26hl%3Den%26action_handle_signin%3Dtrue%26app%3Ddesktop&amp;passive=true">Sign in</a> to add this to Watch Later
+
+    </div>
+  <div id="yt-uix-videoactionmenu-menu" class="yt-ui-menu-content">
+      <div class="hide-on-create-pl-panel">
+    <h3>
+Add to
+    </h3>
+  </div>
+  <div class="add-to-widget">
+      <p class="yt-spinner ">
+        <span class="yt-spinner-img  yt-sprite" title="Loading icon"></span>
+
+    <span class="yt-spinner-message">
+        Loading playlists...
+    </span>
+  </p>
+
+  </div>
+
+  </div>
+</div>    <script>var ytspf = ytspf || {};ytspf.enabled = true;ytspf.config = {'reload-identifier': 'spfreload'};ytspf.config['cache-max'] = 50;ytspf.config['navigate-limit'] = 50;ytspf.config['navigate-lifetime'] = 64800000;</script>
+  <script src="//s.ytimg.com/yts/jsbin/spf-vfljW6yZb/spf.js" type="text/javascript" name="spf/spf"></script>
+  <script src="//s.ytimg.com/yts/jsbin/www-en_US-vflYaEVNh/base.js" name="www/base"></script>
+<script>spf.script.path({'www/': '//s.ytimg.com/yts/jsbin/www-en_US-vflYaEVNh/'});var ytdepmap = {"www/base": null, "www/common": "www/base", "www/angular_base": "www/common", "www/channels_accountupload": "www/common", "www/channels": "www/common", "www/dashboard": "www/common", "www/debugpolymer": "www/common", "www/downloadreports": "www/common", "www/experiments": "www/common", "www/feed": "www/common", "www/innertube": "www/common", "www/instant": "www/common", "www/legomap": "www/common", "www/live_chat": "www/common", "www/live_chat_moderation": "www/common", "www/promo_join_network": "www/common", "www/results_harlemshake": "www/common", "www/results": "www/common", "www/results_starwars": "www/common", "www/subscriptionmanager": "www/common", "www/unlimited": "www/common", "www/watch": "www/common", "www/ypc_bootstrap": "www/common", "www/ypc_core": "www/common", "www/ytstyles": "www/common", "www/channels_edit": "www/channels", "www/innertube_watchnext": "www/innertube", "www/live_broadcasts": "www/angular_base", "www/live_dashboard": "www/angular_base", "www/videomanager": "www/angular_base", "www/watch_autoplayrenderer": "www/watch", "www/watch_edit": "www/watch", "www/watch_editor": "www/watch", "www/watch_live": "www/watch", "www/watch_missilecommand": "www/watch", "www/watch_promos": "www/watch", "www/watch_speedyg": "www/watch", "www/watch_transcript": "www/watch", "www/watch_videoshelf": "www/watch", "www/ct_advancedsearch": "www/videomanager", "www/my_videos": "www/videomanager"};spf.script.declare(ytdepmap);</script><script>if (window.ytcsi) {window.ytcsi.tick("je", null, '');}</script>      <script>
+    yt.setConfig({
+      'VIDEO_ID': "BGNahDImVhs",
+      'THUMB_LOADER_PAUSE_MS': 0,
+      'THUMB_LOADER_GROUP_PX': 400,
+      'THUMB_LOADER_IGNORE_FOLD': false,
+      'WAIT_TO_DELAYLOAD_FRAME_CSS': true,
+      'IS_UNAVAILABLE_PAGE': false,
+      'DROPDOWN_ARROW_URL': "https:\/\/s.ytimg.com\/yts\/img\/pixel-vfl3z5WfW.gif",
+      'AUTONAV_EXTRA_CHECK': false,
+
+      'JS_PAGE_MODULES': [
+        'www/watch',
+        'www/ypc_bootstrap',
+          'www/watch_transcript',
+          'www/watch_speedyg',
+          'www/watch_autoplayrenderer',
+        ''       ],
+
+
+      'REPORTVIDEO_JS': "\/\/s.ytimg.com\/yts\/jsbin\/www-reportvideo-vfld57I_y\/www-reportvideo.js",
+      'REPORTVIDEO_CSS': "\/\/s.ytimg.com\/yts\/cssbin\/www-watch-reportvideo-vflj4L8q2.css",
+
+
+      'TIMING_AFT_KEYS': ['pbp', 'pbs'],
+      'YPC_CAN_RATE_VIDEO': true,
+
+
+        'RELATED_PLAYER_ARGS': {"rvs":"endscreen_autoplay_session_data=playnext%3D1%26feature%3Drelated-auto%26autonav%3D1\u0026id=hyNshwyrtGY\u0026length_seconds=301\u0026session_data=itct%3DCBUQvU4iEwjR3ZiSu_3KAhWPnr4KHYUdCfIo-B0yCWVuZHNjcmVlbkibrJmRw9DWsQQ%253D\u0026short_view_count_text=\u0026title=Arctic+Challenge+%7C+2017+Tacoma+TRD+Pro+%7C+Toyota\u0026author=Toyota+USA,id=xFyY7_hc-14\u0026length_seconds=296\u0026session_data=itct%3DCBQQvU4iEwjR3ZiSu_3KAhWPnr4KHYUdCfIo-B0yCWVuZHNjcmVlbkibrJmRw9DWsQQ%253D\u0026short_view_count_text=\u0026title=Fueled+by+the+Future+%7C+Back+to+the+Future+%7C+Presented+by+Toyota+Mirai+%7C+Toyota\u0026author=Toyota+USA,id=KxIIi6SVuII\u0026length_seconds=101\u0026session_data=itct%3DCBMQvU4iEwjR3ZiSu_3KAhWPnr4KHYUdCfIo-B0yCWVuZHNjcmVlbkibrJmRw9DWsQQ%253D\u0026short_view_count_text=\u0026title=The+All-New+2016+Prius+%7C+Heck+on+Wheels+%23GoPriusGo+%7C+Toyota\u0026author=Toyota+USA,id=MYeM-8hO3hM\u0026length_seconds=101\u0026session_data=itct%3DCBIQvU4iEwjR3ZiSu_3KAhWPnr4KHYUdCfIo-B0yCWVuZHNjcmVlbkibrJmRw9DWsQQ%253D\u0026short_view_count_text=\u0026title=The+All-New+2016+Toyota+Prius+%7C+The+Longest+Chase+%23GoPriusGo+%7C+Toyota\u0026author=Toyota+USA,id=V8t9aF9Rfew\u0026length_seconds=70\u0026session_data=itct%3DCBEQvU4iEwjR3ZiSu_3KAhWPnr4KHYUdCfIo-B0yCWVuZHNjcmVlbkibrJmRw9DWsQQ%253D\u0026short_view_count_text=\u0026title=Higher+I+2016+Prius+I+Toyota+%28%3A60%29\u0026author=Toyota+USA,id=sa6UQPZ_6Po\u0026length_seconds=214\u0026session_data=itct%3DCBAQvU4iEwjR3ZiSu_3KAhWPnr4KHYUdCfIo-B0yCWVuZHNjcmVlbkibrJmRw9DWsQQ%253D\u0026short_view_count_text=\u0026title=Toyota+Avalon+Present%E2%80%99s+Music+in+Motion+starring+Jay+Electronica+%7C+2016+Toyota+Avalon+%7C+Toyota\u0026author=Toyota+USA,id=hRIRvluRYFM\u0026length_seconds=71\u0026session_data=itct%3DCA8QvU4iEwjR3ZiSu_3KAhWPnr4KHYUdCfIo-B0yCWVuZHNjcmVlbkibrJmRw9DWsQQ%253D\u0026short_view_count_text=\u0026title=The+All-New+2016+Toyota+Prius+%7C+The+Longest+Chase+%7C+Toyota\u0026author=Toyota+USA,id=5WQWX81M8R8\u0026length_seconds=71\u0026session_data=itct%3DCA4QvU4iEwjR3ZiSu_3KAhWPnr4KHYUdCfIo-B0yCWVuZHNjcmVlbkibrJmRw9DWsQQ%253D\u0026short_view_count_text=\u0026title=%28Chinese%29+Higher+I+2016+Prius+I+Toyota+%28%3A60%29\u0026author=Toyota+USA,id=TKssGedlBrk\u0026length_seconds=88\u0026session_data=itct%3DCA0QvU4iEwjR3ZiSu_3KAhWPnr4KHYUdCfIo-B0yCWVuZHNjcmVlbkibrJmRw9DWsQQ%253D\u0026short_view_count_text=\u0026title=All-New+2016+Toyota+Prius+World+Premiere+Event+%7C+Toyota\u0026author=Toyota+USA,id=ZDlNu4HUbsM\u0026length_seconds=162\u0026session_data=itct%3DCAwQvU4iEwjR3ZiSu_3KAhWPnr4KHYUdCfIo-B0yCWVuZHNjcmVlbkibrJmRw9DWsQQ%253D\u0026short_view_count_text=\u0026title=Toyota+Service+Tips+101+%7C+Batteries+%7C+2016++Dealer+Version\u0026author=Toyota+USA,id=4sjLaIZzl6w\u0026length_seconds=41\u0026session_data=itct%3DCAsQvU4iEwjR3ZiSu_3KAhWPnr4KHYUdCfIo-B0yCWVuZHNjcmVlbkibrJmRw9DWsQQ%253D\u0026short_view_count_text=\u0026title=%28Chinese%29+Higher+I+2016+Prius+I+Toyota+%28%3A30%29\u0026author=Toyota+USA,id=d3qE9Nka1tI\u0026length_seconds=41\u0026session_data=itct%3DCAoQvU4iEwjR3ZiSu_3KAhWPnr4KHYUdCfIo-B0yCWVuZHNjcmVlbkibrJmRw9DWsQQ%253D\u0026short_view_count_text=\u0026title=The+All-New+2016+Toyota+Prius+%7C+The+Longest+Chase+%7C+Toyota\u0026author=Toyota+USA"},
+
+
+
+
+          'BG_P': "jXhAhj63oCmbNXvplhQY+lTLoXxjDCy18vVBEUjUQ5Q+ZZmsS\/wMMfYHmzPwnPxot8g2NQXE1AprvBhE9rX2KHo5YI6DoQn8q2YKsb\/Ga6Rq6eHhQmbiOExiK0pt3k836YEfRFfqrviZhsH0kxAmalqkbwXPqUsA\/JFsW+bfy3g1Qi0xYSajvg\/4So91V5uWe6JuxyGxF4AtvqedA1bJ8lJC4FpaT9cRQZ6a4pOXee3Q7Y2SIFZBEGV261FcjymXxFEtiMpWULHjJeDvXx3RMzw8cTF5LtlBO0btJRuw9Dks7YOjU9SLrVJVA7BeJ8cB29pOk3sSeXVeeHhXlSTkcWrOhAkjFwkbKXYsjVhHVt2bSVNuoso8NnNhm7+K7wKlV02VYnXcL11pLH6YXMQl5lsX9gJdx9vgD07dTUJ6M3H9GjVjnHu9AAZCrAmdfy9uPyL4Y5vgatip841QM4pFK8YcPgHv7fh43J1fl4mm8ICQC+uEsy92eZ3E+nh2zKa8hvlTn3LSrjeeEVBAYVFTbFxdznpGI+Lep57JTOmTqKYlbCGROFHRytWeHeWnn0NNvX\/KW2a\/gmFgC+B82YYy2F4lQRNUWIEAa7FAUyKDBc8dWUGvsjsBTF46fR7ZqpOYnu1prrzDNv2vXAkbOneiDZnO4kRDvyQkPwP3zBDYCwrTr17G2lLP8GSZsNGTrgDiVO2b25Q3izuN7MKbv\/D\/mZTZ8haITJuh5TTU94HkcE2wJi0ARRJYR6ioOVXyYdIBjYfln+sriWnVVOOkgk4R9lh+3FBCxTZYIgVmJ2TuBm5+XuVeM6FwGSufHUDVI24ZAyVIJP0xXNpF5XaZmOUGHPr4pYoIUHFkFyDOjehsiZwbJSxXORp6OoA+EMCaDexiyCBgKGvte0xn0IDntKnR8OXpau2dx9MiGnqm3ngtpEl\/YFiAeC4C3zXTOj6p0nINC+fpQaMxMi1mbL2YWIPJ8tTDzgekGTg1oPcXekzwIqCSKhZIAgsFuUnJ2USSGQ2N1+t12lTaZRJuO9zBYLIAwhvCfxV7EAFr5IVgR6eEpanvIWzlT8Xtz49MfiSxf3X1T9gl16e\/XULgohyKAeUvGqChN53jwXQWYg2pCUkQhICt7W6gxP6YeSk5vo8goqv9mn2UYBtif7qTY7fDQhjVpXQmZMetD3jG4tIZw4GsID8LMVkizGWkqAeGPKwlYfdtieeQZr+epn6P6R\/zfcDMVXUgCEBumSMChllEXPsxbsqg9LS3sKHcH8Mce0mAk+6ejOw4RoQ49siUm0GADIADqq1h6JEDqUmfcrqlBNeS5Ng2wjKGUOGxWLb3SBf\/yrT8Z7tI2G7jmK9LRvwn3NBdH29JevbXyt4Z9\/Scefswc9v6GxxsuhbgKhTnJGe4tauUluP9+qFN4GuMECNaFblbJHuDkAQvGvr3Dz1xVkLV24FiXP+HD5cIA0zwL278lxTvXKUQ8mdTcADcuxXtJiJTAPc3QCTTmpF4leGsTbp8binuwZV4qc+0enGL4CUUCE9ohVlfmgzh8GvvNgtWgoaj43ic61fX3qy7YKTrDnBLqCTL2x3wxvFI6gR6YLC6mk5PAYKpAh1LDA\/rRivOmg5R8eHjOaXcR\/x4ltpHpSo\/jge7SeBayU5djnsI5cvQnWt0i+8SbEV0nahHkJJAsS2vSpUs0T33fRIiD3jv+CZeqWw4syypHFGNCCabj5RLDFFV83jhj9po5o4F1\/FFpPRLejsF2KC3cCysjHO9fZ+Jmj5b9iRZZod4BwZ0P9qKTGP3av7fJj18QSW8qVhS6i0ju7fnowaV3nN9divpdNts2UNwXMmYDKNeuUzmvk9b6FY9csmTkzjk1WiFDLJqhAVGTM8H1njjnhKwOB4uitLfvI7f+s7IcTwWZ6377yoyExtjNngGA9wp9M\/Cqb8Jh5j8FpwWF\/hfu20AKrv9TRAALnNdQ1Tv4dgzTU3utYtVrarMWvZN674tdmv934E0m7pgTfjGwjtouB1vFE26mcZZWvNJ+efqyu\/+vty7YNngc3FKGlOu9r3a3gKMq0GKWUyMdQm6FWn7wquMpe+kMUHWrUehbvpLqAtsEM6UiNnFBpAroRkrtGJ\/EVIm\/Lb19y8X+T5xHBJr6p0IvL2PKHi8SGxkbvMdQlRsmFDg0hApbBIu5aCA\/n+Fr5idotW80Upqf5brU3srSyBpOscRvzg4EHp3f70u9UP5F+GpoxJSWW75xXaUq6rERjUn\/rvUBNv60ZfN7OhSTs+uSBa0VRt8S3w7GURIJSdXKxNisXmELguRSxiCYsIc+E7FialI9mVV0X4PF3LjR6Phu9qU\/OBbN9w83PVpWe\/45m8HDnyWWLLml\/xzGB52na9uYcuSeRMWCCbPU6wHO3VtXTfgn\/dGYAdPLQlhEwtvxxEdzTF\/rHe+9uzqbgB9ji6M2gCIvxX5pEAUn3moHjvNCcwCy6Yv7wlF1tbnBRJF2nrnCQB3MmpZbP+aIfuzMFvyz7v9KrdnowLG\/Gb19F8AAEHtXVT6\/2TE9lcPwZY08M491DZzBoRukuEc+TvkZpfo88dZnjHNtYczpnkHBLZL288HuFujzVmw8yq6r4ztxFgDXS63TNXrkla2x9mECzat+d9zOuBqE1bBBlSKE0Qhlf7pbHUUw+CdwonlOW9pUvsToMJilT2frkCmClna4\/HVLkDFEFGrBckdw26tYI3hc\/F5WLrogs26szbtXiaWHaWnLhJ3MdrU3F99BPt5DWtUy0wH8uk2zOloyIqHBg82H4yrHJy9Gj2J8\/rWEQYankLOBLyE4BUjbL\/Cm8L+PzaUtvwScrqZofQWU7JhoPs2MXqdcohE8jcywXPqxQfjYlIx5c+aaiTYgEN\/turZIELOdfpYcetfopgp7kCNTUSn\/1yg3mxM6R\/4TYROfDtzzXTKE\/IDQniHuJRDe0ktTjgk8mMIJsPKgN+FMOQ7suz0tKQB\/iVyDwq8OrPv3xD+W2+Pnm4NIM78HD3A8ynCMa73j6sBc\/lN012ujw0untYWDLyYXQdpd3MT73BdBPxvNIXuU91IZTRGrlDQPId6wWh\/zH7do8PRPPr333Kox9dRDvq2454dL4pzrBkr\/PLfbfH4VOFywCaCvXSz2tfzRvMf2shfVDORffUoE4MV6teeoWGTENgaBdfDXLi8xrarfokeymJTgxlxnJhMFE4eWA3gNZayPPqGpzmQTVQDKqG2t7DQN8bR08hXOXK5HCFRmBk+AVKYM17UrcmC8fRpdBUJB9LytVPyF3D7i1IMw+xpOlFUhgg1ld+uW4p668kmNWhGANZ9gfLh7x+y0fqNVShWxeB5EJF3EnxfMJU+BjHQokovpXzDuVQzm29mDsq8MMWUjHDRSOmziXJogSSfK1yZiJxTGruPO8a7Y0uyhmrnzp+uKQMZ3pLIOq2B08omXsV3tChhqLzMTW7GwnDuQN4qLP4WgyNaDaTsOP+mnRH1gAr9miBmJkPa1Z8Gzj37KC7SpPTfj9q9R1S07bUYI+dPsoOK60dPZz99m9ouWdqpsBAmVVy9v0VEUmPFGdTHa+nEChzY1BEDgvDbos4dBW4DTE5hDbexLQUudiyn37ogi\/Aaj9ilYUb9eOouByEOLaAqgtaM1Dyf11jTPvUcptbk147DTj93Zc3mIVLWYmu0Vr8qbaxm8R71fWeshw09N7XV8JxQOkJqRx0sIUdpYi3oHRx\/tEY+2QpX+O8f1DuMZBKTjh2tJk8i6Ga9jVDupcZsrP5AH2SshrODeOcAqYNiTlJwAt\/qe6JlduOR\/YWeID+icj\/Y5GTbVqqSgniVltJD0SWmoyMrTBYCb0sE\/eZm3wED2wB3zss9+7KlHDZl0gHYHv5Afl2LZzaWQ8SYrZgmEX7noUR2dGqDv7FDyasW+qpXrdJ4AXxArH1jak7T\/vLv3ck5BkBKBhqzjMWhVwK\/j\/ZdEyDD8rZfWnFoIEzq3giXN82VkbGvSE6Mbqx0Jk\/V6grR85JCghFk9da9Tiz7IGRDCUIUngMfNFrn5uJXrPdkVo0kFdgt4I3DchvMrlRt+Yi\/OKlFdRXoRF+zzzL2PkWtdxikl6NzBva5FrDSGkOW\/LEOqiBsMCoL+DLIsGw8CjWjyN6M0ZWZp7waB19mr43cMz68xtSf0qv\/VUO\/jp2AlKommeOzlZTUSdkNs9n\/RjWZjntMdZoG\/5hDBcg6r9vGFU5WdHa6oIMq1QCS+VqQlg8nUM54X2IIlnCGserGBPPCL\/4LWlnvi5JKEIS7v6BEy2nDR0cndORnD2vt3lHoRgh9Jqd2c7dMI2+Ya3N8wVtEH1Vlo5OiV6P6uxo39B2rQcP\/qE92\/OB7dNh7SJwHTMPpwyIbky2SoVsfK3g3A+2dXnWdWHfXHUeoSdXBma\/MtsNQFAKIMo5ovV32ufkQvBFMiWEEUXwyzy2SMie1OvShDoGnsm58rrv3R3pQ+dXu12M916rCsW7OHeGOc4Tqgl2MNQgl\/xYD6yL+G0slDlV6C5hk4+249fjMv9BVhqRRSNGfBzPdvvshpBWCMi9INNsmHj615e9xiVFrW14wPQnHFJ+tWW+wKIH6R4oqUEBjfCNWMJYfXXW8WfXRVZ0sV4YYTrtraqGd8NvjdUEs4jrMjSXEy1D4ywBFDzzzHZwIzhpPZyNy0yLFjrJZbpWDt4VmXCeKBBEIxF4GAjV2UOwar\/tEu6AMQF3jafiwR2DpN\/zrZpVKoXFSBhcSsaxtMzz0SrmOA8R+gNALQafM\/6uvWbRDwExdNkG0BVK1DcENJMlN0iP+kdGIXRPRKPv2gJCdh1+yRB0Yks5Udr6R3x9U50fQFHOmozsoHdz\/FN+8efLJTTXafadbIyjp9qyuscQ3XbqKqCyeL1aKmYMJaUP8keAw4Gu\/npSrP\/KOjtVkU6xG0vM5xvTdvD+S9X8rZvLBVREhksuJQa1Cgcr7d8IZNj7VHptaaY5vfT55Kin+8lRDUC5\/mcoFnm3uypboCJW5jGyYZhEYOLYgmkjknOxxe\/4cYF7Q8arMh747NezBckgG3IgMa3533j3VMB9VgAoZ9z5FGOAuiD8f\/9E5j\/tEoEJzEi+WDNUea\/vg8j8UeVMMmjzjk\/RRRCAoYPbs50cifuZgHpUd\/yyflufQ8+fuN8rI908s97ag\/u89FaozRP8PB6ShdMTVAmO13igG5zeNgXjd+K4jD8yJeMF+E5F8jt5y6R3mkmcIn88zHMqkFTcHX7sMeARnRoRUc6XduMCzWbefufZhx39s8zoczVZTzvrfOACW8n5qwgUxtC185ygxHTVVLMuETr2mTOawuFtH5YIEVnJ16pC3EdcW\/gtSmebFkdUWYKHlWosZaoP8RYIrOtPsKIZu7rz6Oh3D4drVJpqRz8To5K6sYV4MkAIy3dijUShhJliARd3HA\/nocs8KH8DP1lZ546AwYqcAFa6JacValvoWUACkK4tEWVWyqKhwdMKnactZPU6rw2u4CcQIXlrF2QfxmOaYGqqhQCMnbuL1KcH7Uo\/kYZaDVgoz23CtAv1OT1sDPr4qrhUkq\/vDiBipdCKkxxBHLF+WDFjC8YpfgJWJmztNiBeVX1MqZ0equimwLd2vamrXBVb61+holkwG\/iow0cPBwJZBCZ3b+YG4md4n5E3pphru89TWZ9oFIZQevZanNoU1f1LmAqihEgLrOCDx5Qg8tkg55WgLX3ipgfuN137MSc6DD8H9utQh0H1VHG5xViCfcLsuBTIJnzVyzPZdsOtVWnUWd4jAO6EB\/TC8se+09hJTLRrhEO+w\/6F5uYObKYUkpMTGOJcj3g7gGF3wHIdpFzDSm7OwUYqTM6Q\/AS8ZS\/aQPlgvx3oiJj0EUM\/qll2bU5SqBTn485urkSPaP3fblDb6Cntu+ESY+7oZJtffjoLu3L+6oFDKxefsQGZLcljlW31J1srtXB5mNizbmj+P6azts0Y+U0EPwpa\/00ExH1QIZdvqWTqYZPoKA9Zxvlnrp1bOcZTs\/KIZdoiECcH1fVCGhhRWg2Sm9tTw2EvP9z1+Oz\/L8lB6OWIIhmHGaA1TL1hg4WAySKQQJ8KU\/iLLDRJ9CsRWYx+D7EkEIYFnD1ilQ79cDhEwuEVBNbN2uQf9AflXlsdRIn9Jk2B1TPtp59vLUrXm10mCJpYthMAw2aly+8KcB4\/fTv\/KBKY7O6QiX2PEaWh15KlaiUV8hXqzj6MpLULsL\/ERPZswRtymAeWzlAtd2Pl77QG9v0cgiY4BKIDBPFIm8nVrhk0DzSFqwyBTAdS8EaRNMFe0Qq+ZKqFgZn2UofVvpBBRxX0bYWaIcvbQeD3TNKOOtOBjdWT9LeY6Y3EnUGiY6mhhUda68vo7uXzAqXJuF1H8NALVO6u4GLmmSNMlOEBRogjLP6K+Fl6noXAPnY7nqkGJW3FLt8GaF7XkWaFEmnNvLuoAyXXr+uqWrEXF0k7\/J0W1NMXQH9mUNVe\/7MJ+3yqDG4CSj1zQY5ARJ11Ml8phyv+JL1FcC6nIXC9\/JFOpdFuOZoun0cYE6wwhEexUmzemwnopysYddiuM7q3xL9LfKE2EBeAauyz9vr0TAHv382ucnc1nXiXzL6\/Ua3aZ2yzQaflgoj\/mrQaw2bJU9YPd9ADkF1ccHit5EVM8Hy875Bp3CCzA\/t7gZNYeayUL5CMz\/3wfrzyjrocz5UP1Ca6itWzQ1\/eylo\/wzjRAt0VzBzkMd031KPCFRTChfhgRUwXFzRlkaV4fAJ7qTRcSZPHIobW1OZL0PXQQuUfytm4z8KPcbakNlhsIJApBR+APCaac1orpxYN\/svu\/zrhHsndpkH12I0FkShpPgWwJXv3Lo\/MJkQLbrYmCnU7IsCdqJGV\/lo3b2qXVbqun0kZWRrsRKF\/NnEtszl0no3v9wERBIWmv\/ig0p4U\/\/4jth5yjPfFWjpDW58oQXn2xfQykSflDmIgeF1SudbQn3NTGxLxHmyTY4bf2m1WjSb1jGpvQzieUCY+hiGhHpxKrSHHy60TKVLbVFFD6e1lilIx9S4QD7Kp7az7npopyt\/0wq7Ct0uD0Bqk65ut5Ax6HKMrwU8RvDe9tdOsfVs8HBXkLspoVBe+N6iWPK5jdaEUtBlGymEbcqaZSgih2d8dRFCpeEAXxFGbix1eXvBGuxOE09nESeZ\/cMocn1O71Bg6N7FwX1A\/2yhnNesokc34TCc4RTire+aRAFBzF3emak5ewELQna9pEDK5mtKBNxest9vjlElvos6GHhHY+qVrVBKY\/zjkjp2LzTzvhMXIo27xzVEAqMj+JEJsZqc8VFr4hpZq+Hr9MGn5K9kbc7\/utFwKTO9R5oRpszuYLKzGXzObVKicN6XDeIbXYbfJSWuGBSx7FCLVGc\/taiPVxRZMlXDwqumTkTa1RmvxXXZooDZ5AEcrHaOVx9xC\/dCRI+uWyHRwLaLpKRWRUKZ8qHSAA5c2SEICcxDFtNXBboufHVdncfSkh8evpBQUejEHuQaphBbwZ6Fex07MjeobfbScqx9K\/HivfaA5FPGSS2K79k3DLR2eY9XsYEcWjdMDfiwVviyM7tvtm4yCUHzMy4Gl8UFVMiAQiVDLWzBrMHP31vVn3Qqs2BPXhHGoeX25r9SPdijZwwLwhvZj8mr8a3Fh9TBC9x1m\/OMA3hPZUqBK7nDwHOQV+kCUR7gezzl5iEtz\/MQ5bfg8XrH8IbdB0WSF7ztccHSC9xI+tFw==",
+          'BG_IU': "\/\/www.google.com\/js\/bg\/-Wxc5n6ag8mSVPmrosQZJ6hEHpQooK3Qr1Gxv0lUkvE.js",
+
+
+
+
+
+
+
+
+      'HL_LOCALE': "en_US",
+      'TTS_URL': "https:\/\/www.youtube.com\/api\/timedtext?hl=en_US\u0026asr_langs=pt%2Cnl%2Ces%2Cru%2Cfr%2Cja%2Cen%2Cit%2Cko%2Cde\u0026signature=037481F51C22CD58666BA92B239C706C210F8EB4.921A8F50C660CB9408E41BDA004F8C4584F1DE9E\u0026key=yttt1\u0026v=BGNahDImVhs\u0026caps=asr\u0026expire=1455691391\u0026sparams=asr_langs%2Ccaps%2Cv%2Cexpire",
+      'JS_DELAY_LOAD': 0,
+      'LIST_AUTO_PLAY_VALUE': 1,
+      'SHUFFLE_VALUE': 0,
+      'SKIP_RELATED_ADS': false,
+      'SKIP_TO_NEXT_VIDEO': false,
+      'RESUME_COOKIE_NAME': null,
+      'CONVERSION_CONFIG_DICT': {"focEnabled":true,"uid":"1pOTJteEef10zJM0cHs4iQ","vid":"BGNahDImVhs","baseUrl":"https:\/\/googleads.g.doubleclick.net\/pagead\/viewthroughconversion\/962985656\/","rmktEnabled":true},
+      'RESOLUTION_TRACKING_ENABLED': false,
+      'MEMORY_TRACKING_ENABLED': false,
+      'NAVIGATION_TRACKING_ENABLED': false,
+      'WATCH_LEGAL_TEXT_ENABLE_AUTOSCROLL': false,
+      'SHARE_ON_VIDEO_END': true,
+      'SHARE_ON_VIDEO_START': false,
+      'ADS_DATA': {"gut_vars":{"tag":""},"show_pyv":false,"afv_vars":{"google_video_doc_id":"","google_loeid":"","google_core_dbp":"","google_page_url":"","google_cust_age":"","google_ad_format":"","google_language":"","google_scs":"","google_cust_gender":"","google_ad_host_tier_id":"","google_ad_host":"","google_ad_block":"","google_eids":[],"google_tag_for_child_directed_treatment":"","google_targeting":"","google_lact":"","google_ad_channel":"","google_yt_pt":"","google_ad_type":"","google_ad_height":"","google_ad_client":"","google_alternate_ad_url":"https:\/\/www.youtube.com\/ad_frame?id=watch-channel-brand-div"},"afc_vars":{"ad_type":"","ad_client":"","ad_block":"","core_dbp":"","alternate_ad_url":"https:\/\/www.youtube.com\/ad_frame?id=watch-channel-brand-div","format":"","tag_for_child_directed_treatment":"","video_doc_id":"","lact":"","ad_host":"","ad_host_tier_id":"","language":"","ad_channel":""},"show_afv":false,"pyv_vars":{"iframe_json":"{\"google_video_doc_id\":\"\",\"google_core_dbp\":\"\",\"google_ad_channel\":\"\",\"google_tag_for_child_directed_treatment\":\"\",\"google_cust_age\":\"\",\"google_loeid\":\"\",\"google_ad_host\":\"\",\"google_language\":\"\",\"google_lact\":\"\",\"google_ad_output\":\"\",\"google_max_num_ads\":0,\"google_only_pyv_ads\":false,\"google_ad_block\":\"\",\"google_yt_pt\":\"\",\"google_video_url_to_fetch\":\"\",\"google_ad_type\":\"\",\"google_ad_client\":\"\",\"google_cust_gender\":\"\",\"google_page_url\":\"\",\"google_ad_host_tier_id\":\"\",\"google_eids\":\"\"}"},"use_gut":false,"show_afc":false,"check_status":false,"show_instream":false},
+      'PLAYBACK_ID': "AAUr67JHhkRoSN4U",
+      'IS_DISTILLER': true,
+      'SHARE_CAPTION': null,
+      'SHARE_REFERER': "",
+      'PLAYLIST_INDEX': null
+    });
+
+    yt.setMsg({
+      'EDITOR_AJAX_REQUEST_FAILED': "Something went wrong trying to get data from the server. Try again, or reload the page.",
+      'EDITOR_AJAX_REQUEST_503': "This functionality is not available right now. Please try again later.",
+        'HTML5_SUBS_ASR': "automatic captions",
+      'LOADING': "Loading..."    });
+
+      yt.setMsg('SPEEDYG_INFO', "Experiencing interruptions?");
+
+      yt.setMsg({
+    'UNBLOCK_USER': "Are you sure you want to unblock this user?",
+    'BLOCK_USER': "Are you sure you want to block this user?"
+  });
+  yt.setConfig('BLOCK_USER_AJAX_XSRF', 'QUFFLUhqbDdIMDVVdFVsT2Y4SkhwdkJXS0QwOUZaMDc5d3xBQ3Jtc0trb3BQaDRDVnhobGkwR244bFRnNERCSldubU1welItNW05cXpuQXcxajZaa2NPYzlPRS02NXBXWTNseW1vcjh1VE56VkdpTUZMdS1OZHhjRXNCYmVySjJHaFUyai1kb3EtYnJ6bHJ0Z3hueEN4dmRXeEJReVNpQWhQZDd4dnlnMWRpZVdpaW55RVFUWmZ3Mk5oQThqcW1LdUhza3c=');
+
+
+    
+
+
+
+
+
+
+
+    
+
+      yt.setConfig({
+    'GUIDED_HELP_LOCALE': "en_US",
+    'GUIDED_HELP_ENVIRONMENT': "prod"
+  });
+
+
+  </script>
+
+
+<script>yt.setConfig({INNERTUBE_API_VERSION: "v1",INNERTUBE_API_KEY: "AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8",GAPI_HINT_PARAMS: "m;\/_\/scs\/abc-static\/_\/js\/k=gapi.gapi.en.L3Aa5s3lbWU.O\/m=__features__\/am=AAQ\/rt=j\/d=1\/rs=AHpOoo-0iTqp-gUUTt97zQ-o996_icWxBA",APIARY_HOST_FIRSTPARTY: "",INNERTUBE_CONTEXT_CLIENT_VERSION: "1.20160216",APIARY_HOST: "",'VISITOR_DATA': "CgtZb19tYUd0TlZnRQ%3D%3D",'GAPI_HOST': "https:\/\/apis.google.com",'GAPI_LOCALE': "en_US",'INNERTUBE_CONTEXT_HL': "en",'INNERTUBE_CONTEXT_GL': "US"});yt.setConfig({"MENDEL_FLAG_PLAYER_SWFCFG_CLEANUP":true,"MENDEL_FLAG_OVERHAUL_CHAT_LOADING":true,"MENDEL_FLAG_CONSENT_URL_OVERRIDE":"","MENDEL_FLAG_GAME_METADATA_ON_WATCH":false,"MENDEL_FLAG_GAME_METADATA_BOX_ART":false});yt.setConfig({'EVENT_ID': "D7TDVpGaMY-9-gWFu6SQDw",'PAGE_NAME': "watch",'LOGGED_IN': false,'SESSION_INDEX': null,'VALID_SESSION_TEMPDATA_DOMAINS': ["www.youtube.com","gaming.youtube.com"],'PARENT_TRACKING_PARAMS': "Mgh5b3V0dS5iZQ==",'FORMATS_FILE_SIZE_JS': ["%s B","%s KB","%s MB","%s GB","%s TB"],'DELEGATED_SESSION_ID': null,'ONE_PICK_URL': "",'UNIVERSAL_HOVERCARDS': true,'GOOGLEPLUS_HOST': "https:\/\/plus.google.com",'PAGEFRAME_JS': "\/\/s.ytimg.com\/yts\/jsbin\/www-pageframe-vfl3NS9R-\/www-pageframe.js",'JS_COMMON_MODULE': "\/\/s.ytimg.com\/yts\/jsbin\/www-en_US-vflYaEVNh\/common.js",'PAGE_FRAME_DELAYLOADED_CSS': "\/\/s.ytimg.com\/yts\/cssbin\/www-pageframedelayloaded-vflWd3pQq.css",'EXPERIMENT_FLAGS': {"pyv_search_dont_show_channel_ids":true,"gfeedback_for_signed_out_users_enabled":true},'GUIDE_DELAY_LOAD': true,'GUIDE_DELAYLOADED_CSS': "\/\/s.ytimg.com\/yts\/cssbin\/www-guide-vfl5Jqnht.css",'HIGH_CONTRAST_MODE_CSS': "\/\/s.ytimg.com\/yts\/cssbin\/www-highcontrastmode-vfl1s5w0b.css",'PREFETCH_CSS_RESOURCES' : ["\/\/s.ytimg.com\/yts\/cssbin\/www-player-vflaN8wfC.css"],'PREFETCH_JS_RESOURCES': ["\/\/s.ytimg.com\/yts\/jsbin\/player-en_US-vfl329t6E\/base.js",''         ],'PREFETCH_LINKS': false,'PREFETCH_LINKS_MAX': 1,'PREFETCH_AUTOPLAY': false,'PREFETCH_AUTOPLAY_TIME': 0,'PREFETCH_AUTONAV': false,'PREBUFFER_MAX': 1,'PREBUFFER_LINKS': false,'PREBUFFER_AUTOPLAY': false,'PREBUFFER_AUTONAV': false,'WATCH_LATER_BUTTON': "\n\n  \u003cbutton class=\"yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip\" type=\"button\" onclick=\";return false;\" role=\"button\" title=\"Watch Later\" data-video-ids=\"__VIDEO_ID__\" data-button-menu-id=\"shared-addto-watch-later-login\"\u003e\u003cspan class=\"yt-uix-button-arrow yt-sprite\"\u003e\u003c\/span\u003e\u003c\/button\u003e\n",'WATCH_QUEUE_BUTTON': "  \u003cbutton class=\"yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button addto-queue-button video-actions spf-nolink hide-until-delayloaded addto-tv-queue-button yt-uix-tooltip\" type=\"button\" onclick=\";return false;\" title=\"Queue\" data-video-ids=\"__VIDEO_ID__\" data-style=\"tv-queue\"\u003e\u003c\/button\u003e\n",'WATCH_QUEUE_MENU': "  \u003cspan class=\"thumb-menu dark-overflow-action-menu video-actions\"\u003e\n    \u003cbutton class=\"yt-uix-button-reverse flip addto-watch-queue-menu spf-nolink hide-until-delayloaded yt-uix-button yt-uix-button-dark-overflow-action-menu yt-uix-button-size-default yt-uix-button-has-icon no-icon-markup yt-uix-button-empty\" type=\"button\" onclick=\";return false;\" aria-expanded=\"false\" aria-haspopup=\"true\" \u003e\u003cspan class=\"yt-uix-button-arrow yt-sprite\"\u003e\u003c\/span\u003e\u003cul class=\"watch-queue-thumb-menu yt-uix-button-menu yt-uix-button-menu-dark-overflow-action-menu hid\"\u003e\u003cli role=\"menuitem\" class=\"overflow-menu-choice addto-watch-queue-menu-choice addto-watch-queue-play-next yt-uix-button-menu-item\" data-action=\"play-next\" onclick=\";return false;\"  data-video-ids=\"__VIDEO_ID__\"\u003e\u003cspan class=\"addto-watch-queue-menu-text\"\u003ePlay next\u003c\/span\u003e\u003c\/li\u003e\u003cli role=\"menuitem\" class=\"overflow-menu-choice addto-watch-queue-menu-choice addto-watch-queue-play-now yt-uix-button-menu-item\" data-action=\"play-now\" onclick=\";return false;\"  data-video-ids=\"__VIDEO_ID__\"\u003e\u003cspan class=\"addto-watch-queue-menu-text\"\u003ePlay now\u003c\/span\u003e\u003c\/li\u003e\u003c\/ul\u003e\u003c\/button\u003e\n  \u003c\/span\u003e\n",'SAFETY_MODE_PENDING': false,'LOCAL_DATE_TIME_CONFIG': {"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"amPms":["AM","PM"],"dateFormats":["MMMM d, yyyy h:mm a","MMMM d, yyyy","MMM d, yyyy","MMM d, yyyy"],"firstWeekCutoffDay":3,"shortWeekdays":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"formatShortTime":"h:mm a","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"formatShortDate":"MMM d, yyyy","firstDayOfWeek":0,"months":["January","February","March","April","May","June","July","August","September","October","November","December"],"formatLongDate":"MMMM d, yyyy h:mm a","formatWeekdayShortTime":"EE h:mm a","weekendRange":[6,5],"formatLongDateOnly":"MMMM d, yyyy"},'PAGE_CL': 114770446,'PAGE_BUILD_LABEL': "youtube_20160216_RC3",'VARIANTS_CHECKSUM': "2ab73979ba99747f9429feab7fc43861",'CLIENT_PROTOCOL': "HTTP\/1.1",'CLIENT_TRANSPORT': "tcp",'MDX_ENABLE_CASTV2': true,'MDX_ENABLE_QUEUE': true,'FEEDBACK_BUCKET_ID': "Watch",'FEEDBACK_LOCALE_LANGUAGE': "en",'FEEDBACK_LOCALE_EXTRAS': {"is_partner":"","accept_language":null,"logged_in":false,"experiments":"9412901,9415049,9415398,9415575,9416038,9416126,9416475,9416984,9417035,9417482,9417664,9418543,9419979,9420240,9420289,9420304,9420395,9420409,9420452,9420790,9420951,9421404,9421625,9421978,9422152,9422250,9422376,9422523,9422575,9422596,9422849,9422852,9422928,9422972,9423057,9423119,9423155,9423185,9423438,9423465,9423553,9423555,9423645,9423649,9423661,9423662,9423704,9423911,9423990,9424105,9424159,9424225,9424255,9424262,9424666,9424672,9424678,9424785,9425033,9425330,9425413,9425553,9425731,9425737,9425931,9426070,9426095,9426110,9426154,9426543,9426994,9427021,9427068,9427119,9427175,9427221,9427237,9427294,9427416,9427491,9427519,9427610,9427654,9427667,9427693,9427894,9427989,9427994,9428046,9428071,9428083,9428151,9428158,9428168,9428431,9428476,9428511,9428516,9428704,9428732,9428905,9428941,9428958,9428971"}});   yt.setConfig({
+    'GUIDED_HELP_LOCALE': "en_US",
+    'GUIDED_HELP_ENVIRONMENT': "prod"
+  });
+yt.setConfig('SPF_SEARCH_BOX', true);yt.setMsg({'ADDTO_CREATE_NEW_PLAYLIST': "Create new playlist\n",'ADDTO_CREATE_PLAYLIST_DYNAMIC_TITLE': "  $dynamic_title_placeholder (create new)\n",'ADDTO_WATCH_LATER': "Watch Later",'ADDTO_WATCH_LATER_ADDED': "Added",'ADDTO_WATCH_LATER_ERROR': "Error",'ADDTO_WATCH_QUEUE': "Watch Queue",'ADDTO_WATCH_QUEUE_ADDED': "Added",'ADDTO_WATCH_QUEUE_ERROR': "Error",'ADDTO_TV_QUEUE': "Queue",'ADS_INSTREAM_FIRST_PLAY': "A video ad is playing.",'ADS_INSTREAM_SKIPPABLE': "Video ad can be skipped.",'ADS_OVERLAY_IMPRESSION': "Ad displayed.",'MASTHEAD_NOTIFICATIONS_LABEL': {"case0": "0 unread notifications.", "case1": "1 unread notification.", "other": "# unread notifications."},'MASTHEAD_NOTIFICATIONS_COUNT_99PLUS': "99+"});    yt.setConfig({
+    'XSRF_TOKEN': "QUFFLUhqbDdIMDVVdFVsT2Y4SkhwdkJXS0QwOUZaMDc5d3xBQ3Jtc0trb3BQaDRDVnhobGkwR244bFRnNERCSldubU1welItNW05cXpuQXcxajZaa2NPYzlPRS02NXBXWTNseW1vcjh1VE56VkdpTUZMdS1OZHhjRXNCYmVySjJHaFUyai1kb3EtYnJ6bHJ0Z3hueEN4dmRXeEJReVNpQWhQZDd4dnlnMWRpZVdpaW55RVFUWmZ3Mk5oQThqcW1LdUhza3c=",
+    'XSRF_REDIRECT_TOKEN': "rzXfVaJRZLSEEsCmMy5yBDYRmpR8MTQ1NTc1MjU5MkAxNDU1NjY2MTky",
+    'XSRF_FIELD_NAME': "session_token"
+  });
+
+  yt.setConfig('FEED_PRIVACY_CSS_URL', "\/\/s.ytimg.com\/yts\/cssbin\/www-feedprivacydialog-vflFtw76j.css");
+
+  yt.setConfig('FEED_PRIVACY_LIGHTBOX_ENABLED', true);
+yt.setConfig({'SBOX_JS_URL': "\/\/s.ytimg.com\/yts\/jsbin\/www-searchbox-vflTESvEr\/www-searchbox.js",'SBOX_SETTINGS': {"EXPERIMENT_STR":"","EXPERIMENT_ID":-1,"SESSION_INDEX":null,"PQ":"","HAS_ON_SCREEN_KEYBOARD":false,"PSUGGEST_TOKEN":null,"REQUEST_DOMAIN":"us","IS_FUSION":false,"REQUEST_LANGUAGE":"en"},'SBOX_LABELS': {"SUGGESTION_DISMISSED_LABEL":"Suggestion dismissed","SUGGESTION_DISMISS_LABEL":"Remove"}});  yt.setConfig({
+    'YPC_LOADER_JS': "\/\/s.ytimg.com\/yts\/jsbin\/www-ypc-vfl8Y_4qH\/www-ypc.js",
+    'YPC_LOADER_CSS': "\/\/s.ytimg.com\/yts\/cssbin\/www-ypc-vfl0csEwI.css",
+    'YPC_SIGNIN_URL': "https:\/\/accounts.google.com\/ServiceLogin?uilel=3\u0026hl=en\u0026service=youtube\u0026continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Fnext%3D%252F%26hl%3Den%26action_handle_signin%3Dtrue%26app%3Ddesktop\u0026passive=true",
+    'DBLCLK_ADVERTISER_ID': "2542116",
+    'DBLCLK_YPC_ACTIVITY_GROUP': "youtu444",
+    'SUBSCRIPTION_URL': "\/subscription_ajax",
+    'YPC_SWITCH_URL': "\/signin?feature=purchases\u0026next=%2F\u0026action_handle_signin=true\u0026skip_identity_prompt=True",
+    'YPC_GB_LANGUAGE': "en_US",
+    'YPC_GB_URL': "https:\/\/checkout.google.com\/inapp\/lib\/buy.js",
+    'YPC_MB_URL': "https:\/\/sandbox.google.com\/payments\/v4\/js\/integrator.js?ss=md",
+    'YPC_TRANSACTION_URL': "\/transaction_handler",
+    'YPC_SUBSCRIPTION_URL': "\/ypc_subscription_ajax",
+    'YPC_POST_PURCHASE_URL': "\/ypc_post_purchase_ajax",
+    'YTO_GTM_DATA': {"event":"purchased","purchaseStatus":"success"}
+  });
+  yt.setMsg({
+    'YPC_OFFER_OVERLAY': "  \n",
+    'YPC_UNSUBSCRIBE_OVERLAY': "  \n"
+  });
+  yt.setConfig('GOOGLE_HELP_CONTEXT', "watch");
+ytcsi.setSpan('st', 212);yt.setConfig({'CSI_LOG_WITH_YT': true,'CSI_SERVICE_NAME': "youtube",'TIMING_ACTION': "watch,watch7_html5",'TIMING_INFO': {"yt_spf":0,"yt_ad":0,"e":"9416126,9416984,9420452,9421978,9422596,9423661,9423662,9425731,9425737,9427119,9427667,9428046,9428168,9428431,9428732,9428941","cver":"1.20160216","yt_li":0,"ei":"D7TDVpGaMY-9-gWFu6SQDw","yt_lt":"cold","yt_pl":0,"yt_err":0,"c":"WEB"}});  yt.setConfig({
+    'XSRF_TOKEN': "QUFFLUhqbDdIMDVVdFVsT2Y4SkhwdkJXS0QwOUZaMDc5d3xBQ3Jtc0trb3BQaDRDVnhobGkwR244bFRnNERCSldubU1welItNW05cXpuQXcxajZaa2NPYzlPRS02NXBXWTNseW1vcjh1VE56VkdpTUZMdS1OZHhjRXNCYmVySjJHaFUyai1kb3EtYnJ6bHJ0Z3hueEN4dmRXeEJReVNpQWhQZDd4dnlnMWRpZVdpaW55RVFUWmZ3Mk5oQThqcW1LdUhza3c=",
+    'XSRF_REDIRECT_TOKEN': "rzXfVaJRZLSEEsCmMy5yBDYRmpR8MTQ1NTc1MjU5MkAxNDU1NjY2MTky",
+    'XSRF_FIELD_NAME': "session_token"
+  });
+  yt.setConfig('THUMB_DELAY_LOAD_BUFFER', 0);
+if (window.ytcsi) {window.ytcsi.tick("jl", null, '');}</script>
+</body></html>

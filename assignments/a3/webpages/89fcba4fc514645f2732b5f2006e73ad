@@ -1,0 +1,1528 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>AIPS Web Site - Doha 2016: Rescuing sports journalism from extinction</title>
+<meta property="og:title" content="AIPS Web Site - Doha 2016: Rescuing sports journalism from extinction" />
+<meta property="og:image" content="http://www.aipsmedia.com/showimg.php?cod=18098&tp=n&n=1&resize=3" />
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" media="screen" />
+<style type="text/css">a#vlb{display:none}body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+</style>
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+
+<script language="JavaScript" type="text/javascript" src="menu.js"></script>
+<link rel="stylesheet" href="style.css" />
+<!--Fireworks 8 Dreamweaver 8 target.  Created Sun Apr 05 15:28:19 GMT+0200 (ora legale Europa occidentale) 2009-->
+<script language="javascript" src="flowplayer-3.1.4.min.js"></script>
+<script language="javascript" src="marquee.js"></script>
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<script language="javascript">
+var stop;
+var playerisready=0;
+var XMLHttpRequestObject = false;
+
+if (window.XMLHttpRequest) {
+        XMLHttpRequestObject = new XMLHttpRequest();
+} else if (window.ActiveXObject) {
+        XMLHttpRequestObject = new ActiveXObject("Microsoft.XMLHttp");
+}
+
+function getData(dataSource) {
+        if(XMLHttpRequestObject) {
+                XMLHttpRequestObject.open("GET", dataSource);
+                XMLHttpRequestObject.send(null);
+        }
+}
+
+function loadvideo(id,titolo,titoletto) {
+	dmplayer=document.getElementById('mydmplayer');
+	dmplayer.loadVideoById(id);
+	t1=document.getElementById('vidtitolo');
+	t2=document.getElementById('vidtitoletto');
+	t1.innerHTML=titolo;
+	t2.innerHTML=titoletto;
+}
+
+function repospopupvideo () {
+        e=document.getElementById('popupvideolyr');
+        e.style.left=((document.documentElement.clientWidth/2)-450)+'px';
+}
+
+function closepopupvideo () {
+	dmplayer=document.getElementById('mydmplayer');
+	//dmplayer.seekTo(0);
+	dmplayer.stopVideo();
+	e2=document.getElementById('popupvideolyr');
+	b=document.getElementById('obdy');
+	e2.style.visibility='hidden';
+	b.style.filter='alpha(opacity=100)';
+	b.style.opacity='1';
+	playerisready=0;
+}
+
+function showpopupvideo(id) {
+        b=document.getElementById('obdy');
+        b.style.filter='alpha(opacity=50)';
+        b.style.opacity='0.5';
+        repospopupvideo();
+        e2=document.getElementById('popupvideolyr');
+        e2.style.visibility='visible';
+	dmplayer=document.getElementById('mydmplayer');
+	if(dmplayer) {
+		dmplayer.loadVideoById(id);
+	} else {
+		loadplayer();
+        	setTimeout("startplayer('"+id+"')",1000);
+	}
+}
+
+function startplayer(id) {
+        if(playerisready) {
+		dmplayer=document.getElementById('mydmplayer');
+		dmplayer.loadVideoById(id);
+        } else {
+        	setTimeout("startplayer('"+id+"')",1000);
+	}
+}
+
+function onDailymotionPlayerReady(playerid) {
+	if(playerid=="dmplayer") {
+        	playerisready=1;
+	}
+}
+
+function updBox(w) {
+	titolo=document.getElementById('titolo_box');
+	im=document.getElementById('img_box');
+	testo=document.getElementById('testo_box');
+/*
+
+                     <tr><td id="img_box"><a href="index.php?page=interview&cod="><img border="0" align="top" src="showimg.php?cod=&tp=int&resize=7"></a></td><td valign="top" id="testo_box"><div class="small_blue_bold"></div><div class="small_grey"><b>by </b></div><br><a href="index.php?page=interview&cod=">Read more</a></td></tr>
+*/
+
+	switch(w) {
+		case 'edi':
+		titolo.innerHTML="Editorial";
+		im.innerHTML='<a href="index.php?page=editorial&cod=26"><img border="0" align="top" src="images/gianni.jpg" height="100"></a>';
+		testo.innerHTML='<div class="small_blue_bold">TRANSPARENCY is the foremost priority - AIPS Magazine II/11</div><div class="small_grey"><b>by Gianni Merlo</b></div><br><a href="index.php?page=editorial&cod=26">Read more</a>';
+		break;
+		case 'foc':
+		titolo.innerHTML="Focus";
+		im.innerHTML='<a href="index.php?page=focus&cod=89"><img border="0" align="top" src="showimg.php?cod=89&tp=f&resize=7"></a>';
+		testo.innerHTML='<div class="small_blue_bold">The Ethics \'Iron Lady\' of the Olympics</div><div class="small_grey"></div><br><a href="index.php?page=focus&cod=89">Read more</a>';
+		break;
+		case 'int':
+		titolo.innerHTML="Interview";
+		im.innerHTML='<a href="index.php?page=interview&cod=17"><img border="0" align="top" src="showimg.php?cod=17&tp=int&resize=7"></a>';
+		testo.innerHTML='<div class="small_blue_bold">AIPS Treasurer Jorge Ribeiro in conversation with Korean referee IM Eun-Ju </div><div class="small_grey"><b>by Jorge Ribeiro, AIPS Treasurer</b></div><br><a href="index.php?page=interview&cod=17">Read more</a>';
+		break;
+		case 'prf':
+		titolo.innerHTML="Profiles";
+		im.innerHTML='<a href="index.php?page=profile&cod=5"><img border="0" align="top" src="showimg.php?cod=5&tp=prf&resize=7"></a>';
+		testo.innerHTML='<div class="small_blue_bold">Hedrick Chad - Speed Skating</div><div class="small_grey"></div><br><a href="index.php?page=profile&cod=5">Read more</a>';
+		break;
+		case 'tio':
+		titolo.innerHTML="Timeout";
+		im.innerHTML='<a href="index.php?page=timeout&cod=18"><img border="0" align="top" src="showimg.php?cod=18&tp=tio&resize=7"></a>';
+		testo.innerHTML='<div class="small_blue_bold">One Oath is missing!</div><div class="small_grey"><b>by Christer Ahl</b></div><br><a href="index.php?page=timeout&cod=18">Read more</a>';
+		break;
+	}
+}
+
+var l=0;
+var r=0;
+
+function doScrollVideo(dir)
+{
+	o=document.getElementById('videoscr');
+	switch(dir) {
+		case 'left':
+		o.scrollLeft -= 107; //o.clientWidth
+		break;
+		case 'right':
+		o.scrollLeft += 107;
+		break;
+	}
+	if(stop)
+		return;
+
+	//setTimeout('doScrollVideo(\''+dir+'\')',10);
+}
+
+/*
+function startScrollVideo(dir) {
+	stop=0;
+	setTimeout('doScrollVideo(\''+dir+'\')',10);
+}
+
+function stopScrollVideo() {
+	stop=1;
+}
+*/
+
+function doScroll(dir)
+{
+	o=document.getElementById('galleryscr');
+	switch(dir) {
+		case 'left':
+		o.scrollLeft -= 2; //o.clientWidth
+		break;
+		case 'right':
+		o.scrollLeft += 2;
+		break;
+	}
+	if(stop)
+		return;
+
+	setTimeout('doScroll(\''+dir+'\')',3);
+}
+
+function startScroll(dir) {
+	stop=0;
+	setTimeout('doScroll(\''+dir+'\')',3);
+}
+
+function stopScroll() {
+	stop=1;
+}
+
+window.onresize=repospopupvideo;
+</script>
+</head>
+<body onLoad="if(''!=''){SwitchMenu('sub');}">
+<div style="position: absolute; top: 80px; left: 10px; visibility: hidden; z-index:10" id="popupvideolyr">
+<table border="0" cellpadding="0" cellspacing="0" width="917">
+<!-- fwtable fwsrc="popup_video.png" fwbase="popup_video.png" fwstyle="Dreamweaver" fwdocid = "1690857796" fwnested="1" -->
+  <tr>
+   <td colspan="5"><img name="popup_video_r1_c1" src="images/popup_video_r1_c1.png" width="917" height="26" border="0" id="popup_video_r1_c1" alt="" /></td>
+  </tr>
+  <tr>
+   <td rowspan="4"><img name="popup_video_r2_c1" src="images/popup_video_r2_c1.png" width="19" height="483" border="0" id="popup_video_r2_c1" alt="" /></td>
+   <td><div id="flashcontent" class="flashcontent"></div><!--<img name="popup_video_r2_c2" src="images/popup_video_r2_c2.png" width="480" height="406" border="0" id="popup_video_r2_c2" alt="" />--></td>
+   <td rowspan="4"><img name="popup_video_r2_c3" src="images/popup_video_r2_c3.png" width="20" height="483" border="0" id="popup_video_r2_c3" alt="" /></td>
+   <td><table align="left" border="0" cellpadding="0" cellspacing="0" width="379">
+	  <tr>
+	   <td><table align="left" border="0" cellpadding="0" cellspacing="0" width="379">
+		  <tr>
+		   <td><img name="popup_video_r2_c4" src="images/popup_video_r2_c4.png" width="310" height="40" border="0" id="popup_video_r2_c4" alt="" /></td>
+		   <td><a href="#" onClick="closepopupvideo();"><img name="popup_video_r2_c9" src="images/popup_video_r2_c9.png" width="69" height="40" border="0" id="popup_video_r2_c9" alt="" /></a></td>
+		  </tr>
+		</table></td>
+	  </tr>
+	  <tr>
+	   <td valign="top" bgcolor="#0B539E" style="padding-left:3px;padding-right:0px; text-align:center"><div id="videoscr"  style="overflow-y: hidden; width:375px; height:326px; scrollbar-face-color:#0B539E; overflow-x: hidden;"><table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','President Bach: &quot;Kosovo deserves to recognized by IOC&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Sportaccord 2014: interview with hungarian swimmer Katinka Hosszu','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Interview with athletics star Kenenisa Bekele - AIPS EC Addis Ababa, november 2014','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Great Ethiopian Run: a symbol of unity','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','&quot;Technology can only improve the work of International Federations&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','FIVB Women\'s World Championship: USA are the Champion first time','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','FIVB 2014 Women\'s World Championship: Brazil conquists bronze medal','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','FIVB 2014 Women\'s World Championship: USA - Brazil semifinal','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','FIVB 2014 Women\'s World Championship: quotes from the mixed zone','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Lang Ping, China Coach after 3-0 defeat against Brazil in FIVB 2014 Women\'s World Championship','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','FIVB President Ari S. Graca speaks about FIVB World Championship and technology','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Preview on the FIVB 2014 World Championship final match','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Mory Sidibe, France Wing Spiker after semifinal lost vs Brazil','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','FIVB World Championship semi-finals: the supporters before Brazil-France','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Thomas Bach speaks about Archery and Agenda 2020','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Ugur Erdener, World Archery Federation President: \'Archery is a tv-friendly elegant sport\'','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Sara Lopez, Colombian gold medallist in Compound Archery 2014 World Cup Final','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','17th AIPS Asia Congress: words of AIPS Asia President Faisal Al Qanai and KSPU Secretary General Jung Hee Don','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Karyn Tan, Special Olympics Asia Pacific Communication\'s Director','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','YOUNG-JIN KWAK Pyeongchang 2018 Winter Olympic Games Vice president','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','JIYOUNG LEE International Affairs Department Manager Gwangju 2015 Universiade','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Kim Chong, Korean Vice Minister of Culture, Sports and Tourisme','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Jung Heedon introduces AIPS Asia 2014 Congress in Incheon','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','May El-Kalil, founder of Beirut Marathon: \'Sport can change the world\'','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Claudia Bokel: \'Athletes need to be a part of Agenda 2020\'','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Sheikh Ahmad Al-Fahad Al-Sabah at ANOC Council Meeting','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Christoph Dubi, the \'new man\' in the IOC','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Anita DeFrantz \'Sport is a birthright, available for all\'','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Oslo, Almaty and Beijing first reactions','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Thomas Bach on Brazil-Germany 1-7 semifinal match','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Gilbert Felli on 2022: \'The one to be blamed is the IOC\'','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Almaty, Beijing and Oslo are the candidates for the 2022 Winter Olympic Games','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Thomas Bach celebrates AIPS 90th anniversary','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Kirani James, 400m Olympic Champion, before Athletissima 2014 IAAF Diamond League','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Athletissima 2014 preview from Mus&egrave;e Olimpique Lausanne','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Derek Drouin, high jumper (CAN) interviewed before Athletissima 2014, Lausanne (July 2, 2014)','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','2014 FIFA World Cup: Chilean fans invasion of Maracana Press Center before Spain Game','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Dinner reception of 77th AIPS Congress with President of Azerbaijan Ilham Aliyev','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','AIPS FORUM: new media the way forward for sports journalism','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','77th AIPS Congress in Baku: interview with Kim Yoon-Suk, Secretary General of Gwangju 2015 Summer Universiade','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','77th AIPS Congress in Baku: interview with Jochen Farber, IOC Chief of Staff','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','77th AIPS Congress in Baku: interview with Mary Davis, Special Olympics President and MD Europe and Eurasia','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','77th AIPS Congress in Baku: interview with Thomas Giordano, UEFA Senior Media &amp; PR Manager','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','77th AIPS Congress in Baku: interview with Jayne Pearce, Press Operations Consultant of Baku 2015 European Games','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','77th AIPS Congress in Baku: the Opening Ceremony','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','77th AIPS Congress in Baku: Jimmy Magee, the Popstar of Sports Journalism','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Young Reporters at 77th AIPS Congress in Baku - Spanish presentation','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Young Reporters at 77th AIPS Congress in Baku - English presentation','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','AIPS Young Reporters @ Sportaccord 2014','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Sportaccord 2014: interview with Agberto Guimaraes, Sports Director of Rio 2016','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 34','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Sportaccord 2014: President Vizer &quot;Next step is to reach a higher level&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Sportaccord 2014: interview with italian high jumper Alessia Trost','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Sportaccord 2014: interview with Sebastien Foucan, founder of Freerunning','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Sportaccord 2014: interview with Brian Cookson, President of UCI','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Sportaccord 2014: interview with Darkhan Kaletayev, Chairman of Board of Astana','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Sportaccord 2014: interview with Raffaele Chiulli, President of ARISF','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 33','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Interview with Francesco Ricci Bitti, ASOIF and ITF President','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 32','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Prince Feisal Al Hussein: &quot;Never underestimate the power of sports&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 30','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 29','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights Day 28','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Paralympic athlete and Tv Commentator Arly Velasquez: &quot;How I\'m living Sochi 2014&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 27','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 26','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Sochi 2014: 1 to 10 evaluation of the journalists','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Sochi 2014: evaluation of the Press Agencies','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Interview with Mikhail Demin, Sochi 2014 Head of Press Operations','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Sochi 2014: interview with Anthony Edgar, IOC Head of Media Operations','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Sochi 2014: interview with Kevan Gosper, Chairman of IOC Press Commission','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','&quot;I\'ll say \'brava\' to my daughter&quot; tells Carolina Kostner\'s mother','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','About the sport in Kazakhstan','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Interview with John Coates, President of CAS','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 25','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Inside P&amp;G House in Sochi 2014','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','The first female Iranian journalist at Winter Olympic Games','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Denis Ten: Kazakhstan\'s bright future - the interview','');"><img height=78 src=""  border="0"></a></td></tr><tr><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Sochi 2014 Winter Olympic Games: inside the OBS','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Spring has come to Sochi. But the OC has packed the snow!','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','The Russian Corner at Main Media Center in Sochi 2014','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Armin Zoeggeler: 20 years of successes in Olympic Games','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights Day 24','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Jacques Rogge: &quot;Now I can enjoy the Olympic Games&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','AIPS Ski Journalists on the podium in Sochi 2014','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights Day 23','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Winter Olympics Journalists on the podium: are you ready to come?','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Tribute to the journalist Richard Garneau at Canada House','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','&quot;President Bach opened a new door to the future of the Olympic movement&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','USA Bobsleigh and Skeleton Team meets the press','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Sochi 2014 Main Press Center is opening','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 21','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 20','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','uper League Greece highlights day 19','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 18','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','&quot;2013 was a very important year for us&quot;: the message of AIPS president Gianni Merlo','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 16','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 15','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 14','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Interview with Mohammed Hanzab, President of ICSS','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 13','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 12','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','AIPS Young Reporters on UEFA U-21 European Championships Israel 2013 - the resume','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 11','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','May El Khalil speech at TED Global &quot;Making peace is a marathon&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','FIFA U-17 World Cup UAE 2013 meets Arabian Gulf League - How UAEFA manage it','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Dubai Sports Council: a look to the future of the sports in the Emirates','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 10','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','FIFA U-17 World Cup UAE 2013 - Mexico team\'s confident before the semifinal against Argentina','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','FIFA U-17 World Cup UAE 2013 -  Five-star support for Nigeria!','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','FIFA U-17 World Cup UAE 2013 - Dubai, more than just football','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','FIFA U-17 World Cup UAE 2013 -  Morocco supporters celebrate the team despite the defat against Cote d\'Ivoire','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 9','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','FIFA U-17 World Cup UAE 2013: Moroccans confident before vs Ivory Coast match','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','FIFA U-17 World Cup UAE 2013 -  Italy\'s coach Zoratto: &quot;We need to raise our level against Mexico&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','2013 FIFA U-17 World Cup UAE - All the news about FIFA Refereeing','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','2013 FIFA U-17 World Cup UAE - Casiraghi, dean of the observers: &quot;Disappointed by the european teams&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Halilovic and Driussi: &quot;Our World Cup&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','&quot;How we are developing sports in Qatar&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 8','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 8','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Football in UAE: inside Al-Ahli headquarters','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','A focus on UAE football','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','FIFA U-17 World Cup UAE 2013: coaching for coaches','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Rajoub presses Palestinian cause with FIFA','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','FIFA U-17 World Cup UAE 2013: &quot;Italy fights till the end&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','FIFA U-17 World Cup UAE 2013: Uruguay makes 7 to New Zealand: the flash quotes','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','The history of USPA - Uganda Sports Press Association','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 7','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 6','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Olympic Truce Foundation: respecting diversity','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 5','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 4','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Minister Rahimov: &quot;Azerbaijan is looking forward for AIPS Congress 2014&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Thomas Bach elected IOC President','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Ready to know the name of the new IOC President','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Tokyo 2020, Wresling and IOC presidency: flash quotes of the journalists','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Why Istanbul lost the race to 2020 Olympic games','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 3','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 2','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Super League Greece highlights day 1','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','AIPS Young Reporters Project in Lausanne: the short story','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Samsung and AIPS: a strong collaboration','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Buenos Aires will host Youth Olympic Games 2018: the flash quotes','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','About Istanbul 2020 candidature','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Interview with IOC member Juan Antonio Samaranch','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','About Madrid 2020 candidature','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Tyson Gay: &quot;I respect Usain Bolt&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Lavillenie: &quot;I\'m in great shape for tomorrow&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Interview with Gianni Infantino, Secretary General of UEFA','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Interview with volley legend Humilka Ruiz','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Around the world of gymnastic','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','AIPS Power of Sport and Fair Play Awards: what a event!','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Fair Play and Power of Sport awards: ready to go','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','IOC and new medias: how to improve these facilities','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Poland wins Euro Under 17 women Championships: the quotes after the match','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Interview with Karin Espelund, the first woman on UEFA Executive Committee','');"><img height=78 src=""  border="0"></a></td></tr><tr><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Gwangju 2015 Summer Universiade: inside a dream','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Inside the FIBA: the new challenges','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Im Eun-Ju, the first woman referee','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','The role of the CAS - Court of Arbitration of Sport','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','The role of Ethics Commission of IOC','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Israel in depth: not only football','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Italy or Spain? The Young Reporters\' predictions','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Where the next Euro Under 21 Championships will be?','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Italy 1 Netherlands 0: the fans\' reactions','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','The impact of the social media in the biggest sports events','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Pierre Cornu: &quot;Match-fixing can kill sports&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Formula Jerusalem: emotion of speed on the streets','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','A look to Jerusalem','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Uefa U21: the biggest sports event in Israel','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','David De Gea: &quot;Let\'s go to win!&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Daniel Carvajal: &quot;I\'m here to help Spain&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Peres Center of Peace: when football joins','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Italy vs. Norway 1-1: the flash quotes','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Netherlands or Spain? This is the dilemma for Italy','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Uri Sheradsky and the story of Katamon FC','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Which future for newspapers?','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Netherlands-Russia: the flash quotes','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Flash quotes of italian players after Israel vs Italy','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Interview with Ronit Glasman, Israel 2013 Marketing Director','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Football for all: when sports meets solidarity','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Italy vs. Israel: let the football win!','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Interview with Arrigo sacchi, Technical Director of Italian Teams','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Jaffa, where are the oranges?','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','How the additional assistant referees have improved the football','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Last news before Italy-Israel','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','The story of IFA (Israeli Football Association)','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Netherlands-Germany: the flash quotes','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Spain vs. Russia: the best game ever in Jerusalem','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','UEFA U21: Italy sinks England','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Germany-Netherlands, a matter of pride and old wounds','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','The welcome to UEFA Euro 2013 of Evelyn Watta, Head of delegation of AIPS Young Reporters Program UEFA Euro 2013','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','The welcome to UEFA Euro 2013 from Adolf Erlingsson, Director of Young Reporters Program in Israel','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','AIPS Young Reporter Sonja Nikcevic is ready to UEFA Euro 2013','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','WADA President John Fahey: &quot;We\'re going forward against doping&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Sergey Bubka announcing his bid to IOC President','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','The elections at 76th AIPS Congress in Sochi','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Interview with Dmitry Chernyshenko, President of OC Sochi 2014','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','About Istanbul 2020 Olympic Games bid','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Interview of Yauhen Vorsin, President of OC of Minsk 2014 Ice Hockey World Championships','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Interview of Minister of Sport of Russia, Vitaly Mutko','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Quotes about Sochi 2013 AIPS Congress','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Kenji Ogiwara talks about his life as athlete and Tokio 2020 Olympic bid','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Nikolai Dolgopolov on Sochi 2014 work in progress','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Josef Margreiter: Tirol and AIPS together in Sochi','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Interview with Peter Schrocksnadel, President of Schladming 2013 OC','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Interview to the President of FIS Gian-Franco Kasper','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Schladming 2013 World Ski Championships: the Press facilities','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','AIPS Young Reporters\' Program in Baku, Azerbaijan - The Documentary','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Betting, Sport &amp; Match-Fixing Symposium in Milano','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','&quot;This is Baku!&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','&quot;We\'re trying to correct our mistakes&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','&quot;We\'re ready to host Olympic Games&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Match fixing, illegal betting fight just getting started','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','The new frontieres of anti-doping','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','The History of Football in Azerbaijan','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Top scorer Summer Clarke: &quot;Canada can go ahead&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','AIPS Vice President Laima Janusonyte talks about Young Reporters Project','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','El regocijo colombiano de Baku - The Colombian exhilaration','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Women\'s Football: the future of the sport','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','The emotions before the Opening Ceremony','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Sepp Blatter: &quot;Reporting is a mission!&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Olympic Journalists on the Podium','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Arab Women and Sport','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Raising an Olympian: Ryan Lochte','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Michael Johnson on Drugs in Sport','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','AIPS Young Reporters visit Palestine','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','A new Libya is rising','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','75th AIPS Congress Innsbruck/Seefeld: the resume','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Young Reporters for YOG of Innsbruck','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','AIPS and FISU Young Reporters: the words of Christian Pierre','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','EHF President Tore Lian one week before Handball European Championships','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','&quot;200 days to go&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','An historic meeting between Israel and Palestine: impressions of Jibril Rajoub','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','An historic meeting between Israel and Palestine: the words of Jossi Ahoroni','');"><img height=78 src=""  border="0"></a></td></tr><tr><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','75th AIPS Congress Innsbruck/Seefeld: welcome from MIchael Kuhn','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','75th AIPS Congress Innsbruck/Seefeld: welcome from Markus Tschoner','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','The resume of 2011 of the AIPS by the President Gianni Merlo','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Presentation of Aips Arabic website','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','To head for Aips Congress Innsbruck and Seefeld 2012','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Young Reporters online','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Agnieszka, Young Reporter of Poland','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Interview to Bruno Grandi, President of FIG','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Aaron, Young Reporter of New Zealand','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','German priests at Universiade','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Interwiev to Raymond Chou','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Zaid, Young Reporter from Palestina','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Interview to Anthony Edgar of IOC','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','The Universiade of Laszlo Cseh - part 2','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Mayor of Shenzhen Xu Qin meets Young Reporters','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Yoshihiro, Young Reporter from Japan','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Sonja, Young Reporter from Serbia','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','All about world soccer','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','&quot;There\'s a lot a work to do for China, especially in front of the goal&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Interview to Alexander Koch of FIFA','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','The Universiade of Laszlo Cseh','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Abdoulie, Young Reporter of Gambia','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Natalia, Young Reporter of Moldova','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Interview to Steve McAllister, Managing Editor of Yahoo! Sports Canada','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Shenzhen 2011 Universiade Ceremony backstage','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Interview to Terence O\'Rorke, WADA member','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','&quot;This will be an incredible show&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','&quot;Chinese people are excited for Universiade&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Aips President Gianni Merlo: &quot;We\'re ready to start Young Reporters\' Program&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Usher from Uganda: &quot;5222 miles to be in Shenzhen&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Dominick from Australia: &quot;I\'m sure I\'ll learn a lot&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','The Marathon stars in Castelbuono, Sicily','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Blanka Vlasic at Aips Europe-Ueps award &quot;Sports woman of the year&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','World Sports Betting Seminar: when tradition meets fashion','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','74th AIPS Congress in Seoul - Day 3-4','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','74th AIPS Congress in Seoul - Day 2','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','74th AIPS Congress in Seoul - Day 1','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','74th AIPS Congress in Seoul - March 22-25, 2011','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Interview with AIPS Europe Athlete of the Year 2010 Sebastian Vettel','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','AIPS World Press Nite in Garmisch-Partenkirchen','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','AIPS Power of Sport and World Fair Play Awards','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Sympusium &quot;Integrity in sport, illegal betting, the threat&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Aips Delegation in Erzurum before Winter Universiade 2011','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Ueps EC in Dublin, 25-27 october 2010','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Lucia Montanarella: the future of Olympic Rate Card','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Aips Ec in Guangzhou - november 21-24, 2010','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Hungarian medals visit Rome for 50th anniversary of Olympics','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Gianni Merlo speaks to young journalists at YOG','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','&quot;On the road to Helsinki 2012&quot; Aips and Laureus in Barcelona','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','World Cup media facilities presentation in Lausanne','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Prince Albert at World Athletics Championships in Berlin','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Fifa new challenges for World Cup 2010','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','President Gianni Merlo speaks of Executive Comitee in Roma','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Uefa entering a new era','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Frankie Fredericks Judges Usain Bolt','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','IOC is ready for a new Olympic challenge','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','A day with Aips - Lausanne, 19th January 2010','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Nelson Mandela: &quot;Sport has the power the change the world&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Presentation of Blanka Vlasic, UEPS Athlete of the Year','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','FIFA Fan Fest goes global for the first time','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','32nd UEPS Congress - Antalya 28th April 2010','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','73rd Aips Congress of Antalya - Day 2','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','73rd Aips Congress of Antalya - Day 1','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Seb Coe: &quot;We\'re in good shape for Olympics&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Oscar Pistorius: &quot;South Africa is ready for the Olympics&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','SOLIBAD Badmition Without Borders Flashmob Paris','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','World Basketball Championships - Turkey 2010','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','73rd AIPS Congress of Antalya resume','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Aips message from Sepp Blatter','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','73rd Aips Congress of Antalya - Day 4','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Olympic Gold Medalist Usain Bolt Launches Search For The World\'s Next Fastest Man','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','73rd Aips Congress of Antalya - Day 3','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Sergey Bubka speaks about Yelena Isinbayeva','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Aips and Laureus celebration &quot;Champions of Sport for Good&quot;','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','AIPS-UEPS Executive Committee meeting in Sochi','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Oscar Pistorius and Alex Zanardi at Venicemarathon','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','FIFA President Sepp Blatter sends message to AIPS Congress','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','JADCO (No Dope to Cope) Music Video','');"><img height=78 src=""  border="0"></a></td><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Usain Bolt speaks in an exclusive interview','');"><img height=78 src=""  border="0"></a></td></tr><tr><td style="padding-right:3px; padding-top:3px;" height="78"><a href="javascript:loadvideo('','Tokyo 2020, Wresling and IOC presidency: flash quotes of the journalists','');"><img height=78 src=""  border="0"></a></td><td colspan="3">&nbsp;</td></tr>
+</table>
+</div></td>
+	  </tr>
+	  <tr>
+	   <td><table align="left" border="0" cellpadding="0" cellspacing="0" width="379">
+		  <tr>
+		   <td><img name="popup_video_r4_c4" src="images/popup_video_r4_c4.png" width="133" height="40" border="0" id="popup_video_r4_c4" alt="" /></td>
+		   <td><img name="popup_video_r4_c5" src="images/popup_video_r4_c5.png" width="27" height="40" border="0" id="popup_video_r4_c5" alt="" onClick="doScrollVideo('left');" /></td>
+		   <td><img name="popup_video_r4_c6" src="images/popup_video_r4_c4.png" width="54" height="40" border="0" id="popup_video_r4_c6" alt="" /></td>
+		   <td><img name="popup_video_r4_c7" src="images/popup_video_r4_c7.png" width="25" height="40" border="0" id="popup_video_r4_c7" alt="" onClick="doScrollVideo('right');" /></td>
+		   <td><img name="popup_video_r4_c8" src="images/popup_video_r4_c8.png" width="140" height="40" border="0" id="popup_video_r4_c8" alt="" /></td>
+		  </tr>
+		</table></td>
+	  </tr>
+	</table></td>
+   <td rowspan="4"><img name="popup_video_r2_c10" src="images/popup_video_r2_c10.png" width="19" height="483" border="0" id="popup_video_r2_c10" alt="" /></td>
+  </tr>
+  <tr>
+   <td><img name="popup_video_r5_c2" src="images/popup_video_r5_c2.png" width="480" height="12" border="0" id="popup_video_r5_c2" alt="" /></td>
+   <td><img name="popup_video_r5_c4" src="images/popup_video_r5_c4.png" width="379" height="12" border="0" id="popup_video_r5_c4" alt="" /></td>
+  </tr>
+  <tr>
+   <td width="480" height="52" bgcolor="#0A4C89" valign="top" style="padding-top: 0px; padding-bottom:0px"><span class="white_bold" id="vidtitolo">President Bach: &quot;Kosovo deserves to recognized by IOC&quot;</span><br><span class="small_yellow" id="vidtitoletto"></span></td>
+   <td><img name="popup_video_r6_c4" src="images/popup_video_r6_c4.png" width="379" height="52" border="0" id="popup_video_r6_c4" alt="" /></td>
+  </tr>
+  <tr>
+   <td><img name="popup_video_r7_c2" src="images/popup_video_r7_c2.png" width="480" height="13" border="0" id="popup_video_r7_c2" alt="" /></td>
+   <td><img name="popup_video_r7_c4" src="images/popup_video_r7_c4.png" width="379" height="13" border="0" id="popup_video_r7_c4" alt="" /></td>
+  </tr>
+</table>
+</div>
+<script language="javascript" src="swfobject.js"></script>
+<script type="text/javascript">
+function loadplayer() {
+    var params = { allowScriptAccess: "always" };
+    var atts = { id: "mydmplayer" };
+    swfobject.embedSWF("http://www.dailymotion.com/swf?related=0&autoPlay=1&enableApi=1&playerapiid=dmplayer", 
+                       "flashcontent", "480", "406", "8", null, null, params, atts);
+}
+</script>
+<div align="center">
+<table border="0" cellpadding="0" cellspacing="0" width="980" bgcolor="#ffffff" id="obdy">
+<!-- fwtable fwsrc="homepage.png" fwbase="homepage.jpg" fwstyle="Dreamweaver" fwdocid = "1176840450" fwnested="1" -->
+<tr>
+   <td style="padding-bottom:5px;"><table align="center" border="0" cellpadding="0" cellspacing="0" width="980">
+   	<!--<tr><td align="center" style="padding-left:4px;"><a href="https://www.sportmediapearlawards.com/network/registerUser" target="_blank"><img src="images/banner-web.gif" /></a></td></tr>-->
+<!--
+   	<tr><td align="center" style="padding-left:4px;"><a href="https://www.sportmediapearlawards.com/home/ " target="_blank"><img src="images/SMPA_02Banner.jpg" /></a></td></tr>
+-->
+<!--
+<tr>
+   <td style="padding-bottom:5px;"><table align="center" border="0" cellpadding="0" cellspacing="0" width="980">
+   	<tr><td align="center" style="padding-left:4px;"><a href="http://www.aipsmedia.com/paris2015/register.php" target="_blank"><img src="images/paris2015.jpg" /></a></td></tr>
+-->
+<!-- DA QUI 20131230 -->
+<!--
+  <tr>
+    <td style="padding-bottom:3px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" width="980">
+        <tr>
+          <td><img name="homepage_r2_c1" src="images/homepage_r2_c1.jpg" width="4" height="89" border="0" id="homepage_r2_c1" alt="" /></td>
+	  <td><a href="http://www.aips2014.com/" target="_blank"><img border="0" src="immagini/baku2014.jpg"></a></td>
+	  <td><img name="homepage_r2_c14" src="images/homepage_r2_c14.jpg" width="4" height="89" border="0" id="homepage_r2_c14" alt="" /></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+-->
+
+<!-- A QUI 20131230 -->
+  <tr>
+   <td><table align="left" border="0" cellpadding="0" cellspacing="0" width="980">
+	  	  <!--
+<tr>
+<td><img name="homepage_r2_c1" src="images/homepage_r2_c1.jpg" width="4" height="89" border="0" id="homepage_r2_c1" alt="" /></td>
+<td>
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="972" height="95" id="banner_candidates" align="middle">
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="movie" value="images/candidates.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#156aaa" /><embed src="images/candidates.swf" quality="high" bgcolor="#156aaa" width="972" height="95" name="banner_candidate" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+</td>
+<td><img name="homepage_r2_c14" src="images/homepage_r2_c14.jpg" width="4" height="89" border="0" id="homepage_r2_c14" alt="" /></td>
+</tr>
+<tr>
+   <td colspan="3"><img name="homepage_r30_c12" src="images/homepage_r30_c12.jpg" width="142" height="4" border="0" id="homepage_r30_c12" alt="" /></td>
+</tr>
+-->
+	  	  <tr>
+	   <td><img name="homepage_r2_c1" src="images/homepage_r2_c1.jpg" width="4" height="89" border="0" id="homepage_r2_c1" alt="" /></td>
+	   <td><div class="testabody">
+<table width="972" border="0" align="center" cellpadding="0" cellspacing="0">
+  <form method="GET" action="index.php">
+  <tr>
+    <td width="808" height="37" bgcolor="#002F6B"><table width="504" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="5">&nbsp;</td>
+        <td width="500px"><span class="testastile1"><a href="http://www.aipsmedia.com/index.php" class="testa">Home</a> | <a href="http://www.aipsmedia.com/index.php?page=download" class="testa">Download</a> | <a href="http://webmail.aipsmedia.com/" class="testa">E-Mail</a> | <a href="http://www.aipsmedia.com/index.php?page=contacts.htm" class="testa">Contacts</a> | <a href="http://www.aipsmedia.com/index.php?page=login" class="testa">Members Area</a> | <a class="testa" href="http://www.aipsarabic.com/" target="_blank">Arabic version</a></span></td>
+      </tr>
+    </table></td>
+    <td width="164" bgcolor="#002F6B" class="testastile1">Search &nbsp;&nbsp; <input type="hidden" name="page" value="search"><input name="q" id="sitesearch" type="text" size="12" style="width: 90px;" />
+        <!--<input name="textfield" type="text" id="textfield" size="12" /> -->
+    </td>
+  </tr>
+  <tr>
+    <td height="81" colspan="2">
+    <!-- Start WOWSlider.com BODY section id=wowslider-container1 -->
+  <div id="wowslider-container1">
+	<div class="ws_images">
+<a href="http://www.aipsmedia.com/"><img src="data1/images/12.jpg" alt="12" title="12" id="wows0"/></a>
+<a href="http://www.aipsmedia.com/"><img src="data1/images/11.jpg" alt="11" title="11" id="wows1"/></a>
+<a href="http://www.aipsmedia.com/"><img src="data1/images/9.jpg" alt="9" title="9" id="wows2"/></a>
+<a href="http://www.aipsmedia.com/"><img src="data1/images/10.jpg" alt="10" title="10" id="wows3"/></a>
+<a href="http://www.aipsmedia.com/"><img src="data1/images/8.jpg" alt="8" title="8" id="wows4"/></a>
+<a href="http://www.aipsmedia.com/"><img src="data1/images/7.jpg" alt="7" title="7" id="wows5"/></a>
+<a href="http://www.aipsmedia.com/"><img src="data1/images/6.jpg" alt="6" title="6" id="wows6"/></a>
+<a href="http://www.aipsmedia.com/"><img src="data1/images/5.jpg" alt="5" title="5" id="wows7"/></a>
+<a href="http://www.aipsmedia.com/"><img src="data1/images/4.jpg" alt="4" title="4" id="wows8"/></a>
+<a href="http://www.aipsmedia.com/"><img src="data1/images/3.jpg" alt="3" title="3" id="wows9"/></a>
+<a href="http://www.aipsmedia.com/"><img src="data1/images/2.jpg" alt="2" title="2" id="wows10"/></a>
+<a href="http://www.aipsmedia.com/"><img src="data1/images/1.jpg" alt="1" title="1" id="wows11"/></a>
+</div>
+<a style="display:none" href="http://wowslider.com">3d Slider jQuery by WOWSlider.com v1.7m</a>
+	</div>
+	<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+    </td>
+  </tr>
+  
+  <tr>
+    <td height="3" colspan="2" bgcolor="#002F6B"></td>
+  </tr>
+  </form>
+</table>
+</div>
+ <!--<a href="index.php"><img name="homepage_r2_c2" src="images/nuova_testata.jpg" width="972" height="89" border="0" id="homepage_r2_c2" alt="" /></a> --> </td>
+	   <td><img name="homepage_r2_c14" src="images/homepage_r2_c14.jpg" width="4" height="89" border="0" id="homepage_r2_c14" alt="" /></td>
+	  </tr>
+	</table></td>
+  </tr>
+<!--
+  <tr>
+   <td><table align="left" border="0" cellpadding="0" cellspacing="0" width="980">
+          <form method="GET" action="index.php">
+	  <tr>
+	   <td width="445" height="27" class="small_grey" align="left" style="padding-left: 5px;">February 17, 2016, 12:41 am</td>
+	   <td width="348" height="27" class="small_blue_bold"><a href="index.php">Home</a> | <a href="index.php?page=download">Download</a> | <a href="http://webmail.aipsmedia.com" target="_blank">E-Mail</a> | <a href="index.php?page=contacts.htm">Contacts</a> | <a href="index.php?page=login">Members Area</a></td>
+	   <td width="187" height="27" class="small_blue_bold">Search&nbsp;&nbsp;<input type="hidden" name="page" value="search"><input name="q" id="sitesearch" type="text" style="width: 90px;" /></td>
+	  </tr>
+          </form>
+	</table></td>
+  </tr>
+-->
+  <tr>
+   <td><img name="homepage_r3_c1" src="images/homepage_r3_c1.jpg" width="980" height="4" border="0" id="homepage_r3_c1" alt="" /></td>
+  </tr>
+<!--
+  <tr>
+   <td><img name="homepage_r4_c1" src="images/homepage_r4_c1.jpg" width="980" height="8" border="0" id="homepage_r4_c1" alt="" /></td>
+  </tr>
+-->
+  <tr>
+   <td><img name="homepage_r5_c1" src="images/homepage_r5_c1.jpg" width="980" height="17" border="0" id="homepage_r5_c1" alt="" /></td>
+  </tr>
+  <tr>
+   <td><table align="left" border="0" cellpadding="0" cellspacing="0" width="980">
+	  <tr>
+	   <td><img name="homepage_r6_c1" src="images/homepage_r6_c1.jpg" width="13" height="1452" border="0" id="homepage_r6_c1" alt="" /></td>
+	   <td valign="top">
+	   	<table align="left" border="0" cellpadding="0" cellspacing="0" width="128">
+		  <tr>
+		   <td style="padding-left:0px; padding-bottom:0px;"><a href="#"><img name="logo90" src="images/logo90.jpg" border="0" id="logo90" alt="logo 90 anni" /></a></td>
+		  </tr>
+		  <tr>
+		  <td><img name="homepage_r42_c12" src="images/homepage_r42_c12.jpg" width="142" height="7" border="0" id="homepage_r42_c12" alt="" /></td>
+		  </tr>
+		  <tr>
+		   <td style="padding-left:0px; padding-bottom:0px;"><a href="index.php?page=getcard"><img name="homepage_r33_c3" src="images/banner2_animation.gif" border="0" id="homepage_r33_c3" alt="" /></a></td>
+		  </tr>
+		  <tr>
+		  <td><img name="homepage_r42_c12" src="images/homepage_r42_c12.jpg" width="142" height="7" border="0" id="homepage_r42_c12" alt="" /></td>
+		  </tr>
+
+		  <!--<tr><td style="padding-left:0px; padding-bottom:0px;"><a href="http://itunes.apple.com/app/aipsmedia/id545941732?mt=8" target="_blank"><img src="images/icona_ipadappstore.jpg" border="0" alt="aipsmedia appstore ipad"></a></td></tr> <tr>-->
+		  <tr><td style="padding-left:0px; padding-bottom:0px;"><a href="https://itunes.apple.com/it/app/aipsmedia/id545941732?mt=8" target="_blank"><img src="images/icona_ipadappstore.jpg" border="0" alt="aipsmedia appstore ipad"></a></td></tr> <tr>
+		  <tr>
+		   <td><img name="homepage_r10_c3" src="images/homepage_r10_c3.jpg" width="138" height="5" border="0" id="homepage_r10_c3" alt="" /></td>
+		  </tr>
+
+		  <!--<tr><td style="padding-left:0px; padding-bottom:0px;"><a href="https://play.google.com/store/search?q=aipsmedia" target="_blank"><img src="images/androidicon.jpg" border="0" alt="aipsmedia appstore android"></a></td></tr> <tr>-->
+		  <tr><td style="padding-left:0px; padding-bottom:0px;"><a href="https://play.google.com/store/apps/details?id=com.paperlit.android.aips" target="_blank"><img src="images/androidicon.jpg" border="0" alt="aipsmedia appstore android"></a></td></tr> <tr>
+		  <tr>
+		   <td><img name="homepage_r10_c3" src="images/homepage_r10_c3.jpg" width="138" height="5" border="0" id="homepage_r10_c3" alt="" /></td>
+		  </tr>
+		  <tr>
+		  <!-- <td><img name="homepage_r6_c3" src="images/homepage_r6_c3.jpg" width="128" height="21" border="0" id="homepage_r6_c3" alt="" /></td>
+ -->
+		    <td class="titolomenu" style="text-align:center; background-color:#0E3270; border-top:4px solid #0E3270;  border-bottom:2px solid #0E3270;  padding-left:0px; padding-bottom:0px;" ><img name="lastpubblication" src="maketext.php?text=LATEST%20PUBLICATION&w=125&h=16&size=10&bgcolor=0E3270&color=FFFFFF" border="0" id="lastpubblication" alt="" style="padding-top: 0px; padding-bottom: 0px; border-bottom:6px solid #0E3270; border-top:6px solid #0E3270;" /></td>
+		  </tr>
+		 <!-- 
+		  <tr>
+		   <td style="text-align:left; padding-left:0px;"><table width="180px" style="padding-left:0px;"><tr align="center"><td width="135pX" style="text-align:center; margin-left:0px; padding-left:0px; background-color:#DDDDDD; border: solid #0000CC left;" ><a href="index.php?page=download"><img style="padding-top:3px;" name="homepage_r7_c3" src="showimg.php?cod=0&tp=copertina" height="145" border="0" id="homepage_r7_c3" alt="" /></a></td><td>&nbsp;</td></tr></table> </td>
+		  </tr>
+		 --> 
+		  <tr>
+		   <td style="text-align:center; background-color:#DDDDDD; border: 1px solid #0E3270;"><a href="index.php?page=download"><img style="padding-top:0px;" name="homepage_r7_c3" src="showimg.php?cod=0&tp=copertina" width="142" eight="145" border="0" id="homepage_r7_c3" alt="" /></a></td>
+		  </tr>
+		  <tr>
+		   <td><img name="homepage_r10_c3" src="images/homepage_r10_c3.jpg" width="138" height="10" border="0" id="homepage_r10_c3" alt="" /></td>
+		  </tr>
+
+		  <tr>
+		    <td class="titolomenu" style="text-align:center; background-color:#0E3270; border-top:4px solid #0E3270;  border-bottom:2px solid #0E3270;  padding-left:5px; padding-bottom:0px;" ><img name="lastpubblication" src="maketext.php?text=SPECIAL%20ISSUE&w=95&h=16&size=10&bgcolor=0E3270&color=FFFFFF" border="0" id="lastpubblication" alt="" style="padding-top: 0px; padding-bottom: 0px; border-bottom:6px solid #0E3270; border-top:6px solid #0E3270;" /></td>
+		  </tr>
+		  <tr>
+		   <td style="text-align:center; background-color:#DDDDDD; border: 1px solid #0E3270;"><a target="_blank" href="http://issuu.com/aips/docs/yr-special-issue"><img style="padding-top:0px;" name="homepage_r7_c3" src="images/yt_issue.jpg" width="142" border="0" id="homepage_r7_c3" alt="" /></a></td>
+		  </tr>
+		  <tr>
+		    <td class="titolomenu" style="text-align:center; background-color:#0E3270; border-top:0px solid #0E3270;  border-bottom:0px solid #0E3270;  padding-left:35px; padding-bottom:0px;" ><a href="/upload/YR-special-issue.pdf" target="_blank"><img name="lastpubblication" src="maketext.php?text=DOWNLOAD&w=95&h=10&size=8&bgcolor=0E3270&color=FFFFFF" border="0" id="lastpubblication" alt="" style="padding-top: 0px; padding-bottom: 0px; border-bottom:0px solid #0E3270; border-top:0px solid #0E3270;" /></a></td>
+		  </tr>
+		  <tr>
+		   <td><img name="homepage_r10_c3" src="images/homepage_r10_c3.jpg" width="138" height="10" border="0" id="homepage_r10_c3" alt="" /></td>
+		  </tr>
+<!--
+		  <tr>
+		   <td><img name="homepage_r14_c3" src="images/homepage_r14_c3.jpg" width="128" height="21" border="0" id="homepage_r14_c3" alt="" /></td>
+		  </tr>
+-->
+		  <tr>
+		   <td> 
+    <div id="principale">
+      <div class="titolomenu" onclick="SwitchMenu('sub1')"><img style="padding-top: 0px; padding-bottom: 0px; border-bottom:6px solid #0E3270; border-top:6px solid #0E3270; " src="maketext.php?text=AIPS%20NEWS&w=144&h=16&size=10&bgcolor=0E3270&color=FFFFFF">
+       </div>
+      <span class="menu_int_sx" id="sub1" ><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=186&sw_menu=1&sw_smenu=ncat1">Headquarters</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=2&sw_menu=1&sw_smenu=ncat2">National Associations</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=163&sw_menu=1&sw_smenu=ncat3">Continental Sections</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=169&sw_menu=1&sw_smenu=ncat4">Sports</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=180&sw_menu=1&sw_smenu=ncat5">Sport World News</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=187&sw_menu=1&sw_smenu=ncat6">Press Releases</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=326&sw_menu=1&sw_smenu=ncat7">Sport Media Pearl Awards</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=224&sw_menu=1&sw_smenu=ncat8">Beijing Olympics 2008</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=313&sw_menu=1&sw_smenu=ncat9">AIPS 90TH ANNIVERSARY CONGRESS, BAKU 2014</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=237&sw_menu=1&sw_smenu=ncat10">RIO 2016</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=242&sw_menu=1&sw_smenu=ncat11">Guangzhou Asian Games 2010</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=228&sw_menu=1&sw_smenu=ncat12">Olympic Council of Asia</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=236&sw_menu=1&sw_smenu=ncat13">International Olympic Committee</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=238&sw_menu=1&sw_smenu=ncat14">Vancouver Winter Olympics 2010</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=240&sw_menu=1&sw_smenu=ncat15">WADA</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=245&sw_menu=1&sw_smenu=ncat16">SPORTACCORD</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=246&sw_menu=1&sw_smenu=ncat17">LONDON 2012</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=247&sw_menu=1&sw_smenu=ncat18">Sochi Winter Olympics 2014</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=248&sw_menu=1&sw_smenu=ncat19">QATAR 2022</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=249&sw_menu=1&sw_smenu=ncat20">AIPS Congress Antalya 2010</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=250&sw_menu=1&sw_smenu=ncat21">2010 FIFA World Cup South Africa</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=251&sw_menu=1&sw_smenu=ncat22">Daegu World Championships in Athletics 2011</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=252&sw_menu=1&sw_smenu=ncat23">Universiade Shenzhen 2011</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=261&sw_menu=1&sw_smenu=ncat24">PyeongChang 2018</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=267&sw_menu=1&sw_smenu=ncat25">EHF</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=268&sw_menu=1&sw_smenu=ncat26">Accreditation</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=270&sw_menu=1&sw_smenu=ncat27">AIPS Congress Seoul</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=271&sw_menu=1&sw_smenu=ncat28">Universiade Shenzhen 2011</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=272&sw_menu=1&sw_smenu=ncat29">Korean Air</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=273&sw_menu=1&sw_smenu=ncat30">FIAS</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=274&sw_menu=1&sw_smenu=ncat31">YOG 2012 Innsbruck</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=278&sw_menu=1&sw_smenu=ncat32">Universiade Gwangju 2015</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=279&sw_menu=1&sw_smenu=ncat33">Professional Development</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=280&sw_menu=1&sw_smenu=ncat34">TIROL</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=282&sw_menu=1&sw_smenu=ncat35">JOB VACANCY</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=286&sw_menu=1&sw_smenu=ncat36">AIPS 75th Anniversary Congress Innsbruck</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=287&sw_menu=1&sw_smenu=ncat37">Procter & Gamble</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=289&sw_menu=1&sw_smenu=ncat38">FINA</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=290&sw_menu=1&sw_smenu=ncat39">Commonwealth Games Federation</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=291&sw_menu=1&sw_smenu=ncat40">FIG</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=292&sw_menu=1&sw_smenu=ncat41">Rio de Janeiro 2016</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=293&sw_menu=1&sw_smenu=ncat42">Brazil 2014</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=294&sw_menu=1&sw_smenu=ncat43">CISM</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=295&sw_menu=1&sw_smenu=ncat44">FIFA U-17 Women's World Cup, Azerbaijan</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=296&sw_menu=1&sw_smenu=ncat45">AIPS Congress Sochi 2013</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=299&sw_menu=1&sw_smenu=ncat46">Tokyo 2020</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=300&sw_menu=1&sw_smenu=ncat47">FIFA</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=301&sw_menu=1&sw_smenu=ncat48">United World Wrestling</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=304&sw_menu=1&sw_smenu=ncat49">COMMENT</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=306&sw_menu=1&sw_smenu=ncat50">WLA</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=309&sw_menu=1&sw_smenu=ncat51">2013 FIFA U-17 World Cup, UAE</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=312&sw_menu=1&sw_smenu=ncat52">IHF</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=314&sw_menu=1&sw_smenu=ncat53">SPECIAL OLYMPICS</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=320&sw_menu=1&sw_smenu=ncat54">AIPS 90th ANNIVERSARY</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=321&sw_menu=1&sw_smenu=ncat55">AIPS FINA YOUNG REPORTERS DOHA 2014</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=324&sw_menu=1&sw_smenu=ncat56">Baku 2015 European Games </a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=325&sw_menu=1&sw_smenu=ncat57">UEFA U21 Czech Republic</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;'  href="index.php?page=browsenewscat&cod=327&sw_menu=1&sw_smenu=ncat58">79th AIPS Congress</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' />      </span>
+      <div class="titolomenu" onclick="SwitchMenu('sub4')"><img style="background-color: 0E3270; padding-top: 0px; padding-bottom: 0px; border-bottom:6px solid #0E3270; border-top:6px solid #0E3270; " src="maketext.php?text=STRUCTURE&w=144&h=16&size=10&bgcolor=0E3270&color=FFFFFF">
+      </div>
+      <span class="menu_int_sx" id="sub4"><a class="menu_link" style='font-size:11px;' href="index.php?page=directory&cod=1&sw_menu=4&sw_smenu=9">Executive Committee</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;' href="index.php?page=directory&cod=2&sw_menu=4&sw_smenu=10">Continental Sections</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;' href="index.php?page=directory&cod=5&sw_menu=4&sw_smenu=13">National Associations</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;' href="index.php?page=directory&cod=4&sw_menu=4&sw_smenu=12">Commissions</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;' href="index.php?page=directory&cod=13&sw_menu=4&sw_smenu=14">President Board Advisor</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;' href="index.php?page=directory&cod=3&sw_menu=4&sw_smenu=11">Honorary Members</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' />      </span>
+      <div class="titolomenu" onclick="SwitchMenu('sub2')"><img style="background-color: 0E3270; padding-top: 0px; padding-bottom: 0px; border-bottom:6px solid #0E3270; border-top:6px solid #0E3270; " src="maketext.php?text=ABOUT%20AIPS&w=144&h=16&size=10&bgcolor=0E3270&color=FFFFFF">
+      </div>
+      <span class="menu_int_sx" id="sub2"> <a class="menu_link" style='font-size:11px;' href="index.php?page=pagina-history.html&sw_menu=2&sw_smenu=999">The History of Aips</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;' href="index.php?page=statutes.htm&sw_menu=2&sw_smenu=1">Statutes</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;' href="index.php?page=acopcs&sw_menu=2&sw_smenu=6">AIPS code of professional conduct standards</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;' href="index.php?page=congresses.htm&sw_menu=2&sw_smenu=2">Congresses</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;' href="index.php?page=ecmeetings.htm&sw_menu=2&sw_smenu=3">Executive Committee & Bureau Meetings</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;' href="index.php?page=specialist.htm&sw_menu=2&sw_smenu=4">AIPS Commissions Meetings</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' /><a class="menu_link" style='font-size:11px;' href="index.php?page=past.htm&sw_menu=2&sw_smenu=5">Past Officials</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' />      </span>
+      <div class="titolomenu" onclick="SwitchMenu('sub18')"><img style="background-color: 0E3270; padding-top: 0px; padding-bottom: 0px; border-bottom:6px solid #0E3270;border-top:6px solid #0E3270; " border="0" src="maketext.php?text=ACCREDITATION&w=144&h=16&size=10&bgcolor=0E3270&color=FFFFFF">
+      </div>
+      <span class="menu_int_sx" id="sub18"> <a class="menu_link" style='font-size:11px;' href="index.php?page=media&cod=102&sw_menu=18&sw_smenu=mea1">ICC World Twenty20 Sri Lanka 2012</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px' />      </span>
+
+      <div class="titolomenu"><a href="index.php?page=utilities" target="_self"><img style="background-color: 0E3270; padding-top: 0px; padding-bottom: 0px; border-bottom:6px solid #0E3270; border-top:6px solid #0E3270; " border="0" src="maketext.php?text=AIPS%20UTILITIES&w=144&h=16&size=10&bgcolor=0E3270&color=FFFFFF"></a>
+      </div>
+      <div class="titolomenu" onClick="SwitchMenu('sub9')"><img style=" background-color: 0E3270; padding-top: 0px; padding-bottom: 0px; border-bottom:6px solid #0E3270; border-top:6px solid #0E3270; " src="maketext.php?text=COMING%20EVENTS&w=144&h=16&size=10&bgcolor=0E3270&color=FFFFFF">
+      </div>
+      <span class="menu_int_sx" id="sub9"> <a class="menu_link" style='font-size:11px;'  href="index.php?page=events2&cod=11&sw_menu=9&sw_smenu=ev21">2008 - 2009 CONCACAF Champions League</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px'/><a class="menu_link" style='font-size:11px;'  href="index.php?page=events2&cod=13&sw_menu=9&sw_smenu=ev22">2009 International Sporting Events (I)</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px'/><a class="menu_link" style='font-size:11px;'  href="index.php?page=events2&cod=14&sw_menu=9&sw_smenu=ev23">2009 International Sporting Events (II)</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px'/><a class="menu_link" style='font-size:11px;'  href="index.php?page=events2&cod=15&sw_menu=9&sw_smenu=ev24">International Cricket Council 2009 Schedule</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px'/><a class="menu_link" style='font-size:11px;'  href="index.php?page=events2&cod=16&sw_menu=9&sw_smenu=ev25">FIFA Calendar 2009</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px'/><a class="menu_link" style='font-size:11px;'  href="index.php?page=events2&cod=17&sw_menu=9&sw_smenu=ev26">IOC Calendar 2009</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px'/><a class="menu_link" style='font-size:11px;'  href="index.php?page=events2&cod=18&sw_menu=9&sw_smenu=ev27">2010 International Sporting Events </a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px'/><a class="menu_link" style='font-size:11px;'  href="index.php?page=events2&cod=20&sw_menu=9&sw_smenu=ev28">2010-2014 FIS Calendar of Events</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px'/><a class="menu_link" style='font-size:11px;'  href="index.php?page=events2&cod=21&sw_menu=9&sw_smenu=ev29">2010 IHF Calendar</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px'/><a class="menu_link" style='font-size:11px;'  href="index.php?page=events2&cod=22&sw_menu=9&sw_smenu=ev210">ICF major events 2010</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px'/><a class="menu_link" style='font-size:11px;'  href="index.php?page=events2&cod=23&sw_menu=9&sw_smenu=ev211">World Sports Calendar 2011</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px'/><a class="menu_link" style='font-size:11px;'  href="index.php?page=events2&cod=24&sw_menu=9&sw_smenu=ev212">International Amateur Sambo Federation (FIAS) Calendar 2010 - 2013</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px'/><a class="menu_link" style='font-size:11px;'  href="index.php?page=events2&cod=25&sw_menu=9&sw_smenu=ev213">FIAS Sport Calendar-2015</a><hr style='font-size:2px;' width='144px' color='#CCCCCC' size='1px'/>      </span>
+    </div>
+<!--<img name="homepage_r16_c3" src="images/homepage_r16_c3.jpg" width="128" height="583" border="0" id="homepage_r16_c3" alt="" />--></td>
+		  </tr>
+<!--		  
+		  <tr>
+		   <td><br><a href="index.php?page=getcard"><img name="homepage_r33_c3" src="images/banner2_animation.gif" border="0" id="homepage_r33_c3" alt="" /></a></td>
+		  </tr>
+		  <tr>
+		  <td><img name="homepage_r42_c12" src="images/homepage_r42_c12.jpg" width="142" height="7" border="0" id="homepage_r42_c12" alt="" /></td>
+		  </tr>
+-->
+<!-- edit 24 settembre 09 -->
+<!--
+		  <tr> <td><a href="http://creative.gettyimages.com/" target="_blank"><img name="homepage_r25_c12" src="images/homepage_r25_c12.jpg" width="142" height="69" border="0" id="homepage_r25_c12" alt="" /></a></td></tr>
+		  <tr>
+		  <td><img name="homepage_r42_c12" src="images/homepage_r42_c12.jpg" width="142" height="7" border="0" id="homepage_r42_c12" alt="" /></td>
+		  </tr>
+		  <tr> <td><a href="http://www.gz2010.cn/en/" target="_blank"><img name="guanzhou" src="images/guang.jpg" width="142" height="69" border="0" id="homepage_r25_c12" alt="" /></a></td></tr>
+		  <tr>
+		  <td><img name="homepage_r42_c12" src="images/homepage_r42_c12.jpg" width="142" height="7" border="0" id="homepage_r42_c12" alt="" /></td>
+		  </tr>
+		  <tr><td><a href="http://www.mondoworldwide.com/" target="_blank"><img name="homepage_r41_c12" src="images/homepage_r41_c12.jpg" width="142" height="119" border="0" id="homepage_r41_c12" alt="" /></a></td></tr>
+		  <tr>
+		    <td><img name="homepage_r42_c12" src="images/homepage_r42_c12.jpg" width="142" height="7" border="0" id="homepage_r42_c12" alt="" /></td>
+		  </tr>
+-->
+<!-- AACC
+		  <tr><td><a href="http://www.world-lotteries.org/cms/" target="_blank"><img name="wla" src="images/wla.jpg" width="142" border="0" id="homepage_r43_c12" alt="" /></a></td></tr>
+		  <tr>
+		    <td><img name="homepage_r42_c12" src="images/homepage_r42_c12.jpg" width="142" height="7" border="0" id="homepage_r42_c12" alt="" /></td>
+		  </tr>
+AACC -->
+<!--
+		  <tr><td><a href="https://www.european-lotteries.org/home.php?splash=off" target="_blank"><img name="wla" src="images/els.jpg" width="142" border="0" id="homepage_r43_c12" alt="" /></a></td></tr>
+		  <tr>
+		    <td><img name="homepage_r42_c12" src="images/homepage_r42_c12.jpg" width="142" height="7" border="0" id="homepage_r42_c12" alt="" /></td>
+		  </tr>
+-->
+
+		  <tr><td><a href="http://www.region-du-leman.ch/en/index.cfm" target="_blank"><img name="homepage_r43_c12" src="images/vaud.jpg" width="142" height="62" border="0" id="homepage_r43_c12" alt="" /></a></td></tr>
+		  <tr>
+		    <td><img name="homepage_r42_c12" src="images/homepage_r42_c12.jpg" width="142" height="7" border="0" id="homepage_r42_c12" alt="" /></td>
+		  </tr>
+
+		  <tr><td><a href="http://www.lausanne-tourisme.ch" target="_blank"><img name="homepage_r43_c12" src="images/lausanne.jpg" width="142" height="62" border="0" id="homepage_r43_c12" alt="" /></a></td></tr>
+		  <tr>
+		    <td><img name="homepage_r42_c12" src="images/homepage_r42_c12.jpg" width="142" height="7" border="0" id="homepage_r42_c12" alt="" /></td>
+		  </tr>
+
+		  <tr><td><a href="http://www.swisstravelsystem.com" target="_blank"><img name="homepage_r43_c12" src="images/swiss.jpg" width="142" border="0" id="homepage_r43_c12" alt="" /></a></td></tr>
+		  <tr>
+		    <td><img name="homepage_r42_c12" src="images/homepage_r42_c12.jpg" width="142" height="7" border="0" id="homepage_r42_c12" alt="" /></td>
+		  </tr>
+
+<!-- DA QUI 201505 -->
+<!--
+		  <tr><td><a href="http://www.tismf.com" target="_blank"><img name="homepage_r43_c12" src="images/tismf_142x85.gif" width="142" border="0" id="homepage_r43_c12" alt="" /></a></td></tr>
+		  <tr>
+		    <td><img name="homepage_r42_c12" src="images/homepage_r42_c12.jpg" width="142" height="7" border="0" id="homepage_r42_c12" alt="" /></td>
+		  </tr>
+		  <tr><td><a href="http://www.olympicuniversity.ru/en/home" target="_blank"><img name="homepage_r43_c12" src="images/aips_142x85.gif" width="142" border="0" id="homepage_r43_c12" alt="" /></a></td></tr>
+		  <tr>
+		    <td><img name="homepage_r42_c12" src="images/homepage_r42_c12.jpg" width="142" height="7" border="0" id="homepage_r42_c12" alt="" /></td>
+		  </tr>
+-->
+		  <!--<tr><td><a href="http://www.amsterdam2012event.com/" target="_blank"><img name="homepage_r43_c12" src="images/amsterdam2012.jpg" width="142" height="62" border="0" id="amsterdam2012" alt="" /></a></td></tr>
+		  <tr>
+		    <td><img name="homepage_r42_c12" src="images/homepage_r42_c12.jpg" width="142" height="7" border="0" id="homepage_r42_c12" alt="" /></td>
+		  </tr>
+		  -->
+<!--
+		  <tr>
+		   <td><br><a href="index.php?page=getcard"><img name="homepage_r33_c3" src="images/banner2_animation.gif" border="0" id="homepage_r33_c3" alt="" /></a></td>
+		  </tr>
+		  <tr>
+		  <td><img name="homepage_r42_c12" src="images/homepage_r42_c12.jpg" width="142" height="7" border="0" id="homepage_r42_c12" alt="" /></td>
+		  </tr>
+-->
+<!--
+		  <tr><td><a href="http://www.conseagroup.com/cpost.asp" target="_blank"><img name="homepage_r43_c12" src="images/homepage_r43_c12.jpg" width="142" height="62" border="0" id="homepage_r43_c12" alt="" /></a></td></tr>
+		  <tr>
+		    <td><img name="homepage_r42_c12" src="images/homepage_r42_c12.jpg" width="142" height="7" border="0" id="homepage_r42_c12" alt="" /></td>
+		  </tr>
+		  <tr><td><a href="http://www.vlmdirect.com/" target="_blank"><img name="homepage_r45_c12" src="images/homepage_r45_c12.jpg" width="142" height="64" border="0" id="homepage_r45_c12" alt="" /></a></td></tr>
+		  <tr>
+		  <td><img name="homepage_r42_c12" src="images/homepage_r42_c12.jpg" width="142" height="7" border="0" id="homepage_r42_c12" alt="" /></td>
+		  </tr>
+		  <tr><td><a href="http://www.fhotels.ch/" target="_blank"><img name="homepage_r45_c12" src="images/fassbind.jpg" border="0" id="homepage_r45_c12" alt="" /></a></td></tr>
+		  <tr>
+		  <td><img name="homepage_r42_c12" src="images/homepage_r42_c12.jpg" width="142" height="7" border="0" id="homepage_r42_c12" alt="" /></td>
+		  </tr>
+		  <tr><td><a href="http://www.worldsportdestinationexpo.com" target="_blank"><img name="homepage_r45_c13" src="images/WorldSportDestExpo.jpg" border="0" id="homepage_r45_c13" alt="" /></a></td></tr>
+-->
+		  <tr>
+		   <td><img name="homepage_r34_c3" src="images/homepage_r34_c3.jpg" width="128" height="610" border="0" id="homepage_r34_c3" alt="" /></td>
+		  </tr>
+<!--fine edit -->
+		</table></td>
+<!--
+	   <td background="images/homepage_r6_c4.jpg" style="background-repeat: y-repeat"><img name="homepage_r6_c4" src="images/homepage_r6_c4.jpg" width="7" height="1452" border="0" id="homepage_r6_c4" alt="" /></td>
+-->
+	   <td style="border-right: 1px solid #CCCCCC"><img name="homepage_r6_c4" src="images/spacer.gif" width="5" height="1452" border="0" id="homepage_r6_c4" alt="" /></td>
+	   <td valign="top"><table align="left" border="0" cellpadding="0" cellspacing="0" width="502">
+		  <tr>
+		   <td><img name="homepage_r17_c5" src="images/homepage_r17_c5.jpg" width="502" height="1" border="0" id="homepage_r17_c5" alt="" /></td>
+		  </tr>
+		  <tr>
+                    <td valign="top">
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+<tr><td align="left" valign="top"  height="20px" width="80%" style="padding:8px; text-align:left; padding-bottom: 2px;"><div class="titoletto_sezione">79TH AIPS CONGRESS</div></td><td width="20%" style="padding-right: 8px; display: inline-table; margin-top: 10px; float: right; padding-bottom: 2px;" valign="top" ><div>
+<!-- AddThis Button BEGIN -->
+<a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=ra-534d49543603a3b0"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-534d49543603a3b0"></script>
+<!-- AddThis Button END -->
+</div>
+</td></tr><tr><td width="100%" align="left" valign="top" colspan="2" style="padding:8px; text-align:left;"> <div class="titoletto_topnews">Doha 2016: Rescuing sports journalism from extinction</div><tr><td colspan="2" height="3"></td></tr>
+<tr><td colspan="2" style="padding-left: 8px; padding-right: 8px;"><img align="top" src="showimg.php?cod=18098&tp=n&n=1&resize=3"></td></tr>
+<tr><td colspan="2" height="3"></td></tr>
+<tr><td colspan="2" class="testo_dida" style="padding-left: 8px; padding-right: 8px;">Sports journalism in pioneering times, interviewing the legendary Pele in 1968 (Photo: AIPS)</td></tr>
+<tr><td colspan="2" height="3"><img name="homepage_r17_c5" src="images/homepage_r17_c5.jpg" width="502" height="1" border="0" id="homepage_r17_c5" alt="" /></td></tr>
+<tr><td colspan="2" height="3">&nbsp;</td></tr>
+<tr><td colspan="2" align="left" style="padding-left: 8px; padding-right: 8px;"><div ><b>By Riccardo Romani, Writer, Filmaker and AIPS Mentor</b></div></td></tr>
+<tr><td colspan="2" align="left" style="padding-left: 8px; padding-right: 8px;"><div class="testo_news_interno"><font face="verdana, arial, helvetica, sans-serif" size="2">DOHA, February 7, 2016 - When I started my career at Gazzetta dello
+Sport, to be a sport journalist was considered a sort of pastime. Nobody recognized
+its importance, yet everyone would open the sport section first thing in the
+morning, to check their favourite team. To have a sport journalist around was
+like coping with your mother-in-law’s weekly visit. You complain about it while
+hiding in the kitchen tasting her fabulous Bolognese sauce.
+
+</font><p class="MsoNormal"><span lang="EN-US"><font face="verdana, arial, helvetica, sans-serif" size="2">Sure, my mother was proud of my articles
+published on a national outlet, but would ask now and again: “Have you thought
+about getting a real job?”<o:p></o:p></font></span></p>
+
+<p class="MsoNormal"><span lang="EN-US"><font face="verdana, arial, helvetica, sans-serif" size="2">Through the years, I have learned how far
+from reality that belief was. I don’t have to mention events like Jesse Owens winning
+at the Berlin’s Olympics, The Black Panther in Mexico 1968, or the tragedy at Munich
+1972 to prove that sport journalists have witnessed (and reported about) some
+of the most dramatic turns in the history of the world. There is much more than
+that.<o:p></o:p></font></span></p>
+
+<p class="MsoNormal"><span lang="EN-US"><font face="verdana, arial, helvetica, sans-serif" size="2">Let’s face it. Journalists in politics are
+part of a club of people reporting stuff nobody is really supposed to
+understand, starting with the journalists themselves. The ones working in
+finance are great on shaping the art of predicting what has already happened.
+Show business is the kind of field where the chance to be considered a good
+journalist increases along with the number of selfies you are able to take
+sitting with a celebrity at your side.<o:p></o:p></font></span></p>
+
+<p class="MsoNormal"><span lang="EN-US"><font face="verdana, arial, helvetica, sans-serif" size="2">Of course I am just kidding.<o:p></o:p></font></span></p>
+
+<p class="MsoNormal"><span lang="EN-US"><font face="verdana, arial, helvetica, sans-serif" size="2">But in these days, the truth is that in
+order to be an excellent sport journalist requires having mastered politics,
+finance and show business. What the world of sport has become in the last thirty
+years is just stunning.<o:p></o:p></font></span></p>
+
+<p class="MsoNormal"><span lang="EN-US"><font face="verdana, arial, helvetica, sans-serif" size="2">The state of things is before our eyes.
+While the level of the competition – in any discipline – has become ruthless to
+a point of no return. Profits and losses are determining the fate of millions
+of people all over the world.<o:p></o:p></font></span></p>
+
+<p class="MsoNormal"><span lang="EN-US"><font face="verdana, arial, helvetica, sans-serif" size="2">To be a good sport journalist is now not
+only a rewarding occupation but it represents – in my opinion - a great responsibility.<o:p></o:p></font></span></p>
+
+<p class="MsoNormal"><span lang="EN-US"><font face="verdana, arial, helvetica, sans-serif" size="2">Sport is marred by corruption and doping.
+Match fixing is a plague in expansion. Sport journalists in certain parts of
+the world are risking their lives as much as war correspondents are. Some other
+are willing to sugar coat the facts in exchange for a quiet living or, worse,
+for a free lunch.<o:p></o:p></font></span></p>
+
+<p class="MsoNormal"><span lang="EN-US"><font face="verdana, arial, helvetica, sans-serif" size="2">With the 79th AIPS Congress upon us, I am
+thinking about the recent COP21 climate change meeting held in Paris, a summit
+that was supposed to (finally) address the urgency of Planet Earth, before it
+was too late.<o:p></o:p></font></span></p>
+
+<p class="MsoNormal"><span lang="EN-US"><font face="verdana, arial, helvetica, sans-serif" size="2">I would like to think of Doha 2016 in the
+same terms. A gathering of professionals from all over the world determined to
+tackle an emergency. Sport journalists are becoming an endangered species. It
+is time to act before is too late. <o:p></o:p></font></span></p>
+
+<p class="MsoNormal"><span lang="EN-US"><font face="verdana, arial, helvetica, sans-serif" size="2">&nbsp;</font></span></p></div></td></tr>
+<tr><td colspan="2">&nbsp;</td></tr>
+<tr><td colspan="2">&nbsp;</td></tr>
+<tr><td colspan="2"></td></tr>
+</table>                    </td>
+                  </tr>
+<!--
+		  <tr>
+		   <td valign="top"><table border="0" cellpadding="3" cellspcing="3" width="100%">
+		   <tr><td align="left"><div class="titoletto_sezione">ATLETICA</div>
+		   <div class="titoletto_news">IAAF/VTB Bank World Athletics Press Release </div>
+		   prova test
+		   Testo testo testo
+		   testo testo testo</td><td valign="top">imgnews</td></tr></table></td>
+		  </tr>
+		  <tr>
+		   <td><img name="homepage_r17_c5" src="images/homepage_r17_c5.jpg" width="502" height="1" border="0" id="homepage_r17_c5" alt="" /></td>
+		  </tr>
+		  <tr>
+		   <td valign="top"><table border="0" cellpadding="3" cellspcing="3" width="100%">
+		   <tr><td valign="top">imgnews</td><td align="left"><div class="titoletto_sezione">ATLETICA</div>
+		   <div class="titoletto_news">IAAF/VTB Bank World Athletics Press Release </div>
+		   prova test
+		   Testo testo testo
+		   testo testo testo</td></tr></table></td>
+		  </tr>
+		  <tr>
+		   <td><img name="homepage_r22_c5" src="images/homepage_r22_c5.jpg" width="502" height="959" border="0" id="homepage_r22_c5" alt="" /></td>
+		  </tr>
+		  -->
+		</table></td>
+	   <td style="border-left: 1px solid #CCCCCC"><img name="homepage_r6_c8" src="images/spacer.gif" width="10" xheight="1452" border="0" id="homepage_r6_c8" alt="" /></td>
+<!--
+	   <td background="images/homepage_r6_c8.jpg" style="background-repeat: repeat-y"><img name="homepage_r6_c8" src="images/homepage_r6_c8.jpg" width="12" height="1452" border="0" id="homepage_r6_c8" alt="" /></td>
+-->
+	   <td valign="top"><table align="left" border="0" cellpadding="0" cellspacing="0" width="299">
+	   <!--
+		<tr>
+		  <td><a href="http://www.aipsmedia.com/fifa/fifaweb.html" target="_blank"><img src="immagini01/banner_2010_FIFA.jpg" border="0" /></a></td>
+		</tr>
+	-->
+		  <!-- <tr bgcolor="#84b737"> -->
+		<tr>
+		  <td>
+                       <table border="0" cellpadding="0" cellspacing="0" width="100%" background="images/stripe.png">
+                         <tr><td class="blue_bold" style="padding:3px; padding-top:5px; padding-bottom:5px;">Video Gallery</td><td style="text-align: right; padding: 3px; padding-top:5px; padding-bottom:5px;"><a href="https://www.youtube.com/channel/UCF9LERrY90wFopXAKSP5NhA" class="small_blue_bold" target="_blank">View all</a></td></tr>
+                       </table>
+		       </td>
+		  </tr>
+		  <tr>
+		   <td width="298" xheight="254" style="border: 1px solid #CCCCCC">
+<iframe id="ytplayer" type="text/html" width="298" height="168"
+  src="http://www.youtube.com/embed/fx2VInHFgEQ?autoplay=0&origin=http://www.aipsmedia.com"
+  frameborder="0"/></iframe>
+</td>
+		  </tr>
+		  <tr>
+		   <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		  </tr>
+		<tr>
+		 <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		</tr>
+		<tr>
+		   <td><a href="http://www.koreanair.com/" target="_blank"><img name="koreanair" src="images/korean_air.jpg" width="299" border="0" id="koreanair" alt="" /></a></td>
+		  </tr>
+		<tr>
+		 <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		</tr>
+		<tr>
+		   <td><a href="http://sports.qq.com/" target="_blank"><img name="sports.qq.com" src="images/sports_qq_com.jpg" width="299" border="0" id="koreanair" alt="" /></a></td>
+		  </tr>
+		<tr>
+		 <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		</tr>
+		<tr>
+		   <td><a href="http://www.samsung.com/global/microsite/galaxycamera/" target="_blank"><img name="Samsung" src="images/Samsung_Banner.jpg" width="299" border="0" id="Samsung" alt="" /></a></td>
+		  </tr>
+		<tr>
+		 <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		</tr>
+<!--
+		<tr>
+		 <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		</tr>
+		<tr>
+		   <td><a href="http://www.turkishairlines.com" target="_blank"><img name="istanbul" src="images/istanbul-201308.gif" width="299" border="0" id="istanbul" alt="" /></a></td>
+		  </tr>
+-->
+<!--
+		<tr>
+		   <td><a href="http://www.tokyo42195.org/2014en/" target="_blank"><img name="tokyo_marathon_2014" src="images/tokyo_marathon_2014.jpg" width="299" border="0" id="tokyo_marathon_2014" alt="tokyo_marathon_2014" /></a></td>
+		  </tr>
+		 <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		</tr>
+-->
+<!--
+		  <tr>
+		   <td><a href="http://www.aips2012.org/" target="_blank"><img name="congresso_tirol" src="images/congresso_tirol.jpg" width="299" border="0" id="congresso_tirol" alt="" /></a></td>
+		  </tr>
+		<tr>
+		 <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		</tr>
+                  <tr>
+		  	<td><a href="http://www.lining.com/EN/home/index.html" target="_blank"><img name="li-ning" src="images/li-ning2.jpg" width="299" border="0" id="li-ning" alt="" /></a></td>
+		</tr>
+-->
+		<tr>
+			<td><a href="http://www.pyeongchang2018.com" target="_blank"><img name="p&g" src="images/PyeongChang2018.jpg" width="299" border="0" id="Pyeongchang" alt="" /></a></td>
+		</tr>
+		<tr>
+			<td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		</tr>
+<!--
+		<tr>
+			<td><a href="http://www.presidentscup.co.uk" target="_blank"><img name="presidentscup" src="images/presidentcups.jpg" width="299" border="0" id="presidentscup" alt="" /></a></td>
+		</tr>
+		<tr>
+			<td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		</tr>
+                <tr>
+			<td><a href="http://www.gwangju2015.com/" target="_blank"><img name="gwangju" src="images/gwangju.jpg" width="299" border="0" id="gwangju" alt="" /></a></td>
+		</tr>
+
+		<tr>
+			<td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		</tr>
+-->
+		<tr>
+			<td><a href="http://www.pg.com/en_US/index.shtml" target="_blank"><img name="p&g" src="images/peg.jpg" width="299" border="0" id="p&g" alt="" /></a></td>
+		</tr>
+																				             <tr>
+			<td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		</tr>
+
+<!--
+		<tr>
+		  <td>
+                       <table border="0" cellpadding="0" cellspacing="0" width="100%" background="images/stripe.png">
+                         <tr><td class="blue_bold" style="padding:3px; padding-top:5px; padding-bottom:5px;">Video Gallery</td><td style="text-align: right; padding: 3px; padding-top:5px; padding-bottom:5px;"><a href="https://www.youtube.com/channel/UCF9LERrY90wFopXAKSP5NhA" class="small_blue_bold" target="_blank">View all</a></td></tr>
+                       </table>
+		       </td>
+		  </tr>
+		  <tr>
+		   <td width="298" xheight="254" style="border: 1px solid #CCCCCC">
+<iframe id="ytplayer" type="text/html" width="298" height="168"
+  src="http://www.youtube.com/embed/fx2VInHFgEQ?autoplay=0&origin=http://www.aipsmedia.com"
+  frameborder="0"/></iframe>
+</td>
+		  </tr>
+		  <tr>
+		   <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		  </tr>
+-->
+		  <!--
+		  <tr>
+		   <td>
+	 	    <a href="http://www.sz2011.org/"></a>
+	            <script language="javascript">
+			AC_FL_RunContent(
+				'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0', 
+				'width', '299', 
+				'height', '72', 
+				'src', 'banner_shenzhen', 
+				'quality', 'high', 
+				'pluginspage', 'http://www.macromedia.com/go/getflashplayer', 
+				'align', 'middle', 
+				'play', 'true', 
+				'loop', 'true', 
+				'scale', 'showall', 
+				'wmode', 'window', 
+				'devicefont', 'false', 
+				'id', 'banner_shenzhen', 
+				'bgcolor', '#ffffff', 
+				'name', 'banner_shenzhen', 
+				'menu', 'true', 
+				'allowFullScreen', 'false', 
+				'allowScriptAccess','sameDomain', 
+				'movie', 'banner_shenzhen', 
+				'salign', ''
+			); //end AC code 
+		    </script>
+		    <noscript>
+			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="299" height="72" id="banner_shenzhen" align="middle">
+			<param name="allowScriptAccess" value="sameDomain" />
+			<param name="allowFullScreen" value="false" />
+			<param name="movie" value="immagini/banner_shenzhen.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" /> <embed src="immagini/banner_shenzhen.swf" quality="high" bgcolor="#ffffff" width="299" height="72" name="banner_shenzhen" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+			</object>
+		    </noscript>
+		    </td>
+		  </tr>
+		-->
+
+<!--
+		  <tr>
+		   <td><a href="http://www.pyeongchang2018.org/" target="_blank"><img name="pyeongchang2018" src="images/web_Pyeong.jpg" width="299" border="0" id="honav" alt="" /></a></td>
+		  </tr>
+		  <tr>
+		   <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		  </tr>
+		  <tr>
+		   <td><a href="http://www.daegu2011.org/" target="_blank"><img name="daegu2010" src="images/daegu2010.jpg" width="299" border="0" id="honav" alt="" /></a></td>
+		  </tr>
+
+		  <tr>
+		   <td><a href="http://www.lining.com/EN/home/index.html" target="_blank"><img name="li-ning" src="images/li-ning2.jpg" width="299" border="0" id="li-ning" alt="" /></a></td>
+		  </tr>
+
+		  <tr>
+		   <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		  </tr>
+
+		  <tr>
+		   <td><a href="http://pg.isebox.net/thank-you-mom/media-center/" target="_blank"><img name="p&g" src="images/peg.jpg" width="299" border="0" id="p&g" alt="" /></a></td>
+		  </tr>
+
+		  <tr>
+		   <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		  </tr>
+
+		  <tr>
+		   <td><a href="http://www.gwangju2015.com/" target="_blank"><img name="gwangju" src="images/gwangju.jpg" width="299" border="0" id="gwangju" alt="" /></a></td>
+		  </tr>
+		  <tr>
+		   <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		  </tr>
+
+		  <tr>
+		   <td><a href="http://www.beijing2015wch.com/" target="_blank"><img name="beijing2015" src="images/B2015_OnlineBanner.jpg" width="299" border="0" id="honav" alt="" /></a></td>
+		  </tr>
+-->
+
+<!--
+		  <tr>
+		   <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		  </tr>
+		  <tr>
+		   <td><a href="http://www.qatar2022bid.com/" target="_blank"><img name="qatar2022" src="images/qatar2022.jpg" width="299" border="0" id="honav" alt="" /></a></td>
+		  </tr>
+-->
+
+		  <tr>
+		   <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		  </tr>
+		  <tr>
+		   <td><a href="http://www.laureus.com/" target="_blank"><img name="laureus" src="images/laureus.jpg" width="299" border="0" id="laureus" alt="laureus" /></a></td>
+		  </tr>
+		  <tr>
+		   <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		  </tr>
+		  <tr>
+		   <td><a href="http://www.specialolympics.org" target="_blank"><img name="specialolympics" src="images/specialolympics.jpg" width="299" border="0" id="olympics" alt="specialolympics" /></a></td>
+		  </tr>
+		  <tr>
+		   <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		  </tr>
+<!--
+		  <tr>
+		   <td><a href="http://www.world-lotteries.org/cms/" target="_blank"><img name="wla" src="images/wla_dx.jpg" width="299" border="0" id="world-lotteries" alt="world-lotteries" /></a></td></tr>
+		  </tr>
+
+		  <tr>
+		   <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		  </tr>
+-->
+		  <tr>
+		   <td><a href="http://www.honav.com/en/index.aspx" target="_blank"><img name="honav" src="images/honav.jpg" width="299" border="0" id="honav" alt="honav" /></a></td>
+		  </tr>
+
+<!--
+		  <tr>
+		   <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		  </tr>
+		  <tr>
+		   <td><a href="http://sports.163.com/" target="_blank"><img name="sports163" src="images/sports163.jpg" width="299" border="0" id="sports163" alt="sports163" /></a></td>
+		  </tr>
+
+		  <tr>
+		   <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		  </tr>
+		  <tr>
+		   <td><a href="http://www.theesto.com/" target="_blank"><img name="theesto" src="images/ESTO.jpg" width="299" border="0" id="theeso" alt="theeso" /></a></td>
+		  </tr>
+-->
+		  <tr>
+		   <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		  </tr>
+<!--
+		  <tr>
+		   <td><a href="http://sport.tirol.at/en/" target="_blank"><img name="tirol" src="images/tirol.jpg" width="299" border="0" id="tirol" alt="tirol" /></a></td>
+		  </tr>
+
+		  <tr>
+		   <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		  </tr>
+-->
+		  <tr>
+		   <td><a href="http://www.aipsarabic.com/" target="_blank"><img name="aips_arabic" src="images/aips_arabic.jpg" width="299" border="0" id="aips_arabic" alt="aips_arabic" /></a></td>
+		  </tr>
+
+<!--
+		  <tr>
+		   <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		  </tr>
+		  <tr>
+		   <td><a href="https://secure.trustive.com/?promocode=trr3298" target="_blank"><img name="trustive" src="images/trustive.jpg" width="299" border="0" id="honav" alt="" /></a></td>
+		  </tr>
+		  <tr>
+		   <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		  </tr>
+
+		  <tr>
+		   <td><a href="http://www.aspire4sport.com" target="_blank"><img name="trustive" src="immagini01/Aspire4Sport-logo.jpg" width="299" border="0" id="apsire4sport" alt="" /></a></td>
+		  </tr>
+-->
+		  <tr>
+		   <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		  </tr>
+<!--
+		  <tr>
+		    <td><a href="http://www.aipsmedia.com/fifa/fifaweb.html" target="_blank"><img src="immagini01/banner_2010_FIFA.jpg" border="0" /></a></td>
+		  </tr>
+		  <tr>
+		   <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		  </tr>
+-->
+
+		  <tr>
+		   <td><table border="0" cellpadding="0" cellspacing="0" width="100%" background="images/stripe.png">
+                         <tr><td class="blue_bold" style="padding:3px; padding-top:5px; padding-bottom:5px;">Continental Sections</td><td style="text-align: right; padding: 3px; padding-top:5px; padding-bottom:5px;">&nbsp;</td></tr>
+                       </table></td>
+		  </tr>
+		  <tr><td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+			<!-- <tr> <td height="6" colspan="3"></td> </tr> -->
+
+		<!--<tr><td colspan="3"><table border="0" cellpadding="0" cellspacing="0" width="100%">	-->
+			<tr><td width="300" style="border: 1px solid #CCCCCC;"><a href="index.php?page=directory&cod=2&cont=ASIA&sw_menu=4&sw_smenu=10" target="_blank" alt="aips asia"><img src="immagini01/aips_aspu.jpg" border="0" alt="aips asia"></a></td></tr>
+			<tr> <td height="6"></td> </tr>
+			<tr><td width="300" style="border: 1px solid #CCCCCC;"><a href="index.php?page=directory&cod=2&cont=AMERICA&sw_menu=4&sw_smenu=10" target="_blank" alt="aips america"><img src="immagini01/aips_fepeda.jpg" border="0" alt="aips america"></a></td></tr>
+			<tr> <td height="6"></td> </tr>
+			<tr><td width="300" style="border: 1px solid #CCCCCC;"><a href="index.php?page=directory&cod=2&cont=EUROPE&sw_menu=4&sw_smenu=10" target="_blank" alt="aips europe"><img src="immagini01/aips_ueps.jpg" border="0" alt="aips europe"></a></td></tr>
+			<tr> <td height="6"></td> </tr>
+			<tr><td width="300" style="border: 1px solid #CCCCCC;"><a href="index.php?page=directory&cod=2&cont=AFRICA&sw_menu=4&sw_smenu=10" target="_blank" alt="aips asia"><img src="immagini01/aips_ujsa.jpg" border="0"></a></td></tr>
+		<!--</table></td></tr>-->
+<!--
+		   	<tr><td width="17" background="immagini01/fondosfum.jpg" style="padding:3px; padding-top:5px; padding-bottom:5px; border-bottom: 1px solid #CCCCCC; border-top: 1px solid #CCCCCC; border-left: 1px solid #CCCCCC;">&nbsp;</td>
+			  <td width="193" background="immagini01/fondosfum.jpg" style="border-top: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC;"><span><a href="index.php?page=directory&cod=2&cont=ASIA&sw_menu=4&sw_smenu=10" style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; color: #0066CC;" target="_blank">ASPU</a></span><br />
+			  <span style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;">Asian Sports Press Union</span></td>
+			  <td width="130" height="45" style="border-top: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC; border-right: 1px solid #CCCCCC;"><div align="right"><img src="immagini01/aspu.jpg" width="130" border="0" /></div></td>
+			</tr>
+
+			<tr> <td height="6" colspan="3"></td> </tr>
+
+		   	<tr><td width="17" background="immagini01/fondosfum.jpg" style="padding:3px; padding-top:5px; padding-bottom:5px;  border-bottom: 1px solid #CCCCCC; border-top: 1px solid #CCCCCC; border-left: 1px solid #CCCCCC;">&nbsp;</td>
+			  <td width="193" background="immagini01/fondosfum.jpg" style="border-top: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC;"><span><a href="index.php?page=directory&cod=2&cont=AMERICA&sw_menu=4&sw_smenu=10" style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; color: #0066CC;" target="_blank">FEPEDA</a></span><br />
+			  <span style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;">Federacion De Periodistas Deportivos De America</span></td>
+			  <td width="130" height="45" style="border-top: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC; border-right: 1px solid #CCCCCC;"><div align="right"><img src="immagini01/fepeda.jpg" width="130" border="0" /></div></td>
+			</tr>
+
+			<tr> <td height="6" colspan="3"></td> </tr>
+
+		   	<tr><td width="17" background="immagini01/fondosfum.jpg" style="padding:3px; padding-top:5px; padding-bottom:5px; border-bottom: 1px solid #CCCCCC; border-top: 1px solid #CCCCCC; border-left: 1px solid #CCCCCC;">&nbsp;</td>
+			  <td width="193" background="immagini01/fondosfum.jpg" style="border-top: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC;"><span><a href="index.php?page=directory&cod=2&cont=EUROPE&sw_menu=4&sw_smenu=10" style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; color: #0066CC;" target="_blank">UEPS</a></span><br />
+			  <span style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;">Union Europeenne De La Presse Sportive</span></td>
+			  <td width="130" height="45" style="border-top: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC; border-right: 1px solid #CCCCCC;"><div align="right"><img src="immagini01/ueps.jpg" width="130" border="0" /></div></td>
+			</tr>
+
+			<tr> <td height="6" colspan="3"></td> </tr>
+
+		   	<tr><td width="17" background="immagini01/fondosfum.jpg" style="padding:3px; padding-top:5px; padding-bottom:5px; border-bottom: 1px solid #CCCCCC; border-top: 1px solid #CCCCCC; border-left: 1px solid #CCCCCC;">&nbsp;</td>
+			  <td width="193" background="immagini01/fondosfum.jpg" style="border-top: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC;"><span><a href="index.php?page=directory&cod=2&cont=AFRICA&sw_menu=4&sw_smenu=10" style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; color: #0066CC;" target="_blank">UJSA</a></span><br />
+			  <span style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;">Union Des Journalistes Sportif Africains</span></td>
+			  <td width="130" height="45" style="border-top: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC; border-right: 1px solid #CCCCCC;"><div align="right"><img src="immagini01/ujsa.jpg" width="130" border="0" /></div></td>
+			</tr>
+-->
+			
+	 	</table></td>
+
+		  <tr>
+		   <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		  </tr>
+		  <tr>
+		   <td><table border="0" cellpadding="0" cellspacing="0" width="100%" background="images/stripe.png">
+                         <tr><td class="blue_bold" style="padding:3px; padding-top:5px; padding-bottom:5px;">Flash Sport World News</td><td style="text-align: right; padding: 3px; padding-top:5px; padding-bottom:5px;"><a href="index.php?page=archrss" class="small_blue_bold">View all</a></td></tr>
+                       </table></td>
+		  </tr>
+		  <tr>
+		   <td width="298" height="74" style="border: 1px solid #CCCCCC"><div id="marqueecontainer" style="position: relative; overflow: hidden; width: 298px; height: 70px;" onMouseover="copyspeed=pausespeed" onMouseout="copyspeed=marqueespeed"><div id="vmarquee" style="position: absolute;"><table border="0"><tr><td><b><a style="color: #000000" href="http://www.bbc.co.uk/sport/0/football/35590767" target="_blank">Ronaldo walks out of news conference</a></b><br><div class="small_blue"><i>17/2/16 12:25 - BBC Sport</i></div></td></tr>
+<tr><td><b><a style="color: #000000" href="http://www.mirror.co.uk/sport/other-sports/mma/conor-mcgregor-quit-against-rafael-7383996" target="_blank">Conor McGregor will QUIT against Rafael dos Anjos, says Brazilian's coach Rafael Cordeiro</a></b><br><div class="small_blue"><i>17/2/16 12:15 - Daily Mirror</i></div></td></tr>
+<tr><td><b><a style="color: #000000" href="http://feedproxy.google.com/~r/TheAustralianSportsNews/~3/hQqUSh6Cl_Y/story-fn63e0vj-1227751344841" target="_blank">Victory cop big fine over flares</a></b><br><div class="small_blue"><i>17/2/16 12:08 - The Australian</i></div></td></tr>
+<tr><td><b><a style="color: #000000" href="http://rss.bild.de/c/32310/f/645639/s/4da2ecdc/sc/3/l/0L0Sbild0Bde0Csport0Cfussball0Ccristiano0Eronaldo0Cbricht0Epressekonferenz0Eab0E445897820Bbild0Bhtml/story01.htm" target="_blank">Wegen Barca-Fragen - Ronaldo bricht Pressekonferenz ab</a></b><br><div class="small_blue"><i>17/2/16 12:08 - Bild </i></div></td></tr>
+<tr><td><b><a style="color: #000000" href="http://www.torontosun.com/2016/02/16/anatomy-of-a-master-trader-wheeler-dealer-cliff-fletcher" target="_blank">Anatomy of a master trader: Wheeler-dealer Cliff Fletcher</a></b><br><div class="small_blue"><i>17/2/16 12:03 - Toronto Sun</i></div></td></tr>
+<tr><td><b><a style="color: #000000" href="http://rssfeeds.usatoday.com/~/138359665/0/usatodaycomsports-topstories~Kobe-presented-with-hilarious-retirement-gifts/" target="_blank">Kobe presented with hilarious retirement gifts</a></b><br><div class="small_blue"><i>17/2/16 12:03 - USA Today</i></div></td></tr>
+<tr><td><b><a style="color: #000000" href="http://www.mirror.co.uk/sport/football/transfer-news/pep-guardiola-banned-signing-bayern-7384014" target="_blank">Pep Guardiola banned from signing Bayern stars at Man City? Transfer news and gossip from Wednesday's papers</a></b><br><div class="small_blue"><i>17/2/16 12:03 - Daily Mirror</i></div></td></tr>
+<tr><td><b><a style="color: #000000" href="http://www.mirror.co.uk/sport/football/news/chelsea-boss-guus-hiddink-remains-7384007" target="_blank">Chelsea boss Guus Hiddink remains defiant after PSG defeat: &#034;It's 50-50 still - we are in the race&#034;</a></b><br><div class="small_blue"><i>17/2/16 12:02 - Daily Mirror</i></div></td></tr>
+<tr><td><b><a style="color: #000000" href="http://rss.bild.de/c/32310/f/645639/s/4da2d1c4/sc/12/l/0L0Sbild0Bde0Csport0Cfussball0Cholger0Ebadstuber0Cist0Ekein0Epechvogel0E445867440Bbild0Bhtml/story01.htm" target="_blank">Verletzter Bayern-Star - Badstuber: ,,Ich bin kein Pechvogel!"</a></b><br><div class="small_blue"><i>17/2/16 12:00 - Bild </i></div></td></tr>
+<tr><td><b><a style="color: #000000" href="http://rss.bild.de/c/32310/f/645639/s/4da2d1c1/sc/3/l/0L0Sbild0Bde0Cbild0Eplus0Csport0Cfussball0Cborussia0Edortmund0Cplant0Eschon0Emit0Edem0Eguendogan0Eersatz0E445848960Bbild0Bhtml/story01.htm" target="_blank">*** BILDplus Inhalt *** Nationalspieler bald weg? - Dortmund plant schon mit dem Gündogan-Ersatz</a></b><br><div class="small_blue"><i>17/2/16 12:00 - Bild </i></div></td></tr>
+<tr><td><b><a style="color: #000000" href="http://rss.bild.de/c/32310/f/645639/s/4da2d1c2/sc/3/l/0L0Sbild0Bde0Csport0Cfussball0Cheinz0Emueller0Cplatzt0Edas0Evertragssystem0Eder0Ebundesliga0E445849140Bbild0Bhtml/story01.htm" target="_blank">Dieser Richter entscheidet - Platzt heute das Vertragssystem der Bundesliga?</a></b><br><div class="small_blue"><i>17/2/16 12:00 - Bild </i></div></td></tr>
+<tr><td><b><a style="color: #000000" href="http://rss.bild.de/c/32310/f/645639/s/4da2d1c3/sc/13/l/0L0Sbild0Bde0Csport0Cfussball0Ckingsley0Ecoman0Csorgt0Efuer0Eklamotten0Ewirbel0E44584890A0Bbild0Bhtml/story01.htm" target="_blank">Coman & Boateng - Klamotten-Wirbel bei den Bayern</a></b><br><div class="small_blue"><i>17/2/16 12:00 - Bild </i></div></td></tr>
+<tr><td><b><a style="color: #000000" href="http://rss.bild.de/c/32310/f/645639/s/4da2d1bf/sc/3/l/0L0Sbild0Bde0Csport0Cfussball0Cweltmeister0Cweltmeister0Ewarum0Etut0Eihr0Eeuch0Edas0Ean0E445849240Bbild0Bhtml/story01.htm" target="_blank">Auge 7. Liga, Häßler 8. Liga - Weltmeister, warum tut Ihr Euch das an?</a></b><br><div class="small_blue"><i>17/2/16 12:00 - Bild </i></div></td></tr>
+<tr><td><b><a style="color: #000000" href="http://rss.bild.de/c/32310/f/645639/s/4da2d1c0/sc/3/l/0L0Sbild0Bde0Csport0Cfussball0Cmarcel0Ehalstenberg0Csagt0Esorry0Ezu0Erangnick0E445849980Bbild0Bhtml/story01.htm" target="_blank">Sorglos-Selfie - Halstenberg sagt SORRY zu Rangnick</a></b><br><div class="small_blue"><i>17/2/16 12:00 - Bild </i></div></td></tr>
+<tr><td><b><a style="color: #000000" href="http://rss.bild.de/c/32310/f/645639/s/4da2d1be/sc/12/l/0L0Sbild0Bde0Csport0Cfussball0Cemir0Espahic0Cbekommt0Eer0Enoch0Eein0Ejahr0Ebeim0Ehsv0E445851240Bbild0Bhtml/story01.htm" target="_blank">Emir Spahic - Noch ein Jahr HSV?</a></b><br><div class="small_blue"><i>17/2/16 12:00 - Bild </i></div></td></tr>
+<tr><td><b><a style="color: #000000" href="http://rss.bild.de/c/32310/f/645639/s/4da2d1bd/sc/17/l/0L0Sbild0Bde0Csport0Cmehr0Esport0Cschwalbmartin0Cich0Earbeite0Etag0Eund0Enacht0Efuer0Eden0Eneuen0Ehsv0E445850A660Bbild0Bhtml/story01.htm" target="_blank">Martin SCHWALB - ,,Ich arbeite Tag und Nacht für den neuen HSV"</a></b><br><div class="small_blue"><i>17/2/16 12:00 - Bild </i></div></td></tr>
+<tr><td><b><a style="color: #000000" href="http://rss.bild.de/c/32310/f/645639/s/4da2d1bc/sc/21/l/0L0Sbild0Bde0Csport0Cfussball0Cjosep0Eguardiola0Cschuster0Eist0Eein0Ekaempfer0E44585230A0Bbild0Bhtml/story01.htm" target="_blank">Bayerns Pep Guardiola - Schuster ist ein Kämpfer</a></b><br><div class="small_blue"><i>17/2/16 12:00 - Bild </i></div></td></tr>
+<tr><td><b><a style="color: #000000" href="http://rss.bild.de/c/32310/f/645639/s/4da2d1bb/sc/17/l/0L0Sbild0Bde0Csport0Cfussball0C10Efc0Ekoeln0Cweisse0Eidioten0Ebleiben0Ebeim0Ederby0Edraussen0E445853420Bbild0Bhtml/story01.htm" target="_blank">Neuer Boykott - Weiße Idioten bleiben beim Derby draußen</a></b><br><div class="small_blue"><i>17/2/16 12:00 - Bild </i></div></td></tr>
+<tr><td><b><a style="color: #000000" href="http://rss.bild.de/c/32310/f/645639/s/4da2d1ba/sc/17/l/0L0Sbild0Bde0Csport0Cfussball0Ckarim0Ehaggui0Cmacht0Egerne0Edie0Edrecksarbeit0E44584990A0Bbild0Bhtml/story01.htm" target="_blank">Fortuna-Kapitän Haggui - ,,Ich mache gerne die Drecksarbeit"</a></b><br><div class="small_blue"><i>17/2/16 12:00 - Bild </i></div></td></tr>
+<tr><td><b><a style="color: #000000" href="http://rss.bild.de/c/32310/f/645639/s/4da2d1b7/sc/17/l/0L0Sbild0Bde0Csport0Cfussball0Cvfl0Ewolfsburg0Clieber0Edritter0Etorwart0Eals0Ebendtner0E445847620Bbild0Bhtml/story01.htm" target="_blank">Gent - Wolfsburg - Hecking: Lieber dritter Torwart als Bendtner</a></b><br><div class="small_blue"><i>17/2/16 12:00 - Bild </i></div></td></tr>
+</table></div></div></td>
+		  </tr>
+		  <tr>
+		   <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		  </tr>
+<!--
+                       <table border="0" cellpadding="0" cellspacing="0" width="100%" background="images/stripe.png">
+                         <tr><td class="blue_bold" style="padding:3px; padding-top:5px; padding-bottom:5px;">Video Gallery</td><td style="text-align: right; padding: 3px; padding-top:5px; padding-bottom:5px;"><a href="javascript:showpopupvideo('');" class="small_blue_bold">View all</a></td></tr>
+                       </table>
+-->
+<!--
+		  <tr>
+		   <td><img name="homepage_r15_c9" src="images/homepage_r15_c9.jpg" width="299" height="254" border="0" id="homepage_r15_c9" alt="" /></td>
+		  </tr>
+		  <tr>
+		   <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		  </tr>
+-->
+		  <tr>
+		   <td width="299" height="23" valign="top">
+                   <table height="100%" width="100%" style="border: 1px solid #CCCCCC;" border="0" cellpadding="0" cellspacing="0">
+                    <tr><td width="20%" style="text-align: center; border-right: 1px solid #CCCCCC"><a href="#" onClick="updBox('edi'); return false" class="small_blue_bold">Editorial</a></td><td width="20%" style="text-align: center; border-right: 1px solid #CCCCCC"><a href="#" onClick="updBox('foc'); return false" class="small_blue_bold">Focus</a></td><td width="20%" style="text-align: center; border-right: 1px solid #CCCCCC"><a href="#" onClick="updBox('int'); return false" class="small_blue_bold">Interview</a></td><td width="20%" style="text-align: center; border-right: 1px solid #CCCCCC"><a href="#" onClick="updBox('prf'); return false" class="small_blue_bold">Profiles</a></td><td width="20%" style="text-align: center;"><a href="#" onClick="updBox('tio'); return false" class="small_blue_bold">Timeout</a></td></tr>
+                   </table>
+                   </td>
+		  </tr>
+<!--
+		  <tr>
+		   <td><img name="homepage_r8_c9" src="images/homepage_r8_c9.jpg" width="299" height="152" border="0" id="homepage_r8_c9" alt="" /></td>
+		  </tr>
+-->
+                  <tr>
+                    <td width="299" height="102" valign="top">
+                       <table border="0" cellpadding="0" cellspacing="0" width="100%" background="images/stripe.png">
+                         <tr><td class="blue_bold" style="padding:3px; padding-top:5px; padding-bottom:5px;" id="titolo_box">Focus</td><td style="text-align: right; padding: 3px; padding-top:5px; padding-bottom:5px;"></td></tr>
+		  <tr>
+		   <td valign="top" width="299" height="104" background="images/stripe.png" style="padding-left: 6px; padding-bottom: 6px;">
+                     <table bgcolor="#FFFFFF" width="287" height="100%">
+                     <tr><td id="img_box" valign="top"><a href="index.php?page=focus&cod=89"><img border="0" align="top" src="showimg.php?cod=89&tp=f&resize=7"></a></td><td valign="top" id="testo_box"><div class="small_blue_bold">The Ethics 'Iron Lady' of the Olympics</div><div class="small_grey"></div><br><a href="index.php?page=focus&cod=89">Read more</a></td></tr>
+                     </table>
+                   </td>
+		  </tr>
+                       </table>
+                    </td>
+                  </tr>
+		  <tr>
+		   <td><img name="homepage_r9_c9" src="images/homepage_r9_c9.jpg" width="299" height="7" border="0" id="homepage_r9_c9" alt="" /></td>
+		  </tr>
+<!--
+		  <tr>
+		   <td><img name="homepage_r6_c9" src="images/homepage_r6_c9.jpg" width="299" height="23" border="0" id="homepage_r6_c9" alt="" /></td>
+		  </tr>
+		  <tr>
+		   <td><img name="homepage_r8_c9" src="images/homepage_r8_c9.jpg" width="299" height="152" border="0" id="homepage_r8_c9" alt="" /></td>
+		  </tr>
+		  <tr>
+		   <td><img name="homepage_r9_c9" src="images/homepage_r9_c9.jpg" width="299" height="7" border="0" id="homepage_r9_c9" alt="" /></td>
+		  </tr>
+-->
+<!--
+-->
+		  <tr>
+		   <td><img name="homepage_r19_c9" src="images/homepage_r19_c9.jpg" width="299" height="9" border="0" id="homepage_r19_c9" alt="" /></td>
+		  </tr>
+		  <tr>
+		   <td><img name="homepage_r20_c9" src="images/homepage_r20_c9.jpg" width="299" height="10" border="0" id="homepage_r20_c9" alt="" /></td>
+		  </tr>
+		  <tr>
+		   <td><table align="left" border="0" cellpadding="0" cellspacing="0" width="299">
+			  <tr>
+			   <td valign="top">
+<!-- unite 2 colonne 4 novembre 2009 -->
+<table width="294" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <!-- <td colspan="3"><img src="immagini/PARTNERSHIP_03.jpg" width="294" height="29" /></td> -->
+     <td colspan="3"><table border="0" cellpadding="0" cellspacing="0" width="100%" background="images/stripe.png">
+       		<tr><td class="blue_bold" style="padding:3px; padding-top:5px; padding-bottom:5px;">AIPS Partners</td><td style="text-align: right; padding: 3px; padding-top:5px; padding-bottom:5px;">&nbsp;</td></tr>
+	</table></td> 
+    <!--<td colspan="2" class="blue_bold" style="padding:3px; padding-top:5px; padding-bottom:5px;">AIPS Partners</td><td style="text-align: right; padding: 3px; padding-top:5px; padding-bottom:5px;">&nbsp;</td>--> 
+  </tr>
+  <!--
+  <tr>
+    <td height="6" colspan="3"></td>
+  </tr>
+  <tr>
+    <td height="72" bgcolor="#F2F1E9"></td>
+    <td height="72" bgcolor="#F2F1E9"><span class="XStile6"><a href="http://www.gz2010.cn/en/" class="Xa" target="_blank">GUANGZHOU 2010</a></span><br />
+      <span class="XStile1">The 16th Asian Games</span></td>
+    <td width="84" height="72" bgcolor="#F2F1E9"><div align="right"><img src="immagini/PARTNERSHIP_31.jpg" width="83" height="72" border="0" usemap="#Map12" /></div></td>
+  </tr>
+  -->
+  <tr>
+    <td height="6" colspan="3"></td>
+  </tr>
+  <tr>
+    <td width="17" height="72" bgcolor="#F2F1E9">&nbsp;</td>
+    <td width="193" height="72" bgcolor="#F2F1E9"><span class="XStile6"><a href="http://www.olympic.org/" class="Xa" target="_blank">IOC</a></span><br />
+    <span class="XStile1">International Olympic Committe</span></td>
+    <td width="84" height="72" bgcolor="#F2F1E9"><div align="right"><img src="immagini/PARTNERSHIP_07.jpg" width="83" height="72" border="0" usemap="#Map" /></div></td>
+  </tr>
+  
+  <tr>
+    <td height="6" colspan="3"></td>
+  </tr>
+  <tr>
+    <td width="17" height="72" bgcolor="#F2F1E9">&nbsp;</td>
+    <td height="72" valign="middle" bgcolor="#F2F1E9"><span class="XStile6"><a href="http://www.fifa.com/" class="Xa" target="_blank">FIFA</a></span><br />
+      <span class="XStile1">Fédération Internationale de Football Association </span></td>
+    <td height="72" bgcolor="#F2F1E9"><div align="right"><img src="immagini/PARTNERSHIP_10.jpg" width="83" height="71" border="0" usemap="#Map2" /></div></td>
+  </tr>
+<!--
+  <tr>
+    <td height="6" colspan="3"></td>
+  </tr>
+  <tr>
+    <td width="17" height="72" bgcolor="#F2F1E9">&nbsp;</td>
+    <td height="72" valign="middle" bgcolor="#F2F1E9"><span class="XStile6"><a href="http://www.thecgf.com/" class="Xa" target="_blank">CGF</a></span><br />
+      <span class="XStile1">Commonwealth Games Federation </span></td>
+    <td height="72" bgcolor="#F2F1E9"><div align="right"><img src="immagini/PARTNERSHIP_10b.jpg" width="83" height="71" border="0" usemap="#Map15" /></div></td>
+  </tr>
+ --> 
+  <tr>
+    <td height="6" colspan="3"></td>
+  </tr>
+  <tr>
+    <td width="17" height="72" bgcolor="#F2F1E9">&nbsp;</td>
+    <td height="72" valign="middle" bgcolor="#F2F1E9"><span class="XStile6"><a href="http://www.iaaf.org/" class="Xa" target="_blank">IAAF</a></span><br />
+      <span class="XStile1">International Association of Athletics Federations</span></td>
+    <td height="72" bgcolor="#F2F1E9"><div align="right"><img src="immagini/PARTNERSHIP_13.jpg" width="83" height="71" border="0" usemap="#Map3" /></div></td>
+  </tr>
+  
+  <tr>
+    <td height="6" colspan="3"></td>
+  </tr>
+  <tr>
+    <td width="17" height="72" bgcolor="#F2F1E9">&nbsp;</td>
+    <td height="72" valign="middle" bgcolor="#F2F1E9"><span class="XStile6"><a href="http://www.fina.org/" class="Xa" target="_blank">FINA</a></span><br />
+      <span class="XStile1">Federation Internationale de Natation</span></td>
+    <td height="72" bgcolor="#F2F1E9"><div align="right"><img src="immagini/fina.jpg" width="83" height="71" border="0" usemap="#Map16" /></div></td>
+  </tr>
+  
+  <tr>
+    <td height="6" colspan="3"></td>
+  </tr>
+  <tr>
+    <td width="17" height="72" bgcolor="#F2F1E9">&nbsp;</td>
+    <td height="72" valign="middle" bgcolor="#F2F1E9"><span class="XStile6"><a href="http://www.fiba.com/" class="Xa" target="_blank">FIBA</a></span><br />
+      <span class="XStile1">International Basketball Federation</span></td>
+    <td height="72" bgcolor="#F2F1E9"><div align="right"><img src="immagini/PARTNERSHIP_15.jpg" width="83" height="72" border="0" usemap="#Map4" /></div></td>
+  </tr>
+  <tr>
+    <td height="6" colspan="3"></td>
+  </tr>
+<!--
+  <tr>
+    <td width="17" bgcolor="#F2F1E9">&nbsp;</td>
+    <td valign="middle" bgcolor="#F2F1E9"><span class="XStile6"><a href="http://www.fivb.org/" class="Xa" target="_blank">FIVB</a></span><br />
+    <span class="XStile1">Fédération Internationale de Volleyball </span></td>
+    <td bgcolor="#F2F1E9"><div align="right"><img src="immagini/PARTNERSHIP_17.jpg" width="83" height="72" border="0" usemap="#Map5" /></div></td>
+  </tr>
+  <tr>
+    <td height="6" colspan="3"></td>
+  </tr>
+-->
+  <tr>
+    <td width="17" bgcolor="#F2F1E9">&nbsp;</td>
+    <td valign="middle" bgcolor="#F2F1E9"><span class="XStile6"><a href="http://www.fis-ski.com/" class="Xa" target="_blank">FIS</a></span><br />
+    <span class="XStile1">International Ski Federation </span></td>
+    <td bgcolor="#F2F1E9"><div align="right"><img src="immagini/PARTNERSHIP_19.jpg" width="83" height="72" border="0" usemap="#Map7" /></div></td>
+  </tr>
+  <tr>
+    <td height="6" colspan="3"></td>
+  </tr>
+  <tr>
+    <td width="17" bgcolor="#F2F1E9">&nbsp;</td>
+    <td valign="middle" bgcolor="#F2F1E9"><span class="XStile6"><a href="http://www.fig-gymnastics.com/" class="Xa" target="_blank">FIG</a></span><br />
+      <span class="XStile1">Fédération Internationale de Gymnastique</span></td>
+    <td bgcolor="#F2F1E9"><div align="right"><img src="immagini/PARTNERSHIP_21.jpg" width="83" height="72" border="0" usemap="#Map6" /></div></td>
+  </tr>
+  <tr>
+    <td height="6" colspan="3"></td>
+  </tr>
+  <tr>
+    <td width="17" bgcolor="#F2F1E9">&nbsp;</td>
+    <td valign="middle" bgcolor="#F2F1E9"><span class="XStile6"><a href="http://www.fisu.net/en/Accueil-950.html" class="Xa" target="_blank">FISU</a></span><br />
+      <span class="XStile1">Federation Internationale du Sport Universitaire</span></td>
+    <td bgcolor="#F2F1E9"><div align="right"><img src="immagini/PARTNERSHIP_23.jpg" width="83" height="72" border="0" usemap="#Map8" /></div></td>
+  </tr>
+  <tr>
+    <td height="6" colspan="3"></td>
+  </tr>
+<!-- INIZIO -->
+  <tr>
+    <td width="17" bgcolor="#F2F1E9">&nbsp;</td>
+    <td valign="middle" bgcolor="#F2F1E9"><span class="XStile6"><a href="http://sambo-fias.org/" class="Xa" target="_blank">FIAS</a></span><br />
+      <span class="XStile1">Federation International Amateur de Sambo</span></td>
+    <td bgcolor="#F2F1E9"><div align="right"><img src="immagini/PARTNERSHIP_26.jpg" width="83" height="72" border="0" usemap="#Map14" /></div></td>
+  </tr>
+  <tr>
+    <td height="6" colspan="3"></td>
+  </tr>
+<!-- FINE -->
+
+
+  <tr>
+    <td width="17" bgcolor="#F2F1E9">&nbsp;</td>
+    <td valign="middle" bgcolor="#F2F1E9"><span class="XStile6"><a href="http://unitedworldwrestling.org/" class="Xa" target="_blank">UWW</a></span><br />
+      <span class="XStile1">United World Wrestling</span></td>
+    <td bgcolor="#F2F1E9"><div align="right"><img src="immagini/uww.jpg" width="83" height="72" border="0" usemap="#Map18" /></div></td>
+  </tr>
+  <tr>
+    <td height="6" colspan="3"></td>
+  </tr>
+
+  <tr>
+    <td width="17" bgcolor="#F2F1E9">&nbsp;</td>
+    <td valign="middle" bgcolor="#F2F1E9"><span class="XStile6"><a href="http://www.ihf.info/Home/tabid/40/Default.aspx" class="Xa" target="_blank">IHF</a></span><br />
+      <span class="XStile1">International Handball Federation</span></td>
+    <td bgcolor="#F2F1E9"><div align="right"><img src="immagini/PARTNERSHIP_25.jpg" width="83" height="72" border="0" usemap="#Map9" /></div></td>
+  </tr>
+  <tr>
+    <td height="6" colspan="3"></td>
+  </tr>
+
+  <tr>
+    <td bgcolor="#F2F1E9">&nbsp;</td>
+    <td valign="middle" bgcolor="#F2F1E9"><span class="XStile6"><a href="http://www.eurohandball.com/" class="Xa" target="_blank">EHF</a></span><br />
+      <span class="XStile1">European Handball Federation</span></td>
+    <td bgcolor="#F2F1E9"><div align="right"><img src="immagini/PARTNERSHIP_EHF.jpg" width="83" height="72" border="0" usemap="#Map13" /></div></td>
+  </tr>
+  <tr>
+    <td height="6" colspan="3"></td>
+  </tr>
+<!--
+  <tr>
+    <td bgcolor="#F2F1E9">&nbsp;</td>
+    <td valign="middle" bgcolor="#F2F1E9"><span class="XStile6"><a href="http://www.iihf.com/" class="Xa" target="_blank">IIHF</a></span><br />
+      <span class="XStile1">International Ice Hockey Federation</span></td>
+    <td bgcolor="#F2F1E9"><div align="right"><img src="immagini/PARTNERSHIP_27.jpg" width="83" height="72" border="0" usemap="#Map10" /></div></td>
+  </tr>
+  <tr>
+    <td height="6" colspan="3"></td>
+  </tr>
+ -->
+<!--
+  <tr>
+    <td bgcolor="#F2F1E9">&nbsp;</td>
+    <td valign="middle" bgcolor="#F2F1E9"><span class="XStile6"><a href="http://www.canoeicf.com/" class="Xa" target="_blank">ICF</a></span><br />
+      <span class="XStile1">International Canoe <br />
+      Federation</span></td>
+    <td bgcolor="#F2F1E9"><div align="right"><img src="immagini/PARTNERSHIP_29.jpg" width="83" height="72" border="0" usemap="#Map11" /></div></td>
+  </tr>
+-->
+  <tr>
+    <td height="6" colspan="3"></td>
+  </tr>
+<!--
+  <tr>
+    <td bgcolor="#F2F1E9">&nbsp;</td>
+    <td valign="middle" bgcolor="#F2F1E9"><span class="XStile6"><a href="http://www.cism-milsport.org/eng/001_HOME/001_homepage.asp" class="Xa" target="_blank">CISM</a></span><br />
+      <span class="XStile1">Conseil International du Sport<br />
+      Militaire</span></td>
+    <td bgcolor="#F2F1E9"><div align="right"><img src="immagini/PARTNERSHIP_CISM.jpg" width="83" height="72" border="0" usemap="#Map17" /></div></td>
+  </tr>
+  <tr>
+    <td height="6" colspan="3"></td>
+  </tr>
+
+
+  <tr>
+    <td bgcolor="#F2F1E9">&nbsp;</td>
+    <td valign="middle" bgcolor="#F2F1E9"><span class="XStile6"><a href="http://www.sportaccordconvention.com/homepage/0,,www+sportaccordconvention+com,00.html?utm_source=AIPS&utm_medium=Banner&utm_term=SportAccord2010&utm_content=SA10v1&utm_campaign=SportAccord2010" class="Xa" target="_blank">SPORTACCORD 2010</a></span><br />
+      <span class="XStile1">SportAccord Convention 2010<br />
+      in Dubai</span></td>
+    <td bgcolor="#F2F1E9"><div align="right"><a href="http://www.sportaccordconvention.com/homepage/0,,www+sportaccordconvention+com,00.html?utm_source=AIPS&utm_medium=Banner&utm_term=SportAccord2010&utm_content=SA10v1&utm_campaign=SportAccord2010" class="Xa" target="_blank"><img src="immagini/sportaccord.jpg" width="83" height="72" border="0" /></a></div></td>
+  </tr>
+  <tr>
+    <td height="6" colspan="3"></td>
+  </tr>
+  -->
+
+
+
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+<map name="Map" id="Map">
+  <area shape="rect" coords="6,7,111,96" href="http://www.olympic.org/" target="_blank" />
+</map>
+<map name="Map2" id="Map2"><area shape="rect" coords="8,7,111,95" href="http://www.fifa.com/" target="_blank" />
+</map>
+<map name="Map3" id="Map3"><area shape="rect" coords="7,7,113,97" href="http://www.iaaf.org/" target="_blank" />
+</map>
+<map name="Map4" id="Map4"><area shape="rect" coords="8,8,114,95" href="http://www.fiba.com/" target="_blank" />
+</map>
+<map name="Map5" id="Map5"><area shape="rect" coords="12,11,114,95" href="http://www.fivb.org/" target="_blank" />
+</map>
+<map name="Map6" id="Map6"><area shape="rect" coords="9,7,111,96" href="http://www.fig-gymnastics.com/" target="_blank" />
+</map>
+<map name="Map7" id="Map7"><area shape="rect" coords="8,6,112,97" href="http://www.fis-ski.com/" target="_blank" />
+</map>
+<map name="Map8" id="Map8"><area shape="rect" coords="8,6,112,98" href="http://www.fisu.net/en/Accueil-950.html" target="_blank" />
+</map>
+<map name="Map9" id="Map9"><area shape="rect" coords="9,7,112,97" href="http://www.ihf.info/front_content.php?idcat=57" target="_blank" />
+</map>
+<!--
+<map name="Map10" id="Map10"><area shape="rect" coords="6,5,115,97" href="http://www.iihf.com/" target="_blank" />
+</map>
+-->
+<map name="Map11" id="Map11"><area shape="rect" coords="6,5,116,96" href="http://www.canoeicf.com/" target="_blank" />
+</map>
+<map name="Map12" id="Map12">
+  <area shape="rect" coords="9,6,108,96" href="http://www.gz2010.cn/en/" target="_blank" />
+</map>
+<map name="Map13" id="Map13"><area shape="rect" coords="6,5,115,97" href="http://www.eurohandball.com/" target="_blank" />
+</map>
+<map name="Map14" id="Map14"><area shape="rect" coords="8,6,112,98" href="http://sambo-fias.org/" target="_blank" />
+</map>
+<map name="Map15" id="Map15"><area shape="rect" coords="7,7,113,97" href="http://www.thecgf.com/" target="_blank" />
+</map>
+<map name="Map16" id="Map16"><area shape="rect" coords="7,7,113,97" href="http://www.fina.org/" target="_blank" />
+</map>
+<!--
+<map name="Map17" id="Map17"><area shape="rect" coords="7,7,113,97" href="http://www.cism-milsport.org/eng/001_HOME/001_homepage.asp" target="_blank" />
+</map>
+-->
+<map name="Map18" id="Map18"><area shape="rect" coords="7,7,113,97" href="http://www.fila-official.com/" target="_blank" />
+</map>
+<!--
+			   <td valign="top"><table align="left" border="0" cellpadding="0" cellspacing="0" width="142">
+				  <tr>
+				   <td><img name="homepage_r21_c9" src="images/homepage_r21_c12.jpg" width="142" height="29" border="0" id="homepage_r21_c9" alt="" /></td>
+				  </tr>
+				  <tr>
+				      <td><a href="http://www.olympic.org" target="_blank"><img name="homepage_r36_c12" src="images/IOC.jpg" width="142" border="0" id="homepage_r36_c12" alt="" /></a></td>
+				  </tr>
+				  <tr>
+				   <td><img name="homepage_r30_c12" src="images/homepage_r30_c12.jpg" width="142" height="4" border="0" id="homepage_r30_c12" alt="" /></td>
+				  </tr>
+				  <tr>
+                                   <td><a href="http://www.iaaf.org" target="_blank"><img name="homepage_r36_c12" src="images/IAAF.jpg" width="142" border="0" id="homepage_r36_c12" alt="" /></a></td>
+				  </tr>
+				  <tr>
+				      <td><img name="homepage_r30_c12" src="images/homepage_r30_c12.jpg" width="142" height="4" border="0" id="homepage_r30_c12" alt="" /></td>
+				  </tr>
+				  <tr>
+				      <td><a href="http://www.fivb.org" target="_blank"><img name="homepage_r36_c12" src="images/FIVB.jpg" width="142" border="0" id="homepage_r36_c12" alt="" /></a></td>
+				  </tr>
+				  <tr>
+				      <td><img name="homepage_r30_c12" src="images/homepage_r30_c12.jpg" width="142" height="4" border="0" id="homepage_r30_c12" alt="" /></td>
+				  </tr>
+
+                                  <tr>
+                                   <td><a href="http://www.fisu.net" target="_blank"><img name="homepage_r36_c12" src="images/FISU.jpg" width="142" border="0" id="homepage_r36_c12" alt="" /></a></td>
+                                  </tr>
+
+                                  <tr>
+                                   <td><img name="homepage_r30_c12" src="images/homepage_r30_c12.jpg" width="142" height="4" border="0" id="homepage_r30_c12" alt="" /></td>
+                                  </tr>
+                                  <tr>
+                                   <td><a href="http://www.fis-ski.com" target="_blank"><img name="homepage_r36_c12" src="images/FIS.jpg" width="142" border="0" id="homepage_r36_c12" alt="" /></a></td>
+                                  </tr>
+                                  <tr>
+                                   <td><img name="homepage_r30_c12" src="images/homepage_r30_c12.jpg" width="142" height="4" border="0" id="homepage_r30_c12" alt="" /></td>
+                                  </tr>
+                                  <tr>
+				      <td><a href="http://www.iihf.com" target="_blank"><img name="homepage_r36_c12" src="images/IIHFGOOD.jpg" width="142" border="0" id="homepage_r36_c12" alt="" /></a></td>
+                                  </tr>
+
+                                  <tr>
+                                   <td><img name="homepage_r30_c12" src="images/homepage_r30_c12.jpg" width="142" height="4" border="0" id="homepage_r30_c12" alt="" /></td>
+                                  </tr>
+<!-!-
+				<tr>
+                                   <td><a href="http://www.canoeicf.com" target="_blank"><img name="homepage_r36_c12" src="images/ICFlogo-blue.jpg" width="142" border="0" id="homepage_r36_c12" alt="" /></a></td>
+                                  </tr>
+
+                                  <tr>
+                                   <td><img name="homepage_r30_c12" src="images/homepage_r30_c12.jpg" width="142" height="4" border="0" id="homepage_r30_c12" alt="" /></td>
+                                  </tr>
+-!->
+				  <tr>
+				   <td><img name="homepage_r43_c9" src="images/homepage_r43_c9.jpg" width="142" height="282" border="0" id="homepage_r43_c9" alt="" /></td>
+				  </tr>
+				</table></td>
+
+			   <td style="spacing-right: 3px; border-left: 1px solid #CCCCCC;"><img name="homepage_r21_c11" src="images/spacer.gif" width="5" border="0" id="homepage_r21_c11" alt="" /></td>
+<!-!-
+			   <td><img name="homepage_r21_c11" src="images/homepage_r21_c11.jpg" width="15" height="971" border="0" id="homepage_r21_c11" alt="" /></td>
+-!->
+			   <td valign="top"><table align="left" border="0" cellpadding="0" cellspacing="0" width="142">
+				  <tr>
+				   <td><img name="homepage_r21_c12" src="images/homepage_r21_c12.jpg" width="142" height="29" border="0" id="homepage_r21_c12" alt="" /></td>
+				  </tr>
+                                  <tr><td><a href="http://www.fifa.com" target="_blank"><img name="homepage_r36_c12" src="images/fifa.jpg" width="142" border="0" id="homepage_r36_c12" alt="" /></a></td></tr>
+				  <tr>
+				      <td><img name="homepage_r44_c12" src="images/homepage_r44_c12.jpg" width="142" height="7" border="0" id="homepage_r44_c12" alt="" /></td>
+				  </tr>
+                                  <tr><td><a href="http://www.fiba.com" target="_blank"><img name="homepage_r36_c12" src="images/fiba.jpg" width="142" border="0" id="homepage_r36_c12" alt="" /></a></td></tr>
+				  <tr>
+				      <td><img name="homepage_r44_c12" src="images/homepage_r44_c12.jpg" width="142" height="7" border="0" id="homepage_r44_c12" alt="" /></td>
+				  </tr>
+				  <tr><td><a href="http://www.fig-gymnastics.com" target="_blank"><img name="homepage_r36_c12" src="images/fig_BASE.jpg" width="142" border="0" id="homepage_r36_c12" alt="" /></a></td></tr>
+				  <tr>
+				      <td><img name="homepage_r44_c12" src="images/homepage_r44_c12.jpg" width="142" height="7" border="0" id="homepage_r44_c12" alt="" /></td>
+				  </tr>
+				   <tr><td><a href="http://www.ihf.info/front_content.php?idcat=57" target="_blank"><img name="homepage_r45_c13" src="images/ihf.jpg" border="0" id="homepage_r45_c13" alt="" /></a></td></tr>
+				  <tr>
+				      <td><img name="homepage_r44_c12" src="images/homepage_r44_c12.jpg" width="142" height="7" border="0" id="homepage_r44_c12" alt="" /></td>
+				  </tr>
+				  <tr>
+				      <td><a href="http://www.canoeicf.com/" target="_blank"><img name="homepage_r36_c12" src="images/ICFlogo-blue.jpg" width="142" border="0" id="homepage_r36_c12" alt="" /></a></td>
+				  </tr>
+                                  <tr>
+				      <td><img name="homepage_r44_c12" src="images/homepage_r44_c12.jpg" width="142" height="7" border="0" id="homepage_r44_c12" alt="" /></td>
+				  </tr>
+<!-!- 
+				  <tr>
+				      <td><a href="http://www.iihf.com" target="_blank"><img name="homepage_r36_c12" src="images/IIHFGOOD.jpg" width="142" border="0" id="homepage_r36_c12" alt="" /></a></td>
+				  </tr>
+                                  <tr>
+				      <td><img name="homepage_r44_c12" src="images/homepage_r44_c12.jpg" width="142" height="7" border="0" id="homepage_r44_c12" alt="" /></td>
+				  </tr>
+				  <tr>
+                                      <td><a href="http://www.fivb.org" target="_blank"><img name="homepage_r36_c12" src="images/FIVB.jpg" width="142" border="0" id="homepage_r36_c12" alt="" /></a></td>
+				  </tr>
+
+				  <tr>
+				   <td><img name="homepage_r46_c12" src="images/homepage_r46_c12.jpg" width="142" height="149" border="0" id="homepage_r46_c12" alt="" /></td>
+				  </tr>
+-!->
+				</table></td>
+-->
+<!-- fine edit 4 novembre 2009 -->
+			    </td>
+			  </tr>
+			</table></td>
+		  </tr>
+		</table></td>
+	   <td><img name="homepage_r6_c13" src="images/spacer.gif" width="3" height="1452" border="0" id="homepage_r6_c13" alt="" /></td>
+	  </tr>
+	</table></td>
+  </tr>
+  <tr>
+   <td style="padding-left:10px; padding-right:10px"><table align="left" border="0" cellpadding="0" cellspacing="0" width="960">
+   <tr><td style="font-size:9px; border-top: 1px solid #dddddd; padding:10px;"><strong>Copyright 2008 AIPS MEDIA</strong>&nbsp;|&nbsp;<a href="index.php?page=privacy.htm">Privacy Policy</a></td><td style="font-size:9px; border-top: 1px solid #dddddd; padding:10px; text-align: right;">Web Design: <a href="http://www.studiocolore.it" target="_blank">Studio Colore</a></td></tr>
+   <!--
+	  <tr>
+	   <td style="border-top: 1px solid #eeeeee" width="397" height="35"><img name="homepage_r47_c1" src="images/homepage_r47_c1.jpg" width="397" height="35" border="0" id="homepage_r47_c1" alt="" /></td>
+	   <td><a href="http://www.studiocolore.it/" target="_blank"><img name="homepage_r47_c6" src="images/homepage_r47_c6.jpg" width="583" height="35" border="0" id="homepage_r47_c6" alt="" /></a></td>
+	  </tr>
+	</table>--></td>
+  </tr>
+</table>
+</div>
+<script language="javascript">
+</script>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-223540-7";
+urchinTracker();
+</script>
+</body>
+</html>

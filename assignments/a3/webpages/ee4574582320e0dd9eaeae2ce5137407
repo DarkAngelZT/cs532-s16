@@ -1,0 +1,164 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+    <title>Do you know where this city is located? - MapGame, Geography Quiz, Google Maps based Game</title>
+    <link href='/static/css/reset.css' rel='stylesheet' type='text/css'>
+    <link href='/static/css/base.css'  rel='stylesheet' type='text/css'>
+    <meta name="google-site-verification" content="g4ugTmOPCOdT3qOb8uWEv9ywtWJAulJ_hkTb5i3RA2U" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+    <meta name="keywords"    content="MapGame, Geography Quiz, Google Maps, Game" />
+    <meta name="description" content="MapGame is a Google Maps based geography quiz with locations from all over the world." /> 
+    
+    <base href="http://www.map-game.com/" /><!--[if lte IE 6]></base><![endif]--> 
+
+    <link rel="shortcut icon" type="image/x-icon" href="/static/img/mapgame.ico" />
+    <link rel="publisher" href="https://plus.google.com/115210523431402479867" />
+
+    <!--[if IE 6]>
+    <style>
+    body {behavior: url("/static/css/csshover3.htc");}
+    #menu li .drop {background:url("/static/img/drop.gif") no-repeat right 8px; 
+    </style>
+    <![endif]-->
+
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=en&libraries=adsense"></script>
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js">{lang: 'de'}</script/>
+    <script type="text/javascript" src="/static/js/jquery-min.js"></script>
+        <link href='/static/css/menu.css' rel='stylesheet' type='text/css'>
+        
+
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <script type="text/javascript">
+    window.cookieconsent_options = {"message":"This website uses cookies for game play tracking and to provide information about the way the users visit this site to the administrator.","dismiss":"Got it!","learnMore":"More info","link":null,"theme":"dark-top"};
+    </script>
+
+    <script type="text/javascript" src="//s3.amazonaws.com/cc.silktide.com/cookieconsent.latest.min.js"></script>
+    <!-- End Cookie Consent plugin -->
+
+</head>
+<body>
+<div id="greenback"></div>
+<div id="globalcontent">
+<a href="/"><img src="/static/img/mapgame-logo.png" style="position:absolute;"/></a>
+<div style="position:relative;right:0px;top:10px;width:60px;float:right;">
+<g:plusone size="medium"></g:plusone>
+</div>
+<!--<img src="/static/img/beta-badge.png" style="position:absolute; right: 10px; top: 10px;"/>-->
+
+<div id="header">
+<ul id="menu">
+    <li><a href="#" class="drop">Locations</a>
+        <div class="dropdown_3columns">
+                <p>Choose from one of these locations:
+                <a class="location" href="/montreal" title="The geography quiz about Montreal - find it on the map!">Montreal</a>, 
+                <a class="location" href="/dubai" title="The geography quiz about Dubai - find it on the map!">Dubai</a>, 
+                <a class="location" href="/thies" title="The geography quiz about Thies - find it on the map!">Thies</a>, 
+                <a class="location" href="/bainbridge" title="The geography quiz about Bainbridge - find it on the map!">Bainbridge</a>, 
+                <a class="location" href="/greenwich" title="The geography quiz about Greenwich - find it on the map!">Greenwich</a>, 
+                <a href="/random-location" class="location">a random location</a> or <a href="/all-locations" class="location">browse all locations</a>.
+        </p>
+                        <p style="border-top: 1px solid #5F710B;padding-top:5px;">
+        One location is not enough? Then try all cities from the topic <a href="/topic/capitals-of-europe" class="location">Capitals in Europe worth visiting</a> or choose
+        any other topic from our <a href="/all-topics" class="location">list of geo-related theme games</a>.
+        </p>
+                </div>
+    </li>
+    <li><a href="/help" class="drop">Help</a>
+        <div class="dropdown_3columns">
+        <p>Learn how to play this game. Although it should be self-explanatory sometimes it may help
+        to get the whole story.</p>
+                <p><a href="/help">Read the complete game description</a></p>
+        </div>
+    </li>
+    <li><a href="/statistics" class="drop">Show statistics</a>
+        <div class="dropdown_2columns">
+        <p>
+                Did you improve? Check your results from this game session and compare them to other players' scores.</p>
+        <p><a href="/statistics">The complete statistics</a></p>
+                </div>
+    </li>
+    <li><a href="/top-ten" class="drop">Top Ten</a>
+        <div class="dropdown_2columns">
+        <p>
+        How do you compare to other players? Here you can see the scores from the ten best players so far.</p>
+        <p><a href="/top-ten">The 10 best players</a></p>
+        </div>
+    </li>
+    <li><a href="/about" class="drop">About</a>
+        <div class="dropdown_1column">
+        <p>Let's say some words about this website, the intention of this quiz and take a 
+        look behind the scenes.
+                </p>
+        <p><a href="/about">About the game and the author</a></p>
+        </div>
+    </li>
+</ul></div>
+
+<div id="maincontent">
+
+<div id="leftcolumn">
+<div id="twitter_status">
+<a href="/signin/redirect"><img class="grey-shadow" src="/static/img/signinwithtwitter.png" width="151" height="24" alt="Sign in with Twitter" /></a>
+</div>
+<div id="ga2">
+<script type="text/javascript"><!--
+google_ad_client = "pub-0441427098663822";
+google_ad_slot = "6429884060";
+google_ad_width = 120;
+google_ad_height = 240;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+
+</div>
+
+<div id="stage">
+<h1>Travel around the world just playing this game!</h1>
+<p>
+There are so many locations in the world you may want to visit. Capitols, big cities, small towns. Do you know, where they are located?
+</p>
+<div id="adsense_start2" style="float: right; margin-right: 100px;">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0441427098663822";
+google_ad_slot = "4438314508";
+google_ad_width = 125;
+google_ad_height = 125;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<div id="start_button" class="grey-shadow rounded" style="min-height:125px"><a href="/thies" title="Find Thies on the map!">Start the game<br />with Thies</a></div>
+<p style="padding-top:20px"><a href="/signin/redirect"><strong>Sign in using your Twitter account</strong></a> to save your game results for longer than this session. Only logged in users can see their <strong>Map Game Score</strong> and can see their <strong>hot-or-not spots on a map</strong>! It's <strong>free</strong> and takes only one click! You don't have to tell us your password, because we are using OAuth.</p>
+<h2>Find locations on a blind map!</h2>
+<p>A blind map is a map without borders, city names, roads and trains. Just pure nature: mountains, coasts, great plains, forrests or just deserts. <strong>Can you find a given location on such a blind map?</strong></p>
+<p>Do you know whether a city like <a href="/thies" title="Find Thies on the map!">Thies</a> is located on a coast or in the mountains? Rather in the north or on the west coast? In Europe or Africa? All these questions
+lead to this geography game - find a location on a blind map only by name and some sightseeing highlights!</p>
+<h2>Are you better than the other players?</h2>
+<p>Check our statistics to see, which locations were found by others better than by you. Or maybe you set the record for a single location?</p>
+</div>
+</div>
+
+<div style="margin-left: 180px;margin-bottom:20px;">
+<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FThe-Map-Game%2F131926896842486&amp;width=700&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=false&amp;height=162" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:700px; height:162px;" allowTransparency="true"></iframe>
+</div>
+<div class="addthis_toolbox addthis_default_style" style="margin-left: 180px" >
+<a class="addthis_button_tweet"></a>
+<a class="addthis_counter addthis_pill_style"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4ceeaf4c5cfd809b"></script>
+</div>
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://www.kartenquiz.de/piwik/" : "http://www.kartenquiz.de/piwik/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {var piwikTracker=Piwik.getTracker(pkBaseURL+"piwik.php",3);piwikTracker.trackPageView();piwikTracker.enableLinkTracking();}catch(err){}
+</script><noscript><p><img src="http://www.kartenquiz.de/piwik/piwik.php?idsite=3" style="border:0" alt="" /></p></noscript> 
+</body>
+</html>

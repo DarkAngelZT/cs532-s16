@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta property="og:image" content="
+			/Themes/GalaxyBlue/images/logo.png"/><meta property="og:image:secure_url" content="/Themes/GalaxyBlue/images/logo.png"/><meta property="og:image:type" content="image/png"/><meta property="og:image:width" content="200"/><meta property="og:image:height" content="200"/><link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="https://samsung.tizenforum.com/Themes/TizenBlue/css/theme.css?fin20" />
+	<link rel="stylesheet" type="text/css" href="https://samsung.tizenforum.com/Themes/default/css/index.css" />
+	<link rel="stylesheet" type="text/css" href="https://samsung.tizenforum.com/Themes/default/css/bootstrap.css?fin20" />
+	<link rel="stylesheet" type="text/css" href="https://samsung.tizenforum.com/Themes/default/css/font-awesome.css?fin20" />
+	<link rel="stylesheet" type="text/css" href="https://samsung.tizenforum.com/Themes/default/css/index.css?fin20" />
+	<script type="text/javascript" src="https://samsung.tizenforum.com/Themes/default/scripts/jquery-2.1.3.js"></script>
+	<script type="text/javascript" src="https://samsung.tizenforum.com/Themes/default/scripts/themeScript.js?fin20"></script>
+	<script type="text/javascript" src="https://samsung.tizenforum.com/Themes/default/scripts/global.js"></script>
+	<script type="text/javascript" src="https://samsung.tizenforum.com/Themes/default/scripts/bootstrap.min.js?fin20"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("input[type=button]").attr("class", "btn btn-default btn-sm");
+		$(".button_submit").attr("class", "btn btn-danger btn-sm");
+		$("#advanced_search input[type='text'], #search_term_input input[type='text']").removeAttr("size"); 
+		$(".table_grid").addClass("table table-striped");
+		$("img[alt='Unread'], img.new_posts").replaceWith("<span class='label label-warning'>Unread</span>");
+		$("#profile_success").removeAttr("id").removeClass("windowbg").addClass("alert alert-success"); 
+		$("#profile_error").removeAttr("id").removeClass("windowbg").addClass("alert alert-danger"); 
+	});
+	</script>
+
+	<script type="text/javascript" src="https://samsung.tizenforum.com/Themes/default/scripts/script.js?fin20"></script>
+	<script type="text/javascript" src="https://samsung.tizenforum.com/Themes/default/scripts/jssor.js?fin20"></script>
+	<script type="text/javascript" src="https://samsung.tizenforum.com/Themes/default/scripts/jssor.slider.js?fin20"></script>
+	<script type="text/javascript" src="https://samsung.tizenforum.com/Themes/default/scripts/theme.js?fin20"></script>
+	<script type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "https://samsung.tizenforum.com/Themes/TizenBlue";
+		var smf_default_theme_url = "https://samsung.tizenforum.com/Themes/default";
+		var smf_images_url = "https://samsung.tizenforum.com/Themes/TizenBlue/images";
+		var smf_scripturl = "https://samsung.tizenforum.com/index.php?PHPSESSID=ig5e649671rj0lvl5k39pk7mb5&amp;";
+		var smf_iso_case_folding = false;
+		var smf_charset = "UTF-8";
+		var ajax_notification_text = "Loading...";
+		var ajax_notification_cancel_text = "Cancel";
+	// ]]></script>
+	<style type="text/css">
+	@media (min-width: 768px) 
+	{
+		.container {
+			width: 75%;
+		}
+	}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="Login" />
+	<meta name="keywords" content="Samsung , Z3, Samsung Z3, Smartphone, Tizen,Samsung Z1, Samsung smartphone, Linux, Open Source, Linux Mobile, New mobile OS, OS, Operating System , App development, HTML5 " />
+	<title>Login</title>
+	<meta name="robots" content="noindex" />
+	<link rel="help" href="https://samsung.tizenforum.com/index.php?PHPSESSID=ig5e649671rj0lvl5k39pk7mb5&amp;action=help" />
+	<link rel="search" href="https://samsung.tizenforum.com/index.php?PHPSESSID=ig5e649671rj0lvl5k39pk7mb5&amp;action=search" />
+	<link rel="contents" href="https://samsung.tizenforum.com/index.php?PHPSESSID=ig5e649671rj0lvl5k39pk7mb5&amp;" />
+	<link rel="alternate" type="application/rss+xml" title="Tizen Community - RSS" href="https://samsung.tizenforum.com/index.php?PHPSESSID=ig5e649671rj0lvl5k39pk7mb5&amp;type=rss;action=.xml" />
+<!-- OneAll.com / Social Login for SMF //-->
+<script type="text/javascript" src="//tizenforumhelp.api.oneall.com/socialize/library.js"></script><link rel="stylesheet" type="text/css" href="https://samsung.tizenforum.com/Themes/default/css/LikePosts.css" />
+		    <script type="text/javascript">
+
+	            function streamPublish(name, description, hrefTitle, hrefLink, userPrompt){
+                    FB.ui(
+                    {
+                        method: 'stream.publish',
+                        message: '',
+                            attachment: {
+                                name: name,
+                                caption: '',
+
+
+                                description: (description),
+                                href: hrefLink,
+						        media:[
+								{
+									'type': 'image', 'src': 'https://samsung.tizenforum.com/Themes/default/images/tizen_thumbnail_200x200.png', 'href': hrefLink
+								}
+								]
+                            },
+                        action_links:[
+                        {
+			                text: hrefTitle,
+				            href: hrefLink
+			            }
+                        ],
+                           user_prompt_message: userPrompt
+                        },
+                        function(response) {});
+                    }
+	                function publishStream(suject,body,href){
+                        streamPublish("" + suject + "","" + body + "", "" + suject + "", "" + href + "");
+                    }
+
+                </script>
+			    <style type="text/css">
+				    li.fbpub_button  {
+	                   display: inline;
+	                   font-weight: bold;
+	                   background: url(https://samsung.tizenforum.com/Themes/TizenBlue/images/facebook.png) no-repeat 0 0;
+	                   padding-left: 18px;
+                    }
+			        #forumposts h3 span#facebook
+                    {
+	                    float: right;
+	                    margin: 6px 0.5em 0 0;
+                    }
+			        ul.quickbuttons li.fbpub_button
+                    {
+	                    background: url(https://samsung.tizenforum.com/Themes/TizenBlue/images/facebook.png) no-repeat 0 0;
+                    }
+		        </style>
+	<script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-64034963-1', 'samsung.tizenforum.com');
+		ga('send', 'pageview');
+	</script>
+</head>
+<body style="padding-top: 50px;">
+<div id="wrapper">
+	<nav  class="navbar navbar-default forumheader navbar-fixed-top">
+		<div class="container" style=" ">
+			<a class="forum-header-samsung-logo" href="http://www.samsung.com" target="_blank"><img style="float: left;margin-left: -5px;margin-top: 5px;margin-right: 20px;" src="https://samsung.tizenforum.com/Themes/default/images/Samsung.png"   alt="" /></a>
+			<div class="navbar-header" style="width:300px">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a style="text-decoration: none;" href="https://samsung.tizenforum.com/index.php?PHPSESSID=ig5e649671rj0lvl5k39pk7mb5&amp;"><div class="forumtitle hidden-xs"><img class="forum-header-logo" src="https://samsung.tizenforum.com/Themes/TizenBlue/images/logo.png"/><span class="forum-header-title">TIZEN COMMUNITY</span></div></a>
+										
+			</div>
+			
+			<div class="collapse navbar-collapse">
+				
+				    <div id="nav">
+				        <ul style="list-style-type:none">
+					        <li id="login" style="background-color: #eee;">
+						        <a id="login-trigger" href="#" style="color:#000">Login<span>&#x25BC;</span></a>
+						        <div id="login-content" style="right:250px; top:41px;color:#000"><hr/>
+				<p style="text-align:left;">
+					<strong>Login with your social network</strong>
+				</p>
+			<p style="text-align:left;">
+				<div class="oneall_social_login_providers" id="oneall_social_login_providers_8952378" style="height: 70px; overflow:hidden;"></div>
+				<script type="text/javascript">
+					oneall.api.plugins.social_login.build("oneall_social_login_providers_8952378", {
+						"providers": ['facebook', 'google', 'linkedin', 'twitter'], 
+						"callback_uri": 'https://samsung.tizenforum.com/index.php?action=oasl_callback;oasl_source=login',
+					});
+				</script>
+				<!-- OneAll.com / Social Login for SMF -->				
+			</p>
+										<p style="text-align:left;">
+											<strong>Or Login with Samsung Account</strong>
+										</p>
+										<div class="sa_div">
+							     			<form action="https://account.samsung.com/mobile/account/check.do">
+											  <input height=35px; width=35px; type="image" name="samsung_account" src="https://samsung.tizenforum.com/Themes/default/images/samsung_account.png">				  
+											  <input type="hidden" name="actionID" value="StartOAuth2">
+											  <input type="hidden" name="serviceID" value="6t92d5j07u">
+											  <input type="hidden" name="serviceName" value="Tizen_Community">
+											  <input type="hidden" name="redirect_uri" value="https://samsung.tizenforum.com?action=osp_callback">
+											  <input type="hidden" name="ssoType" value="OPT_VAL">
+											</form>
+							     		  <span id="sam_name">Samsung</span>
+							     	    </div>
+									<a href="#" style="font-weight:bold;"  onclick='$("#guest_form").toggle();'> Or Login with your Email id </a>	 <form id="guest_form" style="display:none" action="https://samsung.tizenforum.com/index.php?PHPSESSID=ig5e649671rj0lvl5k39pk7mb5&amp;action=login2" method="post" accept-charset="UTF-8"  onsubmit="hashLoginPassword(this, '9612e15b306d65e397a88e69f722e33d');">
+										
+								        <fieldset id="inputs">
+								    	    <input id="username" name="user" value="Username" onfocus="this.value = '';" onblur="if(this.value=='') this.value='Username';" />
+								        	<input id="password" type="password" name="passwrd" value="Password" onfocus="this.value = '';" onblur="if(this.value=='') this.value='Password';" />
+								        </fieldset>
+								        
+								        <fieldset id="actions">
+								        	<a class="register_link" href="https://samsung.tizenforum.com/index.php?PHPSESSID=ig5e649671rj0lvl5k39pk7mb5&amp;action=register">Not a member? Register</a>
+									        <input type="submit" id="submit" value="Login" />
+											<input type="hidden" name="hash_passwrd" value="" />
+								        </fieldset>
+							        </form>      
+						        </div>
+					        </li>
+					       
+				        </ul>
+			        </div>
+				<script>
+					$(document).mouseup(function (e)
+					{
+						var container = $("#login");
+					
+						if (!container.is(e.target) // if the target of the click isnt the container...
+								&& container.has(e.target).length === 0) // ... nor a descendant of the container
+						{
+							if ($("#login-trigger").hasClass("active")){
+								$("#login-content").slideToggle();
+								$("#login-trigger").toggleClass("active");
+								$("#login-trigger").find("span").html("&#x25BC;");
+							}
+						}
+						if (!$("#searchForm").is(e.target) // if the target of the click isnt the container...
+								&& $("#searchForm").has(e.target).length === 0) // ... nor a descendant of the container
+						{
+							$("#searchFormText").val("");
+						}
+					});
+				</script>
+						
+				<ul class="nav-notification navbar-right">	
+					<li class="search-list">
+						<div class="search-input-wrapper">
+							<div class="search-input">
+								<form id="searchForm" action="https://samsung.tizenforum.com/index.php?PHPSESSID=ig5e649671rj0lvl5k39pk7mb5&amp;action=search2" method="post" accept-charset="UTF-8">
+									<input name="search" type="text" class="form-control input-sm inline-block forum-header-search forum-header-search-color" id="searchFormText" required>
+									<a href="#" class="input-icon text-normal">
+										<span class="forum-header-search-color"><i class="fa fa-search" onclick="if($('#searchFormText').val()!=''){
+						$('#searchForm').submit();
+					}"></i></span>
+									</a>
+								</form>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+			<div id="sticky_navigation" style="width:100%; z-index: 1; position:fixed;">
+	<div id="menu" style="background-color:#031433">
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">	
+			<div class="container">
+				<div class="row">
+					<ul class="nav navbar-nav">
+						<li id="button_home" class="active ">
+							<a  href="https://samsung.tizenforum.com/index.php?PHPSESSID=ig5e649671rj0lvl5k39pk7mb5&amp;">
+								Home
+							</a>
+						</li>
+						<li id="button_custom1" class="">
+							<a  href="https://samsung.tizenforum.com/?sort=boards">
+								Boards
+							</a>
+						</li>
+						<li id="button_svoc" class="">
+							<a  href="https://samsung.tizenforum.com/index.php?PHPSESSID=ig5e649671rj0lvl5k39pk7mb5&amp;action=svocindex">
+								Bugs
+							</a>
+						</li>
+						<li id="button_search" class="">
+							<a  href="https://samsung.tizenforum.com/index.php?PHPSESSID=ig5e649671rj0lvl5k39pk7mb5&amp;action=search">
+								Search
+							</a>
+						</li>
+						<li id="button_CreateTopic" class="">
+							<a  href="https://samsung.tizenforum.com/index.php?PHPSESSID=ig5e649671rj0lvl5k39pk7mb5&amp;action=post&board=12.0&from=home">
+								Create Topic
+							</a>
+						</li>
+						<li id="button_login" class="">
+							<a  href="https://samsung.tizenforum.com/index.php?PHPSESSID=ig5e649671rj0lvl5k39pk7mb5&amp;action=login">
+								Login
+							</a>
+						</li>
+						<li id="button_register" class="">
+							<a  href="https://samsung.tizenforum.com/index.php?PHPSESSID=ig5e649671rj0lvl5k39pk7mb5&amp;action=register">
+								Register
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+		<script type="text/javascript"><!-- // --><![CDATA[
+			var oMainHeaderToggle = new smc_Toggle({
+				bToggleEnabled: false,
+				bCurrentlyCollapsed: false,
+				aSwappableContainers: [
+					'menu', 'header'
+				],
+				aSwapImages: [
+					{
+						sId: 'upshrink',
+						srcExpanded: '',
+						srcCollapsed: '',
+					}
+				],
+				oThemeOptions: {
+					bUseThemeSettings: false,
+					sOptionName: 'collapse_header',
+					sSessionVar: 'bbe6286',
+					sSessionId: '9612e15b306d65e397a88e69f722e33d'
+				},
+				oCookieOptions: {
+					bUseCookie: true,
+					sCookieName: 'upshrink'
+				}
+			});
+		// ]]></script>
+	<header id="header" style="padding-top:50px;">
+		<div class="container">
+		<ol class="breadcrumb" id="breadcrumb">
+				<li class="last">
+					<a href="https://samsung.tizenforum.com/index.php?PHPSESSID=ig5e649671rj0lvl5k39pk7mb5&amp;"><span>Tizen Community</span></a>
+				</li>
+		</ol>
+		</div>
+	</header><div id="menu_fix_div"></div>
+		<script>
+			$(document).ready(function(){
+			var fix_height=$("#bs-example-navbar-collapse-1").height() - 40;
+			fix_height=fix_height+"px";
+			$("#breadcrumb").css("margin-top",fix_height);
+			});
+		</script>
+		
+	<div class="container"><div id="content_section" style="margin-bottom:80px;">
+		<div id="main_content_section">
+	<div class="tborder login">
+		<div class="cat_bar" id="cat_bar" style="display: none;">
+			<h3 class="catbg">Warning!</h3>
+		</div>
+		<p class="information centertext">
+			The topic or board you are looking for appears to be either missing or off limits to you.<br />
+			Please login below or <a href="https://samsung.tizenforum.com/index.php?PHPSESSID=ig5e649671rj0lvl5k39pk7mb5&amp;action=register">register an account</a> with Tizen Community.
+		</p><hr />
+				<p style="text-align:left;">
+					<strong>Login with your social network</strong>
+				</p>
+			<div id="loading">
+			  <img id="loading-image" src="https://samsung.tizenforum.com/Themes/default/images/ajax-loader.gif" alt="Loading..." />
+			</div>
+			<p style="text-align:left;">
+				<div class="oneall_social_login_providers" id="oneall_social_login_providers_9077775"></div>
+				<script type="text/javascript">
+					oneall.api.plugins.social_login.build("oneall_social_login_providers_9077775", {
+						"providers": ['facebook', 'google', 'linkedin', 'twitter'], 
+						"callback_uri": 'https://samsung.tizenforum.com/index.php?action=oasl_callback;oasl_source=login',
+					});
+				$(window).load(function() {
+					     $('#loading').hide();
+							$('#cat_bar').show();
+							$('#roundframe').show();
+							$('#upperframe').show();
+							$('#lowerframe').show();
+					  });
+								
+				</script>
+				<!-- OneAll.com / Social Login for SMF -->				
+			</p>
+			
+			
+			<p style="text-align:left;">
+				<strong>Or login with Samsung Account</strong>
+			</p>
+			<div class="sa_div">
+     			<form action="https://account.samsung.com/mobile/account/check.do">
+				  <input height=35px; width=35px; type="image" name="samsung_account" src="https://samsung.tizenforum.com/Themes/default/images/samsung_account.png">				  
+				  <input type="hidden" name="actionID" value="StartOAuth2">
+				  <input type="hidden" name="serviceID" value="6t92d5j07u">
+				  <input type="hidden" name="serviceName" value="Tizen_Community">
+				  <input type="hidden" name="redirect_uri" value="https://samsung.tizenforum.com/?action=osp_callback">
+				  <input type="hidden" name="ssoType" value="OPT_VAL">
+				</form>
+     	    </div><br>
+		</div>
+	<script type="text/javascript" src="https://samsung.tizenforum.com/Themes/default/scripts/sha1.js"></script>
+	<form action="https://samsung.tizenforum.com/index.php?PHPSESSID=ig5e649671rj0lvl5k39pk7mb5&amp;action=login2" method="post" accept-charset="UTF-8" name="frmLogin" id="frmLogin" onsubmit="hashLoginPassword(this, '9612e15b306d65e397a88e69f722e33d');">
+		<div class="tborder login">
+			
+			<div class="cat_bar" id="cat_bar">
+				<h3 class="catbg">
+					<img src="https://samsung.tizenforum.com/Themes/default/images/icons/login_sm.gif" alt="" class="icon" /> Login
+				</h3>
+			</div>
+			<span class="upperframe" style="display: none;"><span></span></span>
+			<div class="roundframe" id="roundframe" style="display: none;">
+				<dl>
+					<dt>Username:</dt>
+					<dd><input type="text" name="user" size="20" class="input_text" /></dd>
+					<dt>Password:</dt>
+					<dd><input type="password" name="passwrd" size="20" class="input_password" /></dd>
+					<dt>Minutes to stay logged in:</dt>
+					<dd><input type="text" name="cookielength" size="4" maxlength="4" value="60" class="input_text" /></dd>
+					<dt>Always stay logged in:</dt>
+					<dd><input type="checkbox" name="cookieneverexp" class="input_check" onclick="this.form.cookielength.disabled = this.checked;" /></dd>
+				</dl>
+				<p class="centertext"><input type="submit" value="Login" class="button_submit" /></p>
+				<p class="centertext smalltext"><a href="https://samsung.tizenforum.com/index.php?PHPSESSID=ig5e649671rj0lvl5k39pk7mb5&amp;action=reminder">Forgot password?</a></p>
+			</div>
+			<span class="lowerframe" style="display: none;"><span></span></span>
+			<input type="hidden" name="hash_passwrd" value="" />
+		</div>
+	</form>
+		<script type="text/javascript"><!-- // --><![CDATA[
+			document.forms.frmLogin.user.focus();
+		// ]]></script>
+		<script type="text/javascript"><!-- // --><![CDATA[
+			var lpLoaded = false,
+			inConflict = false;
+
+			function compareJQueryVersion(v1, v2, callback) {
+				var v1parts = v1.split();
+				var v2parts = v2.split();
+
+				for (var i = 0; i < v1parts.length; ++i) {
+					if (v2parts.length == i) {
+						//v1 + " is larger"
+						callback(1);
+						return;
+					}
+
+					if (v1parts[i] == v2parts[i]) {
+						continue;
+					} else if (v1parts[i] > v2parts[i]) {
+						//v1 + " is larger";
+						callback(1);
+						return;
+					} else {
+						//v2 + " is larger";
+						callback(2);
+						return;
+					}
+				}
+
+				if (v1parts.length != v2parts.length) {
+					//v2 + " is larger";
+					callback(2);
+					return;
+				}
+				callback(false);
+				return;
+			}
+
+			function loadJquery(url, callback) {
+				var script = document.createElement("script");
+				script.type = "text/javascript";
+				script.src = url;
+
+				var head = document.getElementsByTagName("head")[0],
+					done = false;
+
+				script.onload = script.onreadystatechange = function() {
+					if (!done && (!this.readyState || this.readyState == "loaded" || this.readyState == "complete")) {
+						done = true;
+						callback();
+						script.onload = script.onreadystatechange = null;
+						head.removeChild(script);
+					};
+				};
+				head.appendChild(script);
+			}
+
+			// Only do anything if jQuery isn"t defined
+			if (typeof(jQuery) == "undefined") {
+				//console.log("jquery not found");
+				if (typeof($) == "function") {
+					//console.log("jquery but in conflict");
+					inConflict = true;
+				}
+
+				loadJquery("https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js", function() {
+					if (typeof(jQuery) !=="undefined") {
+						//console.log("directly loaded with version: " + jQuery.fn.jquery);
+						lp_jquery2_0_3 = jQuery.noConflict(true);
+						loadLPScript();
+					}
+				});
+			} else {
+				// jQuery is already loaded
+				//console.log("jquery is already loaded with version: " + jQuery.fn.jquery);
+				compareJQueryVersion(jQuery.fn.jquery, "2.0.3", function(result) {
+					//console.log("result of version check: " + result)
+					switch(result) {
+						case false:
+						case 1:
+							lp_jquery2_0_3 = jQuery;
+							loadLPScript();
+							break;
+
+						case 2:
+							loadJquery("https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js", function() {
+								if (typeof(jQuery) !=="undefined") {
+									//console.log("after version check loaded with version: " + jQuery.fn.jquery);
+									lp_jquery2_0_3 = jQuery.noConflict(true);
+									loadLPScript();
+								}
+							});
+							break;
+
+						default:
+							loadJquery("https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js", function() {
+								if (typeof(jQuery) !=="undefined") {
+									//console.log("default version check loaded with version: " + jQuery.fn.jquery);
+									lp_jquery2_0_3 = jQuery.noConflict(true);
+									loadLPScript();
+								}
+							});
+							break;
+					}
+				})
+			};
+
+			function loadLPScript() {
+				var js = document.createElement("script");
+				js.type = "text/javascript";
+				js.src = "https://samsung.tizenforum.com/Themes/default/scripts/LikePosts/LikePosts.min.js";
+				js.onload = function() {
+					lpObj.likePostsNotification.init({
+						txtStrings: {
+							"lpAllNotification": "All Notification",
+							"lpMyPosts": "My Posts",
+							"lpNoNotification": "Nothing to show at the moment"
+						}
+					});
+				}
+				document.body.appendChild(js);
+			}
+		// ]]></script>
+		</div>
+	</div></div>
+	<footer>
+	<div class="container">
+	<div id="footer">
+				<div id="footerarea" style="padding-top:1em">
+					 <div id="footer_section">
+					<ul class="reset">
+					 <li  class="copyright collapse navbar-collapse"> &copy 2012 Tizen Project, a Linux Foundation Collaborative Project. All Rights Reserved. Linux is a registered trademark of Linus Torvalds.</li><li class=" collapse navbar-collapse">Tizen is a registered trademark of The Linux Foundation. * Other names and brands may be claimed as the property of others.</li>
+					  <li class="copyright" style="">
+						<a href="https://samsung.tizenforum.com/index.php?PHPSESSID=ig5e649671rj0lvl5k39pk7mb5&amp;action=privacypolicy" style="text-decoration : none; color:black;"> Privacy Policy </a>
+						<a> | </a>
+						<a href="https://samsung.tizenforum.com/index.php?PHPSESSID=ig5e649671rj0lvl5k39pk7mb5&amp;action=termsofservice" style="text-decoration : none; margin-left:6px;  color:black;"> Terms of Service </a>
+					  </li>
+				  	</ul>	 </div>
+			 </div>
+	</div>
+</div>
+</footer><a href="#" class="scroll-to-top hidden-print"><i class="fa fa-chevron-up fa-lg"></i></a></div>
+</body></html>

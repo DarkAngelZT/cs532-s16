@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:og="http://ogp.me/ns#"
+    xmlns:fb="http://ogp.me/ns/fb#"
+    lang="en-US">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+
+    <link rel="dns-prefetch" href="http://www.animalplanet.com" />
+    <link rel="dns-prefetch" href="//static.ddmcdn.com" />
+    <link rel="dns-prefetch" href="//r.ddmcdn.com" />
+    <link rel="dns-prefetch" href="//s3.amazonaws.com" />
+    <link rel="dns-prefetch" href="//adm.fwmrm.net" />
+    <link rel="dns-prefetch" href="//admin.brightcove.com" />
+    <link rel="dns-prefetch" href="//connect.facebook.net" />
+    <link rel="dns-prefetch" href="//platform.twitter.com" />
+
+    <title>Puppy Bowl Virtual Reality | Puppy Bowl | Animal Planet</title>
+
+            <link rel='stylesheet' id='theme-css' href='//static.ddmcdn.com/app/fusion-usnets/css/fonts_animal_planet-170c39ef.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='theme-css'  href='//static.ddmcdn.com/app/fusion-usnets/css/theme.usnets-bce7b337.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="//fusion.ddmcdn.com/APL/uploads/2016/01/1453928843_theme_builder.css" type="text/css" media="all" />    <script src="//static.ddmcdn.com/app/fusion-usnets/js/react-addons-0.13.3.min-970468b7.js"></script>
+    <script>
+        var dataLayer = [{"post_id":88205,"post_type":"interactives","show_name":"puppy bowl","taxonomy":{"genre":"Pets","subgenre":"Dogs","show":"Puppy Bowl"}}];
+        (function() {
+            var MenuDrawer = window.MenuDrawer =function(){this._user_agent=window.navigator.userAgent.toLowerCase();this.isMobileDevices()&&(this.body_tag=document.querySelector("body"),this.wrap=this.body_tag.querySelector(".wrap"),this.sidebar=this.body_tag.querySelector("#sidebar"),this.sidebar.style["overflow-y"]="auto",this.sideBarItem=this.sidebar.querySelectorAll(".menu-item.menu-item-has-children"),this.button=this.body_tag.querySelector(".mobile-toggle"),this.isOpened=this.hasClass(this.sidebar,"open"),this.isMoved=!1,
+this.initialize())};MenuDrawer.prototype.isMobileDevices=function(){return this._findDevice("android")||this._findDevice("iphone")||this._findDevice("ipod")||this._findDevice("ipad")};MenuDrawer.prototype._findDevice=function(a){return-1!==this._user_agent.indexOf(a)};MenuDrawer.prototype.initialize=function(){document.addEventListener?this.appendEvents():document.attachEvent&&this.attachEvents()};MenuDrawer.prototype.hasClass=function(a,c){return null!==a.className.match(c)};
+MenuDrawer.prototype.appendEvents=function(a){var c=this;this.button.addEventListener("click",function(a){a.preventDefault?a.preventDefault():a.returnValue=!1;var b=Array.prototype.slice.call(arguments,0);b.push(this);c.eventMenuHandler.apply(c,b);return!1},!1);a=function(a){a.preventDefault?a.preventDefault():a.returnValue=!1;if(c.isOpened){var b=Array.prototype.slice.call(arguments,0);b.push(this);return c.eventSubMenuHandler.apply(c,b)}return!1};for(var b=0;b<this.sideBarItem.length;b++)this.sideBarItem[b].addEventListener("click",
+a,!1);a=this.transitionEndEventName();this.sidebar.addEventListener(a,function(a){a.preventDefault?a.preventDefault():a.returnValue=!1;Array.prototype.slice.call(arguments,0).push(this);return c.eventTransformHandler.apply(c,arguments)},!1)};
+MenuDrawer.prototype.attachEvents=function(){var a=this;this.button.attachEvent("onclick",function(b){Array.prototype.slice.call(arguments,0).push(this);return a.eventMenuHandler.apply(a,arguments)},!1);for(var c=function(b){b.preventDefault?b.preventDefault():b.returnValue=!1;if(a.isOpened){var c=Array.prototype.slice.call(arguments,0);c.push(this);return a.eventSubMenuHandler.apply(a,c)}return!1},b=0;b<this.sideBarItem.length;b++)this.sideBarItem[b].attachEvent("onclick",c,!1);c=this.transitionEndEventName();
+this.sidebar.attachEvent(c,function(b){b.preventDefault?b.preventDefault():b.returnValue=!1;Array.prototype.slice.call(arguments,0).push(this);return a.eventTransformHandler.apply(a,arguments)},!1)};MenuDrawer.prototype.transitionEndEventName=function(){var a,c=document.createElement("div"),b={WebkitTransition:"webkitTransitionEnd",transition:"transitionend",OTransition:"otransitionend",MozTransition:"transitionend"};for(a in b)if(b.hasOwnProperty(a)&&void 0!==c.style[a])return b[a]};
+MenuDrawer.prototype.eventMenuHandler=function(a,c){a.preventDefault?a.preventDefault():a.returnValue=!1;this.isMoved||(this.isMoved=!0,this.isOpened?this.closeMenuLogic(c):(this.body_tag.className+=" active",this.openMenuLogic(c)));return!1};
+MenuDrawer.prototype.eventSubMenuHandler=function(a,c){if(this.hasClass(a.target.parentElement,"menu-item-has-children")){var b=c.className;a.preventDefault?a.preventDefault():a.returnValue=!1;this.hasClass(c,"current-menu-ancestor")?(b=b.replace("current-menu-ancestor",""),b=b.replace("current_page_item",""),b=b.replace("current-menu-item",""),b=b.replace("active","")):b+=" current-menu-ancestor current_page_item current-menu-item active";c.className=b}else return"A"==a.target.tagName&&(window.location.href=
+a.target.href),!0;return!1};MenuDrawer.prototype.eventTransformHandler=function(a,c){this.isMoved=!1;this.isOpened?(this.body_tag.className=this.body_tag.className.replace("active",""),this.isOpened=!1):this.isOpened=!0;return!1};MenuDrawer.prototype.openMenuLogic=function(a){this._move(this.sidebar,203);this._move(this.wrap,203)};MenuDrawer.prototype.closeMenuLogic=function(a){this._move(this.sidebar,0);this._move(this.wrap,0)};
+MenuDrawer.prototype._move=function(a,c){var b=a.style;b.transitionDuration="0.4s";b.transitionTimingFunction="linear";b.transitionProperty="all";b.transform="translate3d("+c+"px, 0, 0)";b["-webkit-transform"]="translate3d("+c+"px, 0, 0)"};            window.pagePlugin = {
+                'template_uri':'http://www.animalplanet.com/wp-content/themes/wp-theme-main',
+                'site_uri':'http://www.animalplanet.com',
+                'page_url':window.location.href,
+                'app':{'enabled':true},
+                'page_load_metrics_enabled': false,
+                'page_init_title': "Puppy Bowl Virtual Reality | Puppy Bowl | Animal Planet",
+                'page': {
+                    'type': 'interactives',
+                    'view': null,
+                    'modules' : []
+                }
+            };
+            window.require = {
+                config:{"fusion.analytics":{"GA":{"accountId":"GTM-MRV3PD"},"ComScore":{"c1_page":"2","c1_video":"1","c2_media":"6036284","c2_video":"3000036","c4":"3002247","vpv_url":"\/shared\/pageview-candidate.json","c5":{"clip":"02","episode":"03","preroll":"09","postroll":"10","midroll":"11","ad":"01","video":"02"}},"NIE":{"accId_page":"us-204250h","accId_video":"us-201051","chan":"vc,c01"},"DWS":{"dwsEnabled":true,"dwsVideoCounterUrl":"http:\/\/q.dp.discovery.com"}}}            };
+        }());
+    </script>
+    <script src="//static.ddmcdn.com/app/fusion-usnets/js/device-0.2.7b.ugly-153f93d9.js"></script>
+    <script src="//static.ddmcdn.com/app/fusion-usnets/js/main-16e39d58.js" ></script>
+    <script>
+        window.dgo_enabled = false;
+        window.dgo_modal_enabled = false;
+        window.fusion_site_id = 'apl';
+    </script>
+    <script src="//cdn.optimizely.com/js/1789230757.js"></script><meta name="description" content="You&#039;re right in the middle of GEICO stadium for Puppy Bowl practice in our Virtual Reality (VR) experience."/>
+<meta name="keywords" content="virtual reality, VR, virtual puppy bowl, puppy bowl practice"/>
+<link rel="canonical" href="http://www.animalplanet.com/tv-shows/puppy-bowl/games-and-more/puppy-bowl-virtual-reality/" />
+<meta name="robots" content="INDEX,NOODP,FOLLOW,ARCHIVE"/>
+<script type='text/javascript' src='http://global.utils.discovery.com/redirect/prod/gncs.min.js'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.animalplanet.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.animalplanet.com/wp-includes/wlwmanifest.xml" /> 
+
+<link rel='shortlink' href='http://www.animalplanet.com/?p=88205' />
+<link rel="icon" type="image/x-icon" href=""><meta name="geo.region" content="US" /><script>var ajaxurl = "http:\/\/www.animalplanet.com\/xhr.php";</script><script type="text/javascript">
+                    // used for the fusion-sharing-handler
+                    var video = {
+                        url: 'http://www.animalplanet.com',
+                        title: 'Puppy Bowl Virtual Reality',
+                        postId: 88205,
+                        sharing: {
+                            embed: {
+                                url: 'http://www.animalplanet.com'
+                            },
+                            twitter: {
+                                hashtags: []
+                            }
+                        }
+                    }</script><script type="text/javascript">
+                    // used for the fusion-sharing-handler
+                    var video = {
+                        url: 'http://www.animalplanet.com',
+                        title: 'Puppy Bowl Virtual Reality',
+                        postId: 88205,
+                        sharing: {
+                            embed: {
+                                url: 'http://www.animalplanet.com'
+                            },
+                            twitter: {
+                                hashtags: []
+                            }
+                        }
+                    }</script>
+<link rel="stylesheet" href="http://s3.amazonaws.com/discovery_digitalmedia/dm/fusion-tlc/fontface.css">
+<link rel="stylesheet" href="https://s3.amazonaws.com/fusion-tlc/puppy_bowl_vr_2015/css/main.css">
+<!-- Facebook Open Graph data -->
+<meta property="og:title" content="Puppy Bowl Virtual Reality" />
+<meta property="og:url" content="http://www.animalplanet.com/tv-shows/puppy-bowl/games-and-more/puppy-bowl-virtual-reality/" />
+<meta property="og:image" content="http://r.ddmcdn.com/s_f/o_1/w_1024/h_576/APL/uploads/2016/01/pb12-VR-panel.jpg" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Animal Planet" />
+<meta property="article:published_time" content="2016-01-06T17:24" />
+<meta property="article:modified_time" content="2016-01-25T18:55" />
+<meta property="article:section" content="Puppy Bowl" />
+<meta property="fb:admins" content="" />
+<!-- Twitter Card data for pages -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:site" content="@animalplanet" />
+<meta property="twitter:title" content="Puppy Bowl Virtual Reality" />
+<meta property="twitter:description" content="" />
+<meta property="twitter:image:src" content="http://r.ddmcdn.com/s_f/o_1/w_1024/h_576/APL/uploads/2016/01/pb12-VR-panel.jpg" />
+<script type="text/javascript">
+var freewheel_config = {"networkId":"91559","siteSectionNetworkID":"91559","videoAssetNetworkID":"91559","server":"165a7","siteSection":"animal.discovery.com\/pets\/dogs\/puppy-bowl\/interactives\/puppy-bowl-virtual-reality","videoRefId":0,"refresh":0,"cb_profile_js_list":{"ad_management_cb_profile_js_flash_player":"91559:discovery_live","ad_management_cb_profile_js_html_ios":"91559:discovery_live_HTML5","ad_management_cb_profile_js_html_android":"91559:discovery_live_html5_android_only","ad_management_cb_profile_js_brightcove_flash":"91559:dci_brightcove_as3","ad_management_cb_profile_js_brightcove_html":"91559:dci_brightcove_html5","ad_management_cb_profile_js_mobile":"91559:Discovery_Live_HTML5"},"CB_PROFILE_JS_HTML_ANDROID":"ad_management_cb_profile_js_html_android","CB_PROFILE_JS_BRIGHTCOVE_HTML":"ad_management_cb_profile_js_brightcove_html","CB_PROFILE_JS_BRIGHTCOVE_FLASH":"ad_management_cb_profile_js_brightcove_flash"};
+var FWSSTO = BCFWSSTO = Math.random().toString().substring(2, 11).replace(/0/g, "1");
+var viewingEnvironment = "prod";
+var pageMetricsData = {"name":"animal planet","id":"apl","domain":"animal.discovery.com","tax":"animal.discovery.com\/pets\/dogs\/puppy-bowl\/interactives\/puppy-bowl-virtual-reality","type":"interactives","show":"puppy-bowl","pubDate":"2016-01-06","uuid":"88205"};
+var adManagementRefreshingParams = [];
+window.fbAppId = 157869477569917;
+window.mobile_one_click = false;
+</script>
+</head>
+
+<body class="page page-id-88205 page-child parent-pageid-29658 page-template-default page-puppy-bowl-virtual-reality layout-usnets page-type-interactives">
+    <div id="fb-root"></div>
+
+    
+    <div id="page-ad-container-bannerFlexOne" class="ad-tag" data-admanager-position="banner" data-admanager-units="billboard,largeLeaderboard,megaLeaderboard,opaPushdown,oversizedLeaderboard,pushdown,leaderboard,smartphoneWideBanner,smartphoneBanner"></div>
+    <div class="body-wrapper">
+        <section class="wrap drawer_menu_hide clearfix" role="main">
+            <!--WRAP-->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MRV3PD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MRV3PD');</script>    <header class="main-header interior-page add-nav">
+        <div class="header-inner">
+                        <div class="top-header" >
+                <div class="header-info-area">
+                    <button type="button" class="navbar-toggle">
+                        <div class="mobile-toggle">
+                            <span class="icon-bar menu-icon"></span>
+                            <span class="icon-bar menu-icon"></span>
+                            <span class="icon-bar menu-icon"></span>
+                            <span class="icon-bar menu-icon"></span>
+                        </div>
+                    </button>
+                    <i class="nav-separator"></i>
+                    <a class="header-logo" href="/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * top nav * header-logo|/"></a>
+                                        <div class="header-shares" data-hashtag="PuppyBowl" data-twitterauthor="animalplanet">
+                                                                                            </div>
+                </div>
+                                    <div class="header-page-caption">
+                        <div class="header-page-top-caption">
+                                                                                                                    <div class="header-page-sub-topic header-hashtag small">
+                                    <a target="_blank" class="hashtag" href="https://twitter.com/search?q=%23PuppyBowl">
+                                        <span>#PuppyBowl</span>
+                                    </a>
+                                </div>
+                                                    </div>
+                    </div>
+                                                <div class="header-page-topic-wrapper">
+                    <div class="header-page-topic">
+                                                                        <h2 class="header-page-topic-name header-show-title">
+                            <a href="http://www.animalplanet.com/tv-shows/puppy-bowl" alt="Puppy Bowl" >Puppy Bowl</a>
+                        </h2>
+                                                                                                                        </div>
+                </div>
+                                <div class="header-nav-area inner-page-nav-area ">
+                                            <ul id="menu-1-global-menu" class="header-main-menu"><li id="menu-item-6292" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-6292"><a href="http://www.animalplanet.com/tv-shows/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-main-menu * Shows|http://www.animalplanet.com/tv-shows/">Shows</a></li>
+<li id="menu-item-66148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66148"><a href="http://www.animalplanet.com/videos/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-main-menu * Full Episodes|http://www.animalplanet.com/videos/">Full Episodes</a></li>
+<li id="menu-item-44750" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44750"><a href="http://store.discovery.com/?v=animal-planet&#038;ecid=PRF-TV1-400000&#038;pa=PRF-TV1-400000" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-main-menu * Shop|http://store.discovery.com/?v=animal-planet&amp;ecid=PRF-TV1-400000&amp;pa=PRF-TV1-400000">Shop</a></li>
+<li id="menu-item-54555" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54555"><a href="http://www.animalplanet.com/games-puzzles/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-main-menu * Games|http://www.animalplanet.com/games-puzzles/">Games</a></li>
+<li id="menu-item-78919" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-78919"><a href="http://www.apl.tv" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-main-menu * Live Cams|http://www.apl.tv">Live Cams</a></li>
+<li id="menu-item-45503" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45503"><a href="http://www.animalplanet.com/wild-animals/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-main-menu * Wild|http://www.animalplanet.com/wild-animals/">Wild</a></li>
+<li id="menu-item-45502" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45502"><a href="http://www.animalplanet.com/pets/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-main-menu * Pets|http://www.animalplanet.com/pets/">Pets</a></li>
+<li id="menu-item-54607" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54607"><a href="http://www.animalplanet.com/bites-blog/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-main-menu * News|http://www.animalplanet.com/bites-blog/">News</a></li>
+<li id="menu-item-60396" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60396"><a href="http://www.animalplanet.com/videos/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-main-menu * Videos|http://www.animalplanet.com/videos/">Videos</a></li>
+<li id="menu-item-6291" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6291"><a href="http://www.animalplanet.com/schedule/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-main-menu * TV Schedule|http://www.animalplanet.com/schedule/">TV Schedule</a></li>
+</ul>                                        <div class="top-sub-menu-container menu-bg">
+                        <div class="top-sub-menu shows-sub-menu">
+                        <ul id="menu-globalnavmenu_shows" class="header-shows-submenu"><li id="menu-item-49909" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-49909"><a href="http://www.animalplanet.com/tv-shows/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-shows-submenu * All Shows|http://www.animalplanet.com/tv-shows/">All Shows</a></li>
+<li id="menu-item-84647" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84647"><a href="http://www.animalplanet.com/tv-shows/dr-dee-alaska-vet/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-shows-submenu * Dr. Dee: Alaska Vet|http://www.animalplanet.com/tv-shows/dr-dee-alaska-vet/">Dr. Dee: Alaska Vet</a></li>
+<li id="menu-item-48189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48189"><a href="http://www.animalplanet.com/tv-shows/finding-bigfoot/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-shows-submenu * Finding Bigfoot|http://www.animalplanet.com/tv-shows/finding-bigfoot/">Finding Bigfoot</a></li>
+<li id="menu-item-69506" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69506"><a href="http://www.animalplanet.com/tv-shows/the-last-alaskans/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-shows-submenu * The Last Alaskans|http://www.animalplanet.com/tv-shows/the-last-alaskans/">The Last Alaskans</a></li>
+<li id="menu-item-84648" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84648"><a href="http://www.animalplanet.com/tv-shows/monsters-inside-me/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-shows-submenu * Monsters Inside Me|http://www.animalplanet.com/tv-shows/monsters-inside-me/">Monsters Inside Me</a></li>
+<li id="menu-item-48191" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48191"><a href="http://www.animalplanet.com/tv-shows/my-cat-from-hell/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-shows-submenu * My Cat from Hell|http://www.animalplanet.com/tv-shows/my-cat-from-hell/">My Cat from Hell</a></li>
+<li id="menu-item-48192" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48192"><a href="http://www.animalplanet.com/tv-shows/north-woods-law/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-shows-submenu * North Woods Law|http://www.animalplanet.com/tv-shows/north-woods-law/">North Woods Law</a></li>
+<li id="menu-item-48193" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48193"><a href="http://www.animalplanet.com/tv-shows/pitbulls-and-parolees/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-shows-submenu * Pit Bulls and Parolees|http://www.animalplanet.com/tv-shows/pitbulls-and-parolees/">Pit Bulls and Parolees</a></li>
+<li id="menu-item-57337" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-57337"><a href="http://www.animalplanet.com/tv-shows/puppy-bowl/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-shows-submenu * Puppy Bowl|http://www.animalplanet.com/tv-shows/puppy-bowl/">Puppy Bowl</a></li>
+<li id="menu-item-48195" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48195"><a href="http://www.animalplanet.com/tv-shows/river-monsters/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-shows-submenu * River Monsters|http://www.animalplanet.com/tv-shows/river-monsters/">River Monsters</a></li>
+<li id="menu-item-78992" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78992"><a href="http://www.animalplanet.com/tv-shows/rugged-justice/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-shows-submenu * Rugged Justice|http://www.animalplanet.com/tv-shows/rugged-justice/">Rugged Justice</a></li>
+<li id="menu-item-48196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48196"><a href="http://www.animalplanet.com/tv-shows/tanked/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-shows-submenu * Tanked|http://www.animalplanet.com/tv-shows/tanked/">Tanked</a></li>
+<li id="menu-item-48198" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48198"><a href="http://www.animalplanet.com/tv-shows/too-cute/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-shows-submenu * Too Cute|http://www.animalplanet.com/tv-shows/too-cute/">Too Cute</a></li>
+<li id="menu-item-48197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48197"><a href="http://www.animalplanet.com/tv-shows/treehouse-masters/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-shows-submenu * Treehouse Masters|http://www.animalplanet.com/tv-shows/treehouse-masters/">Treehouse Masters</a></li>
+</ul>                        </div>
+                    </div>
+                </div>
+                <form action="http://www.animalplanet.com/search/" method="get" class="header-search-form">
+                <!--header-search-bar-container - will be added active class-->
+                    <div class="header-search-bar-container">
+                        <input type="text" name="q" value="" class="header-search-field search-text-2" placeholder="Search" />
+                        <i class="text-clear"></i>
+                        <input class="header-search-btn global-header-search-button" type="submit" value=""/>
+                    </div>
+                </form>
+                            </div>
+                                        <div class="bottom-header">
+                    <div class="hub-sub-header">
+                        <div class="header-page-nav fixed">
+                            <div class="hub-sub-header-meta">
+                                                                                                                                                                <h2 class="header-page-topic-name header-show-title sub-header-show-title ">
+                                                                            <a href="http://www.animalplanet.com/tv-shows/puppy-bowl" alt="Puppy Bowl">Puppy Bowl</a>
+                                                                    </h2>
+                                <div class="header-page-sub-topic">
+                                                                                                                <div class="header-hashtag small">
+                                            <a target="_blank" class="hashtag" href="https://twitter.com/search?q=%23PuppyBowl">
+                                                <span>#PuppyBowl</span>
+                                            </a>
+                                        </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                        <div class="header-page-nav table">
+                            <i class="header-page-separator">&#47;</i>
+                                                        <h2 class="mobile-title">
+                                                                    <a href="http://www.animalplanet.com/tv-shows/puppy-bowl" alt="Puppy Bowl" >Puppy Bowl</a>
+                                                            </h2>
+                                                                                        <div class="header-page-sub-topic-devider"></div>
+                                <div class="top-sub-menu-btn mobile"></div>
+                                <div class="top-sub-menu-btn">Virtual Reality</div>
+                                <div class="top-sub-menu-container menu-bg">
+                                    <div class="top-sub-menu">
+                                        <ul id="menu-puppy-bowl" class="header-sub-menu"><li id="menu-item-57350" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-57350"><a href="http://www.animalplanet.com/tv-shows/puppy-bowl" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-sub-menu * Home|http://www.animalplanet.com/tv-shows/puppy-bowl">Home</a></li>
+<li id="menu-item-88354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88354"><a href="http://www.animalplanet.com/tv-shows/puppy-bowl/photos/puppy-bowl-xii-starting-lineup/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-sub-menu * Starting Lineup|http://www.animalplanet.com/tv-shows/puppy-bowl/photos/puppy-bowl-xii-starting-lineup/">Starting Lineup</a></li>
+<li id="menu-item-88355" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-88205 current_page_item menu-item-88355 active"><a href="http://www.animalplanet.com/tv-shows/puppy-bowl/games-and-more/puppy-bowl-virtual-reality/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-sub-menu * Virtual Reality|http://www.animalplanet.com/tv-shows/puppy-bowl/games-and-more/puppy-bowl-virtual-reality/">Virtual Reality</a></li>
+<li id="menu-item-88360" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-88360"><a href="http://www.puppybowlfantasy.com" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-sub-menu * Fantasy Game|http://www.puppybowlfantasy.com">Fantasy Game</a></li>
+<li id="menu-item-88282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88282"><a href="http://www.animalplanet.com/tv-shows/puppy-bowl/inside-the-bowl/pet-adoption/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-sub-menu * *ADOPT*|http://www.animalplanet.com/tv-shows/puppy-bowl/inside-the-bowl/pet-adoption/">*ADOPT*</a></li>
+<li id="menu-item-20500" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20500"><a href="http://www.animalplanet.com/tv-shows/puppy-bowl/videos/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-sub-menu * Videos|http://www.animalplanet.com/tv-shows/puppy-bowl/videos/">Videos</a></li>
+<li id="menu-item-45139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45139"><a href="http://www.animalplanet.com/tv-shows/puppy-bowl/photos/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-sub-menu * Photos|http://www.animalplanet.com/tv-shows/puppy-bowl/photos/">Photos</a></li>
+<li id="menu-item-91196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-91196"><a href="http://www.animalplanet.com/tv-shows/puppy-bowl/photos/puppybowlsubaru-instagram-gallery/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-sub-menu * Instagram Gallery|http://www.animalplanet.com/tv-shows/puppy-bowl/photos/puppybowlsubaru-instagram-gallery/">Instagram Gallery</a></li>
+<li id="menu-item-91742" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-91742"><a href="http://www.animalplanet.com/tv-shows/puppy-bowl/videos/the-secret-life-of-pets-puppy-bowl-cam/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-sub-menu * Secret Life of Pets Puppy Bowl Cam|http://www.animalplanet.com/tv-shows/puppy-bowl/videos/the-secret-life-of-pets-puppy-bowl-cam/">Secret Life of Pets Puppy Bowl Cam</a></li>
+<li id="menu-item-45142" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45142"><a href="http://www.animalplanet.com/tv-shows/puppy-bowl/games-and-more/puppy-cam/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-sub-menu * Puppy Cam|http://www.animalplanet.com/tv-shows/puppy-bowl/games-and-more/puppy-cam/">Puppy Cam</a></li>
+<li id="menu-item-91062" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-91062"><a href="http://www.animalplanet.com/tv-shows/puppy-bowl/kiss-cam-contest/dairy-queen-kiss-cam/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-sub-menu * Kiss Cam|http://www.animalplanet.com/tv-shows/puppy-bowl/kiss-cam-contest/dairy-queen-kiss-cam/">Kiss Cam</a></li>
+<li id="menu-item-56576" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56576"><a href="http://www.animalplanet.com/tv-shows/puppy-bowl/games-and-more/kitten-cam/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-sub-menu * Kitten Cam|http://www.animalplanet.com/tv-shows/puppy-bowl/games-and-more/kitten-cam/">Kitten Cam</a></li>
+<li id="menu-item-91734" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-91734"><a href="http://www.animalplanet.com/tv-shows/puppy-bowl/videos/puppy-bowl-xii-adoption-tails/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-sub-menu * Adoption Tails|http://www.animalplanet.com/tv-shows/puppy-bowl/videos/puppy-bowl-xii-adoption-tails/">Adoption Tails</a></li>
+<li id="menu-item-45145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45145"><a href="http://www.animalplanet.com/tv-shows/puppy-bowl/videos/puppy-bowl-reftrospectives/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-sub-menu * Ref-trospectives|http://www.animalplanet.com/tv-shows/puppy-bowl/videos/puppy-bowl-reftrospectives/">Ref-trospectives</a></li>
+<li id="menu-item-45337" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45337"><a href="http://www.animalplanet.com/pets/active-puppies/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-sub-menu * Active Puppies|http://www.animalplanet.com/pets/active-puppies/">Active Puppies</a></li>
+<li id="menu-item-45141" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45141"><a href="http://store.discovery.com/puppy-bowl/index.php?v=animal-planet_shows_puppy-bowl&#038;ecid=PRF-AMP-400333&#038;pa=PRF-AMP-400333" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * header-sub-menu * Shop|http://store.discovery.com/puppy-bowl/index.php?v=animal-planet_shows_puppy-bowl&amp;ecid=PRF-AMP-400333&amp;pa=PRF-AMP-400333">Shop</a></li>
+</ul>                                    </div>
+                                    <div class="more-sub-menu-container"><ul class="more-sub-menu"></ul></div>
+                                    <div class="more-button"><a>More</a></div>
+                                </div>
+                                <label for="top-sub-menu-mobile" class="top-sub-menu-container-mobile">
+                                    <div class="top-sub-menu-mobile">
+                                        <select>
+                                                                                                <option data-url="http://www.animalplanet.com/tv-shows/puppy-bowl" >Home</option>                                                    <option data-url="http://www.animalplanet.com/tv-shows/puppy-bowl/photos/puppy-bowl-xii-starting-lineup/" >Starting Lineup</option>                                                    <option data-url="http://www.animalplanet.com/tv-shows/puppy-bowl/games-and-more/puppy-bowl-virtual-reality/"  selected>Virtual Reality</option>                                                    <option data-url="http://www.puppybowlfantasy.com" >Fantasy Game</option>                                                    <option data-url="http://www.animalplanet.com/tv-shows/puppy-bowl/inside-the-bowl/pet-adoption/" >*ADOPT*</option>                                                    <option data-url="http://www.animalplanet.com/tv-shows/puppy-bowl/videos/" >Videos</option>                                                    <option data-url="http://www.animalplanet.com/tv-shows/puppy-bowl/photos/" >Photos</option>                                                    <option data-url="http://www.animalplanet.com/tv-shows/puppy-bowl/photos/puppybowlsubaru-instagram-gallery/" >Instagram Gallery</option>                                                    <option data-url="http://www.animalplanet.com/tv-shows/puppy-bowl/videos/the-secret-life-of-pets-puppy-bowl-cam/" >Secret Life of Pets Puppy Bowl Cam</option>                                                    <option data-url="http://www.animalplanet.com/tv-shows/puppy-bowl/games-and-more/puppy-cam/" >Puppy Cam</option>                                                    <option data-url="http://www.animalplanet.com/tv-shows/puppy-bowl/kiss-cam-contest/dairy-queen-kiss-cam/" >Kiss Cam</option>                                                    <option data-url="http://www.animalplanet.com/tv-shows/puppy-bowl/games-and-more/kitten-cam/" >Kitten Cam</option>                                                    <option data-url="http://www.animalplanet.com/tv-shows/puppy-bowl/videos/puppy-bowl-xii-adoption-tails/" >Adoption Tails</option>                                                    <option data-url="http://www.animalplanet.com/tv-shows/puppy-bowl/videos/puppy-bowl-reftrospectives/" >Ref-trospectives</option>                                                    <option data-url="http://www.animalplanet.com/pets/active-puppies/" >Active Puppies</option>                                                    <option data-url="http://store.discovery.com/puppy-bowl/index.php?v=animal-planet_shows_puppy-bowl&amp;ecid=PRF-AMP-400333&amp;pa=PRF-AMP-400333" >Shop</option>                                        </select>
+                                    </div>
+                                </label>
+                                                                                </div>
+                    </div>
+                </div>
+                    </div>
+        
+    </header>
+            <div class="main">
+                <div class="container">
+                                             <div class='blog-post-share-conteiner share-container-global' data-page-type="interactives"></div>
+                                        
+                    
+					<div id="cfct-build-88205" class="cfct-build grid hideoverflow">
+						<div class="row-32 row"><div class="col1 b32 cfct-block"><div class="cfct-module dni-html"><a href="http://www.discoveryvr.com/#/puppy-bowl" title="Discovery VR" target="_blank">
+    <section id="vr-experience">
+        <div>
+            <h3>Explore and enjoy the clips below. But for the Best VR Experience, download the <img src="https://s3.amazonaws.com/fusion-tlc/puppy_bowl_vr_2015/img/vr_logo_callout.png" alt="Discovery VR" /> mobile app</h3>  
+        </div>
+    </section>
+</a><script type="text/javascript">
+    pagePlugin.page.modules.push({
+    	'moduleId'  : 'cfct-module-14f5be7af019ce6409e48b833e5ec39a',
+        'type'      : 'dni-html',
+        'enabled'   : false,
+        'object'    : null,
+        'settings'  : {
+            'isFullWidth': true
+        }
+    });
+</script></div></div></div><div class="row-24-8 row"><div class="col1 b24 cfct-block"><div class="cfct-module dni-html"><section id="header">
+    <div class="logo">
+        <img src="https://s3.amazonaws.com/fusion-tlc/puppy_bowl_vr_2015/img/pb_logo.png" alt="Puppy Bowl" />
+    </div>
+    <div class="client-logo">
+        <a href="http://www.discoveryvr.com/#/puppy-bowl" title="Geico" target="_blank">
+            <img src="https://s3.amazonaws.com/fusion-tlc/puppy_bowl_vr_2015/img/geico_logo.png" alt="Geico" />
+        </a>
+    </div>
+</section><script type="text/javascript">
+    pagePlugin.page.modules.push({
+    	'moduleId'  : 'cfct-module-7ebe16a4b3e9195d20e4a1439e6f87d3',
+        'type'      : 'dni-html',
+        'enabled'   : false,
+        'object'    : null,
+        'settings'  : {
+            'isFullWidth': true
+        }
+    });
+</script></div><div class="cfct-module dni-html"><section id="video-experience">
+    <div id="player"></div>
+</section><script type="text/javascript">
+    pagePlugin.page.modules.push({
+    	'moduleId'  : 'cfct-module-6980ab445c74ba563a8c1b5b529121d3',
+        'type'      : 'dni-html',
+        'enabled'   : false,
+        'object'    : null,
+        'settings'  : {
+            'isFullWidth': true
+        }
+    });
+</script></div><div class="cfct-module dni-html"><section id="video-thumbs">
+   <div class="video-sub-content">
+     <div id="ad-unit">
+       <div id="page-ad-container-companion" style="width: 300px; height: 60px;"></div>
+     </div>
+     <p class="video-description">Experience 360 degrees of cute in this first ever Official Puppy Bowl VR Practice video. It&rsquo;s a Ruff versus Fluff free&ndash;for&ndash;all you don&rsquo;t want to miss wtf.</p>
+     <div style="clear: both;"></div>
+   </div>
+   <span class="video-border"></span>
+    <ul>
+        <li id="video-thumb-1" data-text="Experience 360 degrees of cute in this first ever Official Puppy Bowl VR Practice video. It’s a Ruff versus Fluff free–for–all you don’t want to miss.">
+            <div class="video-thumb-overlay"></div>
+            <span class="video-thumb-icon"></span>
+            <p><span class="video-thumb-callout">On now</span>Highlight Reel</p>
+        </li>
+        <li id="video-thumb-2" data-text="They’re mighty. They’re adorable. And they’re not . . . letting . . . go . . . of . . . that . . . rhino toy.">
+            <div class="video-thumb-overlay"></div>
+            <span class="video-thumb-icon"></span>
+            <p><span class="video-thumb-callout">On now</span>Three Dog Tug Of War</p>
+        </li>
+        <li id="video-thumb-3" data-text="There’s so much action in this epic, puppy–packed scrimmage you won’t know where to look. Nothing but cuteness at every yard line.">
+            <div class="video-thumb-overlay"></div>
+            <span class="video-thumb-icon"></span>
+            <p><span class="video-thumb-callout">On now</span>Run And Scrum</p>
+        </li>
+        <li id="video-thumb-4" data-text="Need more cute? Immerse yourself in trash–talking, awe–inducing, puppy strategy as Marley and Ranger battle it out for sassiest player of the year.">
+            <div class="video-thumb-overlay"></div>
+            <span class="video-thumb-icon"></span>
+            <p><span class="video-thumb-callout">On now</span>Marley Makes His Move</p>
+        </li>
+    </ul>
+</section><script type="text/javascript">
+    pagePlugin.page.modules.push({
+    	'moduleId'  : 'cfct-module-652e6b17205e08bc7c502a1886d9b51c',
+        'type'      : 'dni-html',
+        'enabled'   : false,
+        'object'    : null,
+        'settings'  : {
+            'isFullWidth': true
+        }
+    });
+</script></div></div><div class="col2 b8 cfct-block"><div class="cfct-module dni-html"><section id="instructions">
+    <div class="instructions-header">
+        <h2>Ways to Watch</h2>
+        <img src="https://s3.amazonaws.com/fusion-tlc/puppy_bowl_vr_2015/img/vr_logo_small.png" alt="Virtual Reality Logo" />
+        <h2>Video</h2>
+    </div>
+    
+    <ul>
+      <li>
+        <span class="instructions-icon"></span>
+        On desktop, view the YouTube clips on this page using the latest version of <strong><a title="Chrome" target="_blank" href="http://www.google.com/chrome/">Chrome</a></strong>, <strong><a title="Firefox" target="_blank" href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a></strong> or <strong><a title="Opera" target="_blank" href="http://www.opera.com/">Opera</a></strong>. Use the controls in the top left of the video to move around.
+      </li>
+      <li>
+        <span class="instructions-icon"></span>
+         On mobile, download the <strong><a title="DiscoveryVR App" target="_blank" href="http://www.discoveryvr.com">DiscoveryVR App</a></strong> or use the latest version of the <strong><a title="YouTube App" target="_blank" href="https://www.youtube.com/yt/devices/">YouTube app</a></strong> for Android or iOS. Move your device to move around.
+      </li>
+      <li>
+        <span class="instructions-icon"></span>
+         For more immersive experiences, watch your mobile app in Virtual Reality mode with supported goggles like <strong><a title="Google Cardboard" target="_blank" href="https://www.google.com/get/cardboard">Google Cardboard</a></strong>. 
+      </li>
+      <li>
+        <span class="instructions-icon"></span>
+        Wear headphones to get the full experience. 
+      </li>
+    </ul>
+</section><script type="text/javascript">
+    pagePlugin.page.modules.push({
+    	'moduleId'  : 'cfct-module-4f7f06e051eda5d021b9aaa5cc52da29',
+        'type'      : 'dni-html',
+        'enabled'   : false,
+        'object'    : null,
+        'settings'  : {
+            'isFullWidth': true
+        }
+    });
+</script></div></div></div>
+					</div>
+					                </div>
+            </div>
+            <footer>
+                <!-- Facebook Pixel Code -->
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');fbq('init', '919945731435782');fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=919945731435782&ev=PageView&noscript=1"
+/></noscript>
+<script src="https://s3.amazonaws.com/fusion-tlc/puppy_bowl_vr_2015/js/main.js"></script>            </footer>
+        </section>
+
+    <div id="stick-page-recently-placeholder"></div>
+    <div id="stick-page-trending-placeholder"></div>
+
+    <section role="complementary" id="sidebar" class="drawer-menu hide">
+                <div class="drawer-menu-scroll">
+            <ul id="menu-1-drawer-menu" class="drawer-sidebar-menu"><li id="menu-item-21133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21133"><a href="http://www.animalplanet.com/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Home|http://www.animalplanet.com/">Home</a></li>
+<li id="menu-item-72756" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-72756"><a data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Shows|">Shows</a>
+<ul class="sub-menu">
+	<li id="menu-item-72757" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-72757"><a href="http://www.animalplanet.com/tv-shows/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * All Shows|http://www.animalplanet.com/tv-shows/">All Shows</a></li>
+	<li id="menu-item-4110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4110"><a href="http://www.animalplanet.com/tv-shows/finding-bigfoot/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Finding Bigfoot|http://www.animalplanet.com/tv-shows/finding-bigfoot/">Finding Bigfoot</a></li>
+	<li id="menu-item-4114" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4114"><a href="http://www.animalplanet.com/tv-shows/my-cat-from-hell/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * My Cat from Hell|http://www.animalplanet.com/tv-shows/my-cat-from-hell/">My Cat from Hell</a></li>
+	<li id="menu-item-47681" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47681"><a href="http://www.animalplanet.com/tv-shows/north-woods-law/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * North Woods Law|http://www.animalplanet.com/tv-shows/north-woods-law/">North Woods Law</a></li>
+	<li id="menu-item-47679" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47679"><a href="http://www.animalplanet.com/tv-shows/pitbulls-and-parolees/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Pit Bulls and Parolees|http://www.animalplanet.com/tv-shows/pitbulls-and-parolees/">Pit Bulls and Parolees</a></li>
+	<li id="menu-item-64129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64129"><a href="http://www.animalplanet.com/tv-shows/the-pool-master/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * The Pool Master|http://www.animalplanet.com/tv-shows/the-pool-master/">The Pool Master</a></li>
+	<li id="menu-item-57336" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-57336"><a href="http://www.animalplanet.com/tv-shows/puppy-bowl/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Puppy Bowl|http://www.animalplanet.com/tv-shows/puppy-bowl/">Puppy Bowl</a></li>
+	<li id="menu-item-47670" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47670"><a href="http://www.animalplanet.com/tv-shows/river-monsters/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * River Monsters|http://www.animalplanet.com/tv-shows/river-monsters/">River Monsters</a></li>
+	<li id="menu-item-47673" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47673"><a href="http://www.animalplanet.com/tv-shows/tanked/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Tanked|http://www.animalplanet.com/tv-shows/tanked/">Tanked</a></li>
+	<li id="menu-item-47675" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47675"><a href="http://www.animalplanet.com/tv-shows/treehouse-masters/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Treehouse Masters|http://www.animalplanet.com/tv-shows/treehouse-masters/">Treehouse Masters</a></li>
+	<li id="menu-item-47672" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47672"><a href="http://www.animalplanet.com/tv-shows/too-cute/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Too Cute|http://www.animalplanet.com/tv-shows/too-cute/">Too Cute</a></li>
+</ul>
+</li>
+<li id="menu-item-6290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6290"><a href="http://www.animalplanet.com/schedule/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * TV Schedule|http://www.animalplanet.com/schedule/">TV Schedule</a></li>
+<li id="menu-item-48658" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48658"><a title="Videos" href="http://www.animalplanet.com/videos/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Videos|http://www.animalplanet.com/videos/">Videos</a></li>
+<li id="menu-item-48103" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48103"><a href="http://www.apl.tv" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * APL!VE - Live Cams|http://www.apl.tv">APL!VE &#8211; Live Cams</a></li>
+<li id="menu-item-47674" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47674"><a href="http://www.animalplanet.com/bites-blog/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Bites Blog|http://www.animalplanet.com/bites-blog/">Bites Blog</a></li>
+<li id="menu-item-49459" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49459"><a href="http://www.animalplanet.com/dog-breed-selector/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Dog Breed Selector|http://www.animalplanet.com/dog-breed-selector/">Dog Breed Selector</a></li>
+<li id="menu-item-45482" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-45482"><a data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Social|">Social</a>
+<ul class="sub-menu">
+	<li id="menu-item-45483" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45483"><a href="http://www.facebook.com/AnimalPlanet" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Facebook|http://www.facebook.com/AnimalPlanet">Facebook</a></li>
+	<li id="menu-item-45487" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45487"><a href="http://www.instagram.com/animalplanet" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Instagram|http://www.instagram.com/animalplanet">Instagram</a></li>
+	<li id="menu-item-45486" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45486"><a href="http://www.pinterest.com/AnimalPlanet" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Pinterest|http://www.pinterest.com/AnimalPlanet">Pinterest</a></li>
+	<li id="menu-item-45484" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45484"><a href="http://www.twitter.com/AnimalPlanet" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Twitter|http://www.twitter.com/AnimalPlanet">Twitter</a></li>
+	<li id="menu-item-45485" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45485"><a href="http://www.youtube.com/AnimalPlanetTV" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * YouTube|http://www.youtube.com/AnimalPlanetTV">YouTube</a></li>
+	<li id="menu-item-45488" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45488"><a href="https://discovery.csharmony.epsilon.com/Account/Register?b=animal_planet" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Newsletters|https://discovery.csharmony.epsilon.com/Account/Register?b=animal_planet">Newsletters</a></li>
+</ul>
+</li>
+<li id="menu-item-72789" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-72789"><a href="http://www.animalplanet.com/topics/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Topics|http://www.animalplanet.com/topics/">Topics</a>
+<ul class="sub-menu">
+	<li id="menu-item-48101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48101"><a href="http://www.animalplanet.com/human-stories/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Human Stories|http://www.animalplanet.com/human-stories/">Human Stories</a></li>
+	<li id="menu-item-48099" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48099"><a href="http://www.animalplanet.com/pets/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Pets|http://www.animalplanet.com/pets/">Pets</a></li>
+	<li id="menu-item-48100" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48100"><a href="http://www.animalplanet.com/wild-animals/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Wild Animals|http://www.animalplanet.com/wild-animals/">Wild Animals</a></li>
+</ul>
+</li>
+<li id="menu-item-45489" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45489"><a href="http://www.animalplanet.com/games-puzzles/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Games|http://www.animalplanet.com/games-puzzles/">Games</a></li>
+<li id="menu-item-49688" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49688"><a title="ROAR" href="http://www.animalplanet.com/helping-pets/roar/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Reach Out. Act. Respond. For Animals|http://www.animalplanet.com/helping-pets/roar/">Reach Out. Act. Respond. For Animals</a></li>
+<li id="menu-item-45490" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-45490"><a data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Shop|">Shop</a>
+<ul class="sub-menu">
+	<li id="menu-item-55175" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55175"><a href="http://store.discovery.com/?v=animal-planet&#038;ecid=PRF-TV1-400000&#038;pa=PRF-TV1-400000" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Animal Planet Store|http://store.discovery.com/?v=animal-planet&amp;ecid=PRF-TV1-400000&amp;pa=PRF-TV1-400000">Animal Planet Store</a></li>
+	<li id="menu-item-55176" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55176"><a href="http://www.toysrus.com/entry.point?entry=3518438&#038;source=OLADV:AP_Brand:AP_Home:Nav" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Toys &quot;R&quot; Us|http://www.toysrus.com/entry.point?entry=3518438&amp;source=OLADV:AP_Brand:AP_Home:Nav">Toys &#8220;R&#8221; Us</a></li>
+	<li id="menu-item-55177" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55177"><a href="http://www.princess.com/learn/onboard/activities/discovery-at-sea/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Discovery At Sea|http://www.princess.com/learn/onboard/activities/discovery-at-sea/">Discovery At Sea</a></li>
+</ul>
+</li>
+<li id="menu-item-54580" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-54580"><a data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Our Sites|">Our Sites</a>
+<ul class="sub-menu">
+	<li id="menu-item-54585" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54585"><a href="http://www.ahctv.com/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * American Heroes Channel|http://www.ahctv.com/">American Heroes Channel</a></li>
+	<li id="menu-item-54599" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54599"><a href="http://www.apl.tv/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Animal Planet Live|http://www.apl.tv/">Animal Planet Live</a></li>
+	<li id="menu-item-54587" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54587"><a href="http://www.animalist.com/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Animalist|http://www.animalist.com/">Animalist</a></li>
+	<li id="menu-item-54588" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54588"><a href="http://www.destinationamerica.com/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Destination America|http://www.destinationamerica.com/">Destination America</a></li>
+	<li id="menu-item-54605" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54605"><a href="http://www.discoveryaccess.com/media/home.do" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Discovery Access|http://www.discoveryaccess.com/media/home.do">Discovery Access</a></li>
+	<li id="menu-item-54589" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54589"><a href="http://www.discovery.com/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Discovery Channel|http://www.discovery.com/">Discovery Channel</a></li>
+	<li id="menu-item-54603" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54603"><a href="http://www.discoveryeducation.com/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Discovery Education|http://www.discoveryeducation.com/">Discovery Education</a></li>
+	<li id="menu-item-54590" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54590"><a href="http://tv.discoveryfamilia.com/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Discovery Familia|http://tv.discoveryfamilia.com/">Discovery Familia</a></li>
+	<li id="menu-item-54592" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54592"><a href="http://www.discoveryfitandhealth.com/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Discovery Fit &amp; Health|http://www.discoveryfitandhealth.com/">Discovery Fit &#038; Health</a></li>
+	<li id="menu-item-85255" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-85255"><a href="https://www.discoverygo.com/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Discovery GO|https://www.discoverygo.com/">Discovery GO</a></li>
+	<li id="menu-item-54591" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54591"><a href="http://discoverykids.com/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Discovery Kids|http://discoverykids.com/">Discovery Kids</a></li>
+	<li id="menu-item-54593" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54593"><a href="http://www.discoverylife.com" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Discovery Life Channel|http://www.discoverylife.com">Discovery Life Channel</a></li>
+	<li id="menu-item-54604" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54604"><a href="http://www.discoverymusicsource.com/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Discovery Music Source|http://www.discoverymusicsource.com/">Discovery Music Source</a></li>
+	<li id="menu-item-54600" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54600"><a href="http://news.discovery.com/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Discovery News|http://news.discovery.com/">Discovery News</a></li>
+	<li id="menu-item-54594" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54594"><a href="http://www.investigationdiscovery.com/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Investigation Discovery|http://www.investigationdiscovery.com/">Investigation Discovery</a></li>
+	<li id="menu-item-54595" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54595"><a href="http://www.oprah.com/own" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * OWN|http://www.oprah.com/own">OWN</a></li>
+	<li id="menu-item-54601" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54601"><a href="http://revision3.com/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Revision3|http://revision3.com/">Revision3</a></li>
+	<li id="menu-item-54596" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54596"><a href="http://www.sciencechannel.com/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Science Channel|http://www.sciencechannel.com/">Science Channel</a></li>
+	<li id="menu-item-54606" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54606"><a href="http://www.sourcefed.com/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * SourceFed|http://www.sourcefed.com/">SourceFed</a></li>
+	<li id="menu-item-54602" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54602"><a href="http://testtube.com/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Test Tube|http://testtube.com/">Test Tube</a></li>
+	<li id="menu-item-54597" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54597"><a href="http://www.tlc.com/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * TLC|http://www.tlc.com/">TLC</a></li>
+	<li id="menu-item-54598" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54598"><a href="http://www.velocity.com/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Velocity|http://www.velocity.com/">Velocity</a></li>
+</ul>
+</li>
+<li id="menu-item-45498" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45498"><a href="http://corporate.discovery.com/online-closed-captioning/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Online Closed Captioning|http://corporate.discovery.com/online-closed-captioning/">Online Closed Captioning</a></li>
+<li id="menu-item-45499" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45499"><a href="http://corporate.discovery.com/privacy-policy/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Privacy Policy|http://corporate.discovery.com/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-45500" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45500"><a href="http://corporate.discovery.com/visitor-agreement/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Visitor Agreement|http://corporate.discovery.com/visitor-agreement/">Visitor Agreement</a></li>
+<li id="menu-item-45493" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-45493"><a data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Corporate|">Corporate</a>
+<ul class="sub-menu">
+	<li id="menu-item-45494" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45494"><a href="http://corporate.discovery.com/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Discovery Communications, LLC|http://corporate.discovery.com/">Discovery Communications, LLC</a></li>
+	<li id="menu-item-45495" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45495"><a href="http://corporate.discovery.com/contact/viewer-relations/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Viewer Relations|http://corporate.discovery.com/contact/viewer-relations/">Viewer Relations</a></li>
+	<li id="menu-item-45496" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45496"><a href="http://corporate.discovery.com/contact/advertising/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Advertising|http://corporate.discovery.com/contact/advertising/">Advertising</a></li>
+	<li id="menu-item-45497" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-45497"><a href="http://careers.discovery.com/" data-track="events|custom|nav-clicks|tv-shows-puppy-bowl-games-and-more-puppy-bowl-virtual-reality * drawer-sidebar-menu * Careers @ Discovery|http://careers.discovery.com/">Careers @ Discovery</a></li>
+</ul>
+</li>
+</ul>            <div class="copyright global-text-1">Copyright &copy; 2016 Discovery Communications, LLC. The World's #1 Nonfiction Media Company.</div>
+        </div>
+    </section>
+    </div>
+
+    
+    
+<script src="//static.ddmcdn.com/app/fusion-usnets/js/geoip-dgo-enabled-f88f806a.js"></script>
+
+
+
+
+
+    <script>
+        (function() {
+            if(typeof MenuDrawer !== 'undefined'){
+                new MenuDrawer;
+            }
+            setTimeout(function(){window.mainApp.runIt();},100);
+        }());
+    </script>
+
+<script>var app_link_android = "https://play.google.com/store/apps/details?id=com.discovery.discoverygo";</script><script type='text/javascript' src='//cdn.mediavoice.com/nativeads/script/discovery/discovery-polar.js'></script>
+<script type='text/javascript' src='//static.ddmcdn.com/ddm/javascript/apis/3.1.3/fusion/core.ugly.js'></script>
+<script type='text/javascript' src='//static.ddmcdn.com/ddm/javascript/apis/3.1.3/fusion/freewheel.ugly.js'></script>
+<script type='text/javascript' src='//static.ddmcdn.com/app/fusion-usnets/js/freewheel-config-script-b906fd3d.js'></script>
+<script type='text/javascript' src='//tags.bkrtx.com/js/bk-coretag.js'></script>
+<script type='text/javascript' src='//static.ddmcdn.com/app/fusion-usnets/js/page-events-management-refresh-4623965b.js'></script>
+<script type="text/javascript">
+bk_addPageCtx("metatype",pageMetricsData.type);bk_addPageCtx("metasite",pageMetricsData.name);bk_addPageCtx("metatitle",document.title);bk_js_list=pageMetricsData;bk_doJSTag(13305);
+(function() {
+    function async_load(script_url){
+        var protocol = ('https:' == document.location.protocol ? 'https://' : 'http://');
+        var s = document.createElement('script'); s.src = protocol + script_url;
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    }
+    bm_website_code = 'F618DD85C0104625';
+    jQuery(document).ready(function(){async_load('asset.pagefair.com/measure.min.js')});
+    jQuery(document).ready(function(){async_load('asset.pagefair.net/ads.min.js')});
+})();
+if (document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', fusinOnLoadCallback, false);
+} else if (document.attachEvent) {
+    document.attachEvent('onreadystatechange', fusinOnLoadCallback);
+}
+function fusinOnLoadCallback() {
+window.fbAsyncInit = function() {
+    var event;
+
+    if (document.createEvent) {
+        event = document.createEvent('HTMLEvents');
+        event.initEvent('facebookSDKLoaded', true, true);
+    } else {
+        event = document.createEventObject();
+        event.eventType = 'facebookSDKLoaded';
+    }
+
+    event.eventName = 'facebookSDKLoaded';
+
+    if (document.createEvent) {
+        document.dispatchEvent(event);
+    } else {
+        document.fireEvent('on' + event.eventType, event);
+    }
+};
+
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&status=0&version=v2.0&appId="+window.fbAppId;
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+window.twttr = (function (d, s, id) {
+  var t, js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id; js.src= "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+  return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
+}(document, "script", "twitter-wjs"));
+
+twttr.ready(function (twttr) {
+    var event;
+
+    if (document.createEvent) {
+        event = document.createEvent('HTMLEvents');
+        event.initEvent('twttrSDKLoaded', true, true);
+    } else {
+        event = document.createEventObject();
+        event.eventType = 'twttrSDKLoaded';
+    }
+
+    event.eventName = 'twttrSDKLoaded';
+
+    if (document.createEvent) {
+        document.dispatchEvent(event);
+    } else {
+        document.fireEvent('on' + event.eventType, event);
+    }
+});
+}
+</script>
+
+</body>
+</html>

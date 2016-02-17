@@ -1,0 +1,614 @@
+   #[1]AviUtlの易しい使い方 RSS Feed [2]AviUtlの易しい使い方 » フィード [3]AviUtlの易しい使い方 »
+   コメントフィード [4]AviUtlの易しい使い方 » ツイッターに投稿する動画の条件について【動画形式･コーデック】 のコメントのフィード
+   [5]alternate [6]alternate
+
+   [7]AviUtlの易しい使い方
+
+   AviUtlを中心に動画全般の事を解説するサイト
+     *
+     *
+
+     * [8]ホーム
+     * [9]AviUtlとは？
+     * [10]AviUtlの導入から使い方までまとめ
+     * [11]エフェクト一覧
+          + [12]ブラー系
+          + [13]色関係
+          + [14]光関係
+          + [15]ぼかし系
+          + [16]輪郭系
+          + [17]登場･退場系
+          + [18]歪み系
+          + [19]トリミング系
+          + [20]透明化系
+          + [21]ノイズ
+          + [22]インターレース解除
+          + [23]画像ループ
+          + [24]オブジェクト分割
+          + [25]オフスクリーン描画
+          + [26]基本効果
+          + [27]振動
+     * [28]動画の知識を付けたい人が読むべきページ
+     * [29]このサイトについて
+     * [30]コンタクト
+     * [31]更新順
+
+   [32]ホーム
+   [33]ストリーミング
+
+ツイッターに投稿する動画の条件について【動画形式･コーデック】
+
+   2016/1/3 2016/2/13 [34]ストリーミング
+
+   [35]twitter_icon
+
+   ツイッターに動画を投稿する際の条件とか、気をつけた方が良い点とかをまとめてみました。
+
+   かなりな高画質・高解像度の動画を投稿できるみたいです。
+
+   目次
+     * [36]1 ツイッターに投稿する動画の条件
+     * [37]2 目的別
+          + [38]2.1 iPhone･Android等のスマフォで撮影した動画を投稿したい人
+          + [39]2.2 PC等で動画編集した動画を投稿したい人
+               o [40]2.2.1 AviUtlでツイッター用の動画を出力する方法
+               o [41]2.2.2 その他のエンコソフト
+
+   スポンサードリンク
+   [INS: :INS]
+
+ツイッターに投稿する動画の条件
+
+   投稿する動画の条件は以下に当てはまっていればOKらしいです。
+     * 動画形式：.MOV or .MP4
+     * 映像コーデック：H.264
+     * 音声コーデック：AAC（LC）
+     * ファイルサイズ：512MBまで
+     * 長さ：30秒まで
+     * 最小解像度: 32 x 32
+     * 最大解像度: 1920 x 1200 (および1200 x 1900)
+     * 縦横比: 1:2.39～2.39:1の範囲 (両方の値を含む)
+     * 最大フレームレート: 40fps
+     * 最大ビットレート:25Mbps
+
+   引用：[42]https://support.twitter.com/articles/20172147#video-formats
+
+   今流行りの動画形式・コーデックですね。
+
+   Youtubeやニコニコでも推奨している「MP4（H.264、AAC）」です。
+
+   MOVに対応しているのは、iPhoneユーザーを考慮しての事でしょう。（iPhoneで撮影した動画は「MOV（H.264、AAC）」なので）
+
+   「長さ30秒まで」っていうのは結構キツいですが、[43]ビットレートを25Mbpsも割けるのはすごいですね。ブルーレイ相当の画質で投稿出来るっ
+   て事ですからね。
+   ※地デジとかでも16Mbpsとかですからね。（BS/CSで20Mbpsくらい）
+
+   最大フレームレートは何故40fpsとかいう微妙な値なのか分かりませんが、最近のスマフォは60fpsで撮影できるものが多いので、要注意ですね。（
+   60fpsな動画の場合は[44]fpsを落とす必要有り）
+
+目的別
+
+iPhone･Android等のスマフォで撮影した動画を投稿したい人
+
+   先述したように、fpsさえ40fps以内に収めておけば、そのまま投稿出来ます。
+
+   ※たまにMPEG4やMJPEGコーデックで撮影するスマフォが有るみたいなので注意ですが
+
+   今時の動画の動画フォーマット・コーデックに則したものとなっているので、何も加工なしにそのまま投稿すればOKです。
+
+PC等で動画編集した動画を投稿したい人
+
+   ビットレートとかファイルサイズは、この解像度で超える事はまずあり得ないので、何も考えず超高画質で出力してしまえばOKです。
+
+   が、URL先では、H.264の「プロファイル」について言及されていません。
+
+   たぶん、「baseline」まで落としたほうがトラブルが起きにくいと思いますので、（念のため）出力の際はプロファイルを「baseline」に変
+   更しましょう。
+
+   「プロファイル」っていうのは、H.264のポテンシャルの高さみたいな設定のことです。
+
+   この項目で高機能なものを選べば選ぶほど、動画は高圧縮になっていきますが、その分、再生負荷も上がりますし、再生の互換性も下がります。
+
+   一部の機器（スマフォ・ゲーム機器）だと「baseline」しか対応してないのもあるかもしれないので、一応baselineにしといた方が良いよ！
+   というだけの話です。（baseline→Main→Highみたいな感じで上がっていく）
+
+   ※ちなみに（かなり大雑把ですが）30秒動画を、「baseline」と「High」設定でそれぞれ出力した場合、「High」の方が20%くらいファ
+   イルサイズが小さくなります。（動きの激しい実写動画の場合）
+
+   参考：[45]H.264 – Wikipedia（下らへんにプロファイルについての詳しい定義とか載ってます）
+
+   ツイッター側で再エンコードする仕組みになっていれば、特に意識する必要もないですが、念の為に。。（30秒以上の動画をうｐする場合は、絶対に再エン
+   コードされるので、意識する必要は有りません）
+   ちなみに、30秒以上の動画をうｐした場合でも、ツイッター側で以下↓のような30秒の範囲内に収める為の編集画面を作ってくれてるので、そこで30秒
+   に収めればうｐ出来る仕様となっています。（なので、30秒に収める為に動画編集とかする必要もない）
+   [46]s-30byou_twitter
+
+AviUtlでツイッター用の動画を出力する方法
+
+   このサイトの主題でもあるAviUtlで出力する方法についても一応簡単に紹介します。
+
+   AviUtlで、この条件に当てはまる動画を出力するには、「x264guiEx」を使用するしか有りません。（[47]x264VFWを使用すればH
+   .264出力出来ますが、この場合、コンテナはAVIになってしまうのでダメです）
+     * 参考：[48]【AviUtl】x264guiExの導入方法と使い方【MP4出力】
+
+
+   出力するにはまず、動画を読み込んで、30秒分だけ「選択範囲」を設定します。
+
+   [49]30秒_選択範囲
+     * 参考：[50]【AviUtl】拡張編集タイムラインの使い方【レイヤー】
+     * 参考：[51]【AviUtl】動画をエンコードするやり方【ビデオ圧縮】
+
+   フレームレートが40fpsを超えてる場合は、メニューの「設定」→「フレームレートの変更」からフレームレートを落としましょう。（それか「編集」→
+   「再生速度情報の変更」からプロジェクトのfps自体を変更）
+     * 参考：[52]【AviUtl】動画のフレームレート(fps)を変更する方法
+
+   次に、メニューの「ファイル」→「プラグイン出力」→「拡張
+   x264(GUI)出力」を選択して、「ビデオ圧縮」ボタンを押して、以下の画面を出します。
+
+   [53]x264_twitter
+
+   ↑画像のように、左下の「デフォルト」ボタンを押して、「プロファイル」を「baseline」に変更して、普通に動画出力をすればOKです。（ビット
+   レートを上げたい場合は、「品質」を最大まで上げてもOK）
+     * 参考：[54]エンコードとは？コーデックとMuxerの関係について
+
+その他のエンコソフト
+
+   MP4（H.264、AAC）でエンコ出来ればどんなソフトでもOKです。
+
+   ニコニコユーザーに定評のある「[55]つんでれんこ」とかでも問題有りません。（ただ、つんでれんこの場合は30秒分だけエンコとかは多分出来ない）
+
+   ※エンコソフトについては以下記事などを参考に。
+
+   →[56]おすすめのフリーエンコードソフト11選【エンコーダー】
+
+
+
+   追記：
+
+   MMD関連で、「投稿した動画の色が劣化する！」みたいな人が多いみたいですが、H.264の色空間はYV12（YUV420）なので、ほとんどの場合
+   劣化してしまいます。防ぎようが有りません。
+
+   MMDで動画を出力する際にUtVideo（RGB）で出力してる人が多い（？）と思いますが、RGBの場合は特に色の劣化が激しくなります。
+
+   RGB動画の場合は、[57]ダウンサンプリングフィルタなどのフィルタを使用してエンコすれば、（多少）色の劣化をマシに出来ます。
+   [58]2016-01-25_00h40_04
+
+   参考ページ：[59]【AviUtl】RGB･YUV動画の色を劣化させないコーデックの設定（RGBな動画をエンコする人には参考になるかもしれませ
+   ん）
+   スポンサーリンク
+   [INS: :INS]
+     *
+     *
+     *
+     *
+     *
+     * [60]CLIP!
+
+     *
+     *
+
+   [61]ツイッター, [62]動画, [63]投稿, [64]条件 [65]adminadmin
+
+関連記事
+
+   [66]FLVとXML（コメント）ファイルを結合する方法【ニコニコ】
+
+[67]FLVとXML（コメント）ファイルを結合する方法【ニコニコ】
+
+   FLV動画ファイルとXMLコメントファイルを結合して、ニコニコ動画のコメ付き動画みたいなのを作る方法を紹介します。 ※具体的に...
+
+   [68]記事を読む
+   [69]ツイキャスとは？PCでライブ配信するやり方【ニコ生デスクトップキャプチャー】
+
+[70]ツイキャスとは？PCでライブ配信するやり方【ニコ生デスクトップキャプチャー】
+
+   最近流行りのライブ配信サービス「ツイキャス」（TwitCasting）で、ライブ配信をするやり方について簡単に紹介します。 ※スマフォ...
+
+   [71]記事を読む
+   スポンサーリンク
+   [INS: :INS]
+   [72]【AviUtl】ティム氏のスクリプトまとめ①【破壊･崩壊･燃焼･侵食系の効果】
+   [73]【AviUtl】L-SMASH Worksの設定方法②【入力プラグイン】
+
+コメントをどうぞ（挨拶は不要です。指摘･質問内容だけ書いて頂ければOK） [74]コメントをキャンセル
+
+   メールアドレスが公開されることはありません。
+
+
+   _____________________________________________
+   _____________________________________________
+   _____________________________________________
+   _____________________________________________
+   _____________________________________________
+   _____________________________________________
+   _____________________________________________
+   _____________________________________________
+
+   名前 ______________________________
+
+   メールアドレス ______________________________
+
+   ウェブサイト ______________________________
+
+   コメントを送信
+
+   [ ] 新しいコメントをメールで通知
+
+   [ ] 新しい投稿をメールで受け取る
+
+                        JPEGのみうｐ出来ます（画像は事前に圧縮・リサイズして貼って下さい）
+   スポンサーリンク
+   [INS: :INS]
+
+分からない事があればコチラ
+
+   ____________________ Submit
+
+お知らせとか
+
+   [75]相互リンク募集中です。
+
+   ※記述の間違い・誤字・リンク先の間違いなどがありましたらコメントで指摘して頂けると非常に助かります
+
+新着記事
+
+     * [76]【AviUtl】カラオケみたいにボーカルに合わせて字幕の色を変化させる方法
+       [77]【AviUtl】カラオケみたいにボーカルに合わせて字幕の色を変化させる方法
+     * [78]HandBrakeの使い方と設定方法【QSV対応エンコーダー】
+       [79]HandBrakeの使い方と設定方法【QSV対応エンコーダー】
+     * [80]【AviUtl】高画質･無劣化で動画をエンコード（出力）する方法
+       [81]【AviUtl】高画質･無劣化で動画をエンコード（出力）する方法
+     * [82]【AviUtl】ユウ氏のスクリプトまとめ【アニメーション効果】
+       [83]【AviUtl】ユウ氏のスクリプトまとめ【アニメーション効果】
+     * [84]AACSとCSSとCPRMの違い【コピーガード】
+       [85]AACSとCSSとCPRMの違い【コピーガード】
+     * [86]DRMを解除する方法まとめ【デジタル著作権管理】
+       [87]DRMを解除する方法まとめ【デジタル著作権管理】
+
+スポンサードリンク
+
+   [INS: :INS]
+
+カテゴリー別人気記事
+
+     * [88]ツイッターに投稿する動画の条件について【動画形式･コーデック】
+       [89]ツイッターに投稿する動画の条件について【動画形式･コーデック】
+     * [90]FLVとXML（コメント）ファイルを結合する方法【ニコニコ】
+       [91]FLVとXML（コメント）ファイルを結合する方法【ニコニコ】
+     * [92]ツイキャスとは？PCでライブ配信するやり方【ニコ生デスクトップキャプチャー】
+       [93]ツイキャスとは？PCでライブ配信するやり方【ニコ生デスクトップキャプチャー】
+
+   ※AviUtl初心者の人は以下の記事から読み始めて下さい。
+   →[94]AviUtl初心者が最初に読むべきページ【導入から使い方まで】
+
+タグ
+
+   [95].wmv [96]AACS [97]AviUtl [98]DVD [99]ffdshow [100]gif [101]TS抜き
+   [102]youtube [103]おすすめ [104]さつき [105]アニメーション効果 [106]インストール [107]エフェクト
+   [108]エンコード [109]カット [110]コーデック [111]シーンチェンジ [112]スクリプト [113]ダウンロード
+   [114]ティム [115]デメリット [116]フィルター [117]ブルーレイ [118]プラグイン [119]メリット
+   [120]モザイク [121]リサイズ [122]作り方 [123]使い方 [124]入力プラグイン [125]出力 [126]動画
+   [127]動画編集 [128]合成 [129]地デジ [130]変換 [131]字幕 [132]導入方法 [133]拡張編集 [134]比較
+   [135]画像 [136]設定 [137]違い [138]音声 [139]高画質
+
+カテゴリー
+
+     * [140]導入
+     * [141]プラグイン
+          + [142]入力プラグイン
+          + [143]出力プラグイン
+          + [144]リサイズプラグイン
+     * [145]エンコード関係
+     * [146]本体機能講座
+     * [147]拡張編集講座
+          + [148]基本機能
+          + [149]エフェクト
+               o [150]アニメーション効果
+          + [151]オブジェクト関係
+          + [152]カメラ制御
+          + [153]スクリプト制御
+     * [154]目的別
+          + [155]基本編集
+          + [156](プチ)応用編集
+          + [157]gif関係
+          + [158]顔を隠す
+     * [159]外部スクリプト
+          + [160]さつき氏配布スクリプト
+          + [161]ティム氏配布スクリプト
+          + [162]テツ氏配布スクリプト
+          + [163]白水氏配布スクリプト
+     * [164]動画基礎知識
+          + [165]エンコード系
+          + [166]ビットレート系
+          + [167]フレーム系
+          + [168]動画形式・コーデック
+          + [169]色空間・色変換
+          + [170]規格
+     * [171]トラブルシューティング
+     * [172]コーデック
+          + [173]可逆圧縮
+          + [174]非可逆圧縮
+     * [175]ストリーミング
+          + [176]Youtube
+          + [177]ニコニコ
+     * [178]動画関係全般
+          + [179]エンコードソフト
+          + [180]オーサリングソフト
+          + [181]キャプチャソフト
+          + [182]ダウンロードソフト
+          + [183]動画再生ソフト
+               o [184]ffdshow
+          + [185]動画編集ソフト
+     * [186]家電
+     * [187]スマフォ
+     * [188]リッピング･コピープロテクト
+     * [189]地デジ･BS/CS
+          + [190]TS抜きソフト
+          + [191]TS抜き知識
+          + [192]TS編集
+
+最近のコメント
+
+     * [193]【AviUtl】モーショントラッキングを使って顔を隠す方法【追跡機能】 に 匿名 より
+     * [194]【AviUtl】ティム氏のスクリプトまとめ①【破壊･崩壊･燃焼･侵食系の効果】 に adminadmin より
+     * [195]【AviUtl】ティム氏のスクリプトまとめ①【破壊･崩壊･燃焼･侵食系の効果】 に F.I より
+     * [196]【AviUtl】x264guiExの導入方法と使い方【MP4･MKV出力】 に K_K より
+     * [197]【AviUtl】x264guiExの導入方法と使い方【MP4･MKV出力】 に adminadmin より
+     * [198]【AviUtl】動画への字幕(テロップ)の入れ方【テキスト】 に adminadmin より
+     * [199]【AviUtl】x264guiExの導入方法と使い方【MP4･MKV出力】 に K_K より
+     * [200]【AviUtl】動画への字幕(テロップ)の入れ方【テキスト】 に くらもち より
+     * [201]VFR（可変）とCFR（固定）の違い【フレームレート】 に adminadmin より
+     * [202]VFR（可変）とCFR（固定）の違い【フレームレート】 に ジミー より
+     * [203]【AviUtl】ゆっくりムービーメーカーの導入方法と使い方【解説実況】 に はまそう より
+     * [204]【情強向】おすすめ動画再生ソフト12選を比較した【ランキング】 に 匿名 より
+     * [205]【AviUtl】L-SMASH Worksとは？導入方法と使い方①【入力プラグイン】 に adminadmin より
+     * [206]【AviUtl】L-SMASH Worksとは？導入方法と使い方①【入力プラグイン】 に 匿名 より
+     * [207]【AviUtl】動画のフレームレート(fps)を変更する方法【落とす|上げる】 に adminadmin より
+     * [208]【AviUtl】動画のフレームレート(fps)を変更する方法【落とす|上げる】 に 匿名 より
+     * [209]動画コーデックの種類と違い(H.264･VP9･MPEG･Xvid･DivX･WMV等)【比較】 に たまご より
+     * [210]【AviUtl】シーンチェンジの使い方と種類について に adminadmin より
+     * [211]【AviUtl】シーンチェンジの使い方と種類について に ミラデ より
+     * [212]Audacityの簡単な使い方と導入方法を解説 に adminadmin より
+     * [213]AG-デスクトップレコーダーの使い方と設定方法 に adminadmin より
+     * [214]AG-デスクトップレコーダーの使い方と設定方法 に 山田 より
+
+   WordPress Theme [215]Simplicity
+   Copyright© [216]AviUtlの易しい使い方 All Rights Reserved.
+
+References
+
+   Visible links
+   1. http://aviutl.info/feed/
+   2. http://aviutl.info/feed/
+   3. http://aviutl.info/comments/feed/
+   4. http://aviutl.info/twitter-movie/feed/
+   5. http://aviutl.info/wp-json/oembed/1.0/embed?url=http://aviutl.info/twitter-movie/
+   6. http://aviutl.info/wp-json/oembed/1.0/embed?url=http://aviutl.info/twitter-movie/&format=xml
+   7. http://aviutl.info/
+   8. http://aviutl.info/
+   9. http://aviutl.info/what/
+  10. http://aviutl.info/intro/
+  11. http://aviutl.info/category/拡張編集講座/エフェクト/
+  12. http://aviutl.info/bura-efekuto/
+  13. http://aviutl.info/iro-efekuto/
+  14. http://aviutl.info/efekuto-hikari/
+  15. http://aviutl.info/bokasi-efekuto/
+  16. http://aviutl.info/rinnkaku-efekuto/
+  17. http://aviutl.info/touzyou-efekuto/
+  18. http://aviutl.info/hizumi-efekuto/
+  19. http://aviutl.info/toriminngu-efekuto/
+  20. http://aviutl.info/toumeika/
+  21. http://aviutl.info/noizuefekuto/
+  22. http://aviutl.info/innta-re-sukaizyo/
+  23. http://aviutl.info/gazouru-pu-efekuto/
+  24. http://aviutl.info/obuzyekutobunnkatu/
+  25. http://aviutl.info/ohusukuri-nn/
+  26. http://aviutl.info/kihonnkouka-efekuto/
+  27. http://aviutl.info/sinndou-efekuto/
+  28. http://aviutl.info/douga-tisiki/
+  29. http://aviutl.info/info/
+  30. http://aviutl.info/contact/
+  31. http://aviutl.info/blog/
+  32. http://aviutl.info/
+  33. http://aviutl.info/category/ストリーミング/
+  34. http://aviutl.info/category/ストリーミング/
+  35. http://aviutl.info/wp-content/uploads/2016/01/twitter_icon.png
+  36. file:///mnt/D/study/ODU/web/webpages/26ab7550b9d26207de28cc51e3ff22e7#i
+  37. file:///mnt/D/study/ODU/web/webpages/26ab7550b9d26207de28cc51e3ff22e7#i-2
+  38. file:///mnt/D/study/ODU/web/webpages/26ab7550b9d26207de28cc51e3ff22e7#iPhoneAndroid
+  39. file:///mnt/D/study/ODU/web/webpages/26ab7550b9d26207de28cc51e3ff22e7#PC
+  40. file:///mnt/D/study/ODU/web/webpages/26ab7550b9d26207de28cc51e3ff22e7#AviUtl
+  41. file:///mnt/D/study/ODU/web/webpages/26ab7550b9d26207de28cc51e3ff22e7#i-3
+  42. https://support.twitter.com/articles/20172147#video-formats
+  43. http://aviutl.info/bittore-to/
+  44. http://aviutl.info/hure-mure-to-hennkou/
+  45. https://ja.wikipedia.org/wiki/H.264
+  46. http://aviutl.info/wp-content/uploads/2016/01/s-30byou_twitter.jpg
+  47. http://aviutl.info/x264-vfw/
+  48. http://aviutl.info/x264guiex-intro/
+  49. http://aviutl.info/wp-content/uploads/2016/01/6d483fcc3428bdd4bc27b0a03c4f2678.png
+  50. http://aviutl.info/taimurainn/
+  51. http://aviutl.info/ennko-do/
+  52. http://aviutl.info/hure-mure-to-hennkou/
+  53. http://aviutl.info/wp-content/uploads/2016/01/x264_twitter.png
+  54. http://aviutl.info/encode-codec-muxer/
+  55. http://aviutl.info/tunndereko/
+  56. http://aviutl.info/encoder-osusume/
+  57. http://auf.jpn.xxxxxxxx.jp/
+  58. http://aviutl.info/wp-content/uploads/2016-01-25_00h40_04.png
+  59. http://aviutl.info/rgb-yuv/
+  60. file:///mnt/D/study/ODU/web/webpages/26ab7550b9d26207de28cc51e3ff22e7
+  61. http://aviutl.info/tag/ツイッター/
+  62. http://aviutl.info/tag/動画/
+  63. http://aviutl.info/tag/投稿/
+  64. http://aviutl.info/tag/条件/
+  65. http://aviutl.info/author/adminadmin/
+  66. http://aviutl.info/flv-xml/
+  67. http://aviutl.info/flv-xml/
+  68. http://aviutl.info/flv-xml/
+  69. http://aviutl.info/twicas-yarikata/
+  70. http://aviutl.info/twicas-yarikata/
+  71. http://aviutl.info/twicas-yarikata/
+  72. http://aviutl.info/thimu-11/
+  73. http://aviutl.info/l-smash-works-22/
+  74. file:///twitter-movie/#respond
+  75. http://aviutl.info/info/#i-2
+  76. http://aviutl.info/vocal/
+  77. http://aviutl.info/vocal/
+  78. http://aviutl.info/handbrake/
+  79. http://aviutl.info/handbrake/
+  80. http://aviutl.info/kougasitu-encode/
+  81. http://aviutl.info/kougasitu-encode/
+  82. http://aviutl.info/yu/
+  83. http://aviutl.info/yu/
+  84. http://aviutl.info/aacs-css-cprm/
+  85. http://aviutl.info/aacs-css-cprm/
+  86. http://aviutl.info/drm-kaizyo/
+  87. http://aviutl.info/drm-kaizyo/
+  88. http://aviutl.info/twitter-movie/
+  89. http://aviutl.info/twitter-movie/
+  90. http://aviutl.info/flv-xml/
+  91. http://aviutl.info/flv-xml/
+  92. http://aviutl.info/twicas-yarikata/
+  93. http://aviutl.info/twicas-yarikata/
+  94. http://aviutl.info/intro/
+  95. http://aviutl.info/tag/wmv/
+  96. http://aviutl.info/tag/aacs/
+  97. http://aviutl.info/tag/aviutl/
+  98. http://aviutl.info/tag/dvd/
+  99. http://aviutl.info/tag/ffdshow/
+ 100. http://aviutl.info/tag/gif/
+ 101. http://aviutl.info/tag/ts抜き/
+ 102. http://aviutl.info/tag/youtube/
+ 103. http://aviutl.info/tag/おすすめ/
+ 104. http://aviutl.info/tag/さつき/
+ 105. http://aviutl.info/tag/アニメーション効果/
+ 106. http://aviutl.info/tag/インストール/
+ 107. http://aviutl.info/tag/エフェクト/
+ 108. http://aviutl.info/tag/エンコード/
+ 109. http://aviutl.info/tag/カット/
+ 110. http://aviutl.info/tag/コーデック/
+ 111. http://aviutl.info/tag/シーンチェンジ/
+ 112. http://aviutl.info/tag/スクリプト/
+ 113. http://aviutl.info/tag/ダウンロード/
+ 114. http://aviutl.info/tag/ティム/
+ 115. http://aviutl.info/tag/デメリット/
+ 116. http://aviutl.info/tag/フィルター/
+ 117. http://aviutl.info/tag/ブルーレイ/
+ 118. http://aviutl.info/tag/プラグイン/
+ 119. http://aviutl.info/tag/メリット/
+ 120. http://aviutl.info/tag/モザイク/
+ 121. http://aviutl.info/tag/リサイズ/
+ 122. http://aviutl.info/tag/作り方/
+ 123. http://aviutl.info/tag/使い方/
+ 124. http://aviutl.info/tag/入力プラグイン/
+ 125. http://aviutl.info/tag/出力/
+ 126. http://aviutl.info/tag/動画/
+ 127. http://aviutl.info/tag/動画編集/
+ 128. http://aviutl.info/tag/合成/
+ 129. http://aviutl.info/tag/地デジ/
+ 130. http://aviutl.info/tag/変換/
+ 131. http://aviutl.info/tag/字幕/
+ 132. http://aviutl.info/tag/導入方法/
+ 133. http://aviutl.info/tag/拡張編集/
+ 134. http://aviutl.info/tag/比較/
+ 135. http://aviutl.info/tag/画像/
+ 136. http://aviutl.info/tag/設定/
+ 137. http://aviutl.info/tag/違い/
+ 138. http://aviutl.info/tag/音声/
+ 139. http://aviutl.info/tag/高画質/
+ 140. http://aviutl.info/category/導入/
+ 141. http://aviutl.info/category/プラグイン/
+ 142. http://aviutl.info/category/プラグイン/入力プラグイン/
+ 143. http://aviutl.info/category/プラグイン/出力プラグイン/
+ 144. http://aviutl.info/category/プラグイン/リサイズプラグイン/
+ 145. http://aviutl.info/category/エンコード関係/
+ 146. http://aviutl.info/category/本体機能講座/
+ 147. http://aviutl.info/category/拡張編集講座/
+ 148. http://aviutl.info/category/拡張編集講座/基本機能/
+ 149. http://aviutl.info/category/拡張編集講座/エフェクト/
+ 150. http://aviutl.info/category/拡張編集講座/エフェクト/アニメーション効果/
+ 151. http://aviutl.info/category/拡張編集講座/オブジェクト関係/
+ 152. http://aviutl.info/category/拡張編集講座/カメラ制御/
+ 153. http://aviutl.info/category/拡張編集講座/スクリプト制御/
+ 154. http://aviutl.info/category/目的別/
+ 155. http://aviutl.info/category/目的別/基本編集/
+ 156. http://aviutl.info/category/目的別/プチ応用編集/
+ 157. http://aviutl.info/category/目的別/gif関係/
+ 158. http://aviutl.info/category/目的別/顔を隠す-目的別/
+ 159. http://aviutl.info/category/外部スクリプト/
+ 160. http://aviutl.info/category/外部スクリプト/さつき氏配布スクリプト/
+ 161. http://aviutl.info/category/外部スクリプト/ティム氏配布スクリプト/
+ 162. http://aviutl.info/category/外部スクリプト/テツ氏配布スクリプト/
+ 163. http://aviutl.info/category/外部スクリプト/白水氏配布スクリプト/
+ 164. http://aviutl.info/category/動画基礎知識/
+ 165. http://aviutl.info/category/動画基礎知識/エンコード系/
+ 166. http://aviutl.info/category/動画基礎知識/ビットレート系/
+ 167. http://aviutl.info/category/動画基礎知識/フレーム系/
+ 168. http://aviutl.info/category/動画基礎知識/動画形式・コーデック/
+ 169. http://aviutl.info/category/動画基礎知識/色空間・色変換/
+ 170. http://aviutl.info/category/動画基礎知識/規格/
+ 171. http://aviutl.info/category/トラブルシューティング/
+ 172. http://aviutl.info/category/コーデック/
+ 173. http://aviutl.info/category/コーデック/可逆圧縮/
+ 174. http://aviutl.info/category/コーデック/非可逆圧縮/
+ 175. http://aviutl.info/category/ストリーミング/
+ 176. http://aviutl.info/category/ストリーミング/youtube/
+ 177. http://aviutl.info/category/ストリーミング/ニコニコ/
+ 178. http://aviutl.info/category/動画関係全般/
+ 179. http://aviutl.info/category/動画関係全般/エンコードソフト/
+ 180. http://aviutl.info/category/動画関係全般/オーサリングソフト/
+ 181. http://aviutl.info/category/動画関係全般/キャプチャソフト/
+ 182. http://aviutl.info/category/動画関係全般/ダウンロードソフト/
+ 183. http://aviutl.info/category/動画関係全般/動画再生ソフト/
+ 184. http://aviutl.info/category/動画関係全般/動画再生ソフト/ffdshow/
+ 185. http://aviutl.info/category/動画関係全般/動画編集ソフト-動画関係全般/
+ 186. http://aviutl.info/category/家電/
+ 187. http://aviutl.info/category/スマフォ/
+ 188. http://aviutl.info/category/リッピング･コピープロテクト/
+ 189. http://aviutl.info/category/地デジ･bs･cs/
+ 190. http://aviutl.info/category/地デジ･bs･cs/ts抜きソフト/
+ 191. http://aviutl.info/category/地デジ･bs･cs/ts抜き知識/
+ 192. http://aviutl.info/category/地デジ･bs･cs/ts編集/
+ 193. http://aviutl.info/motiontracking/#comment-1110
+ 194. http://aviutl.info/thimu-11/#comment-1109
+ 195. http://aviutl.info/thimu-11/#comment-1106
+ 196. http://aviutl.info/x264guiex-intro/#comment-1105
+ 197. http://aviutl.info/x264guiex-intro/#comment-1104
+ 198. http://aviutl.info/zimaku-tekisuto/#comment-1103
+ 199. http://aviutl.info/x264guiex-intro/#comment-1102
+ 200. http://aviutl.info/zimaku-tekisuto/#comment-1101
+ 201. http://aviutl.info/vfr-cfr/#comment-1094
+ 202. http://aviutl.info/vfr-cfr/#comment-1093
+ 203. http://aviutl.info/yukkuri-moviemaker/#comment-1084
+ 204. http://aviutl.info/douga-player/#comment-1079
+ 205. http://aviutl.info/l-smash-works/#comment-1076
+ 206. http://aviutl.info/l-smash-works/#comment-1075
+ 207. http://aviutl.info/hure-mure-to-hennkou/#comment-1069
+ 208. http://aviutl.info/hure-mure-to-hennkou/#comment-1068
+ 209. http://aviutl.info/ko-dekku-tigai/#comment-1057
+ 210. http://aviutl.info/si-nntyennzi/#comment-1056
+ 211. http://aviutl.info/si-nntyennzi/#comment-1053
+ 212. http://aviutl.info/audacity/#comment-1045
+ 213. http://aviutl.info/ag-desctoprecoder/#comment-1044
+ 214. http://aviutl.info/ag-desctoprecoder/#comment-1042
+ 215. http://wp-simplicity.com/
+ 216. http://aviutl.info/
+
+   Hidden links:
+ 218. file://localhost/mnt/D/study/ODU/web/webpages/26ab7550b9d26207de28cc51e3ff22e7
+ 219. file://feedly.com/index.html#subscription%2Ffeed%2Fhttp%3A%2F%2Faviutl.info%2Ffeed%2F
+ 220. http://aviutl.info/feed/
+ 221. file://twitter.com/search?q=http%3A%2F%2Faviutl.info%2Ftwitter-movie%2F
+ 222. file://twitter.com/share?text=%E3%83%84%E3%82%A4%E3%83%83%E3%82%BF%E3%83%BC%E3%81%AB%E6%8A%95%E7%A8%BF%E3%81%99%E3%82%8B%E5%8B%95%E7%94%BB%E3%81%AE%E6%9D%A1%E4%BB%B6%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%90%E5%8B%95%E7%94%BB%E5%BD%A2%E5%BC%8F%EF%BD%A5%E3%82%B3%E3%83%BC%E3%83%87%E3%83%83%E3%82%AF%E3%80%91&url=http%3A%2F%2Faviutl.info%2Ftwitter-movie%2F
+ 223. file://www.facebook.com/sharer/sharer.php?u=http://aviutl.info/twitter-movie/&t=%E3%83%84%E3%82%A4%E3%83%83%E3%82%BF%E3%83%BC%E3%81%AB%E6%8A%95%E7%A8%BF%E3%81%99%E3%82%8B%E5%8B%95%E7%94%BB%E3%81%AE%E6%9D%A1%E4%BB%B6%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%90%E5%8B%95%E7%94%BB%E5%BD%A2%E5%BC%8F%EF%BD%A5%E3%82%B3%E3%83%BC%E3%83%87%E3%83%83%E3%82%AF%E3%80%91
+ 224. file://www.facebook.com/sharer/sharer.php?u=http://aviutl.info/twitter-movie/&t=%E3%83%84%E3%82%A4%E3%83%83%E3%82%BF%E3%83%BC%E3%81%AB%E6%8A%95%E7%A8%BF%E3%81%99%E3%82%8B%E5%8B%95%E7%94%BB%E3%81%AE%E6%9D%A1%E4%BB%B6%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%90%E5%8B%95%E7%94%BB%E5%BD%A2%E5%BC%8F%EF%BD%A5%E3%82%B3%E3%83%BC%E3%83%87%E3%83%83%E3%82%AF%E3%80%91
+ 225. file://plus.google.com/share?url=http%3A%2F%2Faviutl.info%2Ftwitter-movie%2F
+ 226. file://plus.google.com/share?url=http%3A%2F%2Faviutl.info%2Ftwitter-movie%2F
+ 227. http://b.hatena.ne.jp/entry/aviutl.info/twitter-movie/
+ 228. file://b.hatena.ne.jp/add?mode=confirm&url=http://aviutl.info/twitter-movie/&title=%E3%83%84%E3%82%A4%E3%83%83%E3%82%BF%E3%83%BC%E3%81%AB%E6%8A%95%E7%A8%BF%E3%81%99%E3%82%8B%E5%8B%95%E7%94%BB%E3%81%AE%E6%9D%A1%E4%BB%B6%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%90%E5%8B%95%E7%94%BB%E5%BD%A2%E5%BC%8F%EF%BD%A5%E3%82%B3%E3%83%BC%E3%83%87%E3%83%83%E3%82%AF%E3%80%91
+ 229. file://getpocket.com/edit?url=http://aviutl.info/twitter-movie/
+ 230. file://getpocket.com/edit?url=http://aviutl.info/twitter-movie/
+ 231. file://localhost/mnt/D/study/ODU/web/webpages/26ab7550b9d26207de28cc51e3ff22e7
+ 232. file://feedly.com/index.html#subscription%2Ffeed%2Fhttp%3A%2F%2Faviutl.info%2Ffeed%2F
+ 233. http://aviutl.info/feed/

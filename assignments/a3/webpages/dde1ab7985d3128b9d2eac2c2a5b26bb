@@ -1,0 +1,144 @@
+<!doctype html>
+
+<html lang="en" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" ng-app="App" ng-controller="AppCtrl">
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<!-- Base tag required -->
+		<base href="/">
+
+		<!-- http://docs.angularjs.org/guide/dev_guide.services.$location#hashbang-and-html5-modes_hashbang-mode_crawling-your-app -->
+		<!-- https://prerender.io/getting-started#test-it -->
+		<meta name="fragment" content="!">
+
+		<!-- https://github.com/ftlabs/fastclick#when-it-isnt-needed -->
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="apple-mobile-web-app-status-bar-style" content="white">
+
+		<!-- http://blogs.windows.com/windows_phone/b/wpdev/archive/2012/11/15/adapting-your-webkit-optimized-site-for-internet-explorer-10.aspx#step5 -->
+		<meta name="msapplication-tap-highlight" content="no">
+
+		<script type="text/javascript">
+
+			if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+				var msViewportStyle = document.createElement("style");
+				msViewportStyle.appendChild(
+					document.createTextNode(
+						"@-ms-viewport{width:auto!important}"
+					)
+				);
+				document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+			}
+
+		</script>
+
+		<link rel="stylesheet" href="//s.jams-io.gjcdn.net/app/main.eb69fc09.css">
+		<link rel="stylesheet" ng-href="{{ App.theme.css }}">
+
+		<!-- We inject the Jam's theme through here -->
+		<style ng-if="!Error.errorCode && App.jam" gj-theme-injector jam="App.jam"></style>
+
+		<link rel="shortcut icon" href="//s.jams-io.gjcdn.net/app/img/favicon.27b7e8d0.ico">
+
+		<title ng-bind-html="(App.title ? App.title : App.jam.name) + ' | Game Jolt Jams'">Game Jolt Jams</title>
+		<meta name="description" ng-if="Meta.description" ng-attr-content="{{ Meta.description }}">
+
+		<!-- FB -->
+		<meta property="fb:app_id" content="410666682312265">
+		<meta property="og:site_name" content="Game Jolt">
+		<meta property="fb:admins" content="1070315546">
+		<meta property="og:type" ng-if="Meta.fb.type" ng-attr-content="{{ Meta.fb.type }}">
+		<meta property="og:title" ng-if="Meta.fb.title" ng-attr-content="{{ Meta.fb.title }}">
+		<meta property="og:description" ng-if="Meta.fb.description" ng-attr-content="{{ Meta.fb.description }}">
+		<meta property="og:url" ng-if="Meta.fb.url" ng-attr-content="{{ Meta.fb.url }}">
+		<meta property="og:image" ng-if="Meta.fb.image" ng-attr-content="{{ Meta.fb.image }}">
+
+		<!-- Twitter -->
+		<meta name="twitter:site" content="@gamejolt">
+		<meta name="twitter:card" ng-if="Meta.twitter.card" ng-attr-content="{{ Meta.twitter.card }}">
+		<meta name="twitter:title" ng-if="Meta.twitter.title" ng-attr-content="{{ Meta.twitter.title }}">
+		<meta name="twitter:description" ng-if="Meta.twitter.description" ng-attr-content="{{ Meta.twitter.description }}">
+		<meta name="twitter:image" ng-if="Meta.twitter.image" ng-attr-content="{{ Meta.twitter.image }}">
+		<meta name="twitter:url" ng-if="Meta.twitter.url" ng-attr-content="{{ Meta.twitter.url }}">
+
+	</head>
+	<body gj-body-classes gj-auto-scroll>
+
+		<div id="shell">
+
+			<div gj-user-bar="App.user" gj-current-site="jams" ng-cloak>
+				<ul ng-if="App.user && App.jam && App.isOrganizer">
+					<li>
+						<a href="#customize-theme" ng-class="{ active: Theme_EditorState.isEditing }">
+							<span class="jolticon jolticon-cog"></span>
+							Customize Theme
+						</a>
+					</li>
+					<li>
+						<a ng-href="#edit-content:{{ App.currentPage.block.id || App.headerBlock.id }}" ng-class="{ active: ContentBlock_EditorState.isEditing }">
+							<span class="jolticon jolticon-blog-article"></span>
+							Edit Page
+						</a>
+					</li>
+					<li>
+						<a ng-href="{{ App.jam.manageUrl }}">
+							<span class="jolticon jolticon-edit"></span>
+							Manage Jam
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Content -->
+			<div gj-loading-page-transition ng-animate-children>
+				<ui-view id="content" ng-cloak></ui-view>
+			</div>
+
+			<!--
+				Note that we lazy load the theme editor and the content block editor.
+				This way you don't have to load in all their crazy JS as a normal user just browsing the jams page.
+				The only way to do this is to ng-include. ng-if will still compile content unless it's ng-included.
+			-->
+			<div ng-if="App.jam">
+
+				<!-- Theme Editor! -->
+				<aside class="theme-editor-container col-xs-12 col-sm-5 col-md-4 col-lg-3"
+					ng-if="Theme_EditorState.isEditing"
+					gj-off-canvas-aside
+					gj-position="left"
+					ng-cloak
+					>
+					<div gj-theme-editor gj-jam="App.jam"></div>
+				</aside>
+
+				<!-- Content Block Editor! -->
+				<aside class="content-block-editor-container"
+					ng-if="ContentBlock_EditorState.isEditing"
+					gj-off-canvas-aside
+					gj-position="bottom"
+					ng-cloak
+					>
+					<div gj-content-block-editor gj-jam="App.jam" gj-current-page="App.currentPage"></div>
+				</aside>
+
+			</div>
+
+		</div>
+
+		<div gj-debug-bar></div>
+
+		<script async src="//www.google-analytics.com/analytics.js"></script>
+		<script>
+			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+			ga('create', 'UA-6742777-6', 'auto');
+		</script>
+
+		<script src="//s.jams-io.gjcdn.net/app/vendor.f24235ef.js"></script>
+		<script src="//s.jams-io.gjcdn.net/app/app.c76b9c57.js"></script>
+	</body>
+</html>

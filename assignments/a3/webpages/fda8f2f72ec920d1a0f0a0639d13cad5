@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html lang="en" class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"0e488d95e5","applicationID":"16232","transactionName":"dloNEkBfWQpTExoVQFpHBgBAX1sSGRFHCVBAVhc=","queueTime":11,"applicationTime":146,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQ4CVEVSDgEDVg=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(){}function r(t){function e(t){return t&&t instanceof n?t:t?a(t,i,o):o()}function s(n,r,o){t&&t(n,r,o);for(var i=e(o),a=f(n),s=a.length,c=0;s>c;c++)a[c].apply(i,r);return i}function c(t,e){d[t]=f(t).concat(e)}function f(t){return d[t]||[]}function u(){return r(s)}var d={};return{on:c,emit:s,create:u,listeners:f,context:e,_events:d}}function o(){return new n}var i="nr@context",a=t("gos");e.exports=r()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:25,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,a){try{f?f-=1:r("err",[a||new UncaughtException(t,e,n)])}catch(c){try{r("ierr",[c,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof s?s.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=t("loader"),s=window.onerror,c=!1,f=0;a.features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(u){"stack"in u&&(t(1),t(2),"addEventListener"in window&&t(3),a.xhrWrappable&&t(4),c=!0)}i.on("fn-start",function(){c&&(f+=1)}),i.on("fn-err",function(t,e,r){c&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){c&&!this.thrown&&f>0&&(f-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:11,2:10,3:8,4:12,5:3,6:26,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){if(window.addEventListener){var e=t("handle"),n=t("ee");t(1),window.addEventListener("click",function(){e("inc",["ck"])},!1),window.addEventListener("hashchange",function(){e("inc",["hc"])},!1),n.on("pushState-start",function(){e("inc",["ps"])})}},{1:9,ee:"QJf3ax",handle:"D5DuLP"}],6:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],7:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3);var a=Event;n.on("fn-start",function(t){var e=t[0];e instanceof a&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof a&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.clearResourceTimings?window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1):window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:11,2:10,3:9,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){function n(t){for(var e=t;e&&!e.hasOwnProperty("addEventListener");)e=Object.getPrototypeOf(e);e&&r(e)}function r(t){a.inPlace(t,["addEventListener","removeEventListener"],"-",o)}function o(t){return t[1]}var i=t("ee").create(),a=t(1)(i),s=t("gos");e.exports=i,r(window),"getPrototypeOf"in Object?(n(document),n(XMLHttpRequest.prototype)):XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&r(XMLHttpRequest.prototype),i.on("addEventListener-start",function(t){if(t[1]){var e=t[1];if("function"==typeof e){var n=s(e,"nr@wrapped",function(){return a(e,"fn-",null,e.name||"anonymous")});this.wrapped=t[1]=n}else"function"==typeof e.handleEvent&&a.inPlace(e,["handleEvent"],"fn-")}}),i.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:27,ee:"QJf3ax",gos:"7eSDFh"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState","replaceState"],"-")},{1:27,ee:"QJf3ax"}],10:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:27,ee:"QJf3ax"}],11:[function(t,e){function n(t,e,n){t[0]=i(t[0],"fn-",null,n)}function r(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=i(t[0],"fn-",this,n)}var o=t("ee").create(),i=t(1)(o);e.exports=o,i.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),i.inPlace(window,["setInterval"],"setInterval-"),i.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),o.on("setInterval-start",n),o.on("setTimer-start",r)},{1:27,ee:"QJf3ax"}],12:[function(t,e){function n(){f.inPlace(this,l,"fn-",o)}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-",o)}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[e],e),e.hasOwnProperty("addEventListener")&&u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:8,2:27,ee:"QJf3ax"}],13:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;u>o;o++)t.removeEventListener(f[o],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=this.lastSize||n(t);if(i&&(r.rxSize=i),this.sameOrigin){var s=t.getResponseHeader("X-NewRelic-App-Data");s&&(e.cat=s.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,c.emit("xhr-done",[t],t),a("xhr",[e,r,this.startTime])}}}function n(t){var e=t.responseType,n="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return r(n)}function r(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function o(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var i=t("loader");if(i.xhrWrappable){var a=t("handle"),s=t(2),c=t("ee"),f=["load","error","abort","timeout"],u=f.length,d=t(1),l=t(3),p=window.XMLHttpRequest;i.features.xhr=!0,t(5),t(4),c.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=e,n.ended=!1,n.xhrGuids={},n.lastSize=0,l&&(l>34||10>l)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),c.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),c.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),c.on("send-xhr-start",function(t,e){var n=this.metrics,o=t[0],i=this;if(n&&o){var a=r(o);a&&(n.txSize=a)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{c.emit("internal-error",[n])}catch(r){}}};for(var s=0;u>s;s++)e.addEventListener(f[s],this.listener,!1)}),c.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),c.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),c.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),c.on("addEventListener-end",function(t,e){e instanceof p&&"load"===t[0]&&c.emit("xhr-load-added",[t[1],t[2]],e)}),c.on("removeEventListener-end",function(t,e){e instanceof p&&"load"===t[0]&&c.emit("xhr-load-removed",[t[1],t[2]],e)}),c.on("fn-start",function(t,e,n){e instanceof p&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),c.on("fn-end",function(t,e){this.xhrCbStart&&c.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:14,3:16,4:12,5:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],14:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],15:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:25,2:26,handle:"D5DuLP"}],16:[function(t,e){var n=0,r=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);r&&(n=+r[1]),e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){if(!h++){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){t[e]||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-852.min.js"},l=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),p=e.exports={offset:i(),origin:u,features:{},xhrWrappable:l};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()]);var h=0},{1:25,2:15,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],25:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],26:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],27:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@original",a=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,c;try{i=this,n=o(arguments),s="function"==typeof r?r(n,i):r||{}}catch(u){d([u,"",[n,i,a],s])}f(e+"start",[n,i,a],s);try{return c=t.apply(i,n)}catch(l){throw f(e+"err",[n,i,l],s),l}finally{f(e+"end",[n,i,c],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=t,u(t,nrWrapper),nrWrapper)}function c(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!s){s=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}s=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=c,e.flag=i,e}},{1:26,ee:"QJf3ax"}]},{},["G9z0Bl",4,13,7,6,5]);</script>
+    <title>Touken Ranbu fanbook #1, Love like Poison &middot; kite's shop &middot; Online Store Powered by Storenvy</title>
+
+    <meta name="description" content="★ manga-styled, black and white, perfect bound comic ★ 74 pages ★ 5.5x8.25  ★ PG-13, contains mature themes and blood/mild violence, graphic depictions ★ pairing: yasukiyo, yasusada--&gt; okita ★ preorders comes with free bookmark of the cover  summary: A routine sortie goes wrong, and Yasusada  - Online Store Powered by Storenvy"/>
+    <meta name="keywords" content="touken ranbu yasusada kashuu doujinshi comic fanbook"/>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <meta http-equiv="cleartype" content="on">
+
+    <link href="http://dewashczp74ht.cloudfront.net/stylesheets/store/307795.css?1454482189" rel="stylesheet"/>
+
+    <style type="text/css" media="screen">body{}</style>
+
+    <meta content="Touken Ranbu fanbook #1, Love like Poison from kite&#x27;s shop" property="og:title"/>
+<meta content="product" property="og:type"/>
+<meta content="http://kitemitiko.storenvy.com/products/15886275-touken-ranbu-fanbook-1-love-like-poison" property="og:url"/>
+<meta content="http://d1nr5wevwcuzuv.cloudfront.net/product_photos/38711973/Untitled-1_large.jpg" property="og:image"/>
+<meta content="★ manga-styled, black and white, perfect bound comic
+★ 74 pages
+★ 5.5x8.25 
+★ PG-13, contains mature themes and blood/mild violence, graphic depictions
+★ pairing: yasukiyo, yasusada--&gt; okita
+★ preorders comes with free bookmark of the cover
+
+summary:
+A routine sortie goes wrong, and Yasusada " property="og:description"/>
+<meta content="15.00" property="og:price:amount"/>
+<meta content="USD" property="og:price:currency"/>
+<meta content="kite&#x27;s shop on Storenvy" property="og:brand"/>
+<meta content="in stock" property="og:availability"/>
+<meta content="Storenvy" property="og:site_name"/>
+<meta content="133606821803" property="fb:app_id"/>
+<meta name="twitter:site" value="@storenvy"/>
+<meta name="twitter:card" value="summary"/>
+<meta name="twitter:url" value="http://kitemitiko.storenvy.com/products/15886275-touken-ranbu-fanbook-1-love-like-poison"/>
+<meta name="twitter:title" value="Touken Ranbu fanbook #1, Love like Poison from kite&#x27;s shop"/>
+<meta name="twitter:description" value="★ manga-styled, black and white, perfect bound comic
+★ 74 pages
+★ 5.5x8.25 
+★ PG-13, contains mature themes and blood/mild violence, graphic depictions
+★ pairing: yasukiyo, yasusada--&gt; okita
+★ preorders comes with free bookmark of the cover
+
+summary:
+A routine sortie goes wrong, and Yasusada "/>
+<meta name="twitter:image" value="http://d1nr5wevwcuzuv.cloudfront.net/product_photos/38711973/Untitled-1_large.jpg"/>
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa|Raleway">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>window.jQuery||document.write('<script src="/js/jquery/jquery-1.7.1.min.js"><\/script>')</script>
+<script src="http://kitemitiko.storenvy.com/assets/storefront_default-71b51d37e031f1a60ede005fe891156f.js.pagespeed.jm.YOhi2b538Z.js" type="text/javascript"></script>
+<script type='text/javascript'>StorenvyGALinker.storenvy_host='storenvy.com';</script>
+
+<!-- Google Analytics -->
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-846881-11',{'name':'storenvyTracker','cookieDomain':'none'});ga('storenvyTracker.set','dimension2','Storefront');ga('storenvyTracker.set','dimension3','Visitor');ga('storenvyTracker.set','dimension4','No');ga('storenvyTracker.send','pageview');</script>
+<!-- End Google Analytics -->
+
+<meta name="generator" content="Storenvy"/>
+
+    <script src="http://kitemitiko.storenvy.com/assets/theme_cooper.js.pagespeed.jm.nm9HDioBmr.js"></script>
+  </head>
+
+  <body id="product-page" class="product theme">
+
+    
+    <div id="wrapper">
+      <div id="container">
+        <div id="mobile-header">
+          <a id="drawer_button" href="javascript:;">Open Nav</a>
+        </div>
+        <div id="header">
+          <div id="store_info">
+            
+            <h1 class="store_name"><a href="/">kite's shop</a></h1>
+            
+          </div>
+          <div id="banner">
+            
+          </div>
+        </div><!-- end #header -->
+        <div id="content">
+          <div class="row">
+            <div id="sidebar">
+              <div class="sidebar-wrapper">
+                
+                <div id="logo">
+                  <a href="/"><img src="//d310a9hpolx59w.cloudfront.net/stores/avatars/307837/medium/gotta_go_fast.png?1400623054" alt="kite&#39;s shop" width="160" height="160"/></a>
+                </div>
+                
+                <div class="mobile-sidebar-content">
+                  <h2 id="sidebar_store_name"><a href="http://kitemitiko.storenvy.com/">kite's shop</a></h2>
+                  <hr/>
+                  <a href="http://www.storenvy.com/cart" class="checkout-link">Proceed to Checkout</a>
+                  <hr/>
+                </div>
+                <ul id="nav">
+                  <li>
+                    <a href="/products">Shop All</a>
+                  </li>
+                  
+                    <li id="collection_1172019_link">
+                      <a href="/collections/1172019-prints">prints</a>
+                    </li>
+                  
+                    <li id="collection_1274532_link">
+                      <a href="/collections/1274532-posters">posters</a>
+                    </li>
+                  
+                    <li id="collection_1274535_link">
+                      <a href="/collections/1274535-charms-buttons-and-stickers">charms, buttons and stickers</a>
+                    </li>
+                  
+                    <li id="collection_1274541_link">
+                      <a href="/collections/1274541-fanbooks">fanbooks</a>
+                    </li>
+                  
+                </ul>
+                <hr/>
+                <div id="searchbox">
+                  <form action="/search" method="GET" class="storefront-search">
+                    <input type="text" name="q" placeholder="Search" value=""/>
+                    <button type="submit">
+                      <img src="/assets/storefront/search-icon.svg" width="15" height="15" alt="Search"/>
+                    </button>
+                  </form>
+                </div>
+                <hr/>
+                <ul id="buttons">
+                  
+                    <li><a href="/contact" class="contact">Contact</a></li>
+                  
+                    <li><a href="/faq" class="faq">FAQ</a></li>
+                  
+                </ul>
+                
+                <hr/>
+                <ul id="places">
+                  
+                  <li><a href="http://mitikokite.tumblr.com" target="_blank">tumblr</a></li>
+                  
+                </ul>
+                
+                <div class="mobile-sidebar-content">
+                  <hr/>
+                  <a title="Open a Free online store!" href="http://www.storenvy.com/selling-on-storenvy?ctx=s&amp;src=http://kitemitiko.storenvy.com/" target="_blank">Open Your Own Store</a>
+                </div>
+              </div><!-- end .sidebar-wrapper -->
+
+            </div><!-- end #sidebar -->
+
+            <div id="main">
+              
+
+              
+
+              <div id="product">
+  
+
+  <div id="product-photo">
+    <div id="main_photo">
+      <a href="//d1nr5wevwcuzuv.cloudfront.net/product_photos/38711973/Untitled-1_original.jpg" rel="product_photos"><img src="//d1nr5wevwcuzuv.cloudfront.net/product_photos/38711973/Untitled-1_400w.jpg" alt="Touken Ranbu fanbook #1, Love like Poison"/></a>
+
+      <ul id="thumbs">
+        
+        <li>
+          <a href="//d111vui60acwyt.cloudfront.net/product_photos/38714160/45trt_original.jpg" class="product_thumb" id="first_thumb" rel="product_photos">
+            <img src="//d111vui60acwyt.cloudfront.net/product_photos/38714160/45trt_200sq.jpg" alt="Touken Ranbu fanbook #1, Love like Poison - Thumbnail 1"/>
+          </a>
+        </li>
+        
+        <li>
+          <a href="//d3u67r7pp2lrq5.cloudfront.net/product_photos/38714157/gjy_original.jpg" class="product_thumb" rel="product_photos">
+            <img src="//d3u67r7pp2lrq5.cloudfront.net/product_photos/38714157/gjy_200sq.jpg" alt="Touken Ranbu fanbook #1, Love like Poison - Thumbnail 2"/>
+          </a>
+        </li>
+        
+        <li>
+          <a href="//d111vui60acwyt.cloudfront.net/product_photos/38714172/utyut_original.jpg" class="product_thumb" rel="product_photos">
+            <img src="//d111vui60acwyt.cloudfront.net/product_photos/38714172/utyut_200sq.jpg" alt="Touken Ranbu fanbook #1, Love like Poison - Thumbnail 3"/>
+          </a>
+        </li>
+        
+        <li>
+          <a href="//dlp2gfjvaz867.cloudfront.net/product_photos/38714184/3r3rwe_original.jpg" class="product_thumb" rel="product_photos">
+            <img src="//dlp2gfjvaz867.cloudfront.net/product_photos/38714184/3r3rwe_200sq.jpg" alt="Touken Ranbu fanbook #1, Love like Poison - Thumbnail 4"/>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div id="product_info">
+    <p id="product_name">Touken Ranbu fanbook #1, Love like Poison</p>
+    <p id="price">$15.00</p>
+    
+    <div class="preorder status">Pre-Order</div>
+    
+    
+    
+
+      
+        <form method="post" id="cart_add_form" action="/cart">
+          
+            <div class="">
+              <input type="hidden" id="variant_id" value="40482033"/>
+              
+            </div>
+          
+          <input type="button" id="add_to_cart_button" class="button add_to_cart_button" value="Add to Cart"/>
+          <div class="clearfix"></div>
+        </form>
+
+      
+      <div id="add_notice" style="display:none;">
+        <div id="add_error" style="display:none;"></div>
+        <div id="add_success" style="display:none;">
+          <p id="item_added"><span id="added_to_cart_label">Added to cart.</span></p>
+          <a href="" class="button" id="add_notice_checkout">CHECKOUT</a>
+          <p id="items_in_cart">
+            <a href="" id="add_notice_checkout_cart">
+              <span id="add_notice_cart_count"></span>
+            </a>
+          </p>
+        </div>
+      </div>
+    
+    <hr/>
+    
+      <p id="description_label">Description</p>
+      <div id="product_description"><p>★ manga-styled, black and white, perfect bound comic
+<br/>★ 74 pages
+<br/>★ 5.5x8.25 
+<br/>★ PG-13, contains mature themes and blood/mild violence, graphic depictions
+<br/>★ pairing: yasukiyo, yasusada--> okita
+<br/>★ preorders comes with free bookmark of the cover</p>
+
+<p>summary:
+<br/>A routine sortie goes wrong, and Yasusada is suddenly left with a permanent scar on his body and recurring dreams of his previous master, Okita Souji. Poisonous thoughts envelops his mind...</p>
+
+<p>preorders end march 4th, 2016</p></div>
+      <hr/>
+    
+
+    <p>SHARE THIS</p>
+    <div id="share_product">
+      <script async src="//connect.facebook.net/en_US/all.js#xfbml=1&amp;appId=133606821803"></script>
+<div class="fb-like" data-action="like" data-ref="storefront-product-page" data-colorscheme="light" data-layout="button_count" data-href="http://kitemitiko.storenvy.com/products/15886275-touken-ranbu-fanbook-1-love-like-poison" data-font="lucida grande" data-send="false" data-width="312" data-show-faces="false"></div>
+ <!-- Facebook Like Button -->
+      <a href="http://pinterest.com/pin/create/button/?description=%E2%98%85+manga-styled%2C+black+and+white%2C+perfect+bound+comic%0D%0A%E2%98%85+74+pages%0D%0A%E2%98%85+5.5x8.25+%0D%0A%E2%98%85+PG-13%2C+contains+mature+themes+and+blood%2Fmild+violence%2C+graphic+depictions%0D%0A%E2%98%85+pairing%3A+yasukiyo%2C+yasusada--%3E+okita%0D%0A%E2%98%85+preorders+comes+with+free+bookmark+of+the+cover%0D%0A%0D%0Asummary%3A%0D%0AA+routine+sortie+goes+wrong%2C+and+Yasus...&amp;media=http%3A%2F%2Fd1nr5wevwcuzuv.cloudfront.net%2Fproduct_photos%2F38711973%2FUntitled-1_original.jpg&amp;url=http%3A%2F%2Fkitemitiko.storenvy.com%2Fproducts%2F15886275-touken-ranbu-fanbook-1-love-like-poison" class="pin-it-button" rel="nozoom" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It"/></a><script async type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script> <!-- Pinterest Pin-it Button -->
+            <script src="//platform.tumblr.com/v1/share.js"></script>
+      <a href="http://www.tumblr.com/share" title="Share on Tumblr" style="display:inline-block;overflow:hidden;width:62px;height:20px;background:url(//platform.tumblr.com/v1/share_2.png) top left no-repeat transparent"></a>
+ <!-- Tumblr Share Button --><br/><br/>
+      <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://kitemitiko.storenvy.com/products/15886275-touken-ranbu-fanbook-1-love-like-poison" data-text="Check out Touken Ranbu fanbook #1, Love like Poison by kite&#39;s shop on Storenvy." data-related="Storenvy:Follow us to see more cool stuff for sale at Storenvy!" data-count="horizontal">Tweet</a>
+<script async type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+ <!-- Twitter Share Button -->
+      <a data-url="http://kitemitiko.storenvy.com/products/15886275-touken-ranbu-fanbook-1-love-like-poison" data-image="//d1nr5wevwcuzuv.cloudfront.net/product_photos/38711973/Untitled-1_original.jpg" data-title="Touken Ranbu fanbook #1, Love like Poison" data-price="$15.0" class="wanelo-save-button" href="//wanelo.com/"></a><script async="true" type="text/javascript" src="//wanelo.com/bookmarklet/3/save.js"></script> <!-- Wanelo Share Button -->
+    </div>
+
+    
+    <p>STOCK LEVELS</p>
+    <ul id="stock">
+      
+        <li>
+          <p>
+            
+            Availability
+            
+            <span class="stock-sold-out"></span>
+          </p>
+          <div class="stock-remaining" style="width:62%;"></div>
+          <div class="stock-sold"></div>
+        </li>
+      
+    </ul>
+    
+  </div><!-- end #product_info -->
+</div><!-- end #product -->
+
+
+<script>var json_product={"id":15886275,"name":"Touken Ranbu fanbook #1, Love like Poison","description":"★ manga-styled, black and white, perfect bound comic\r\n★ 74 pages\r\n★ 5.5x8.25 \r\n★ PG-13, contains mature themes and blood/mild violence, graphic depictions\r\n★ pairing: yasukiyo, yasusada--> okita\r\n★ preorders comes with free bookmark of the cover\r\n\r\nsummary:\r\nA routine sortie goes wrong, and Yasusada is suddenly left with a permanent scar on his body and recurring dreams of his previous master, Okita Souji. Poisonous thoughts envelops his mind...\r\n\r\npreorders end march 4th, 2016","url":"http://kitemitiko.storenvy.com/products/15886275-touken-ranbu-fanbook-1-love-like-poison","short_url":"http://kitemitiko.storenvy.com/products/15886275-touken-ranbu-fanbook-1-love-like-poison","status":"active","labels":["preorder"],"preorder":true,"on_sale":false,"store_id":307837,"price":15.0,"marketplace_category":"home-art-illustration","marketplace_category_id":357,"has_override_priced_variants":false,"photos":[{"photo":{"original":"//d1nr5wevwcuzuv.cloudfront.net/product_photos/38711973/Untitled-1_original.jpg","large":"//d1nr5wevwcuzuv.cloudfront.net/product_photos/38711973/Untitled-1_large.jpg","homepage":"//d1nr5wevwcuzuv.cloudfront.net/product_photos/38711973/Untitled-1_homepage.jpg","medium":"//d1nr5wevwcuzuv.cloudfront.net/product_photos/38711973/Untitled-1_medium.jpg","small":"//d1nr5wevwcuzuv.cloudfront.net/product_photos/38711973/Untitled-1_small.jpg","64w":"//d1nr5wevwcuzuv.cloudfront.net/product_photos/38711973/Untitled-1_64w.jpg","200w":"//d1nr5wevwcuzuv.cloudfront.net/product_photos/38711973/Untitled-1_200w.jpg","400w":"//d1nr5wevwcuzuv.cloudfront.net/product_photos/38711973/Untitled-1_400w.jpg","600w":"//d1nr5wevwcuzuv.cloudfront.net/product_photos/38711973/Untitled-1_600w.jpg","1000w":"//d1nr5wevwcuzuv.cloudfront.net/product_photos/38711973/Untitled-1_1000w.jpg","64sq":"//d1nr5wevwcuzuv.cloudfront.net/product_photos/38711973/Untitled-1_64sq.jpg","200sq":"//d1nr5wevwcuzuv.cloudfront.net/product_photos/38711973/Untitled-1_200sq.jpg","400sq":"//d1nr5wevwcuzuv.cloudfront.net/product_photos/38711973/Untitled-1_400sq.jpg"}},{"photo":{"original":"//d111vui60acwyt.cloudfront.net/product_photos/38714160/45trt_original.jpg","large":"//d111vui60acwyt.cloudfront.net/product_photos/38714160/45trt_large.jpg","homepage":"//d111vui60acwyt.cloudfront.net/product_photos/38714160/45trt_homepage.jpg","medium":"//d111vui60acwyt.cloudfront.net/product_photos/38714160/45trt_medium.jpg","small":"//d111vui60acwyt.cloudfront.net/product_photos/38714160/45trt_small.jpg","64w":"//d111vui60acwyt.cloudfront.net/product_photos/38714160/45trt_64w.jpg","200w":"//d111vui60acwyt.cloudfront.net/product_photos/38714160/45trt_200w.jpg","400w":"//d111vui60acwyt.cloudfront.net/product_photos/38714160/45trt_400w.jpg","600w":"//d111vui60acwyt.cloudfront.net/product_photos/38714160/45trt_600w.jpg","1000w":"//d111vui60acwyt.cloudfront.net/product_photos/38714160/45trt_1000w.jpg","64sq":"//d111vui60acwyt.cloudfront.net/product_photos/38714160/45trt_64sq.jpg","200sq":"//d111vui60acwyt.cloudfront.net/product_photos/38714160/45trt_200sq.jpg","400sq":"//d111vui60acwyt.cloudfront.net/product_photos/38714160/45trt_400sq.jpg"}},{"photo":{"original":"//d3u67r7pp2lrq5.cloudfront.net/product_photos/38714157/gjy_original.jpg","large":"//d3u67r7pp2lrq5.cloudfront.net/product_photos/38714157/gjy_large.jpg","homepage":"//d3u67r7pp2lrq5.cloudfront.net/product_photos/38714157/gjy_homepage.jpg","medium":"//d3u67r7pp2lrq5.cloudfront.net/product_photos/38714157/gjy_medium.jpg","small":"//d3u67r7pp2lrq5.cloudfront.net/product_photos/38714157/gjy_small.jpg","64w":"//d3u67r7pp2lrq5.cloudfront.net/product_photos/38714157/gjy_64w.jpg","200w":"//d3u67r7pp2lrq5.cloudfront.net/product_photos/38714157/gjy_200w.jpg","400w":"//d3u67r7pp2lrq5.cloudfront.net/product_photos/38714157/gjy_400w.jpg","600w":"//d3u67r7pp2lrq5.cloudfront.net/product_photos/38714157/gjy_600w.jpg","1000w":"//d3u67r7pp2lrq5.cloudfront.net/product_photos/38714157/gjy_1000w.jpg","64sq":"//d3u67r7pp2lrq5.cloudfront.net/product_photos/38714157/gjy_64sq.jpg","200sq":"//d3u67r7pp2lrq5.cloudfront.net/product_photos/38714157/gjy_200sq.jpg","400sq":"//d3u67r7pp2lrq5.cloudfront.net/product_photos/38714157/gjy_400sq.jpg"}},{"photo":{"original":"//d111vui60acwyt.cloudfront.net/product_photos/38714172/utyut_original.jpg","large":"//d111vui60acwyt.cloudfront.net/product_photos/38714172/utyut_large.jpg","homepage":"//d111vui60acwyt.cloudfront.net/product_photos/38714172/utyut_homepage.jpg","medium":"//d111vui60acwyt.cloudfront.net/product_photos/38714172/utyut_medium.jpg","small":"//d111vui60acwyt.cloudfront.net/product_photos/38714172/utyut_small.jpg","64w":"//d111vui60acwyt.cloudfront.net/product_photos/38714172/utyut_64w.jpg","200w":"//d111vui60acwyt.cloudfront.net/product_photos/38714172/utyut_200w.jpg","400w":"//d111vui60acwyt.cloudfront.net/product_photos/38714172/utyut_400w.jpg","600w":"//d111vui60acwyt.cloudfront.net/product_photos/38714172/utyut_600w.jpg","1000w":"//d111vui60acwyt.cloudfront.net/product_photos/38714172/utyut_1000w.jpg","64sq":"//d111vui60acwyt.cloudfront.net/product_photos/38714172/utyut_64sq.jpg","200sq":"//d111vui60acwyt.cloudfront.net/product_photos/38714172/utyut_200sq.jpg","400sq":"//d111vui60acwyt.cloudfront.net/product_photos/38714172/utyut_400sq.jpg"}},{"photo":{"original":"//dlp2gfjvaz867.cloudfront.net/product_photos/38714184/3r3rwe_original.jpg","large":"//dlp2gfjvaz867.cloudfront.net/product_photos/38714184/3r3rwe_large.jpg","homepage":"//dlp2gfjvaz867.cloudfront.net/product_photos/38714184/3r3rwe_homepage.jpg","medium":"//dlp2gfjvaz867.cloudfront.net/product_photos/38714184/3r3rwe_medium.jpg","small":"//dlp2gfjvaz867.cloudfront.net/product_photos/38714184/3r3rwe_small.jpg","64w":"//dlp2gfjvaz867.cloudfront.net/product_photos/38714184/3r3rwe_64w.jpg","200w":"//dlp2gfjvaz867.cloudfront.net/product_photos/38714184/3r3rwe_200w.jpg","400w":"//dlp2gfjvaz867.cloudfront.net/product_photos/38714184/3r3rwe_400w.jpg","600w":"//dlp2gfjvaz867.cloudfront.net/product_photos/38714184/3r3rwe_600w.jpg","1000w":"//dlp2gfjvaz867.cloudfront.net/product_photos/38714184/3r3rwe_1000w.jpg","64sq":"//dlp2gfjvaz867.cloudfront.net/product_photos/38714184/3r3rwe_64sq.jpg","200sq":"//dlp2gfjvaz867.cloudfront.net/product_photos/38714184/3r3rwe_200sq.jpg","400sq":"//dlp2gfjvaz867.cloudfront.net/product_photos/38714184/3r3rwe_400sq.jpg"}}],"variants":[{"variant":{"id":40482033,"name":"Default","position":1,"sku":"","full_quantity":21,"in_stock":13,"percent_available":62,"is_default_variant":true,"cents":1500,"price":15.0,"has_override_price":false,"sold_out":false,"status":"active"}}],"collections":[{"collection":{"id":1274541,"name":"fanbooks"}}],"store":{"id":307837,"name":"kite's shop","marketplace_url":"http://www.storenvy.com/stores/307837-kite-s-shop"}}</script>
+
+
+            </div><!-- end #main-->
+          </div>
+        </div><!-- end #content -->
+        <div id="footer">
+          <a href="http://www.storenvy.com/" id="powered_by_storenvy" class="storenvy_powered" target="_blank">Powered by Storenvy</a>
+          <div id="footer_info">
+            <ul>
+              <li>
+                <span class="footer-large">kite's shop</span><br/>
+                
+                
+                  <span class="footer-medium">Lake Elsinore, CA</span><br/>
+                
+                <span class="footer-small">&copy; kite's shop 2016</span>
+              </li>
+              <li>
+                <span class="footer-large">INFO</span><br/>
+                <a href="/contact">Contact</a><br/>
+                
+                  <a href="http://www.storenvy.com/stores/307837-kite-s-shop" target="_blank">Marketplace Store</a>
+                
+              </li>
+              <li>
+                
+                <span class="footer-large">SOCIAL</span><br/>
+                <ul>
+                  
+                  
+                  <li><a href="http://mitikokite.tumblr.com" class="footer-social-link tumblr"></a></li>
+                </ul>
+                
+              </li>
+            </ul>
+          </div><!-- end #footer_info -->
+          <div class="clearfix"></div>
+        </div><!-- end footer -->
+      </div><!-- end #container -->
+    </div><!-- end #wrapper -->
+    <div class="clearfix"></div>
+  
+      <!-- begin Storenvy code -->
+      <script type="text/javascript">var cartUrl="http://www.storenvy.com/iframe?pid=15886275&sid=307837&src=http%253A%252F%252Fkitemitiko.storenvy.com%252Fproducts%252F15886275-touken-ranbu-fanbook-1-love-like-poison";</script>
+      <div id="se_iframe_wrapper" style="background-color:transparent !important;border:0 !important;display:block !important;top:0 !important;right:0 !important;opacity:1 !important;overflow:hidden !important;position:fixed !important;visibility:visible !important;z-index:1337 !important;filter:none !important;-ms-filter:none !importantwidth:290px;height:43px;">
+      <iframe name="storenvy_cart_frame" allowTransparency="true" src="http://www.storenvy.com/iframe?pid=15886275&amp;sid=307837&amp;src=http%253A%252F%252Fkitemitiko.storenvy.com%252Fproducts%252F15886275-touken-ranbu-fanbook-1-love-like-poison" scrolling="no" width="290" height="43" frameborder="0" id="storenvy_controls" style="'background-color:transparent;border:0;display:block;opacity:1;overflow:hidden;visibility:visible;filter:none;-ms-filter:none'"></iframe>
+      </div>
+      <div id="ui-layers"><div class="ui-layer overlay-layer"></div></div>
+      <!-- end Storenvy code --></body>
+</html>

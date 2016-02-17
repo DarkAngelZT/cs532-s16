@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+	<meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQYAWFRaDxABVFdXBQIOXw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(){}function r(t){function e(t){return t&&t instanceof n?t:t?a(t,i,o):o()}function s(n,r,o){t&&t(n,r,o);for(var i=e(o),a=f(n),s=a.length,c=0;s>c;c++)a[c].apply(i,r);return i}function c(t,e){d[t]=f(t).concat(e)}function f(t){return d[t]||[]}function u(){return r(s)}var d={};return{on:c,emit:s,create:u,listeners:f,context:e,_events:d}}function o(){return new n}var i="nr@context",a=t("gos");e.exports=r()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:25,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,a){try{f?f-=1:r("err",[a||new UncaughtException(t,e,n)])}catch(c){try{r("ierr",[c,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof s?s.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=t("loader"),s=window.onerror,c=!1,f=0;a.features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(u){"stack"in u&&(t(1),t(2),"addEventListener"in window&&t(3),a.xhrWrappable&&t(4),c=!0)}i.on("fn-start",function(){c&&(f+=1)}),i.on("fn-err",function(t,e,r){c&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){c&&!this.thrown&&f>0&&(f-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:11,2:10,3:8,4:12,5:3,6:26,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){if(window.addEventListener){var e=t("handle"),n=t("ee");t(1),window.addEventListener("click",function(){e("inc",["ck"])},!1),window.addEventListener("hashchange",function(){e("inc",["hc"])},!1),n.on("pushState-start",function(){e("inc",["ps"])})}},{1:9,ee:"QJf3ax",handle:"D5DuLP"}],6:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],7:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3);var a=Event;n.on("fn-start",function(t){var e=t[0];e instanceof a&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof a&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.clearResourceTimings?window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1):window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:11,2:10,3:9,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){function n(t){for(var e=t;e&&!e.hasOwnProperty("addEventListener");)e=Object.getPrototypeOf(e);e&&r(e)}function r(t){a.inPlace(t,["addEventListener","removeEventListener"],"-",o)}function o(t){return t[1]}var i=t("ee").create(),a=t(1)(i),s=t("gos");e.exports=i,r(window),"getPrototypeOf"in Object?(n(document),n(XMLHttpRequest.prototype)):XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&r(XMLHttpRequest.prototype),i.on("addEventListener-start",function(t){if(t[1]){var e=t[1];if("function"==typeof e){var n=s(e,"nr@wrapped",function(){return a(e,"fn-",null,e.name||"anonymous")});this.wrapped=t[1]=n}else"function"==typeof e.handleEvent&&a.inPlace(e,["handleEvent"],"fn-")}}),i.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:27,ee:"QJf3ax",gos:"7eSDFh"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState","replaceState"],"-")},{1:27,ee:"QJf3ax"}],10:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:27,ee:"QJf3ax"}],11:[function(t,e){function n(t,e,n){t[0]=i(t[0],"fn-",null,n)}function r(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=i(t[0],"fn-",this,n)}var o=t("ee").create(),i=t(1)(o);e.exports=o,i.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),i.inPlace(window,["setInterval"],"setInterval-"),i.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),o.on("setInterval-start",n),o.on("setTimer-start",r)},{1:27,ee:"QJf3ax"}],12:[function(t,e){function n(){f.inPlace(this,l,"fn-",o)}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-",o)}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[e],e),e.hasOwnProperty("addEventListener")&&u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:8,2:27,ee:"QJf3ax"}],13:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;u>o;o++)t.removeEventListener(f[o],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=this.lastSize||n(t);if(i&&(r.rxSize=i),this.sameOrigin){var s=t.getResponseHeader("X-NewRelic-App-Data");s&&(e.cat=s.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,c.emit("xhr-done",[t],t),a("xhr",[e,r,this.startTime])}}}function n(t){var e=t.responseType,n="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return r(n)}function r(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function o(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var i=t("loader");if(i.xhrWrappable){var a=t("handle"),s=t(2),c=t("ee"),f=["load","error","abort","timeout"],u=f.length,d=t(1),l=t(3),p=window.XMLHttpRequest;i.features.xhr=!0,t(5),t(4),c.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=e,n.ended=!1,n.xhrGuids={},n.lastSize=0,l&&(l>34||10>l)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),c.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),c.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),c.on("send-xhr-start",function(t,e){var n=this.metrics,o=t[0],i=this;if(n&&o){var a=r(o);a&&(n.txSize=a)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{c.emit("internal-error",[n])}catch(r){}}};for(var s=0;u>s;s++)e.addEventListener(f[s],this.listener,!1)}),c.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),c.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),c.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),c.on("addEventListener-end",function(t,e){e instanceof p&&"load"===t[0]&&c.emit("xhr-load-added",[t[1],t[2]],e)}),c.on("removeEventListener-end",function(t,e){e instanceof p&&"load"===t[0]&&c.emit("xhr-load-removed",[t[1],t[2]],e)}),c.on("fn-start",function(t,e,n){e instanceof p&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),c.on("fn-end",function(t,e){this.xhrCbStart&&c.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:14,3:16,4:12,5:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],14:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],15:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:25,2:26,handle:"D5DuLP"}],16:[function(t,e){var n=0,r=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);r&&(n=+r[1]),e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){if(!h++){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){t[e]||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-852.min.js"},l=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),p=e.exports={offset:i(),origin:u,features:{},xhrWrappable:l};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()]);var h=0},{1:25,2:15,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],25:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],26:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],27:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@original",a=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,c;try{i=this,n=o(arguments),s="function"==typeof r?r(n,i):r||{}}catch(u){d([u,"",[n,i,a],s])}f(e+"start",[n,i,a],s);try{return c=t.apply(i,n)}catch(l){throw f(e+"err",[n,i,l],s),l}finally{f(e+"end",[n,i,c],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=t,u(t,nrWrapper),nrWrapper)}function c(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!s){s=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}s=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=c,e.flag=i,e}},{1:26,ee:"QJf3ax"}]},{},["G9z0Bl",4,13,7,6,5]);</script>
+	<title>&#039;Gravity&#039;s&#039; Jonas Cuaron to Write, Direct New Zorro Movie &#039;Z&#039;</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="pingback" href="http://www.thewrap.com/xmlrpc.php"/>
+	<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@thewrap" />
+<meta name="twitter:title" content="&#8216;Gravity&#8217;s&#8217; Jonas Cuaron to Write, Direct New Zorro Movie &#8216;Z&#8217;" />
+<meta name="twitter:description" content="Lantica Media and Sobini Films are backing the new take on the legendary Latin hero" />
+<meta name="twitter:url" content="http://www.thewrap.com/gravitys-jonas-cuaron-to-write-direct-new-zorro-movie-z/" />
+<meta name="twitter:creator" content="@theinsneider" />
+<meta name="twitter:image" content="http://www.thewrap.com/wp-content/uploads/2016/02/Jonas-Cuaron-340x300.jpg" />
+<meta name="twitter:image:src" content="http://www.thewrap.com/wp-content/uploads/2016/02/Jonas-Cuaron-340x300.jpg" />
+<style type="text/css">.no-break br {display:none !important;}</style>
+<!--  Mobile viewport scale -->
+<meta content="initial-scale=1.0, maximum-scale=6.0, user-scalable=yes" name="viewport"/>
+
+<!-- This site is optimized with the Yoast SEO plugin v2.3.5 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="&#039;Gravity&#039;s&#039; Jonas Cuaron to Write, Direct New Zorro Movie &#039;Z&#039;"/>
+<link rel="canonical" href="http://www.thewrap.com/gravitys-jonas-cuaron-to-write-direct-new-zorro-movie-z/" />
+<link rel="publisher" href="https://plus.google.com/+thewrap"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="&#039;Gravity&#039;s&#039; Jonas Cuaron to Write, Direct New Zorro Movie &#039;Z&#039;" />
+<meta property="og:description" content="&#039;Gravity&#039;s&#039; Jonas Cuaron to Write, Direct New Zorro Movie &#039;Z&#039;" />
+<meta property="og:url" content="http://www.thewrap.com/gravitys-jonas-cuaron-to-write-direct-new-zorro-movie-z/" />
+<meta property="og:site_name" content="TheWrap" />
+<meta property="article:publisher" content="http://facebook.com/thewrap" />
+<meta property="article:author" content="www.facebook.com/spielberg" />
+<meta property="article:tag" content="Albert Martinez Martin" />
+<meta property="article:tag" content="Gravity" />
+<meta property="article:tag" content="Jonas Cuaron" />
+<meta property="article:tag" content="lantica media" />
+<meta property="article:tag" content="mark amin" />
+<meta property="article:tag" content="sobini films" />
+<meta property="article:tag" content="Z" />
+<meta property="article:tag" content="Zorro" />
+<meta property="article:section" content="Deal Central" />
+<meta property="article:published_time" content="2016-02-04T10:56:56+00:00" />
+<meta property="article:modified_time" content="2016-02-04T11:28:43+00:00" />
+<meta property="og:updated_time" content="2016-02-04T11:28:43+00:00" />
+<meta property="fb:app_id" content="228236404181023" />
+<meta property="og:image" content="http://www.thewrap.com/wp-content/uploads/2016/02/Jonas-Cuaron.jpg" />
+<meta property="og:image:width" content="618" /><meta property="og:image:height" content="412" /><!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="TheWrap &raquo; Feed" href="http://www.thewrap.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="TheWrap &raquo; Comments Feed" href="http://www.thewrap.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="TheWrap &raquo; &#8216;Gravity&#8217;s&#8217; Jonas Cuaron to Write, Direct New Zorro Movie &#8216;Z&#8217; Comments Feed" href="http://www.thewrap.com/gravitys-jonas-cuaron-to-write-direct-new-zorro-movie-z/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.thewrap.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='pg-style-css'  href='http://www.thewrap.com/wp-content/plugins/pg-tags/pg-tags.css?ver=4.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='tw-gallery-style-css'  href='http://www.thewrap.com/wp-content/plugins/contextual-links/assets/css/tw-gallery-shortcode.css?ver=4.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='qstw-sailthru-css'  href='http://www.thewrap.com/wp-content/plugins/qstw-sailthru/assets/css/frontend/frontend.css?ver=1.0.5' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-polls-css'  href='http://www.thewrap.com/wp-content/plugins/wp-polls/polls-css.css?ver=2.72' type='text/css' media='all' />
+<style id='wp-polls-inline-css' type='text/css'>
+.wp-polls .pollbar {
+	margin: 1px;
+	font-size: 8px;
+	line-height: 10px;
+	height: 10px;
+	background-image: url('http://www.thewrap.com/wp-content/plugins/wp-polls/images/default_gradient/pollbg.gif');
+	border: 1px solid #c8c8c8;
+}
+
+</style>
+<link rel='stylesheet' id='tenup-sharethis-css-css'  href='http://www.thewrap.com/wp-content/plugins/thewrap/assets/css/sharethis.min.css?ver=1.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-colorbox-css'  href='http://www.thewrap.com/wp-content/themes/thewrap-canvas/js/colorbox/colorbox.css?ver=1.4.27' type='text/css' media='all' />
+<link rel='stylesheet' id='parent-shortcode-stylesheet-css'  href='http://www.thewrap.com/wp-content/themes/canvas/functions/css/shortcodes.css?ver=5.8.0' type='text/css' media='all' />
+<link rel='stylesheet' id='parent-theme-stylesheet-css'  href='http://www.thewrap.com/wp-content/themes/canvas/style.css?ver=5.8.0' type='text/css' media='all' />
+<link rel='stylesheet' id='theme-fonts-stylesheet-css'  href='http://www.thewrap.com/wp-content/themes/thewrap-canvas/fonts.css?ver=1.0.4' type='text/css' media='all' />
+<link rel='stylesheet' id='theme-stylesheet-css'  href='http://www.thewrap.com/wp-content/themes/thewrap-canvas/css/desktop.min.css?ver=1.0.4' type='text/css' media='all' />
+<link rel='stylesheet' id='mobile_menu_css-css'  href='http://www.thewrap.com/wp-content/themes/thewrap-canvas/css/mobile.min.css?ver=1.0.4' type='text/css' media='all' />
+<link rel='stylesheet' id='woo-gravity-forms-css'  href='http://www.thewrap.com/wp-content/themes/canvas/includes/integrations/gravity-forms/css/gravity-forms.css?ver=4.4.2' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link href="http://www.thewrap.com/wp-content/themes/canvas/css/non-responsive.css" rel="stylesheet" type="text/css" />
+<style type="text/css">.col-full, #wrapper { width: 1000px; max-width: 1000px; } #inner-wrapper { padding: 0; } body.full-width #header, #nav-container, body.full-width #content, body.full-width #footer-widgets, body.full-width #footer { padding-left: 0; padding-right: 0; } body.fixed-mobile #top, body.fixed-mobile #header-container, body.fixed-mobile #footer-container, body.fixed-mobile #nav-container, body.fixed-mobile #footer-widgets-container { min-width: 1000px; padding: 0 1em; } body.full-width #content { width: auto; padding: 0 1em;}</style>
+<![endif]-->
+<script type='text/javascript' src='http://www.thewrap.com/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='http://www.thewrap.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://www.thewrap.com/wp-content/plugins/qstw-integrations/assets/js/gacode.js?ver=1.0'></script>
+<script type='text/javascript' src='http://www.thewrap.com/wp-content/plugins/qstw-sailthru/assets/js/frontend/user-form.js?ver=1.0.5'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ssdfacebook = {"html":"<div id=\"fb-root\"><\/div>"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.thewrap.com/wp-content/plugins/ssd-social-embed-links/assets/js/facebook.js?ver=4.4.2'></script>
+<script type='text/javascript' src='http://www.thewrap.com/wp-content/themes/thewrap-canvas/js/mobile-menu.min.js?ver=1.0.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var tenupTaboola = {"push_key":{"article":"auto"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.thewrap.com/wp-content/plugins/thewrap/assets/js/header.min.js?ver=1.0.2'></script>
+<script type='text/javascript' src='http://www.thewrap.com/wp-content/plugins/thewrap/assets/js/footer.min.js?ver=1.0.2'></script>
+<script type='text/javascript' src='http://www.thewrap.com/wp-content/themes/thewrap-canvas/js/libs.min.js?ver=1.0.4'></script>
+<script type='text/javascript' src='http://www.thewrap.com/wp-content/themes/thewrap-canvas/js/colorbox/jquery.colorbox.js?ver=1.4.27'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _qstw_theme = {"path":"http:\/\/www.thewrap.com\/wp-content\/themes\/thewrap-canvas\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.thewrap.com/wp-content/themes/thewrap-canvas/js/theme-functions.min.js?ver=1.0.4'></script>
+<script type='text/javascript' src='http://www.thewrap.com/wp-content/themes/canvas/includes/js/third-party.min.js?ver=4.4.2'></script>
+<script type='text/javascript' src='http://www.thewrap.com/wp-content/themes/canvas/includes/js/modernizr.min.js?ver=2.6.2'></script>
+<script type='text/javascript' src='http://www.thewrap.com/wp-content/themes/canvas/includes/js/general.min.js?ver=4.4.2'></script>
+
+<!-- Adjust the website width -->
+<style type="text/css">
+	.col-full, #wrapper { max-width: 1000px !important; }
+</style>
+
+<link rel='https://api.w.org/' href='http://www.thewrap.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.thewrap.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.thewrap.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.4.2" />
+<link rel='shortlink' href='http://www.thewrap.com/?p=851023' />
+<link rel="alternate" type="application/json+oembed" href="http://www.thewrap.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.thewrap.com%2Fgravitys-jonas-cuaron-to-write-direct-new-zorro-movie-z%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.thewrap.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.thewrap.com%2Fgravitys-jonas-cuaron-to-write-direct-new-zorro-movie-z%2F&#038;format=xml" />
+
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+			<script type='text/javascript'>
+				var googletag = googletag || {};
+				googletag.cmd = googletag.cmd || [];
+				(function () {
+					var gads = document.createElement('script');
+					gads.async = true;
+					gads.type = 'text/javascript';
+					var useSSL = 'https:' == document.location.protocol;
+					gads.src = (useSSL ? 'https:' : 'http:') +
+					'//www.googletagservices.com/tag/js/gpt.js';
+					var node = document.getElementsByTagName('script')[0];
+					node.parentNode.insertBefore(gads, node);
+				})();
+			</script>
+
+			<script type='text/javascript'>
+				var ssdtw_gallery_ad_enabled = true,
+					ssdtw_gallery_ad_frequency = 4,
+					ssdtw_article_ad_enabled = false;
+				googletag.cmd.push(function () {
+					if ( is_mobile() ) {
+
+						googletag.defineOutOfPageSlot("/30981161/TheWrap/Movies/MobileInterstitial", "oopMobile").addService(googletag.pubads()).setTargeting( "pos", "mobile" );
+googletag.defineSlot("/30981161/TheWrap/Movies/MobileTop", [320, 51], "320x51").addService(googletag.pubads()).setTargeting( "pos", "mobile" );
+googletag.defineSlot("/30981161/TheWrap/Movies/MobileBottom", [320, 50], "320x50").addService(googletag.pubads()).setTargeting( "pos", "mobile" );
+googletag.defineSlot("/30981161/TheWrap/Movies/MobileMediumRectangle", [300, 250], "300x250mobile").addService(googletag.pubads()).setTargeting( "pos", "mobile" );
+} else { googletag.defineOutOfPageSlot("/30981161/TheWrap/Movies/SiteInterstitial", "oopSite").addService(googletag.pubads()).setTargeting( "pos", "site" );
+googletag.defineSlot("/30981161/TheWrap/Movies/LeftSkin", [185, 1024], "185x1024").addService(googletag.pubads()).setTargeting( "pos", "site" );
+googletag.defineSlot("/30981161/TheWrap/Movies/RightSkin", [186, 1024], "186x1024").addService(googletag.pubads()).setTargeting( "pos", "site" );
+googletag.defineSlot("/30981161/TheWrap/Movies/Pushdown", [1000, 90], "1000x90").addService(googletag.pubads()).setTargeting( "pos", "site" );
+googletag.defineSlot("/30981161/TheWrap/Movies/Leaderboard", [728, 90], "728x90").addService(googletag.pubads()).setTargeting( "pos", "site" );
+googletag.defineSlot("/30981161/TheWrap/Movies/Button", [227, 90], "227x90").addService(googletag.pubads()).setTargeting( "pos", "site" );
+googletag.defineSlot("/30981161/TheWrap/Movies/MediumRectangle", [300, 250], "300x250site").addService(googletag.pubads()).setTargeting( "pos", "site" );
+googletag.defineSlot("/30981161/TheWrap/Movies/HalfPage", [300, 600], "300x600").addService(googletag.pubads()).setTargeting( "pos", "site" );
+googletag.defineSlot("/30981161/TheWrap/Movies/Billboard", [1000, 250], "1000x250").addService(googletag.pubads()).setTargeting( "pos", "site" );
+} // end is mobile
+					googletag.pubads().setTargeting("kw", "851023");
+					googletag.pubads().enableSingleRequest();
+					googletag.pubads().collapseEmptyDivs(true);
+					googletag.enableServices();
+				});
+			</script>
+						<meta name="sailthru.title" content="&#8216;Gravity&#8217;s&#8217; Jonas Cuaron to Write, Direct New Zorro Movie &#8216;Z&#8217;" /><meta name="sailthru.date" content="2016-02-04T18:56:56+00:00" /><meta name="sailthru.author" content="Jeff Sneider" /><meta name="sailthru.tags" content="gravity,jonas cuaron,zorro,z,lantica media,sobini films,mark amin,albert martinez martin" /><meta name="sailthru.category" content="movies,deal central" /><meta name="sailthru.image.full" content="http://www.thewrap.com/wp-content/uploads/2016/02/Jonas-Cuaron.jpg" /><meta name="sailthru.image.thumb" content="http://www.thewrap.com/wp-content/uploads/2016/02/Jonas-Cuaron-150x150.jpg" /><script type="text/javascript">
+	(function() {
+		function loadHorizon() { var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = location.protocol + '//ak.sail-horizon.com/horizon/v1.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); }
+		loadHorizon();
+		var oldOnLoad = window.onload;
+		window.onload = function() {
+			if (typeof oldOnLoad === 'function') oldOnLoad();
+			Sailthru.setup({
+				domain: 'horizon.thewrap.com',
+				useStoredTags: false,
+				concierge: {"from":"top","threshold":400}			});
+		};
+	})();
+</script>
+			<meta name="google-site-verification" content="Hw1HTe8scEKY6Z7yNn_1dCmr-EEhuywMoBtnQWNCoLE" /><script type="application/ld+json">{
+    "@context": "http://scheme.org",
+    "@type": "Review",
+    "publisher": {
+        "@type": "Organization",
+        "name": "TheWrap",
+        "samAs": "http://www.thewrap.com"
+    },
+    "datePublished": "2016-02-04T19:24:13+00:00",
+    "description": "Lantica Media and Sobini Films are backing the new take on the legendary Latin hero",
+    "itemReviewed": {
+        "@type": "Movie",
+        "name": "",
+        "sameAs": "",
+        "datePublished": "",
+        "director": {
+            "@type": "Person",
+            "name": "",
+            "sameAs": ""
+        },
+        "actor": []
+    },
+    "reviewRating": {
+        "bestRating": "",
+        "worstRating": "",
+        "ratingValue": ""
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Jeff Sneider",
+        "sameAs": "https://plus.google.com/114585400553822265566"
+    }
+}</script><!-- wp-parsely Plugin Version 1.6 -->
+<meta name='wp-parsely_version' id='wp-parsely_version' content='1.6' />
+	<meta name='parsely-page' id='parsely-page' content='{"title":"&#8216;Gravity&#8217;s&#8217; Jonas Cuaron to Write, Direct New Zorro Movie &#8216;Z&#8217;","link":"http:\/\/www.thewrap.com\/gravitys-jonas-cuaron-to-write-direct-new-zorro-movie-z\/","image_url":"http:\/\/www.thewrap.com\/wp-content\/uploads\/2016\/02\/Jonas-Cuaron-150x150.jpg","type":"post","post_id":"851023","pub_date":"2016-02-04T18:56:56Z","section":"Deal Central","author":"Jeff Sneider","tags":["albert martinez martin","gravity","jonas cuaron","lantica media","mark amin","sobini films","z","zorro"]}' />
+<style type="text/css">#logo .site-title, #logo .site-description { display:none; }
+body {background-color:#eeeeee;background-repeat:no-repeat;background-position:top left;background-attachment:scroll;border-top:0px solid #000000;}
+a:link, a:visited, #loopedSlider a.flex-prev:hover, #loopedSlider a.flex-next:hover {color:#fa4b2a} .quantity .plus, .quantity .minus {background-color: #fa4b2a;}
+a:hover, .post-more a:hover, .post-meta a:hover, .post p.tags a:hover {color:#fa4b2a}
+body #wrapper .button, body #wrapper #content .button, body #wrapper #content .button:visited, body #wrapper #content .reply a, body #wrapper #content #respond .form-submit input#submit, input[type=submit], body #wrapper #searchsubmit, #navigation ul.cart .button, body #wrapper .woo-sc-button {border: none; background:#fa4b2a}
+body #wrapper .button:hover, body #wrapper #content .button:hover, body #wrapper #content .reply a:hover, body #wrapper #content #respond .form-submit input#submit:hover, input[type=submit]:hover, body #wrapper #searchsubmit:hover, #navigation ul.cart .button:hover, body #wrapper .woo-sc-button:hover {border: none; background:#fa4b2a}
+#header {background-color:#f9f9f9;background-repeat:no-repeat;background-position:left top;margin-top:0px;margin-bottom:0px;padding-top:12px;padding-bottom:12px;border:0px solid ;}
+#logo {padding-left:0px;}.header-widget {padding-right:0px;}
+#logo .site-title a {font:bold 40px/1em Arial, sans-serif;color:#222222;}
+#logo .site-description {font:300 13px/1em Arial, sans-serif;color:#999999;}
+#inner-wrapper {padding-left:30px; padding-right:30px;background-color:#ffffff;border-radius:0px;} .col-full { width: auto; } @media only screen and (max-width:767px) { #inner-wrapper { margin:0; border-radius:none; padding-left:1em; padding-right: 1em; border: none; } } 
+body, p { font:300 14px/1.5em Helvetica, Arial, sans-serif;color:#222222; }
+h1 { font:bold 28px/1.2em alternategothic2_btregular, Oswald, Impact, sans-serif;color:#222222; }h2 { font:bold 24px/1.2em Oswald, Impact, sans-serif;color:#222222; }h3 { font:bold 20px/1.2em alternategothic2_btregular, Oswald, Impact, sans-serif;color:#222222; }h4 { font:normal 16px/1.2em alternategothic2_btregular, Oswald, Impact, sans-serif;color:#222222; }h5 { font:normal 14px/1.2em alternategothic2_btregular, Oswald, Impact, sans-serif;color:#222222; }h6 { font:normal 12px/1.2em alternategothic2_btregular, Oswald, Impact, sans-serif;color:#222222; }
+.page-title, .post .title, .page .title {font:bold 41px/1.1em Oswald, Impact, sans-serif;color:#444444;}
+.post .title a:link, .post .title a:visited, .page .title a:link, .page .title a:visited {color:#444444}
+.post-meta { font:300 11px/1.5em Helvetica, Arial, sans-serif;color:#222222; }
+.entry, .entry p{ font:300 16px/1.5em Helvetica, Arial, sans-serif;color:#222222; }
+.post-more {font:300 13px/1.5em Helvetica, Arial, sans-serif;color:;border-top:0px solid #e6e6e6;border-bottom:0px solid #e6e6e6;}
+#post-author, #connect {border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;border-left:1px solid #e6e6e6;border-right:1px solid #e6e6e6;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;background-color:#fafafa}
+.nav-entries a, .woo-pagination { font:300 13px/1em Helvetica, Arial, sans-serif;color:#888; }
+.woo-pagination a, .woo-pagination a:hover {color:#888!important}
+.widget h3 {font:normal 18px/1.2em alternategothic2_btregular, Oswald, Impact, sans-serif;color:#ffffff;border-bottom:0px solid #e6e6e6;margin-bottom:0;}
+.widget_recent_comments li, #twitter li { border-color: #e6e6e6;}
+.widget p, .widget .textwidget { font:300 13px/1.5em Helvetica, Arial, sans-serif;color:#555555; }
+.widget {font:300 13px/1.5em Helvetica, Arial, sans-serif;color:#555555;border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;}
+#tabs .inside li a, .widget_woodojo_tabs .tabbable .tab-pane li a { font:bold 12px/1.5em Arial, sans-serif;color:#555555; }
+#tabs .inside li span.meta, .widget_woodojo_tabs .tabbable .tab-pane li span.meta { font:300 11px/1.5em Arial, sans-serif;color:#999999; }
+#tabs ul.wooTabs li a, .widget_woodojo_tabs .tabbable .nav-tabs li a { font:300 11px/2em Arial, sans-serif;color:#999999; }
+@media only screen and (min-width:768px) {
+ul.nav li a, #navigation ul.rss a, #navigation ul.cart a.cart-contents, #navigation .cart-contents #navigation ul.rss, #navigation ul.nav-search, #navigation ul.nav-search a { font:normal 12px/1.2em Oswald, Impact, sans-serif;color:#ffffff; } #navigation ul.rss li a:before, #navigation ul.nav-search a.search-contents:before { color:#ffffff;}
+#navigation ul.nav > li a:hover, #navigation ul.nav > li:hover a, #navigation ul.nav li ul li a, #navigation ul.cart > li:hover > a, #navigation ul.cart > li > ul > div, #navigation ul.cart > li > ul > div p, #navigation ul.cart > li > ul span, #navigation ul.cart .cart_list a, #navigation ul.nav li.current_page_item a, #navigation ul.nav li.current_page_parent a, #navigation ul.nav li.current-menu-ancestor a, #navigation ul.nav li.current-cat a, #navigation ul.nav li.current-menu-item a { color:#ffffff!important; }
+#navigation ul.nav > li a:hover, #navigation ul.nav > li:hover, #navigation ul.nav li ul, #navigation ul.cart li:hover a.cart-contents, #navigation ul.nav-search li:hover a.search-contents, #navigation ul.nav-search a.search-contents + ul, #navigation ul.cart a.cart-contents + ul, #navigation ul.nav li.current_page_item a, #navigation ul.nav li.current_page_parent a, #navigation ul.nav li.current-menu-ancestor a, #navigation ul.nav li.current-cat a, #navigation ul.nav li.current-menu-item a{background-color:#e91b23!important}
+#navigation ul.nav li ul, #navigation ul.cart > li > ul > div  { border: 0px solid #dbdbdb; }
+#navigation ul.nav > li:hover > ul  { left: 0; }
+#navigation ul.nav > li  { border-right: 0px solid #dbdbdb; }#navigation ul.nav > li:hover > ul  { left: 0; }
+#navigation { box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; }#navigation ul li:first-child, #navigation ul li:first-child a { border-radius:0px 0 0 0px; -moz-border-radius:0px 0 0 0px; -webkit-border-radius:0px 0 0 0px; }
+#navigation {background:#333333;border-top:0px solid #dbdbdb;border-bottom:0px solid #dbdbdb;border-left:0px solid #dbdbdb;border-right:0px solid #dbdbdb;border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px;margin-top:0px;margin-bottom:0px;}
+#top, #top ul.nav li ul li a:hover { background:#ffffff;}
+#top ul.nav li a:hover, #top ul.nav li.current_page_item a, #top ul.nav li.current_page_parent a,#top ul.nav li.current-menu-ancestor a,#top ul.nav li.current-cat a,#top ul.nav li.current-menu-item a,#top ul.nav li.sfHover, #top ul.nav li ul, #top ul.nav > li:hover a, #top ul.nav li ul li a { color:#777777!important;}
+#top ul.nav li a:hover, #top ul.nav li.current_page_item a, #top ul.nav li.current_page_parent a,#top ul.nav li.current-menu-ancestor a,#top ul.nav li.current-cat a,#top ul.nav li.current-menu-item a,#top ul.nav li.sfHover, #top ul.nav li ul, #top ul.nav > li:hover { background:#eeeeee;}
+#top ul.nav li a { font:normal 12px/1.6em Oswald, Impact, sans-serif;color:#777777; }
+#top ul.nav li.parent > a:after { border-top-color:#777777;}
+}
+#footer, #footer p { font:300 13px/1.4em Arial, sans-serif;color:#999999; }
+#footer {border-top:1px solid #dbdbdb;border-bottom:0px solid ;border-left:0px solid ;border-right:0px solid ;border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px;}
+.magazine #loopedSlider .content h2.title a { font:bold 24px/1em Arial, sans-serif;color:#ffffff; }
+.wooslider-theme-magazine .slide-title a { font:bold 24px/1em Arial, sans-serif;color:#ffffff; }
+.magazine #loopedSlider .content .excerpt p { font:thin 13px/1.5em Arial, sans-serif;color:#cccccc; }
+.wooslider-theme-magazine .slide-content p, .wooslider-theme-magazine .slide-excerpt p { font:thin 13px/1.5em Arial, sans-serif;color:#cccccc; }
+.magazine .block .post .title a {font:bold 18px/1.2em Helvetica, Arial, sans-serif;color:#222222; }
+#loopedSlider.business-slider .content h2 { font:bold 24px/1em Arial, sans-serif;color:#ffffff; }
+#loopedSlider.business-slider .content h2.title a { font:bold 24px/1em Arial, sans-serif;color:#ffffff; }
+.wooslider-theme-business .has-featured-image .slide-title { font:bold 24px/1em Arial, sans-serif;color:#ffffff; }
+.wooslider-theme-business .has-featured-image .slide-title a { font:bold 24px/1em Arial, sans-serif;color:#ffffff; }
+#wrapper #loopedSlider.business-slider .content p { font:thin 13px/1.5em Arial, sans-serif;color:#cccccc; }
+.wooslider-theme-business .has-featured-image .slide-content p { font:thin 13px/1.5em Arial, sans-serif;color:#cccccc; }
+.wooslider-theme-business .has-featured-image .slide-excerpt p { font:thin 13px/1.5em Arial, sans-serif;color:#cccccc; }
+.archive_header { font:bold 18px/1em Arial, sans-serif;color:#222222; }
+.archive_header {border-bottom:1px solid #e6e6e6;}
+</style>
+<!-- Theme version -->
+<meta name="generator" content="TheWrap Theme 1.0.4" />
+<meta name="generator" content="Canvas 5.9.10" />
+<meta name="generator" content="WooFramework 6.2.0" />
+<style style="text/css">.wp-pols .pollbar { margin:1px;font-size:8px;line-height:10px;height:10px;border:1px soild #c8c8c8;background-image:url('http://www.thewrap.com/wp-content/plugins/wp-polls/images/default_gradient/pollbg.gif');; }</style>			<script>
+			window._newsroom = window._newsroom || [];
+			!function( e, f, u ) {
+				e.async = 1;
+				e.src = u;
+				f.parentNode.insertBefore( e, f );
+			}( document.createElement( 'script' ), document.getElementsByTagName( 'script' )[0], '//c2.taboola.com/nr/thewrap/newsroom.js' );
+		</script>
+		<script type="text/javascript">var switchTo5x = true;</script>
+	<script type="text/javascript" src="https://ws.sharethis.com/button/buttons.js"></script>
+	<script type="text/javascript">stLight.options( {publisher : "4b0a40f0-78eb-4d7d-b78e-fc72c0fbce61", doNotHash : false, doNotCopy : false, hashAddressBar : false} );
+		var st_type = 'wordpress".trim("4.4.2")."';</script>
+
+<!--
+	generated in 3.712 seconds
+	126530 bytes batcached for 300 seconds
+-->
+</head>
+<body class="single single-post postid-851023 single-format-standard tp-ab gecko alt-style-default boxed-layout two-col-left width-1000 two-col-left-1000 at-top">
+<div id="site">
+				<div id="wallpaper" class="col-full">
+				<div id="left-skin-wrapper" class="background ad-LeftSkin">				<div id='185x1024' class="dfp-ad-wrapper">
+					<script type='text/javascript'>
+						if( ! is_mobile() ) {
+							googletag.cmd.push(function() { googletag.display('185x1024'); });
+						}
+					</script>
+				</div>
+				</div>
+				<div id="right-skin-wrapper" class="background ad-RightSkin">				<div id='186x1024' class="dfp-ad-wrapper">
+					<script type='text/javascript'>
+						if( ! is_mobile() ) {
+							googletag.cmd.push(function() { googletag.display('186x1024'); });
+						}
+					</script>
+				</div>
+				</div>
+			</div><!--wallpaper-->
+			<div id="site-wrap" class="col-full">
+					<div id="header-adtop" class="adunits ad-Pushdown">
+				<div id="skylineContainer">				<div id='1000x90' class="dfp-ad-wrapper">
+					<script type='text/javascript'>
+						if( ! is_mobile() ) {
+							googletag.cmd.push(function() { googletag.display('1000x90'); });
+						}
+					</script>
+				</div>
+				</div>
+			</div>
+		
+		
+					<div id="top-special-shim"></div>
+					<div id="top-special" class="col-full does-fixed">
+						<div class="inner">
+							<div class="menu-main-container"><ul id="main-top-nav"><li class="top-hamburger"><a href="#" class="opener"><i class="qsicon"></i></a><ul id="primary-menu" class="top-navigation fl click-sub"><li id="menu-item-403578" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-403578"><a href="http://www.thewrap.com/">Home</a></li>
+<li id="menu-item-127034" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-127034"><a href="http://www.thewrap.com/category/movies/">Movies</a>
+<ul class="sub-menu">
+	<li id="menu-item-235633" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-235633"><a href="http://www.thewrap.com/category/category-column/waxword/">Waxword</a></li>
+	<li id="menu-item-127099" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-127099"><a href="http://www.thewrap.com/category/category-column/alonso-duralde/">Alonso Duralde</a></li>
+	<li id="menu-item-127046" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-127046"><a href="http://www.thewrap.com/category/category-column/steve-pond/">Steve Pond</a></li>
+	<li id="menu-item-127037" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-127037"><a href="http://www.thewrap.com/category/category-column/deal-central/">Deal Central</a></li>
+	<li id="menu-item-403580" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-403580"><a href="http://www.thewrap.com/tag/box-office/">Box Office</a></li>
+	<li id="menu-item-403581" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-403581"><a href="http://www.thewrap.com/tag/movie_reviews/">Movie Reviews</a></li>
+	<li id="menu-item-403582" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-403582"><a href="http://www.thewrap.com/tag/film_festivals/">Film Festivals</a></li>
+</ul>
+</li>
+<li id="menu-item-148716" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-148716"><a href="http://www.thewrap.com/category/tv/">TV</a>
+<ul class="sub-menu">
+	<li id="menu-item-403596" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-403596"><a href="http://www.thewrap.com/tag/tv_ratings/">Ratings</a></li>
+	<li id="menu-item-403598" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-403598"><a href="http://www.thewrap.com/tag/tv-reviews/">TV Reviews</a></li>
+</ul>
+</li>
+<li id="menu-item-127040" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-127040"><a href="http://www.thewrap.com/category/media/">Media</a>
+<ul class="sub-menu">
+	<li id="menu-item-127036" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-127036"><a href="http://www.thewrap.com/category/category-column/media-alley/">Media Alley</a></li>
+	<li id="menu-item-127100" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-127100"><a href="http://www.thewrap.com/category/category-column/hollywood-dc/">Hollywood, D.C.</a></li>
+</ul>
+</li>
+<li id="menu-item-127038" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-127038"><a href="http://www.thewrap.com/category/awards/">Awards</a>
+<ul class="sub-menu">
+	<li id="menu-item-403599" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-403599"><a href="http://www.thewrap.com/tag/oscars/">Oscars</a></li>
+	<li id="menu-item-403600" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-403600"><a href="http://www.thewrap.com/tag/emmys/">Emmys</a></li>
+	<li id="menu-item-403602" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-403602"><a href="http://www.thewrap.com/tag/golden_globes/">Golden Globes</a></li>
+	<li id="menu-item-651833" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-651833"><a href="http://www.thewrap.com/tag/sag/">SAG Awards</a></li>
+</ul>
+</li>
+<li id="menu-item-813937" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-813937"><a href="http://www.thewrap.com/category/music/">Music</a></li>
+<li id="menu-item-813934" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-813934"><a href="http://www.thewrap.com/category/tech-2/">Tech</a></li>
+<li id="menu-item-261771" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-261771"><a href="http://www.thewrap.com/category/culture/">Culture</a>
+<ul class="sub-menu">
+	<li id="menu-item-261773" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-261773"><a href="http://www.thewrap.com/category/music/">Music</a></li>
+	<li id="menu-item-403619" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-403619"><a href="http://www.thewrap.com/tag/theater/">Theater</a></li>
+	<li id="menu-item-261772" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-261772"><a href="http://www.thewrap.com/category/category-column/party-report/">Party Report</a></li>
+</ul>
+</li>
+<li id="menu-item-127057" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-127057"><a href="http://www.thewrap.com/category/reviews/">Reviews</a>
+<ul class="sub-menu">
+	<li id="menu-item-403604" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-403604"><a href="http://www.thewrap.com/tag/movie_reviews/">Movie Reviews</a></li>
+	<li id="menu-item-403605" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-403605"><a href="http://www.thewrap.com/tag/tv-reviews/">TV Reviews</a></li>
+</ul>
+</li>
+<li id="menu-item-148468" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-148468"><a href="http://www.thewrap.com/category/videos/">Videos</a></li>
+<li id="menu-item-127072" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-127072"><a href="http://www.thewrap.com/category/channelphoto/">Photos</a></li>
+<li id="menu-item-635165" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-635165"><a href="#">Events</a>
+<ul class="sub-menu">
+	<li id="menu-item-635168" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-635168"><a href="http://www.thewrap.com/tag/thewraps-power-women-breakfast/">Power Women Breakfast</a></li>
+	<li id="menu-item-635183" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-635183"><a href="http://www.thewrap.com/tag/shortlist-2015/">ShortList</a></li>
+	<li id="menu-item-621944" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-621944"><a href="http://www.thewrap.com/category/category-column/thegrill/">TheGrill</a></li>
+</ul>
+</li>
+<li id="menu-item-746041" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-746041"><a>Features</a>
+<ul class="sub-menu">
+	<li id="menu-item-870907" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-870907"><a href="http://feature.thewrap.com/oscar-voting/oscar-voting">OscarWrap Voting</a></li>
+	<li id="menu-item-851446" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-851446"><a href="http://feature.thewrap.com/oscarwrap/alicia-vikander">OscarWrap Alicia Vikander</a></li>
+	<li id="menu-item-778081" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-778081"><a href="http://feature.thewrap.com/oscarwrap-saoirse-ronan/saoirse-ronan">OscarWrap Saoirse Ronan</a></li>
+	<li id="menu-item-778078" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-778078"><a href="http://feature.thewrap.com/oscarwrap-the-hateful-eight/glorious-basterds">OscarWrap The Hateful Eight</a></li>
+	<li id="menu-item-772306" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-772306"><a href="http://feature.thewrap.com/oscarwrap-spotlight/spotlight">OscarWrap &#8216;Spotlight&#8217;</a></li>
+	<li id="menu-item-760462" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-760462"><a href="http://bit.ly/HighStakesActors2015">OscarWrap Actors</a></li>
+	<li id="menu-item-748609" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-748609"><a href="http://feature.thewrap.com/oscarwrap-dark-horses-we-love/dark-horses-we-love">Dark Horses We Love</a></li>
+	<li id="menu-item-748660" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-748660"><a href="http://feature.thewrap.com/oscarwrap-jake-gyllenhaal/article">Jake Gyllenhaal</a></li>
+	<li id="menu-item-748615" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-748615"><a href="http://feature.thewrap.com/oscarwrap-the-walk/oscarwrap-the-walk">The Walk</a></li>
+	<li id="menu-item-576695" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-576695"><a href="http://feature.thewrap.com/falltvpreview">Fall TV</a></li>
+	<li id="menu-item-748621" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-748621"><a href="http://feature.thewrap.com/kingdom/article">Kingdom</a></li>
+</ul>
+</li>
+</ul></li></ul></div>							<ul id="top-slim-nav" class="slim-top nav top-navigation fl"><li id="menu-item-653765" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-653765"><a href="http://play.it/TheGrill">Podcast</a></li>
+<li id="menu-item-241211" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-241211"><a href="http://nypowerwomenbreakfast.splashthat.com/">Power Women Breakfast</a></li>
+<li id="menu-item-127078" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-127078"><a href="http://thegrill.thewrap.com/">TheGrill</a></li>
+<li id="menu-item-349059" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-349059"><a href="http://www.thewrap.com/awards-and-foreign-screening-series/">Oscar Screening Series</a></li>
+<li id="menu-item-328248" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-328248"><a href="http://shortlistfilmfestival.com/">ShortList</a></li>
+<li id="menu-item-148866" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-148866"><a href="http://powergrid.thewrap.com">Powergrid</a></li>
+<li id="menu-item-127082" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-127082"><a href="/jobs">Jobs</a></li>
+</ul>							<div class="aprt">
+								<ul id="top-social-nav" class="social-buttons"><li id="menu-item-391187" class="socbtn fb menu-item menu-item-type-custom menu-item-object-custom menu-item-391187"><a href="http://www.facebook.com/thewrap">Facebook</a></li>
+<li id="menu-item-391188" class="socbtn tw menu-item menu-item-type-custom menu-item-object-custom menu-item-391188"><a href="http://www.twitter.com/thewrap">Twitter</a></li>
+<li id="menu-item-391190" class="socbtn ig menu-item menu-item-type-custom menu-item-object-custom menu-item-391190"><a href="http://www.instagram.com/thewrap">Instagram</a></li>
+<li id="menu-item-391191" class="socbtn gp menu-item menu-item-type-custom menu-item-object-custom menu-item-391191"><a href="https://plus.google.com/100552962608847269780">Google+</a></li>
+<li id="menu-item-391192" class="socbtn yt menu-item menu-item-type-custom menu-item-object-custom menu-item-391192"><a href="http://www.youtube.com/user/thewrapnews">Youtube</a></li>
+<li id="menu-item-391189" class="socbtn pi menu-item menu-item-type-custom menu-item-object-custom menu-item-391189"><a href="http://www.pinterest.com/thewrapnews">Pinterest</a></li>
+<li id="menu-item-391193" class="socbtn in menu-item menu-item-type-custom menu-item-object-custom menu-item-391193"><a href="http://www.linkedin.com/company/thewrap.com">LinkedIn</a></li>
+</ul>								<ul id="search-box-wrap">
+									<li>
+										<a href="#" class="opener"><i class="qsicon"></i><span>Search</span></a>
+										<ul class="click-sub rt">
+											<li>
+												<form action="http://www.thewrap.com" method="GET">
+													<input type="text" value="" name="s" placeholder="Search..."/>
+												</form>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- /#top -->
+						<div id="ad-Hmobile">				<div id='320x51' class="dfp-ad-wrapper">
+					<script type='text/javascript'>
+						if( is_mobile() ) {
+							googletag.cmd.push(function() { googletag.display('320x51'); });
+						}
+					</script>
+				</div>
+				</div>
+		<div id="mobile-sticky-bottom">
+						<div id="ad-Fmobile">				<div id='320x50' class="dfp-ad-wrapper">
+					<script type='text/javascript'>
+						if( is_mobile() ) {
+							googletag.cmd.push(function() { googletag.display('320x50'); });
+						}
+					</script>
+				</div>
+				</div>
+		</div>
+		<div id="wrapper">
+
+			<div id="inner-wrapper">
+
+				<div id="above-header-wrapper" class="full-width-widget-area"><div id="ht_ad_widget-62" class="widget ad-Leaderboard widget_ht_ad_widget "><div class="wAD wAD-Leaderboard" style="background:#fff;"> <div id='728x90' class="dfp-ad-wrapper"> <script type='text/javascript'> if( ! is_mobile() ) { googletag.cmd.push(function() { googletag.display('728x90'); }); } </script> </div> </div></div><div id="ht_ad_widget-63" class="widget ad-Button widget_ht_ad_widget "><div class="wAD wAD-Button" style="background:#fff;"> <div id='227x90' class="dfp-ad-wrapper"> <script type='text/javascript'> if( ! is_mobile() ) { googletag.cmd.push(function() { googletag.display('227x90'); }); } </script> </div> </div></div></div>
+				<header id="header" class="col-full">
+
+					<div id="logo">
+<a href="http://www.thewrap.com/" title="Entertainment News"><img src="/images/2013/09/thewrap-logo.png" alt="Entertainment News" /></a>
+<span class="site-title"><a href="http://www.thewrap.com/">Entertainment News</a></span>
+<span class="site-description">Covering Hollywood</span>
+</div>
+
+				</header>
+				<nav id="navigation" class="col-full" role="navigation">
+
+	
+	<section class="menus">
+
+	<ul id="main-nav" class="nav fl"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-403578"><a href="http://www.thewrap.com/">Home</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-127034"><a href="http://www.thewrap.com/category/movies/">Movies</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-235633"><a href="http://www.thewrap.com/category/category-column/waxword/">Waxword</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-127099"><a href="http://www.thewrap.com/category/category-column/alonso-duralde/">Alonso Duralde</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-127046"><a href="http://www.thewrap.com/category/category-column/steve-pond/">Steve Pond</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-127037"><a href="http://www.thewrap.com/category/category-column/deal-central/">Deal Central</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-403580"><a href="http://www.thewrap.com/tag/box-office/">Box Office</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-403581"><a href="http://www.thewrap.com/tag/movie_reviews/">Movie Reviews</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-403582"><a href="http://www.thewrap.com/tag/film_festivals/">Film Festivals</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-148716"><a href="http://www.thewrap.com/category/tv/">TV</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-403596"><a href="http://www.thewrap.com/tag/tv_ratings/">Ratings</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-403598"><a href="http://www.thewrap.com/tag/tv-reviews/">TV Reviews</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-127040"><a href="http://www.thewrap.com/category/media/">Media</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-127036"><a href="http://www.thewrap.com/category/category-column/media-alley/">Media Alley</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-127100"><a href="http://www.thewrap.com/category/category-column/hollywood-dc/">Hollywood, D.C.</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-127038"><a href="http://www.thewrap.com/category/awards/">Awards</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-403599"><a href="http://www.thewrap.com/tag/oscars/">Oscars</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-403600"><a href="http://www.thewrap.com/tag/emmys/">Emmys</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-403602"><a href="http://www.thewrap.com/tag/golden_globes/">Golden Globes</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-651833"><a href="http://www.thewrap.com/tag/sag/">SAG Awards</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-813937"><a href="http://www.thewrap.com/category/music/">Music</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-813934"><a href="http://www.thewrap.com/category/tech-2/">Tech</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-261771"><a href="http://www.thewrap.com/category/culture/">Culture</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-261773"><a href="http://www.thewrap.com/category/music/">Music</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-403619"><a href="http://www.thewrap.com/tag/theater/">Theater</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-261772"><a href="http://www.thewrap.com/category/category-column/party-report/">Party Report</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-127057"><a href="http://www.thewrap.com/category/reviews/">Reviews</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-403604"><a href="http://www.thewrap.com/tag/movie_reviews/">Movie Reviews</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-403605"><a href="http://www.thewrap.com/tag/tv-reviews/">TV Reviews</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-148468"><a href="http://www.thewrap.com/category/videos/">Videos</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-127072"><a href="http://www.thewrap.com/category/channelphoto/">Photos</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-635165"><a href="#">Events</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-635168"><a href="http://www.thewrap.com/tag/thewraps-power-women-breakfast/">Power Women Breakfast</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-635183"><a href="http://www.thewrap.com/tag/shortlist-2015/">ShortList</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-621944"><a href="http://www.thewrap.com/category/category-column/thegrill/">TheGrill</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-746041"><a>Features</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-870907"><a href="http://feature.thewrap.com/oscar-voting/oscar-voting">OscarWrap Voting</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-851446"><a href="http://feature.thewrap.com/oscarwrap/alicia-vikander">OscarWrap Alicia Vikander</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-778081"><a href="http://feature.thewrap.com/oscarwrap-saoirse-ronan/saoirse-ronan">OscarWrap Saoirse Ronan</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-778078"><a href="http://feature.thewrap.com/oscarwrap-the-hateful-eight/glorious-basterds">OscarWrap The Hateful Eight</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-772306"><a href="http://feature.thewrap.com/oscarwrap-spotlight/spotlight">OscarWrap &#8216;Spotlight&#8217;</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-760462"><a href="http://bit.ly/HighStakesActors2015">OscarWrap Actors</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-748609"><a href="http://feature.thewrap.com/oscarwrap-dark-horses-we-love/dark-horses-we-love">Dark Horses We Love</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-748660"><a href="http://feature.thewrap.com/oscarwrap-jake-gyllenhaal/article">Jake Gyllenhaal</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-748615"><a href="http://feature.thewrap.com/oscarwrap-the-walk/oscarwrap-the-walk">The Walk</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-576695"><a href="http://feature.thewrap.com/falltvpreview">Fall TV</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-748621"><a href="http://feature.thewrap.com/kingdom/article">Kingdom</a></li>
+</ul>
+</li>
+</ul><script type="text/javascript">			if ( typeof document.querySelectorAll == 'function' ) {
+			var i, menu      = document.getElementById( 'main-nav' ),
+			cur_ancestor = menu.querySelectorAll( '.current-post-ancestor' ),
+			cur_item     = menu.querySelectorAll( '.current-menu-item' );
+			if ( cur_ancestor.length > 1 ) {
+			for ( i = 1; i < cur_ancestor.length; i ++ ) {
+			cur_ancestor[i].className = cur_ancestor[i].className.replace( /current-post-ancestor/, '' );
+			}
+			}
+			if ( cur_item.length > 1 ) {
+			for ( i = 1; i < cur_item.length; i ++ ) {
+			cur_item[i].className = cur_item[i].className.replace( /current-menu-item/, '' );
+			}
+			}
+			}
+			</script>	<div class="side-nav">
+	<div id="main-search"><form action="http://www.thewrap.com" id="search-form" method="get"><input type="text" placeholder="Search" value="" id="s" name="s"><input type="submit" id="search-button"></form></div>	</div><!-- /#side-nav -->
+	
+	</section><!-- /.menus -->
+
+	<a href="#top" class="nav-close"><span>Return to Content</span></a>
+
+</nav>
+		<div id="content" class="col-full">
+		<div id="main-sidebar-container">    
+															<div incat="851023:no"></div>
+					<div class="article-header">
+	<h1 class="title entry-title">&#8216;Gravity&#8217;s&#8217; Jonas Cuaron to Write, Direct New Zorro Movie &#8216;Z&#8217;</h1></div>
+<section id="main">
+				<article class="post-851023 post type-post status-publish format-standard has-post-thumbnail hentry category-deal-central category-movies tag-albert-martinez-martin tag-gravity tag-jonas_cuaron tag-lantica-media tag-mark-amin tag-sobini-films tag-z tag-zorro">
+					<div class="post-meta">		<div class="authoring-line">
+			<span class="post-byl">
+															<span class="cll-category">Movies</span>  |
+									
+				By				<span class="author vcard"><a href="http://www.thewrap.com/author/jeff-sneider/" title="Posts by Jeff Sneider" class="url fn" rel="author">Jeff Sneider</a></span>
+									on <span class="published">February 4, 2016 @ 10:56 am</span>
+							</span>
+
+							<span class="tw-byl">
+					Follow <a href="http://www.twitter.com/theinsneider" target="blank">@theinsneider</a>
+				</span>
+				<div class="clear"></div>
+					</div>
+	</div>			<div class="share-line-bottom share-line-qs first-line ">
+									<div class="share-icons"><span st_title='&#8216;Gravity&#8217;s&#8217; Jonas Cuaron to Write, Direct New Zorro Movie &#8216;Z&#8217;' st_url='http://www.thewrap.com/gravitys-jonas-cuaron-to-write-direct-new-zorro-movie-z/' class='st_facebook_large'></span><span st_via='TheWrap' st_username='TheWrap' st_title='&#8216;Gravity&#8217;s&#8217; Jonas Cuaron to Write, Direct New Zorro Movie &#8216;Z&#8217;' st_url='http://www.thewrap.com/gravitys-jonas-cuaron-to-write-direct-new-zorro-movie-z/' class='st_twitter_large'></span><span st_title='&#8216;Gravity&#8217;s&#8217; Jonas Cuaron to Write, Direct New Zorro Movie &#8216;Z&#8217;' st_url='http://www.thewrap.com/gravitys-jonas-cuaron-to-write-direct-new-zorro-movie-z/' class='st_tumblr_large'></span><span class='st_reddit_large' st_title='&#8216;Gravity&#8217;s&#8217; Jonas Cuaron to Write, Direct New Zorro Movie &#8216;Z&#8217;' st_url='http://www.thewrap.com/gravitys-jonas-cuaron-to-write-direct-new-zorro-movie-z/'></span><span class='st_whatsapp_large' st_title='&#8216;Gravity&#8217;s&#8217; Jonas Cuaron to Write, Direct New Zorro Movie &#8216;Z&#8217;' st_url='http://www.thewrap.com/gravitys-jonas-cuaron-to-write-direct-new-zorro-movie-z/'></span><span class='st_email_large' st_title='&#8216;Gravity&#8217;s&#8217; Jonas Cuaron to Write, Direct New Zorro Movie &#8216;Z&#8217;' st_url='http://www.thewrap.com/gravitys-jonas-cuaron-to-write-direct-new-zorro-movie-z/'></span></div>
+								<div class="small-icon-links">
+										<a href="mailto:?subject=&amp;body=Check out: http://www.thewrap.com/gravitys-jonas-cuaron-to-write-direct-new-zorro-movie-z/" title="Share by Email" class="email">Email</a>
+											<a href="javascript:if(window.print)window.print()" title="Print" class="print">Print</a>
+									</div>
+				<div class="clear"></div>
+			</div>
+							<div class="featured">
+													<div class="post-img horizontal .has-caption">
+								<img width="618" height="412" src="http://www.thewrap.com/wp-content/uploads/2016/02/Jonas-Cuaron.jpg" class="img wp-post-image" alt="Jonas Cuaron" srcset="http://www.thewrap.com/wp-content/uploads/2016/02/Jonas-Cuaron-300x200.jpg 300w, http://www.thewrap.com/wp-content/uploads/2016/02/Jonas-Cuaron-340x226.jpg 340w, http://www.thewrap.com/wp-content/uploads/2016/02/Jonas-Cuaron.jpg 618w" sizes="(max-width: 618px) 100vw, 618px" />								<p class="caption" style="width: 618px;" >TORONTO, ON - SEPTEMBER 13: Director and writer Jonas Cuaron attends the "Desierto" premiere during the 2015 Toronto International Film Festival. (Photo by Jason Merritt/Getty Images)</p>							</div>
+												</div>
+									<section class="entry">
+										<div class="related-vertical">		<div class="relatedpostsinline">
+			<h3 class="relatedpostsheader">Related</h3>
+			<div class="relatedpostscontent">
+							<a href="http://www.thewrap.com/gravity-writers-desierto-trailer-finds-jeffrey-dean-morgan-hunting-mexican-immigrants-video/" class="post-thumb-wrapper click-counter" data-label="Related" data-category="Other">
+					<div class="post-thumb"><img width="160" height="105" src="http://www.thewrap.com/wp-content/uploads/2015/09/Desierto-160x105.jpg" class="attachment-home-middle-thumb size-home-middle-thumb wp-post-image" alt="Desierto" />											<span class="video-play-16"></span>
+										</div>
+					<h2 class="alt-font">&#8216;Gravity&#8217; Writer&#8217;s &#8216;Desierto&#8217; Trailer Finds Jeffrey Dean Morgan Hunting Mexican Immigrants (Video)</h2>
+				</a>
+								<a href="http://www.thewrap.com/torontos-top-10-sales-titles-from-michael-moore-and-jason-bateman-to-jonas-cuaron/" class="post-thumb-wrapper click-counter" data-label="Related" data-category="Other">
+					<div class="post-thumb"><img width="160" height="105" src="http://www.thewrap.com/wp-content/uploads/2015/09/February-Colonia-Family-Fang-High-Rise-160x105.jpg" class="attachment-home-middle-thumb size-home-middle-thumb wp-post-image" alt="February-Colonia-Family-Fang-High-Rise" />										</div>
+					<h2 class="alt-font">Toronto&#8217;s Top 10 Sales Titles: From Michael Moore and Jason Bateman to Jonas Cuaron</h2>
+				</a>
+								<a href="http://www.thewrap.com/alfonso-cuaron-gravity-awards-dont-make-film-better-prettier/" class="post-thumb-wrapper click-counter" data-label="Related" data-category="Other">
+					<div class="post-thumb"><img width="160" height="105" src="http://www.thewrap.com/wp-content/uploads/2014/02/alfonso_cuaron_featured-160x105.jpg" class="attachment-home-middle-thumb size-home-middle-thumb wp-post-image" alt="Getty Images" />										</div>
+					<h2 class="alt-font">Alfonso Cuaron on &#8216;Gravity': &#8216;Awards Don&#8217;t Make Your Film Better or Prettier&#8217;</h2>
+				</a>
+							</div>
+		</div>
+		</div>
+					<div class="entry-content">
+						<div class="entry-excerpt"><p>Lantica Media and Sobini Films are backing the new take on the legendary Latin hero</p>
+</div>
+						<p><a href="http://www.thewrap.com/tag/jonas_cuaron/">Jonas Cuarón</a>, the award-winning writer of &#8220;Gravity,&#8221; is set to write and direct a new Zorro movie titled &#8220;Z&#8221; for producers Lantica Media and Sobini Films, the companies announced Thursday.</p>
+<p>Details of the project are being kept under wraps, though it will present a fresh take on the legendary Latin hero, known for his black mask and sword-signature.</p>
+<p>Veteran producer Mark Amin, whose credits include the upcoming Sony Classics release &#8220;Miles Ahead,&#8221; will produce the film, while Albert Martinez Martin will oversee production for Lantica. Cami Winikoff and David W. Higgins are set to executive produce on behalf of Sobini.</p>
+<p>
+<notag><p class="ctx-link"><strong>Also Read:</strong> <a class="also-read-counter" href="http://www.thewrap.com/django-unchained-meets-zorro-in-upcoming-graphic-novel/" target="">'Django Unchained' Meets 'Zorro!' in Upcoming Graphic Novel</a></p></notag>
+</p>
+<p>Lantica Media will finance the film, which is slated to start production this summer at the Pinewood Dominican Republic Studios. Pantelion Films will handle international sales.</p>
+<p>Cuarón recently wrote and directed the <a href="http://www.thewrap.com/tag/gael_garcia_bernal/">Gael Garcia Bernal</a>-<a href="http://www.thewrap.com/tag/jeffrey_dean_morgan/">Jeffrey Dean Morgan</a> thriller &#8220;Desierto,&#8221; which won the International Critics Award at the 2015 Toronto International Film Festival, and is slated for release this spring by STX.</p>
+<p>
+<notag><p class="ctx-link"><strong>Also Read:</strong> <a class="also-read-counter" href="http://www.thewrap.com/gravity-writers-desierto-trailer-finds-jeffrey-dean-morgan-hunting-mexican-immigrants-video/" target="">'Gravity' Writer's 'Desierto' Trailer Finds Jeffrey Dean Morgan Hunting Mexican Immigrants (Video)</a></p></notag>
+</p>
+<p>&#8220;When I saw &#8216;Desierto,&#8217; I was impressed with Jonás&#8217; command of action and suspense, his great<br />
+visual eye, and the strong performances he elicited from his actors,&#8221; Sobini Films CEO Amin said.</p>
+<p>&#8220;We are very fortunate to have Jonás on this film,&#8221; Lantica Media CEO Antonio Gennari added. &#8220;His love of cinema is evident in his work and he is very talented in his ability to tell a compelling story. We look forward to seeing where his vision will take us.&#8221;</p>
+<p>Cuarón is represented by UTA.</p>
+
+<notag>			<div class="embed-slide-wrapper">
+												<div class="share-line-bottom share-line-qs ">
+									<div class="share-icons"><span st_title='Sundance Deals: What&#8217;s Sold So Far, From &#8216;Tallulah&#8217; to &#8216;Under The Shadow&#8217;' st_url='http://www.thewrap.com/sundance-deals-what-sold-so-far-from-tallulah-to-under-the-shadow/' class='st_facebook_large'></span><span st_via='TheWrap' st_username='TheWrap' st_title='Sundance Deals: What&#8217;s Sold So Far, From &#8216;Tallulah&#8217; to &#8216;Under The Shadow&#8217;' st_url='http://www.thewrap.com/sundance-deals-what-sold-so-far-from-tallulah-to-under-the-shadow/' class='st_twitter_large'></span><span st_title='Sundance Deals: What&#8217;s Sold So Far, From &#8216;Tallulah&#8217; to &#8216;Under The Shadow&#8217;' st_url='http://www.thewrap.com/sundance-deals-what-sold-so-far-from-tallulah-to-under-the-shadow/' class='st_tumblr_large'></span><span class='st_reddit_large' st_title='Sundance Deals: What&#8217;s Sold So Far, From &#8216;Tallulah&#8217; to &#8216;Under The Shadow&#8217;' st_url='http://www.thewrap.com/sundance-deals-what-sold-so-far-from-tallulah-to-under-the-shadow/'></span><span class='st_whatsapp_large' st_title='Sundance Deals: What&#8217;s Sold So Far, From &#8216;Tallulah&#8217; to &#8216;Under The Shadow&#8217;' st_url='http://www.thewrap.com/sundance-deals-what-sold-so-far-from-tallulah-to-under-the-shadow/'></span><span class='st_email_large' st_title='Sundance Deals: What&#8217;s Sold So Far, From &#8216;Tallulah&#8217; to &#8216;Under The Shadow&#8217;' st_url='http://www.thewrap.com/sundance-deals-what-sold-so-far-from-tallulah-to-under-the-shadow/'></span></div>
+								<div class="small-icon-links">
+										<a href="mailto:?subject=&amp;body=Check out: http://www.thewrap.com/sundance-deals-what-sold-so-far-from-tallulah-to-under-the-shadow/" title="Share by Email" class="email">Email</a>
+									</div>
+				<div class="clear"></div>
+			</div>
+										<h1 class="headline">Sundance Deals: What's Sold So Far, From 'Tallulah' to 'Under The Shadow'</h1>
+
+				<div class="photos slide-img gallery-1">
+					<div class="slides-wrapper embed-photo-gallery">
+						<ul class="slides">
+							<li class="rendered active"
+																data-src="http://www.thewrap.com/wp-content/uploads/2016/01/Sundance-Acquisitons-Gallery-.jpg"
+																data-alt="Sundance Acquisitons Gallery"
+																data-title="Sundance Acquisitons Gallery" >
+																<div style="display:none;"></div>
+																<span class="img-wrapper"><img src="http://www.thewrap.com/wp-content/uploads/2016/01/Sundance-Acquisitons-Gallery-.jpg" alt="Sundance Acquisitons Gallery" title="Sundance Acquisitons Gallery"/><span class="img-credit" style="display:none;">Sundance Film Festival </span></span>
+															</li><li data-src="http://www.thewrap.com/wp-content/uploads/2016/01/Fundamentals-of-Caring.jpg"
+													data-alt=""
+													data-title=""><div style="display:none;"><p><strong>"The Fundamentals of Caring" Sells to Netflix<br /></strong><a href="https://www.thewrap.com/tag/paul_rudd/">Paul Rudd</a> and <a href="https://www.thewrap.com/tag/craig-roberts/">Craig Roberts</a> struggle with looking after one another in <a href="https://www.thewrap.com/tag/rob-burnett/">Rob Burnett</a>'s comedy, but Netflix was more than happy to look after the SVOD rights for nearly $7 million. </p></div><span class="img-wrapper"><img class="loading" src="http://www.thewrap.com/wp-content/plugins/contextual-links/assets/img/loading.gif"/><span></li><li data-src="http://www.thewrap.com/wp-content/uploads/2016/01/Tallulah-Ellen-Page.png"
+													data-alt="Tallulah Ellen Page"
+													data-title="Tallulah Ellen Page"><div style="display:none;"><p><b>"Tallulah" Sells to Netflix</b><br />Netflix scooped exclusive SVOD rights to Sian Heder's "Tallulah" to the tune of $5 million, which follows <a href="https://www.thewrap.com/tag/ellen_page/">Ellen Page</a> as a nanny gone rogue. An unnamed theatrical partner will release the film in the latter part of 2016.</p></div><span class="img-wrapper"><img class="loading" src="http://www.thewrap.com/wp-content/plugins/contextual-links/assets/img/loading.gif"/><span></li><li data-src="http://www.thewrap.com/wp-content/uploads/2016/01/Conplete-Unknown-Sundance-.jpg"
+													data-alt="Sundance Complete Unknown Rachel Weisz"
+													data-title="Sundance Complete Unknown Rachel Weisz"><div style="display:none;"><p><strong>"Complete Unknown" Sells to Amazon</strong><a href="https://www.thewrap.com/tag/rachel_weisz/"><br />Rachel Weisz</a> and <a href="https://www.thewrap.com/tag/michael_shannon/">Michael Shannon</a> seduced Amazon into purchasing U.S. rights to this thriller, in which Weisz plays a mysterious dinner party guest who Shannon swears he's met before. And he may be right. Amazon will seek a theatrical distributor for later in the year. </p></div><span class="img-wrapper"><img class="loading" src="http://www.thewrap.com/wp-content/plugins/contextual-links/assets/img/loading.gif"/><span></li><li data-src="http://www.thewrap.com/wp-content/uploads/2016/01/Love-Mercy.jpg"
+													data-alt="Chloe Sevigny and Kate Beckinsale, Love & Friendship"
+													data-title="Chloe Sevigny and Kate Beckinsale, Love & Friendship"><div style="display:none;"><p><strong>"Love and Friendship" Sells to Amazon/Roadside</strong><br /><a href="https://www.thewrap.com/tag/whit_stillman/">Whit Stillman</a>'s reteaming of <a href="https://www.thewrap.com/tag/chloe_sevigny/">Chloe Sevigny</a> and <a href="https://www.thewrap.com/tag/kate_beckinsale/">Kate Beckinsale</a> goes from the after-hours life of "The Last Days of Disco" to the sidewalks of <a href="https://www.thewrap.com/tag/jane_austen/">Jane Austen</a> in "Love and Friendship" -- which now belongs to Amazon for streaming and Roadside Attractions for theatrical. The partnership comes after the companies worked together on <a href="https://www.thewrap.com/tag/spike_lee/">Spike Lee</a>'s "Chi-Raq." </p></div><span class="img-wrapper"><img class="loading" src="http://www.thewrap.com/wp-content/plugins/contextual-links/assets/img/loading.gif"/><span></li><li data-src="http://www.thewrap.com/wp-content/uploads/2016/01/UndertheShadow.jpg"
+													data-alt=""
+													data-title=""><div style="display:none;"><p><strong>"Under the Shadow" Sells to Netflix</strong><br />The Iranian horror film "Under The Shadow" -- which has been compared to "The Babadook" -- had its SVOD rights go to Netflix. </p></div><span class="img-wrapper"><img class="loading" src="http://www.thewrap.com/wp-content/plugins/contextual-links/assets/img/loading.gif"/><span></li><li data-src="http://www.thewrap.com/wp-content/uploads/2016/01/BirthofANation.jpg"
+													data-alt="Birth of a Nation Sundance"
+													data-title="Birth of a Nation Sundance"><div style="display:none;"><p><strong>"A Birth of a Nation" Sells to Fox Searchlight</strong><br />Fox Searchlight closed a record-breaking deal to acquire worldwide rights to Nate Parker’s “Birth of a Nation” for $17.5 million, which is believed to be the most paid for any film in Sundance history.</p></div><span class="img-wrapper"><img class="loading" src="http://www.thewrap.com/wp-content/plugins/contextual-links/assets/img/loading.gif"/><span></li><li data-src="http://www.thewrap.com/wp-content/uploads/2016/01/equity.jpg"
+													data-alt="Equity"
+													data-title="Equity"><div style="display:none;"><p><b>"Equity" Sells to Sony Classics<br /></b>Sony Pictures Classics acquired worldwide rights to “Equity,” a female-driven Wall Street tale starring <a href="https://www.thewrap.com/tag/anna_gunn/">Anna Gunn</a>, James Purefoy, Sarah Megan Thomas and <a href="https://www.thewrap.com/tag/alysia-reiner/">Alysia Reiner</a>.<b><br /></b></p></div><span class="img-wrapper"><img class="loading" src="http://www.thewrap.com/wp-content/plugins/contextual-links/assets/img/loading.gif"/><span></li><li data-src="http://www.thewrap.com/wp-content/uploads/2016/01/Indignation-Sundance-.jpg"
+													data-alt="Indignation Sundance"
+													data-title="Indignation Sundance"><div style="display:none;"><p><strong>"Indignation" Sells to Summit</strong><br />Lionsgate’s Summit Entertainment acquired North American rights to <a href="https://www.thewrap.com/tag/james_schamus/">James Schamus</a>‘ directorial debut “Indignation” for $2.5 million. The coming-of-age drama is based on the novel by <a href="https://www.thewrap.com/tag/philip_roth/">Philip Roth</a> about the son of a kosher butcher who leaves his sheltered family life in New Jersey to attend college in Ohio, where he clashes with the dean.</p></div><span class="img-wrapper"><img class="loading" src="http://www.thewrap.com/wp-content/plugins/contextual-links/assets/img/loading.gif"/><span></li><li data-src="http://www.thewrap.com/wp-content/uploads/2016/01/morris-from-america-sundance.jpg"
+													data-alt="Morris From America Sundance"
+													data-title="Morris From America Sundance"><div style="display:none;"><p><strong>"Morris from America" Sells to A24<br /></strong>A24 acquired domestic rights to Chad Hartigan’s “Morris From America,” which stars <a href="https://www.thewrap.com/tag/craig_robinson/">Craig Robinson</a> and newcomer Markees Christmas. The nearly seven-figure deal will fall under A24’s pact with DirecTV, which recently released the company’s <a href="https://www.thewrap.com/tag/garrett_hedlund/">Garrett Hedlund</a>-<a href="https://www.thewrap.com/tag/oscar_isaac/">Oscar Isaac</a> thriller “Mojave.”</p></div><span class="img-wrapper"><img class="loading" src="http://www.thewrap.com/wp-content/plugins/contextual-links/assets/img/loading.gif"/><span></li><li data-src="http://www.thewrap.com/wp-content/uploads/2016/01/ManchesterbytheSea.jpg"
+													data-alt="Manchester by the Sea"
+													data-title="Manchester by the Sea"><div style="display:none;"><p><strong>"Manchester by the Sea" Sells to Amazon<br /></strong>Amazon has closed a $10 million deal for domestic rights to Kenneth Lonergan’s family drama “Manchester by the Sea,” which garnered rave reviews following its world premiere at the Eccles on Jan. 23.</p></div><span class="img-wrapper"><img class="loading" src="http://www.thewrap.com/wp-content/plugins/contextual-links/assets/img/loading.gif"/><span></li><li data-src="http://www.thewrap.com/wp-content/uploads/2016/01/Screen-Shot-2016-01-23-at-9.52.45-AM.png"
+													data-alt=""
+													data-title=""><div style="display:none;"><p><strong>"Eat That Question" Sells to Sony Classics</strong><br />Sony Pictures Classics acquired worldwide rights to the documentary “Eat That Question — Frank Zappa In His Own Words,” about the legendary composer-musician. The film is told entirely through archival footage assembled from the performer’s 30-year career in entertainment, including rare TV interviews and performances from around the world.</p></div><span class="img-wrapper"><img class="loading" src="http://www.thewrap.com/wp-content/plugins/contextual-links/assets/img/loading.gif"/><span></li><li data-src="http://www.thewrap.com/wp-content/uploads/2016/01/THE-FITS.png"
+													data-alt="The Fits"
+													data-title="The Fits"><div style="display:none;"><p><strong>"The Fits" Sells to Oscilloscope Laboratories<br /></strong>Oscilloscope Laboratories acquired U.S. rights to Anna Rose Holmer’s debut feature “The Fits” from Mongrel International, just days before the film’s Sundance premiere. Oscilloscope will release the film theatrically this summer, when it will first open New York’s new Metrograph theater.</p></div><span class="img-wrapper"><img class="loading" src="http://www.thewrap.com/wp-content/plugins/contextual-links/assets/img/loading.gif"/><span></li>						</ul>
+						<a rel="prev" data-label="Prev" data-category="Embed Gallery" class="click-counter prev _disabled">
+							<span class="_1"></span>
+							<span class="_2">Previous</span>
+							<span class="_3"></span>
+						</a>;
+						<a rel="next" data-label="Next" data-category="Embed Gallery" class="click-counter next">
+							<span class="_1"></span>
+							<span class="_2">Next</span>
+							<span class="_3"></span>
+						</a>
+					</div>
+				</div>
+				<div class="description" id="embed-gallery-description">
+					<div class="gal-pos">
+						<span class="_text">
+							<span class="slide-num">1</span> of <span class="all-count">13</span>
+						</span>
+					</div>
+					<div class="text-block" id="desc_gallery_text">
+						<div class="text-wrapper" id="gallery_text_height_detection">
+							<div class="excerpt">
+								<p>Studios, indie players and deep-pocketed streaming companies compete for 2016&#8217;s best films. Here&#8217;s who won</p>
+							</div>
+							<div id="img-desc">
+															</div>
+						</div>
+					</div>
+				</div>
+				<div class="gallery-shortcode-links">
+					<a class="gallery-view-all" href="http://www.thewrap.com/sundance-deals-what-sold-so-far-from-tallulah-to-under-the-shadow/">View In Gallery</a>
+									</div>
+			</div>
+			</notag>
+
+													<div id="content-bottom-sidebar" class="content-bottom-sidebar" role="complementary">
+								<div id="text-11" class="widget @@CLASSES@@ widget_text @@EXTRA@@">			<div class="textwidget"><a href="http://www.thewrap.com/subscribe/"><img src="http://www.thewrap.com/wp-content/plugins/thewrap/assets/images/screening-series-promo-1.jpg"></a></div>
+		</div>							</div><!-- #primary-sidebar -->
+											</div>
+				</section><!-- /.entry -->
+				<span style="display:none;" class="twitter_sharer">http://twitter.com/share?text=&#8216;Gravity&#8217;s&#8217; Jonas Cuaron to Write, Direct New Zorro Movie &#8216;Z&#8217;&via=TheWrap&url=http%3A%2F%2Fwww.thewrap.com%2Fgravitys-jonas-cuaron-to-write-direct-new-zorro-movie-z%2F&t=&#8216;Gravity&#8217;s&#8217; Jonas Cuaron to Write, Direct New Zorro Movie &#8216;Z&#8217;</span>
+				<span style="display:none;" class="facebook_sharer">http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.thewrap.com%2Fgravitys-jonas-cuaron-to-write-direct-new-zorro-movie-z%2F&t=&#8216;Gravity&#8217;s&#8217; Jonas Cuaron to Write, Direct New Zorro Movie &#8216;Z&#8217;</span>
+
+				<div class="fix"></div>
+							<div class="share-line-bottom share-line-qs ">
+									<div class="share-icons"><span st_title='&#8216;Gravity&#8217;s&#8217; Jonas Cuaron to Write, Direct New Zorro Movie &#8216;Z&#8217;' st_url='http://www.thewrap.com/gravitys-jonas-cuaron-to-write-direct-new-zorro-movie-z/' class='st_facebook_large'></span><span st_via='TheWrap' st_username='TheWrap' st_title='&#8216;Gravity&#8217;s&#8217; Jonas Cuaron to Write, Direct New Zorro Movie &#8216;Z&#8217;' st_url='http://www.thewrap.com/gravitys-jonas-cuaron-to-write-direct-new-zorro-movie-z/' class='st_twitter_large'></span><span st_title='&#8216;Gravity&#8217;s&#8217; Jonas Cuaron to Write, Direct New Zorro Movie &#8216;Z&#8217;' st_url='http://www.thewrap.com/gravitys-jonas-cuaron-to-write-direct-new-zorro-movie-z/' class='st_tumblr_large'></span><span class='st_reddit_large' st_title='&#8216;Gravity&#8217;s&#8217; Jonas Cuaron to Write, Direct New Zorro Movie &#8216;Z&#8217;' st_url='http://www.thewrap.com/gravitys-jonas-cuaron-to-write-direct-new-zorro-movie-z/'></span><span class='st_whatsapp_large' st_title='&#8216;Gravity&#8217;s&#8217; Jonas Cuaron to Write, Direct New Zorro Movie &#8216;Z&#8217;' st_url='http://www.thewrap.com/gravitys-jonas-cuaron-to-write-direct-new-zorro-movie-z/'></span><span class='st_email_large' st_title='&#8216;Gravity&#8217;s&#8217; Jonas Cuaron to Write, Direct New Zorro Movie &#8216;Z&#8217;' st_url='http://www.thewrap.com/gravitys-jonas-cuaron-to-write-direct-new-zorro-movie-z/'></span></div>
+								<div class="small-icon-links">
+										<a href="mailto:?subject=&amp;body=Check out: http://www.thewrap.com/gravitys-jonas-cuaron-to-write-direct-new-zorro-movie-z/" title="Share by Email" class="email">Email</a>
+											<a href="javascript:if(window.print)window.print()" title="Print" class="print">Print</a>
+									</div>
+				<div class="clear"></div>
+			</div>
+					</article><!-- /.post -->
+					<div style="text-align: center" id="article-subs-ad">
+							<div id='618x215' class="dfp-ad-wrapper">
+					<script type='text/javascript'>
+						if( ! is_mobile() && ssdtw_article_ad_enabled ) {
+							googletag.cmd.push(function() { googletag.display('618x215'); });
+						}
+					</script>
+				</div>
+							<script>
+				var ga_sent = false, gaq_sent=false;
+				push_to_ga_new = function() {
+					if( ga_sent ) return true;
+					var value = document.getElementById( 'subscribe_email' ).value;
+					if( value != '' ) {
+						if ( ! isValidEmail( value ) ) {
+							alert( 'Please enter a valid email.' );
+							return false;
+						}
+						var label = '';
+						var img = document.getElementById( 'subscribe_wrap' ).getElementsByTagName( 'img' )[0].src;
+						if ( img.indexOf( 'insider1' ) ) {
+							label = 'Insider1';
+						} else if ( img.indexOf( 'insider2' ) ) {
+							label = 'Insider2';
+						} else if ( img.indexOf( 'breaking1' ) ) {
+							label = 'Breaking1';
+						} else if ( img.indexOf( 'breaking2' ) ) {
+							label = 'Breaking2';
+						}
+						if( typeof _gaq != "undefined" ) {
+							_gaq.push( [ '_trackEvent', category, action, label ] );
+							_gaq.push( function() { gaq_sent = true; document.getElementById( 'subscribe_form' ).submit() } );
+						}
+						if( typeof ga != "undefined" ) {
+							ga( 'send', 'event', {
+								eventCategory: 'Subscribe',   // Required.
+								eventAction: 'SignUp',      // Required.
+								eventLabel: label,
+								hitCallback: function() {
+									ga_sent = true;
+									document.getElementById( 'subscribe_form' ).submit();
+								}
+							} );
+						}
+					} else {
+						alert( 'Email field is empty.' );
+					}
+					return false;
+				}
+				function submit_form() {
+					document.getElementById( 'subscribe_form' ).submit();
+				}
+				function set_new_push() {
+					setTimeout( function() {
+						if ( typeof( push_to_ga ) != 'undefined' )
+							push_to_ga = push_to_ga_new;
+						else
+							set_new_push();
+					}, 1000 );
+				}
+				set_new_push();
+			</script>
+		</div>
+		<div style="text-align:center" class="ad-mobile-sidebar">				<div class="widget ad-mobile"><div class="wAD wAD-mobile-medium-rectangle">				<div id='300x250mobile' class="dfp-ad-wrapper">
+					<script type='text/javascript'>
+						if( is_mobile() ) {
+							googletag.cmd.push(function() { googletag.display('300x250mobile'); });
+						}
+					</script>
+				</div>
+				</div></div>
+			</div>
+					<div id="related-posts" class="" >
+				<h3 class="post-header ">You may like...</h3>
+				<div id="taboola-below-article-thumbnails"></div>
+				<div id="taboola-mobile-below-article-thumbnails"></div>
+				<script type="text/javascript">
+				if( is_mobile() ) {
+					window._taboola = window._taboola || [];
+					_taboola.push({
+						mode: 'alternating-thumbnails-a',
+						container: 'taboola-mobile-below-article-thumbnails',
+						placement: 'Mobile Below Article Thumbnails',
+						target_type: 'mix'
+					});
+				}  else  {
+					window._taboola = window._taboola || [];
+					_taboola.push({
+						mode: 'alternating-thumbnails-a',
+						container: 'taboola-below-article-thumbnails',
+						placement: 'Below Article Thumbnails',
+						target_type: 'mix'
+					});
+				}
+				</script>
+			</div>
+			<div class="post-utility"><p class="tags"><i class="fa fa-tag"></i> <a href="http://www.thewrap.com/tag/albert-martinez-martin/" rel="tag">Albert Martinez Martin</a> <a href="http://www.thewrap.com/tag/gravity/" rel="tag">Gravity</a> <a href="http://www.thewrap.com/tag/jonas_cuaron/" rel="tag">Jonas Cuaron</a> <a href="http://www.thewrap.com/tag/lantica-media/" rel="tag">lantica media</a> <a href="http://www.thewrap.com/tag/mark-amin/" rel="tag">mark amin</a> <a href="http://www.thewrap.com/tag/sobini-films/" rel="tag">sobini films</a> <a href="http://www.thewrap.com/tag/z/" rel="tag">Z</a> <a href="http://www.thewrap.com/tag/zorro/" rel="tag">Zorro</a></p> <div class="clear"></div></div>
+
+<div id="disqus_thread">
+	</div>
+
+	<script type="text/javascript">
+		var disqus_url = 'http://www.thewrap.com/gravitys-jonas-cuaron-to-write-direct-new-zorro-movie-z/';
+		var disqus_identifier = '851023 http://www.thewrap.com/?p=851023';
+		var disqus_container_id = 'disqus_thread';
+		var disqus_shortname = 'thewrap';
+		var disqus_title = "&#8216;Gravity&#8217;s&#8217; Jonas Cuaron to Write, Direct New Zorro Movie &#8216;Z&#8217;";
+		var disqus_config_custom = window.disqus_config;
+		var disqus_config = function () {
+			/*
+			 All currently supported events:
+			 onReady: fires when everything is ready,
+			 onNewComment: fires when a new comment is posted,
+			 onIdentify: fires when user is authenticated
+			 */
+
+			
+			this.language = '';
+			
+			if ( disqus_config_custom ) {
+				disqus_config_custom.call( this );
+			}
+		};
+
+		(function () {
+			var dsq   = document.createElement( 'script' );
+			dsq.type  = 'text/javascript';
+			dsq.async = true;
+			dsq.src   = '//' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName( 'head' )[0] || document.getElementsByTagName( 'body' )[0]).appendChild( dsq );
+		})();
+	</script>
+
+	</section>
+													<aside id="single-column-posts" class="widgets"><div class="widgets-inner"><div id="ht_review_author_widget-14" class="widget widget_ht_review_author_widget wCDSC"> <h2 class="widgettitle"><a href="http://www.thewrap.com/category/category-column/deal-central/">Deal Central</a></h2> <div class="inner-wrap"><div class="inner"> <img src="http://www.thewrap.com/wp-content/uploads/2013/10/DealCentral.png"/> <p><p>Deal Central gives you the latest on Hollywood casting, script buys, greenlights and negotiations in the entertainment industry.</p> </p> <div class="clear"></div> </div></div> </div><div id="ht_ad_widget-73" class="widget ad-MediumRectangle widget_ht_ad_widget "><div class="wAD wAD-MediumRectangle" style="background:#222;"> <div id='300x250site' class="dfp-ad-wrapper"> <script type='text/javascript'> if( ! is_mobile() ) { googletag.cmd.push(function() { googletag.display('300x250site'); }); } </script> </div> </div></div><div id="text-54" class="widget @@CLASSES@@ widget_text @@EXTRA@@"><h3 class="widgettitle">TheWrap Featured Video &#8211; Sponsored</h3>			<div class="textwidget"><iframe src="//content.jwplatform.com/players/S8d5cyn2-uTFNPlyX.html" width="300" height="300" frameborder="0" scrolling="auto" allowfullscreen></iframe></div>
+		</div><div id="ht_catdark_link_widgetw-9" class="widget widget_ht_catdark_link_widgetw wCD"><h3 class="widgettitle">Latest From Deal Central</h3> <div class="category-dark"> <div class="cat-dark-top cat"> <a href="http://www.thewrap.com/ryan-reynolds-finds-deadpool-follow-up-in-sci-fi-movie-life/" class="click-counter" data-label="Latest Posts" data-category="Widget"><img width="618" height="400" src="http://www.thewrap.com/wp-content/uploads/2015/09/ryanreynolds-618x400.jpg" class="attachment-post-thumb size-post-thumb wp-post-image" alt="Getty Images" srcset="http://www.thewrap.com/wp-content/uploads/2015/09/ryanreynolds-618x400.jpg 618w, http://www.thewrap.com/wp-content/uploads/2015/09/ryanreynolds-418x270.jpg 418w, http://www.thewrap.com/wp-content/uploads/2015/09/ryanreynolds-300x194.jpg 300w" sizes="(max-width: 618px) 100vw, 618px" /></a> <div class="cat-dark-top-desc"> <h3> <a href="http://www.thewrap.com/ryan-reynolds-finds-deadpool-follow-up-in-sci-fi-movie-life/" class="click-counter" data-label="Latest Posts" data-category="Widget">Ryan Reynolds Finds &#8216;Deadpool&#8217; Follow-Up in Sci-Fi Movie &#8216;Life&#8217;</a> </h3> <div class="cll-category"> <a href="http://www.thewrap.com/category/category-column/deal-central/">Deal Central</a> </div> <span class="list-byline"> February 16, 2016 By <a href="http://www.thewrap.com/author/jeff-sneider/" title="Posts by Jeff Sneider" class="url fn" rel="author">Jeff Sneider</a> <span class="catlightminutes" data-time="2016-02-16T19:09:02+00:00">5 hours ago</span> </span> </div> </div> <div class="cat-dark-bottom cat"> <ul> <li> <span class="list-byline"> February 16, 2016 <span class="catlightminutes" data-time="2016-02-16T18:41:23+00:00">5 hours ago</span> </span> <h3> <a href="http://www.thewrap.com/transformers-spinoff-bumblebee-in-the-works-for-june-2018/" class="click-counter" data-label="Latest Posts" data-category="Widget">&#8216;Transformers&#8217; Spinoff &#8216;Bumblebee&#8217; in the Works for June 2018</a> </h3> <div class="clear"></div> </li> <li> <span class="list-byline"> February 15, 2016 <span class="catlightminutes" data-time="2016-02-15T23:26:35+00:00">1 day ago</span> </span> <h3> <a href="http://www.thewrap.com/newcomer-alicia-crockford-joins-indie-movie-the-overlooked/" class="click-counter" data-label="Latest Posts" data-category="Widget">Newcomer Alicia Crockford Joins Indie Movie &#8216;The Overlooked&#8217;</a> </h3> <div class="clear"></div> </li> <li> <span class="list-byline"> February 12, 2016 <span class="catlightminutes" data-time="2016-02-12T21:47:20+00:00">4 days ago</span> </span> <h3> <a href="http://www.thewrap.com/the-eyes-of-my-mother-sells-to-magnet-releasing-following-sundance-premiere/" class="click-counter" data-label="Latest Posts" data-category="Widget">&#8216;The Eyes of My Mother&#8217; Sells to Magnet Releasing Following Sundance Premiere</a> </h3> <div class="clear"></div> </li> <li> <span class="list-byline"> February 12, 2016 <span class="catlightminutes" data-time="2016-02-12T21:39:17+00:00">4 days ago</span> </span> <h3> <a href="http://www.thewrap.com/obama-romance-movie-southside-with-you-selling-to-miramax-roadside-attractions/" class="click-counter" data-label="Latest Posts" data-category="Widget">Obama Romance Movie &#8216;Southside With You&#8217; Selling to Miramax, Roadside Attractions</a> </h3> <div class="clear"></div> </li> <li> <span class="list-byline"> February 12, 2016 <span class="catlightminutes" data-time="2016-02-12T19:50:52+00:00">4 days ago</span> </span> <h3> <a href="http://www.thewrap.com/nicolas-cage-to-star-in-psycho-parents-movie-mom-and-dad/" class="click-counter" data-label="Latest Posts" data-category="Widget">Nicolas Cage to Star in Psycho Parents Movie &#8216;Mom and Dad&#8217;</a> </h3> <div class="clear"></div> </li> </ul> </div> </div></div><div id="ht_tabs_widget-25" class="widget widget_ht_tabs_widget wT"><div class="tabber-container" data-tb-region="tabs"><ul class="tabs tabber-widget"><li class="active"><h4><a href="#tab1">Most Popular</a></h4></li><li><h4><a href="#tab2">Most Shared</a></h4></li><li><h4><a href="#tab3">Most Commented</a></h4></li></ul><div id="tab1" class="tOP4 tabber-content" style="display:block;"><div class="cat-light-bottom cat-light-links"><ul><li data-tb-region-item><a href="http://www.thewrap.com/prince-protege-vanity-dead-at-57/" class="click-counter" data-label="Most Popular" data-category="Widget" data-tb-region-item-link><img width="300" height="194" src="http://www.thewrap.com/wp-content/uploads/2016/02/prince-vanity-300x194.jpg" class="attachment-medium-thumb size-medium-thumb wp-post-image" alt="prince vanity" style="float:left;" data-tb-region-item-image="" srcset="http://www.thewrap.com/wp-content/uploads/2016/02/prince-vanity-618x400.jpg 618w, http://www.thewrap.com/wp-content/uploads/2016/02/prince-vanity-418x270.jpg 418w, http://www.thewrap.com/wp-content/uploads/2016/02/prince-vanity-300x194.jpg 300w" sizes="(max-width: 300px) 100vw, 300px" /></a><h4><a href="http://www.thewrap.com/prince-protege-vanity-dead-at-57/" class="click-counter" data-label="Most Popular" data-category="Widget" data-tb-region-item-title>Vanity Dead at 57, Prince Protege Known for &#8216;Nasty Girl&#8217;</a></h4><span class="list-byline">115273 Views</span></li><li data-tb-region-item><a href="http://www.thewrap.com/7-reasons-ryan-reynolds-deadpool-shocked-hollywood-and-made-box-office-history/" class="click-counter" data-label="Most Popular" data-category="Widget" data-tb-region-item-link><img width="300" height="194" src="http://www.thewrap.com/wp-content/uploads/2015/07/deadpool-gallery-04-gallery-image-300x194.jpg" class="attachment-medium-thumb size-medium-thumb wp-post-image" alt="deadpool" style="float:left;" data-tb-region-item-image="" srcset="http://www.thewrap.com/wp-content/uploads/2015/07/deadpool-gallery-04-gallery-image-618x400.jpg 618w, http://www.thewrap.com/wp-content/uploads/2015/07/deadpool-gallery-04-gallery-image-418x270.jpg 418w, http://www.thewrap.com/wp-content/uploads/2015/07/deadpool-gallery-04-gallery-image-300x194.jpg 300w" sizes="(max-width: 300px) 100vw, 300px" /></a><h4><a href="http://www.thewrap.com/7-reasons-ryan-reynolds-deadpool-shocked-hollywood-and-made-box-office-history/" class="click-counter" data-label="Most Popular" data-category="Widget" data-tb-region-item-title>7 Reasons Ryan Reynolds&#8217; &#8216;Deadpool&#8217; Shocked Hollywood and Made Box-Office History</a></h4><span class="list-byline">12661 Views</span></li><li data-tb-region-item><a href="http://www.thewrap.com/ronda-rousey-plus-size-model-cover-sports-illustrated-swimsuit-issue-photos/" class="click-counter" data-label="Most Popular" data-category="Widget" data-tb-region-item-link><img width="300" height="194" src="http://www.thewrap.com/wp-content/uploads/2016/02/ronda_rousey-si-300x194.jpg" class="attachment-medium-thumb size-medium-thumb wp-post-image" alt="Ronda Rousey Sports Illustrated swimsuit issue" style="float:left;" data-tb-region-item-image="" srcset="http://www.thewrap.com/wp-content/uploads/2016/02/ronda_rousey-si-618x400.jpg 618w, http://www.thewrap.com/wp-content/uploads/2016/02/ronda_rousey-si-418x270.jpg 418w, http://www.thewrap.com/wp-content/uploads/2016/02/ronda_rousey-si-300x194.jpg 300w" sizes="(max-width: 300px) 100vw, 300px" /></a><h4><a href="http://www.thewrap.com/ronda-rousey-plus-size-model-cover-sports-illustrated-swimsuit-issue-photos/" class="click-counter" data-label="Most Popular" data-category="Widget" data-tb-region-item-title>Ronda Rousey, Plus-Size Model Cover &#8216;Sports Illustrated&#8217; Swimsuit Issue (Photos)</a></h4><span class="list-byline">11246 Views</span></li><li data-tb-region-item><a href="http://www.thewrap.com/making-a-murderer-reporter-evidence-ignored-that-steven-avery-sexually-abused-brendan-dassey/" class="click-counter" data-label="Most Popular" data-category="Widget" data-tb-region-item-link><img width="300" height="194" src="http://www.thewrap.com/wp-content/uploads/2016/02/murderer_update-300x194.jpg" class="attachment-medium-thumb size-medium-thumb wp-post-image" alt="murderer_update" style="float:left;" data-tb-region-item-image="" srcset="http://www.thewrap.com/wp-content/uploads/2016/02/murderer_update-618x400.jpg 618w, http://www.thewrap.com/wp-content/uploads/2016/02/murderer_update-418x270.jpg 418w, http://www.thewrap.com/wp-content/uploads/2016/02/murderer_update-300x194.jpg 300w" sizes="(max-width: 300px) 100vw, 300px" /></a><h4><a href="http://www.thewrap.com/making-a-murderer-reporter-evidence-ignored-that-steven-avery-sexually-abused-brendan-dassey/" class="click-counter" data-label="Most Popular" data-category="Widget" data-tb-region-item-title>&#8216;Making a Murderer&#8217; Reporter: Evidence Ignored That Steven Avery Sexually Abused Brendan Dassey</a></h4><span class="list-byline">10505 Views</span></li><li data-tb-region-item><a href="http://www.thewrap.com/twitter-erupts-over-bad-grammys-sound/" class="click-counter" data-label="Most Popular" data-category="Widget" data-tb-region-item-link><img width="300" height="194" src="http://www.thewrap.com/wp-content/uploads/2016/02/GettyImages-510451324-300x194.jpg" class="attachment-medium-thumb size-medium-thumb wp-post-image" alt="The 58th GRAMMY Awards - Show" style="float:left;" data-tb-region-item-image="" srcset="http://www.thewrap.com/wp-content/uploads/2016/02/GettyImages-510451324-618x400.jpg 618w, http://www.thewrap.com/wp-content/uploads/2016/02/GettyImages-510451324-418x270.jpg 418w, http://www.thewrap.com/wp-content/uploads/2016/02/GettyImages-510451324-300x194.jpg 300w" sizes="(max-width: 300px) 100vw, 300px" /></a><h4><a href="http://www.thewrap.com/twitter-erupts-over-bad-grammys-sound/" class="click-counter" data-label="Most Popular" data-category="Widget" data-tb-region-item-title>Twitter Erupts Over Bad Grammys Sound</a></h4><span class="list-byline">8114 Views</span></li><li data-tb-region-item><a href="http://www.thewrap.com/will-deadpool-spawn-more-r-rated-superhero-movies/" class="click-counter" data-label="Most Popular" data-category="Widget" data-tb-region-item-link><img width="300" height="194" src="http://www.thewrap.com/wp-content/uploads/2015/12/deadpool-300x194.jpg" class="attachment-medium-thumb size-medium-thumb wp-post-image" alt="Deadpool International Trailer" style="float:left;" data-tb-region-item-image="" srcset="http://www.thewrap.com/wp-content/uploads/2015/12/deadpool-618x400.jpg 618w, http://www.thewrap.com/wp-content/uploads/2015/12/deadpool-418x270.jpg 418w, http://www.thewrap.com/wp-content/uploads/2015/12/deadpool-300x194.jpg 300w" sizes="(max-width: 300px) 100vw, 300px" /></a><h4><a href="http://www.thewrap.com/will-deadpool-spawn-more-r-rated-superhero-movies/" class="click-counter" data-label="Most Popular" data-category="Widget" data-tb-region-item-title>Will &#8216;Deadpool&#8217; Spawn More R-Rated Superhero Movies?</a></h4><span class="list-byline">6499 Views</span></li><li data-tb-region-item><a href="http://www.thewrap.com/ronday-rousey-ashley-graham-sports-illustrated-swimsuit-issue-sneak-peak-photos/" class="click-counter" data-label="Most Popular" data-category="Widget" data-tb-region-item-link><img width="300" height="194" src="http://www.thewrap.com/wp-content/uploads/2016/02/sports_illustrated-swimsuit_issue-300x194.jpg" class="attachment-medium-thumb size-medium-thumb wp-post-image" alt="Sports Illustrated swimsuit issue Ronda Rousey Ashley Graham" style="float:left;" data-tb-region-item-image="" srcset="http://www.thewrap.com/wp-content/uploads/2016/02/sports_illustrated-swimsuit_issue-618x400.jpg 618w, http://www.thewrap.com/wp-content/uploads/2016/02/sports_illustrated-swimsuit_issue-418x270.jpg 418w, http://www.thewrap.com/wp-content/uploads/2016/02/sports_illustrated-swimsuit_issue-300x194.jpg 300w" sizes="(max-width: 300px) 100vw, 300px" /></a><h4><a href="http://www.thewrap.com/ronday-rousey-ashley-graham-sports-illustrated-swimsuit-issue-sneak-peak-photos/" class="click-counter" data-label="Most Popular" data-category="Widget" data-tb-region-item-title>Ronda Rousey, Ashley Graham &#8216;Sports Illustrated&#8217; Swimsuit Issue Sneak Peek (Photos)</a></h4><span class="list-byline">5322 Views</span></li></ul></div></div><div id="tab2" class="tOP4 tabber-content"><div class="cat-light-bottom cat-light-links"><ul><li data-tb-region-item><a href="http://www.thewrap.com/cbs-finally-lets-you-stream-live-shows-if-you-already-pay-for-tv/" class="click-counter" data-label="Most Shared" data-category="Widget" data-tb-region-item-link><img width="300" height="194" src="http://www.thewrap.com/wp-content/uploads/2016/02/cbs-headquarters-wrapsize-300x194.jpg" class="attachment-medium-thumb size-medium-thumb wp-post-image" alt="CBS Headquarters" style="float:left;" data-tb-region-item-image="" srcset="http://www.thewrap.com/wp-content/uploads/2016/02/cbs-headquarters-wrapsize-618x400.jpg 618w, http://www.thewrap.com/wp-content/uploads/2016/02/cbs-headquarters-wrapsize-418x270.jpg 418w, http://www.thewrap.com/wp-content/uploads/2016/02/cbs-headquarters-wrapsize-300x194.jpg 300w" sizes="(max-width: 300px) 100vw, 300px" /></a><h4><a href="http://www.thewrap.com/cbs-finally-lets-you-stream-live-shows-if-you-already-pay-for-tv/" class="click-counter" data-label="Most Shared" data-category="Widget" data-tb-region-item-title>CBS Finally Lets You Stream Live Shows If You Already Pay for TV</a></h4><li data-tb-region-item><a href="http://www.thewrap.com/watch-rob-lowe-maya-rudolph-in-unusual-therapy-session-on-the-grinder-exclusive-video/" class="click-counter" data-label="Most Shared" data-category="Widget" data-tb-region-item-link><img width="300" height="194" src="http://www.thewrap.com/wp-content/uploads/2016/02/grinder-cold-open-2-16-16-300x194.jpg" class="attachment-medium-thumb size-medium-thumb wp-post-image" alt="The Grinder Rob Lowe Maya Rudolph" style="float:left;" data-tb-region-item-image="" srcset="http://www.thewrap.com/wp-content/uploads/2016/02/grinder-cold-open-2-16-16-618x400.jpg 618w, http://www.thewrap.com/wp-content/uploads/2016/02/grinder-cold-open-2-16-16-418x270.jpg 418w, http://www.thewrap.com/wp-content/uploads/2016/02/grinder-cold-open-2-16-16-300x194.jpg 300w" sizes="(max-width: 300px) 100vw, 300px" /></a><h4><a href="http://www.thewrap.com/watch-rob-lowe-maya-rudolph-in-unusual-therapy-session-on-the-grinder-exclusive-video/" class="click-counter" data-label="Most Shared" data-category="Widget" data-tb-region-item-title>Watch Rob Lowe, Maya Rudolph in Unusual Therapy Session on &#8216;The Grinder&#8217; (Exclusive Video)</a></h4><li data-tb-region-item><a href="http://www.thewrap.com/what-richard-dreyfuss-learned-from-ted-cruz-marco-rubio-and-carly-fiorina-rallies/" class="click-counter" data-label="Most Shared" data-category="Widget" data-tb-region-item-link><img width="300" height="194" src="http://www.thewrap.com/wp-content/uploads/2016/02/GettyImages-500608428-300x194.jpg" class="attachment-medium-thumb size-medium-thumb wp-post-image" alt="Getty Images" style="float:left;" data-tb-region-item-image="" srcset="http://www.thewrap.com/wp-content/uploads/2016/02/GettyImages-500608428-618x400.jpg 618w, http://www.thewrap.com/wp-content/uploads/2016/02/GettyImages-500608428-418x270.jpg 418w, http://www.thewrap.com/wp-content/uploads/2016/02/GettyImages-500608428-300x194.jpg 300w" sizes="(max-width: 300px) 100vw, 300px" /></a><h4><a href="http://www.thewrap.com/what-richard-dreyfuss-learned-from-ted-cruz-marco-rubio-and-carly-fiorina-rallies/" class="click-counter" data-label="Most Shared" data-category="Widget" data-tb-region-item-title>What Richard Dreyfuss Learned From Ted Cruz, Marco Rubio and Carly Fiorina Rallies</a></h4><li data-tb-region-item><a href="http://www.thewrap.com/sony-pictures-classics-founders-on-streaming-giants-invading-sundance-film-festival-this-year-video/" class="click-counter" data-label="Most Shared" data-category="Widget" data-tb-region-item-link><img width="300" height="194" src="http://www.thewrap.com/wp-content/uploads/2016/02/SPCexecs-300x194.jpg" class="attachment-medium-thumb size-medium-thumb wp-post-image" alt="Tom Bernard and Michael Barker" style="float:left;" data-tb-region-item-image="" srcset="http://www.thewrap.com/wp-content/uploads/2016/02/SPCexecs-618x400.jpg 618w, http://www.thewrap.com/wp-content/uploads/2016/02/SPCexecs-418x270.jpg 418w, http://www.thewrap.com/wp-content/uploads/2016/02/SPCexecs-300x194.jpg 300w" sizes="(max-width: 300px) 100vw, 300px" /></a><h4><a href="http://www.thewrap.com/sony-pictures-classics-founders-on-streaming-giants-invading-sundance-film-festival-this-year-video/" class="click-counter" data-label="Most Shared" data-category="Widget" data-tb-region-item-title>Sony Pictures Classics Founders on Streaming Giants Invading Sundance Film Festival This Year (Video)</a></h4><li data-tb-region-item><a href="http://www.thewrap.com/obama-supreme-court-nominee-will-be-indisputably-qualified/" class="click-counter" data-label="Most Shared" data-category="Widget" data-tb-region-item-link><img width="300" height="194" src="http://www.thewrap.com/wp-content/uploads/2016/02/IMG_0062-300x194.jpg" class="attachment-medium-thumb size-medium-thumb wp-post-image" alt="IMG_0062" style="float:left;" data-tb-region-item-image="" srcset="http://www.thewrap.com/wp-content/uploads/2016/02/IMG_0062-618x400.jpg 618w, http://www.thewrap.com/wp-content/uploads/2016/02/IMG_0062-418x270.jpg 418w, http://www.thewrap.com/wp-content/uploads/2016/02/IMG_0062-300x194.jpg 300w" sizes="(max-width: 300px) 100vw, 300px" /></a><h4><a href="http://www.thewrap.com/obama-supreme-court-nominee-will-be-indisputably-qualified/" class="click-counter" data-label="Most Shared" data-category="Widget" data-tb-region-item-title>Obama: Supreme Court Nominee Will Be &#8216;Indisputably&#8217; Qualified</a></h4><li data-tb-region-item><a href="http://www.thewrap.com/dolph-lundgren-subs-for-arnold-schwarzenegger-in-first-kindergarten-cop-2-trailer-video/" class="click-counter" data-label="Most Shared" data-category="Widget" data-tb-region-item-link><img width="300" height="194" src="http://www.thewrap.com/wp-content/uploads/2016/02/DolphLundgren-300x194.jpg" class="attachment-medium-thumb size-medium-thumb wp-post-image" alt="Dolph Lundgren in Kindergarten Cop 2" style="float:left;" data-tb-region-item-image="" srcset="http://www.thewrap.com/wp-content/uploads/2016/02/DolphLundgren-618x400.jpg 618w, http://www.thewrap.com/wp-content/uploads/2016/02/DolphLundgren-418x270.jpg 418w, http://www.thewrap.com/wp-content/uploads/2016/02/DolphLundgren-300x194.jpg 300w" sizes="(max-width: 300px) 100vw, 300px" /></a><h4><a href="http://www.thewrap.com/dolph-lundgren-subs-for-arnold-schwarzenegger-in-first-kindergarten-cop-2-trailer-video/" class="click-counter" data-label="Most Shared" data-category="Widget" data-tb-region-item-title>Dolph Lundgren Subs for Arnold Schwarzenegger in First &#8216;Kindergarten Cop 2&#8217; Trailer (Video)</a></h4><li data-tb-region-item><a href="http://www.thewrap.com/grammys-david-bowies-son-calls-out-lady-gaga-on-night-of-tribute/" class="click-counter" data-label="Most Shared" data-category="Widget" data-tb-region-item-link><img width="300" height="194" src="http://www.thewrap.com/wp-content/uploads/2016/02/lady-gaga-300x194.jpg" class="attachment-medium-thumb size-medium-thumb wp-post-image" alt="lady gaga grammys" style="float:left;" data-tb-region-item-image="" srcset="http://www.thewrap.com/wp-content/uploads/2016/02/lady-gaga-618x400.jpg 618w, http://www.thewrap.com/wp-content/uploads/2016/02/lady-gaga-418x270.jpg 418w, http://www.thewrap.com/wp-content/uploads/2016/02/lady-gaga-300x194.jpg 300w" sizes="(max-width: 300px) 100vw, 300px" /></a><h4><a href="http://www.thewrap.com/grammys-david-bowies-son-calls-out-lady-gaga-on-night-of-tribute/" class="click-counter" data-label="Most Shared" data-category="Widget" data-tb-region-item-title>Grammys: David Bowie&#8217;s Son Calls Out Lady Gaga on Night of Tribute</a></h4></ul></div></div><div id="tab3" class="tOP4 tabber-content"><div class="cat-light-bottom cat-light-links"><ul><li data-tb-region-item><a href="http://www.thewrap.com/making-a-murderer-new-lawyer-to-use-advanced-luminol-testing-to-exonerate-steven-avery/" class="click-counter" data-label="Most Commented" data-category="Widget" data-tb-region-item-link><img width="300" height="194" src="http://www.thewrap.com/wp-content/uploads/2015/12/Making-a-Murderer-300x194.jpg" class="attachment-medium-thumb size-medium-thumb wp-post-image" alt="Making a Murderer" style="float:left;" data-tb-region-item-image="" srcset="http://www.thewrap.com/wp-content/uploads/2015/12/Making-a-Murderer-618x400.jpg 618w, http://www.thewrap.com/wp-content/uploads/2015/12/Making-a-Murderer-418x270.jpg 418w, http://www.thewrap.com/wp-content/uploads/2015/12/Making-a-Murderer-300x194.jpg 300w" sizes="(max-width: 300px) 100vw, 300px" /></a><h4><a href="http://www.thewrap.com/making-a-murderer-new-lawyer-to-use-advanced-luminol-testing-to-exonerate-steven-avery/" class="click-counter" data-label="Most Commented" data-category="Widget" data-tb-region-item-title>&#8216;Making a Murderer': New Lawyer to Use &#8216;Advanced Luminol Testing to Exonerate&#8217; Steven Avery</a></h4><span class="list-byline">253 Comments</span></li><li data-tb-region-item><a href="http://www.thewrap.com/bernie-sanders-supporters-pummel-civil-rights-hero-john-lewis-on-twitter-video/" class="click-counter" data-label="Most Commented" data-category="Widget" data-tb-region-item-link><img width="300" height="194" src="http://www.thewrap.com/wp-content/uploads/2016/02/Screen-Shot-2016-02-11-at-1.12.53-PM-300x194.png" class="attachment-medium-thumb size-medium-thumb wp-post-image" alt="John Lewis" style="float:left;" data-tb-region-item-image="" srcset="http://www.thewrap.com/wp-content/uploads/2016/02/Screen-Shot-2016-02-11-at-1.12.53-PM-618x400.png 618w, http://www.thewrap.com/wp-content/uploads/2016/02/Screen-Shot-2016-02-11-at-1.12.53-PM-418x270.png 418w, http://www.thewrap.com/wp-content/uploads/2016/02/Screen-Shot-2016-02-11-at-1.12.53-PM-300x194.png 300w" sizes="(max-width: 300px) 100vw, 300px" /></a><h4><a href="http://www.thewrap.com/bernie-sanders-supporters-pummel-civil-rights-hero-john-lewis-on-twitter-video/" class="click-counter" data-label="Most Commented" data-category="Widget" data-tb-region-item-title>Bernie Sanders Supporters Pummel Civil Rights Hero John Lewis on Twitter (Video)</a></h4><span class="list-byline">176 Comments</span></li><li data-tb-region-item><a href="http://www.thewrap.com/prince-protege-vanity-dead-at-57/" class="click-counter" data-label="Most Commented" data-category="Widget" data-tb-region-item-link><img width="300" height="194" src="http://www.thewrap.com/wp-content/uploads/2016/02/prince-vanity-300x194.jpg" class="attachment-medium-thumb size-medium-thumb wp-post-image" alt="prince vanity" style="float:left;" data-tb-region-item-image="" srcset="http://www.thewrap.com/wp-content/uploads/2016/02/prince-vanity-618x400.jpg 618w, http://www.thewrap.com/wp-content/uploads/2016/02/prince-vanity-418x270.jpg 418w, http://www.thewrap.com/wp-content/uploads/2016/02/prince-vanity-300x194.jpg 300w" sizes="(max-width: 300px) 100vw, 300px" /></a><h4><a href="http://www.thewrap.com/prince-protege-vanity-dead-at-57/" class="click-counter" data-label="Most Commented" data-category="Widget" data-tb-region-item-title>Vanity Dead at 57, Prince Protege Known for &#8216;Nasty Girl&#8217;</a></h4><span class="list-byline">153 Comments</span></li><li data-tb-region-item><a href="http://www.thewrap.com/making-a-murderer-reporter-evidence-ignored-that-steven-avery-sexually-abused-brendan-dassey/" class="click-counter" data-label="Most Commented" data-category="Widget" data-tb-region-item-link><img width="300" height="194" src="http://www.thewrap.com/wp-content/uploads/2016/02/murderer_update-300x194.jpg" class="attachment-medium-thumb size-medium-thumb wp-post-image" alt="murderer_update" style="float:left;" data-tb-region-item-image="" srcset="http://www.thewrap.com/wp-content/uploads/2016/02/murderer_update-618x400.jpg 618w, http://www.thewrap.com/wp-content/uploads/2016/02/murderer_update-418x270.jpg 418w, http://www.thewrap.com/wp-content/uploads/2016/02/murderer_update-300x194.jpg 300w" sizes="(max-width: 300px) 100vw, 300px" /></a><h4><a href="http://www.thewrap.com/making-a-murderer-reporter-evidence-ignored-that-steven-avery-sexually-abused-brendan-dassey/" class="click-counter" data-label="Most Commented" data-category="Widget" data-tb-region-item-title>&#8216;Making a Murderer&#8217; Reporter: Evidence Ignored That Steven Avery Sexually Abused Brendan Dassey</a></h4><span class="list-byline">139 Comments</span></li><li data-tb-region-item><a href="http://www.thewrap.com/cnns-jake-tapper-calls-anti-trump-headlines-very-height-of-elitism/" class="click-counter" data-label="Most Commented" data-category="Widget" data-tb-region-item-link><img width="300" height="194" src="http://www.thewrap.com/wp-content/uploads/2016/02/Jake-Tapper-1-300x194.png" class="attachment-medium-thumb size-medium-thumb wp-post-image" alt="Jake Tapper" style="float:left;" data-tb-region-item-image="" srcset="http://www.thewrap.com/wp-content/uploads/2016/02/Jake-Tapper-1-618x400.png 618w, http://www.thewrap.com/wp-content/uploads/2016/02/Jake-Tapper-1-418x270.png 418w, http://www.thewrap.com/wp-content/uploads/2016/02/Jake-Tapper-1-300x194.png 300w" sizes="(max-width: 300px) 100vw, 300px" /></a><h4><a href="http://www.thewrap.com/cnns-jake-tapper-calls-anti-trump-headlines-very-height-of-elitism/" class="click-counter" data-label="Most Commented" data-category="Widget" data-tb-region-item-title>CNN&#8217;s Jake Tapper Calls Anti-Trump Headlines &#8216;Very Height of Elitism&#8217;</a></h4><span class="list-byline">127 Comments</span></li><li data-tb-region-item><a href="http://www.thewrap.com/deadpool-was-no-1-in-every-foreign-market-except-one/" class="click-counter" data-label="Most Commented" data-category="Widget" data-tb-region-item-link><img width="300" height="194" src="http://www.thewrap.com/wp-content/uploads/2015/07/deadpool1-gallery-image-300x194.jpg" class="attachment-medium-thumb size-medium-thumb wp-post-image" alt="Deadpool" style="float:left;" data-tb-region-item-image="" srcset="http://www.thewrap.com/wp-content/uploads/2015/07/deadpool1-gallery-image-618x400.jpg 618w, http://www.thewrap.com/wp-content/uploads/2015/07/deadpool1-gallery-image-418x270.jpg 418w, http://www.thewrap.com/wp-content/uploads/2015/07/deadpool1-gallery-image-300x194.jpg 300w" sizes="(max-width: 300px) 100vw, 300px" /></a><h4><a href="http://www.thewrap.com/deadpool-was-no-1-in-every-foreign-market-except-one/" class="click-counter" data-label="Most Commented" data-category="Widget" data-tb-region-item-title>&#8216;Deadpool&#8217; Was No. 1 in Every Foreign Market Except One</a></h4><span class="list-byline">83 Comments</span></li><li data-tb-region-item><a href="http://www.thewrap.com/bill-cosbys-wife-can-refuse-to-answer-deposition-questions-judge-says/" class="click-counter" data-label="Most Commented" data-category="Widget" data-tb-region-item-link><img width="300" height="194" src="http://www.thewrap.com/wp-content/uploads/2015/12/bill-cosby-camille-cosby-300x194.jpg" class="attachment-medium-thumb size-medium-thumb wp-post-image" alt="NEW YORK - JUNE 08: Bill Cosby and his wife Camille Cosby speak onstage at the Apollo Theater 75th Anniversary Gala at The Apollo Theater on June 8, 2009 in New York City. (Photo by Bryan Bedder/Getty Images)" style="float:left;" data-tb-region-item-image="" srcset="http://www.thewrap.com/wp-content/uploads/2015/12/bill-cosby-camille-cosby-618x400.jpg 618w, http://www.thewrap.com/wp-content/uploads/2015/12/bill-cosby-camille-cosby-418x270.jpg 418w, http://www.thewrap.com/wp-content/uploads/2015/12/bill-cosby-camille-cosby-300x194.jpg 300w" sizes="(max-width: 300px) 100vw, 300px" /></a><h4><a href="http://www.thewrap.com/bill-cosbys-wife-can-refuse-to-answer-deposition-questions-judge-says/" class="click-counter" data-label="Most Commented" data-category="Widget" data-tb-region-item-title>Bill Cosby&#8217;s Wife Can Refuse to Answer Deposition Questions, Judge Says</a></h4><span class="list-byline">54 Comments</span></li></ul></div></div></div></div><div id="ht_ad_widget-74" class="widget ad-HalfPage widget_ht_ad_widget "><div class="wAD wAD-HalfPage" style="background:#fff;"> <div id='300x600' class="dfp-ad-wrapper"> <script type='text/javascript'> if( ! is_mobile() ) { googletag.cmd.push(function() { googletag.display('300x600'); }); } </script> </div> </div></div><div class="clear"></div></div></aside>		</div>
+			</div>
+	<div id="partners-wrapper"><div class="inner"><h2>Partners</h2><div id="partners" class="widgets"><div class="widgets-inner"><div id="text-19" class="widget @@CLASSES@@ widget_text @@EXTRA@@"><h3 class="widgettitle">Featured</h3>			<div class="textwidget"><style>
+#partners-wrapper { display:none; }
+</style></div>
+		</div><div class="clear"></div></div></div></div></div>			<div id="footer-widgets"><div class="inner">
+									<div id="footer-far-left-column" class="widgets"><div class="widgets-inner"><div id="text-2" class="widget @@CLASSES@@ widget_text @@EXTRA@@">			<div class="textwidget"><a data-category="Logo" data-label="Bottom Logo" class="click-counter" href="http://www.thewrap.com"><img width="379" height="118" alt="TheWrap Logo" src="/wp-content/themes/thewrap-canvas/imgs/footer_logo.png"/></a>
+<ul class="footer-nav"><li>© The Wrap News Inc. 2016</li><li id="menu-item-127098" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-127098"><a href="http://www.thewrap.com/privacy-policy/">Privacy Policy</a></li>
+</ul></div>
+		</div><div class="clear"></div></div></div>									<div id="footer-right-column" class="widgets"><div class="widgets-inner"><div id="nav_menu-3" class="widget @@CLASSES@@ widget_nav_menu @@EXTRA@@"><h3 class="widgettitle">Connect</h3><div class="menu-footer-connect-container"><ul id="menu-footer-connect" class="menu"><li id="menu-item-127060" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-127060"><a href="http://www.facebook.com/thewrap">Facebook</a></li>
+<li id="menu-item-127061" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-127061"><a href="http://www.twitter.com/thewrap">Twitter</a></li>
+<li id="menu-item-127062" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-127062"><a href="http://www.youtube.com/thewrap">YouTube</a></li>
+</ul></div></div><div class="clear"></div></div></div>									<div id="footer-middle-column" class="widgets"><div class="widgets-inner"><div id="nav_menu-4" class="widget @@CLASSES@@ widget_nav_menu @@EXTRA@@"><h3 class="widgettitle">Featured Blogs</h3><div class="menu-footer-featured-blogs-container"><ul id="menu-footer-featured-blogs" class="menu"><li id="menu-item-127067" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-127067"><a href="http://www.thewrap.com/category/category-column/waxword/">Waxword</a></li>
+<li id="menu-item-127069" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-127069"><a href="http://www.thewrap.com/category/category-column/steve-pond/">Steve Pond</a></li>
+<li id="menu-item-127070" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-127070"><a href="http://www.thewrap.com/category/category-column/alonso-duralde/">Alonso Duralde</a></li>
+<li id="menu-item-127068" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-127068"><a href="http://www.thewrap.com/category/category-column/media-alley/">Media Alley</a></li>
+<li id="menu-item-127076" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-127076"><a href="/category/category-column/party-report/">Party Report</a></li>
+<li id="menu-item-127075" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-127075"><a href="/category/category-column/hollywood-dc/">Hollywood, D.C.</a></li>
+<li id="menu-item-127077" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-127077"><a href="/category/category-column/thegrill/">TheGrill Conference</a></li>
+<li id="menu-item-127071" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-127071"><a href="http://www.thewrap.com/category/category-column/obits/">Obits</a></li>
+<li id="menu-item-686624" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-686624"><a href="http://www.thewrap.com/category/hello-hollywood/">Hello! Hollywood</a></li>
+</ul></div></div><div class="clear"></div></div></div>									<div id="footer-left-column" class="widgets"><div class="widgets-inner"><div id="nav_menu-2" class="widget @@CLASSES@@ widget_nav_menu @@EXTRA@@"><h3 class="widgettitle">Information</h3><div class="menu-footer-information-container"><ul id="menu-footer-information" class="menu"><li id="menu-item-127064" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-127064"><a href="/masthead">Masthead</a></li>
+<li id="menu-item-127065" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-127065"><a href="/subscribe">Newsletter Subscription</a></li>
+<li id="menu-item-127066" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-127066"><a href="/about-us">About Us</a></li>
+<li id="menu-item-720017" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-720017"><a href="http://www.thewrap.com/oscarwrap-2016/">OscarWrap 2016</a></li>
+<li id="menu-item-699777" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-699777"><a href="http://www.thewrap.com/oscarwrap-2015/">OscarWrap 2015</a></li>
+<li id="menu-item-475043" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-475043"><a href="http://www.thewrap.com/emmywrap-2015/">EmmyWrap 2015</a></li>
+<li id="menu-item-474075" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-474075"><a href="http://www.thewrap.com/canneswrap-2015/">CannesWrap 2015</a></li>
+<li id="menu-item-632231" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-632231"><a href="http://www.thewrap.com/fall-tv-preview/">Fall TV Preview</a></li>
+<li id="menu-item-127093" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-127093"><a href="http://www.thewrap.com/moviespress-releases-8018/">Press Releases</a></li>
+<li id="menu-item-127094" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-127094"><a href="http://www.thewrap.com/contact/">Contact</a></li>
+<li id="menu-item-127095" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-127095"><a href="http://www.thewrap.com/advertise-us/">Advertise With Us</a></li>
+<li id="menu-item-127096" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-127096"><a href="http://www.thewrap.com/jobs/">Jobs</a></li>
+</ul></div></div><div class="clear"></div></div></div>								<div class="clear"></div>
+			</div></div>
+		
+				
+				</div><!-- /#inner-wrapper -->
+
+			</div><!-- /#wrapper -->
+
+			<div class="fix"></div><!--/.fix-->
+		</div>
+	</div>
+
+	
+		<!-- /// LOAD CHARTBEAT /// -->
+		<script type="text/javascript">
+		var _sf_async_config={};
+		_sf_async_config.uid = 5349;
+		_sf_async_config.useCanonical = true;
+					_sf_async_config.domain = 'thewrap.com';
+			_sf_async_config.authors = 'Jeff Sneider';
+_sf_async_config.sections = ["Deal Central", "Movies"];
+
+		(function(){
+		  function loadChartbeat() {
+			window._sf_endpt=(new Date()).getTime();
+			var e = document.createElement('script');
+			e.setAttribute('language', 'javascript');
+			e.setAttribute('type', 'text/javascript');
+			e.setAttribute('src',
+			   (("https:" == document.location.protocol) ? "https://" : "http://") +
+			   "static.chartbeat.com/js/chartbeat.js");
+			document.body.appendChild(e);
+		  }
+		  var oldonload = window.onload;
+		  window.onload = (typeof window.onload != 'function') ?
+			 loadChartbeat : function() { try { oldonload(); } catch (e) { loadChartbeat(); throw e} loadChartbeat(); };
+		})();
+		</script>
+		        <script type="text/javascript">
+        // <![CDATA[
+        var disqus_shortname = 'thewrap';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('data-dsqidentifier'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) { url = url[0]; }
+                    else { url = url[1]; }
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); 
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+        // ]]>
+        </script>
+        
+			<!-- Google Universal Analytics -->
+
+			<script>
+				(function ( i, s, o, g, r, a, m ) {
+					i['GoogleAnalyticsObject'] = r;
+					i[r] = i[r] || function () {
+							(i[r].q = i[r].q || []).push( arguments )
+						}, i[r].l = 1 * new Date();
+					a = s.createElement( o ),
+						m = s.getElementsByTagName( o )[0];
+					a.async = 1;
+					a.src   = g;
+					m.parentNode.insertBefore( a, m )
+				})( window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga' );
+
+				ga( 'create', 'UA-6885197-1', {'siteSpeedSampleRate' : 100} );
+				<!-- Custom Variables -->
+								ga( 'set', 'dimension2', 'jeff-sneider' );
+								ga( 'set', 'dimension3', 'albert-martinez-martin gravity jonas_cuaron lantica-media ma' );
+								ga( 'set', 'dimension4', 'Article page' );
+								ga( 'set', 'dimension5', 'movies' );
+				
+				ga( 'send', 'pageview' );
+			</script>
+
+			
+				<script type="text/javascript">
+
+				</script>
+
+						<div id="interstitialFrame">
+									<div id='oopMobile'>
+						<script type='text/javascript'>
+							if (is_mobile()) {
+								googletag.cmd.push(function () {
+									googletag.display('oopMobile');
+								});
+							}
+						</script>
+					</div>
+													<div id='oopSite'>
+						<script type='text/javascript'>
+							if (!is_mobile()) {
+								googletag.cmd.push(function () {
+									googletag.display('oopSite');
+								});
+							}
+						</script>
+					</div>
+							</div>
+			
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <div id="parsely-cfg" data-parsely-site="thewrap.com"></div>
+</div>
+<script>
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true;
+  e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include: Standard -->
+<div id="buttonjs-56bcc32059c92"></div>
+<script charset="utf-8" type="text/javascript">
+var switchTo5x=true;(function(d,s,ph,id){var js,bs=d.getElementById(ph),p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){
+js=d.createElement(s);js.id=id;js.src=p+'://w.sharethis.com/button/buttons.js';js.async=true;
+js.onload=function(){stLight.options({publisher:"4b0a40f0-78eb-4d7d-b78e-fc72c0fbce61"});var st_type='wordpress3.5.2';};
+bs.parentNode.insertBefore(js, bs);}})(document,'script','buttonjs-56bcc32059c92','st-button-js');
+</script><script type='text/javascript' src='http://www.thewrap.com/wp-content/plugins/contextual-links/assets/js/tw-gallery-shortcode.js?ver=4.4.2'></script>
+<script type='text/javascript' src='http://www.thewrap.com/wp-includes/js/comment-reply.min.js?ver=4.4.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var pollsL10n = {"ajax_url":"https:\/\/www.thewrap.com\/wp-admin\/admin-ajax.php","text_wait":"Your last request is still being processed. Please wait a while ...","text_valid":"Please choose a valid poll answer.","text_multiple":"Maximum number of choices allowed: ","show_loading":"1","show_fading":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.thewrap.com/wp-content/plugins/wp-polls/polls-js.js?ver=2.72'></script>
+<script type='text/javascript' src='http://www.thewrap.com/wp-content/themes/thewrap-canvas/js/theme-footer.min.js?ver=1.0.4'></script>
+<script type='text/javascript' src='http://www.thewrap.com/wp-includes/js/wp-embed.min.js?ver=4.4.2'></script>
+			<script type="text/javascript">_qoptions={qacct:"p-8flXM--ZHulLQ"};</script>
+		<script type="text/javascript" src="https://edge.quantserve.com/quant.js" async></script>
+		<noscript><img src="https://pixel.quantserve.com/pixel/p-8flXM--ZHulLQ.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/></noscript>
+			<!-- Begin comScore Tag -->
+		<noscript>
+			<img src="http://b.scorecardresearch.com/p?c1=2&c2=8498827&cv=2.0&cj=1"/>
+		</noscript>
+		<!-- End comScore Tag findme-->
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"df58f5bbe7","applicationID":"10652399","transactionName":"NldRYUtUCBcCAUcKWQ8dclZNXAkKTBFaDVENVw==","queueTime":0,"applicationTime":3729,"atts":"GhBSFwNOGxk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

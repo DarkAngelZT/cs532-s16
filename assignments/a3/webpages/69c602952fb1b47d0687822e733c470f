@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html class='no-js ' lang='en' xmlns:og='http://opengraphprotocol.org/schema/'>
+<head prefix='og: http://ogp.me/ns# audioboo: http://ogp.me/ns/apps/audioboo#'>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"8a803e7a5d","applicationID":"12190","transactionName":"dQ1bTBRdCQlURE5RFFILWmcFXgwVQhkSWA5B","queueTime":0,"applicationTime":136,"agent":"","atts":"TUBAGlxJRxdURxRVEkI9QE0PVkdfEwRRCVBVUgMOSwZdUFUbVVFWAE9UCFMFSANUAlBUVVcBAVxUCkcYTA=="}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UQQHU0VSCgIJVA=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(){}function r(t){function e(t){return t&&t instanceof n?t:t?a(t,i,o):o()}function s(n,r,o){t&&t(n,r,o);for(var i=e(o),a=f(n),s=a.length,c=0;s>c;c++)a[c].apply(i,r);return i}function c(t,e){d[t]=f(t).concat(e)}function f(t){return d[t]||[]}function u(){return r(s)}var d={};return{on:c,emit:s,create:u,listeners:f,context:e,_events:d}}function o(){return new n}var i="nr@context",a=t("gos");e.exports=r()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:25,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,a){try{f?f-=1:r("err",[a||new UncaughtException(t,e,n)])}catch(c){try{r("ierr",[c,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof s?s.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=t("loader"),s=window.onerror,c=!1,f=0;a.features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(u){"stack"in u&&(t(1),t(2),"addEventListener"in window&&t(3),a.xhrWrappable&&t(4),c=!0)}i.on("fn-start",function(){c&&(f+=1)}),i.on("fn-err",function(t,e,r){c&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){c&&!this.thrown&&f>0&&(f-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:11,2:10,3:8,4:12,5:3,6:26,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){if(window.addEventListener){var e=t("handle"),n=t("ee");t(1),window.addEventListener("click",function(){e("inc",["ck"])},!1),window.addEventListener("hashchange",function(){e("inc",["hc"])},!1),n.on("pushState-start",function(){e("inc",["ps"])})}},{1:9,ee:"QJf3ax",handle:"D5DuLP"}],6:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],7:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3);var a=Event;n.on("fn-start",function(t){var e=t[0];e instanceof a&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof a&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.clearResourceTimings?window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1):window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:11,2:10,3:9,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){function n(t){for(var e=t;e&&!e.hasOwnProperty("addEventListener");)e=Object.getPrototypeOf(e);e&&r(e)}function r(t){a.inPlace(t,["addEventListener","removeEventListener"],"-",o)}function o(t){return t[1]}var i=t("ee").create(),a=t(1)(i),s=t("gos");e.exports=i,r(window),"getPrototypeOf"in Object?(n(document),n(XMLHttpRequest.prototype)):XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&r(XMLHttpRequest.prototype),i.on("addEventListener-start",function(t){if(t[1]){var e=t[1];if("function"==typeof e){var n=s(e,"nr@wrapped",function(){return a(e,"fn-",null,e.name||"anonymous")});this.wrapped=t[1]=n}else"function"==typeof e.handleEvent&&a.inPlace(e,["handleEvent"],"fn-")}}),i.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:27,ee:"QJf3ax",gos:"7eSDFh"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState","replaceState"],"-")},{1:27,ee:"QJf3ax"}],10:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:27,ee:"QJf3ax"}],11:[function(t,e){function n(t,e,n){t[0]=i(t[0],"fn-",null,n)}function r(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=i(t[0],"fn-",this,n)}var o=t("ee").create(),i=t(1)(o);e.exports=o,i.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),i.inPlace(window,["setInterval"],"setInterval-"),i.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),o.on("setInterval-start",n),o.on("setTimer-start",r)},{1:27,ee:"QJf3ax"}],12:[function(t,e){function n(){f.inPlace(this,l,"fn-",o)}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-",o)}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[e],e),e.hasOwnProperty("addEventListener")&&u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:8,2:27,ee:"QJf3ax"}],13:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;u>o;o++)t.removeEventListener(f[o],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=this.lastSize||n(t);if(i&&(r.rxSize=i),this.sameOrigin){var s=t.getResponseHeader("X-NewRelic-App-Data");s&&(e.cat=s.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,c.emit("xhr-done",[t],t),a("xhr",[e,r,this.startTime])}}}function n(t){var e=t.responseType,n="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return r(n)}function r(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function o(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var i=t("loader");if(i.xhrWrappable){var a=t("handle"),s=t(2),c=t("ee"),f=["load","error","abort","timeout"],u=f.length,d=t(1),l=t(3),p=window.XMLHttpRequest;i.features.xhr=!0,t(5),t(4),c.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=e,n.ended=!1,n.xhrGuids={},n.lastSize=0,l&&(l>34||10>l)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),c.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),c.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),c.on("send-xhr-start",function(t,e){var n=this.metrics,o=t[0],i=this;if(n&&o){var a=r(o);a&&(n.txSize=a)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{c.emit("internal-error",[n])}catch(r){}}};for(var s=0;u>s;s++)e.addEventListener(f[s],this.listener,!1)}),c.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),c.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),c.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),c.on("addEventListener-end",function(t,e){e instanceof p&&"load"===t[0]&&c.emit("xhr-load-added",[t[1],t[2]],e)}),c.on("removeEventListener-end",function(t,e){e instanceof p&&"load"===t[0]&&c.emit("xhr-load-removed",[t[1],t[2]],e)}),c.on("fn-start",function(t,e,n){e instanceof p&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),c.on("fn-end",function(t,e){this.xhrCbStart&&c.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:14,3:16,4:12,5:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],14:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],15:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:25,2:26,handle:"D5DuLP"}],16:[function(t,e){var n=0,r=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);r&&(n=+r[1]),e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){if(!h++){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){t[e]||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-852.min.js"},l=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),p=e.exports={offset:i(),origin:u,features:{},xhrWrappable:l};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()]);var h=0},{1:25,2:15,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],25:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],26:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],27:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@original",a=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,c;try{i=this,n=o(arguments),s="function"==typeof r?r(n,i):r||{}}catch(u){d([u,"",[n,i,a],s])}f(e+"start",[n,i,a],s);try{return c=t.apply(i,n)}catch(l){throw f(e+"err",[n,i,l],s),l}finally{f(e+"end",[n,i,c],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=t,u(t,nrWrapper),nrWrapper)}function c(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!s){s=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}s=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=c,e.flag=i,e}},{1:26,ee:"QJf3ax"}]},{},["G9z0Bl",4,13,7,6,5]);</script>
+<title>audioBoom / Super Bowl Post Game Show w/ Tony D - Sean Salisbury - 02/07/16</title>
+<meta content='Sean Salisbury of Yahoo Sports Radio joined the show to talk about the Super Bowl.' name='description'>
+<meta content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'>
+<link rel="stylesheet" media="screen" href="https://d15mj6e6qmt1na.cloudfront.net/assets/audioboom_core-b5f956cd8b9dcd2cb8502798ec171c94c5a11d1fef41b5ae7450760ee6717294.css" data-turbolinks-track="1" />
+<link rel="stylesheet" media="screen" href="https://d15mj6e6qmt1na.cloudfront.net/assets/audioboom_styles-f8f278c73c925811426e866f8f932da63879fcee7fe25003257298468549ea2f.css" data-turbolinks-track="1" />
+
+<script>;(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-6532967-1', 'audioboom.com');var gaWatchdog = setTimeout(function(){function waitForJqueryThenSendFailure(){if (window.$ && $.post) {$.post(boo.HOST + '/stats/metrics/gafailed');} else {setTimeout(waitForJqueryThenSendFailure, 100);}}waitForJqueryThenSendFailure();}, 5000);ga(function(){ clearTimeout(gaWatchdog); });ga('set', {"dimension4":"0","dimension3":"audio_clips/show","dimension2":4156476,"dimension9":"","dimension1":4554177,"dimension7":4649453,"dimension5":"the-tony-d-show","dimension8":202});ga('require', 'displayfeatures');ga('send', 'pageview');</script>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="dHkuHRHoz4AQw916YYBwKhQj6xYmFd0/rk/csvZaf5w=" />
+<link href='/osd.xml' rel='search' title='audioBoom search' type='application/opensearchdescription+xml'>
+<link href='https://audioboom.com/icons/apple-touch-icon-144x144.png' rel='apple-touch-icon-precomposed' sizes='144x144'>
+<link href='https://audioboom.com/icons/apple-touch-icon-152x152.png' rel='apple-touch-icon-precomposed' sizes='152x152'>
+<link href='https://audioboom.com/icons/favicon-32x32.png' rel='icon' sizes='32x32' type='image/png'>
+<link href='https://audioboom.com/icons/favicon-16x16.png' rel='icon' sizes='16x16' type='image/png'>
+<meta content='audioBoom' name='application-name'>
+<meta content='#FFFFFF' name='msapplication-TileColor'>
+<meta content='https://audioboom.com/icons/mstile-144x144.png' name='msapplication-TileImage'>
+<link href='https://audioboom.com/' rel='home' title='Home'>
+<link href='http://microformats.org/profile/hcard' rel='profile'>
+
+<meta content='48950226243' property='fb:app_id'>
+<meta content='517380060' property='fb:admins'>
+<meta content='1979ce46ecf9652f' property='wb:webmaster'>
+<link rel="alternate" type="application/rss+xml" title="YahooSportsRadio&#39;s Posts" href="http://audioboom.com/users/2447188/boos.rss" />
+<!--[if IE 8]>
+<link rel="stylesheet" media="screen" href="https://d15mj6e6qmt1na.cloudfront.net/assets/ie8-66699a4ea6f50fb1a397f992bae8887c0715dac8927afd9bb52048cceed64845.css" data-turbolinks-track="1" />
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" media="screen" href="https://d15mj6e6qmt1na.cloudfront.net/assets/ie9-19bf195e40da30307138fdfcffc21e9cfee80aa732691511d664b7872199d2b9.css" data-turbolinks-track="1" />
+<![endif]-->
+<script src="https://d15mj6e6qmt1na.cloudfront.net/assets/preload-8bd0f614838f40a88d0d2b50b7debf581110bb995c90cc33a8b809692d45c1e2.js" data-turbolinks-track="1"></script>
+<script src="https://d15mj6e6qmt1na.cloudfront.net/assets/application-105ea0dd6f2547c0550933c03cc1b4cb4a968e9d3f470b4aad8dbe2c72466fd8.js" data-turbolinks-track="1" async="async"></script>
+<meta property="al:ios:url" content="audioboo:///play_boo?id=4156476" /><meta property="al:ios:app_store_id" content="305204540" /><meta property="al:ios:app_name" content="audioBoom" /><link rel="alternate" href="android-app://com.audioboom/https/audioboom.com/boos/4156476" /><meta property="al:android:url" content="android-app://com.audioboom/https/audioboom.com/boos/4156476" /><meta property="al:android:package" content="com.audioboom" /><meta property="al:android:app_name" content="audioBoom" /><link href='https://audioboom.com/boos/4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16' rel='canonical'>
+<link href='https://audioboom.com/publishing/oembed.json?url=https%3A%2F%2Faudioboom.com%2Fboos%2F4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16' rel='alternate' type='application/json+oembed'>
+<link href='https://audioboom.com/publishing/oembed.xml?url=https%3A%2F%2Faudioboom.com%2Fboos%2F4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16' rel='alternate' type='application/xml+oembed'>
+<meta content='audioBoom' property='og:site_name'>
+<meta content='audioboo:boo' property='og:type'>
+<meta content='audioBoom: Super Bowl Post Game Show w/ Tony D - Sean Salisbury - 02/07/16' name='title'>
+<meta content='Super Bowl Post Game Show w/ Tony D - Sean Salisbury - 02/07/16' name='audio_title'>
+<meta content='Night Time w/ Tony D' name='audio_artist'>
+<!-- lie to facebook to get a custom player -->
+<meta content='video' name='medium'>
+<meta content='audio/mp3' name='audio_type'>
+<link href='https://audioboom.com/boos/4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16.mp3' rel='audio_src'>
+<link href='https://d15mj6e6qmt1na.cloudfront.net/files/images/1694/0376/tony_d_player.jpg' rel='image_src'>
+<meta content='Super Bowl Post Game Show w/ Tony D - Sean Salisbury - 02/07/16' property='og:title'>
+<meta content='Sean Salisbury of Yahoo Sports Radio joined the show to talk about the Super Bowl.' property='og:description'>
+<meta content='https://d15mj6e6qmt1na.cloudfront.net/files/images/1694/0376/tony_d_player.jpg' property='og:image'>
+<meta content='700' property='og:image:width'>
+<meta content='250' property='og:image:height'>
+<meta content='https://audioboom.com/boos/4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16' property='og:url'>
+<meta content='https://audioboom.com/boos/4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16.mp3' property='og:audio'>
+<meta content='Super Bowl Post Game Show w/ Tony D - Sean Salisbury - 02/07/16' property='og:audio:title'>
+<meta content='Night Time w/ Tony D' property='og:audio:artist'>
+<meta content='audio/mp3' property='og:audio:type'>
+<meta content='480' property='og:video:width'>
+<meta content='150' property='og:video:height'>
+<meta content='application/x-shockwave-flash' property='og:video:type'>
+<meta content='http://d15mj6e6qmt1na.cloudfront.net/cdn/embed_player.swf?autostart=play&amp;imgURL=&amp;link_color=%233b5998&amp;mp3Author=Night+Time+w%2F+Tony+D&amp;mp3Duration=600216.0&amp;mp3LinkURL=https%3A%2F%2Faudioboom.com%2Fboos%2F4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16&amp;mp3Time=05.14am+08+Feb+2016&amp;mp3Title=Super+Bowl+Post+Game+Show+w%2F+Tony+D+-+Sean+Salisbury+-+02%2F07%2F16&amp;mp3URL=https%3A%2F%2Faudioboom.com%2Fboos%2F4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16.mp3%3Fsource%3Dfacebook%26stitched%3D1&amp;no_social=1&amp;waveimgURL=https%3A%2F%2Fd15mj6e6qmt1na.cloudfront.net%2Fi%2Fw%2F4501572' property='og:video'>
+<meta content='https://d15mj6e6qmt1na.cloudfront.net/cdn/embed_player.swf?autostart=play&amp;imgURL=&amp;link_color=%233b5998&amp;mp3Author=Night+Time+w%2F+Tony+D&amp;mp3Duration=600216.0&amp;mp3LinkURL=https%3A%2F%2Faudioboom.com%2Fboos%2F4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16&amp;mp3Time=05.14am+08+Feb+2016&amp;mp3Title=Super+Bowl+Post+Game+Show+w%2F+Tony+D+-+Sean+Salisbury+-+02%2F07%2F16&amp;mp3URL=https%3A%2F%2Faudioboom.com%2Fboos%2F4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16.mp3%3Fsource%3Dfacebook%26stitched%3D1&amp;no_social=1&amp;waveimgURL=https%3A%2F%2Fd15mj6e6qmt1na.cloudfront.net%2Fi%2Fw%2F4501572' property='og:video:secure_url'>
+<meta content='https://audioboom.com/channel/the-tony-d-show' property='audioboo:channel'>
+<meta content='21184977' property='twitter:site:id'>
+<meta content='344225394' property='twitter:creator:id'>
+<meta content='Sean Salisbury of Yahoo Sports Radio joined the show to talk about the Super Bowl.' property='twitter:description'>
+<!-- / embed iframe already rendering something different than actual player -->
+<meta content='player' property='twitter:card'>
+<meta content='https://audioboom.com/boos/4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16/embed/v4?image_option=full&amp;link_color=%2355ACEE&amp;source=twitter_card&amp;utm_campaign=detailpage&amp;utm_content=card&amp;utm_medium=social&amp;utm_source=twitter' property='twitter:player'>
+<meta content='435' property='twitter:player:width'>
+<meta content='300' property='twitter:player:height'>
+<meta content='https://audioboom.com/boos/4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16.mp3?source=twitterstream' property='twitter:player:stream'>
+<meta content='audioBoom' name='twitter:app:name:iphone'>
+<meta content='305204540' name='twitter:app:id:iphone'>
+<meta content='audioboo:///play_boo?id=4156476' name='twitter:app:url:iphone'>
+<meta content='audioBoom' name='twitter:app:name:ipad'>
+<meta content='305204540' name='twitter:app:id:ipad'>
+<meta content='audioboo:///play_boo?id=4156476' name='twitter:app:url:ipad'>
+<meta content='audioBoom' name='twitter:app:name:googleplay'>
+<meta content='com.audioboom' name='twitter:app:id:googleplay'>
+<meta content='http://audioboom.com/play_boo?id=4156476' name='twitter:app:url:googleplay'>
+<meta content='audio' property='weibo:type'>
+<meta content='https://d15mj6e6qmt1na.cloudfront.net/cdn/embed_player.swf?autostart=play&amp;imgURL=&amp;mp3Author=Night+Time+w%2F+Tony+D&amp;mp3Duration=600216.0&amp;mp3LinkURL=https%3A%2F%2Faudioboom.com%2Fboos%2F4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16&amp;mp3Time=05.14am+08+Feb+2016&amp;mp3Title=Super+Bowl+Post+Game+Show+w%2F+Tony+D+-+Sean+Salisbury+-+02%2F07%2F16&amp;mp3URL=https%3A%2F%2Faudioboom.com%2Fboos%2F4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16.mp3%3Fsource%3Dweibo&amp;waveimgURL=https%3A%2F%2Fd15mj6e6qmt1na.cloudfront.net%2Fi%2Fw%2F4501572' property='weibo:audio:embed_code'>
+<meta content='https://audioboom.com/boos/4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16.mp3' property='weibo:audio:stream'>
+<meta content='600.216' property='weibo:audio:duration'>
+
+
+
+</head>
+<body class='boo-detail-page publishable allowed-anonymously audio_clips show' data-ga-vars='{"dimension4":"0","dimension3":"audio_clips/show","dimension2":4156476,"dimension9":"","dimension1":4554177,"dimension7":4649453,"dimension5":"the-tony-d-show","dimension8":202}' data-signing-up-user='{"email":null,"trackingPixel":"\u003cimg src=\"https://pt.fiksu.com/pixel?partnerid=4a384ba9\" width=\"1\" height=\"1\" class=\"pos-abs\" style=\"margin-top: -1px\"/\u003e","redirectUrl":null,"key":null,"recommendedFollowID":3334301}'>
+
+<noscript>
+<div class='bg-primary'>
+<div class='white mw8 center pal tc'>
+<img src="https://d15mj6e6qmt1na.cloudfront.net/assets/audioboom_logo_black_and_white_280_120-b88e785e28ac617d782143393250002fa1caed2d743e8a34c4d74d988e20e931.png" alt="Audioboom logo black and white 280 120 b88e785e28ac617d782143393250002fa1caed2d743e8a34c4d74d988e20e931" />
+<h1 class='f1'>audioBoom uses Javascript</h1>
+<h2 class='f2'>Please enable it in your browser's preferences.</h2>
+<p class='underlined-links'>Please visit our <a class="white" href="http://support.audioboom.com">support center</a> if you're having problems.</p>
+</div>
+</div>
+</noscript>
+<div class='bg-boo-white' id='page_wrapper'>
+<div id='page'>
+<div class='shared-header audioboom shared-header--light'>
+<div class='full-width-top-bit'>
+<div class='logo-or-icon'>
+<a class="boom logo-image-link pull-left" href="/"><span>
+audioBoom
+</span>
+</a></div>
+<div class='page-header-main-nav g-container'>
+<ul class='loggedOut page-header-main-nav-menu pull-right' role='navigation'>
+<li class='horiz hidden-xxs'>
+<a class='js-sign-up' href='/signup'>
+Sign Up
+</a>
+</li>
+<li class='horiz hidden-xxs'>
+<a class='js-login' href='/login'>
+Log In
+</a>
+</li>
+<li class='horiz dropdown btstrp'>
+<a role="button" data-toggle="dropdown" href="http://support.audioboom.com"><span class='label'>More</span>
+<i class='fa fa-angle-down fa-lg'></i>
+</a><ul class='dropdown-menu btstrap dropdown-menu-right' role='menu'>
+<li class='visible-xxs-list-item'>
+<a class='js-sign-up'>
+Sign Up
+</a>
+</li>
+<li class='visible-xxs-list-item'>
+<a class='js-login'>
+Log In
+</a>
+</li>
+<li class='visible-xxs-list-item divider'></li>
+<li><a href="/about/apps">Download the App</a></li>
+<li><a href="/about/upgrade">Get Started</a></li>
+<li><a href="http://support.audioboom.com">Help &amp; Feedback</a></li>
+<li><a href="/about/us">About Us</a></li>
+<li><a href="http://choose.audioboom.com">Host with audioBoom</a></li>
+<li class='divider'></li>
+<li><a href="/guidelines">Community Guidelines</a></li>
+<li><a href="/about/terms">Terms &amp; Conditions</a></li>
+<li><a href="/privacy">Privacy Policy</a></li>
+<li><a href="http://www.audioboomplc.com">Investor Relations</a></li>
+<li class='divider'></li>
+<li><a href="http://github.com/audioboo/api">For Developers</a></li>
+<li class='divider'></li>
+<li class='dropdown-header'>&copy;2016 audioBoom</li>
+</ul>
+</li>
+<li class='horiz nav-link-search'>
+<a class="js-toggle-search-button" title="Search" href="/boos/4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16?showsearch=1"><i aria-hidden='true' class='fa fa-search'></i>
+</a><div class='navbar-search'>
+<div class='page-header-search-field' data-js-live-searchwrapper='' role='search'>
+<form action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<input type="text" name="q" id="q" placeholder="Search" autocomplete="off" class="search-field js-live-search" />
+<div class='sh-fa-wrapper fa fa-lg pull-right'>
+<input type="submit" value="" class="search-button" aria-label="submit search text" />
+</div>
+</form>
+
+</div>
+
+</div>
+</li>
+<li class='horiz last nav-link-record'>
+<a title="Record" href="/boos/new"><div class='record-circle'></div>
+</a></li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div class='really-annoying-spacer-i-should-not-have-added' style='padding-top: 1em'></div>
+
+<div id='bd'>
+<div class='single-slim-fixed-layout'>
+<div class='btn-toolbar'>
+</div>
+
+<div class='g-container'>
+
+<div class='main-container pos-rel'>
+<div class='author-header'>
+<div class='_restrict-banner-width_'>
+<div class='banner_channel channel-banner' id='banner_channel_4554177'>
+<a href="/channel/the-tony-d-show"><img alt='Night Time w/ Tony D' src='https://d15mj6e6qmt1na.cloudfront.net/i/17370748/1500x375/c' srcset='https://d15mj6e6qmt1na.cloudfront.net/i/17370748/320x80/c 320w, https://d15mj6e6qmt1na.cloudfront.net/i/17370748/640x160/c 640w, https://d15mj6e6qmt1na.cloudfront.net/i/17370748/1000x250/c 1000w, https://d15mj6e6qmt1na.cloudfront.net/i/17370748/1280x320/c 1280w, https://d15mj6e6qmt1na.cloudfront.net/i/17370748/1500x375/c 1500w, https://d15mj6e6qmt1na.cloudfront.net/i/17370748/2000x500/c 2000w, https://d15mj6e6qmt1na.cloudfront.net/i/17370748 1500w'>
+</a></div>
+
+</div>
+</div>
+
+<div class='detail-page-content pam' data-suppress-global-headless-player='1' id='audio_clip_4156476' role='main'>
+<div class='detail-page-content_page_header stubbornella-lastUnit'>
+<a class='category sports-us' href='/browse/sports-us'>
+<i></i>
+Sports
+</a>
+<i>&nbsp; | &nbsp;</i>
+
+<a class="author emphasis" href="https://audioboom.com/channel/the-tony-d-show">Night Time w/ Tony D</a>
+<div class='simple-rule'></div>
+</div>
+<div class='audioboo'>
+<div class='detailPagePlayer'>
+<div>
+<h1 class='post-heading h3 black' data---peripheral-play-pause-link--='1' dir='auto'>Super Bowl Post Game Show w/ Tony D - Sean Salisbury - 02/07/16</h1>
+</div>
+</div>
+<div id='embedcode-accordion'>
+<div class='collapse' id='collapseOne'>
+<div class='in-form-title-thing mtm'>
+<a class='emphasis fr' data-js-embed-options='1' href='/boos/4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16.embed' rel='nofollow'>
+see more options
+<i class='fa fa-angle-double-right'></i>
+</a>
+Embed Code
+</div>
+<div class='js-embed-group-container mbl'>
+<textarea class='form-control embedcode js-autoselect' data-js-embedcode='1' id='embed-code' readonly>&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; style=&quot;background-color:transparent; display:block; max-width: 700px;&quot; frameborder=&quot;0&quot; allowtransparency=&quot;allowtransparency&quot; scrolling=&quot;no&quot; src=&quot;//embeds.audioboom.com/boos/4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16/embed/v4?eid=AQAAAI-zw1Y8bD8A&quot; title=&quot;audioBoom player&quot;&gt;&lt;/iframe&gt;</textarea>
+<span class='input-group-btn start-hidden'>
+<a class='btn btn-s btn-default embed-copy-to-clipboard' data-after-copy-text='Copied!' data-clipboard-target='embed-code' data-placement='bottom' data-toggle='tooltip' data-tooltip-title='Copy To Clipboard' tabindex='-1' title='Copy To Clipboard'>
+<i class='fa fa-clipboard fa-fw'></i>
+</a>
+</span>
+
+</div>
+
+</div>
+</div>
+<div class='left-column'>
+<div>
+<div class='detail-page-image--clip-without-image' data-detail-page-advert-width-sizing-element='1'>
+<div data-auto-play-primary-item='1' data-new-clip-store='{"clips":[{"clipURLPriorToLoading":"https://audioboom.com/boos/4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16.mp3","clipId":4156476,"imageAttachmentId":null,"waveUrl":"https://d15mj6e6qmt1na.cloudfront.net/i/w/4501572","staticLink":"https://audioboom.com/boos/4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16","title":"Super Bowl Post Game Show w/ Tony D - Sean Salisbury - 02/07/16","description":"Sean Salisbury of Yahoo Sports Radio joined the show to talk about the Super Bowl.","formattedDescription":"\u003cp\u003eSean Salisbury of Yahoo Sports Radio joined the show to talk about the Super Bowl.\u003c/p\u003e","author":"Night Time w/ Tony D","author_url":"https://audioboom.com/channel/the-tony-d-show","initialRating":false,"embedDisabled":false,"duration":600.216,"adResources":{"preroll":{"url":"https://console.wostreaming.com/gateway/getmedia.php?sc=arena_other\u0026f=json"},"postroll":{"url":"https://console.wostreaming.com/gateway/getmedia.php?sc=arena_other\u0026f=json"}}}],"playlistURL":null,"shareTemplates":{"twitter":{"popup":{"popup":"twitter;width=550,height=420","name":"twitter"},"url":"https://twitter.com/share?lang=en\u0026text=%3CCLIPTITLE%3E\u0026url=%3CCLIPURL%3E%3Futm_campaign%3Ddetailpage%26utm_content%3Dretweet%26utm_medium%3Dsocial%26utm_source%3Dtwitter"},"facebook":{"popup":{"popup":"facebook;width=626,height=436","name":"facebook"},"url":"https://www.facebook.com/sharer/sharer.php?u=%3CCLIPURL%3E%3Futm_campaign%3Ddetailpage%26utm_content%3Dretweet%26utm_medium%3Dsocial%26utm_source%3Dfacebook"},"google":{"popup":{"popup":"googleplus;width=480,height=420","name":"googleplus"},"url":"https://plus.google.com/share?url=%3CCLIPURL%3E%3Futm_campaign%3Ddetailpage%26utm_content%3Dretweet%26utm_medium%3Dsocial%26utm_source%3Dfacebook%26utm_campaign%3Ddetailpage%26utm_content%3Dretweet%26utm_medium%3Dsocial%26utm_source%3Dgoogleplus"}},"pageId":"detail_page_4156476","detail_page_only_data":{"is_clip_without_img":true,"detail_page_clip_img":null}}' id='detail-page-player-react-container'>
+</div>
+</div>
+</div>
+<div class='simple-rule'></div>
+<div>
+<div class='dib mrm'>Share on</div>
+<div class='dib js-social-sharing-buttons' data-url='https://audioboom.com/boos/4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16' style='vertical-align: middle'>
+<a class='playerbar__seethru-btn playerbar__fb' data-name='facebook' data-popup='facebook;width=626,height=436' href='https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Faudioboom.com%2Fboos%2F4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16%3Futm_campaign%3Ddetailpage%26utm_content%3Dretweet%26utm_medium%3Dsocial%26utm_source%3Dfacebook' title='Share on Facebook'>
+<i class='fa fa-2x fa-facebook-official'></i>
+<span class='playerbar__hidden-inline-text'>Facebook</span>
+</a>
+<a class='playerbar__seethru-btn playerbar__tw' data-name='twitter' data-popup='twitter;width=550,height=420' href='https://twitter.com/share?lang=en&amp;text=Super+Bowl+Post+Game+Show+w%2F+Tony+D+-+Sean+Salisbury+-+02%2F07%2F16&amp;url=https%3A%2F%2Faudioboom.com%2Fboos%2F4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16%3Futm_campaign%3Ddetailpage%26utm_content%3Dretweet%26utm_medium%3Dsocial%26utm_source%3Dtwitter&amp;via=YSportsRadio' title='Share on Twitter'>
+<i class='fa fa-2x fa-twitter-square'></i>
+<span class='playerbar__hidden-inline-text'>twitter</span>
+</a>
+<a class='playerbar__seethru-btn playerbar__gp' data-name='googleplus' data-popup='googleplus;width=480,height=420' href='https://plus.google.com/share?url=https%3A%2F%2Faudioboom.com%2Fboos%2F4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16%3Futm_campaign%3Ddetailpage%26utm_content%3Dretweet%26utm_medium%3Dsocial%26utm_source%3Dgoogleplus' title='Share on Google+'>
+<i class='fa fa-2x fa-google-plus-square'></i>
+<span class='playerbar__hidden-inline-text'>Google+</span>
+</a>
+</div>
+</div>
+<div class='simple-rule'></div>
+<div class='description clearfix' dir='auto'>
+<p>Sean Salisbury of Yahoo Sports Radio joined the show to talk about the Super Bowl.</p>
+</div>
+<div class='detail-page-author-credit well' data-author-id='2447188'>
+<div class='media'>
+<div class='media-left media-middle avatar prm'>
+<a href="https://audioboom.com/channel/the-tony-d-show"><img class=" stream-image-channel" alt="Night Time w/ Tony D" src="https://d15mj6e6qmt1na.cloudfront.net/i/16940376/75x75/c" /></a>
+</div>
+<div class='media-body text'>
+<p class='media-heading username'>
+<a href="https://audioboom.com/channel/the-tony-d-show">Night Time w/ Tony D</a>
+</p>
+</div>
+</div>
+</div>
+
+<div class='timeAndLocation mbm'>
+<abbr class='time' data-epochTime='1454908449' title='05.14am GMT, 08 Feb 2016'>9 days ago</abbr>
+</div>
+<div class='attachments'>
+</div>
+<div class='dibf'>
+
+</div>
+<div class='commentPanel'>
+<div class='comments-detail-page-comment-panel'>
+<div class='updatable' id='comments'>
+<div class='commentList'>
+<div class='mbl'>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+<div class='right-column action-buttons'>
+<div class='detail-page-buttons stubbornella-lastUnit'>
+<div class='cell wide'>
+<a class="btn btn-default fa-spacer" href="/login?redirect=https%3A%2F%2Faudioboom.com%2Fboos%2F4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16%3FSportsRoadhouse.com%3D"><i class='fa-custom fa fa-plus'></i><span class='btn-txt'>Playlist</span></a></div><div class='cell wide'>
+<form data-type="json" data-js-rating-details-button="1" method="post" class="button_to" method="post" action="/boos/4156476/ratings"><button class="btn btn-default love-this-button fa-spacer link-needs-js is-off" type="submit"><i class="fa fa-heart"></i><span class='btn-txt'>Like</span></button><input type="hidden" name="authenticity_token" value="r7dqCjlS4GHSn9I7JH5KzAR8GxMJELvN4FKJSPE4Q/TbzkQXKLov4cJcD0FF/jrmEF/wBS8FZvJOHVX6B2I8aA==" /></form>
+</div><div class='cell wide'>
+<a class='btn btn-default fa-spacer' data-parent='#embedcode-accordion' data-toggle='collapse' href='#collapseOne' rel='nofollow'><i class='fa fa-code'></i><span class='btn-txt'>Embed</span></a>
+</div>
+</div>
+
+</div>
+<div class='right-column'>
+<br>
+<div class='suggestedContentColumn'>
+<div class='user-sidebar'>
+<ul class='sidebar-list'>
+<li class='sidebar-item' data-hoogle-async-link-click='{"category":"internal link","action":"/boos/detail_page sidebar","label":"next post"}'>
+<div class='cb'>
+<h5 class='h3'>
+Next
+</h5>
+</div>
+
+<div data-auto-play-next-item--='https://audioboom.com/boos/4156496-super-bowl-post-game-show-w-tony-d-hour-2-02-07-16' data-new-clip-store='{"clips":[{"clipURLPriorToLoading":"https://audioboom.com/boos/4156496-super-bowl-post-game-show-w-tony-d-hour-2-02-07-16.mp3","clipId":4156496,"imageAttachmentId":null,"waveUrl":"https://d15mj6e6qmt1na.cloudfront.net/i/w/4501620","staticLink":"https://audioboom.com/boos/4156496-super-bowl-post-game-show-w-tony-d-hour-2-02-07-16","title":"Super Bowl Post Game Show w/ Tony D - Hour 2 - 02/07/16","description":"Talked with #Broncos S Josh Bush, WR Bennie Fowler, OT Tyler Polumbus, DE Derek Wolfe and DE Malik Jackson who just won the #SuperBowl over the #Panthers.","formattedDescription":"\u003cp\u003eTalked with \u003ca class=\"tweet-url hashtag\" href=\"/tag/Broncos\" rel=\"nofollow\" title=\"#Broncos\"\u003e#Broncos\u003c/a\u003e S Josh Bush, WR Bennie Fowler, OT Tyler Polumbus, DE Derek Wolfe and DE Malik Jackson who just won the \u003ca class=\"tweet-url hashtag\" href=\"/tag/SuperBowl\" rel=\"nofollow\" title=\"#SuperBowl\"\u003e#SuperBowl\u003c/a\u003e over the \u003ca class=\"tweet-url hashtag\" href=\"/tag/Panthers\" rel=\"nofollow\" title=\"#Panthers\"\u003e#Panthers\u003c/a\u003e.\u003c/p\u003e","author":"Night Time w/ Tony D","author_url":"https://audioboom.com/channel/the-tony-d-show","initialRating":false,"embedDisabled":false,"duration":2202.1,"adResources":{"preroll":{"url":"https://console.wostreaming.com/gateway/getmedia.php?sc=arena_other\u0026f=json"},"postroll":{"url":"https://console.wostreaming.com/gateway/getmedia.php?sc=arena_other\u0026f=json"}}}],"playlistURL":null,"shareTemplates":{"twitter":{"popup":{"popup":"twitter;width=550,height=420","name":"twitter"},"url":"https://twitter.com/share?lang=en\u0026text=%3CCLIPTITLE%3E\u0026url=%3CCLIPURL%3E%3Futm_campaign%3Ddetailpage%26utm_content%3Dretweet%26utm_medium%3Dsocial%26utm_source%3Dtwitter"},"facebook":{"popup":{"popup":"facebook;width=626,height=436","name":"facebook"},"url":"https://www.facebook.com/sharer/sharer.php?u=%3CCLIPURL%3E%3Futm_campaign%3Ddetailpage%26utm_content%3Dretweet%26utm_medium%3Dsocial%26utm_source%3Dfacebook"},"google":{"popup":{"popup":"googleplus;width=480,height=420","name":"googleplus"},"url":"https://plus.google.com/share?url=%3CCLIPURL%3E%3Futm_campaign%3Ddetailpage%26utm_content%3Dretweet%26utm_medium%3Dsocial%26utm_source%3Dfacebook%26utm_campaign%3Ddetailpage%26utm_content%3Dretweet%26utm_medium%3Dsocial%26utm_source%3Dgoogleplus"}},"pageId":"detail_page_next_clip_4156496"}'>
+<div class='audio_clip media' id='audio_clip_4156496'>
+<div class='media-left'>
+<div>
+<a href="https://audioboom.com/boos/4156496-super-bowl-post-game-show-w-tony-d-hour-2-02-07-16"><img class="sq75 media-object stream-image-channel" alt="Night Time w/ Tony D" src="https://d15mj6e6qmt1na.cloudfront.net/i/16940376/75x75/c" width="75" height="75" />
+</a></div>
+</div>
+<div class='media-body'>
+<a href="https://audioboom.com/boos/4156496-super-bowl-post-game-show-w-tony-d-hour-2-02-07-16"><strong>Super Bowl Post Game Show w/ Tony D - Hour 2 - 02/07/16</strong>
+</a></div>
+</div>
+</div>
+
+</li>
+<li class='sidebar-item' data-hoogle-async-link-click='{"category":"internal link","action":"/boos/detail_page sidebar","label":"channel posts"}'>
+<div class='cb'>
+<h5 class='h3'>
+Top Posts
+</h5>
+</div>
+
+<div class='sidebar-mini-clips-list'>
+<div class='audio_clip media sidebar-mini-clip-item' id='audio_clip_4016645'>
+<div class='media-left'>
+<a href="/boos/4016645-night-time-w-tony-d-chris-gates-01-04-16"><img class="media-object sq48 stream-image-channel" alt="Night Time w/ Tony D" src="https://d15mj6e6qmt1na.cloudfront.net/i/16940376/75x75/c" width="48" height="48" />
+</a></div>
+<div class='media-body'>
+<h5 class='media-heading'>
+<a href="/boos/4016645-night-time-w-tony-d-chris-gates-01-04-16"><strong>Night Time w/ Tony D - Chris Gates - 01/04/16</strong>
+</a></h5>
+<p class='credit'>
+<span class='small'>
+by
+</span>
+<strong class='small'>
+<span class='author'>
+<a href="https://audioboom.com/channel/the-tony-d-show">Night Time w/ Tony D</a>
+</span>
+</strong>
+</p>
+</div>
+</div>
+<div class='audio_clip media sidebar-mini-clip-item' id='audio_clip_4156502'>
+<div class='media-left'>
+<a href="/boos/4156502-super-bowl-post-game-show-w-tony-d-james-ferentz-02-07-16"><img class="media-object sq48 stream-image-channel" alt="Night Time w/ Tony D" src="https://d15mj6e6qmt1na.cloudfront.net/i/16940376/75x75/c" width="48" height="48" />
+</a></div>
+<div class='media-body'>
+<h5 class='media-heading'>
+<a href="/boos/4156502-super-bowl-post-game-show-w-tony-d-james-ferentz-02-07-16"><strong>Super Bowl Post Game Show w/ Tony D - James Ferentz - 02/07/16</strong>
+</a></h5>
+<p class='credit'>
+<span class='small'>
+by
+</span>
+<strong class='small'>
+<span class='author'>
+<a href="https://audioboom.com/channel/the-tony-d-show">Night Time w/ Tony D</a>
+</span>
+</strong>
+</p>
+</div>
+</div>
+<div class='audio_clip media sidebar-mini-clip-item' id='audio_clip_3688312'>
+<div class='media-left'>
+<a href="/boos/3688312-night-time-w-tony-d-tim-sullivan-10-14-15"><img class="media-object sq48 stream-image-channel" alt="Night Time w/ Tony D" src="https://d15mj6e6qmt1na.cloudfront.net/i/16940376/75x75/c" width="48" height="48" />
+</a></div>
+<div class='media-body'>
+<h5 class='media-heading'>
+<a href="/boos/3688312-night-time-w-tony-d-tim-sullivan-10-14-15"><strong>Night Time w/ Tony D - Tim Sullivan - 10/14/15</strong>
+</a></h5>
+<p class='credit'>
+<span class='small'>
+by
+</span>
+<strong class='small'>
+<span class='author'>
+<a href="https://audioboom.com/channel/the-tony-d-show">Night Time w/ Tony D</a>
+</span>
+</strong>
+</p>
+</div>
+</div>
+<div class='audio_clip media sidebar-mini-clip-item' id='audio_clip_4052411'>
+<div class='media-left'>
+<a href="/boos/4052411-night-time-w-tony-d-kenyon-drake-01-12-16"><img class="media-object sq48 stream-image-channel" alt="Night Time w/ Tony D" src="https://d15mj6e6qmt1na.cloudfront.net/i/16940376/75x75/c" width="48" height="48" />
+</a></div>
+<div class='media-body'>
+<h5 class='media-heading'>
+<a href="/boos/4052411-night-time-w-tony-d-kenyon-drake-01-12-16"><strong>Night Time w/ Tony D - Kenyon Drake - 01/12/16</strong>
+</a></h5>
+<p class='credit'>
+<span class='small'>
+by
+</span>
+<strong class='small'>
+<span class='author'>
+<a href="https://audioboom.com/channel/the-tony-d-show">Night Time w/ Tony D</a>
+</span>
+</strong>
+</p>
+</div>
+</div>
+<div class='audio_clip media sidebar-mini-clip-item' id='audio_clip_3697286'>
+<div class='media-left'>
+<a href="/boos/3697286-night-time-w-tony-d-barry-bloom-10-16-15"><img class="media-object sq48 stream-image-channel" alt="Night Time w/ Tony D" src="https://d15mj6e6qmt1na.cloudfront.net/i/16940376/75x75/c" width="48" height="48" />
+</a></div>
+<div class='media-body'>
+<h5 class='media-heading'>
+<a href="/boos/3697286-night-time-w-tony-d-barry-bloom-10-16-15"><strong>Night Time w/ Tony D - Barry Bloom - 10/16/15</strong>
+</a></h5>
+<p class='credit'>
+<span class='small'>
+by
+</span>
+<strong class='small'>
+<span class='author'>
+<a href="https://audioboom.com/channel/the-tony-d-show">Night Time w/ Tony D</a>
+</span>
+</strong>
+</p>
+</div>
+</div>
+</div>
+
+</li>
+<li class='sidebar-item'>
+<div class='cb'>
+<h5 class='h3'>
+More
+</h5>
+</div>
+
+<div class='audio-clips-detail-page-misc-stuff-sidebar-item small'>
+<div class='buttons-and-stuff' data-hoogle-async-link-click='{"category":"outgoing rss link","action":"/boos/detail_page sidebar","label":"recent posts feed"}'>
+<div class='empty-layout'>
+<div class='action-button-row btn-group btn-group-justified'>
+<a title="Night Time w/ Tony D" rel="nofollow" data-hoogle-async-link-click="{&quot;category&quot;:&quot;outgoing rss link&quot;,&quot;action&quot;:&quot;action_button_row&quot;,&quot;label&quot;:&quot;itunes feed&quot;}" data-no-turbolink="true" href="itpc://audioboom.com/channels/4554177.rss"><i class='fa fa-music mrs'></i>
+<span class='mrm'>iTunes</span>
+</a><a title="Night Time w/ Tony D" rel="nofollow" data-hoogle-async-link-click="{&quot;category&quot;:&quot;outgoing rss link&quot;,&quot;action&quot;:&quot;action_button_row&quot;,&quot;label&quot;:&quot;rss feed&quot;}" data-no-turbolink="true" href="https://audioboom.com/channels/4554177.rss"><i class='fa fa-rss mrs'></i>
+<span class='mrm'>RSS</span>
+</a><a rel="nofollow" data-hoogle-async-link-click="{&quot;category&quot;:&quot;internal link&quot;,&quot;action&quot;:&quot;action_button_row&quot;,&quot;label&quot;:&quot;qr-code&quot;}" href="/publishing/qrcode/boos/4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16"><i class='fa fa-qrcode mrs'></i>
+<span class='mrm'>QRCode</span>
+</a></div>
+
+</div>
+
+<br>
+</div>
+<div class='btn btn-default btn-block fa-spacer'>
+<a class="js-report-this-boo" rel="nofollow" data-report-title="Super Bowl Post Game Show w/ Tony D - Sean Salisbury - 02/07/16" data-report-url="https://audioboom.com/boos/4156476-super-bowl-post-game-show-w-tony-d-sean-salisbury-02-07-16" data-reporting-user="null" href="http://support.audioboom.com"><i class='fa fa-exclamation-circle'></i><span>Report this post</span>
+</a></div>
+</div>
+
+</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+<!--[if lte IE 8]>
+<style>
+  .logo-image-link { background-image: none; -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://d15mj6e6qmt1na.cloudfront.net/assets/audioboom_bw_100x100-6c8daa71e5e8001a5d2aabfc94c9836d2f06f1d52e0b8a4b394b933a3a80fcb9.png', sizingMethod='scale')"; }
+</style>
+<![endif]-->
+<div data-turbolinks-permanent id='fb-root'></div>
+
+</div>
+<script data-turbolinks-eval='false' type='text/javascript'>
+$(function(){
+  window.fbAsyncInit = function() {
+    FB.init({appId: "48950226243", status: true, cookie: true, oauth:true});
+    $(document).trigger('boo:facebook:ready');
+  };
+  var e = document.createElement('script'); e.async = true;
+  e.src = 'https://connect.facebook.net/en_US/all.js';
+  document.getElementById('fb-root').appendChild(e);
+});
+
+
+</script>
+  <div class="pos-fix fill-all z-4 of-aut regular-auth-variant js-auth-lightbox auth-lightbox start-hidden lightbox-fader animated fadeIn">
+    <div class="baffle-modal-area pos-abs fill-all z-1"></div>
+    <div class="container hi-100">
+      <div class="row">
+        <div class="auth-modal-preamble">
+            <h1 class="f2 f1-nxs white tc mtx">Radio Reimagined</h1>
+            <h3 class="f3 f2-nxs white tc">Breaking news, latest sport, longer listens</h3>
+
+          <div class="logo-or-icon tc mtm mbm mtl-nxs mbl-nxs pos-rel z-2">
+            <a class="boom logo-image-link blue logo-static" href="/">audioBoom</a>
+          </div>
+        </div>
+
+        <div class="js-auth-modal-container mbx"></div>
+      </div>
+    </div>
+  </div>
+
+
+<img src="https://pt.fiksu.com/pixel?partnerid=ea706fc6" width="1" height="1" class="pos-abs" style="margin-top: -1px"/>
+</body>
+</html>
+
+<!--
+You were served by 'app2a.audioboo.cloud.ec'
+-->
+

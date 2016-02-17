@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]><html class="lte-ie8 desktop" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" itemscope itemtype="http://schema.org/organization"><![endif]-->
+<html class="desktop" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" itemscope itemtype="http://schema.org/organization">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="apple-itunes-app" content="app-id=331365449" />
+<meta name="google-play-app" content="app-id=com.valpak.android" />
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="" />
+
+<title>Special Occasion Savings – Date Nights, Anniversaries, Birthdays</title>
+<meta name="description" content="Create amazing date nights or make special occasions even better with these offers for restaurants, movies and more!" />
+
+<link rel="canonical" href="https://www.valpak.com/promotions/special-occasion-savings" />
+    <meta itemprop="name" content="Create amazing date nights or make special occasions even better with these offers for restaurants, movies and more!" />
+<meta itemprop="image" content="https://www.valpak.com/images/user-media/C3_NightOut_SocialShare.jpg" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Special Occasion Savings – Date Nights, Anniversaries, Birthdays" />
+<meta name="twitter:description" content="I’m out and about with @Valpakcoupons local deals on restaurants and #stufftodo #NightPak" />
+<meta property="og:title" content="A Time to Thrill" />
+<meta property="og:description" content="I’m out and about with Valpak local deals on restaurants and stuff to do #NightPak" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.valpak.com/promotions/special-occasion-savings" />
+<meta property="og:image" content="https://www.valpak.com/images/user-media/C3_NightOut_SocialShare.jpg" />
+<meta property="og:site_name" content="Valpak" />
+<meta property="fb:admins" content="1226626940" />
+<link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,600,300,700" />
+
+<link rel="stylesheet" href="/public/dist/components/Ladda/dist/ladda-themeless.min.css" />
+
+<link type="text/css" rel="stylesheet" href="https://www.valpak.com/public/stylesheets/css/style-built.css" />
+  <!--[if lte IE 8]>
+  <link type="text/css" rel="stylesheet" href="https://www.valpak.com/public/stylesheets/css/style-legacy.css" />
+<![endif]-->
+
+<style>
+      [data-page*="promotion-"] {
+        background: #48060a;
+      }
+      [data-page*="promotion-"] #modal__contest-entry .modal__content {
+        background: #48060a;
+      }
+      .promo--secondaryThemeColor {
+        background: #fdb739;
+        border-color: #fdb739;
+      }
+      .box--info {
+        border-color: #fdb739;
+      }
+      </style>
+    <script src="//assets.adobedtm.com/6382440294995907bdfa984f84da310e1d4dd74d/satelliteLib-c4cdebff4b3095733fd39325cde4a17c6b33ba1f.js"></script>
+<script src="/public/dist/require.js"></script>
+
+<script>
+
+// FOUC prevent (removed after page load)
+document.documentElement.className += " js-fouc";
+
+// Set viewport dimensions in cookies
+if (typeof window.innerWidth != 'undefined') {
+  document.cookie = 'viewportWidth='+ window.innerWidth +'; path=/';
+  document.cookie = 'viewportHeight='+ window.innerHeight +'; path=/';
+}
+
+// RequireJS config
+// Common RequireJS config
+requirejs.config({
+  paths: {
+    'app'             : 'app',
+    'flight-components': 'app/flight-components',
+    'lib'             : 'app/lib',
+    'flight'          : 'components/flight',
+    'jquery'          : 'components/jquery/jquery',
+    'cookies'         : 'components/jquery.cookie/jquery.cookie',
+    'jqueryui'        : 'vendor/jquery-ui-1.10.2.custom.min',
+    'hogan'           : 'components/hogan/web/builds/2.0.0/hogan-2.0.0.min.amd',
+    'async'           : 'components/requirejs-plugins/src/async',
+    'URIjs'           : 'components/uri.js/src',
+    'social-shares'   : 'components/social-likes/src/social-likes',
+    'ladda'           : 'components/Ladda/dist/ladda.min',
+    'spin'            : 'components/Ladda/dist/spin.min',
+    'tooltipster'     : 'components/tooltipster/js/jquery.tooltipster',
+    'angular'         : 'components/angular/angular.min'
+  }
+});
+requirejs.config({ baseUrl: '/public/dist' });
+
+// Adobe/Omniture DTM 
+define('dtm', [], function(){
+  return window._satellite || {};
+});
+
+// Google Plusone client API 
+window.___gcfg = {parsetags: 'explicit'};
+define('gapi', ['async!https://apis.google.com/js/plusone.js!onload'], function(){
+  return gapi;
+});
+
+</script>
+
+<script>
+      require(['app/pak'], function(init) {
+        $(function() {
+          init();
+          require(['flight-components/Promotion'], function(Promotion) {
+            Promotion.attachTo('[data-page*="promotion-"]');
+          });
+        });
+      });
+      </script>
+    <script>
+
+define('App', [], function(){
+
+  var deviceString = '{"canAssignPhoneNumber":false,"deviceOSVersion":"","marketingName":"","mobileBrowserVersion":"","pointingMethod":"","resolutionHeight":600,"resolutionWidth":800,"preferredMarkup":"html_web_4_0","mobileBrowser":"","modelName":"","brandName":"","xhtmlSupportLevel":"4","deviceOS":"","tablet":false,"wirelessDevice":false,"xhtmlmpPreferredMimeType":"application/vnd.wap.xhtml+xml","smartTV":false}';
+
+  var device = deviceString != '' ? JSON.parse(deviceString) : {};
+  device.type = 'desktop';
+
+  var that = {
+
+    // betaRef tracks which beta link was clicked from 8.0
+    betaRef           : '',
+
+    isResultsPage     : false,
+    ajaxErrors        : false,
+    context           : '/coupons',
+    page              : 'promotion-default',
+    server            : 'https://www.valpak.com',
+    secure_server     : 'https://www.valpak.com:443',
+    isSecure          : 'true' == 'true',
+    cssDir            : '/public/stylesheets/css',
+    imageDir          : '/public/images',
+    jsDir             : '/public/dist',
+    autoPopup         : '',
+    emailLinkSignIn   : '',
+    deepLinkSignUp    : '',
+    contestId         : '0',
+
+    results : {
+      franchiseId     : '3127',
+      geoLocation     : 'Norfolk, VA',
+      geoRadius       : '25',
+      geoSort         : '1',
+      geoKeywords     : '',
+
+      // the category ID and name
+      category        : '0',
+      categoryName    : '',
+
+      // keep track of the current query params for the user
+      currentQueryParams: {},
+
+      // will be populated with logging data of all rendered listings
+      productViews    : []
+    },
+
+    user : {
+      device          : device,
+      isGb            : 'false' == 'true',
+      campaignCode    : 'NoReferrer-Direct',
+      memberId        : '',
+      visitorId       : '792897322',
+      isAdmin         : false,
+      isLoggedIn      : 'false' == 'true',
+      loginReturnURL  : '',
+      searchId        : '0',
+      isCanada        : 'false' == 'true',
+      enableSurvey    : 'false' == 'true',
+      surveyUrl       : 'http://valpak.8-5.sgizmo.com/s3/',
+      cookies         : {
+        vprefid         : '999999999',
+        visit           : ''
+      }
+    }
+  }
+
+  // create string for logging page name and category name
+  // ex: pagename[:categoryname] (all lowercase)
+  that.dtmPage = that.page;
+  that.dtmPage += that.results.categoryName != '' ? ':' + that.results.categoryName : '';
+  that.dtmPage = that.dtmPage.toLowerCase();
+
+  that.dtmContestId = that.contestId;
+
+
+
+  // set VPAPP global
+  window.VPAPP = that;
+  return that;
+
+});
+
+
+</script>
+</head>
+<body data-page="promotion-default">
+
+  <div class="off-canvas-nav" data-role="off-canvas-nav">
+  <div>
+    <div class="ocn-header">
+      <div class="">
+        <img class="secondary-logo fluid" src="/public/images/valpak-logo-reversed@2x.png" alt="Valpak.com" itemprop="logo"/>
+      </div>
+    </div>
+
+    <ul class="header__nav--primary" data-component="site-nav">
+  <li><a class="header__nav__link site-nav__link js-geo-change" href="" data-dtm="view-local-coupons">Local Coupons</a></li>
+    <li>
+    <a class="header__nav__link site-nav__link" href="https://www.valpak.com/coupons/coupon-codes/featured" data-dtm="view-coupon-codes">Coupon Codes</a>
+      </li>
+<li>
+    <a class="header__nav__link site-nav__link" href="https://www.valpak.com/coupons/savings/groceries" data-dtm="view-grocery-coupons">Grocery Coupons</a>
+      </li>
+</ul>
+
+<div id="geo-change" class="visibly--removed">
+
+  <div class="geo-change__content constrain--xs js-invisible push--bottom-1">
+    <h6 class="h5 semi-strong icon-location-1 push--bottom-2">
+    Find Local Coupons in Your Neighborhood</h6>
+
+    <form data-form="geo-search" class="container">
+      <input type="hidden" name="f1" value="home">
+      <input type="text" name="geo" class="geo-typeahead tall" placeholder="ex. 'New York, NY' or '10108'" value="Norfolk, VA">
+      <button type="submit" class="btn tall" data-dtm="change-location">GO</button>
+    </form>
+
+    <p class="input-error-msg push--top-1">Enter a valid city, state or zip code</p>
+  </div>
+</div><ul class="header__nav--secondary">
+    <li>
+      <a class="header__nav__link header__nav__link--become-member " href="/coupons/signup" data-dtm="signup">Sign Up For Great Savings</a>
+    </li>
+    <li>
+      <a class="header__nav__link " href="/coupons/signin" data-dtm="signin">Sign In</a>
+    </li>
+  </ul>
+<div class="branding__social-icons">
+  <ul>
+    <li class="social__icon social__icon-facebook">
+      <a class="icon-facebook-circled" title="Valpak Facebook page" href="https://www.facebook.com/Valpak" target="_blank" data-dtm="valpak-social-link" rel="nofollow"></a>
+    </li>
+    <li class="social__icon social__icon-twitter">
+      <a class="icon-twitter-circled" title="Valpak Twitter page" href="https://twitter.com/valpakcoupons" target="_blank" data-dtm="valpak-social-link" rel="nofollow"></a>
+    </li>
+    <li class="social__icon social__icon-pinterest">
+      <a class="icon-pinterest-circled" title="Valpak Pinterest page" href="https://www.pinterest.com/valpak/" target="_blank" data-dtm="valpak-social-link" rel="nofollow"></a>
+    </li>
+    <li class="social__icon social__icon-gplus">
+      <a class="icon-gplus-circled" title="Valpak Google+ page" href="https://plus.google.com/+valpak/posts" target="_blank" data-dtm="valpak-social-link" rel="nofollow"></a>
+    </li>
+    <li class="social__icon social__icon-instagram">
+      <a class="icon-instagram" title="Valpak Instagram page" href="https://www.instagram.com/valpakcoupons" target="_blank" data-dtm="valpak-social-link" rel="nofollow"></a>
+    </li>
+    <li class="social__icon social__icon-youtube">
+      <a class="icon-youtube-1" title="Valpak Media Youtube Channel" href="https://www.youtube.com/user/CoxTargetMedia" target="_blank" data-dtm="valpak-social-link" rel="nofollow"></a>
+    </li>
+    <li class="social__icon social__icon-mobile">
+      <a class="icon-mobile" title="Valpak - Free Coupon App" href="/coupons/show/mobileapps" data-dtm="footer-mobile-apps"></a>
+    </li>
+    </ul>
+</div>
+</div>
+</div><div class="wrapper" >
+
+    <div class="site-header" itemscope itemtype="http://schema.org/Organization">
+
+  <div class="container">
+
+    <div class="header__container">
+
+        <div class="toggle__off-canvas-nav">
+          <button data-action="toggleOffCanvasNav" class="btn--icon btn--chromeless icon-menu btn--header-toggle"></button>
+        </div>
+
+        <div class="branding">
+          <a class="branding__site-logo" href="/"><img src="/public/images/valpak-logo-reversed@2x.png" alt="Valpak" itemprop="logo" /></a>
+          <img class="logo-tagline" src="/public/images/valpak-logo-tagline.png" alt="Open the neighborhood" />
+          </div>
+
+        <div class="toggle__mini-search">
+          <div class="popover" data-popover>
+            <button data-toggle class="icon-search-1 popover__toggle btn--header-toggle"></button>
+            <div class="header__search--compact popover__content" data-component="KeywordSearch">
+              <h6 class="h6 semi-strong push-half--bottom">Find Coupons and Savings</h6>
+              <form class="header__search-form--compact container" action="/coupons/query" method="get" data-form="keyword-search">
+                <input type="hidden" name="geo" value="Norfolk, VA">
+                <input type="hidden" name="f1" value="keyword">
+                <input type="search" name="keywords" class="push-quarter--bottom wide" placeholder="Company, product or service">
+                <button type="submit" class="btn" data-dtm="click-search">Go</button>
+              </form>
+              <p class="input-error-msg push--top-1">Enter a valid city and state or postal code.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__alt-links">
+          <ul>
+            <li><a class="icon-mobile" title="Valpak Mobile Apps" href="/coupons/show/mobileapps" data-dtm="header-mobile-apps">Mobile Apps</a></li>
+            <li><a title="Valpak Blog" href="http://www.valpak.com/blog/" target="_blank" data-dtm="header-blog">Valpak Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="header__search" data-component="KeywordSearch">
+          <div class="header__search-form">
+            <form class="container" action="/coupons/query" method="get" data-form="keyword-search">
+              <input type="hidden" name="geo" value="Norfolk, VA">
+              <input type="hidden" name="f1" value="keyword">
+              <input type="search" name="keywords" class="keyword-typeahead" placeholder="Company, product or service">
+
+              <button class="btn btn--info ladda-button" type="submit" data-style="slide-left" data-dtm="click-search"><span class="ladda-label">Search</span></button>
+            </form>
+            <p class="input-error-msg">Enter a valid city and state or postal code.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <nav class="header__nav">
+        <ul class="header__nav--primary" data-component="site-nav">
+  <li><a class="header__nav__link site-nav__link js-geo-change" href="" data-dtm="view-local-coupons">Local Coupons</a></li>
+    <li>
+    <a class="header__nav__link site-nav__link" href="https://www.valpak.com/coupons/coupon-codes/featured" data-dtm="view-coupon-codes">Coupon Codes</a>
+      </li>
+<li>
+    <a class="header__nav__link site-nav__link" href="https://www.valpak.com/coupons/savings/groceries" data-dtm="view-grocery-coupons">Grocery Coupons</a>
+      </li>
+</ul>
+
+<div id="geo-change" class="visibly--removed">
+
+  <div class="geo-change__content constrain--xs js-invisible push--bottom-1">
+    <h6 class="h5 semi-strong icon-location-1 push--bottom-2">
+    Find Local Coupons in Your Neighborhood</h6>
+
+    <form data-form="geo-search" class="container">
+      <input type="hidden" name="f1" value="home">
+      <input type="text" name="geo" class="geo-typeahead tall" placeholder="ex. 'New York, NY' or '10108'" value="Norfolk, VA">
+      <button type="submit" class="btn tall" data-dtm="change-location">GO</button>
+    </form>
+
+    <p class="input-error-msg push--top-1">Enter a valid city, state or zip code</p>
+  </div>
+</div><ul class="header__nav--secondary">
+    <li>
+      <a class="header__nav__link header__nav__link--become-member " href="/coupons/signup" data-dtm="signup">Sign Up For Great Savings</a>
+    </li>
+    <li>
+      <a class="header__nav__link " href="/coupons/signin" data-dtm="signin">Sign In</a>
+    </li>
+  </ul>
+</nav>
+
+    </div> <!-- .container -->
+</div> <!-- .site-header --><div class="container image-container">
+      <a data-upickem="true" data-embed="promotion" data-id="224048" data-opguid="cf9cfd71-04a1-4070-a22e-ea7d4c1f7973" class="js-contest-entry" href="javascript:;" title="Win dinner and a movie - Over $3000 in prizes for 25 winners" data-dtm="theme_to_contest">
+            <img class="fluid img--center" src="https://www.valpak.com/images/user-media/C3_NightOut_ThemePage.jpg" alt="Win dinner and a movie - Over $3000 in prizes for 25 winners" data-rules="" />
+          </a>
+        </div>
+
+    <div class="container">
+      <div class="promo__hero round--top promo--secondaryThemeColor">
+        <h1 class="promo__hero-type">Fun funds! Save at restaurants and on things to do in your city.</h1>
+        <div class="promo__hero__social"><div data-component="Social" class="social-likes social-likes_notext " data-counters="no" data-title="A Time to Thrill">
+
+  <div class="facebook" title="Share link on Facebook" data-dtm="facebook-share"></div>
+  <div class="twitter" title="Share link on Twitter" data-dtm="twitter-share" data-title="I’m out and about with @Valpakcoupons local deals on restaurants and #stufftodo #NightPak" data-url="https://www.valpak.com/promotions/special-occasion-savings?vpref=TWSOCIAL-SpecialOccasion2016"></div>
+  <div class="pinterest" title="Share image on Pinterest" data-media="https://www.valpak.com/images/user-media/C3_NightOut_SocialShare.jpg" data-dtm="pinterest-share" data-title="I’m out and about with Valpak local deals on restaurants and #stufftodo #NightPak" data-url="https://www.valpak.com/promotions/special-occasion-savings?vpref=PISOCIAL-SpecialOccasion2016"></div>
+  <div class="emailshare social-likes__widget social-likes__widget_mail" title="Share link via email" data-dtm="email-share">
+      <a class="social-likes__button social-likes__button_mail" href="" title="Share link via email"><span class="social-likes__icon social-likes__icon_mail"></span></a>
+    </div>
+  </div>
+
+<div class="visibly--removed">
+    <div id="EmailShareForm">
+
+  <div class="constrain--xs email-share-form" data-mailref="" data-email-url="https://www.valpak.com/promotions/special-occasion-savings?vpref=ShareLandingEM-SpecialOccasion2016">
+
+    <h3 class="email-share-form__title page-title push--bottom-4 icon-mail-1">Share this via Email</h3> 
+    
+    <form class="email-share-form__form" action="/coupons/share" method="post">
+       
+      <div class="push--bottom-2">
+        <label class="p3 semi-strong" for="to">To:</label>
+        <input name="to" type="email"/>
+        <p data-error-for="to" class="input-error-msg push--top-1">Enter a valid email address.</p>
+      </div>
+
+      <div class="push--bottom-2">
+        <label class="p3 semi-strong" for="from">From:</label>
+        <input name="from" type="email"/>
+        <p data-error-for="from" class="input-error-msg push--top-1">Enter a valid email address.</p>
+      </div>
+
+      <div class="push--bottom-2">
+        <label class="p3 semi-strong" for="subject">Subject:</label>
+        <input name="subject" type="text" value="A Time to Thrill" readonly/>
+      </div>
+
+      <div class="push--bottom-2">
+        <label class="p3 semi-strong" for="body">Body:</label>
+        <textarea name="body" rows="10">I’m out and about with Valpak local deals on restaurants and stuff to do! #NightPak</textarea>
+      </div>
+
+      <div class="push--bottom-4">
+        <label class="p3 semi-strong" for="url">URL:</label>
+        <input name="url" type="text" value="https://www.valpak.com/promotions/special-occasion-savings" readonly/>
+      </div>
+
+      <div class="captcha push--bottom-4"> 
+        <div class="captcha__wrapper push--bottom-1">
+          <img class="captcha__image" src="/coupons/captcha?id=792897322" alt="Captcha Phrase">
+        </div>
+        <label class="text--center captcha__input-label" for="code">Enter the text shown above:</label>
+        <div class="captcha__input">
+          <input type="text" name="code"/>
+          <p data-error-for="code" class="input-error-msg push--top-1">Invalid captcha text.</p>
+        </div>
+      </div>
+
+      <input type="hidden" name="id" value="792897322" />
+
+      <div>
+        <button type="submit" class="btn ladda-button" data-style="slide-left">Send Email</button>
+      </div>
+ 
+    </form>
+
+    <div class="form-success-msg" class="visibly--removed">Thanks for sharing!</div>
+
+  </div>
+
+</div> </div>
+</div>
+      </div>
+
+      <div class="results-listing--promo results-listing--promo--national">
+          <ul class="listings listings--gallery--wide">
+            <li class="listing listing--affiliate--fancy"
+    data-product-log='{"t":"s_7","ordId":1124450,"zmId":35710364}'
+    data-component-uid="D_7_1124450_35710364_5179"
+    data-offer-url="/external?componentUID=D_7_1124450_35710364_5179"
+    data-listing-type="SDC"
+    data-offer-id="1124450"
+    data-zone-map-id="35710364"
+    data-merchant-id="5179"
+    data-coupon-action="3"
+    data-data-partner-id="7">
+
+  <div class="listing__body">
+
+    <div class="listing__logo">
+      <div data-action="doCouponCodeWindowSwap" data-dtm="listing-logo_get-coupon-code">
+        <img class="fluid" src="https://d7olld39l2hok.cloudfront.net/logo/4311898.png" alt="TicketsNow.com coupon codes" />
+      </div>
+    </div>
+
+    <div class="listing__detail">
+      <h4 class="listing__merchant-name" data-dtm="affiliate-listing-merchant-name">TicketsNow.com</h4>
+      <h2 class="listing__title fake-link" data-action="doCouponCodeWindowSwap" data-dtm="listing-title_get-coupon-code">Save $20.00 off Sitewide if you spend $200+ with Promo Code</h2>
+      <h2 class="listing__description" data-dtm="affiliate-listing-description">Offer requires minimum spend of $200. Enter the code provided at checkout, see website for details and exclusions.</h2>
+    </div>
+
+  </div> <div class="listing__footer">
+  	<button class="listing__primary-action--fancy btn btn--bordered" data-action="doCouponCodeWindowSwap" data-dtm="get-coupon-code" data-dtm-title="National">Get Code</button>
+  		</div> </li><li class="listing listing--affiliate--fancy"
+    data-product-log='{"t":"s_7","ordId":4265695,"zmId":133088959}'
+    data-component-uid="D_7_4265695_133088959_233046"
+    data-offer-url="/external?componentUID=D_7_4265695_133088959_233046"
+    data-listing-type="SDC"
+    data-offer-id="4265695"
+    data-zone-map-id="133088959"
+    data-merchant-id="233046"
+    data-coupon-action="3"
+    data-data-partner-id="7">
+
+  <div class="listing__body">
+
+    <div class="listing__logo">
+      <div data-action="doCouponCodeWindowSwap" data-dtm="listing-logo_get-coupon-code">
+        <img class="fluid" src="https://d7olld39l2hok.cloudfront.net/logo/4215134.png" alt="GameStop coupon codes" />
+      </div>
+    </div>
+
+    <div class="listing__detail">
+      <h4 class="listing__merchant-name" data-dtm="affiliate-listing-merchant-name">GameStop</h4>
+      <h2 class="listing__title fake-link" data-action="doCouponCodeWindowSwap" data-dtm="listing-title_get-coupon-code">Get Free Shipping if you spend $25+</h2>
+      <h2 class="listing__description" data-dtm="affiliate-listing-description">Offer requires minimum spend of $25. Offer includes Free Shipping.</h2>
+    </div>
+
+  </div> <div class="listing__footer">
+  	<button class="listing__primary-action--fancy btn btn--bordered" data-action="doCouponCodeWindowSwap" data-dtm="get-coupon-code" data-dtm-title="National">Get Code</button>
+  		</div> </li><li class="listing listing--affiliate--fancy"
+    data-product-log='{"t":"s_7","ordId":1073741847,"zmId":-1072888697}'
+    data-component-uid="D_7_1073741847_-1072888697_99999995"
+    data-offer-url="/external?componentUID=D_7_1073741847_-1072888697_99999995"
+    data-listing-type="SDC"
+    data-offer-id="1073741847"
+    data-zone-map-id="-1072888697"
+    data-merchant-id="99999995"
+    data-coupon-action="3"
+    data-data-partner-id="7">
+
+  <div class="listing__body">
+
+    <div class="listing__logo">
+      <div data-action="doCouponCodeWindowSwap" data-dtm="listing-logo_get-coupon-code">
+        <img class="fluid" src="https://d7olld39l2hok.cloudfront.net/logo/1534269.png" alt="MovieTickets.com coupon codes" />
+      </div>
+    </div>
+
+    <div class="listing__detail">
+      <h4 class="listing__merchant-name" data-dtm="affiliate-listing-merchant-name">MovieTickets.com</h4>
+      <h2 class="listing__title fake-link" data-action="doCouponCodeWindowSwap" data-dtm="listing-title_get-coupon-code">20% Off MovieTickets.com <br>
+gift cards</h2>
+      <h2 class="listing__description" data-dtm="affiliate-listing-description">20% Off MovieTickets.com gift cards</h2>
+    </div>
+
+  </div> <div class="listing__footer">
+  	<button class="listing__primary-action--fancy btn btn--bordered" data-action="doCouponCodeWindowSwap" data-dtm="get-coupon-code" data-dtm-title="National">Get Code</button>
+  		</div> </li></ul>
+        </div>
+      <div class="container container--5-8 pad--sides-2 r_container--reverse sm_pad--top-2 bg--white">
+        <div class="primary-content">
+          <div class="paginated-list">
+                <div class="listings--isolate">
+                  <h3 class="h6 strong push--bottom-2">More Ways To Save</h3>
+                  <div class="paginated-list__container">
+                    <ul class="listings listings--sdc-promo paginated-list__item-list">
+                      <li class="listing listing--affiliate" ng-show="app.showTypes.affiliate || !app.filterActive"
+    data-product-log='{"t":"s_7","ordId":4158522,"zmId":129766596}'
+    data-merchant-id="241508"
+    data-component-uid="D_7_4158522_129766596_241508"
+    data-offer-url="/external?componentUID=D_7_4158522_129766596_241508"
+    data-listing-type="SDC"
+    data-offer-id="4158522"
+    data-coupon-action="3"
+    data-zone-map-id="129766596"
+    data-data-partner-id="7">
+
+<div class="listing__body">
+
+  <div class="listing__logo">
+    <div data-action="doCouponCodeWindowSwap" data-dtm="listing-logo_get-coupon-code">
+      <img class="fluid" src="https://d7olld39l2hok.cloudfront.net/logo/4215509.png" alt="InlineSkates.com coupon codes" />
+    </div>
+  </div>
+
+  <div class="listing__detail">
+    <h4 class="listing__merchant-name" data-dtm="affiliate-listing-merchant-name">InlineSkates.com</h4>
+
+    <h2 class="listing__title fake-link" data-action="doCouponCodeWindowSwap" data-dtm="listing-title_get-coupon-code">Get Free Shipping if you spend $49+ with Coupon Code</h2>
+
+    <h2 class="listing__description" data-dtm="affiliate-listing-description">Offer requires minimum spend of $49. Includes Free Shipping.</h2>
+  </div>
+
+</div> <div class="listing__footer--simple">
+
+  <button class="listing__primary-action" data-action="doCouponCodeWindowSwap" data-dtm="get-coupon-code">Get Code</button>
+
+</div> </li><li class="listing listing--affiliate" ng-show="app.showTypes.affiliate || !app.filterActive"
+    data-product-log='{"t":"s_7","ordId":4323904,"zmId":134893438}'
+    data-merchant-id="5655"
+    data-component-uid="D_7_4323904_134893438_5655"
+    data-offer-url="/external?componentUID=D_7_4323904_134893438_5655"
+    data-listing-type="SDC"
+    data-offer-id="4323904"
+    data-coupon-action="3"
+    data-zone-map-id="134893438"
+    data-data-partner-id="7">
+
+<div class="listing__body">
+
+  <div class="listing__logo">
+    <div data-action="doCouponCodeWindowSwap" data-dtm="listing-logo_get-coupon-code">
+      <img class="fluid" src="https://d7olld39l2hok.cloudfront.net/logo/4016752.jpeg" alt="Bass Pro Shops coupon codes" />
+    </div>
+  </div>
+
+  <div class="listing__detail">
+    <h4 class="listing__merchant-name" data-dtm="affiliate-listing-merchant-name">Bass Pro Shops</h4>
+
+    <h2 class="listing__title fake-link" data-action="doCouponCodeWindowSwap" data-dtm="listing-title_get-coupon-code">Save 20% off Your Entire Order</h2>
+
+    <h2 class="listing__description" data-dtm="affiliate-listing-description">Coupon Code not required, some exclusions may apply, see store for more information.</h2>
+  </div>
+
+</div> <div class="listing__footer--simple">
+
+  <button class="listing__primary-action" data-action="doCouponCodeWindowSwap" data-dtm="get-coupon-code">Activate</button>
+
+</div> </li><li class="listing listing--affiliate" ng-show="app.showTypes.affiliate || !app.filterActive"
+    data-product-log='{"t":"s_7","ordId":4106795,"zmId":128163059}'
+    data-merchant-id="5039"
+    data-component-uid="D_7_4106795_128163059_5039"
+    data-offer-url="/external?componentUID=D_7_4106795_128163059_5039"
+    data-listing-type="SDC"
+    data-offer-id="4106795"
+    data-coupon-action="3"
+    data-zone-map-id="128163059"
+    data-data-partner-id="7">
+
+<div class="listing__body">
+
+  <div class="listing__logo">
+    <div data-action="doCouponCodeWindowSwap" data-dtm="listing-logo_get-coupon-code">
+      <img class="fluid" src="https://www.valpak.com/img/theme/orbitz.jpg" alt="Orbitz coupon codes" />
+    </div>
+  </div>
+
+  <div class="listing__detail">
+    <h4 class="listing__merchant-name" data-dtm="affiliate-listing-merchant-name">Orbitz</h4>
+
+    <h2 class="listing__title fake-link" data-action="doCouponCodeWindowSwap" data-dtm="listing-title_get-coupon-code">Extra 15% on Hotel Stays</h2>
+
+    <h2 class="listing__description" data-dtm="affiliate-listing-description">Enter this code at checkout to get additional 15% discount on hotel stays, save up to 28% in total. Restrictions may apply. See site for more details.</h2>
+  </div>
+
+</div> <div class="listing__footer--simple">
+
+  <button class="listing__primary-action" data-action="doCouponCodeWindowSwap" data-dtm="get-coupon-code">Get Code</button>
+
+</div> </li><li class="listing listing--affiliate" ng-show="app.showTypes.affiliate || !app.filterActive"
+    data-product-log='{"t":"s_7","ordId":4159074,"zmId":129783708}'
+    data-merchant-id="5669"
+    data-component-uid="D_7_4159074_129783708_5669"
+    data-offer-url="/external?componentUID=D_7_4159074_129783708_5669"
+    data-listing-type="SDC"
+    data-offer-id="4159074"
+    data-coupon-action="3"
+    data-zone-map-id="129783708"
+    data-data-partner-id="7">
+
+<div class="listing__body">
+
+  <div class="listing__logo">
+    <div data-action="doCouponCodeWindowSwap" data-dtm="listing-logo_get-coupon-code">
+      <img class="fluid" src="https://www.valpak.com/img/theme/stubhub.jpg" alt="StubHub coupon codes" />
+    </div>
+  </div>
+
+  <div class="listing__detail">
+    <h4 class="listing__merchant-name" data-dtm="affiliate-listing-merchant-name">StubHub</h4>
+
+    <h2 class="listing__title fake-link" data-action="doCouponCodeWindowSwap" data-dtm="listing-title_get-coupon-code">Get $7.50 off Sitewide with Coupon Code</h2>
+
+    <h2 class="listing__description" data-dtm="affiliate-listing-description">Enter the code provided at checkout, see website for details and exclusions.</h2>
+  </div>
+
+</div> <div class="listing__footer--simple">
+
+  <button class="listing__primary-action" data-action="doCouponCodeWindowSwap" data-dtm="get-coupon-code">Get Code</button>
+
+</div> </li><li class="listing listing--affiliate" ng-show="app.showTypes.affiliate || !app.filterActive"
+    data-product-log='{"t":"s_7","ordId":777419,"zmId":24952403}'
+    data-merchant-id="311842"
+    data-component-uid="D_7_777419_24952403_311842"
+    data-offer-url="/external?componentUID=D_7_777419_24952403_311842"
+    data-listing-type="SDC"
+    data-offer-id="777419"
+    data-coupon-action="3"
+    data-zone-map-id="24952403"
+    data-data-partner-id="7">
+
+<div class="listing__body">
+
+  <div class="listing__logo">
+    <div data-action="doCouponCodeWindowSwap" data-dtm="listing-logo_get-coupon-code">
+      <img class="fluid" src="https://d7olld39l2hok.cloudfront.net/logo/4215225.png" alt="Golden Tours coupon codes" />
+    </div>
+  </div>
+
+  <div class="listing__detail">
+    <h4 class="listing__merchant-name" data-dtm="affiliate-listing-merchant-name">Golden Tours</h4>
+
+    <h2 class="listing__title fake-link" data-action="doCouponCodeWindowSwap" data-dtm="listing-title_get-coupon-code">Save up to 39% on Featured Tours</h2>
+
+    <h2 class="listing__description" data-dtm="affiliate-listing-description">Coupon Code not required, some exclusions may apply, see site for more details.</h2>
+  </div>
+
+</div> <div class="listing__footer--simple">
+
+  <button class="listing__primary-action" data-action="doCouponCodeWindowSwap" data-dtm="get-coupon-code">Activate</button>
+
+</div> </li><li class="listing listing--affiliate" ng-show="app.showTypes.affiliate || !app.filterActive"
+    data-product-log='{"t":"s_7","ordId":4329836,"zmId":135077330}'
+    data-merchant-id="285023"
+    data-component-uid="D_7_4329836_135077330_285023"
+    data-offer-url="/external?componentUID=D_7_4329836_135077330_285023"
+    data-listing-type="SDC"
+    data-offer-id="4329836"
+    data-coupon-action="3"
+    data-zone-map-id="135077330"
+    data-data-partner-id="7">
+
+<div class="listing__body">
+
+  <div class="listing__logo">
+    <div data-action="doCouponCodeWindowSwap" data-dtm="listing-logo_get-coupon-code">
+      <img class="fluid" src="https://d7olld39l2hok.cloudfront.net/logo/4214521.png" alt="Busch Gardens coupon codes" />
+    </div>
+  </div>
+
+  <div class="listing__detail">
+    <h4 class="listing__merchant-name" data-dtm="affiliate-listing-merchant-name">Busch Gardens</h4>
+
+    <h2 class="listing__title fake-link" data-action="doCouponCodeWindowSwap" data-dtm="listing-title_get-coupon-code">$20 off Regular Price</h2>
+
+    <h2 class="listing__description" data-dtm="affiliate-listing-description">Follow this link to get $20 savings on regular price. Restrictions may apply, limited time offer. See website for more details.</h2>
+  </div>
+
+</div> <div class="listing__footer--simple">
+
+  <button class="listing__primary-action" data-action="doCouponCodeWindowSwap" data-dtm="get-coupon-code">Activate</button>
+
+</div> </li><li class="listing listing--affiliate" ng-show="app.showTypes.affiliate || !app.filterActive"
+    data-product-log='{"t":"s_7","ordId":4381119,"zmId":136667103}'
+    data-merchant-id="214435"
+    data-component-uid="D_7_4381119_136667103_214435"
+    data-offer-url="/external?componentUID=D_7_4381119_136667103_214435"
+    data-listing-type="SDC"
+    data-offer-id="4381119"
+    data-coupon-action="3"
+    data-zone-map-id="136667103"
+    data-data-partner-id="7">
+
+<div class="listing__body">
+
+  <div class="listing__logo">
+    <div data-action="doCouponCodeWindowSwap" data-dtm="listing-logo_get-coupon-code">
+      <img class="fluid" src="https://d7olld39l2hok.cloudfront.net/logo/3265017.jpeg" alt="Hotels.com coupon codes" />
+    </div>
+  </div>
+
+  <div class="listing__detail">
+    <h4 class="listing__merchant-name" data-dtm="affiliate-listing-merchant-name">Hotels.com</h4>
+
+    <h2 class="listing__title fake-link" data-action="doCouponCodeWindowSwap" data-dtm="listing-title_get-coupon-code">$20.00 off Sitewide if you spend $150+ with Coupon Code</h2>
+
+    <h2 class="listing__description" data-dtm="affiliate-listing-description">Minimum spend of $150 required. Enter the code provided at checkout, see site for details, restrictions may apply.</h2>
+  </div>
+
+</div> <div class="listing__footer--simple">
+
+  <button class="listing__primary-action" data-action="doCouponCodeWindowSwap" data-dtm="get-coupon-code">Get Code</button>
+
+</div> </li><li class="listing listing--affiliate" ng-show="app.showTypes.affiliate || !app.filterActive"
+    data-product-log='{"t":"s_7","ordId":3718113,"zmId":116113917}'
+    data-merchant-id="206218"
+    data-component-uid="D_7_3718113_116113917_206218"
+    data-offer-url="/external?componentUID=D_7_3718113_116113917_206218"
+    data-listing-type="SDC"
+    data-offer-id="3718113"
+    data-coupon-action="3"
+    data-zone-map-id="116113917"
+    data-data-partner-id="7">
+
+<div class="listing__body">
+
+  <div class="listing__logo">
+    <div data-action="doCouponCodeWindowSwap" data-dtm="listing-logo_get-coupon-code">
+      <img class="fluid" src="https://d7olld39l2hok.cloudfront.net/logo/4311748.png" alt="ShindigZ coupon codes" />
+    </div>
+  </div>
+
+  <div class="listing__detail">
+    <h4 class="listing__merchant-name" data-dtm="affiliate-listing-merchant-name">ShindigZ</h4>
+
+    <h2 class="listing__title fake-link" data-action="doCouponCodeWindowSwap" data-dtm="listing-title_get-coupon-code">Military Discount Program: 20% off All Orders</h2>
+
+    <h2 class="listing__description" data-dtm="affiliate-listing-description">Use this code at checkout to get 20% discount on all orders for Military personels. See website for details. Restrictions may apply.</h2>
+  </div>
+
+</div> <div class="listing__footer--simple">
+
+  <button class="listing__primary-action" data-action="doCouponCodeWindowSwap" data-dtm="get-coupon-code">Get Code</button>
+
+</div> </li></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        <div class="primary-sidebar">
+          <div class="box box--info round--corners promo__blog-articles">
+            <div class="box__figure box__figure--info pad--2 social__feed--header promo--secondaryThemeColor">
+              <h3 class="h6 strong">A Time to Thrill</h3>
+            </div>
+            <div class="box__figure pad--2">
+              <div class="article_columns media">
+                  <div class="custom_article_left">
+                    <img class="fluid blog-article-thumbnail" src="https://www.valpak.com/images/user-media/movies2016.jpg" alt="30 Movies to Look Forward to" />
+                  </div>
+                  <div class="custom_article_right">
+                    <div class="article_heading">
+                      <a class="article_link" href="https://www.valpak.com/blog/30-movies-to-look-forward-to-in-2016" target="_blank" data-dtm="SocialArticle" title="30 Movies to Look Forward to">30 Movies to Look Forward to</a>
+                    </div>
+                    <div class="article_description">
+                      There’s plenty to get excited about in the movie theaters for 2016. Particularly, the number of Marvel and Disney movies that are coming out! Check out our faves for next 12 months. So many movies, so little time; which ones will you be seeing?  &nbsp; <a class="article_link" href="https://www.valpak.com/blog/30-movies-to-look-forward-to-in-2016" target="_blank" data-dtm="SocialArticle" title="30 Movies to Look Forward to">more...</a>
+                    </div>
+                  </div>
+                </div>
+              <div class="article_columns media">
+                  <div class="custom_article_left">
+                    <img class="fluid blog-article-thumbnail" src="https://www.valpak.com/images/user-media/disney.jpg" alt="Must-Know Disney World <BR> Tips and Tricks" />
+                  </div>
+                  <div class="custom_article_right">
+                    <div class="article_heading">
+                      <a class="article_link" href="https://www.valpak.com/blog/must-know-disney-world-tips-and-tricks" target="_blank" data-dtm="SocialArticle" title="Must-Know Disney World <BR> Tips and Tricks">Must-Know Disney World <BR> Tips and Tricks</a>
+                    </div>
+                    <div class="article_description">
+                      Whether you’re headed to a Disney theme park soon or in the future, you’re bound to lay down a chunk of change. While it isn’t quite “Disney Magic,” you can use these tips and tricks to save money and time when you visit Disney World in Orlando.  &nbsp; <a class="article_link" href="https://www.valpak.com/blog/must-know-disney-world-tips-and-tricks" target="_blank" data-dtm="SocialArticle" title="Must-Know Disney World <BR> Tips and Tricks">more...</a>
+                    </div>
+                  </div>
+                </div>
+              <div class="article_columns media">
+                  <div class="custom_article_left">
+                    <img class="fluid blog-article-thumbnail" src="https://www.valpak.com/images/user-media/dining-out.jpg" alt="16 Ways to Save Money <BR> on Dining Out" />
+                  </div>
+                  <div class="custom_article_right">
+                    <div class="article_heading">
+                      <a class="article_link" href="https://www.valpak.com/blog/16-ways-to-save-money-on-dining-out" target="_blank" data-dtm="SocialArticle" title="16 Ways to Save Money <BR> on Dining Out">16 Ways to Save Money <BR> on Dining Out</a>
+                    </div>
+                    <div class="article_description">
+                      Dining out should be an enjoyable experience, so there’s no reason to pay more than you need to. Common sense and a little investigating online should help you fill up without emptying your wallet. Learn these 16 tips to help you save money. &nbsp; <a class="article_link" href="https://www.valpak.com/blog/16-ways-to-save-money-on-dining-out" target="_blank" data-dtm="SocialArticle" title="16 Ways to Save Money <BR> on Dining Out">more...</a>
+                    </div>
+                  </div>
+                </div>
+              <div class="read_more_button_container text--center">
+                <a class="btn btn--info btn--bordered read_more_button" href="http://www.valpak.com/blog" target="_blank" data-dtm="SocialArticle" title="More Tips">More Tips</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box box--info round--corners promo__social-widget">
+              <div class="box__figure--info social__feed--header promo--secondaryThemeColor">
+                  <h4 class="h6 strong">Follow us on Twitter @valpakcoupons</h4>
+                </div>
+              <div id="widget-container" class="soft-qtr">
+                <a class="twitter-timeline" href="https://twitter.com/hashtag/NightPak" data-widget-id="689890967231545344">#NightPak Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+            </div>
+          </div>
+      </div>
+
+      <div class="soft-half bg--white">
+          <div class="box round--corners soft-qtr flush">
+            <div class="user-type box__figure pad--2">
+              <p>It&#39;s time to treat yourself to a night on the town. Go on, you deserve it! Worried about spending too much? There&#39;s no need when you use Valpak online coupons for <a href="https://www.valpak.com/c/category/arts-entertainment">arts and entertainment</a>. And when you enter our contest, you could win dinner and a movie on us!</p>
+
+<p>You’ll find businesses offering discounts on free-time favorites. Want to catch the latest 3-D blockbuster? Go to our <a href="https://www.valpak.com/c/coupon-codes/movieticketscom-coupons">MovieTickets.com</a> coupons page. You’ll find deals that leave room in your wallet for that extra-large popcorn.  </p>
+
+<p>Dying to see a concert, an ice show or your favorite pro sports team? Access <a href="https://www.valpak.com/c/coupon-codes/ticketsnow-coupons">TicketsNow.com</a> and save on events coming to your area. Grab <a href="https://www.valpak.com/c/coupon-codes/gamestop-coupons">Gamestop.com</a> promo codes and make the babysitter&#39;s life a little easier while you enjoy a date night. We also offer deals on <a href="https://www.valpak.com/c/coupon-codes/hotelscom-coupons">hotels</a>, sporting goods and theme parks like <a href="https://www.valpak.com/c/coupon-codes/busch-gardens-coupons">Busch Gardens</a>.</p>
+
+<p>With a few clicks, you can arrange family fun time or a romantic evening without breaking the bank; and with a few more, you could be one of our 25 lucky night out drawing winners. Let the good times roll! </p>
+
+<p><strong>NO PURCHASE NECESSARY. A PURCHASE WILL NOT IMPROVE YOUR CHANCES OF WINNING. YOU HAVE NOT YET WON.</strong> Void where prohibited. Open to legal residents of the 50 United States and D.C., who are 18 years of age or older, or the age of majority in their state of residence, whichever is older. Sweepstakes begins 2/1/16 and ends 3/4/16. Total available prizes are $3,125.00.  Odds of winning depend on the number of eligible entries received. See complete <a href="https://www.valpak.com/promotions/special-occasion-savings?showRules=true">Official Rules</a> for entry instructions, full prize description, restrictions and other important details. Sponsored by Valpak Direct Marketing Systems, Inc., 805 Executive Center Dr W, St Petersburg, FL 33702.</p></div>
+          </div>
+        </div>
+      </div>
+
+    <script>
+      require(['App'], function(App) {
+        App.dtmPage = "PR_SpecialOccasion2016"
+      });
+    </script>
+
+  <div class="footer">
+  <div class="footer-container container push--top">
+    <ul class="footer-nav-list">
+      <li>
+        <a title="Learn about Valpak" href="/coupons/show/aboutus" data-dtm="footer-about-us">About</a>
+      </li>
+      <li>
+        <a title="Valpak Careers" href="http://www.valpakcareers.com" target="_blank" rel="nofollow" data-dtm="footer-careers">Careers</a>
+      </li>
+      <li>
+        <a title="Cox Target Media Targets Clients for Measurable Results. Learn more..." href="https://www.valpak.com/advertise/" target="_blank" data-dtm="footer-advertising-info">Advertise</a>
+      </li>
+      <li>
+        <a title="About Valpak Franchise Opportunities" href="http://www.valpakfranchising.com" target="_blank" rel="nofollow" data-dtm="footer-franchise-opportunities">Franchising</a>
+      </li>
+      <li>
+        <a title="Valpak in the News" href="http://www.valpak.com/media/press-room.jsp" target="_blank" data-dtm="footer-press-releases">Newsroom</a>
+      </li>
+      <li>
+        <a title="Contact Valpak" href="" data-triggers="contactUs" data-dtm="footer-contact-us" rel="nofollow">Contact</a>
+      </li>
+      <li>
+        <a title="Valpak Saves/Community Outreach" href="/community" data-dtm="footer-community">Community</a>
+      </li>
+    </ul>
+
+    <div class="branding__social-icons">
+  <ul>
+    <li class="social__icon social__icon-facebook">
+      <a class="icon-facebook-circled" title="Valpak Facebook page" href="https://www.facebook.com/Valpak" target="_blank" data-dtm="valpak-social-link" rel="nofollow"></a>
+    </li>
+    <li class="social__icon social__icon-twitter">
+      <a class="icon-twitter-circled" title="Valpak Twitter page" href="https://twitter.com/valpakcoupons" target="_blank" data-dtm="valpak-social-link" rel="nofollow"></a>
+    </li>
+    <li class="social__icon social__icon-pinterest">
+      <a class="icon-pinterest-circled" title="Valpak Pinterest page" href="https://www.pinterest.com/valpak/" target="_blank" data-dtm="valpak-social-link" rel="nofollow"></a>
+    </li>
+    <li class="social__icon social__icon-gplus">
+      <a class="icon-gplus-circled" title="Valpak Google+ page" href="https://plus.google.com/+valpak/posts" target="_blank" data-dtm="valpak-social-link" rel="nofollow"></a>
+    </li>
+    <li class="social__icon social__icon-instagram">
+      <a class="icon-instagram" title="Valpak Instagram page" href="https://www.instagram.com/valpakcoupons" target="_blank" data-dtm="valpak-social-link" rel="nofollow"></a>
+    </li>
+    <li class="social__icon social__icon-youtube">
+      <a class="icon-youtube-1" title="Valpak Media Youtube Channel" href="https://www.youtube.com/user/CoxTargetMedia" target="_blank" data-dtm="valpak-social-link" rel="nofollow"></a>
+    </li>
+    <li class="social__icon social__icon-mobile">
+      <a class="icon-mobile" title="Valpak - Free Coupon App" href="/coupons/show/mobileapps" data-dtm="footer-mobile-apps"></a>
+    </li>
+    </ul>
+</div>
+<p class="p2">&copy; 2016&nbsp;<a title="Learn about Cox Target Media" href="http://www.coxtarget.com" data-dtm="footer-ctm">Cox Target Media</a>, Inc. All Rights Reserved.</p>
+
+    <div class="footer-legal">
+      <ul>
+        <li>
+          <a title="Valpak Trademark/Copyright Notification" href="/coupons/show/copyright" data-dtm="footer-trademark-copyright">Legal</a>
+        </li>
+        <li>
+          <a title="Valpak Terms of Use" href="/coupons/show/termsofuse" data-dtm="footer-terms-use">Terms of Use</a>
+        </li>
+        <li>
+          <a title="Valpak Privacy Policy" href="/coupons/show/privacypolicy" data-dtm="footer-privacy-policy">Privacy</a>
+        </li>
+        <li>
+          <a title="Valpak Site Map" href="/coupons/show/sitemap" data-dtm="footer-sitemap">Site Map </a></li>
+        <li>
+          <a title="Environmental Certifications" href="/environment/" target="_blank" data-dtm="footer-enviro-certs">Sustainability</a>
+        </li>
+        <li>
+          <a title="Join Opinion Connection" href="/connect/" target="_blank" rel="nofollow" data-dtm="footer-opinion-connection">Opinions Wanted</a>
+        </li>
+        <li>
+            <a title="Address Removal" href="/coupons/show/mailinglistsuppression" data-dtm="footer-address-removal">Address Removal</a>
+          </li>
+        </ul>
+    </div>
+  </div>
+</div></div> <div id="printContainer"></div>
+
+  <script>
+    // Last chance to execute JS before
+// DTM _satellite logs page view
+
+require(['App', 'dtm'], function(App, satellite){
+
+  // Helper to get all elements with given attribute
+  function getAllElementsWithAttribute(attribute) {
+    var matchingElements = [];
+    var allElements = document.getElementsByTagName('*');
+    for (var i = 0, n = allElements.length; i < n; i++) {
+      if (allElements[i].getAttribute(attribute)) matchingElements.push(allElements[i]);
+    }
+    return matchingElements;
+  }
+
+  // Get all product log elements (listings) and
+  // store data-product-log string to VPAPP global
+  var productsSelector = 'data-product-log';
+  var products = getAllElementsWithAttribute(productsSelector);
+  
+  App.productsChunkCount = 10;
+  App.productViewsChunk = 0;
+
+  for (var i = 0; i < products.length; i++) {
+    App.results.productViews.push( products[i].getAttribute(productsSelector) )
+  }
+
+  for (var k = 0; k < App.results.productViews.length; k++) {
+    if (k % App.productsChunkCount === 0) {
+      _satellite.track('productViewsLogChunk')
+    }
+  }
+  
+});
+
+</script>
+
+</body>
+</html>

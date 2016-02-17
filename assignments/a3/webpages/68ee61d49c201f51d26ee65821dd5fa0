@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Spark Profit</title>
+<!-- COPYRIGHT 2011-2016 NOUS GLOBAL MARKETS LIMITED (nous.net). ALL RIGHTS RESERVED unless otherwise indicated -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta http-equiv="Content-Language" content="en" />
+<link rel="icon" type="image/png" href="https://sparkprofit.com/app/static/icons/sp/generic/256.png" />
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://sparkprofit.com/app/static/icons/sp/generic/16.ico" />
+
+<!-- Page specific commonly used settings  -->
+<meta property="og:title" content="Spark Profit">
+<meta property="og:url" content="https://sparkprofit.com/">
+<meta property="og:description" content="Spark Profit: Extra income in your spare time! With our free, easy to use app you can get skilled at making market predictions, and even earn money at the same time. Many people at the top of our leaderboards started with zero experience. Your predictions help us make money by trading, which is how we pay you.">
+<meta name="Description" content="Virtual trading, real profits. Spark Profit pays for your predictions! Anyone can use this free, simple app but skilled predictors can earn real money, paid weekly. We use your actions in this market simulation service to trade our own money and make profits, which we then use to pay you! This unique business model allows us to guarantee that GAIN will always be completely free to use even while skilled users continue earning monetary rewards every week. You&#39;ll also get a community of people to learn from, valuable trading experience and an independent trading record that you can show to employers or investors.">
+<meta name="Keywords" content="sparkprofit,spark,profit,win,earn,cash,income,fx,forex,bitcoin,predict">
+
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+/** Our Tracking */
+window.THEORY_OPTS = {
+	videoTop : (Math.random() < 0.5)
+};
+</script>
+<style>
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
+	{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section
+	{
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+blockquote,q {
+	quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Styles start here */
+body {
+	background-color: #fff;
+	color: #414042;
+	font-size: 130%;
+	font-family: 'Open Sans', Helvetica-Neue-Light, Helvetica-Neue, Arial, sans-serif;
+	font-weight: 200;
+	text-align: center;
+}
+#everything {
+	max-width: 960px;
+	margin: auto;
+	padding: 10px;
+}
+a:link,a:visited {
+	text-decoration: none;
+	color: #666;
+}
+a:hover,a:active {
+	text-decoration: none;
+	color: #ccc;
+}
+a.ulink,a.ulink:link,a.ulink:visited,a.ulink:hover,a.ulink:active {
+	text-decoration: none;
+	color: #fff;
+}
+.meteor-slides .mslide img {
+	max-width: 100%;
+}
+header li {
+	display: inline;
+	list-style: none;
+}
+header li {
+	border: none;
+}
+header li:last-child {
+	border: none;
+}
+header li {
+	padding: 0 10px;
+}
+nav {
+	margin-top: 20px;
+	float: right;
+	font-size: 70%;
+}
+
+section,footer,header {
+	max-width: 100%;
+}
+
+.logo {
+	float: left;
+}
+
+article,header {
+	margin-bottom: 1em;
+}
+article {
+	overflow: hidden;
+}
+footer {
+	max-width: 100%;
+}
+
+footer article {
+	border-bottom: 0;
+}
+
+.exciting {
+	display: none;
+}
+.hemingway {
+	/* display: none; */
+}
+
+#slider {
+	position: relative;
+	z-index: -1;
+}
+
+#slider h2,#slider h3 {
+	position: absolute;
+	width: 450px;
+	left: 15px;
+	z-index: 99;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.6);
+	border-radius: 3px;
+	padding: 10px;
+}
+
+#slider h2 {
+	top: 51%;
+	font-size: 130%;
+}
+
+#slider h3 {
+	top: 69%;
+	font-size: 80%;
+}
+
+#how-it-works,#trading-is-easy,#testimonial-top-2,#testimonial-top,#fund-total-top-earner,#start-trading-now,
+#share
+	{
+	background-color: #e26d11;
+	color: #fff;
+	padding: 30px 60px;
+	border-top:1px solid #b91712;
+}
+
+#fund-total-top-earner,#testimonial-top,#testimonial-top-2,
+#share {
+	background-color: #f5f5f5;
+	color: #414042;
+}
+#share #twitter, #share #facebook {
+	display:inline-block;
+	text-align: left;
+	margin: 0 1em;
+}
+
+#fund-total-top-earner h2 {
+	color: #800;
+}
+
+#how-it-works .ivycat-post {
+	display: block;
+	width: 200px;
+	float: left;
+}
+
+#start-trading-now {
+	background-color: #fff;
+	color: #414042;
+}
+
+#start-trading-now a {
+	text-decoration: none;
+}
+
+#our-goals {
+	margin: 1em;
+	font-size: 80%;
+}
+
+.mobButton {
+	color: white;
+	text-align: center;
+	background-color: #c23100;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#e45b00),to(#9b0200));
+	background-image: -webkit-linear-gradient(top,#e45b00,#9b0200);
+	background-image: -moz-linear-gradient(to bottom,#e45b00,#9b0200);
+	border-radius: .6em;
+	max-width: 12em;
+	height: 4em;
+	position: relative;
+	margin: auto;
+}
+
+.mobButton>div {
+	position: absolute;
+}
+
+.mobButton>:first-child {
+	top: 15%;
+	left: 5%;
+	bottom: 15%;
+	width: 3em;
+	height: 68%;
+	max-width:30%;
+	margin:auto;
+}
+
+.mobButton>:last-child {
+	display: table;
+	height: 100%;
+	position: absolute;
+	left: 32%;
+	width: 69%;
+}
+
+.mobButton :last-child>div {
+	display: table-cell;
+	vertical-align: middle;
+}
+#joinNow>:first-child {
+	left: 10%;
+}
+
+.mobButton img {
+	max-height: 100%;
+	vertical-align: middle;
+}
+
+@media ( max-width : 700px) {
+	.mobButton>div {
+		font-size: 90%;
+	}
+	#joinNow>:first-child {
+		left: 5%;
+	}
+}
+@media ( max-width : 500px) {
+	.mobButton>div {
+		font-size: 60%;
+	}
+}
+
+#testimonial-top,#testimonial-top-2 {
+	overflow: hidden;
+}
+
+#testimonial-top-2 .ivycat-post .entry-summary,#testimonial-top .ivycat-post .entry-summary
+	{
+	background-color: #fee1c9;
+	border-radius: 5px;
+	padding: 15px 10px 0px 10px;
+	color: #414042;
+	border: 1px solid #efd5c0;
+	float: right;
+	width: 80%;
+	font-size: 80%;
+}
+
+#testimonial-top-2 .ivycat-post .featured-image,#testimonial-top .ivycat-post .featured-image
+	{
+	float: left;
+}
+.featured-player,
+#testimonial-top-2 .ivycat-post .featured-image,#testimonial-top .ivycat-post .featured-image {
+	width: 90px;
+	height: 90px;
+	border-radius: 10em;
+	border: 2px solid #fff;
+	overflow: hidden;
+	background-color: #e26d11;
+}
+.featured-player {
+	display: inline-block;
+}
+#testimonial-top-2 .ivycat-post .entry-summary {
+	float: left;
+}
+
+#testimonial-top-2 .ivycat-post .featured-image {
+	float: right;
+}
+
+#fund-total-top-earner .ivycat-post {
+	background-color: #e6e5e5;
+	border: 1px solid #ddc5b2;
+	border-radius: 5px;
+	padding: 15px 10px 0px 10px;
+	font-size: 70%;
+	position: relative;
+}
+
+#fund-total-top-earner .ivycat-post:after {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 45%;
+	top: 100%;
+	border-width: 20px 30px 20px 30px;
+	border-style: solid;
+	border-color: transparent transparent transparent transparent;
+}
+
+#fund-total-top-earner .dots:after {
+	content: ' ';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 50%;
+	top: 45px;
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ddc5b2;
+	background-color: #b81412;
+}
+
+#fund-total-top-earner .dots2:after {
+	content: ' ';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 50%;
+	top: 45px;
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ddc5b2;
+	background-color: #003366;
+}
+
+#fund-total-top-earner .ivycat-post:before {
+	width: 20px;
+	height: 20px;
+	left: 5px;
+	top: 100px;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
+}
+
+.su-row {
+	margin: auto;
+	display: inline-block;
+}
+
+.su-row .su-column {
+	display: table-cell;
+	height: 100%;
+	position: relative;
+}
+
+.top-earner {
+	width: 80px;
+}
+
+#share-this-page {
+	background-color: #524b48;
+	color: #fff;
+	padding: 40px;
+}
+
+#trading-is-easy {
+	display: block;
+	clear: both;
+	overflow: hidden;
+}
+
+#trading-is-easy .ivycat-post {
+	display: block;
+	float: left;
+	width: 33%;
+}
+
+/* typography */
+p,li,h3,h4,h5,h6 {
+	font-weight: normal;
+}
+
+p,h1,h2,h3,h4,h5,h6,li {
+	padding-bottom: 20px;
+	line-height: 1.4;
+}
+
+.half-columns p {
+	font-size: 70%;
+	text-align: left;
+}
+
+h1,h2 {
+	font-weight: normal;
+	letter-spacing: 6;
+	font-family: 'Arvo', serif;
+}
+
+h1 {
+	font-size: 180%;
+}
+
+h2 {
+	font-size: 160%;
+}
+
+h3 {
+	font-size: 100%;
+	font-weight: 200;
+}
+
+strong {
+	font-weight: bold;
+}
+
+/* lists */
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+/* Pagination */
+.pagination ol,.pagination ul {
+	margin-left: 0px;
+	padding-bottom: 20px;
+	border-bottom: solid 1px #323232;
+	margin-bottom: 10px;
+}
+
+.pagination li {
+	padding: 0 10px;
+	display: inline;
+	list-style: none;
+	border-right: 1px solid #ccc;
+}
+
+/* testimonial speech marks */
+#testimonial-top .entry-summary,#testimonial-top-2 .entry-summary {
+	position: relative;
+}
+
+#testimonial-top .entry-summary:after {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	float: left;
+	left: -40px;
+	border-style: solid;
+	border-color: transparent #fee1c9 transparent transparent;
+	border-width: 12px 40px 12px 0px;
+}
+
+#testimonial-top-2 .entry-summary:after {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	float: right;
+	right: -40px;
+	border-style: solid;
+	border-color: transparent transparent transparent #fee1c9;
+	border-width: 12px 0px 12px 40px;
+}
+
+.entry-summary:after {
+	top: 20px;
+}
+
+/* Display none */
+.meta-sep,.comments-link,.edit-link,#testimonial-top-2 h1,#testimonial-top h1,#fund-total-top-earner h1,#start-trading-now h1,#slider h1
+	{
+	display: none;
+}
+
+/* media queries */
+@media ( max-width : 770px) {
+	.su-row {
+		display: block;
+	}
+	#testimonial-top .entry-summary:after {
+		border-width: 10px 20px 10px 0px;
+		left: -1.2em;
+	}
+	#testimonial-top-2 .entry-summary:after {
+		border-width: 10px 0px 10px 20px;
+		right: -1.2em;
+	}
+	#start-trading-now .su-column,#trading-is-easy .ivycat-post {
+		clear: both;
+		width: 100%;
+		display: block;
+		position: relative;
+	}
+	#slider {
+		padding: 0;
+		margin: 0;
+	}
+	#slider h2,#slider h3 {
+		clear: both;
+		width: 96%;
+		position: relative;
+		padding: 2%;
+		border-radius: 0;
+		left: 0;
+		background-color: #000;
+	}
+	#fund-total-top-earner .dots:after,#fund-total-top-earner .dots2:after {
+		display: none;
+	}
+	#slider p .totally-free {
+		width: 23%;
+		top: 14%;
+		right: -2%;
+	}
+	#fund-total-top-earner .ivycat-post,#how-it-works .half-columns {
+		clear: both;
+		width: 100%;
+		display: block;
+		position: relative;
+	}
+}
+
+@media ( max-width : 620px) {
+	.entry-summary:after {
+		border-width: 10px 10px 10px 10px;
+		top: -20px;
+	}
+	#testimonial-top .entry-summary:after {
+		border-color: transparent transparent #fee1c9 #fee1c9;
+		left: 1.5em;
+	}
+	#testimonial-top-2 .entry-summary:after {
+		border-color: transparent #fee1c9 #fee1c9 transparent;
+		right: 1.5em;
+	}
+}
+
+@media ( max-width : 900px) {
+	.logo {
+		width: 25%;
+	}
+	.logo>a>img {
+		margin-top: 10px;
+		width: 100%;
+	}
+}
+
+@media ( min-width : 791px) {
+	#trading-is-easy .ivycat-post::after {
+		content: "▶";
+		top: -5.5em;
+		left: 7em;
+	}
+}
+
+@media ( max-width : 790px) {
+	#how-it-works,#trading-is-easy,#testimonial-top-2,#testimonial-top,#fund-total-top-earner,#start-trading-now
+		{
+		padding: 10px;
+	}
+	.logo {
+		float: none;
+		margin: auto;
+		width: 100%;
+	}
+	.logo>a>img {
+		width: 66%;
+		margin: 0;
+	}
+	nav {
+		float: none;
+		margin: 0;
+	}
+	#trading-is-easy .featured-image img {
+		width: 15%;
+	}
+	#trading-is-easy .ivycat-post::after {
+		content: "▼";
+	}
+}
+
+#testimonial-top-2 .featured-image img,#testimonial-top .featured-image img {
+	width: 100%
+}
+
+#start {
+	margin: 1em 0;
+	background: #f8f8f8;
+	padding: 4em 0;
+}
+
+#start p {
+	padding: 0;
+}
+
+#menu-main-nav li {
+	white-space: nowrap;
+}
+
+#calendarPage {
+	margin: 2em auto;
+	background: cornsilk;
+	width: 10em;
+	height: 10em;
+	color: #333;
+	box-shadow: 0 0.5em 1em;
+}
+
+#calendarPage :first-child {
+	font-size: 7em;
+	padding-top: .1em;
+}
+
+#calendarPage :last-child {
+	font-size: 2em;
+	line-height: 0.3;
+}
+
+#trading-is-easy .ivycat-post::after {
+	position: relative;
+	line-height: 0;
+	color: #FF9F54;
+}
+
+#trading-is-easy .ivycat-post:last-child::after {
+	display: none;
+}
+
+#testimonial-top-2 > div.post.hentry.ivycat-post {
+	clear: both;
+}
+
+#footer {
+	background-color: #222;
+	padding: 1em;
+	color: #ccc;
+}
+.greySection {
+	background-color: #f5f5f5;
+	border-top:1px solid #b91712;
+	margin: 1em 0;
+}
+.thinRedBottom {
+	border-bottom:1px solid #b91712;
+}
+#dollarTable td {
+	padding:.4em 1em; 
+}
+.moreHere,.moreHere:link,.moreHere:visited {
+	color:#ffcaa0;
+	text-shadow: 0 0.15em 0 rgba(0,0,0,0.2);
+}
+.moreHere:hover,.moreHere:active {
+	color:#fff;
+	text-shadow: 0 -0.15em 0 rgba(0,0,0,0.2);
+}
+
+#videoIframe {
+	width: 640px;
+	height: 360px;
+	margin:1em;
+}
+
+#videoIntro > div {
+	display:inline-block;
+	border-radius:.6em;
+	box-shadow:0 0 1em #000;
+	background-color:#fff;
+	margin: 0 0 2em 0;
+}
+
+@media (max-width:680px) {
+	#videoIframe {
+		width: 400px;
+		height: 250px;
+		margin: 0.3em;
+	}
+	#videoIntro > div {
+		border-radius:.3em;
+		background-color:#111;
+	}
+}
+
+@media (max-width:450px) {
+	#videoIframe {
+		width: 300px;
+		height: 175px;
+		margin: 0.3em 0;
+	}
+}
+.footer-text {
+	font-size: 75%;
+}
+</style>
+</head>
+<body>
+	<div id=everything>
+	<header id="hdr">
+		<div class="logo">
+			<a href="https://sparkprofit.com/" title="Spark Profit" rel="home">
+				<img src="https://sparkprofit.com/wp-content/uploads/2014/01/copy-logo.png"
+				alt="Spark Profit" style="max-width: 264px; max-height: 66px" />
+			</a>
+		</div>
+		<nav>
+			<div class="menu-main-nav-container">
+				<ul id="menu-main-nav" class="menu">
+					<li id="menu-item-1" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-153"><a
+						href="#start-trading-now"><b>Download</b></a></li>
+					<li id="menu-item-2" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-150"><a
+						href="#how-it-works">Overview</a></li>
+					<li id="menu-item-3" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24"><a
+						href="#videoIntro">Video</a></li>
+					<li id="menu-item-4" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-155"><a
+						href="https://blog.sparkprofit.com/">Blog</a></li>
+					<li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-155"><a
+						href="https://www.sparkprofit.com/faq">F.A.Q.</a></li>
+					<li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-154"><a
+						title="register" href="https://sparkprofit.com/app">Register/Log-in</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div id="container"><a name="top"></a>
+		<div id='slider'><a name='slider'></a>
+			<div id="meteor-slideshow" class="meteor-slides navnone single-slide">
+				<div class="meteor-clip">
+					<div class="mslide mslide-1">
+						<img src="https://sparkprofit.com/wp-content/uploads/2014/01/sp-main-image-960x400.jpg"
+							class="attachment-featured-slide wp-post-image" alt="sp-main-image-960x400" title="" />
+					</div>
+				</div>
+			</div>
+			<h2>Discover your hidden talents</h2>
+			<h3 class="hemingway">Virtual trades, real profits! 
+				Make predictions to build up your score and receive weekly rewards.
+				<a class=ulink href="stats">Top players</a> earn $50 or more per month, with no investment and no risk of loss.
+				</h3>
+		</div>
+		<div id="start-trading-now">
+			<a name="start-trading-now"></a>
+			<h1>Start trading now</h1>
+			<a href="https://sparkprofit.com/app/app.html">
+				<div id="joinNow" class="mobButton" style="max-width: 23.5em">
+					<div>
+						<img src="https://sparkprofit.com/wp-content/uploads/2014/02/desktop.png">
+					</div>
+					<div style="font-size: 160%; font-family: Arvo">
+						<div><div>Play&nbsp;in browser</div></div>
+					</div>
+				</div>
+			</a><br>
+			<table style="margin: auto; max-width: 24em">
+				<tr><td style="width: 50%"><a id=dl_itunes
+						href="https://itunes.apple.com/app/spark-profit/id790096498">
+							<div class=mobButton>
+								<div>
+									<img src="https://sparkprofit.com/wp-content/uploads/2014/01/Apple-Logo-white-small.png" />
+								</div>
+								<div><div><div>
+									Download&nbsp;in <strong>iTunes</strong>
+								</div></div></div>
+							</div>
+					</a></td>
+					<td>
+						<div style="width: 1em"></div>
+					</td>
+					<td style="width: 50%"><a id=dl_googleplay href="https://play.google.com/store/apps/details?id=spark.profit">
+							<div class=mobButton>
+								<div>
+									<img src="https://sparkprofit.com/wp-content/uploads/2014/01/android-logo-white-small.png" />
+								</div>
+								<div><div><div>
+									Download&nbsp;on <strong>Google&nbsp;play</strong>
+								</div></div></div>
+							</div>
+				</a></td></tr>
+			</table>
+		</div>
+
+		<div id=videoIntroT></div>
+
+		<div id='testimonial-top-2' class="greySection">
+			<a name='testimonial-top-2'></a>
+			<h1>Testimonial bottom</h1>
+			<div class="post hentry ivycat-post">
+				<h2 class="entry-title"></h2>
+				<div class="featured-image">
+					<img src="https://sparkprofit.com/wp-content/uploads/2014/01/testimonial-guy-small-white.png"
+						class="attachment-thumbnail wp-post-image"
+						alt="testimonial-guy-small-white" />
+				</div>
+				<div class="entry-summary">
+					<p>“Pass the time trying to guess the next price move [...] In
+						return you earn points, and points mean prizes” – Financial Times
+						Alphaville</p>
+				</div>
+			</div>
+			<div class="post hentry ivycat-post">
+				<h2 class="entry-title"></h2>
+				<div class="featured-image">
+					<img src="https://sparkprofit.com/wp-content/uploads/2014/01/eric-mattson.jpg"
+						class="attachment-thumbnail wp-post-image" alt="eric-mattson" />
+				</div>
+				<div class="entry-summary">
+					<p>“[SparkProfit] is innovating at the nexus of several major
+						trends … to try and change the future of investing” – Eric
+						Mattson, CEO of Finovate</p>
+				</div>
+			</div>
+		</div>
+		<div id="how-it-works">
+			<a name="how-it-works"></a>
+			<h1>How it works</h1>
+			<h3 class="hemingway">We’re looking for the world’s top trading
+				talent. Challenge yourself on this fun, free app that’s simple to
+				use but difficult to master.</h3>
+			<h3 class="hemingway">Spark Profit fits your schedule because
+				you can make long or short predictions, then review or cancel them
+				at any time. As your skills improve, you will get more points.
+				Compete against other players for higher score and rewards.</h3>
+			<div class="su-row">
+				<div class="su-column su-column-size-1-2 half-columns">
+					<div class="su-column-inner su-clearfix">
+						<div class="hemingway">
+							<h2>Paying for talent</h2>
+							<p>We’ve invented something we call “crowd-sourced alpha”. It
+								means we combine our member’s predictions to guess where the
+								markets will move. By giving access to a wide and diverse talent
+								pool, we aim to make the markets more efficient and democratic.</p>
+							<p>Of course, this is pretty clever. That’s why we’ve already
+								applied for two patents and have more planned.</p>
+							<p>What it really means is that we provide everything you
+								need and take all the risk, while you get the credit for
+								predicting with skill.</p>
+						</div>
+					</div>
+				</div>
+				<div class="su-column su-column-size-1-2 half-columns">
+					<div class="su-column-inner su-clearfix">
+						<div class="hemingway">
+							<h2>Getting started</h2>
+							<p>You can make as many predictions as you like, and after
+								reaching a high enough score you will start to earn rewards. It
+								couldn’t be simpler. We even carry points over each week to help
+								you hit your targets.</p>
+							<p>Register for free, take a two minute tutorial and practice
+								for as long as you like. When you’re ready simply go and make
+								your first prediction. We want to find and nurture natural
+								talent from around the world. That is why Spark Profit gradually
+								introduces all the skills and knowledge you need to be
+								successful.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="https://www.sparkprofit.com/faq" class=moreHere>Read more ›</a>
+		</div>
+
+		<div id=videoIntro class="greySection">
+			<br><h1>Spark Profit in action</h1>
+			<div>
+				<iframe id=videoIframe frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		
+		<div style="background-color:#e26d11;color:#fff;">
+			<div style="margin:auto;text-align:center">
+					<h2>We awarded</h2>
+					<div style="display: inline-block">
+						<table id=dollarTable>
+							<tr>
+								<td id=weekPot>$.......</td>
+								<td>LAST WEEK</td>
+							</tr>
+							<tr>
+								<td id=fourWeekPot>$.......</td>
+								<td>LAST MONTH</td>
+							</tr>
+							<tr style="font-size:110%">
+								<td id=totalPot>$.......</td>
+								<td>SINCE MAY 2013</td>
+							</tr>
+						</table>
+						<br> 
+						<a href="stats" class=moreHere>More payout statistics ›</a>
+					</div>
+				</div>
+			<br>
+		</div>
+		<div id='testimonial-top' class="greySection">
+			<a name='testimonial-top'></a>
+			<h1>Testimonial top</h1>
+			<div class="post hentry ivycat-post">
+				<h2 class="entry-title"></h2>
+				<div class="featured-image">
+					<img src="https://sparkprofit.com/wp-content/uploads/2014/01/beth-constantine.jpg"
+						class="attachment-thumbnail wp-post-image" alt="beth-constantine" />
+				</div>
+				<div class="entry-summary">
+					<p>“Great game! I’ve become addicted and I am teaching myself
+						about forex because of it.” – Beth Constantine</p>
+				</div>
+			</div>
+		</div>
+
+		<div id='trading-is-easy'>
+			<a name='trading-is-easy'></a>
+			<h1>Steps to earning</h1>
+			<div class="post hentry ivycat-post">
+				<h2 class="entry-title"></h2>
+				<div class="featured-image">
+					<img src="https://sparkprofit.com/wp-content/uploads/2014/01/trading-1.png"
+						class="attachment-thumbnail wp-post-image" alt="trading-1" />
+				</div>
+				<div class="entry-summary"><p>Make predictions</p></div>
+			</div>
+			<div class="post hentry ivycat-post">
+				<h2 class="entry-title"></h2>
+				<div class="featured-image">
+					<img src="https://sparkprofit.com/wp-content/uploads/2014/01/trading-2.png"
+						class="attachment-thumbnail wp-post-image" alt="trading-2" />
+				</div>
+				<div class="entry-summary">
+					<p>Collect points</p>
+				</div>
+			</div>
+			<div class="post hentry ivycat-post">
+				<h2 class="entry-title"></h2>
+				<div class="featured-image">
+					<img src="https://sparkprofit.com/wp-content/uploads/2014/01/trading-4.png"
+						class="attachment-thumbnail wp-post-image" alt="trading-4" />
+				</div>
+				<div class="entry-summary">
+					<p>Earn rewards</p>
+				</div>
+			</div>
+		</div>
+		
+		<div id='share' class="greySection">
+			<a name='share'></a>
+			<h1></h1>
+			<div id=facebook style="position: relative; top: -.35em">
+				<div id="fb-root"></div>
+				<div class="fb-like" data-href="https://sparkprofit.com/"
+					data-layout="button_count" data-action="like"
+					data-show-faces="false" data-share="true"></div>
+			</div>
+			<div id=twitter>
+				<a href="https://twitter.com/spark_profit"
+					class="twitter-follow-button" data-show-count="false"
+					data-size="large">Follow @spark_profit</a>
+			</div>
+		</div>
+	</div>
+
+	<div id='our-goals'>
+		<a name='our-goals'></a>
+		<h1>Our Goals</h1>
+		<p>
+			Spark Profit is a product of <a href="https://www.nous.net/">NOUS</a>®,
+			“Free The Markets”. NOUS was founded by a team of finance and
+			technology experts in 2012, with the guiding values of empowerment,
+			diversity and opportunity. NOUS creates opportunity on a global
+			scale, by empowering people from around the world to access to the
+			global markets and discover their talents. We are proud that our
+			unique business model can do good for so many people.
+		</p>
+	</div>
+		
+	</div> <!-- everything -->
+	<div id='footer'>
+		<a name='footer'></a>
+		<div class='footer-text'>
+			Use of this Website is subject to our <a
+				href="https://sparkprofit.com/policy">Terms and Conditions and
+				Privacy Policy</a> including our use of cookies.<br> By clicking
+			any link on this page you consent to the use of cookies.<br>
+		</div>
+		<div class='footer-text'>
+			Please note our blog and social media <a href="http://blog.sparkprofit.com/disclaimer">Disclaimer</a>
+		</div>
+	</div>
+	
+	<div id=dummy></div>
+	
+	<script type="application/javascript">
+	// Credit to https://github.com/filamentgroup/loadCSS
+		function loadCSS(href, before){
+			"use strict";
+			var ss = window.document.createElement("link");
+			var ref = before || window.document.getElementsByTagName("script")[0];
+			var sheets = window.document.styleSheets;
+			ss.rel = "stylesheet";
+			ss.href = href;
+			ss.media = "only x";
+	
+			// inject link
+			ref.parentNode.insertBefore( ss, ref );
+			ss.onloadcssdefined = function( cb ){
+				var defined;
+				for (var i = 0; i < sheets.length; ++i) {
+					if (sheets[i].href && sheets[i].href === ss.href) {
+						defined = true;
+					}
+				}
+				if (defined) {
+					cb();
+				} else {
+					setTimeout(function() {
+						ss.onloadcssdefined( cb );
+					});
+				}
+			};
+			ss.onloadcssdefined(function() {
+				ss.media = "all";
+			});
+			return ss;
+		}
+		function el(id) { return document.getElementById(id); }
+		window.onload = function() {
+			/** Load the fonts */
+			window.WebFontConfig = {
+			    google: { families : [ 'Arvo::latin', 'Open+Sans:300,600:latin' ] }
+			};
+			(function() {
+				var wf = document.createElement('script');
+				wf.src = ('https:' == document.location.protocol ? 'https'
+						: 'http')
+						+ '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+				wf.type = 'text/javascript';
+				wf.async = 'true';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(wf, s);
+			})();
+
+			/** Move the video */
+			if (THEORY_OPTS.videoTop) {
+				el('videoIntroT').appendChild(el('videoIntro'));
+			}
+			/** Load the video */
+			el("videoIframe").src = "https://www.youtube.com/embed/WtwM3gwLCXs?origin=https://sparkprofit.com&modestbranding=true&rel=0&controls=0";
+
+			/** Final CSS */			
+			loadCSS('https://sparkprofit.com/wp-content/plugins/shortcodes-ultimate/assets/css/box-shortcodes.css?ver=4.6.3');
+
+			/** Google audience tracking */
+			var _gaq = _gaq || [];
+			_gaq.push([ '_setAccount', 'UA-34479690-1' ]);
+			_gaq.push([ '_trackPageview' ]);
+			(function() {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+						: 'http://www')
+						+ '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
+
+			/** Facebook audience tracking */
+			(function() {
+				var _fbq = window._fbq || (window._fbq = []);
+				if (!_fbq.loaded) {
+					var fbds = document.createElement('script');
+					fbds.async = true;
+					fbds.src = '//connect.facebook.net/en_US/fbds.js';
+					var s = document.getElementsByTagName('script')[0];
+					s.parentNode.insertBefore(fbds, s);
+					_fbq.loaded = true;
+				}
+				_fbq.push([ 'addPixelId', '627048950762014' ]);
+			})();
+			window._fbq = window._fbq || [];
+			window._fbq.push([ 'track', 'PixelInitialized', {} ]);
+
+			/** Twitter audience */
+			(function() {
+				var twitterTrack = document.createElement('script');
+			         	twitterTrack.type = 'text/javascript';
+			            twitterTrack.async = true;
+			            twitterTrack.src = '//platform.twitter.com/oct.js';
+		
+			            twitterTrack.addEventListener('load', function(){
+			                if(twttr) {
+			                    twttr.conversion.trackPid('ntfwf', { tw_sale_amount: 1, tw_order_quantity: 1 });
+			                } else {
+			                    console.log('unable to send audience details');
+			                }
+			            });
+		
+			            var s = document.getElementsByTagName('script')[0];
+			            s.parentNode.insertBefore(twitterTrack, s);
+	        })();
+			
+			/** Facebook button */
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id))
+					return;
+				js = d.createElement(s);
+				js.id = id;
+				js.src = "https://connect.facebook.net/en_GB/all.js#xfbml=1";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+
+			/** Twitter button */
+			!function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/
+						.test(d.location) ? 'http' : 'https';
+				if (!d.getElementById(id)) {
+					js = d.createElement(s);
+					js.id = id;
+					js.src = p + '://platform.twitter.com/widgets.js';
+					fjs.parentNode.insertBefore(js, fjs);
+				}
+			}(document, 'script', 'twitter-wjs');
+		}
+	</script>
+	
+<!--	<script async type="application/javascript" src="js/investNow.js"></script> -->
+	
+	<!-- Load the prize infos -->
+	<script async type="application/javascript" data-main="/js/prizes.js" src="/app/static/js/ext/require.js"></script>
+</body>
+</html>

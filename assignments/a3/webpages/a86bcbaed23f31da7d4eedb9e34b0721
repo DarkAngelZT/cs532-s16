@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta charset='utf-8' />
+<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport' />
+<link href='/stylesheets/landing_page.css' rel='stylesheet' />
+<script src="https://cdn.getm.pt/javascripts/landing_page_packaged_20160209181048.js?20160209181048-cor-23.9.9-83-201307111607" type="text/javascript"></script>
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<title>mPLUS Rewards</title>
+</head>
+<body>
+<div class='container'>
+<div class='row header'>
+<div class='col-xs-8 col-xs-offset-2'>
+<img alt="M-plus.png?20160209181048-cor-23.9" class="img-responsive" src="https://cdn.getm.pt/images/m-plus.png?20160209181048-cor-23.9.9-83-201307111607" />
+</div>
+<div class='col-xs-12'>
+<p class='tagline'>Get more rewards from life with mPLUS Rewards</p>
+</div>
+</div>
+<div class='row background'>
+<div class='col-xs-12 col-sm-6 col-md-6 col-lg-6 mpoints'>
+<h2>
+How does mPLUS Rewards work?
+</h2>
+<p>mPLUS Rewards is a loyalty program used by hundreds of leading mobile apps to reward their users as a "thank you" for staying active with their content. Earn points just for completing in-app activities like tracking a run or finishing a game level. You can even earn points for engaging with in-app advertising. Then redeem all those points for awesome rewards!</p>
+</div>
+<div class='col-xs-12 col-sm-6 col-md-6 col-lg-6 rewards'>
+<h2>
+What kinds of rewards?
+</h2>
+<p>Rewards include gift cards to Amazon.com or Starbucks and fun merchandise like a Google Chromecast or a FitBit Activity Tracker. You can even make charitable donations to leading non-profit organizations like St. Jude Children's Hospital or the ASPCA.</p>
+</div>
+</div>
+</div>
+<div class='container mplaces'>
+<div class='row mplaces-inner'>
+<div class='col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1 mplaces-logo'>
+<img alt="Mplaces-all.png?20160209181048-cor-23.9" class="img-responsive" src="https://cdn.getm.pt/images/landing_page/mplaces-all.png?20160209181048-cor-23.9.9-83-201307111607" />
+</div>
+<div class='col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-0'>
+<p class='mplaces-content'>mPLUS laces rewards you with sweet store merch, gift cards and entries into great promotions. Rack up your earnings at home AND on the go!</p>
+<p class='mplaces-cta'>
+<a class='btn btn-default btn-lg mplaces-btn' href='http://www.gomplaces.com' target='blank'>Learn More</a>
+</p>
+</div>
+</div>
+</div>
+<script type='text/javascript'>
+  //<![CDATA[
+    function launch(url)
+    {
+      if(document.URL.split("?")[1])
+        url += (url.indexOf("?")>-1?"&":"?") + document.URL.split("?")[1];
+      window.location.href = url
+    }
+    
+    function share(url)
+    {
+      if(document.URL.split("?")[1])
+        url += (url.indexOf("?")>-1?"&":"?") + document.URL.split("?")[1];
+      window.open(url);
+    }
+    
+    $(document).ready(function(){
+      $.get("/app_suggestions", function(resp){
+       $("#suggestions").html(resp);
+      });
+    });
+    
+    function landing_app_click(app)
+    {
+      _gaq.push(['_trackEvent', 'Apps', 'AppStore#' + app.name, 'LandingApp#' + app.name]);
+    }
+  //]]>
+</script>
+
+<script type='text/javascript'>
+  //<![CDATA[
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-40554719-1']);
+    _gaq.push(["_set", "title", "mPoints Intro"]);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  //]]>
+</script>
+
+</body>
+</html>

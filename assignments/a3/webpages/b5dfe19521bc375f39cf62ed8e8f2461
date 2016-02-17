@@ -1,0 +1,1353 @@
+<!doctype html>
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8" lang="en"><![endif]-->
+<!--[if !IE]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VwcDUFJWGwEJVVNTAwU="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(){}function r(t){function e(t){return t&&t instanceof n?t:t?a(t,i,o):o()}function s(n,r,o){t&&t(n,r,o);for(var i=e(o),a=f(n),s=a.length,c=0;s>c;c++)a[c].apply(i,r);return i}function c(t,e){d[t]=f(t).concat(e)}function f(t){return d[t]||[]}function u(){return r(s)}var d={};return{on:c,emit:s,create:u,listeners:f,context:e,_events:d}}function o(){return new n}var i="nr@context",a=t("gos");e.exports=r()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:21,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,a){try{f?f-=1:r("err",[a||new UncaughtException(t,e,n)])}catch(c){try{r("ierr",[c,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof s?s.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=t("loader"),s=window.onerror,c=!1,f=0;a.features.err=!0,t(3),window.onerror=e;try{throw new Error}catch(u){"stack"in u&&(t(4),t(5),"addEventListener"in window&&t(1),a.xhrWrappable&&t(2),c=!0)}i.on("fn-start",function(){c&&(f+=1)}),i.on("fn-err",function(t,e,r){c&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){c&&!this.thrown&&f>0&&(f-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:5,2:8,3:3,4:7,5:6,6:22,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t,e){function n(t){for(var e=t;e&&!e.hasOwnProperty("addEventListener");)e=Object.getPrototypeOf(e);e&&r(e)}function r(t){a.inPlace(t,["addEventListener","removeEventListener"],"-",o)}function o(t){return t[1]}var i=t("ee").create(),a=t(1)(i),s=t("gos");e.exports=i,r(window),"getPrototypeOf"in Object?(n(document),n(XMLHttpRequest.prototype)):XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&r(XMLHttpRequest.prototype),i.on("addEventListener-start",function(t){if(t[1]){var e=t[1];if("function"==typeof e){var n=s(e,"nr@wrapped",function(){return a(e,"fn-",null,e.name||"anonymous")});this.wrapped=t[1]=n}else"function"==typeof e.handleEvent&&a.inPlace(e,["handleEvent"],"fn-")}}),i.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:23,ee:"QJf3ax",gos:"7eSDFh"}],6:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:23,ee:"QJf3ax"}],7:[function(t,e){function n(t,e,n){t[0]=i(t[0],"fn-",null,n)}function r(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=i(t[0],"fn-",this,n)}var o=t("ee").create(),i=t(1)(o);e.exports=o,i.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),i.inPlace(window,["setInterval"],"setInterval-"),i.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),o.on("setInterval-start",n),o.on("setTimer-start",r)},{1:23,ee:"QJf3ax"}],8:[function(t,e){function n(){f.inPlace(this,l,"fn-",o)}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-",o)}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[e],e),e.hasOwnProperty("addEventListener")&&u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:5,2:23,ee:"QJf3ax"}],9:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;u>o;o++)t.removeEventListener(f[o],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=this.lastSize||n(t);if(i&&(r.rxSize=i),this.sameOrigin){var s=t.getResponseHeader("X-NewRelic-App-Data");s&&(e.cat=s.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,c.emit("xhr-done",[t],t),a("xhr",[e,r,this.startTime])}}}function n(t){var e=t.responseType,n="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return r(n)}function r(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function o(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var i=t("loader");if(i.xhrWrappable){var a=t("handle"),s=t(2),c=t("ee"),f=["load","error","abort","timeout"],u=f.length,d=t(1),l=t(3),p=window.XMLHttpRequest;i.features.xhr=!0,t(5),t(4),c.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=e,n.ended=!1,n.xhrGuids={},n.lastSize=0,l&&(l>34||10>l)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),c.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),c.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),c.on("send-xhr-start",function(t,e){var n=this.metrics,o=t[0],i=this;if(n&&o){var a=r(o);a&&(n.txSize=a)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{c.emit("internal-error",[n])}catch(r){}}};for(var s=0;u>s;s++)e.addEventListener(f[s],this.listener,!1)}),c.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),c.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),c.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),c.on("addEventListener-end",function(t,e){e instanceof p&&"load"===t[0]&&c.emit("xhr-load-added",[t[1],t[2]],e)}),c.on("removeEventListener-end",function(t,e){e instanceof p&&"load"===t[0]&&c.emit("xhr-load-removed",[t[1],t[2]],e)}),c.on("fn-start",function(t,e,n){e instanceof p&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),c.on("fn-end",function(t,e){this.xhrCbStart&&c.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:10,3:12,4:8,5:5,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],10:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],11:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:21,2:22,handle:"D5DuLP"}],12:[function(t,e){var n=0,r=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);r&&(n=+r[1]),e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){if(!h++){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){t[e]||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-852.min.js"},l=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),p=e.exports={offset:i(),origin:u,features:{},xhrWrappable:l};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()]);var h=0},{1:21,2:11,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],21:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],22:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],23:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@original",a=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,c;try{i=this,n=o(arguments),s="function"==typeof r?r(n,i):r||{}}catch(u){d([u,"",[n,i,a],s])}f(e+"start",[n,i,a],s);try{return c=t.apply(i,n)}catch(l){throw f(e+"err",[n,i,l],s),l}finally{f(e+"end",[n,i,c],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=t,u(t,nrWrapper),nrWrapper)}function c(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!s){s=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}s=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=c,e.flag=i,e}},{1:22,ee:"QJf3ax"}]},{},["G9z0Bl",4,9]);</script>
+
+            <script type="text/javascript">//<![CDATA[
+            // Google Analytics for WordPress by Yoast v4.3.5 | http://yoast.com/wordpress/google-analytics/
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-1772706-4']);
+				            _gaq.push(['_setCustomVar',1,'tags','au p-t visage',3],['_setCustomVar',2,'categories','in-real-life',3],['_trackPageview']);
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+            //]]></script>
+					<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.kotaku.com.au\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="dns-prefetch" href="//edge.alluremedia.com.au">
+<link rel="dns-prefetch" href="//feeds.kotaku.com.au">
+<link rel="dns-prefetch" href="//partner.googleadservices.com">
+<link rel="dns-prefetch" href="//cache.gawkerassets.com">
+<link rel="dns-prefetch" href="//img.gawkerassets.com">
+<link rel="dns-prefetch" href="//www.youtube.com">
+<link rel="dns-prefetch" href="//www.vimeo.com">
+<link rel="dns-prefetch" href="//www.facebook.com">
+<link rel="dns-prefetch" href="//www.twitter.com">
+<link rel="dns-prefetch" href="//www.reddit.com">
+<title>New Game Is A Lot Like P.T. But, Sadly, Isn't P.T. | Kotaku Australia</title>
+<meta name="description" content="In the wake of Silent Hills&#8217; cancellation and the utterly idiotic removal of P.T. from the PlayStation Store, there have been a lot of games in ..." />
+<meta name="publisher" content="Kotaku Australia" />
+<meta name="robots" content="noarchive" />
+<meta name="author" content="Mark Serrels" />
+<meta name="thumbnail" content="http://img.youtube.com/vi/4i72qLAusxI/0.jpg" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="New Game Is A Lot Like P.T. But, Sadly, Isn't P.T." />
+<meta property="og:image" content="http://img.youtube.com/vi/4i72qLAusxI/0.jpg" />
+<meta property="og:description" content="In the wake of Silent Hills&#8217; cancellation and the utterly idiotic removal of P.T. from the PlayStation Store, there have been a lot of games in ..." />
+<meta property="og:url" content="http://www.kotaku.com.au/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://img.youtube.com/vi/4i72qLAusxI/0.jpg" />
+<meta property="twitter:site" content="@KotakuAU" />
+<meta itemprop="name" content="New Game Is A Lot Like P.T. But, Sadly, Isn't P.T.">
+<meta itemprop="image" content="http://img.youtube.com/vi/4i72qLAusxI/0.jpg">
+<meta itemprop="description" content="In the wake of Silent Hills&#8217; cancellation and the utterly idiotic removal of P.T. from the PlayStation Store, there have been a lot of games in ...">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="http://www.kotaku.com.au/sitemap.xml">
+<link rel="canonical" href="http://www.kotaku.com.au/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/" /><link rel="shortcut icon" type="image/x-icon" href="http://edge.alluremedia.com.au/assets/technetwork/ico/favicon_kotaku.ico" />
+<link rel="apple-touch-icon-precomposed" type="image/png" href="http://edge.alluremedia.com.au/assets/technetwork/ico/favicon_kotaku_57.png" />
+<link rel="apple-touch-icon-precomposed" type="image/png" sizes="72x72" href="http://edge.alluremedia.com.au/assets/technetwork/ico/favicon_kotaku_72.png" />
+<link rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114" href="http://edge.alluremedia.com.au/assets/technetwork/ico/favicon_kotaku_114.png" />
+<link rel="alternate" type="application/rss+xml" title="Kotaku Australia RSS" href="//feeds.kotaku.com.au/KotakuAustralia" />
+<link rel="alternate" type="application/rss+xml" title="Kotaku Australia RSS - Australian Stories" href="//feeds.kotaku.com.au/KotakuAustraliaAU" />
+<link href="//fonts.googleapis.com/css?family=Rokkitt:400,700|Open+Sans:300italic,400italic,600italic,400,300,600" rel="stylesheet" type="text/css"><script>var titanEnabled = true; var digitalData = {"page":{"pageInfo":{"pageID":"749106","pageName":"new game is a lot like p.t. but, sadly, isn't p.t. | kotaku australia","brand":"kotaku","generator":"WP","author":"mark serrels","sysEnv":"desktop"},"category":{"primaryCategory":"in-real-life","subCategory1":""}},"titan":{"adSite":"kotaku","adZone":"in-real-life","adExclusions":[],"adKeyValues":{"cat":"in-real-life","cat1":"","ctype":"article","aggregate":["Australian Stories","p.t.","visage"]},"adSlots":["adspot-970x250_970x90_728x90-pos1","adspot-728x90-pos2","adspot-300x600-pos1","adspot-300x250-pos2"],"adSlotsAdditional":[]},"version":"1.0","events":[]}, titan = titan || {}; titan.requestAd = titan.requestAd || []; titan.requestConditionalAd = titan.requestConditionalAd || [];</script><script src="//assets.adobedtm.com/7d5ea80d054b96730162d0905d59678c4d2bf30c/satelliteLib-550b8e02c6cb1ea6a6d6ce1151645c6cd5592ed8.js"></script><script>var site="kotaku";var mobile=false;var analytics_id="UA-1772706-4";var post_author="Mark Serrels";</script>
+<link rel='stylesheet' id='technetwork-css'  href='http://edge.alluremedia.com.au/assets/technetwork/build/css/technetwork.min.css' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.kotaku.com.au/app/themes/theme-technetwork/assets/technetwork/js/blockadblock.js'></script>
+<script type='text/javascript' src='http://edge.alluremedia.com.au/assets/technetwork/js/modernizer/modernizr.js?ver=2.62'></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js?ver=1.8.2'></script>
+<script type='text/javascript' src='http://edge.alluremedia.com.au/assets/technetwork/build/js/technetwork-header-desktop.min.js'></script>
+<link rel='prev' title='Counter-Strike Team Didn&#039;t Know Being VAC Banned Was A Problem For Valve' href='http://www.kotaku.com.au/2016/02/counter-strike-team-didnt-know-being-vac-banned-was-a-problem-for-valve/' />
+<link rel='next' title='The Biggest Selling Amiibos Of 2015, Ranked By Region' href='http://www.kotaku.com.au/2016/02/the-biggest-selling-amiibos-of-2015-ranked-by-region/' />
+
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+
+</head>
+<body class="single single-post postid-749106 single-format-standard kotaku www desktop ">
+
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NNLRFT"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
+    new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
+    "//www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,"script","dataLayer","GTM-NNLRFT");</script>
+    <!-- End Google Tag Manager -->
+    <div id="wrap">
+        <div id="container">
+            <div id="status-message" class="status-success">
+                <div class="pull-middle">
+                                    </div>
+            </div>
+<div id="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div id="network">
+        <div class="pull-middle">
+            <div class="pull-left">
+                <ul>
+                    <li class="heading">Business &amp; Technology</li>
+                    <li><a href="http://www.businessinsider.com.au" data-tracking-name="Business Insider"><i class="sprite sprite-businessinsider"></i> Business Insider</a></li>
+                    <li><a href="http://www.gizmodo.com.au" data-tracking-name="Gizmodo"><i class="sprite sprite-gizmodo"></i> Gizmodo</a></li>
+                    <li><a href="http://www.kotaku.com.au" data-tracking-name="Kotaku"><i class="sprite sprite-kotaku"></i> Kotaku</a></li>
+                    <li><a href="http://www.lifehacker.com.au" data-tracking-name="Lifehacker"><i class="sprite sprite-lifehacker"></i> Lifehacker</a></li>
+                </ul>
+            </div>
+            <div class="pull-right"> 
+                <ul>
+                    <li class="heading">POPSUGAR</li>
+                    <li><a href="http://www.popsugar.com.au/celebrity/" data-tracking-name="PopSugar"><i class="sprite sprite-popsugar"></i> Celebrity</a></li>
+                    <li><a href="http://www.popsugar.com.au/fashion/" data-tracking-name="FabSugar"><i class="sprite sprite-popsugar"></i> Fashion</a></li>
+                    <li><a href="http://www.popsugar.com.au/beauty/" data-tracking-name="BellaSugar"><i class="sprite sprite-popsugar"></i> Beauty</a></li>
+                    <li><a href="http://fitness.popsugar.com.au/" data-tracking-name="BellaSugar"><i class="sprite sprite-popsugar"></i> Health &amp; Fitness</a></li>
+                    <li><a href="http://www.shopstyle.com.au/" data-tracking-name="ShopStyle"><i class="sprite sprite-shopstyle"></i> ShopStyle</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="masthead">
+        <div class="pull-middle">
+            <div id="glow">&nbsp;</div>
+            <a href="http://www.kotaku.com.au/">
+                            <img src="http://edge.alluremedia.com.au/assets/technetwork/img/kotaku/logo.png" id="header-logo" alt="Logo" />
+                        </a>
+            <div id="header-user-panel">
+                
+    <div class="loading">
+        Please wait...
+    </div>
+    <div class="logged-out" style="display:none;">
+        <a href="/user/login/" class="btn login btn-header" data-target="/wp-admin/admin-ajax.php?id=log_in" data-toggle="modal" data-tracking-name="Log In">
+            Log In
+        </a>
+        <a href="/user/register/" class="btn register btn-inverse" data-target="/wp-admin/admin-ajax.php?id=user_registration" data-toggle="modal" data-tracking-name="Register">
+            Register
+        </a>
+    </div>
+    <div class="logged-in btn-group" style="display:none;">
+        <a href="/user/profile/" class="btn btn-header profile" data-tracking-name="View Profile">
+            <img class="avatar avatar-16 photo" height="16" width="16">
+            <span class="display_name">User Name</span>
+        </a>
+                <a href="?action=logout" class="btn btn-header logout" data-tracking-name="Log Out">
+            <i class="icon-share"></i> Log Out
+        </a>
+            </div>                <noscript>
+                    <a href="http://enable-javascript.com/" class="btn btn-danger">Enable JavaScript to login</a>
+                </noscript>
+            </div>
+        </div>
+    </div>
+    <div class="navigation">
+        <div class="pull-middle">
+            <div class="pull-left">
+                <div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-728363" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-728363"><a href="http://www.kotaku.com.au/entertainment/" >Entertainment<span class="nav-colour"></span></a></li>
+<li id="menu-item-563586" class="colour-xbox menu-item menu-item-type-taxonomy menu-item-object-category menu-item-563586"><a href="http://www.kotaku.com.au/xbox/" >Xbox<span class="nav-colour"></span></a></li>
+<li id="menu-item-563585" class="colour-playstation menu-item menu-item-type-taxonomy menu-item-object-category menu-item-563585"><a href="http://www.kotaku.com.au/playstation/" >PlayStation<span class="nav-colour"></span></a></li>
+<li id="menu-item-563587" class="colour-nintendo menu-item menu-item-type-taxonomy menu-item-object-category menu-item-563587"><a href="http://www.kotaku.com.au/nintendo/" >Nintendo<span class="nav-colour"></span></a></li>
+<li id="menu-item-580154" class="colour-pc menu-item menu-item-type-taxonomy menu-item-object-category menu-item-580154"><a href="http://www.kotaku.com.au/pc/" >PC<span class="nav-colour"></span></a></li>
+<li id="menu-item-458978" class="colour-mobile menu-item menu-item-type-taxonomy menu-item-object-category menu-item-458978"><a href="http://www.kotaku.com.au/mobile/" >Mobile<span class="nav-colour"></span></a></li>
+<li id="menu-item-458977" class="colour-in-real-life menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-458977"><a href="http://www.kotaku.com.au/in-real-life/" >In Real Life<span class="nav-colour"></span></a></li>
+<li id="menu-item-563589" class="colour-retro menu-item menu-item-type-taxonomy menu-item-object-category menu-item-563589"><a href="http://www.kotaku.com.au/retro/" >Retro<span class="nav-colour"></span></a></li>
+</ul></div>            </div>
+            <div class="pull-right">
+                <form class="form-search" action="http://www.kotaku.com.au" method="get">
+    <input type="text" class="input-medium search-query" name="s" value="" placeholder="Search">
+    <button type="submit" class="search-button"><i class="icon-search"></i></button>
+</form>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="adspot-970x250_970x90_728x90-pos1" class="ad adspot-970x250_970x90_728x90-pos1" itemscope itemtype="http://schema.org/WPAdBlock">
+    <script>titan.requestAd.push("adspot-970x250_970x90_728x90-pos1");</script>
+</div><div class="main pull-middle">
+    <div id="content"><div id="article_post" class="pull-left tracking_article" itemscope itemtype="http://schema.org/NewsArticle">
+    
+        <div class="heading category in-real-life dark">
+    
+            <span class="colour in-real-life">
+            <i class="sprite in-real-life"></i>
+        </span>
+        <span class="sub" itemprop="genre">
+            In Real Life        </span>
+    </div>
+        <div id="post-749106" class="post-749106 post type-post status-publish format-standard hentry category-in-real-life tag-au tag-p-t tag-visage">
+                    <h1 itemprop="headline">New Game Is A Lot Like P.T. But, Sadly, Isn't P.T.</h1>
+            <div class="meta-wrap">
+                <div class="meta">
+    <a href="/author/mark-serrels/" class="tracking_article_author" rel="author" data-tracking-name="Mark Serrels">
+        <img alt='' src='http://2.gravatar.com/avatar/e1854dd0df67d612eedb27bdc6f33fb7?s=24&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/e1854dd0df67d612eedb27bdc6f33fb7?s=48&amp;d=mm&amp;r=g 2x' class='avatar avatar-24 photo' height='24' width='24' />                <span itemprop="author">Mark Serrels</span>
+            </a>
+        <time datetime="2016-02-08T14:45:10+11:00" itemprop="datePublished">
+        8 February 2016 2:45 PM    </time>
+    </div>
+
+
+<div class="social">
+            <a href="#comments" class="btn btn-mini discuss anchor-link" rel="nofollow" title="Discuss" data-tracking-name="Discuss">
+            <i class="icon-comment"></i> Discuss
+        </a>
+            <a class="btn btn-mini bookmark disabled" title="Bookmark this post" data-target="/wp-admin/admin-ajax.php?id=login_to_bookmark" data-toggle="modal" data-post-id="749106" data-tracking-name="Bookmark">
+        <i class="icon-bookmark"></i> Bookmark 
+    </a>
+    </div>            </div>
+            <div class="social tracking_article_social">
+                
+<div class="byline-share">
+    <ul class="share-buttons">
+        <li class="byline-facebook">
+            <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.kotaku.com.au%2F2016%2F02%2Fnew-game-is-a-lot-like-p-t-but-sadly-isnt-p-t%2F&amp;t=New+Game+Is+A+Lot+Like+P.T.+But%2C+Sadly%2C+Isn%27t+P.T." rel="nofollow" title="share on facebook" onclick="window.open(this.href,&#39;sharefb&#39;,&#39;toolbar=0,status=0,width=640,height=440&#39;);return false;" target="_blank">
+                <i class="icon icon-facebook"></i>
+                <span class="hidden-xs hidden-sm">
+                	<span class="text">facebook</span><span class="badge facebook-social-count"></span>
+                </span>
+            </a>
+        </li>
+        <li class="byline-twitter">
+            <a href="http://twitter.com/share?url=http%3A%2F%2Fwww.kotaku.com.au%2F2016%2F02%2Fnew-game-is-a-lot-like-p-t-but-sadly-isnt-p-t%2F&amp;text=New+Game+Is+A+Lot+Like+P.T.+But%2C+Sadly%2C+Isn%27t+P.T.%20(via%20@KotakuAU)" rel="nofollow" title="share on twitter" onClick="window.open(this.href,&#39;sharetwitter&#39;,&#39;toolbar=0,status=0,width=480,height=360&#39;);return false;" target="_blank">
+                <i class="icon icon-twitter"></i>
+                <span class="hidden-xs hidden-sm">
+                	<span class="text">twitter</span><span class="badge twitter-social-count"></span>
+                </span>	
+            </a>
+        </li>
+        <li class="byline-reddit">
+            <a href="http://www.reddit.com/submit?url=http%3A%2F%2Fwww.kotaku.com.au%2F2016%2F02%2Fnew-game-is-a-lot-like-p-t-but-sadly-isnt-p-t%2F" title="share on reddit" rel="nofollow" onclick="window.open(this.href,&#39;sharereddit&#39;,&#39;toolbar=0,status=0,width=860,height=440&#39;);return false;" target="_blank">
+                <i class="icon icon-arrow-up"></i>
+                <span class="hidden-xs hidden-sm">
+                	<span class="text">reddit</span><span class="badge reddit-social-count"></span>
+                </span>	
+            </a>
+        </li>
+        <li class="byline-linkedin">
+            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fwww.kotaku.com.au%2F2016%2F02%2Fnew-game-is-a-lot-like-p-t-but-sadly-isnt-p-t%2F&amp;title=New+Game+Is+A+Lot+Like+P.T.+But%2C+Sadly%2C+Isn%27t+P.T.&amp;summary=In+the+wake+of+Silent+Hills%26%238217%3B+cancellation+and+the+utterly+idiotic+removal+of+P.T.+from+the+PlayStation+Store%2C+there+have+been+a+lot+of+games+in+the+works+that+look+like+P.T.+but+sadly%2C+are+not+P.T..%0AVisage+is+another+one.+It+looks+quite+good%21" title="share on linkedin" rel="nofollow" onclick="window.open(this.href,&#39;sharelinkedin&#39;,&#39;toolbar=0,status=0,width=640,height=440&#39;);return false;" target="_blank">
+                <i class="icon icon-linkedin"></i>
+                <span class="hidden-xs hidden-sm">
+                	<span class="text">linkedin</span><span class="badge linkedin-social-count"></span>
+                </span>
+            </a>
+        </li>		        
+        <li class="byline-googleplus">
+            <a href="http://plus.google.com/share?url=http%3A%2F%2Fwww.kotaku.com.au%2F2016%2F02%2Fnew-game-is-a-lot-like-p-t-but-sadly-isnt-p-t%2F" title="share on google+" rel="nofollow" onclick="popUp=window.open(this.href, 'popupwindow', 'scrollbars=no,toolbar=no,location=no,status=no,width=480,height=350');popUp.focus();return false">
+                <i class="icon icon-google-plus"></i>
+                <span class="hidden-xs hidden-sm">
+                	<span class="text">google+</span><span class="badge google-social-count"></span>
+                </span>
+            </a>
+        </li>
+    </ul>
+</div>
+            </div>
+                    <div id="content_post" itemprop="articleBody">
+                <div class="media_wrap image xlarge center"><a href="http://edge.alluremedia.com.au/m/k/2016/02/Untitled8.png" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://edge.alluremedia.com.au']);" rel="modal"><img src="http://edge.alluremedia.com.au/m/k/2016/02/Untitled8.png" class="size_xlarge" alt=""/></a></div>
+<p>In the wake of Silent Hills&#8217; cancellation and the utterly idiotic removal of P.T. from the PlayStation Store, there have been a lot of games in the works that look like P.T. but sadly, are not P.T..</p>
+<p>Visage is another one. It looks quite good!<span id="more-749106"></span></p>
+<p><noscript>Please enable JavaScript to watch this video.</noscript>
+<div class="media_wrap video left">
+                <iframe width="640" height="360" src="http://www.youtube.com/embed/4i72qLAusxI?wmode=opaque&amp;autohide=1&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+<p>The team behind Visage has released a pretty cool 15 minute gameplay trailer. I recommend watching it. It has that homely, familiar yet terrifying vibe to it. </p>
+<p>Visage is also midway through a <a href="https://www.kickstarter.com/projects/1058493022/visage-horror-game" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.kickstarter.com']);">Kickstarter</a>, where the team are asking for a pretty lowball amount ($35,000) especially for a game that already seems so far along, with such high production values.</p>
+<p>Regardless, I&#8217;m keen. </p>
+
+                <hr />
+                <h5>
+                    Have you subscribed to Kotaku Australia's <a href="http://www.kotaku.com.au/user/register/">email newsletter?</a>
+                    You can also follow us on 
+                                            <a href="https://www.facebook.com/KotakuAustralia" rel="nofollow" target="_blank">Facebook</a>, 
+                        <a href="https://twitter.com/KotakuAU" rel="nofollow" target="_blank">Twitter</a>                        and <a href="http://www.youtube.com/user/kotakuAU" rel="nofollow" target="_blank">YouTube</a>.
+                </h5>
+            </div>
+            	<div class="tags post-meta">
+		<h4>Tags</h4>
+		<ul class="tracking_article_tags" itemprop="keywords">
+					<li>
+				<a href="http://www.kotaku.com.au/tags/au/" class="btn btn-mini" data-tracking-name="Australian Stories">
+					australian stories				</a>
+			</li>
+								<li>
+				<a href="http://www.kotaku.com.au/tags/p-t/" class="btn btn-mini" data-tracking-name="p.t.">
+					p.t.				</a>
+			</li>
+								<li>
+				<a href="http://www.kotaku.com.au/tags/visage/" class="btn btn-mini" data-tracking-name="visage">
+					visage				</a>
+			</li>
+							</ul>
+	</div>
+ 
+            <div class="social tracking_article_social">
+                
+<div class="byline-share">
+    <ul class="share-buttons">
+        <li class="byline-facebook">
+            <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.kotaku.com.au%2F2016%2F02%2Fnew-game-is-a-lot-like-p-t-but-sadly-isnt-p-t%2F&amp;t=New+Game+Is+A+Lot+Like+P.T.+But%2C+Sadly%2C+Isn%27t+P.T." rel="nofollow" title="share on facebook" onclick="window.open(this.href,&#39;sharefb&#39;,&#39;toolbar=0,status=0,width=640,height=440&#39;);return false;" target="_blank">
+                <i class="icon icon-facebook"></i>
+                <span class="hidden-xs hidden-sm">
+                	<span class="text">facebook</span><span class="badge facebook-social-count"></span>
+                </span>
+            </a>
+        </li>
+        <li class="byline-twitter">
+            <a href="http://twitter.com/share?url=http%3A%2F%2Fwww.kotaku.com.au%2F2016%2F02%2Fnew-game-is-a-lot-like-p-t-but-sadly-isnt-p-t%2F&amp;text=New+Game+Is+A+Lot+Like+P.T.+But%2C+Sadly%2C+Isn%27t+P.T.%20(via%20@KotakuAU)" rel="nofollow" title="share on twitter" onClick="window.open(this.href,&#39;sharetwitter&#39;,&#39;toolbar=0,status=0,width=480,height=360&#39;);return false;" target="_blank">
+                <i class="icon icon-twitter"></i>
+                <span class="hidden-xs hidden-sm">
+                	<span class="text">twitter</span><span class="badge twitter-social-count"></span>
+                </span>	
+            </a>
+        </li>
+        <li class="byline-reddit">
+            <a href="http://www.reddit.com/submit?url=http%3A%2F%2Fwww.kotaku.com.au%2F2016%2F02%2Fnew-game-is-a-lot-like-p-t-but-sadly-isnt-p-t%2F" title="share on reddit" rel="nofollow" onclick="window.open(this.href,&#39;sharereddit&#39;,&#39;toolbar=0,status=0,width=860,height=440&#39;);return false;" target="_blank">
+                <i class="icon icon-arrow-up"></i>
+                <span class="hidden-xs hidden-sm">
+                	<span class="text">reddit</span><span class="badge reddit-social-count"></span>
+                </span>	
+            </a>
+        </li>
+        <li class="byline-linkedin">
+            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fwww.kotaku.com.au%2F2016%2F02%2Fnew-game-is-a-lot-like-p-t-but-sadly-isnt-p-t%2F&amp;title=New+Game+Is+A+Lot+Like+P.T.+But%2C+Sadly%2C+Isn%27t+P.T.&amp;summary=In+the+wake+of+Silent+Hills%26%238217%3B+cancellation+and+the+utterly+idiotic+removal+of+P.T.+from+the+PlayStation+Store%2C+there+have+been+a+lot+of+games+in+the+works+that+look+like+P.T.+but+sadly%2C+are+not+P.T..%0AVisage+is+another+one.+It+looks+quite+good%21" title="share on linkedin" rel="nofollow" onclick="window.open(this.href,&#39;sharelinkedin&#39;,&#39;toolbar=0,status=0,width=640,height=440&#39;);return false;" target="_blank">
+                <i class="icon icon-linkedin"></i>
+                <span class="hidden-xs hidden-sm">
+                	<span class="text">linkedin</span><span class="badge linkedin-social-count"></span>
+                </span>
+            </a>
+        </li>		        
+        <li class="byline-googleplus">
+            <a href="http://plus.google.com/share?url=http%3A%2F%2Fwww.kotaku.com.au%2F2016%2F02%2Fnew-game-is-a-lot-like-p-t-but-sadly-isnt-p-t%2F" title="share on google+" rel="nofollow" onclick="popUp=window.open(this.href, 'popupwindow', 'scrollbars=no,toolbar=no,location=no,status=no,width=480,height=350');popUp.focus();return false">
+                <i class="icon icon-google-plus"></i>
+                <span class="hidden-xs hidden-sm">
+                	<span class="text">google+</span><span class="badge google-social-count"></span>
+                </span>
+            </a>
+        </li>
+    </ul>
+</div>
+            </div>
+                    </div>
+                    <div id="taboola-below-article-thumbnails"></div>
+                    <div id="taboola-below-article-thumbnails-2nd">
+                            </div>
+                		<div id="comments" class="post-meta">
+			<div class="ribbon-separator dark">
+				<span class="colour"><i class="sprite sprite-comments"></i></span>
+				<h4 class="pull-left">Discuss</h4>
+				
+							<span class="sub pull-right">
+				7 Comments | 
+					<a href="#respond" class="anchor-link track_action" data-tracking-name="Jump to Reply Box">Reply <i class="icon-chevron-down icon-white"></i></a>
+				</span>
+						</div>
+
+					
+			<ul class="commentlist" itemprop="comment">
+				
+<li id="comment-3612593" class="comment depth-1" data-comment-id="3612593">
+				<div class="comment_container">
+					<div class="comment_avatar">
+						<img alt='' src='http://0.gravatar.com/avatar/6213c2f555fa1a3db459d6003edef150?s=32&#038;d=http%3A%2F%2Fedge.alluremedia.com.au%2Fassets%2Ftechnetwork%2Fimg%2Fkotaku%2Fgravatar.jpg&#038;r=g' srcset='http://0.gravatar.com/avatar/6213c2f555fa1a3db459d6003edef150?s=64&amp;d=http%3A%2F%2Fedge.alluremedia.com.au%2Fassets%2Ftechnetwork%2Fimg%2Fkotaku%2Fgravatar.jpg&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />					</div>
+
+					<ul class="comment_config">
+					
+						<li class="showhide">
+							<a title="Hide" class="track_action" data-tracking-name="Toggle Comment Collapse">
+								<i class="icon-minus"></i>
+							</a>
+						</li>
+										<li class="permalink">
+							<a href="http://www.kotaku.com.au/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/comment-page-1/#comment-3612593" title="Permalink" class="track_action" data-target="/wp-admin/admin-ajax.php?id=get_permalink&link=http://www.kotaku.com.au/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/comment-page-1/#comment-3612593" data-toggle="modal" data-tracking-name="Permalink">
+								<i class="icon-bookmark"></i>
+							</a>
+						</li>
+											<li class="report">
+													<a id="report-3612593" title="Login to report this comment" class="disabled track_action" data-target="/wp-admin/admin-ajax.php?id=login_to_report" data-toggle="modal" data-tracking-name="Login to Report">
+								<i class="icon-flag"></i>
+							</a>
+												</li>
+										</ul>
+
+					<div class="comment-content-wrap">
+						<div class="comment-heading">
+							<div class="title" data-display-name="leigh">
+							leigh <small><a href="/user/leigh/">@leigh</a></small>							</div>
+						
+							<div class="meta">
+								February 8, 2016 3:15 pm							</div>
+						</div>
+						<div class="comment-content">
+													<p>Can I scrub the save data for PT, but still keep the game?</p>
+<p>I'd like to start from scratch to show visitors, but I'm right near the end with those scraps of paper and not really feeling it.</p>
+														<input type="hidden" value="Can I scrub the save data for PT, but still keep the game?
+
+I'd like to start from scratch to show visitors, but I'm right near the end with those scraps of paper and not really feeling it." class="original_comment hide" />
+												</div>
+
+						<div class="comment_reply tracking_article_comments">
+																		    	<a href="/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/?replytocom=3612593#respond" class="comment-reply-link" data-tracking-name="Reply" title="Reply">
+					    		<i class="icon-share"></i> Reply
+					    	</a>
+					   						   	
+
+					   	<span class="comment-vote" data-comment-id="3612593">
+						    	
+            <a class="btn btn-mini disabled" data-target="/wp-admin/admin-ajax.php?id=login_to_vote" data-toggle="modal" title="Up Vote">
+              <i class="icon-chevron-up"></i>
+            </a> 
+            <a class="btn btn-mini disabled" data-target="/wp-admin/admin-ajax.php?id=login_to_vote" data-toggle="modal" title="Down Vote">
+              <i class="icon-chevron-down"></i>
+            </a> 
+          
+        <span class="vote-count">
+          <a class="btn btn-mini btn-normal" data-target="/wp-admin/admin-ajax.php?id=view_votes&comment=3612593" data-toggle="modal" title="View Voters">0</a>
+        </span>
+      							</span>
+
+
+					   	
+
+						</div>
+					</div>
+				</div>
+				<br />
+
+
+<ul class="children">
+<li id="comment-3612604" class="comment depth-2" data-comment-id="3612604">
+				<div class="comment_container">
+					<div class="comment_avatar">
+						<img alt='' src='http://2.gravatar.com/avatar/592df64f618e27de827d29c17eba7d2d?s=24&#038;d=http%3A%2F%2Fedge.alluremedia.com.au%2Fassets%2Ftechnetwork%2Fimg%2Fkotaku%2Fgravatar.jpg&#038;r=g' srcset='http://2.gravatar.com/avatar/592df64f618e27de827d29c17eba7d2d?s=48&amp;d=http%3A%2F%2Fedge.alluremedia.com.au%2Fassets%2Ftechnetwork%2Fimg%2Fkotaku%2Fgravatar.jpg&amp;r=g 2x' class='avatar avatar-24 photo' height='24' width='24' />					</div>
+
+					<ul class="comment_config">
+					
+						<li class="showhide">
+							<a title="Hide" class="track_action" data-tracking-name="Toggle Comment Collapse">
+								<i class="icon-minus"></i>
+							</a>
+						</li>
+										<li class="permalink">
+							<a href="http://www.kotaku.com.au/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/comment-page-1/#comment-3612604" title="Permalink" class="track_action" data-target="/wp-admin/admin-ajax.php?id=get_permalink&link=http://www.kotaku.com.au/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/comment-page-1/#comment-3612604" data-toggle="modal" data-tracking-name="Permalink">
+								<i class="icon-bookmark"></i>
+							</a>
+						</li>
+											<li class="report">
+													<a id="report-3612604" title="Login to report this comment" class="disabled track_action" data-target="/wp-admin/admin-ajax.php?id=login_to_report" data-toggle="modal" data-tracking-name="Login to Report">
+								<i class="icon-flag"></i>
+							</a>
+												</li>
+										</ul>
+
+					<div class="comment-content-wrap">
+						<div class="comment-heading">
+							<div class="title" data-display-name="mccawsome">
+							mccawsome <small><a href="/user/mccawsome/">@mccawsome</a></small>							</div>
+						
+							<div class="meta">
+								February 8, 2016 3:29 pm							</div>
+						</div>
+						<div class="comment-content">
+													<p>You should be able to delete the save file.</p>
+														<input type="hidden" value="You should be able to delete the save file." class="original_comment hide" />
+												</div>
+
+						<div class="comment_reply tracking_article_comments">
+																		    	<a href="/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/?replytocom=3612604#respond" class="comment-reply-link" data-tracking-name="Reply" title="Reply">
+					    		<i class="icon-share"></i> Reply
+					    	</a>
+					   						   	
+
+					   	<span class="comment-vote" data-comment-id="3612604">
+						    	
+            <a class="btn btn-mini disabled" data-target="/wp-admin/admin-ajax.php?id=login_to_vote" data-toggle="modal" title="Up Vote">
+              <i class="icon-chevron-up"></i>
+            </a> 
+            <a class="btn btn-mini disabled" data-target="/wp-admin/admin-ajax.php?id=login_to_vote" data-toggle="modal" title="Down Vote">
+              <i class="icon-chevron-down"></i>
+            </a> 
+          
+        <span class="vote-count">
+          <a class="btn btn-mini btn-normal" data-target="/wp-admin/admin-ajax.php?id=view_votes&comment=3612604" data-toggle="modal" title="View Voters">0</a>
+        </span>
+      							</span>
+
+
+					   	
+
+						</div>
+					</div>
+				</div>
+				<br />
+
+
+</li></ul></li>
+<li id="comment-3612636" class="comment depth-1" data-comment-id="3612636">
+				<div class="comment_container">
+					<div class="comment_avatar">
+						<img alt='' src='http://2.gravatar.com/avatar/5ed2d873d5a259ccdbdaf7a30274d5a2?s=32&#038;d=http%3A%2F%2Fedge.alluremedia.com.au%2Fassets%2Ftechnetwork%2Fimg%2Fkotaku%2Fgravatar.jpg&#038;r=g' srcset='http://2.gravatar.com/avatar/5ed2d873d5a259ccdbdaf7a30274d5a2?s=64&amp;d=http%3A%2F%2Fedge.alluremedia.com.au%2Fassets%2Ftechnetwork%2Fimg%2Fkotaku%2Fgravatar.jpg&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />					</div>
+
+					<ul class="comment_config">
+					
+						<li class="showhide">
+							<a title="Hide" class="track_action" data-tracking-name="Toggle Comment Collapse">
+								<i class="icon-minus"></i>
+							</a>
+						</li>
+										<li class="permalink">
+							<a href="http://www.kotaku.com.au/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/comment-page-1/#comment-3612636" title="Permalink" class="track_action" data-target="/wp-admin/admin-ajax.php?id=get_permalink&link=http://www.kotaku.com.au/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/comment-page-1/#comment-3612636" data-toggle="modal" data-tracking-name="Permalink">
+								<i class="icon-bookmark"></i>
+							</a>
+						</li>
+											<li class="report">
+													<a id="report-3612636" title="Login to report this comment" class="disabled track_action" data-target="/wp-admin/admin-ajax.php?id=login_to_report" data-toggle="modal" data-tracking-name="Login to Report">
+								<i class="icon-flag"></i>
+							</a>
+												</li>
+										</ul>
+
+					<div class="comment-content-wrap">
+						<div class="comment-heading">
+							<div class="title" data-display-name="scrumptatoes">
+							scrumptatoes <small><a href="/user/scrumptatoes/">@scrumptatoes</a></small>							</div>
+						
+							<div class="meta">
+								February 8, 2016 3:57 pm							</div>
+						</div>
+						<div class="comment-content">
+													<p>Was looking so good until the static.</p>
+														<input type="hidden" value="Was looking so good until the static." class="original_comment hide" />
+												</div>
+
+						<div class="comment_reply tracking_article_comments">
+																		    	<a href="/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/?replytocom=3612636#respond" class="comment-reply-link" data-tracking-name="Reply" title="Reply">
+					    		<i class="icon-share"></i> Reply
+					    	</a>
+					   						   	
+
+					   	<span class="comment-vote" data-comment-id="3612636">
+						    	
+            <a class="btn btn-mini disabled" data-target="/wp-admin/admin-ajax.php?id=login_to_vote" data-toggle="modal" title="Up Vote">
+              <i class="icon-chevron-up"></i>
+            </a> 
+            <a class="btn btn-mini disabled" data-target="/wp-admin/admin-ajax.php?id=login_to_vote" data-toggle="modal" title="Down Vote">
+              <i class="icon-chevron-down"></i>
+            </a> 
+          
+        <span class="vote-count">
+          <a class="btn btn-mini btn-normal" data-target="/wp-admin/admin-ajax.php?id=view_votes&comment=3612636" data-toggle="modal" title="View Voters">0</a>
+        </span>
+      							</span>
+
+
+					   	
+
+						</div>
+					</div>
+				</div>
+				<br />
+
+
+</li>
+<li id="comment-3612637" class="comment depth-1" data-comment-id="3612637">
+				<div class="comment_container">
+					<div class="comment_avatar">
+						<img alt='' src='http://0.gravatar.com/avatar/9f7d0cec4c9392f356e05abd6b343d61?s=32&#038;d=http%3A%2F%2Fedge.alluremedia.com.au%2Fassets%2Ftechnetwork%2Fimg%2Fkotaku%2Fgravatar.jpg&#038;r=g' srcset='http://0.gravatar.com/avatar/9f7d0cec4c9392f356e05abd6b343d61?s=64&amp;d=http%3A%2F%2Fedge.alluremedia.com.au%2Fassets%2Ftechnetwork%2Fimg%2Fkotaku%2Fgravatar.jpg&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />					</div>
+
+					<ul class="comment_config">
+					
+						<li class="showhide">
+							<a title="Hide" class="track_action" data-tracking-name="Toggle Comment Collapse">
+								<i class="icon-minus"></i>
+							</a>
+						</li>
+										<li class="permalink">
+							<a href="http://www.kotaku.com.au/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/comment-page-1/#comment-3612637" title="Permalink" class="track_action" data-target="/wp-admin/admin-ajax.php?id=get_permalink&link=http://www.kotaku.com.au/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/comment-page-1/#comment-3612637" data-toggle="modal" data-tracking-name="Permalink">
+								<i class="icon-bookmark"></i>
+							</a>
+						</li>
+											<li class="report">
+													<a id="report-3612637" title="Login to report this comment" class="disabled track_action" data-target="/wp-admin/admin-ajax.php?id=login_to_report" data-toggle="modal" data-tracking-name="Login to Report">
+								<i class="icon-flag"></i>
+							</a>
+												</li>
+										</ul>
+
+					<div class="comment-content-wrap">
+						<div class="comment-heading">
+							<div class="title" data-display-name="mogwai">
+							mogwai <small><a href="/user/mogwai/">@mogwai</a></small>							</div>
+						
+							<div class="meta">
+								February 8, 2016 4:00 pm							</div>
+						</div>
+						<div class="comment-content">
+													<p>I went to play P.T the other day but found that it was deleted, which I definitely didn't do.. Don't know who the culprit was.</p>
+														<input type="hidden" value="I went to play P.T the other day but found that it was deleted, which I definitely didn't do.. Don't know who the culprit was." class="original_comment hide" />
+												</div>
+
+						<div class="comment_reply tracking_article_comments">
+																		    	<a href="/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/?replytocom=3612637#respond" class="comment-reply-link" data-tracking-name="Reply" title="Reply">
+					    		<i class="icon-share"></i> Reply
+					    	</a>
+					   						   	
+
+					   	<span class="comment-vote" data-comment-id="3612637">
+						    	
+            <a class="btn btn-mini disabled" data-target="/wp-admin/admin-ajax.php?id=login_to_vote" data-toggle="modal" title="Up Vote">
+              <i class="icon-chevron-up"></i>
+            </a> 
+            <a class="btn btn-mini disabled" data-target="/wp-admin/admin-ajax.php?id=login_to_vote" data-toggle="modal" title="Down Vote">
+              <i class="icon-chevron-down"></i>
+            </a> 
+          
+        <span class="vote-count">
+          <a class="btn btn-mini btn-normal" data-target="/wp-admin/admin-ajax.php?id=view_votes&comment=3612637" data-toggle="modal" title="View Voters">0</a>
+        </span>
+      							</span>
+
+
+					   	
+
+						</div>
+					</div>
+				</div>
+				<br />
+
+
+<ul class="children">
+<li id="comment-3612671" class="comment depth-2" data-comment-id="3612671">
+				<div class="comment_container">
+					<div class="comment_avatar">
+						<img alt='' src='http://0.gravatar.com/avatar/07908feb11f82287158cf042b08be1f7?s=24&#038;d=http%3A%2F%2Fedge.alluremedia.com.au%2Fassets%2Ftechnetwork%2Fimg%2Fkotaku%2Fgravatar.jpg&#038;r=g' srcset='http://0.gravatar.com/avatar/07908feb11f82287158cf042b08be1f7?s=48&amp;d=http%3A%2F%2Fedge.alluremedia.com.au%2Fassets%2Ftechnetwork%2Fimg%2Fkotaku%2Fgravatar.jpg&amp;r=g 2x' class='avatar avatar-24 photo' height='24' width='24' />					</div>
+
+					<ul class="comment_config">
+					
+						<li class="showhide">
+							<a title="Hide" class="track_action" data-tracking-name="Toggle Comment Collapse">
+								<i class="icon-minus"></i>
+							</a>
+						</li>
+										<li class="permalink">
+							<a href="http://www.kotaku.com.au/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/comment-page-1/#comment-3612671" title="Permalink" class="track_action" data-target="/wp-admin/admin-ajax.php?id=get_permalink&link=http://www.kotaku.com.au/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/comment-page-1/#comment-3612671" data-toggle="modal" data-tracking-name="Permalink">
+								<i class="icon-bookmark"></i>
+							</a>
+						</li>
+											<li class="report">
+													<a id="report-3612671" title="Login to report this comment" class="disabled track_action" data-target="/wp-admin/admin-ajax.php?id=login_to_report" data-toggle="modal" data-tracking-name="Login to Report">
+								<i class="icon-flag"></i>
+							</a>
+												</li>
+										</ul>
+
+					<div class="comment-content-wrap">
+						<div class="comment-heading">
+							<div class="title" data-display-name="g-man">
+							g-man <small><a href="/user/g-man/">@g-man</a></small>							</div>
+						
+							<div class="meta">
+								February 8, 2016 4:43 pm							</div>
+						</div>
+						<div class="comment-content">
+													<p>I know it's been officially removed from distribution.  I went looking for it the other day.</p>
+														<input type="hidden" value="I know it's been officially removed from distribution.  I went looking for it the other day." class="original_comment hide" />
+												</div>
+
+						<div class="comment_reply tracking_article_comments">
+																		    	<a href="/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/?replytocom=3612671#respond" class="comment-reply-link" data-tracking-name="Reply" title="Reply">
+					    		<i class="icon-share"></i> Reply
+					    	</a>
+					   						   	
+
+					   	<span class="comment-vote" data-comment-id="3612671">
+						    	
+            <a class="btn btn-mini disabled" data-target="/wp-admin/admin-ajax.php?id=login_to_vote" data-toggle="modal" title="Up Vote">
+              <i class="icon-chevron-up"></i>
+            </a> 
+            <a class="btn btn-mini disabled" data-target="/wp-admin/admin-ajax.php?id=login_to_vote" data-toggle="modal" title="Down Vote">
+              <i class="icon-chevron-down"></i>
+            </a> 
+          
+        <span class="vote-count">
+          <a class="btn btn-mini btn-normal" data-target="/wp-admin/admin-ajax.php?id=view_votes&comment=3612671" data-toggle="modal" title="View Voters">0</a>
+        </span>
+      							</span>
+
+
+					   	
+
+						</div>
+					</div>
+				</div>
+				<br />
+
+
+<ul class="children">
+<li id="comment-3612751" class="comment depth-3" data-comment-id="3612751">
+				<div class="comment_container">
+					<div class="comment_avatar">
+						<img alt='' src='http://0.gravatar.com/avatar/9f7d0cec4c9392f356e05abd6b343d61?s=24&#038;d=http%3A%2F%2Fedge.alluremedia.com.au%2Fassets%2Ftechnetwork%2Fimg%2Fkotaku%2Fgravatar.jpg&#038;r=g' srcset='http://0.gravatar.com/avatar/9f7d0cec4c9392f356e05abd6b343d61?s=48&amp;d=http%3A%2F%2Fedge.alluremedia.com.au%2Fassets%2Ftechnetwork%2Fimg%2Fkotaku%2Fgravatar.jpg&amp;r=g 2x' class='avatar avatar-24 photo' height='24' width='24' />					</div>
+
+					<ul class="comment_config">
+					
+						<li class="showhide">
+							<a title="Hide" class="track_action" data-tracking-name="Toggle Comment Collapse">
+								<i class="icon-minus"></i>
+							</a>
+						</li>
+										<li class="permalink">
+							<a href="http://www.kotaku.com.au/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/comment-page-1/#comment-3612751" title="Permalink" class="track_action" data-target="/wp-admin/admin-ajax.php?id=get_permalink&link=http://www.kotaku.com.au/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/comment-page-1/#comment-3612751" data-toggle="modal" data-tracking-name="Permalink">
+								<i class="icon-bookmark"></i>
+							</a>
+						</li>
+											<li class="report">
+													<a id="report-3612751" title="Login to report this comment" class="disabled track_action" data-target="/wp-admin/admin-ajax.php?id=login_to_report" data-toggle="modal" data-tracking-name="Login to Report">
+								<i class="icon-flag"></i>
+							</a>
+												</li>
+										</ul>
+
+					<div class="comment-content-wrap">
+						<div class="comment-heading">
+							<div class="title" data-display-name="mogwai">
+							mogwai <small><a href="/user/mogwai/">@mogwai</a></small>							</div>
+						
+							<div class="meta">
+								February 8, 2016 7:32 pm							</div>
+						</div>
+						<div class="comment-content">
+													<p>Yep, that why I was making sure to keep a copy on my PS4.. Devastated</p>
+														<input type="hidden" value="Yep, that why I was making sure to keep a copy on my PS4.. Devastated" class="original_comment hide" />
+												</div>
+
+						<div class="comment_reply tracking_article_comments">
+																		    	<a href="/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/?replytocom=3612751#respond" class="comment-reply-link" data-tracking-name="Reply" title="Reply">
+					    		<i class="icon-share"></i> Reply
+					    	</a>
+					   						   	
+
+					   	<span class="comment-vote" data-comment-id="3612751">
+						    	
+            <a class="btn btn-mini disabled" data-target="/wp-admin/admin-ajax.php?id=login_to_vote" data-toggle="modal" title="Up Vote">
+              <i class="icon-chevron-up"></i>
+            </a> 
+            <a class="btn btn-mini disabled" data-target="/wp-admin/admin-ajax.php?id=login_to_vote" data-toggle="modal" title="Down Vote">
+              <i class="icon-chevron-down"></i>
+            </a> 
+          
+        <span class="vote-count">
+          <a class="btn btn-mini btn-normal" data-target="/wp-admin/admin-ajax.php?id=view_votes&comment=3612751" data-toggle="modal" title="View Voters">0</a>
+        </span>
+      							</span>
+
+
+					   	
+
+						</div>
+					</div>
+				</div>
+				<br />
+
+
+</li></ul></li></ul></li>
+<li id="comment-3612702" class="comment depth-1" data-comment-id="3612702">
+				<div class="comment_container">
+					<div class="comment_avatar">
+						<img alt='' src='http://0.gravatar.com/avatar/f50f4349ead66231bc98aeacbd10e7b3?s=32&#038;d=http%3A%2F%2Fedge.alluremedia.com.au%2Fassets%2Ftechnetwork%2Fimg%2Fkotaku%2Fgravatar.jpg&#038;r=g' srcset='http://0.gravatar.com/avatar/f50f4349ead66231bc98aeacbd10e7b3?s=64&amp;d=http%3A%2F%2Fedge.alluremedia.com.au%2Fassets%2Ftechnetwork%2Fimg%2Fkotaku%2Fgravatar.jpg&amp;r=g 2x' class='avatar avatar-32 photo' height='32' width='32' />					</div>
+
+					<ul class="comment_config">
+					
+						<li class="showhide">
+							<a title="Hide" class="track_action" data-tracking-name="Toggle Comment Collapse">
+								<i class="icon-minus"></i>
+							</a>
+						</li>
+										<li class="permalink">
+							<a href="http://www.kotaku.com.au/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/comment-page-1/#comment-3612702" title="Permalink" class="track_action" data-target="/wp-admin/admin-ajax.php?id=get_permalink&link=http://www.kotaku.com.au/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/comment-page-1/#comment-3612702" data-toggle="modal" data-tracking-name="Permalink">
+								<i class="icon-bookmark"></i>
+							</a>
+						</li>
+											<li class="report">
+													<a id="report-3612702" title="Login to report this comment" class="disabled track_action" data-target="/wp-admin/admin-ajax.php?id=login_to_report" data-toggle="modal" data-tracking-name="Login to Report">
+								<i class="icon-flag"></i>
+							</a>
+												</li>
+										</ul>
+
+					<div class="comment-content-wrap">
+						<div class="comment-heading">
+							<div class="title" data-display-name="Falcon7">
+							Falcon7 <small><a href="/user/yungleancuisine/">@yungleancuisine</a></small>							</div>
+						
+							<div class="meta">
+								February 8, 2016 5:34 pm							</div>
+						</div>
+						<div class="comment-content">
+													<p>It's good to see that indie devs are really treading new grounds when it comes to the horror genre (AKA YouTube/Kickstarter fodder)</p>
+															<p class="meta">
+									Last edited February 8, 2016 5:34 pm								</p>
+														<input type="hidden" value="It's good to see that indie devs are really treading new grounds when it comes to the horror genre (AKA YouTube/Kickstarter fodder)" class="original_comment hide" />
+												</div>
+
+						<div class="comment_reply tracking_article_comments">
+																		    	<a href="/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/?replytocom=3612702#respond" class="comment-reply-link" data-tracking-name="Reply" title="Reply">
+					    		<i class="icon-share"></i> Reply
+					    	</a>
+					   						   	
+
+					   	<span class="comment-vote" data-comment-id="3612702">
+						    	
+            <a class="btn btn-mini disabled" data-target="/wp-admin/admin-ajax.php?id=login_to_vote" data-toggle="modal" title="Up Vote">
+              <i class="icon-chevron-up"></i>
+            </a> 
+            <a class="btn btn-mini disabled" data-target="/wp-admin/admin-ajax.php?id=login_to_vote" data-toggle="modal" title="Down Vote">
+              <i class="icon-chevron-down"></i>
+            </a> 
+          
+        <span class="vote-count">
+          <a class="btn btn-mini btn-normal" data-target="/wp-admin/admin-ajax.php?id=view_votes&comment=3612702" data-toggle="modal" title="View Voters">0</a>
+        </span>
+      							</span>
+
+
+					   	
+
+						</div>
+					</div>
+				</div>
+				<br />
+
+
+</li>			</ul>
+
+								
+			<div id="respond" class="well">
+				<a href="http://www.kotaku.com.au/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/#respond" id="cancel-comment-reply-link" class="btn btn-mini pull-right track_action" style="display:none;" rel="nofollow" data-tracking-name="Cancel Reply">Cancel Reply</a>
+						<h3 id="reply-title">Join the discussion!</h3>
+				<a href="/user/login/" id="close_comment_login_panel" class="btn btn-mini pull-right track_action" data-tracking-name="Back to log In">Back to log In</a>
+
+				<div id="comment_login_panel" class="clearfix">
+					<div class="panel">
+						<a href="/user/login/" class="btn btn-block btn-primary track_action" data-target="/wp-admin/admin-ajax.php?id=log_in" data-toggle="modal" data-tracking-name="Log In"><i class="icon-user icon-white"></i> Log In</a>
+					</div>
+					<div class="panel">
+						<a href="/user/register/" class="btn btn-block track_action" data-target="/wp-admin/admin-ajax.php?id=user_registration" data-toggle="modal" data-tracking-name="Register"><i class="icon-plus"></i> Register</a>
+					</div>
+					<div class="panel last">
+						<a id="show_comment_guest_panel" class="btn btn-block track_action" data-tracking-name="Guest Access"><i class="icon-chevron-down"></i> Guest Access</a>
+					</div>
+				</div>
+
+			
+				<form id="comment_form" action="http://www.kotaku.com.au/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/" method="post" novalidate="novalidate" style="display: none;">
+					<div id="comment_guest_panel" class="comment_text_container clearfix" >
+						<div class="pull-left">
+							<label for="guest_name" class="placeholder">Your Name</label>
+							<input type="text" id="guest_name" name="guest_name" value="" placeholder="Your Name" class="input-xlarge"/>
+						</div>
+						<div class="pull-right">
+							<label for="guest_email" class="placeholder">Your Email</label>
+							<input type="text" id="guest_email" name="guest_email" value="" placeholder="Your Email" class="input-xlarge"/>
+						</div>
+					</div>
+					<div class="comment_textarea_container html_editor">
+						<label for="comment_content" class="placeholder">Join the discussion!</label>
+						<div class="btn-toolbar html_editor_bar" data-target="#comment_content">
+							<div class="btn-group">
+								<a class="btn bold" title="Bold"><i class="icon-bold"></i></a>
+								<a class="btn italic" title="Italic"><i class="icon-italic"></i></a>
+								<a class="btn underline" title="Underline"><i class="icon-underline"></i></a>
+								<a class="btn quote" title="Quote"><i class="icon-comment-alt"></i></a>
+								<a class="btn mention" title="@ Mention User"><i class="icon-bullhorn"></i></a>
+								<a class="btn spoiler" title="Toggle Spoiler Content"><i class="icon-eye-open"></i></a>
+							</div>
+						</div>
+						<textarea id="comment_content" name="comment_content" placeholder="Join the discussion!" class="comment_textarea input-xlarge"></textarea>
+											</div>
+					<div id="reply-status" class="pull-left">
+						<div class="alert alert-success no-close">You are starting a new discussion</div>
+					</div>
+					<div class="form-submit pull-right">
+						<input type="submit" id="comment_submit" name="submit_comment" value="Submit" class="btn btn-primary track_action" data-tracking-name="Submit New Comment"/>
+						<input type="hidden" id="comment_post_ID" name="comment_post_ID" value="749106">
+						<input type="hidden" id="comment_parent" name="comment_parent" value="0">						<input type="hidden" id="post_comment_wpnonce" name="post_comment_wpnonce" value="e26182ddc4" /><input type="hidden" name="_wp_http_referer" value="/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/" />						
+												<input type="text" id="author" name="author" value="" tabindex="101" style="display:none;"/>
+						<input type="text" id="email" name="email" value="" tabindex="102" style="display:none;"/>
+						<input type="text" id="url" name="url" value="" tabindex="103" style="display:none;">
+						<textarea name="comment" tabindex="104" style="display:none;"></textarea>
+						<input type="hidden" name="datetime" value="1455666369">
+						<input type="hidden" name="js_data" value="">
+					</div>
+				</form>
+			</div>
+		</div>
+
+			<form id="edit_comment_form" method="post" action="" style="display:none;" novalidate="novalidate">
+			<div class="btn-toolbar html_editor_bar" data-target="#edit_comment">
+				<div class="btn-group">
+					<a class="btn bold" title="Bold"><i class="icon-bold"></i></a>
+					<a class="btn italic" title="Italic"><i class="icon-italic"></i></a>
+					<a class="btn underline" title="Underline"><i class="icon-underline"></i></a>
+					<a class="btn quote" title="Quote"><i class="icon-comment-alt"></i></a>
+					<a class="btn mention" title="@ Mention User"><i class="icon-bullhorn"></i></a>
+					<a class="btn spoiler" title="Toggle Spoiler Content"><i class="icon-eye-open"></i></a>
+				</div>
+			</div>
+			<textarea id="edit_comment" name="edit_comment" data-comment-id=""></textarea>
+			<input type="submit" id="submit_edit_comment" class="btn btn-primary pull-right track_action" value="Save Updates" data-tracking-name="Submit Edit Comment"/>
+			<input type="button" id="hide_edit_comment" class="btn pull-right track_action" value="Cancel" data-tracking-name="Cancel Edit Comment"/>
+			<input type="hidden" id="update_comment_wpnonce" name="update_comment_wpnonce" value="fa2075b3f4" /><input type="hidden" name="_wp_http_referer" value="/2016/02/new-game-is-a-lot-like-p-t-but-sadly-isnt-p-t/" />			<input type="hidden" id="edit_comment_id" name="edit_comment_id" value=""/>
+		</form>
+		<hr />
+                      <h2>Trending Stories Right Now</h2><div id="trending-river" class="pull-left stories tech">
+                    <div id="post-1" class="post">
+                    <div class="tracking_loop_article" data-tracking-name="Article #1" itemscope itemtype="http://schema.org/NewsArticle">
+                    <div class="pull-left">
+                    <a href="/in-real-life" class="category dark tracking_loop_category" title="Read more posts from in-real-life" data-tracking-name="in-real-life">
+                        <span class="colour in-real-life"></span>
+                        <span class="sub" itemprop="genre">in-real-life</span>
+                    </a>
+                        <a href="http://www.kotaku.com.au/2016/02/super-mario-kart-with-101-video-game-characters-is-insane" class="thumbnail tracking_loop_image" title="Read more">
+                            <img src="http://img.youtube.com/vi/9HBTeP22nkA/0.jpg" class="size_small" data-size="small" alt="au super-mario-kart">
+                            <span class="size_small"></span>
+                        </a>
+                  </div>    
+                  <div class="pull-right">
+                    <h2 itemprop="headline">
+                        <a href="http://www.kotaku.com.au/2016/02/super-mario-kart-with-101-video-game-characters-is-insane" class="tracking_loop_headline" title="Read more">
+                            Super Mario Kart With 101 Video Game Characters Is Insane
+                        </a>
+                    </h2>
+
+                    <div class="meta">
+                        <div class="meta">
+                            <a href="/author/mark-serrels/" class="tracking_loop_author" rel="author" data-tracking-name="Mark Serrels">
+                                <span itemprop="author">Mark Serrels</span>
+                            </a>
+                            <time datetime="2016-02-16T23:15:03+11:00" itemprop="datePublished">16 Feb 2016 11:15 PM</time>
+                        </div>
+                    </div>
+                    <div class="excerpt" itemprop="description">
+                        Okay, everyone is in this goddamn race. Sonic, Solid Snake, four different goddamn Tetris blocks.
+
+Oh man, this is the best Mario Kart race ever.
+                    </div>
+                    </div>
+                    </div>
+                    <hr />
+                  </div>
+                    <div id="post-2" class="post">
+                    <div class="tracking_loop_article" data-tracking-name="Article #2" itemscope itemtype="http://schema.org/NewsArticle">
+                    <div class="pull-left">
+                    <a href="/pc" class="category dark tracking_loop_category" title="Read more posts from pc" data-tracking-name="pc">
+                        <span class="colour pc"></span>
+                        <span class="sub" itemprop="genre">pc</span>
+                    </a>
+                        <a href="http://www.kotaku.com.au/2016/02/the-witness-puzzle-that-broke-my-spirit" class="thumbnail tracking_loop_image" title="Read more">
+                            <img src="http://i.kinja-img.com/gawker-media/image/upload/t_ku-xlarge/jobh7tplrius4t9ktsuv.png" class="size_small" data-size="small" alt="the-witness">
+                            <span class="size_small"></span>
+                        </a>
+                  </div>    
+                  <div class="pull-right">
+                    <h2 itemprop="headline">
+                        <a href="http://www.kotaku.com.au/2016/02/the-witness-puzzle-that-broke-my-spirit" class="tracking_loop_headline" title="Read more">
+                            The Witness Puzzle That Broke My Spirit
+                        </a>
+                    </h2>
+
+                    <div class="meta">
+                        <div class="meta">
+                            <a href="/author/patrick-klepek/" class="tracking_loop_author" rel="author" data-tracking-name="Patrick Klepek">
+                                <span itemprop="author">Patrick Klepek</span>
+                            </a>
+                            <time datetime="2016-02-16T23:00:00+11:00" itemprop="datePublished">16 Feb 2016 11:00 PM</time>
+                        </div>
+                    </div>
+                    <div class="excerpt" itemprop="description">
+                        I spent three hours staring at this puzzle, wondering if I was losing my mind.
+                    </div>
+                    </div>
+                    </div>
+                    <hr />
+                  </div>
+                    <div id="post-3" class="post">
+                    <div class="tracking_loop_article" data-tracking-name="Article #3" itemscope itemtype="http://schema.org/NewsArticle">
+                    <div class="pull-left">
+                    <a href="/pc" class="category dark tracking_loop_category" title="Read more posts from pc" data-tracking-name="pc">
+                        <span class="colour pc"></span>
+                        <span class="sub" itemprop="genre">pc</span>
+                    </a>
+                        <a href="http://www.kotaku.com.au/2016/02/jet-set-radio-and-other-sega-games-are-free-on-steam-right-now" class="thumbnail tracking_loop_image" title="Read more">
+                            <img src="http://i.kinja-img.com/gawker-media/image/upload/t_ku-xlarge/mwvl5pms0l2imhum7uqq.jpg" class="size_small" data-size="small" alt="free jet-set-radio steam steamed">
+                            <span class="size_small"></span>
+                        </a>
+                  </div>    
+                  <div class="pull-right">
+                    <h2 itemprop="headline">
+                        <a href="http://www.kotaku.com.au/2016/02/jet-set-radio-and-other-sega-games-are-free-on-steam-right-now" class="tracking_loop_headline" title="Read more">
+                            Jet Set Radio And Other Sega Games Are Free On Steam Right Now
+                        </a>
+                    </h2>
+
+                    <div class="meta">
+                        <div class="meta">
+                            <a href="/author/nathan-grayson/" class="tracking_loop_author" rel="author" data-tracking-name="Nathan Grayson">
+                                <span itemprop="author">Nathan Grayson</span>
+                            </a>
+                            <time datetime="2016-02-16T23:30:00+11:00" itemprop="datePublished">16 Feb 2016 11:30 PM</time>
+                        </div>
+                    </div>
+                    <div class="excerpt" itemprop="description">
+                        If you grab them right now, Jet Set Radio and a solid collection of other Sega games aren't just free for the moment; they're yours to keep.
+                    </div>
+                    </div>
+                    </div>
+                    <hr />
+                  </div></div></div>
+<div id="sidebar_wrapper" class="pull-right" itemscope itemtype="http://schema.org/WPSideBar">
+<div id="adspot-300x600-pos1" class="ad adspot-300x600-pos1" itemscope itemtype="http://schema.org/WPAdBlock">
+    <script>titan.requestAd.push("adspot-300x600-pos1");</script>
+</div><div id="social" class="widget well well-inverse tabbable">
+    <div class="tabs">
+        <a href="#subscribe_active" class="btn btn-inverse active" data-tracking-name="Subscribe" data-toggle="tab">Subscribe</a>
+        <a href="#contact_active" class="btn btn-inverse" data-tracking-name="Contact" data-toggle="tab">Contact</a>
+    </div>
+    <div class="tab-content">
+        <div class="tab-pane in active" id="subscribe_active">
+            <ul>
+    <li class="facebook">
+        <a href="https://www.facebook.com/KotakuAustralia" rel="nofollow" target="_blank" data-tracking-name="Facebook">
+            <i class="sprite sprite-facebook"></i>
+            Like Kotaku Australia
+        </a>
+    </li>
+    <li class="twitter">
+        <a href="https://twitter.com/KotakuAU" rel="nofollow" target="_blank" data-tracking-name="Twitter">
+            <i class="sprite sprite-twitter"></i>
+            Follow Kotaku Australia
+        </a>
+    </li>
+    <li class="rss">
+        <a href="http://feeds.kotaku.com.au/kotakuaustralia" rel="nofollow" target="_blank" data-tracking-name="RSS All">
+            <i class="sprite sprite-rss"></i>
+            Subscribe to all stories
+        </a>
+    </li>
+    <li class="rss_alt">
+        <a href="http://feeds.kotaku.com.au/kotakuaustraliaau" rel="nofollow" target="_blank" data-tracking-name="RSS AU">
+            <i class="sprite sprite-rss-alt"></i>
+            Australian stories
+        </a>
+    </li>
+</ul>        </div>
+        <div class="tab-pane" id="contact_active">
+            <ul>
+                <li class="contact">
+                    <i class="sprite sprite-contact"></i>
+                    <a href="/contact/" class="modal-gravityform" data-modal-id="contact" data-tracking-name="Contact Editor">
+                        Contact Editor
+                    </a>
+                    <span class="sub">Send in your tips or questions</span>
+                </li>
+                <li class="report-issue">
+                    <i class="sprite sprite-fix"></i>
+                    <a href="/report-issue/" class="modal-gravityform" data-modal-id="report" data-tracking-name="Report Issue">
+                        Report Issue
+                    </a>
+                    <span class="sub">Report site or community issues</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div><div id="survey_marketplace"></div>
+    <div id="follow_wrap">
+        <div id="follow">
+                    
+            <div id="popular" class="widget well-inverse tabbable">
+                <div class="tabs">
+                    <a href="#viewed_active" class="btn btn-inverse" data-toggle="tab">Most Viewed</a>
+                    <a href="#commented_active" class="btn btn-inverse active" data-toggle="tab">Most Commented</a>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane" id="viewed_active">
+                        <ul>
+                        <li>
+                            <a href="http://www.kotaku.com.au/2016/02/a-revealing-analysis-of-word-frequency-on-south-park">
+                                <span class="other_story">
+                                    <span class="thumbnail"><img src="http://edge.alluremedia.com.au/m/k/2016/02/spark_new-208x116.png" class="size_xsmall_custom" data-size="xsmall_custom"></span>
+                                    <span class="title">A Revealing Analysis Of Word Frequency On South Park</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.kotaku.com.au/2016/02/what-we-liked-and-didnt-like-about-thedeadpoolmovie">
+                                <span class="other_story">
+                                    <span class="thumbnail"><img src="http://i.kinja-img.com/gawker-media/image/upload/t_k-small/bn1onn8uqgth2zn6oczd.jpg" class="size_xsmall_custom" data-size="xsmall_custom"></span>
+                                    <span class="title">What We Liked (And Didn't Like) About The Deadpool Movie</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.kotaku.com.au/2016/02/target-is-having-another-big-sale-until-february-21">
+                                <span class="other_story">
+                                    <span class="thumbnail"><img src="http://edge.alluremedia.com.au/m/k/2014/12/TargetShopping-208x116.jpg" class="size_xsmall_custom" data-size="xsmall_custom"></span>
+                                    <span class="title">Target Is Having Another Big Sale Until February 21</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.kotaku.com.au/2016/02/how-blizzard-made-those-gorgeous-angel-wings-in-diablo-iii">
+                                <span class="other_story">
+                                    <span class="thumbnail"><img src="http://img.youtube.com/vi/QlmxhCuD31o/0.jpg" class="size_xsmall_custom" data-size="xsmall_custom"></span>
+                                    <span class="title">How Blizzard Made Those Gorgeous Angel Wings In Diablo III</span>
+                                </span>
+                            </a>
+                        </li></ul>
+                    </div>
+                    <div class="tab-pane in active" id="commented_active">
+                        <ul>
+                        <li>
+                            <a href="http://www.kotaku.com.au/2016/02/off-topic-what-tv-shows-are-you-watching">
+                                <span class="other_story">
+                                    <span class="thumbnail"><img src="http://edge.alluremedia.com.au/m/k/2015/11/jessica-jones-netflix-poster-208x116.jpg" class="size_xsmall_custom" data-size="xsmall_custom"></span>
+                                    <span class="title">Off Topic: What TV Shows Are You Watching?</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.kotaku.com.au/2016/02/the-new-season-of-good-game-starts-again-tonight">
+                                <span class="other_story">
+                                    <span class="thumbnail"><img src="http://edge.alluremedia.com.au/m/k/2015/02/goodgame-208x116.jpg" class="size_xsmall_custom" data-size="xsmall_custom"></span>
+                                    <span class="title">The New Season Of Good Game Starts Tonight</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.kotaku.com.au/2016/02/what-we-liked-and-didnt-like-about-thedeadpoolmovie">
+                                <span class="other_story">
+                                    <span class="thumbnail"><img src="http://i.kinja-img.com/gawker-media/image/upload/t_k-small/bn1onn8uqgth2zn6oczd.jpg" class="size_xsmall_custom" data-size="xsmall_custom"></span>
+                                    <span class="title">What We Liked (And Didn't Like) About The Deadpool Movie</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.kotaku.com.au/2016/02/750589">
+                                <span class="other_story">
+                                    <span class="thumbnail"><img src="http://edge.alluremedia.com.au/m/l/2016/02/12658043_1016826655051401_5480184077062952544_o1-208x116.jpg" class="size_xsmall_custom" data-size="xsmall_custom"></span>
+                                    <span class="title">Is It Legal To Cosplay?</span>
+                                </span>
+                            </a>
+                        </li></ul>
+                    </div>
+                </div>
+            </div><div id="adspot-300x250-pos2" class="ad adspot-300x250-pos2" itemscope itemtype="http://schema.org/WPAdBlock">
+    <script>titan.requestAd.push("adspot-300x250-pos2");</script>
+</div>                </div>
+    </div>
+
+</div>
+</div>
+</div>
+<div class="clear"></div>
+<div id="adspot-728x90-pos2" class="ad adspot-728x90-pos2" itemscope itemtype="http://schema.org/WPAdBlock">
+    <script>titan.requestAd.push("adspot-728x90-pos2");</script>
+</div></div>
+<div id="push"></div>
+</div>
+
+<div id="footer" itemscope itemtype="http://schema.org/WPFooter">
+    
+        <div id="across_network">
+        <div class="pull-middle">
+            <h4>Across Our Network</h4>
+<div class="stories tech" style="margin-right:28px;"><a href="http://www.kotaku.com.au" class="logo logo-kotaku tracking_network_site_title" data-tracking-name="Kotaku"></a><ul class="clearfix">
+  <li>
+      <span class="leading_story">
+          <a href="http://www.kotaku.com.au/2016/02/the-best-wii-emulator-has-a-directx-12-renderer-and-its-great" class="tracking_network_article">
+              <span class="thumbnail tracking_img"><img src="http://edge.alluremedia.com.au/m/k/2016/02/531610053d7441c0ebb631184570bd6f1-410x231.jpg" /></span>
+              <span class="title tracking_title" title="The Best Wii Emulator Has A DirectX 12 Renderer, And It's Great" itemprop="headline">The Best Wii Emulator Has A DirectX 12 Renderer, And It's Great</span>
+          </a>
+      </span>
+  </li>
+  <li>
+      <span class="other_story">
+          <a href="http://www.kotaku.com.au/2016/02/super-mario-kart-with-101-video-game-characters-is-insane" class="tracking_network_article">
+              <span class="thumbnail tracking_img"><img src="http://img.youtube.com/vi/9HBTeP22nkA/0.jpg" /></span>
+              <span class="title tracking_title" title="Super Mario Kart With 101 Video Game Characters Is Insane" itemprop="headline">Super Mario Kart With 101 Video Game Characters Is Insane</span>
+          </a>
+      </span>
+  </li>
+  <li>
+      <span class="other_story">
+          <a href="http://www.kotaku.com.au/2016/02/the-witness-puzzle-that-broke-my-spirit" class="tracking_network_article">
+              <span class="thumbnail tracking_img"><img src="http://i.kinja-img.com/gawker-media/image/upload/t_k-small/jobh7tplrius4t9ktsuv.png" /></span>
+              <span class="title tracking_title" title="The Witness Puzzle That Broke My Spirit" itemprop="headline">The Witness Puzzle That Broke My Spirit</span>
+          </a>
+      </span>
+  </li>
+  <li>
+      <span class="other_story">
+          <a href="http://www.kotaku.com.au/2016/02/overwatch-is-still-giving-out-play-of-the-game-for-doing-nothing" class="tracking_network_article">
+              <span class="thumbnail tracking_img"><img src="http://i.kinja-img.com/gawker-media/image/upload/t_k-small/cfct7b0kedk0wcvds5qn.jpg" /></span>
+              <span class="title tracking_title" title="Overwatch Is Still Giving Out 'Play Of The Game' For Doing Nothing" itemprop="headline">Overwatch Is Still Giving Out 'Play Of The Game' For Doing Nothing</span>
+          </a>
+      </span>
+  </li></ul></div><div class="stories tech" style="margin-right:28px;"><a href="http://www.gizmodo.com.au" class="logo logo-gizmodo tracking_network_site_title" data-tracking-name="Gizmodo"></a><ul class="clearfix">
+  <li>
+      <span class="leading_story">
+          <a href="http://www.gizmodo.com.au/2016/02/explore-every-foreign-body-in-rectum-reported-at-us-ers-between2009-and-2014" class="tracking_network_article">
+              <span class="thumbnail tracking_img"><img src="http://i.kinja-img.com/gawker-media/image/upload/t_ku-large/fqssptyet9ezthg9l9h3.png" /></span>
+              <span class="title tracking_title" title="Explore Every 'Foreign Body In Rectum' Reported At US ERs Between 2009 And 2014" itemprop="headline">Explore Every 'Foreign Body In Rectum' Reported At US ERs Between &hellip;</span>
+          </a>
+      </span>
+  </li>
+  <li>
+      <span class="other_story">
+          <a href="http://www.gizmodo.com.au/2016/02/playstation-vr-will-launch-in-fall-2016-says-gamestop-ceo-during-live-tv-interview" class="tracking_network_article">
+              <span class="thumbnail tracking_img"><img src="http://i.kinja-img.com/gawker-media/image/upload/t_k-small/rvh6zwtsau1ioyvliian.jpg" /></span>
+              <span class="title tracking_title" title="PlayStation VR Will Launch In Spring 2016, Says GameStop CEO During Live TV Interview" itemprop="headline">PlayStation VR Will Launch In Spring 2016, Says GameStop CEO During&hellip;</span>
+          </a>
+      </span>
+  </li>
+  <li>
+      <span class="other_story">
+          <a href="http://www.gizmodo.com.au/2016/02/revolutionary-cancer-therapy-shows-promise-in-terminally-ill-patients" class="tracking_network_article">
+              <span class="thumbnail tracking_img"><img src="http://i.kinja-img.com/gawker-media/image/upload/t_k-small/um0srkzz5rsqphmbmpny.jpg" /></span>
+              <span class="title tracking_title" title="Revolutionary Cancer Therapy Shows Promise In Terminally Ill Patients" itemprop="headline">Revolutionary Cancer Therapy Shows Promise In Terminally Ill Patients</span>
+          </a>
+      </span>
+  </li>
+  <li>
+      <span class="other_story">
+          <a href="http://www.gizmodo.com.au/2016/02/australian-research-finds-exposure-to-lead-in-childhood-is-linked-to-aggression" class="tracking_network_article">
+              <span class="thumbnail tracking_img"><img src="http://edge.alluremedia.com.au/m/g/2016/02/Mark-Taylor-Lead-Exposure-208x116.jpg" /></span>
+              <span class="title tracking_title" title="Australian Research Finds Exposure To Lead In Childhood Is Linked To Aggression" itemprop="headline">Australian Research Finds Exposure To Lead In Childhood Is Linked T&hellip;</span>
+          </a>
+      </span>
+  </li></ul></div><div class="stories tech" style="margin-right:0;"><a href="http://www.lifehacker.com.au" class="logo logo-lifehacker tracking_network_site_title" data-tracking-name="Lifehacker"></a><ul class="clearfix">
+  <li>
+      <span class="leading_story">
+          <a href="http://www.lifehacker.com.au/2016/02/contract-law-change-leaves-franchisees-vulnerable" class="tracking_network_article">
+              <span class="thumbnail tracking_img"><img src="http://edge.alluremedia.com.au/m/l/2016/02/shutterstock_224646172-410x231.jpg" /></span>
+              <span class="title tracking_title" title="Contract Law Change Leaves Franchisees Vulnerable" itemprop="headline">Contract Law Change Leaves Franchisees Vulnerable</span>
+          </a>
+      </span>
+  </li>
+  <li>
+      <span class="other_story">
+          <a href="http://www.lifehacker.com.au/2016/02/adjust-a-macs-startup-sound-volume-even-when-speakers-are-plugged-in" class="tracking_network_article">
+              <span class="thumbnail tracking_img"><img src="http://i.kinja-img.com/gawker-media/image/upload/t_k-small/nnhcbtvos8bchmxqcgck.jpg" /></span>
+              <span class="title tracking_title" title="Adjust A Mac's Startup Sound Volume Even When Speakers Are Plugged In" itemprop="headline">Adjust A Mac's Startup Sound Volume Even When Speakers Are Plugged In</span>
+          </a>
+      </span>
+  </li>
+  <li>
+      <span class="other_story">
+          <a href="http://www.lifehacker.com.au/2016/02/microsoft-updates-profiles-feature-on-delve-to-bring-workers-closer-together" class="tracking_network_article">
+              <span class="thumbnail tracking_img"><img src="http://edge.alluremedia.com.au/m/l/2016/02/Updated-people-profile-experiences-coming-soon-to-Office-365-1-border-1024x579-208x116.png" /></span>
+              <span class="title tracking_title" title="Microsoft Updates Profiles Feature On Delve To Bring Workers Closer Together" itemprop="headline">Microsoft Updates Profiles Feature On Delve To Bring Workers Closer&hellip;</span>
+          </a>
+      </span>
+  </li>
+  <li>
+      <span class="other_story">
+          <a href="http://www.lifehacker.com.au/2016/02/build-a-slick-looking-diy-usb-rechargeable-solder-fume-extractor" class="tracking_network_article">
+              <span class="thumbnail tracking_img"><img src="http://i.kinja-img.com/gawker-media/image/upload/t_k-small/w5kcwkenz8rcxrmp2pqd.jpg" /></span>
+              <span class="title tracking_title" title="Build A Slick Looking DIY USB Rechargeable Solder Fume Extractor" itemprop="headline">Build A Slick Looking DIY USB Rechargeable Solder Fume Extractor</span>
+          </a>
+      </span>
+  </li></ul></div>        </div> 
+    </div>
+            <div id="links"> 
+        <div class="pull-middle">
+            <div class="pull-left">
+                                &copy; 2007-2016 <a href="http://www.alluremedia.com.au" target="_blank">Allure Media</a>
+                            </div>
+            <div class="pull-right">
+                <div class="navigation">
+                    <ul>
+                                                <li>
+                            <a href="?action=switch_layout&amp;layout=mobile">Switch to Mobile</a>
+                        </li>
+                                                <li>
+                            <a href="/about/">About</a>
+                        </li>
+                                                <li>
+                            <a href="http://www.alluremedia.com.au/#site-kotaku" target="_blank">Advertise</a>
+                        </li>
+                                                <li>
+                            <a href="/contact/" class="modal-gravityform" data-modal-id="contact" data-tracking-name="Footer Contact">Contact</a>
+                        </li>
+                        <li>
+                            <a href="/terms/">Terms of Use</a>
+                        </li>
+                                                <li>
+                            <a data-target="/wp-admin/admin-ajax.php?id=international&amp;site=kotaku" data-toggle="modal" data-tracking-name="International Sites">Kotaku International</a>
+                        </li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- DFP -->
+<div id="adspot-interstitial" class="ad" itemscope itemtype="http://schema.org/WPAdBlock">
+    <script>titan.requestAd.push("adspot-interstitial");</script>
+</div>
+<script type="text/javascript">_satellite.pageBottom();</script>
+
+<div id="response-modal" class="modal hide fade"></div>
+<noscript><div id="footer_noscript"><img src="//secure-au.imrworldwide.com/cgi-bin/m?ci=alluremedia&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1" height="1" alt="" /></div></noscript>
+		<!-- /// LOAD CHARTBEAT /// -->
+		<script type="text/javascript">
+		var _sf_async_config={};
+		_sf_async_config.uid = 15430;
+		_sf_async_config.useCanonical = true;
+		
+		(function(){
+		  function loadChartbeat() {
+			window._sf_endpt=(new Date()).getTime();
+			var e = document.createElement('script');
+			e.setAttribute('language', 'javascript');
+			e.setAttribute('type', 'text/javascript');
+			e.setAttribute('src',
+			   (("https:" == document.location.protocol) ? "https://" : "http://") +
+			   "static.chartbeat.com/js/chartbeat.js");
+			document.body.appendChild(e);
+		  }
+		  var oldonload = window.onload;
+		  window.onload = (typeof window.onload != 'function') ?
+			 loadChartbeat : function() { try { oldonload(); } catch (e) { loadChartbeat(); throw e} loadChartbeat(); };
+		})();
+		</script>
+		<script type='text/javascript' src='http://secure-au.imrworldwide.com/v60.js?ver=4.3.1'></script>
+<script type='text/javascript' src='http://edge.alluremedia.com.au/assets/technetwork/build/js/bootstrap.js?ver=2.1'></script>
+<script type='text/javascript' src='http://edge.alluremedia.com.au/assets/technetwork/js/prettify/prettify.js?ver=1'></script>
+<script type='text/javascript' src='http://edge.alluremedia.com.au/assets/technetwork/build/js/technetwork-footer-desktop.min.js'></script>
+
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e4551af029","applicationID":"2912144","transactionName":"ZFEGYhRZWRBVW0EKV10bJVUSUVgNG0tcDV9fUQ==","queueTime":0,"applicationTime":444,"atts":"SBYFFFxDSh4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

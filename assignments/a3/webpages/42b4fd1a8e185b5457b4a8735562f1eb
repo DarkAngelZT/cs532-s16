@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<!-- Copyright Answer Hub 2012 -->
+<!--ATTLIST div activerev CDATA #IMPLIED-->
+<!--ATTLIST div nodeid CDATA #IMPLIED-->
+<!--ATTLIST a command CDATA #IMPLIED-->
+<html lang="en">
+ <head> 
+  <title>Cannot &quot;Get game instance&quot; referring to a custom game instance in a macro. - UE4 AnswerHub</title> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <!-- Le HTML5 shim, for IE6-8 support of HTML elements --> 
+  <!--[if lt IE 9]>
+    <script type="text/javascript" src="/themes/epic-unreal/scripts/html5.js"></script>
+    <![endif]--> 
+  <link rel="shortcut icon" href="/themes/epic-unreal/images/favicon.ico" /> 
+  <!-- js vars with back end data --> 
+  <script type="text/javascript">
+    var askFormURL = '/questions/ask.html';
+    var logoutURL = '/users/logout.html';
+    var voteUpJsonURL = '/commands/0/voteup.json';
+    var voteDownJsonURL = '/commands/0/votedown.json';
+    var related_questions_url = '/search.json';
+    var emailCheckerURL = '/users/temporaryLogin/dupsUserEmailCheck.json';
+
+    var flashMessages = [];
+
+    //todo: these user variables don't seem to be used, are they?
+    var currentUser = null;
+
+    /* the profile user */
+
+    var pageContext = {
+        currentUser: {
+            id: '',
+            username: 'Anonymous',
+            url: '#',
+            avatar: ''
+        },
+        i18n: {
+            confirm: "Are you sure?",
+            yes: "Yes",
+            no: "No",
+            save: "Save",
+            cancel: "Cancel",
+            close: "Close",
+            edit: "Edit",
+            ok: "Ok",
+            by: "by",
+            word: "word",
+            words: "words",
+            character: "character",
+            characters: "characters",
+            login: "Login",
+            register: "Register",
+            timeAgo: "{0} ago",
+            timeAt: "at",
+            day: "day",
+            days: "days",
+            hour: "hour",
+            hours: "hours",
+            minute: "min",
+            minutes: "minutes",
+            second: "sec",
+            seconds: "secs",
+            justNow: "just now",
+            retag: "retag",
+            removingTag: "Removing Tag",
+            revision: "Revision ",
+            revisionText: " has been loaded into the form below.",
+
+            uploadDialog: {
+                uploadFile: "Choose a file to upload",
+                doUpload: "Upload"
+            },
+            previewAndCropDialog: {
+                previewAndResize: "Preview and resize",
+                accept: "Accept"
+            },
+            WMDImageDialogText: "Enter image url",
+            WMDLinkDialogText: "Enter url",
+            WMDUploadImage: "upload image",
+            WMDBold: "Strong <strong> Ctrl+B",
+            WMDItalic: "Emphasis <em> Ctrl+I",
+            WMDLink: "Hyperlink <a> Ctrl+L",
+            WMDQuote: "Blockquote <blockquote> Ctrl+Q",
+            WMDCode: "Code Sample <pre><code> Ctrl+K",
+            WMDImage: "Image <img> Ctrl+G",
+            WMDAttachment: "Attachment Ctrl+U",
+            WMDOrderedList: "Numbered List <ol> Ctrl+O",
+            WMDUnorderedList: "Bulleted List <ul> Ctrl+U",
+            WMDHeading: "Heading <h1>/<h2> Ctrl+H",
+            WMDHorizontalRule: "Horizontal Rule <hr> Ctrl+R",
+            WMDUndo: "Undo - Ctrl+Z",
+            WMDRedoWin: "Redo - Ctrl+Y",
+            WMDRedoOther: "Redo - Ctrl+Shift+Z",
+            WMDHelp: "Markdown Help"
+        },
+        url: {
+            login: "/users/login.html",
+            register: "/users/register.html",
+            getRevision: "/revisions/get-revision.json",
+            getComments: "/comments/%25ID%25/list.json",
+            uploadFile: "/uploadFile.html",
+            uploadProgress: "/uploadProgress.json",
+            uploadPreview: "/uploadPreview.html",
+            cropUpload: "/cropUpload.json",
+            cancelUpload: "/cancelUpload.json",
+            markdownHelp: "/static/markdown/help.html",
+            profile: "/users/{id}/{plug}.html",
+            extractKeywords: "/extract-keywords.json",
+            trackJs: "/static/trackJs.json"
+        },
+        extraScripts: {
+            jcrop: {
+                js: '/themes/base/scripts/jquery.Jcrop.js',
+                css: '/themes/base/css/jquery.Jcrop.css'
+            }
+        },
+        options: {
+        },
+        additional: {"TH_CSRF":"1194165829983732420"},
+        useRelativeTime: true,
+        userRealName: false
+    };
+
+</script> 
+  <!--<script src="https://www.google.com/jsapi" type="text/javascript"></script>--> 
+  <script type="text/javascript">
+    /* <![CDATA[ */
+        pageContext.options.commentsEditor = 'wmd';
+
+        pageContext.i18n.uploadDialog.uploadFile = pageContext.i18n.uploadDialog.uploadFile +
+                ' (Max: 5.2 MB)';
+        //var i18nLang = '{{settings.LANGUAGE_CODE}}';
+        //var scriptUrl = '/{{settings.FORUM_SCRIPT_ALIAS}}'
+        var scriptUrl = '/';
+	var osqaSkin = '';
+
+        var messages = {
+            username: 'Anonymous',
+            confirm: "Are you sure",
+            yes: "Yes",
+            no: "No",
+            message: "Message",
+            cancel: "Cancel",
+            close: "Close",
+            ok: "Ok",
+            matching_tags_url: "matching_tags",
+            word: "word",
+            words: "words",
+            character: "character",
+            characters: "characters"
+        };
+    /* ]] */
+    </script> 
+  <!-- where all scripts loaded --> 
+  <script type="text/javascript" src="/themes/epic-unreal/pack/combined.js.h-1102414966.pack" charset="utf-8"></script> 
+  <script type="text/javascript" src="/themes/epic-unreal/scripts/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="/themes/epic-unreal/scripts/google-code-prettify/prettify.js"></script> 
+  <link rel="stylesheet" type="text/css" href="/themes/epic-unreal/css/jquery-ui.css" media="all" /> 
+  <link rel="stylesheet" type="text/css" href="/themes/epic-unreal/scripts/google-code-prettify/prettify.css" /> 
+  <link rel="stylesheet" type="text/css" href="/themes/epic-unreal/css/bootstrap.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="/themes/epic-unreal/pack/combined.css.h1360508060.pack" charset="utf-8" /> 
+  <style type="text/css">
+        input {
+            height: auto;
+        }
+    </style> 
+  <style type="text/css">
+        
+    </style> 
+  <script type="text/javascript">
+        $().ready(function() {
+
+//        $("#nav_questions").attr('className',"on");
+            var answer_sort_tab = "";
+
+            if (answer_sort_tab) {
+                $("#" + answer_sort_tab).attr('className', "on");
+            }
+
+            $('#body').TextAreaResizer();
+
+            //toggle preview of editor
+            var display = true;
+            var txt = "[hide preview]";
+            $('#pre-collapse').text(txt);
+            $('#pre-collapse').bind('click', function() {
+                txt = display ? "[show preview]" : "[hide preview]";
+                display = !display;
+                $('#previewer').toggle();
+                $('#pre-collapse').text(txt);
+            });
+
+
+
+tools.init({
+    q: {
+        e: false, ew: false, eo: false,
+        r: false, ro: false,
+        d: false, dow: false, fv: false,
+        c: false, co: false,
+        p: false, tm: false
+       		,ms: false, mos: false
+    },
+    n: {
+        f: false, vf: false, vfo: false,
+        vr: false, vro: false,
+        c: false, co: false,
+        vu: false, vd: false,
+        w: false, wo: false,
+        l: false
+    },
+    c: {
+        e: false, eo: false,
+        d: false, dow: false,
+        ta: false, tao: false,
+        mc: false, mco: false,
+        l: false
+    },
+    a: {
+        e: false, ew: false, eo: false,
+        d: false, dow: false,
+        a: false, aoq: false, ao: false,
+        tc: false, tco: false,
+        p: false, tm: false
+    },
+    pc: {
+        u: false, op: false, m: false,
+        og: false, as: false, ag: false
+        }
+    },{
+    tc: true,
+    nsc: true
+});
+            pageContext.url.jsonSearchUrl = '/search/topics.json';
+            pageContext.url.retagUrl = '/commands/372795/editQuestionTopics.json';
+            pageContext.options.commentsAttachmentsEnabled = true;
+
+pageContext.i18n.modTalk = 'moderation talk';
+pageContext.i18n.replyToComment = 'reply';
+pageContext.i18n.modTalkEmpty = 'moderation talk is empty';
+pageContext.url.getModTalk = "/comments/%25ID%25/listModTalk.json";
+pageContext.url.possibleCommentRecipients = "/comments/%ID%/possibleRecipients.json";
+pageContext.url.commentEdit = '/comments/%25ID%25/edit.html';
+
+pageContext.i18n.commentVisibility = {
+'full': 'Viewable by all users',
+'op': 'Viewable by the original poster',
+'mod': 'Viewable by moderators',
+'opAndMod': 'Viewable by moderators and the original poster',
+'other': 'Advanced visibility',
+'dialogTitle': 'Comment visibility',
+'selectGroups': 'Visible to groups',
+'selectOther': 'Other recipients',
+'selectOriginalPoster': 'Original poster',
+'selectModerators': 'Moderators',
+'selectAssignees': 'Asked to answer users'
+};
+
+pageContext.i18n.commentMenuLabels = {
+'comment-edit': 'edit',
+'comment-delete': 'delete',
+'comment-convert': 'convert this comment into an answer'
+};
+            tools.rel({"372795":{"type":"question"}});
+        });
+
+        window.onbeforeunload = function beforeUnload(e) {
+
+            if ($('#body').length > 0 && $("textarea#body")[0].value != "") {
+                return yourWorkWillBeLost(e);
+            }
+
+            var commentBoxes = $("textarea.commentBox");
+            for (var index = 0; index < commentBoxes.length; index++) {
+                if (commentBoxes[index].value != "") {
+                    return yourWorkWillBeLost(e);
+                }
+            }
+        };
+
+    </script> 
+  <script type="text/x-jquery-tmpl" id="post-wiki-mark">
+    <div class="community-wiki">
+        <div class="wiki-icon">&nbsp;</div>
+        <div class="wiki-text">
+            {{if isAnswer }}
+        This answer is marked "community wiki".
+            {{else}}
+        This question is marked "community wiki".
+            {{/if}}
+
+            {{if canEdit }}
+            <br />Feel free to.
+            {{/if}}
+        </div>
+    </div>
+</script> 
+  <script type="text/x-jquery-tmpl" id="new-comment-skeleton">
+        <div class="comment nsc" id="comment-${comment.id}" activerev="${comment.revisionIds[0]}" nodeid="${comment.id}" authorid="${author.id}">
+            <div class="comment-header">
+                <a class="comment-user-gravatar" href="${author.url}">
+                    <img class="gravatar" width="16" height="16" src="${author.avatar}&s=16" />
+                </a>
+                <a class="comment-user userinfo" href="${author.url}">${author.username}</a>
+                        <span class="comment-age friendly-date" title="${commentDate}">
+                            ${commentDateFriendly}
+                        </span>
+            </div>
+            <div id="comment-${comment.id}-left" class="comment-left">
+                <div id="post-${comment.id}-score" class="comment-score"></div>
+            </div>
+            <div class="comment-text" style="margin-top: 4px;">{{html comment.bodyAsHTML}}</div>
+            <div class="comment-info" id="comment-${comment.id}-info"></div>
+        </div>
+</script> 
+  <script type="text/x-jquery-tmpl" id="retag-form-skeleton">
+    <div id="retag-question-container">
+        <form>
+            <input type="hidden" name="node" value="${nodeId}" />
+            <input id="retag-question-box" type="text" name="topics" />
+            <button class="retag-button save btn btn-small btn-primary">${saveLabel}</button>
+            <button class="retag-button cancel btn btn-small">${cancelLabel}</button>
+        </form>
+    </div>
+</script> 
+  <script type="text/x-jquery-tmpl" id="question-tags-list">
+    {{each(i, topic) topics }}
+    <a rel="tag" title="see questions tagged '${topic.name}'" href="/questions/topics/single/${topic.id}.html">${topic.name}</a> <span class="tag-number">x${topic.usedCount}</span><br>
+    {{/each}}
+</script> 
+  <script type="text/x-jquery-tmpl" id="advanced-visibility-dialog">
+    <form>
+        <div>
+            {{if (perm.ag || perm.og) }}
+                <h4>${msg.selectGroups}</h4>
+                {{if groupsCheck }}
+                    {{each(i, group) groups }}
+                        <p><input type="checkbox" name="recipients" value="${group.id}" /> ${group.name}</p>
+                    {{/each}}
+                {{else}}
+                    <input type="text" class="comment-recipients-groups-autocomplete" />
+                    <div class="comment-recipients-groups-container" style="min-height: 50px;"></div>
+                {{/if}}
+            {{/if}}
+            {{if (perm.op || perm.mod || perm.as) }}
+                <h4>${msg.selectOther}</h4>
+                {{if perm.op }}
+                    <input type="checkbox" name="specialRecipients" value="op" /> ${msg.selectOriginalPoster}<br />
+                {{/if}}
+                {{if perm.m }}
+                    <input type="checkbox" name="specialRecipients" value="mod" /> ${msg.selectModerators}<br />
+                {{/if}}
+                {{if perm.as }}
+                    <input type="checkbox" name="specialRecipients" value="asg" /> ${msg.selectAssignees}<br />
+                {{/if}}
+            {{/if}}
+        </div>
+    </form>
+</script> 
+ </head> 
+ <body> 
+  <script type="text/javascript">
+</script> 
+  <!-- Google Tag Manager --> 
+  <noscript>
+   <iframe src="//www.googletagmanager.com/ns.html?id=GTM-KWRD6D" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript> 
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KWRD6D');</script> 
+  <!-- End Google Tag Manager --> 
+  <div id="flashMessages" class="notify"> 
+   <a id="close-notify" style="z-index:100;" onclick="$('body').css('margin-top', '0');$('.notify').slideUp('medium', function() {});">x</a> 
+  </div> 
+  <script type="text/javascript">
+    $("#flashMessages").hide();
+    $(document).ready(function() {
+        if(flashMessages.length > 0) {
+            for (var message in flashMessages){
+                $("#flashMessages").prepend(flashMessages[message]);
+            }
+
+            $("body").css("margin-top", "2.3em");
+            $("#flashMessages").slideDown("slow");
+        }
+    });
+</script> 
+  <div> 
+  </div>  
+  <script type="text/javascript">
+    $("body").css("visibility", "hidden");
+    var headerUrl = 'https://www.unrealengine.com/unifiedheader';
+    // IE8 & 9 only Cross domain JSON GET request
+    if ('XDomainRequest' in window && window.XDomainRequest !== null) {
+        var xdr = new XDomainRequest(); // Use Microsoft XDR
+        xdr.open('get', headerUrl);
+        xdr.onload = function () {
+            appendData(xdr.responseText);
+            successCallback(JSON); // internal function
+        };
+
+        xdr.onerror = function() {
+            _result = false;
+        };
+
+        xdr.send();
+    }else {
+        $.ajax({
+            cache: true,
+            url: headerUrl,
+            success: function (data) {
+                appendData(data);
+            }
+        });
+    }
+
+    function appendData(data){
+        $("#unified_header").prepend(data);
+
+
+            var loginLink="/users/login.html";
+            $("#btn-signin").css({"display":"inline-block"});
+            $(".sso-sign-in").attr("href", loginLink);
+
+            // Remove the sso-sign-in class so the onclick js is not invoked
+            $(".sso-sign-in").removeClass("sso-sign-in");
+    }
+
+    window.onload = function () {
+        $("body").css("visibility","visible");
+    }
+</script>  
+  <style type="text/css">
+    /* MULTI-LEVEL DROPDOWNS FOR BOOTSTRAP */
+
+	#unified_header {
+        margin: 0px 0px 10px;
+        padding: 0px;
+    }
+   
+     #main-content-container {
+        padding-top: 100px
+    }
+
+    #isearch, #isearch:focus {
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .dropdown-menu .sub-menu {
+        left: 90%;
+        position: absolute;
+        top: 0;
+        visibility: hidden;
+        margin-top: -1px;
+    }
+
+
+    .sub-menu .s2-menu, .s2-menu .s3-menu {
+        left: 60%;
+        position: absolute;
+        top: 0;
+        visibility: hidden;
+        margin-top: -1px;
+        max-width: 250px;
+    }
+
+    .dropdown-menu li:hover .sub-menu, .sub-menu li:hover .s2-menu, .s2-menu li:hover .s3-menu {
+        visibility: visible;
+        display: block;
+    }
+
+    .navbar .sub-menu:before, .navbar .s2-menu:before, .navbar .s3-menu:before {
+        border-bottom: 7px solid transparent;
+        border-left: none;
+        border-right: 7px solid rgba(0, 0, 0, 0.2);
+        border-top: 7px solid transparent;
+        left: -7px;
+        top: 10px;
+    }
+
+	.navbar .sub-menu:after, .navbar .s2-menu:after, .navbar .s3-menu:after  {
+        border-top: 6px solid transparent;
+        border-left: none;
+        border-right: 6px solid #fff;
+        border-bottom: 6px solid transparent;
+        top: 11px;
+        left: -6px;
+    }
+
+</style> 
+  <div id="unified_header" class="navbar-fixed-top"> 
+   <div class="navbar"> 
+    <div class="navbar-inner"> 
+     <div class="container"> 
+      <a class="brand" href="/index.html">UE4 AnswerHub</a> 
+      <div class="nav-collapse"> 
+       <ul class="nav pull-left"> 
+        <li class="dropdown"><a href="#" class="dropdown-toggle pull-left change-section-menu" data-toggle="dropdown"> Change Section <b class="caret"></b> </a> 
+         <ul class="dropdown-menu"> 
+          <li><a href="/spaces/13/getting-started.html">Installation &amp; Setup</a></li> 
+          <li><a href="/spaces/21/unreal-editor.html">Using UE4</a></li> 
+          <li><a href="/spaces/51/rendering.html">Rendering</a></li> 
+          <li><a href="/spaces/41/packaging-deployment.html">Packaging &amp; Deployment</a></li> 
+          <li><a href="/spaces/22/blueprint-scripting.html">Blueprint Scripting</a></li> 
+          <li><a href="/spaces/23/c-programming.html">C++ Programming</a></li> 
+          <li><a href="/spaces/31/legal-licensing.html">Legal &amp; Licensing</a></li> 
+          <li><a href="/spaces/11/bugs-and-crashes.html">Bug Reports</a></li> 
+          <li><a href="/spaces/24/everything-else.html">Everything Else</a></li> 
+          <li><a href="/spaces/61/marketplace.html">Marketplace</a></li> 
+          <li><a href="/spaces/16/japanese.html">Japanese</a></li> 
+          <li><a href="/spaces/19/korean.html">Korean</a></li> 
+          <li><a href="/spaces/62/vr.html">VR</a></li> 
+          <li><a href="/spaces/71/linux.html">Linux</a></li> 
+         </ul> </li> 
+       </ul> 
+       <form action="/search.html" class="navbar-search pull-right" id="search-query-form" data-content=""> 
+        <input autocomplete="off" tabindex="-1" type="text" id="search-query" class="search-query help" name="q" value="" placeholder="Search" /> 
+        <input type="hidden" name="c" value="22" /> 
+        <input type="hidden" name="type" value="question OR idea" /> 
+        <input type="hidden" class="search-lang-selector-field" name="lang" value="en" /> 
+        <input id="search-sort" type="hidden" class="search-sort-selector-field" name="sort" value="relevance" /> 
+        <input type="hidden" name="author" value="" /> 
+        <input type="hidden" name="productVer" value="default" /> 
+       </form> 
+       <button id="id_main_ask_btn" onclick="document.location.href='/questions/ask.html?space=22';" class="btn btn-primary btn-large"><strong>Post A Question</strong></button> 
+      </div>
+      <!--/.nav-collapse --> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div id="search-options-popover" class="popover"> 
+   <div class="popover-inner"> 
+    <h3 class="popover-title"> Search in 
+     <div class="btn-group search-lang-selector" data-toggle="buttons-radio"> 
+      <button type="button" value="en" class="btn active"><img src="/themes/epic-unreal/images/INT_flag_lg.jpg" /></button> 
+      <button type="button" value="ja" class="btn "><img src="/themes/epic-unreal/images/JPN_flag_lg.jpg" /></button> 
+      <button type="button" value="ko" class="btn "><img src="/themes/epic-unreal/images/KOR_flag_lg.jpg" /></button> 
+      <button type="button" value="zh" class="btn "><img src="/themes/epic-unreal/images/CHN_flag_lg.jpg" /></button> 
+     </div> 
+     <div id="sort-switch" class="btn-group search-lang-selector" data-toggle="buttons-radio"> 
+      <button type="button" title="Relevant" class="sort-selector btn active" value="relevance"> <i class="icon-signal"></i></button> 
+      <button type="button" title="Newest" class="sort-selector btn " value="newest" style="margin-right: 30px;"><i class="icon-time"></i></button> 
+     </div> <span class="search-lang-selector"> Sort by:</span> </h3> 
+    <div class="popover-content"> 
+     <table class="search-options-table"> 
+      <tbody>
+       <tr> 
+        <td style="float: ;"> <label><input type="radio" name="search-container" value="all" /> Everything </label> <label><input type="radio" name="search-container" checked="checked" value="22" /> Blueprint Scripting </label> </td> 
+        <td style="float: left;"> <label><input type="radio" name="search-container" value="22" /> Current Space </label> </td> 
+       </tr> 
+      </tbody>
+     </table> 
+     <table width="100%"> 
+      <tbody>
+       <tr>
+        <td align="right"><span id="helpicon" class="helpicon"><span></span></span></td>
+       </tr> 
+      </tbody>
+     </table> 
+     <div class="similar-questions-container" style="display: none;"> 
+      <h3 class="popover-title">Quick results</h3> 
+      <div class="similar-questions-results"></div> 
+      <div style="clear: both; margin-top: 8px;"></div> 
+      <p style="text-align: right;"><button class="btn btn-small search-query-submit">More results</button></p> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div id="search-help-popover" class="popover"> 
+   <div class="popover-inner" style="width:410px; max-width:auto;"> 
+    <h3 class="popover-title"> Search help </h3> 
+    <div class="popover-content" style="font-size: 10px !important;"> 
+     <ul> 
+      <li> Simple searches use one or more words. Separate the words with spaces (cat dog) to search cat,dog or both. Separate the words with plus signs (cat +dog) to search for items that may contain cat but must contain dog. </li> 
+      <li> You can further refine your search on the search results page, where you can search by keywords, author, topic. These can be combined with each other. Examples 
+       <ul> 
+        <li>cat dog --matches anything with cat,dog or both </li> 
+        <li>cat +dog --searches for cat +dog where dog is a mandatory term </li> 
+        <li>cat -dog -- searches for cat excluding any result containing dog </li> 
+        <li>[cats] —will restrict your search to results with topic named &quot;cats&quot;</li> 
+        <li>[cats] [dogs] —will restrict your search to results with both topics, &quot;cats&quot;, and &quot;dogs&quot;</li> 
+       </ul> </li> 
+     </ul> 
+    </div> 
+   </div> 
+  </div> 
+  <script type="text/javascript">
+        $(function() {
+
+            $('#sort-switch button').click(function() {
+                var sort = $(this).attr('value');
+
+                $('.search-sort-selector-field').val(sort);
+            });
+
+            $('#helpicon').click(function() {
+            	if (helpPopoverVisible) {
+                         $('#search-help-popover').hide();
+                         helpPopoverVisible = false;
+                } else {
+	                showHelpPopover();
+                }
+            });
+
+        	var $searchSort = $('#search-sort');
+	        var $searchSortLinks = $('.search-sort-links li');
+			$searchSortLinks.each(function (i, elem) {
+		        if ($searchSort.val().indexOf($(this).attr("data-search-sort")) !== -1) {
+	    	        $(this).addClass("active");
+	        	}
+	    	});
+
+		    $searchSortLinks.on("click", function () {
+		        if (!$(this).hasClass("disabled")) {
+		            $searchSortLinks.removeClass("active");
+		            $(this).addClass("active");
+		            $searchSort.val($(this).attr("data-search-sort"));
+		            $("#search-query").val($("#search-query").attr('placeholder'))
+		            $("#search-query-form").submit();
+		        }
+		    });
+
+            var questionsViewUrl = "/questions/{id}/{plug}.html";
+
+            var popoverVisible = false;
+            var helpPopoverVisible = false;
+
+            var inFocus = false;
+            var inPopover = false;
+            var inNavbar = false;
+
+            function isHidable() {
+                return !(inFocus || inNavbar || inPopover);
+            }
+
+            function showPopover() {
+                if (!popoverVisible) {
+                    var field_pos = $('#search-query').offset();
+
+                    $('#search-options-popover').css({
+                        top: (field_pos.top - $(window).scrollTop() + 35) + 'px',
+                        left: (field_pos.left - 320) + 'px'
+                    });
+
+                    $('#search-options-popover').show();
+                    popoverVisible = true;
+                }
+            }
+
+            function showHelpPopover() {
+                 if (!helpPopoverVisible) {
+                     var field_pos = $('#search-query').offset();
+
+                     $('#search-help-popover').css({
+                         top: (field_pos.top - $(window).scrollTop() + 35) + 'px',
+                         left: (field_pos.left - 750) + 'px'
+                     });
+
+                     $('#search-help-popover').show();
+                     helpPopoverVisible = true;
+                 }
+             }
+
+            function setToHide() {
+                if (isHidable()) {
+                    window.setTimeout(function() {
+                        if (isHidable()) {
+                            if (popoverVisible) {
+                                $('#search-options-popover').hide();
+                                popoverVisible = false;
+                            }
+                            if (helpPopoverVisible) {
+                                 $('#search-help-popover').hide();
+                                 helpPopoverVisible = false;
+                            }
+                        }
+                    }, 750);
+                }
+            }
+
+            $('.navbar-fixed-top').mouseenter(function() {
+                inNavbar = true;
+            }).mouseleave(function() {
+                inNavbar = false;
+                setToHide();
+            });
+
+
+            var currentQuery = '';
+            var queryCache = {};
+
+            $('#search-query').focus(function() {
+
+                var $this = $(this);
+                inFocus = true;
+                showPopover();
+
+            }).blur(function() {
+                inFocus = false;
+                setToHide();
+            }).keyup(function() {
+               var currentVal = $('#search-query').val();
+
+               window.setTimeout(function() {
+                   if (popoverVisible && currentVal == $('#search-query').val()) {
+                       doSearch();
+                   }
+               }, 400);
+            }).blur();
+
+            var currentSearch = false;
+
+            function doSearch() {
+
+                var $input = $('#search-query');
+                var $cont = $('#search-options-popover').find('.similar-questions-container');
+                var lang = $('.search-lang-selector-field').val();
+                var $results = $cont.find('.similar-questions-results');
+                var ajaxLoaderImg = "/themes/base/admin/img/ajax-loader.gif";
+
+                function showSpinner() {
+                    $input.css("background-image", "url('" + ajaxLoaderImg + "')");
+                }
+
+                function hideSpinner() {
+                    $input.css("background-image","none");
+                }
+
+                function processResults(data) {
+
+                    //queryCache[data.searchResults.query] = data;
+
+                    if (!data.searchResults.query == $input.val()) {
+                        return;
+                    }
+
+                    if (data.searchResults.count > 0) {
+
+                        currentSearch = false;
+
+                        $cont.show();
+                        $results.html('');
+
+                        $.each(data.searchResults.results, function(i, node) {
+                            var url;
+
+                            if (node.type == 'kbentry') {
+                                //url = kbEntryViewUrl;
+                            } else if (node.type == 'idea') {
+                                url = ideaViewUrl.replace("{plug}", node.plug);
+
+                            } else {
+                                url = questionsViewUrl.replace("{plug}", node.plug);
+                            }
+
+                            url = url.replace("{id}", node.id);
+
+                            var title;
+
+                            if (node.title) {
+                                title = node.title;
+                            } else {
+                                title = node.name;
+                            }
+
+                            var type = node.type;
+
+                            if (node.type == 'kbentry') {
+                                type = 'doc';
+                            } else if (node.type == 'topic') {
+                                type = 'topic';
+                            }
+
+                            var the_date = node.creationDateFormatted;
+
+                            $results.append('<p class="search-options-result"><span class="search-options-result-type ' + node.type + '">' + type +
+                                    '</span><a href="' + url + '">' + title + ', ' + the_date + ' </a></p>');
+                        });
+                    } else {
+                        $results.html('');
+                        $cont.hide();
+                    }
+                }
+
+                if ($input.val()) {
+
+                    if (false && queryCache[$input.val()] != undefined) {
+                        processResults(queryCache[$input.val()]);
+                    } else {
+                        var data = commandUtils.extractFormData($('#search-query-form'));
+                        //var data = {q: $input.val()};
+                        data.q = data.q + "*";
+
+                        data.lang = lang;
+                        data['pageSize'] = 10;
+
+                        if (currentSearch) {
+                            currentSearch.abort();
+                        }
+
+                        currentSearch = $.ajax({
+	                        dataType: "json",
+	                        url: '/search.json',
+	                        data: data,
+	                        beforeSend: showSpinner,
+	                        success: processResults,
+	                        complete: hideSpinner
+	                    });
+                    }
+
+                } else {
+                    $results.html('');
+                    $cont.hide();
+                }
+
+            }
+
+            $('#search-options-popover').mouseenter(function() {
+                inPopover = true;
+            }).mouseleave(function() {
+                inPopover = false;
+                setToHide();
+            }).find('.search-query-submit').click(function() {
+                $('#search-query-form').submit();
+                return false;
+            });
+
+            function getURLParameter(name) {
+                return decodeURI(
+                        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+                );
+            }
+
+            function checkDefaults() {
+
+                function enableInput(value, docs) {
+                    $("input[name=search-container][value=" + value + "][data-isdocs" + ( docs? "" : "!") + "=true]").attr("checked", "checked");
+                }
+
+                var c = getURLParameter('c');
+                var type = getURLParameter('type');
+                var lang = getURLParameter('lang');
+
+                if (c == 7) {
+                    enableInput("all");
+                }
+            }
+
+            function changeForm() {
+                var $sel = $('#search-options-popover input[name=search-container]:checked');
+                var val = $sel.val();
+
+                if (val != 'all') {
+                	//FIXME : Say what ?
+                    //$('#search-query-form input[name=c]').val($sel.val());
+
+                    $('#search-query-form input[name=type]').val('question OR idea');
+
+                } else if (val == 'all') {
+                    $('#search-query-form input[name=c]').val(7);
+                    $('#search-query-form input[name=type]').val('question OR idea');
+                } else {
+                    $('#search-query-form input[name=type]').val('question OR idea');
+                }
+
+                doSearch();
+            }
+
+            $('#search-options-popover input[name=search-container]').change(changeForm);
+            $('.search-lang-selector button').not('.sort-selector').click(function() {
+                $('.search-lang-selector-field').val($(this).attr('value'));
+                doSearch();
+            });
+
+            checkDefaults();
+            changeForm();
+        });
+
+    </script> 
+  <div class="container" id="main-content-container"> 
+   <script>
+    		if(document.URL.indexOf("login") != -1){
+    		}
+    	</script> 
+   <div class="row"> 
+    <div class="span12"> 
+     <ul class="breadcrumb"> 
+      <li> <a href="/index.html">Home</a> <span class="divider">/</span> </li> 
+      <li><a href="/spaces/22/blueprint-scripting.html">Blueprint Scripting</a> <span class="divider">/</span></li> 
+     </ul> 
+    </div> 
+   </div> 
+   <div class="row"> 
+    <div style="display:none; margin-left: 20px;" id="space-tabs-container"> 
+     <ul class="nav nav-tabs" id="space-tabs" data-tabs="tabs"> 
+      <li class="active"><a href="https://answers.unrealengine.com/questions/372795/cannot-get-game-instance-referring-to-a-custom-gam.html">All</a></li> 
+     </ul> 
+    </div> 
+    <div class="span9"> 
+     <div class="headNormal"> 
+      <h1>Cannot &quot;Get game instance&quot; referring to a custom game instance in a macro.</h1> 
+     </div> 
+     <div id="main-body" class=""> 
+      <script type="text/x-jquery-tmpl" id="move-to-space-dialog">
+    ${description}
+    <form>
+        <select name="targetSpace" class="prompt-examples">
+            {{each(p, target) spaces }}
+            <option value="${target.id}">${target.name}</option>
+            {{/each}}
+        </select>
+    </form>
+</script> 
+      <script type="text/javascript">
+
+    $(function() {
+
+        $('.span9').addClass('customSpan9');
+
+    });
+</script> 
+      <table style="width:100%;" id="question-table" nodeid="372795" authorid="46632"> 
+       <tbody>
+        <tr> 
+         <td style="width:30px;vertical-align:top"> 
+          <div class="vote-buttons"> 
+           <a id="post-372795-upvote" class="post-vote up" href="#" command="voteUp"> </a> 
+           <div id="post-372795-score" class="post-score" title="current number of votes">
+            0
+           </div> 
+           <a id="post-372795-downvote" class="post-vote down" href="#" command="voteDown"> </a> 
+           <a id="favorite-mark" class="ajax-command favorite-mark" href="#" command="markFavorite"> </a> 
+           <div id="favorite-count" class="favorite-count"></div> 
+          </div> </td> 
+         <td> 
+          <div id="item-right" class="quepix"> 
+           <div class="question-body"> 
+            <p>Hello I created a macro library which includes an input of a custom game instance.</p> 
+            <p>Now, in a widget I am creating an event construct that needs to get the game instance but I cannot connect the nodes:</p> 
+            <p>here's a link to my event construct in the widget:</p> 
+            <p><a rel="nofollow" href="https://www.dropbox.com/s/n1q6zr129axklce/Screenshot%202016-02-08%2006.01.52.png?preview=Screenshot+2016-02-08+06.01.52.png">https://www.dropbox.com/s/n1q6zr129axklce/Screenshot%202016-02-08%2006.01.52.png?preview=Screenshot+2016-02-08+06.01.52.png</a></p> 
+            <p>here's a link to my macro which uses the custom game instance called Game Instance Try:</p> 
+            <p><a rel="nofollow" href="https://www.dropbox.com/s/ys7l4s79dtls96u/Screenshot%202016-02-08%2006.17.46.png?dl=0">https://www.dropbox.com/s/ys7l4s79dtls96u/Screenshot%202016-02-08%2006.17.46.png?dl=0</a> </p> 
+           </div> 
+           <div id="question-tags" class="tags-container tags"> 
+            <div class="product-version"> 
+             <div>
+               Product Version: 
+              <span> UE 4.10<br /> </span> 
+             </div> 
+            </div> 
+            <span class="tags-label">Tags:</span>
+           </div> 
+           <div id="post-372795-controls" class="post-controls"> 
+            <span id="node-372795-menu" class="context-menu"> <span id="node-372795-menu-trigger" class="action-link context-menu-trigger">more ▼</span> 
+             <ul id="node-372795-menu-dropdown" class="context-menu-dropdown"> 
+              <li class="item no-click"><a rel="nofollow" class="   " href="#" title=""><b>0 total comments</b></a></li> 
+              <li class="item no-click"><a rel="nofollow" class="   " href="#" title=""><b>555 characters / 66 words</b></a></li> 
+             </ul> </span> 
+           </div> 
+           <div class="post-update-info-container"> 
+            <div class="post-update-info post-update-info-user"> 
+             <p style="line-height:12px;">asked <strong class="friendly-date" title="2016, Feb 08 at 05:19:40+0000"> Feb 08 '16 at 05:19 AM </strong> <span class="question_space">in <strong>Blueprint Scripting</strong></span> </p> 
+             <a href="/users/46632/aquazi.html" style="display: inline-block; max-width: 32px;" rel="user" nodeid="46632"> <img class="gravatar " width="32" src="https://secure.gravatar.com/avatar/dadf61906ee783622d9b0ded22a24f29?d=identicon&amp;r=PG&amp;s=32" id="" alt="Aquazi gravatar image" title="Aquazi" /> </a> 
+             <p><a href="/users/46632/aquazi.html">Aquazi </a> <br /> <span class="score" title="21 karma">21</span><span title="1 badges"> <span class="silver">●</span> <span class="badgecount">1</span> </span><span title="2 badges"> <span class="bronze">●</span> <span class="badgecount">2</span> </span> </p> 
+            </div> 
+            <div class="post-update-info post-update-info-edited" style="display: none"> 
+             <p style="line-height:12px;"> <a href="/revisions/372795.html"> edited <strong class="friendly-date" title="2016, Feb 08 at 05:20:12+0000"> Feb 08 '16 at 05:20 AM </strong> </a> </p> 
+            </div> 
+           </div> 
+           <div class="comments-container" id="comments-container-372795"> 
+           </div> 
+           <script type="text/javascript">$(function() {tools.rel({});});</script> 
+           <div id="comment-tools-372795" class="comment-tools"> 
+            <a href="#" class="add-comment-link" style="display: none">add new comment</a> 
+            <span class="comments-locked">(comments are locked)</span> 
+           </div> 
+           <div id="comment-372795-form-container" class="comment-form-container"> 
+            <form id="comment-372795-form" action="/comments/372795/add.json" method="POST" accept-charset="utf-8"> 
+             <div class="comment-form-widgets-container"> 
+              <div class="comment-form-textarea-container"> 
+               <textarea name="body" class="commentBox"></textarea> 
+              </div> 
+              <div class="comment-form-buttons"> 
+               <span id="comment-{{ post.id }}-chars-left" class="comment-chars-left"> <span class="comments-char-left-count">10|2000</span> <span class="comments-chars-togo-msg">characters needed</span> <span class="comments-chars-left-msg">characters left</span> </span> 
+               <div class="comment-form-buttons-container"> 
+                <input type="submit" class="comment-submit" value="comment" /> 
+                <input type="submit" class="comment-cancel" value="cancel" /> 
+               </div> 
+               <div class="context-menu comment-recipient-container"> 
+                <span class="comment-recipients-menu-trigger context-menu-trigger">▼</span> 
+                <ul class="context-menu-dropdown"> 
+                 <li class="item"><a href="#" class="comment-recipients-selector" value="full">Everyone</a></li> 
+                 <li class="item"><a href="#" class="comment-recipients-selector" value="mod">Moderators</a></li> 
+                 <li class="item"><a href="#" class="comment-recipients-selector" value="opAndMod">Original poster and moderators</a></li> 
+                 <li class="item"><a href="#" class="comment-recipients-selector" value="recipient">Other...</a></li> 
+                </ul> 
+                <span class="comment-recipients-label">Viewable by all users</span> 
+               </div> 
+              </div> 
+              <div style="clear:both;"></div> 
+             </div> 
+             <input type="hidden" name="parent" value="372795" /> 
+             <input type="hidden" name="visibility" value="full" /> 
+             <div style="display: none" class="comment-form-extra-inputs"></div> 
+             <input type="hidden" name="TH_CSRF" value="1194165829983732420" />
+            </form> 
+           </div> 
+          </div> </td> 
+        </tr> 
+       </tbody>
+      </table> 
+      <hr /> 
+      <div class="answer-count-and-sort"> 
+       <span class="headQuestions answersCount"><span class="headQuestions-icon"></span>0 answers:</span> 
+       <a name="sort-top"></a> 
+       <span class="context-menu answer-sort-menu"> <span class="context-menu-trigger answer-sort-trigger"> sort <span class="question-answers-sort"> voted first </span> ▼ </span> 
+        <ul class="context-menu-dropdown"> 
+         <li class="item"><a href="?sort=oldest" title="oldest answers will be shown first">oldest</a></li> 
+         <li class="item"><a href="?sort=newest" title="newest answers will be shown first">newest</a></li> 
+         <li class="item"><a href="?sort=votes" class="on" title="most voted answers will be shown first">voted first</a></li> 
+        </ul> </span> 
+      </div> 
+      <div style="clear:both"> 
+      </div> 
+      <div style="padding:10px 0 0 0;"> 
+       <div class="headNormal">
+         Be the first one to answer this question 
+       </div> 
+      </div> 
+      <form id="fmanswer" action="/answers/372795/post.html" method="POST"> 
+       <div class="form-item"> 
+        <div id="wmd-button-bar" class="wmd-panel"></div> 
+        <textarea id="body" name="body" rows="10" style="width:100%;"></textarea> 
+        <div class="preview-toggle"> 
+         <span id="pre-collapse" title=" Toggle the real time Markdown editor preview ">toggle preview:</span> 
+         <span style="text-align: right; margin-left: 200px;" id="editor-metrics"></span> 
+         <input type="hidden" id="wiki" name="wiki" value="false" /> 
+        </div> 
+        <div id="previewer" class="wmd-preview"></div> 
+        <script type="text/javascript">
+    var attachmentsEnabled = true;
+    pageContext.url.authorizeAttachmentsUrl = "/authorizeAttachment.json";
+    pageContext.authorizeUploadContext = {
+        type: 'answer'
+    };
+</script> 
+        <div id="main-attachments-container" class="message"> 
+         <p> <strong><label>Attachments:</label></strong> Up to 5 attachments (including images) can be used with a maximum of 5.2 MB each and 5.2 MB total. </p> 
+         <div id="img-attachments-container"></div> 
+         <div id="attachments-container"></div> 
+        </div> 
+       </div> 
+       <div class="form-actions"> 
+        <p> <input type="submit" class="submit" value="Login/Signup to Post Your Answer" onclick="submitClicked(event, this.form)" /> </p>
+       </div> 
+       <input type="hidden" name="TH_CSRF" value="1194165829983732420" />
+      </form> 
+      <script type="text/javascript">
+    $(function() {
+        $('.preview-toggle').children().each(function() {
+            var id = $(this).attr('id');
+
+            if (id != 'pre-collapse' && id != 'editor-metrics') {
+                $(this).remove();
+            }
+        });
+
+        $('#fmanswer').find('.form-actions').append($('<small>' +
+                'By contributing information to this and other Epic Unreal Engine support outlets, if you are a subscription licensee, you agree that any comments or feedback you post or otherwise submit constitutes Feedback under the Unreal Engine EULA, and any software code or other content constitutes a Submission under the Unreal Engine EULA. If you are not a subscription licensee, you agree that any comments, feedback, software code, or other content you post or otherwise submit constitutes a User Contribution under the Epic Games Terms of Service.' +
+                '</small>'));
+
+
+        if (commands.deleteComment) {
+            commands.deleteComment.execute = function(evt) {
+                if (this.getStatus() == 'off') {
+                    this.confirm(evt, null, null);
+                } else {
+                    this.executeRequest(this.getRequestData(), evt);
+                }
+            };
+            commands.deletePost.execute = commands.deleteComment.execute;
+        }
+
+    });
+</script> 
+     </div> 
+     <script type="text/x-jquery-tmpl" id="redirect-question-dialog">
+        <p>Redirect 'Cannot &#34;Get game instance&#34; referring to a custom game instance in a macro.' into:</p>
+        <div>
+            <strong>${search}</strong>
+        </div>
+        <div>
+        <div class="SearchAnswers">
+            <input type="text" style="background-image: none;" class="textInput" id="searchQuestion" value="Find Question" onclick="if(this.value=='Find Question'){this.value = ''}" />
+            <form>
+                <input type="hidden" name="to" />
+            </form>
+        </div>
+        </div>
+</script> 
+     <script type="text/javascript">
+    $(function($) {
+        commandUtils.initializeLabels();
+    });
+</script> 
+    </div>
+    <!--/span--> 
+    <div class="span3"> 
+     <script type="text/javascript">
+$(function() {
+
+    var loadDate = new Date();
+
+    window.submitClicked = function(e,f){};
+
+    function getWorkLog(evt, error, answer, callback, defaultTime, defaultObservations, isEdit) {
+
+	if (isEdit == undefined) {
+            isEdit = false;
+        }
+
+        if (!defaultTime) {
+            var minutes = (new Date() - loadDate) / 1000 / 60;
+
+            if (minutes < 1) {
+                minutes = 1;
+            }
+
+            var hours = parseInt(minutes / 60);
+            minutes = parseInt(minutes % 60);
+
+            if (hours < 10) {
+                hours = '0' + hours;
+            }
+
+            if (minutes < 10) {
+                minutes = '0' + minutes;
+            }
+
+            defaultTime = hours + ':' + minutes;
+        }
+
+        if (!defaultObservations) {
+            defaultObservations = "";
+        }
+        
+        
+        
+		var chours = defaultTime.split(":");
+		
+		if(!isEdit && parseInt(chours[0]) < 1)
+		{
+                
+                data = Object();
+                data.logTime = defaultTime;
+                data.markAnswered = "on";
+                data.observations = "";
+            
+                callback(data.logTime, data.observations, data.markAnswered);
+                //close();		
+        }
+		else
+		{
+	        var $dialog = commandUtils.showDialog({
+	            nodes: commandUtils.renderTemplate('time-log-post-dialog', {isError: error, isAnswer: answer, time: defaultTime, observations: defaultObservations}),
+	            extra_class: 'prompt',
+	            beforeShow: function($dialog) {
+	                $dialog.find('.logTime').timepicker({
+	                    showPeriodLabels: false,
+	                    hourText: 'Hours',
+	                    minuteText: 'Minutes'
+	                });
+	
+	                $dialog.find('.time-spent').click(function() {
+	                    $dialog.find('.time-spent').removeClass('active');
+	                    $(this).addClass('active');
+	                    $dialog.find('.dialog-yes').removeAttr('disabled');
+	
+	                    if (!$(this).is('span')) {
+	                        $dialog.find('.logTime').val($(this).attr('value'));
+	                    }
+	
+	                    return false;
+	                });
+	
+	                $dialog.find('.dialog-yes').attr('disabled', 'disabled');
+	            },
+	            yes_callback: function($dialog, close) {
+	                var data = commandUtils.extractFormData($dialog);
+	
+	                var split = /(\d\d):(\d\d)/.exec(data.logTime);
+	
+	                if (!split) {
+	                    $dialog.find('.logTime').css('border-color', 'red');
+	                } else {
+	
+	                    function done() {
+	                        callback(data.logTime, data.observations, data.markAnswered);
+	                        close();
+	                    }
+	
+	                    if (split[1] >= 1) {
+	                        var msg = 'Are you sure you want to log {time}?'.replace('{time}', data.logTime);
+	                        commandUtils.showConfirmation(evt, 'Please confirm', msg, done);
+	                    } else {
+	                        done();
+	                    }
+	                }
+	            },
+	            event: evt,
+	            show_no: true
+	        });
+		}
+
+    }
+
+    window.getWorkLog = getWorkLog;
+
+    var confirmIsAnswerMessages = {
+        'description': 'Post as:',
+        'pleaseSelect': 'Select one',
+        'asAnswer': 'Answer to the question',
+        'commentOnQuestion': 'Comment on the question',
+        'commentOnAnswer': 'Comment on the answer by {author}, {date}',
+        'commentOnComment': 'Comment on the comment by {author}, {date}'
+        
+        
+    };
+	
+	
+	function getObjectsChildren(parPost, data, level)
+	{
+		var toReturn = new Array();
+		$.each(data,function(i,post){
+			if(post.parentId == parPost.id)
+			{
+				post.summary = Array(level+1).join("-") + " " + post.summary;
+				toReturn[toReturn.length] = post
+       			var objects_children = getObjectsChildren(post,data,level+1);
+       			if(objects_children.length > 0)
+       			{
+       				for(ii=0;ii<objects_children.length;ii++)
+       				{
+       					toReturn[toReturn.length] = objects_children[ii];
+       				}
+       			}
+			}
+		});
+		return toReturn;
+	}
+	
+	function getObjectDataParent(object,data)
+	{
+		var thisReturn;
+		$.each(data,function(i,post){
+			if(object.parentId == post.id)
+			{
+   				thisReturn =  object;
+   				return false;
+			}
+		});
+		return thisReturn;
+	}
+
+    var possibleLocations = false;
+
+    function confirmIsAnswer(e, isAnswerCallback) {
+        if (possibleLocations && $('#is-answer-selector').length) {
+            return;
+        } else  if (possibleLocations == 'fetching') {
+            return;
+        }
+
+        try {
+            if (/\/edit\.html$/.test(window.location)) {
+                isAnswerCallback();
+                return;
+            }
+
+            function showDialog(data) {
+                possibleLocations = data;
+
+                $.each(data.result.parentCandidates, function(i, post) {
+                    if (post.type == "question") {
+                        post.summary = confirmIsAnswerMessages.commentOnQuestion
+                    } else {
+                        var node = getObjectDataParent(post, data.result.parentCandidates);
+                        if(node != null && node.type === "comment")
+                        {
+                            post.summary = confirmIsAnswerMessages.commentOnComment
+                                    .replace('{author}', post.author.username)
+                                    .replace('{date}', commandUtils.friendlyDate(new Date(post.creationDate)));
+                        }
+                        else
+                        {
+                            post.summary = confirmIsAnswerMessages.commentOnAnswer
+                                    .replace('{author}', post.author.username)
+                                    .replace('{date}', commandUtils.friendlyDate(new Date(post.creationDate)));
+                        }
+                    }
+                });
+
+
+                var newresults = new Array();
+                var theQuestion;
+                //first get the question and it's comments
+                $.each(data.result.parentCandidates, function(i, post) {
+                    if(post.type == "question")
+                    {
+                        newresults[newresults.length] = post;
+                        theQuestion = post;
+                        return false;
+                    }
+                });
+
+                //first get the question and it's comments
+                $.each(data.result.parentCandidates, function(i, post) {
+                    if(post.parentId == theQuestion.id)
+                    {
+                        post.summary = "- " + post.summary;
+                        newresults[newresults.length] = post;
+                        var objects_children = getObjectsChildren(post,data.result.parentCandidates,2);
+                        if(objects_children.length > 0)
+                        {
+                            for(ii=0;ii<objects_children.length;ii++)
+                            {
+                                newresults[newresults.length] = objects_children[ii];
+                            }
+                        }
+                    }
+                });
+
+                data.result.parentCandidates = newresults;
+
+
+
+                $.extend(data.result, confirmIsAnswerMessages);
+
+                commandUtils.showDialog({
+                    nodes: commandUtils.renderTemplate('confirm-is-answer-dialog', data.result),
+                    'extra_class': 'prompt',
+                    'yes_callback': function($dialog, close) {
+                        var value = $dialog.find('select[name=is-answer]').val();
+
+                        if (value == 'select') {
+                            return false;
+                        } if (value == 'answer') {
+                            confirmAnswerOpen = false;
+                            close();
+                            isAnswerCallback();
+
+
+                        } else {
+                            var text = $('#body').val();
+                            if($('#comment-'+value+'-info').length > 0)
+                            {
+
+                                $('#comment-'+value+'-info').find(".comment-reply").click();
+                                $(".comment-form-container").find("[name='body']").val(text);
+                                window.onbeforeunload = null;
+                                window.location = '#comment-' + value + '-form';
+                            }
+                            else
+                            {
+                                $('#answer-container-' + value + ', #question-table').find('.add-comment-link').click();
+                                $('#answer-container-' + value + ', #question-table').find('.commentBox').val(text);
+                                window.onbeforeunload = null;
+                                window.location = '#comment-' + value + '-form';
+                            }
+
+                            close();
+                        }
+                    },
+                    'event': e,
+                    show_no: true
+                });
+            }
+
+            if (possibleLocations) {
+                showDialog(possibleLocations);
+                return;
+            }
+
+            possibleLocations = 'fetching';
+
+            $.getJSON('/questions/372795/postLocations.json', showDialog).complete(function() {
+                window.setTimeout(function() {
+                    if ($('#is-answer-selector').length == 0) {
+                        possibleLocations = false;
+                    }
+                }, 250);
+            });
+        } catch (e) {
+            isAnswerCallback();
+        }
+    }
+
+    function appendToForm($form, logTime, observations, markAnswered) {
+        var $logTime = $form.find('[name=logTime]');
+
+        if ($logTime.length == 0) {
+            $form.append('<input type="hidden" name="logTime" value="' + logTime + '" />');
+        } else {
+            $logTime.val(logTime);
+        }
+
+        var $observations = $form.find('[name=observations]');
+
+        if ($observations.length == 0) {
+            $form.append('<input type="hidden" name="observations" value="' + observations + '" />');
+        } else {
+            $observations.val(observations);
+        }
+
+        var $markAnswered = $form.find('[name=markAnswered]');
+
+        if (markAnswered && $markAnswered.length == 0) {
+            $form.append('<input type="hidden" name="markAnswered" value="true" />');
+        } else if (!markAnswered && $markAnswered.length > 0) {
+            $markAnswered.remove();
+        }
+    }
+
+    function answerSubmiissionCallback(logTime, observations, markAnswered) {
+        var $form = $('#fmanswer');
+        appendToForm($form, logTime, observations, markAnswered);
+        window.onbeforeunload = null;
+        $form.submit();
+    }
+
+
+    $('.submit').click(function(e) {
+        e.preventDefault();
+
+        if (currentUser == null) {
+            $('#fmanswer').submit();
+            return false;
+        }
+
+        confirmIsAnswer(e, function() {
+            window.onbeforeunload = null;
+            $('#fmanswer').submit();
+        });
+        return false;
+    });
+
+});
+</script> 
+     <script type="text/x-jquery-tmpl" id="time-log-post-dialog">
+    <h3><span {{if isError}}class="fieldError"{{/if}}>Please log your work</span></h3>
+    <form>
+        <strong><label>Observations (optional):</label></strong>
+        <textarea rows="3" style="width: 300px;" name="observations">${observations}</textarea>
+        {{if isAnswer}}<br /><input type="checkbox" name="markAnswered" checked="checked" /> Mark as answered{{/if}}
+        <br />
+        <div id="time-spent">
+            <button class="time-spent btn btn-small" value="00:05">Done in 5m</button>
+            <button class="time-spent btn btn-small" value="00:15">Done in 15m</button>
+            <button class="time-spent btn btn-small" value="00:30">Done in 30m</button>
+            <button class="time-spent btn btn-small" value="00:45">Done in 45m</button>
+            <br />
+            <button class="time-spent btn btn-small" value="01:00">Done in 1h</button>
+            <button class="time-spent btn btn-small" value="02:00">Done in 2h</button>
+            <button class="time-spent btn btn-small" value="03:00">Done in 3h</button>
+            <span class="time-spent btn btn-small" style="height: 28px; padding: 0; text-align: center; vertical-align: middle;">
+Done in                     <input type="text" name="logTime" class="logTime" value="${time}" style="margin-top: 3px; padding: 2px; width: 40px;" />
+            </span>
+        </div>
+        <center>This page has been open for ${time}</center>
+    </form>
+</script> 
+     <script type="text/x-jquery-tmpl" id="confirm-is-answer-dialog">
+    ${description}
+    <form>
+        <select name="is-answer" id="is-answer-selector" class="prompt-examples">
+            <option value="select">--${pleaseSelect}--</option>
+            <option value="answer">${asAnswer}</option>
+            {{each(p, target) parentCandidates }}
+            <option value="${target.id}">${target.summary}</option>
+            {{/each}}
+        </select>
+    </form>
+</script> 
+     <div id="subscription_box" class="boxC"> 
+      <h3 class="subtitle">Follow this question</h3> 
+      <p>Once you sign in you will be able to subscribe for any updates here</p> 
+      <p> <a title="subscribe to answers" href="/feed/372795/answers.rss" class="feed-icon"></a> <a href="/feed/372795/answers.rss">Answers to this question</a> </p> 
+     </div> 
+     <div id="question-tags-box" style="display: none;"> 
+      <p class="tags"> <a rel="tag" title="see questions tagged 'blueprints'" href="/questions/topics/single/374.html">blueprints</a> <a rel="tag" title="see questions tagged 'gameinstance'" href="/questions/topics/single/87852.html">gameinstance</a> </p> 
+     </div> 
+     <script type="text/javascript">
+        $(function() {
+            $('.edit-log-time').click(function(evt) {
+                var log = $(this).attr('name');
+                var $log = $(this).parent();
+
+                var hours = $log.find('.work-log-hours').html();
+                var minutes = $log.find('.work-log-minutes').html();
+
+                if (!hours) {
+                    hours = '00';
+                }
+
+                if (hours.length < 2) {
+                    hours = '0' + hours;
+                }
+
+                if (!minutes) {
+                    minutes = '00';
+                }
+
+                if (minutes.length < 2) {
+                    minutes = '0' + minutes;
+                }
+
+                var observations = $log.find('pre').html();
+
+                getWorkLog(evt, false, false, function(time, observations, ma) {
+                    $.getJSON('/epic/editSupportLog.json', {
+                        'log': log,
+                        'time': time,
+                        'observations': observations
+                    }, function() {
+                        commandUtils.reloadPage();
+                    });
+                }, hours + ':' + minutes, observations, true);
+            });
+        });
+    </script> 
+     <div> 
+     </div> 
+     <div> 
+     </div> 
+     <div class="boxC"> 
+      <h3 class="subtitle">Related Questions</h3> 
+      <div class="questions-related"> 
+       <p> <a href="/questions/234555/understanding-replication-in-blueprints.html">Understanding replication in blueprints</a> </p> 
+       <p> <a href="/questions/312885/gameinstance-bp-details.html">GameInstance BP Details</a> </p> 
+       <p> <a href="/questions/224866/gameinstance-variable-for-loading-screen.html">Gameinstance variable for loading screen</a> </p> 
+       <p> <a href="/questions/353555/how-to-save-data-stored-in-game-instance.html">How to save data stored in game instance?</a> </p> 
+       <p> <a href="/questions/214270/empty-level-tries-to-use-3rd-person-character-when.html">Empty level tries to use 3rd person character when I cast to a custom GameInstance</a> </p> 
+       <p> <a href="/questions/258458/how-can-i-know-when-playerstate-is-available-form.html">How can I know when playerstate is available form the controller?</a> </p> 
+       <p> <a href="/questions/260070/multiple-checks.html">Multiple checks.</a> </p> 
+       <p> <a href="/questions/175876/setting-screen-percentage-in-post-process.html">Setting screen percentage in post process</a> </p> 
+       <p> <a href="/questions/73782/how-do-i-put-a-group-mesh-into-a-class-blueprint.html">how do I put a group mesh into a class blueprint</a> </p> 
+       <p> <a href="/questions/355949/im-making-game-menu-the-tutorial-told-me-that-i-ha.html">Event Begin Play Firing Multiple Times</a> </p> 
+      </div> 
+     </div> 
+    </div>
+    <!--/span--> 
+   </div>
+   <!--/row--> 
+   <hr /> 
+   <center> 
+    <footer> 
+     <p>&copy; 2009-2016 <a href="http://www.epicgames.com/">Epic Games, Inc.</a> All Rights Reserved. Epic, Epic Games, Unreal, Unreal Engine, UE4, and their logos are trademarks or registered trademarks of Epic Games, Inc. in the United States of America and elsewhere. <a href="http://epicgames.com/tou" target="_blank">Terms of Use</a> | <a href="http://epicgames.com/privacynotice" target="_blank">Privacy Policy</a></p> 
+     <p><a href="http://answerhub.com">Powered by AnswerHub</a></p> 
+    </footer> 
+   </center> 
+  </div>
+  <!--/.fluid-container--> 
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $(".alert").alert();
+        $(":submit").addClass("btn").addClass("btn-primary").addClass("btn-large");
+//        $(".dialog-yes").addClass("btn-primary").addClass("btn-small");
+        $(".cancel").removeClass("submit").removeClass("btn-primary").addClass("btn").addClass("btn-large");
+        $(".submit").addClass("btn").addClass("btn-primary").addClass("btn-large");
+        $(".add-comment-link, .mod-talk").addClass("btn").addClass("btn-small");
+        $(".comment-cancel").removeClass("btn-primary").addClass("btn").removeClass("btn-large").addClass("btn-small");
+        $(".comment-submit").removeClass("btn-large").addClass("btn").addClass("btn-small");
+        $(".welcome-bar button").removeClass("btn-primary");
+//        $(".tags a").addClass("label")\;
+
+        // A bit of a workaround to deal with the styles of our parent theme
+
+        $(".answer-body pre code").addClass("prettyprint").addClass("linenums");
+        $(".question-body pre code").addClass("prettyprint").addClass("linenums");
+
+        prettyPrint();
+    });
+</script>   
+ </body>
+</html>

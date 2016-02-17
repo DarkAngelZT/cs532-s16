@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="alternate" type="application/rss+xml" title="AviUtlの易しい使い方 RSS Feed" href="http://aviutl.info/feed/" />
+<link rel="pingback" href="http://aviutl.info/xmlrpc.php" />
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
+
+<link rel="stylesheet" href="http://aviutl.info/wp-content/themes/simplicity-child/style.css">
+<link rel="stylesheet" href="http://aviutl.info/wp-content/themes/simplicity/webfonts/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://aviutl.info/wp-content/themes/simplicity/webfonts/icomoon/style.css">
+<link rel="stylesheet" href="http://aviutl.info/wp-content/themes/simplicity/css/extension.css">
+<link rel="stylesheet" href="http://aviutl.info/wp-content/themes/simplicity/css/responsive-pc.css">
+<link rel="stylesheet" href="http://aviutl.info/wp-content/themes/simplicity/css/print.css" type="text/css" media="print" />
+      <link rel="stylesheet" href="http://aviutl.info/wp-content/themes/simplicity/skins/chic/style.css">
+    <link rel="stylesheet" href="http://aviutl.info/wp-content/themes/simplicity-child/responsive.css">
+    <meta name="viewport" content="width=1280, maximum-scale=1, user-scalable=yes">
+
+<!-- OGP -->
+<meta property="og:type" content="article">
+<meta property="og:description" content="ツイッターに動画を投稿する際の条件とか、気をつけた方が良い点とかをまとめてみました。かなりな高画質・高解像度の動画を投稿できるみたいです。ツイッターに投稿する動画の条件投稿する動画の条件は以下に当てはまっていればOKらし">
+<meta property="og:title" content="ツイッターに投稿する動画の条件について【動画形式･コーデック】">
+<meta property="og:url" content="http://aviutl.info/twitter-movie/">
+<meta property="og:image" content="http://aviutl.info/wp-content/uploads/2016/01/twitter_icon.png">
+<meta property="og:site_name" content="AviUtlの易しい使い方">
+<meta property="og:locale" content="ja_JP" />
+<!-- /OGP -->
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="ツイッターに動画を投稿する際の条件とか、気をつけた方が良い点とかをまとめてみました。かなりな高画質・高解像度の動画を投稿できるみたいです。ツイッターに投稿する動画の条件投稿する動画の条件は以下に当てはまっていればOKらし">
+<meta name="twitter:title" content="ツイッターに投稿する動画の条件について【動画形式･コーデック】">
+<meta name="twitter:url" content="http://aviutl.info/twitter-movie/">
+<meta name="twitter:image" content="http://aviutl.info/wp-content/uploads/2016/01/twitter_icon.png">
+<meta name="twitter:domain" content="aviutl.info">
+<!-- /Twitter Card -->
+
+<title>ツイッターに投稿する動画の条件について【動画形式･コーデック】</title>
+
+<!-- All in One SEO Pack 2.2.7.4 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<meta name="description" itemprop="description" content="ツイッターに動画を投稿する際の条件とか、気をつけた方が良い点とかをまとめてみました。 かなりな高画質・高解像度の動画を投稿できるみたいです。 ツイッターに投稿する動画の条件 投稿する動画の条件は以下に当てはまっていればOKらしいです。 動画形式：.MOV or" />
+
+<meta name="keywords" itemprop="keywords" content="ツイッター,動画,投稿,条件" />
+
+<link rel="canonical" href="http://aviutl.info/twitter-movie/" />
+<!-- /all in one seo pack -->
+<link rel="alternate" type="application/rss+xml" title="AviUtlの易しい使い方 &raquo; フィード" href="http://aviutl.info/feed/" />
+<link rel="alternate" type="application/rss+xml" title="AviUtlの易しい使い方 &raquo; コメントフィード" href="http://aviutl.info/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="AviUtlの易しい使い方 &raquo; ツイッターに投稿する動画の条件について【動画形式･コーデック】 のコメントのフィード" href="http://aviutl.info/twitter-movie/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/aviutl.info\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='external-links-css'  href='http://aviutl.info/wp-content/plugins/sem-external-links/sem-external-links.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://aviutl.info/wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='sb-type-std-css'  href='http://aviutl.info/wp-content/plugins/speech-bubble/css/sb-type-std.css' type='text/css' media='all' />
+<link rel='stylesheet' id='sb-type-fb-css'  href='http://aviutl.info/wp-content/plugins/speech-bubble/css/sb-type-fb.css' type='text/css' media='all' />
+<link rel='stylesheet' id='sb-type-fb-flat-css'  href='http://aviutl.info/wp-content/plugins/speech-bubble/css/sb-type-fb-flat.css' type='text/css' media='all' />
+<link rel='stylesheet' id='sb-type-ln-css'  href='http://aviutl.info/wp-content/plugins/speech-bubble/css/sb-type-ln.css' type='text/css' media='all' />
+<link rel='stylesheet' id='sb-type-ln-flat-css'  href='http://aviutl.info/wp-content/plugins/speech-bubble/css/sb-type-ln-flat.css' type='text/css' media='all' />
+<link rel='stylesheet' id='sb-type-pink-css'  href='http://aviutl.info/wp-content/plugins/speech-bubble/css/sb-type-pink.css' type='text/css' media='all' />
+<link rel='stylesheet' id='sb-type-rtail-css'  href='http://aviutl.info/wp-content/plugins/speech-bubble/css/sb-type-rtail.css' type='text/css' media='all' />
+<link rel='stylesheet' id='sb-type-drop-css'  href='http://aviutl.info/wp-content/plugins/speech-bubble/css/sb-type-drop.css' type='text/css' media='all' />
+<link rel='stylesheet' id='sb-type-think-css'  href='http://aviutl.info/wp-content/plugins/speech-bubble/css/sb-type-think.css' type='text/css' media='all' />
+<link rel='stylesheet' id='sb-no-br-css'  href='http://aviutl.info/wp-content/plugins/speech-bubble/css/sb-no-br.css' type='text/css' media='all' />
+<link rel='stylesheet' id='toc-screen-css'  href='http://aviutl.info/wp-content/plugins/table-of-contents-plus/screen.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-shortcodes-style-css'  href='http://aviutl.info/wp-content/plugins/wc-shortcodes/includes/css/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wordpress-popular-posts-css'  href='http://aviutl.info/wp-content/plugins/wordpress-popular-posts/style/wpp.css' type='text/css' media='all' />
+<link rel='stylesheet' id='amazonjs-css'  href='http://aviutl.info/wp-content/plugins/amazonjs/css/amazonjs.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='http://aviutl.info/wp-content/tablepress-combined.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='http://aviutl.info/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.min.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='wordpresscanvas-font-awesome-css'  href='http://aviutl.info/wp-content/plugins/wc-shortcodes/includes/css/font-awesome.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='http://aviutl.info/wp-content/plugins/jetpack/css/jetpack.css' type='text/css' media='all' />
+<script type='text/javascript' src='http://aviutl.info/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='http://aviutl.info/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='http://aviutl.info/wp-content/plugins/treeview-on-contents/js/jquery.treeview.js'></script>
+<link rel='https://api.w.org/' href='http://aviutl.info/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://aviutl.info/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://aviutl.info/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.4.2" />
+<link rel='shortlink' href='http://wp.me/p6jM8N-3oC' />
+<link rel="alternate" type="application/json+oembed" href="http://aviutl.info/wp-json/oembed/1.0/embed?url=http%3A%2F%2Faviutl.info%2Ftwitter-movie%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://aviutl.info/wp-json/oembed/1.0/embed?url=http%3A%2F%2Faviutl.info%2Ftwitter-movie%2F&#038;format=xml" />
+<style type="text/css">div#toc_container {width: 98%;}</style><script type="text/javascript">
+jQuery(document).ready(function() {});</script>
+<style type='text/css'>img#wpstats{display:none}</style><style type="text/css">
+.article {
+  font-size:15px;
+}
+/*サムネイルをサークル状に*/
+.entry-thumb img,
+.related-entry-thumb img,
+#new-entries ul li img,
+#popular-entries ul li img,
+#prev-next img,
+#new-entries .new-entrys-large .new-entry img{
+  border-radius:10px;
+}
+/*タイル状リスト*/
+#main .entry{
+  width:214px;
+  margin:10px 5px 0 5px;
+  border:1px solid #ddd;
+  border-radius:5px;
+  float:left;
+  clear:none;
+  overflow: visible;
+}
+
+#list .entry .entry-thumb {
+  margin-top:0;
+  margin-right: 0;
+  margin-left:0;
+  text-align:center;
+  margin-bottom: 0;
+}
+
+.entry-thumb img{
+  width:100%;
+  height:auto;
+  margin-bottom:0;
+}
+
+.entry-card-content {
+  margin-left: 0;
+  clear:both;
+}
+
+.entry h2 a{
+  margin-top:0;
+  font-size:16px;
+  line-height:110%;
+}
+
+.entry .post-meta{
+  margin:0;
+  font-size:14px;
+}
+
+.entry-snippet{
+  font-size:14px;
+  padding:0 5px;
+  word-wrap:break-word;
+}
+
+.entry-read a{
+  font-size:12px;
+  padding:0 5px;
+}
+
+.entry .post-meta .category{
+  display:none;
+}
+
+.entry h2{
+  padding:0 5px;
+  word-wrap:break-word;
+  line-height: 100%;
+}
+
+.entry-read a.entry-read-link{
+  padding:5px 0;
+  margin-left:5px;
+  margin-right:5px;
+  margin-bottom:5px;
+  width:auto;
+}
+
+
+@media screen and (max-width:471px){
+  #main .entry{
+    width:100%;
+    margin:5px 0;
+  }
+
+  .entry-thumb img{
+    width:100%;
+    height:auto;
+  }
+
+  .entry h2 a{
+    font-size:16px;
+  }
+
+  .post-meta{
+    font-size:14px;
+  }
+}
+/*レクタングルを縦に*/
+.ad-left{
+  float:none;
+  margin-right:0;
+  width:auto;
+}
+.ad-right {
+  float:none;
+  margin-top:5px;
+  margin-left:0;
+  width:auto;
+}
+
+#footer-mobile-buttons a .menu-caption{
+  font-size: 0.6em;
+  font-family: "Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+}
+
+.menu-caption-menu::before{
+  content: 'メニュー';
+}
+
+.menu-caption-search::before{
+  content: '検索';
+}
+
+.menu-caption-prev::before{
+  content: '前へ';
+}
+
+.menu-caption-next::before{
+  content: '次へ';
+}
+
+.menu-caption-top::before{
+  content: 'トップへ';
+}
+
+.menu-caption-sidebar::before{
+  content: 'サイドバー';
+}
+@media screen and (max-width:639px){
+  .article br{
+    display: block;
+  }
+}
+.entry-content{
+  margin-left: 0;
+}
+</style>
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+						<!-- WordPress Popular Posts v3.3.2 -->
+				<script type="text/javascript">//<![CDATA[
+
+					var sampling_active = 0;
+					var sampling_rate   = 100;
+					var do_request = false;
+
+					if ( !sampling_active ) {
+						do_request = true;
+					} else {
+						var num = Math.floor(Math.random() * sampling_rate) + 1;
+						do_request = ( 1 === num );
+					}
+
+					if ( do_request ) {
+
+						// Create XMLHttpRequest object and set variables
+						var xhr = ( window.XMLHttpRequest )
+						  ? new XMLHttpRequest()
+						  : new ActiveXObject( "Microsoft.XMLHTTP" ),
+						url = 'http://aviutl.info/wp-admin/admin-ajax.php',
+						params = 'action=update_views_ajax&token=019f929969&wpp_id=13058';
+						// Set request method and target URL
+						xhr.open( "POST", url, true );
+						// Set request header
+						xhr.setRequestHeader( "Content-type", "application/x-www-form-urlencoded" );
+						// Hook into onreadystatechange
+						xhr.onreadystatechange = function() {
+							if ( 4 === xhr.readyState && 200 === xhr.status ) {
+								if ( window.console && window.console.log ) {
+									window.console.log( xhr.responseText );
+								}
+							}
+						};
+						// Send request
+						xhr.send( params );
+
+					}
+
+				//]]></script>
+				<!-- End WordPress Popular Posts v3.3.2 -->
+				<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style>
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="ツイッターに投稿する動画の条件について【動画形式･コーデック】" />
+<meta property="og:url" content="http://aviutl.info/twitter-movie/" />
+<meta property="og:description" content="ツイッターに動画を投稿する際の条件とか、気をつけた方が良い点とかをまとめてみました。 かなりな高画質・高解像度&hellip;" />
+<meta property="article:published_time" content="2016-01-03T05:59:32+00:00" />
+<meta property="article:modified_time" content="2016-02-13T05:14:34+00:00" />
+<meta property="og:site_name" content="AviUtlの易しい使い方" />
+<meta property="og:image" content="http://aviutl.info/wp-content/uploads/2016/01/x264_twitter.png" />
+<meta property="og:image:width" content="1014" />
+<meta property="og:image:height" content="629" />
+<meta property="og:locale" content="ja_JP" />
+<meta name="twitter:card" content="summary" />
+
+<!-- Easy FancyBox 1.5.7 using FancyBox 1.3.7 - RavanH (http://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'overlayOpacity' : 0.2, 'overlayColor' : '#777', 'showCloseButton' : false, 'padding' : 8, 'centerOnScroll' : true, 'enableEscapeButton' : true, 'autoScale' : true, 'speedIn' : 1, 'speedOut' : 1 };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nofancybox,.pin-it-button), area[href*=".jpg"]:not(.nofancybox), a[href*=".jpeg"]:not(.nofancybox,.pin-it-button), area[href*=".jpeg"]:not(.nofancybox), a[href*=".png"]:not(.nofancybox,.pin-it-button), area[href*=".png"]:not(.nofancybox), a[href*=".gif"]:not(.nofancybox,.pin-it-button), area[href*=".gif"]:not(.nofancybox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	jQuery('a.fancybox, area.fancybox, li.fancybox a:not(li.nofancybox a)').fancybox( jQuery.extend({}, fb_opts, { 'easingIn' : 'easeOutBack', 'easingOut' : 'easeOutBack', 'opacity' : false, 'hideOnContentClick' : true, 'titleShow' : false, 'titlePosition' : 'over', 'titleFromAlt' : true, 'showNavArrows' : false, 'enableKeyboardNav' : false, 'cyclic' : false, 'changeSpeed' : 1, 'changeFade' : 1 }) );
+	/* Auto-click */ 
+	jQuery('#fancybox-auto').trigger('click');
+}
+/* ]]> */
+</script>
+
+
+
+</head>
+  <body class="single single-post postid-13058 single-format-standard wc-shortcodes-font-awesome-enabled" "}>
+    <div id="container">
+
+      <!-- header -->
+      <div id="header" class="clearfix">
+        <div id="header-in">
+
+                    <div id="h-top">
+            <!-- モバイルメニュー表示用のボタン -->
+<div id="mobile-menu">
+  <a id="mobile-menu-toggle" href="#"><span class="fa fa-bars fa-2x"></span></a>
+</div>
+
+            <div class="alignleft top-title-catchphrase">
+              <!-- サイトのタイトル -->
+<p id="site-title">
+  <a href="http://aviutl.info/"><img src="http://aviutl.info/wp-content/uploads/2015/08/AviUtl-logo-2.png" alt="AviUtlの易しい使い方" class="site-title-img" /></a></p>
+<!-- サイトの概要 -->
+<p id="site-description">
+  AviUtlを中心に動画全般の事を解説するサイト</p>
+            </div>
+
+            <div class="alignright top-sns-follows">
+                            <!-- SNSページ -->
+<div class="sns-pages">
+<ul class="snsp">
+<li class="feedly-page"><a href='//feedly.com/index.html#subscription%2Ffeed%2Fhttp%3A%2F%2Faviutl.info%2Ffeed%2F' target='blank' title="feedlyで更新情報をフォロー" rel="nofollow"><span class="icon-feedly-square"></span></a></li><li class="rss-page"><a href="http://aviutl.info/feed/" target="_blank" title="RSSで更新情報をフォロー" rel="nofollow"><span class="fa fa-rss-square fa-2x"></span></a></li>  </ul>
+</div>
+                          </div>
+
+          </div><!-- /#h-top -->
+        </div><!-- /#header-in -->
+      </div><!-- /#header -->
+
+      <!-- Navigation -->
+<nav>
+<div id="navi">
+  	<div id="navi-in">
+    <div class="menu-%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc-1-container"><ul id="menu-%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc-1" class="menu"><li id="menu-item-3290" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-3290"><a href="http://aviutl.info/">ホーム</a></li>
+<li id="menu-item-3286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3286"><a title="AviUtlとは？" href="http://aviutl.info/what/">AviUtlとは？</a></li>
+<li id="menu-item-3300" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3300"><a href="http://aviutl.info/intro/">AviUtlの導入から使い方までまとめ</a></li>
+<li id="menu-item-4872" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-4872"><a href="http://aviutl.info/category/%e6%8b%a1%e5%bc%b5%e7%b7%a8%e9%9b%86%e8%ac%9b%e5%ba%a7/%e3%82%a8%e3%83%95%e3%82%a7%e3%82%af%e3%83%88/">エフェクト一覧</a>
+<ul class="sub-menu">
+	<li id="menu-item-4884" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4884"><a href="http://aviutl.info/bura-efekuto/">ブラー系</a></li>
+	<li id="menu-item-4883" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4883"><a href="http://aviutl.info/iro-efekuto/">色関係</a></li>
+	<li id="menu-item-4885" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4885"><a href="http://aviutl.info/efekuto-hikari/">光関係</a></li>
+	<li id="menu-item-4875" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4875"><a href="http://aviutl.info/bokasi-efekuto/">ぼかし系</a></li>
+	<li id="menu-item-4876" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4876"><a href="http://aviutl.info/rinnkaku-efekuto/">輪郭系</a></li>
+	<li id="menu-item-4877" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4877"><a href="http://aviutl.info/touzyou-efekuto/">登場･退場系</a></li>
+	<li id="menu-item-4878" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4878"><a href="http://aviutl.info/hizumi-efekuto/">歪み系</a></li>
+	<li id="menu-item-4879" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4879"><a href="http://aviutl.info/toriminngu-efekuto/">トリミング系</a></li>
+	<li id="menu-item-4880" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4880"><a href="http://aviutl.info/toumeika/">透明化系</a></li>
+	<li id="menu-item-5479" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5479"><a href="http://aviutl.info/noizuefekuto/">ノイズ</a></li>
+	<li id="menu-item-4888" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4888"><a href="http://aviutl.info/innta-re-sukaizyo/">インターレース解除</a></li>
+	<li id="menu-item-4874" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4874"><a href="http://aviutl.info/gazouru-pu-efekuto/">画像ループ</a></li>
+	<li id="menu-item-4881" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4881"><a href="http://aviutl.info/obuzyekutobunnkatu/">オブジェクト分割</a></li>
+	<li id="menu-item-4882" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4882"><a href="http://aviutl.info/ohusukuri-nn/">オフスクリーン描画</a></li>
+	<li id="menu-item-4873" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4873"><a href="http://aviutl.info/kihonnkouka-efekuto/">基本効果</a></li>
+	<li id="menu-item-4886" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4886"><a href="http://aviutl.info/sinndou-efekuto/">振動</a></li>
+</ul>
+</li>
+<li id="menu-item-12769" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12769"><a href="http://aviutl.info/douga-tisiki/">動画の知識を付けたい人が読むべきページ</a></li>
+<li id="menu-item-3287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3287"><a href="http://aviutl.info/info/">このサイトについて</a></li>
+<li id="menu-item-3311" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3311"><a href="http://aviutl.info/contact/">コンタクト</a></li>
+<li id="menu-item-7296" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-7296"><a href="http://aviutl.info/blog/">更新順</a></li>
+</ul></div>  </div><!-- /#navi-in -->
+</div><!-- /#navi -->
+</nav>
+<!-- /Navigation -->
+      <!-- 本体部分 -->
+      <div id="body">
+        <div id="body-in">
+
+          
+          <!-- main -->
+          <div id="main">
+  <div id="breadcrumb" class="breadcrumb-category"><div itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" class="breadcrumb-home"><span class="fa fa-home fa-fw"></span><a href="http://aviutl.info" itemprop="url"><span itemprop="title">ホーム</span></a><span class="sp"><span class="fa fa-angle-right"></span></span></div><div itemtype="http://data-vocabulary.org/Breadcrumb" itemscope=""><span class="fa fa-folder fa-fw"></span><a href="http://aviutl.info/category/%e3%82%b9%e3%83%88%e3%83%aa%e3%83%bc%e3%83%9f%e3%83%b3%e3%82%b0/" itemprop="url"><span itemprop="title">ストリーミング</span></a></div></div><!-- /#breadcrumb -->  <div id="post-13058" class="post-13058 post type-post status-publish format-standard has-post-thumbnail hentry category-235 tag-463 tag-26 tag-464 tag-465">
+  <div class="article">
+  
+  <h1 class="entry-title">
+        ツイッターに投稿する動画の条件について【動画形式･コーデック】      </h1>
+  <p class="post-meta">
+              <span class="post-date"><span class="fa fa-clock-o fa-fw"></span><span class="entry-date date published">2016/1/3</span></span>
+              <span class="post-update"><span class="fa fa-history fa-fw"></span><time class="entry-date date updated" datetime="2016-01-03T14:59:32+00:00">2016/2/13</time></span>
+            <span class="category"><span class="fa fa-folder fa-fw"></span><a href="http://aviutl.info/category/%e3%82%b9%e3%83%88%e3%83%aa%e3%83%bc%e3%83%9f%e3%83%b3%e3%82%b0/" rel="category tag">ストリーミング</a></span>
+    
+    
+    
+      </p>
+
+  
+  
+  
+  
+  <div id="the-content" class="entry-content">
+  <p><a href="http://aviutl.info/wp-content/uploads/2016/01/twitter_icon.png" rel="attachment wp-att-13062"><img class="alignnone size-full wp-image-13062" src="http://aviutl.info/wp-content/uploads/2016/01/twitter_icon.png" alt="twitter_icon" width="151" height="122" /></a></p>
+<p><strong>ツイッター</strong>に動画を投稿する際の条件とか、気をつけた方が良い点とかをまとめてみました。</p>
+<p>かなりな高画質・高解像度の動画を投稿できるみたいです。</p>
+<div class="wc-shortcodes-row wc-shortcodes-item wc-shortcodes-clearfix">
+<div class="wc-shortcodes-column wc-shortcodes-content wc-shortcodes-one-half wc-shortcodes-column-first ">
+<div id="toc_container" class="no_bullets"><p class="toc_title">目次</p><ul class="toc_list"><li><a href="#i"><span class="toc_number toc_depth_1">1</span> ツイッターに投稿する動画の条件</a></li><li><a href="#i-2"><span class="toc_number toc_depth_1">2</span> 目的別</a><ul><li><a href="#iPhoneAndroid"><span class="toc_number toc_depth_2">2.1</span> iPhone･Android等のスマフォで撮影した動画を投稿したい人</a></li><li><a href="#PC"><span class="toc_number toc_depth_2">2.2</span> PC等で動画編集した動画を投稿したい人</a><ul><li><a href="#AviUtl"><span class="toc_number toc_depth_3">2.2.1</span> AviUtlでツイッター用の動画を出力する方法</a></li><li><a href="#i-3"><span class="toc_number toc_depth_3">2.2.2</span> その他のエンコソフト</a></li></ul></li></ul></li></ul></div>
+
+</div>
+<div class="wc-shortcodes-column wc-shortcodes-content wc-shortcodes-one-half wc-shortcodes-column-last ">
+<p style="text-align: center;"><span style="font-size: 8pt;">スポンサードリンク</span><br>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- aviutl.info 300x100 本文中 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:320px;height:100px"
+     data-ad-client="ca-pub-8809903536095922"
+     data-ad-slot="5291744813"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+</div>
+</div>
+<h2><span id="i">ツイッターに投稿する動画の条件</span></h2>
+<p>投稿する動画の条件は以下に当てはまっていればOKらしいです。</p>
+<div class="shadow2">
+<ul>
+<li>動画形式：.MOV or .MP4</li>
+<li>映像コーデック：H.264</li>
+<li>音声コーデック：AAC（LC）</li>
+<li>ファイルサイズ：512MBまで</li>
+<li>長さ：30秒まで</li>
+<li>最小解像度: 32 x 32</li>
+<li>最大解像度: 1920 x 1200 (および1200 x 1900)</li>
+<li>縦横比: 1:2.39～2.39:1の範囲 (両方の値を含む)</li>
+<li>最大フレームレート: 40fps</li>
+<li>最大ビットレート:25Mbps</li>
+</ul>
+<p style="text-align: right;">引用：<a href="https://support.twitter.com/articles/20172147#video-formats" class="external external_icon" rel="nofollow" target="_blank">https://support.twitter.com/articles/20172147#video-formats</a></p>
+</div>
+<p>今流行りの動画形式・コーデックですね。</p>
+<p>Youtubeやニコニコでも推奨している「<strong>MP4（H.264、AAC）</strong>」です。</p>
+<p>MOVに対応しているのは、iPhoneユーザーを考慮しての事でしょう。（iPhoneで撮影した動画は「MOV（H.264、AAC）」なので）</p>
+<p>「<span style="color: #0000ff;">長さ30秒まで</span>」っていうのは結構キツいですが、<a href="http://aviutl.info/bittore-to/">ビットレート</a>を<span style="color: #ff0000;">25Mbps</span>も割けるのはすごいですね。ブルーレイ相当の画質で投稿出来るって事ですからね。</p>
+<div class="information">※地デジとかでも16Mbpsとかですからね。（BS/CSで20Mbpsくらい）</div>
+<p>最大フレームレートは何故40fpsとかいう微妙な値なのか分かりませんが、<span style="color: #ff00ff;">最近のスマフォは60fpsで撮影できるものが多いので、要注意</span>ですね。（60fpsな動画の場合は<a href="http://aviutl.info/hure-mure-to-hennkou/">fpsを落とす</a>必要有り）</p>
+<h2><span id="i-2">目的別</span></h2>
+<h3><span id="iPhoneAndroid">iPhone･Android等のスマフォで撮影した動画を投稿したい人</span></h3>
+<p>先述したように、<span style="font-size: 14pt;">fpsさえ40fps以内に収めておけば、そのまま投稿出来ます</span>。</p>
+<p><span style="font-size: 10pt;">※たまにMPEG4やMJPEGコーデックで撮影するスマフォが有るみたいなので注意ですが</span></p>
+<p>今時の動画の動画フォーマット・コーデックに則したものとなっているので、<span style="color: #3366ff;">何も加工なしにそのまま投稿すればOK</span>です。</p>
+<h3><span id="PC">PC等で動画編集した動画を投稿したい人</span></h3>
+<p>ビットレートとかファイルサイズは、この解像度で超える事はまずあり得ないので、<span style="font-size: 14pt;">何も考えず超高画質で出力してしまえばOK</span>です。</p>
+<p><span style="font-size: 24pt;">が</span>、URL先では、H.264の「<strong>プロファイル</strong>」について言及されていません。</p>
+<p>たぶん、「<strong>baseline</strong>」まで落としたほうがトラブルが起きにくいと思いますので、（念のため）出力の際はプロファイルを「baseline」に変更しましょう。</p>
+<div class="information">
+<p>「プロファイル」っていうのは、H.264のポテンシャルの高さみたいな設定のことです。</p>
+<p>この項目で高機能なものを選べば選ぶほど、<span style="color: #ff0000;">動画は高圧縮になっていきます</span>が、その分、<span style="color: #0000ff;">再生負荷も上がりますし、再生の互換性も下がります</span>。</p>
+<p>一部の機器（スマフォ・ゲーム機器）だと「baseline」しか対応してないのもあるかもしれないので、一応baselineにしといた方が良いよ！というだけの話です。（baseline→Main→Highみたいな感じで上がっていく）</p>
+<p>※ちなみに（かなり大雑把ですが）30秒動画を、「baseline」と「High」設定でそれぞれ出力した場合、「High」の方が20%くらいファイルサイズが小さくなります。（動きの激しい実写動画の場合）</p>
+<p style="text-align: right;">参考：<a href="https://ja.wikipedia.org/wiki/H.264" class="external external_icon" rel="nofollow" target="_blank">H.264 &#8211; Wikipedia</a>（下らへんにプロファイルについての詳しい定義とか載ってます）</p>
+</div>
+<p>ツイッター側で再エンコードする仕組みになっていれば、特に意識する必要もないですが、念の為に。。（30秒以上の動画をうｐする場合は、絶対に再エンコードされるので、意識する必要は有りません）</p>
+<div class="information">ちなみに、30秒以上の動画をうｐした場合でも、ツイッター側で以下↓のような30秒の範囲内に収める為の編集画面を作ってくれてるので、そこで30秒に収めればうｐ出来る仕様となっています。（なので、30秒に収める為に動画編集とかする必要もない）<br />
+<a href="http://aviutl.info/wp-content/uploads/2016/01/s-30byou_twitter.jpg" rel="attachment wp-att-13082"><img class="alignnone wp-image-13082" src="http://aviutl.info/wp-content/uploads/2016/01/s-30byou_twitter.jpg" alt="s-30byou_twitter" width="375" height="315" srcset="http://aviutl.info/wp-content/uploads/2016/01/s-30byou_twitter-300x252.jpg 300w, http://aviutl.info/wp-content/uploads/2016/01/s-30byou_twitter-320x269.jpg 320w, http://aviutl.info/wp-content/uploads/2016/01/s-30byou_twitter.jpg 576w" sizes="(max-width: 375px) 100vw, 375px" /></a></div>
+<h4><span id="AviUtl">AviUtlでツイッター用の動画を出力する方法</span></h4>
+<p>このサイトの主題でもあるAviUtlで出力する方法についても一応簡単に紹介します。</p>
+<p>AviUtlで、この条件に当てはまる動画を出力するには、「x264guiEx」を使用するしか有りません。（<a href="http://aviutl.info/x264-vfw/">x264VFW</a>を使用すればH.264出力出来ますが、この場合、コンテナはAVIになってしまうのでダメです）</p>
+<ul>
+<li>参考：<a href="http://aviutl.info/x264guiex-intro/">【AviUtl】x264guiExの導入方法と使い方【MP4出力】</a></li>
+</ul>
+<p>&ensp;</p>
+<p>出力するにはまず、動画を読み込んで、30秒分だけ「選択範囲」を設定します。</p>
+<p><a href="http://aviutl.info/wp-content/uploads/2016/01/6d483fcc3428bdd4bc27b0a03c4f2678.png" rel="attachment wp-att-13066"><img class="alignnone size-full wp-image-13066" src="http://aviutl.info/wp-content/uploads/2016/01/6d483fcc3428bdd4bc27b0a03c4f2678.png" alt="30秒_選択範囲" width="476" height="507" srcset="http://aviutl.info/wp-content/uploads/2016/01/6d483fcc3428bdd4bc27b0a03c4f2678-282x300.png 282w, http://aviutl.info/wp-content/uploads/2016/01/6d483fcc3428bdd4bc27b0a03c4f2678-320x341.png 320w, http://aviutl.info/wp-content/uploads/2016/01/6d483fcc3428bdd4bc27b0a03c4f2678.png 476w" sizes="(max-width: 476px) 100vw, 476px" /></a></p>
+<ul>
+<li>参考：<a href="http://aviutl.info/taimurainn/">【AviUtl】拡張編集タイムラインの使い方【レイヤー】</a></li>
+<li>参考：<a href="http://aviutl.info/ennko-do/">【AviUtl】動画をエンコードするやり方【ビデオ圧縮】</a></li>
+</ul>
+<p>フレームレートが40fpsを超えてる場合は、メニューの「設定」→「フレームレートの変更」からフレームレートを落としましょう。（それか「編集」→「再生速度情報の変更」からプロジェクトのfps自体を変更）</p>
+<ul>
+<li>参考：<a href="http://aviutl.info/hure-mure-to-hennkou/">【AviUtl】動画のフレームレート(fps)を変更する方法</a></li>
+</ul>
+<p>次に、メニューの「ファイル」→「プラグイン出力」→「拡張 x264(GUI)出力」を選択して、「ビデオ圧縮」ボタンを押して、以下の画面を出します。</p>
+<p><a href="http://aviutl.info/wp-content/uploads/2016/01/x264_twitter.png" rel="attachment wp-att-13290"><img class="alignnone size-full wp-image-13290" src="http://aviutl.info/wp-content/uploads/2016/01/x264_twitter.png" alt="x264_twitter" width="1014" height="629" srcset="http://aviutl.info/wp-content/uploads/2016/01/x264_twitter-300x186.png 300w, http://aviutl.info/wp-content/uploads/2016/01/x264_twitter-768x476.png 768w, http://aviutl.info/wp-content/uploads/2016/01/x264_twitter-320x199.png 320w, http://aviutl.info/wp-content/uploads/2016/01/x264_twitter.png 1014w" sizes="(max-width: 1014px) 100vw, 1014px" /></a></p>
+<p>↑画像のように、左下の「デフォルト」ボタンを押して、「プロファイル」を「baseline」に変更して、普通に動画出力をすればOKです。（ビットレートを上げたい場合は、「品質」を最大まで上げてもOK）</p>
+<ul>
+<li>参考：<a href="http://aviutl.info/encode-codec-muxer/">エンコードとは？コーデックとMuxerの関係について</a></li>
+</ul>
+<h4><span id="i-3">その他のエンコソフト</span></h4>
+<p><strong>MP4（H.264、AAC）</strong>でエンコ出来ればどんなソフトでもOKです。</p>
+<p>ニコニコユーザーに定評のある「<a href="http://aviutl.info/tunndereko/">つんでれんこ</a>」とかでも問題有りません。（ただ、つんでれんこの場合は30秒分だけエンコとかは多分出来ない）</p>
+<p>※エンコソフトについては以下記事などを参考に。</p>
+<p>→<a href="http://aviutl.info/encoder-osusume/">おすすめのフリーエンコードソフト11選【エンコーダー】</a></p>
+<p>&ensp;</p>
+<p>&ensp;</p>
+<p><strong>追記：</strong></p>
+<p>MMD関連で、「投稿した動画の色が劣化する！」みたいな人が多いみたいですが、H.264の色空間はYV12（YUV420）なので、ほとんどの場合劣化してしまいます。防ぎようが有りません。</p>
+<p>MMDで動画を出力する際にUtVideo（RGB）で出力してる人が多い（？）と思いますが、RGBの場合は特に色の劣化が激しくなります。</p>
+<p>RGB動画の場合は、<a href="http://auf.jpn.xxxxxxxx.jp/" class="external external_icon" rel="nofollow" target="_blank">ダウンサンプリングフィルタ</a>などのフィルタを使用してエンコすれば、（多少）色の劣化をマシに出来ます。<br />
+<a href="http://aviutl.info/wp-content/uploads/2016-01-25_00h40_04.png"><img class="alignnone wp-image-15431 size-medium" src="http://aviutl.info/wp-content/uploads/2016-01-25_00h40_04-300x207.png" alt="2016-01-25_00h40_04" width="300" height="207" srcset="http://aviutl.info/wp-content/uploads/2016-01-25_00h40_04-300x207.png 300w, http://aviutl.info/wp-content/uploads/2016-01-25_00h40_04.png 320w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>参考ページ：<a href="http://aviutl.info/rgb-yuv/">【AviUtl】RGB･YUV動画の色を劣化させないコーデックの設定</a>（RGBな動画をエンコする人には参考になるかもしれません）</p>
+  </div>
+
+  <!-- ページリンク -->
+
+  
+    <!-- 文章下広告 -->
+                    <div class="ad-article-bottom ad-space">
+          <div class="ad-label">スポンサーリンク</div>
+          <div class="ad-responsive adsense-336">			<div class="textwidget"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- aviutl.info 336 280 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-8809903536095922"
+     data-ad-slot="1405339610"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+		</div>
+        </div>
+            
+
+  
+  <div id="sns-group" class="sns-group sns-group-bottom">
+  <div class="sns-buttons sns-buttons-pc">
+    <ul class="snsb snsb-balloon clearfix">
+        <li class="balloon-btn twitter-balloon-btn">
+      <span class="balloon-btn-set">
+        <span class="arrow-box">
+          <a href="//twitter.com/search?q=http%3A%2F%2Faviutl.info%2Ftwitter-movie%2F" target="blank" class="arrow-box-link twitter-arrow-box-link" rel="nofollow">
+            <span class="social-count twitter-count"><span class="fa fa-spinner fa-pulse"></span>
+          </a>
+        </span>
+        <a href="//twitter.com/share?text=%E3%83%84%E3%82%A4%E3%83%83%E3%82%BF%E3%83%BC%E3%81%AB%E6%8A%95%E7%A8%BF%E3%81%99%E3%82%8B%E5%8B%95%E7%94%BB%E3%81%AE%E6%9D%A1%E4%BB%B6%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%90%E5%8B%95%E7%94%BB%E5%BD%A2%E5%BC%8F%EF%BD%A5%E3%82%B3%E3%83%BC%E3%83%87%E3%83%83%E3%82%AF%E3%80%91&amp;url=http%3A%2F%2Faviutl.info%2Ftwitter-movie%2F" target="blank" class="balloon-btn-link twitter-balloon-btn-link" rel="nofollow">
+          <span class="icon-twitter"></span>
+        </a>
+      </span>
+    </li>
+            <li class="balloon-btn facebook-balloon-btn">
+      <span class="balloon-btn-set">
+        <span class="arrow-box">
+          <a href="//www.facebook.com/sharer/sharer.php?u=http://aviutl.info/twitter-movie/&amp;t=%E3%83%84%E3%82%A4%E3%83%83%E3%82%BF%E3%83%BC%E3%81%AB%E6%8A%95%E7%A8%BF%E3%81%99%E3%82%8B%E5%8B%95%E7%94%BB%E3%81%AE%E6%9D%A1%E4%BB%B6%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%90%E5%8B%95%E7%94%BB%E5%BD%A2%E5%BC%8F%EF%BD%A5%E3%82%B3%E3%83%BC%E3%83%87%E3%83%83%E3%82%AF%E3%80%91" target="blank" class="arrow-box-link facebook-arrow-box-link" rel="nofollow">
+            <span class="social-count facebook-count"><span class="fa fa-spinner fa-pulse"></span></span>
+          </a>
+        </span>
+        <a href="//www.facebook.com/sharer/sharer.php?u=http://aviutl.info/twitter-movie/&amp;t=%E3%83%84%E3%82%A4%E3%83%83%E3%82%BF%E3%83%BC%E3%81%AB%E6%8A%95%E7%A8%BF%E3%81%99%E3%82%8B%E5%8B%95%E7%94%BB%E3%81%AE%E6%9D%A1%E4%BB%B6%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%90%E5%8B%95%E7%94%BB%E5%BD%A2%E5%BC%8F%EF%BD%A5%E3%82%B3%E3%83%BC%E3%83%87%E3%83%83%E3%82%AF%E3%80%91" target="blank" class="balloon-btn-link facebook-balloon-btn-link" rel="nofollow">
+          <span class="icon-facebook"></span>
+        </a>
+      </span>
+    </li>
+            <li class="balloon-btn googleplus-balloon-btn">
+      <span class="balloon-btn-set">
+        <span class="arrow-box">
+          <a href="//plus.google.com/share?url=http%3A%2F%2Faviutl.info%2Ftwitter-movie%2F" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" target="blank" class="arrow-box-link googleplus-arrow-box-link" rel="nofollow">
+            <span class="social-count googleplus-count"><span class="fa fa-spinner fa-pulse"></span></span>
+          </a>
+        </span>
+        <a href="//plus.google.com/share?url=http%3A%2F%2Faviutl.info%2Ftwitter-movie%2F" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" target="blank" class="balloon-btn-link googleplus-balloon-btn-link" rel="nofollow">
+          <span class="icon-googleplus"></span>
+        </a>
+      </span>
+    </li>
+            <li class="balloon-btn hatena-balloon-btn">
+      <span class="balloon-btn-set">
+        <span class="arrow-box">
+          <a href="http://b.hatena.ne.jp/entry/aviutl.info/twitter-movie/" target="blank" class="arrow-box-link hatena-arrow-box-link" rel="nofollow">
+            <span class="social-count hatebu-count"><span class="fa fa-spinner fa-pulse"></span></span>
+          </a>
+        </span>
+        <a href="//b.hatena.ne.jp/add?mode=confirm&amp;url=http://aviutl.info/twitter-movie/&amp;title=%E3%83%84%E3%82%A4%E3%83%83%E3%82%BF%E3%83%BC%E3%81%AB%E6%8A%95%E7%A8%BF%E3%81%99%E3%82%8B%E5%8B%95%E7%94%BB%E3%81%AE%E6%9D%A1%E4%BB%B6%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%90%E5%8B%95%E7%94%BB%E5%BD%A2%E5%BC%8F%EF%BD%A5%E3%82%B3%E3%83%BC%E3%83%87%E3%83%83%E3%82%AF%E3%80%91" target="blank" class="balloon-btn-link hatena-balloon-btn-link" rel="nofollow">
+          <span class="icon-hatena"></span>
+        </a>
+      </span>
+    </li>
+            <li class="balloon-btn pocket-balloon-btn">
+      <span class="balloon-btn-set">
+        <span class="arrow-box">
+          <a href="//getpocket.com/edit?url=http://aviutl.info/twitter-movie/" target="blank" class="arrow-box-link pocket-arrow-box-link" rel="nofollow">
+            <span class="social-count pocket-count"><span class="fa fa-spinner fa-pulse"></span></span>
+          </a>
+        </span>
+        <a href="//getpocket.com/edit?url=http://aviutl.info/twitter-movie/" target="blank" class="balloon-btn-link pocket-balloon-btn-link" rel="nofollow">
+          <span class="icon-pocket"></span>
+        </a>
+      </span>
+    </li>
+                <li class="balloon-btn evernote-balloon-btn">
+      <span class="balloon-btn-set">
+        <span class="arrow-box">
+          <a href="#" onclick="Evernote.doClip({url:'http://aviutl.info/twitter-movie/',
+    providerName:'AviUtlの易しい使い方',
+    title:'ツイッターに投稿する動画の条件について【動画形式･コーデック】',
+    contentId:'the-content',
+    }); return false;" target="blank" class="arrow-box-link evernote-arrow-box-link" rel="nofollow">
+            CLIP!
+          </a>
+        </span>
+        <a href="#" onclick="Evernote.doClip({url:'http://aviutl.info/twitter-movie/',
+    providerName:'AviUtlの易しい使い方',
+    title:'ツイッターに投稿する動画の条件について【動画形式･コーデック】',
+    contentId:'the-content',
+    }); return false;" target="blank" class="balloon-btn-link evernote-balloon-btn-link" rel="nofollow">
+          <span class="icon-evernote"></span>
+        </a>
+      </span>
+    </li>
+              </ul>
+</div>
+
+  <!-- SNSページ -->
+<div class="sns-pages">
+<ul class="snsp">
+<li class="feedly-page"><a href='//feedly.com/index.html#subscription%2Ffeed%2Fhttp%3A%2F%2Faviutl.info%2Ffeed%2F' target='blank' title="feedlyで更新情報をフォロー" rel="nofollow"><span class="icon-feedly-square"></span></a></li><li class="rss-page"><a href="http://aviutl.info/feed/" target="_blank" title="RSSで更新情報をフォロー" rel="nofollow"><span class="fa fa-rss-square fa-2x"></span></a></li>  </ul>
+</div>
+  </div>
+
+  
+  <p class="footer-post-meta">
+
+        <span class="post-tag"><span class="fa fa-tag fa-fw"></span><a href="http://aviutl.info/tag/%e3%83%84%e3%82%a4%e3%83%83%e3%82%bf%e3%83%bc/" rel="tag">ツイッター</a>, <a href="http://aviutl.info/tag/%e5%8b%95%e7%94%bb/" rel="tag">動画</a>, <a href="http://aviutl.info/tag/%e6%8a%95%e7%a8%bf/" rel="tag">投稿</a>, <a href="http://aviutl.info/tag/%e6%9d%a1%e4%bb%b6/" rel="tag">条件</a></span>
+    
+    <span class="post-author vcard author"><span class="fn"><span class="fa fa-user fa-fw"></span><a href="http://aviutl.info/author/adminadmin/">adminadmin</a>
+</span></span>
+
+    
+      </p>
+
+  </div><!-- .article -->
+  </div><!-- .post -->
+      <section id="under-entry-body">
+
+            <div id="related-entries">
+        <h3>関連記事</h3>
+                <div class="related-entry cf">
+      <div class="related-entry-thumb">
+        <a href="http://aviutl.info/flv-xml/" title="FLVとXML（コメント）ファイルを結合する方法【ニコニコ】">
+                <img width="100" height="100" src="http://aviutl.info/wp-content/uploads/2016/01/xml_flv_icon-100x100.jpg" class="related-entry-thumb-image wp-post-image" alt="FLVとXML（コメント）ファイルを結合する方法【ニコニコ】" />                </a>
+      </div><!-- /.related-entry-thumb -->
+
+      <div class="related-entry-content">
+        <h4 class="related-entry-title">
+          <a href="http://aviutl.info/flv-xml/" class="related-entry-title-link" title="FLVとXML（コメント）ファイルを結合する方法【ニコニコ】">
+          FLVとXML（コメント）ファイルを結合する方法【ニコニコ】          </a></h4>
+        <p class="related-entry-snippet">
+       
+
+FLV動画ファイルとXMLコメントファイルを結合して、ニコニコ動画のコメ付き動画みたいなのを作る方法を紹介します。
+
+※具体的に...</p>
+
+                <p class="related-entry-read"><a href="http://aviutl.info/flv-xml/">記事を読む</a></p>
+        
+      </div><!-- /.related-entry-content -->
+    </div><!-- /.elated-entry -->
+
+      <div class="related-entry cf">
+      <div class="related-entry-thumb">
+        <a href="http://aviutl.info/twicas-yarikata/" title="ツイキャスとは？PCでライブ配信するやり方【ニコ生デスクトップキャプチャー】">
+                <img width="100" height="100" src="http://aviutl.info/wp-content/uploads/f817098081ac89c65d7fdbd1c6bc137b-100x100.png" class="related-entry-thumb-image wp-post-image" alt="ツイキャスとは？PCでライブ配信するやり方【ニコ生デスクトップキャプチャー】" srcset="http://aviutl.info/wp-content/uploads/f817098081ac89c65d7fdbd1c6bc137b-150x150.png 150w, http://aviutl.info/wp-content/uploads/f817098081ac89c65d7fdbd1c6bc137b-100x100.png 100w, http://aviutl.info/wp-content/uploads/f817098081ac89c65d7fdbd1c6bc137b.png 256w" sizes="(max-width: 100px) 100vw, 100px" />                </a>
+      </div><!-- /.related-entry-thumb -->
+
+      <div class="related-entry-content">
+        <h4 class="related-entry-title">
+          <a href="http://aviutl.info/twicas-yarikata/" class="related-entry-title-link" title="ツイキャスとは？PCでライブ配信するやり方【ニコ生デスクトップキャプチャー】">
+          ツイキャスとは？PCでライブ配信するやり方【ニコ生デスクトップキャプチャー】          </a></h4>
+        <p class="related-entry-snippet">
+       最近流行りのライブ配信サービス「ツイキャス」（TwitCasting）で、ライブ配信をするやり方について簡単に紹介します。
+
+※スマフォ...</p>
+
+                <p class="related-entry-read"><a href="http://aviutl.info/twicas-yarikata/">記事を読む</a></p>
+        
+      </div><!-- /.related-entry-content -->
+    </div><!-- /.elated-entry -->
+
+  
+  <br style="clear:both;">      </div><!-- #related-entries -->
+      
+
+
+        <!-- 広告 -->
+                    <div class="ad-article-bottom ad-space">
+          <div class="ad-label">スポンサーリンク</div>
+          <div class="ad-responsive adsense-336">			<div class="textwidget"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- aviutl.info 336 280 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-8809903536095922"
+     data-ad-slot="1405339610"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+		</div>
+        </div>
+            
+      
+      <!-- post navigation -->
+<div class="navigation">
+      <div class="prev"><a href="http://aviutl.info/thimu-11/" rel="prev"><span class="fa fa-arrow-left fa-2x pull-left"></span>【AviUtl】ティム氏のスクリプトまとめ①【破壊･崩壊･燃焼･侵食系の効果】</a></div>
+      <div class="next"><a href="http://aviutl.info/l-smash-works-22/" rel="next"><span class="fa fa-arrow-right fa-2x pull-left"></span>【AviUtl】L-SMASH Worksの設定方法②【入力プラグイン】</a></div>
+  </div>
+<!-- /post navigation -->
+      <!-- comment area -->
+<div id="comment-area">
+					<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">コメントをどうぞ（挨拶は不要です。指摘･質問内容だけ書いて頂ければOK） <small><a rel="nofollow" id="cancel-comment-reply-link" href="/twitter-movie/#respond" style="display:none;">コメントをキャンセル</a></small></h3>				<form action="http://aviutl.info/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+					<p class="comment-notes"><span id="email-notes">メールアドレスが公開されることはありません。</span></p><p class="comment-form-comment"><textarea id="comment" class="expanding" name="comment" cols="45" rows="8" aria-required="true" placeholder=""></textarea></p><p class="comment-form-author"><label for="author">名前</label> <input id="author" name="author" type="text" value="" size="30" /></p>
+<p class="comment-form-email"><label for="email">メールアドレス</label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" /></p>
+<p class="comment-form-url"><label for="url">ウェブサイト</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="コメントを送信" /> <input type='hidden' name='comment_post_ID' value='13058' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="fb3458e87b" /></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_comments" id="subscribe_comments" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-label" for="subscribe_comments">新しいコメントをメールで通知</label></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">新しい投稿をメールで受け取る</label></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="73"/></p><p style="clear: both"><input style="width: auto" type="file" name="image"/> JPEGのみうｐ出来ます（画像は事前に圧縮・リサイズして貼って下さい）</p>				</form>
+					</div><!-- #respond -->
+		</div>
+<!-- /comment area -->      </section>
+    
+
+          </div><!-- /#main -->
+        <!-- sidebar -->
+<aside>
+<div id="sidebar">
+              <div class="ad-space ad-space-sidebar">
+        <div class="ad-label">スポンサーリンク</div>
+        <div class="ad-sidebar adsense-300">			<div class="textwidget"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- aviutl.info 300×250 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-8809903536095922"
+     data-ad-slot="2882072816"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+		</div>
+    </div>
+      
+  <div id="sidebar-widget">
+  <!-- ウイジェット -->
+  <div id="search-2" class="widget widget_search"><h4 class="widgettitle">分からない事があればコチラ</h4><form method="get" id="searchform" action="http://aviutl.info/">
+	<input type="text" placeholder="サイト内を検索" name="s" id="s">
+	<input type="submit" id="searchsubmit" value="">
+</form></div><div id="text-6" class="widget widget_text"><h4 class="widgettitle">お知らせとか</h4>			<div class="textwidget"><a href="http://aviutl.info/info/#i-2">相互リンク募集中</a>です。
+
+<p>※記述の間違い・誤字・リンク先の間違いなどがありましたらコメントで指摘して頂けると非常に助かります</p></div>
+		</div>                      <div id="new-entries" class="widget widget_new_popular">
+              <h4>新着記事</h4>
+              <ul class="new-entrys">
+<li class="new-entry">
+  <div class="new-entry-thumb">
+      <a href="http://aviutl.info/vocal/" class="new-entry-image" title="【AviUtl】カラオケみたいにボーカルに合わせて字幕の色を変化させる方法"><img width="100" height="60" src="http://aviutl.info/wp-content/uploads/2a4e4abdeb44adfb336cf6961d50da3f-100x60.gif" class="attachment-thumb100 size-thumb100 wp-post-image" alt="【AviUtl】カラオケみたいにボーカルに合わせて字幕の色を変化させる方法" /></a>
+    </div><!-- /.new-entry-thumb -->
+
+  <div class="new-entry-content">
+    <a href="http://aviutl.info/vocal/" class="new-entry-title" title="【AviUtl】カラオケみたいにボーカルに合わせて字幕の色を変化させる方法">【AviUtl】カラオケみたいにボーカルに合わせて字幕の色を変化させる方法</a>
+  </div><!-- /.new-entry-content -->
+
+</li><!-- /.new-entry -->
+<li class="new-entry">
+  <div class="new-entry-thumb">
+      <a href="http://aviutl.info/handbrake/" class="new-entry-image" title="HandBrakeの使い方と設定方法【QSV対応エンコーダー】"><img width="100" height="100" src="http://aviutl.info/wp-content/uploads/handbrake-100x100.png" class="attachment-thumb100 size-thumb100 wp-post-image" alt="HandBrakeの使い方と設定方法【QSV対応エンコーダー】" srcset="http://aviutl.info/wp-content/uploads/handbrake-150x150.png 150w, http://aviutl.info/wp-content/uploads/handbrake-100x100.png 100w, http://aviutl.info/wp-content/uploads/handbrake.png 250w" sizes="(max-width: 100px) 100vw, 100px" /></a>
+    </div><!-- /.new-entry-thumb -->
+
+  <div class="new-entry-content">
+    <a href="http://aviutl.info/handbrake/" class="new-entry-title" title="HandBrakeの使い方と設定方法【QSV対応エンコーダー】">HandBrakeの使い方と設定方法【QSV対応エンコーダー】</a>
+  </div><!-- /.new-entry-content -->
+
+</li><!-- /.new-entry -->
+<li class="new-entry">
+  <div class="new-entry-thumb">
+      <a href="http://aviutl.info/kougasitu-encode/" class="new-entry-image" title="【AviUtl】高画質･無劣化で動画をエンコード（出力）する方法"><img width="100" height="100" src="http://aviutl.info/wp-content/uploads/2016-02-16_14h55_01-100x100.png" class="attachment-thumb100 size-thumb100 wp-post-image" alt="【AviUtl】高画質･無劣化で動画をエンコード（出力）する方法" srcset="http://aviutl.info/wp-content/uploads/2016-02-16_14h55_01-150x150.png 150w, http://aviutl.info/wp-content/uploads/2016-02-16_14h55_01-100x100.png 100w" sizes="(max-width: 100px) 100vw, 100px" /></a>
+    </div><!-- /.new-entry-thumb -->
+
+  <div class="new-entry-content">
+    <a href="http://aviutl.info/kougasitu-encode/" class="new-entry-title" title="【AviUtl】高画質･無劣化で動画をエンコード（出力）する方法">【AviUtl】高画質･無劣化で動画をエンコード（出力）する方法</a>
+  </div><!-- /.new-entry-content -->
+
+</li><!-- /.new-entry -->
+<li class="new-entry">
+  <div class="new-entry-thumb">
+      <a href="http://aviutl.info/yu/" class="new-entry-image" title="【AviUtl】ユウ氏のスクリプトまとめ【アニメーション効果】"><img width="100" height="100" src="http://aviutl.info/wp-content/uploads/20160214-173528-627-100x100.jpg" class="attachment-thumb100 size-thumb100 wp-post-image" alt="【AviUtl】ユウ氏のスクリプトまとめ【アニメーション効果】" srcset="http://aviutl.info/wp-content/uploads/20160214-173528-627-150x150.jpg 150w, http://aviutl.info/wp-content/uploads/20160214-173528-627-100x100.jpg 100w" sizes="(max-width: 100px) 100vw, 100px" /></a>
+    </div><!-- /.new-entry-thumb -->
+
+  <div class="new-entry-content">
+    <a href="http://aviutl.info/yu/" class="new-entry-title" title="【AviUtl】ユウ氏のスクリプトまとめ【アニメーション効果】">【AviUtl】ユウ氏のスクリプトまとめ【アニメーション効果】</a>
+  </div><!-- /.new-entry-content -->
+
+</li><!-- /.new-entry -->
+<li class="new-entry">
+  <div class="new-entry-thumb">
+      <a href="http://aviutl.info/aacs-css-cprm/" class="new-entry-image" title="AACSとCSSとCPRMの違い【コピーガード】"><img width="98" height="57" src="http://aviutl.info/wp-content/uploads/bbf43201-1.jpg" class="attachment-thumb100 size-thumb100 wp-post-image" alt="AACSとCSSとCPRMの違い【コピーガード】" /></a>
+    </div><!-- /.new-entry-thumb -->
+
+  <div class="new-entry-content">
+    <a href="http://aviutl.info/aacs-css-cprm/" class="new-entry-title" title="AACSとCSSとCPRMの違い【コピーガード】">AACSとCSSとCPRMの違い【コピーガード】</a>
+  </div><!-- /.new-entry-content -->
+
+</li><!-- /.new-entry -->
+<li class="new-entry">
+  <div class="new-entry-thumb">
+      <a href="http://aviutl.info/drm-kaizyo/" class="new-entry-image" title="DRMを解除する方法まとめ【デジタル著作権管理】"><img width="100" height="100" src="http://aviutl.info/wp-content/uploads/s-dbd_eliminate_trim-100x100.jpg" class="attachment-thumb100 size-thumb100 wp-post-image" alt="DRMを解除する方法まとめ【デジタル著作権管理】" srcset="http://aviutl.info/wp-content/uploads/s-dbd_eliminate_trim-150x150.jpg 150w, http://aviutl.info/wp-content/uploads/s-dbd_eliminate_trim-100x100.jpg 100w" sizes="(max-width: 100px) 100vw, 100px" /></a>
+    </div><!-- /.new-entry-thumb -->
+
+  <div class="new-entry-content">
+    <a href="http://aviutl.info/drm-kaizyo/" class="new-entry-title" title="DRMを解除する方法まとめ【デジタル著作権管理】">DRMを解除する方法まとめ【デジタル著作権管理】</a>
+  </div><!-- /.new-entry-content -->
+
+</li><!-- /.new-entry -->
+</ul>
+<div class="clear"></div>            </div><!-- /#new-entries -->
+                  <div id="text-7" class="widget widget_text"><h4 class="widgettitle">スポンサードリンク</h4>			<div class="textwidget"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- aviutl.info 300x600 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8809903536095922"
+     data-ad-slot="8301941212"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+		</div>                  <style scoped>
+.widget_popular_ranking {
+  counter-reset: wpp-ranking;
+}
+
+.widget_popular_ranking ul li{
+  position: relative;
+}
+
+.widget_popular_ranking ul li:before {
+  background: none repeat scroll 0 0 #666;
+  color: #fff;
+  content: counter(wpp-ranking, decimal);
+  counter-increment: wpp-ranking;
+  font-size: 75%;
+  left: 0;
+  top: 3px;
+  line-height: 1;
+  padding: 4px 7px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.9;
+  border-radius: 2px;
+  font-family: Arial;
+}
+</style>          <div id="popular-entries" class="widget widget_category_popular widget_popular_ranking">
+            <h4>カテゴリー別人気記事</h4>
+            
+<!-- WordPress Popular Posts Plugin v3.3.2 [PHP] [weekly] [views] [custom] [CAT] -->
+
+<ul class="wpp-list">
+<li><a href="http://aviutl.info/twitter-movie/" title="ツイッターに投稿する動画の条件について【動画形式･コーデック】" target="_self"><img src="http://aviutl.info/wp-content/uploads/wordpress-popular-posts/13058-featured-75x75.png" width=75 height=75 title="ツイッターに投稿する動画の条件について【動画形式･コーデック】" alt="ツイッターに投稿する動画の条件について【動画形式･コーデック】" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a> <a href="http://aviutl.info/twitter-movie/" title="ツイッターに投稿する動画の条件について【動画形式･コーデック】" class="wpp-post-title" target="_self">ツイッターに投稿する動画の条件について【動画形式･コーデック】</a> </li>
+<li><a href="http://aviutl.info/flv-xml/" title="FLVとXML（コメント）ファイルを結合する方法【ニコニコ】" target="_self"><img src="http://aviutl.info/wp-content/uploads/wordpress-popular-posts/14126-featured-75x75.jpg" width=75 height=75 title="FLVとXML（コメント）ファイルを結合する方法【ニコニコ】" alt="FLVとXML（コメント）ファイルを結合する方法【ニコニコ】" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a> <a href="http://aviutl.info/flv-xml/" title="FLVとXML（コメント）ファイルを結合する方法【ニコニコ】" class="wpp-post-title" target="_self">FLVとXML（コメント）ファイルを結合する方法【ニコニコ】</a> </li>
+<li><a href="http://aviutl.info/twicas-yarikata/" title="ツイキャスとは？PCでライブ配信するやり方【ニコ生デスクトップキャプチャー】" target="_self"><img src="http://aviutl.info/wp-content/uploads/wordpress-popular-posts/14050-featured-75x75.png" width=75 height=75 title="ツイキャスとは？PCでライブ配信するやり方【ニコ生デスクトップキャプチャー】" alt="ツイキャスとは？PCでライブ配信するやり方【ニコ生デスクトップキャプチャー】" class="wpp-thumbnail wpp_cached_thumb wpp_featured" /></a> <a href="http://aviutl.info/twicas-yarikata/" title="ツイキャスとは？PCでライブ配信するやり方【ニコ生デスクトップキャプチャー】" class="wpp-post-title" target="_self">ツイキャスとは？PCでライブ配信するやり方【ニコ生デスクトップキャプチャー】</a> </li>
+
+</ul>
+
+<!-- End WordPress Popular Posts Plugin v3.3.2 -->
+<div class="clear"></div>
+
+                      </div>
+              </div>
+
+    <!--スクロール追従領域-->
+  <div id="sidebar-scroll">
+    <div id="text-4" class="widget widget_text">			<div class="textwidget">※AviUtl初心者の人は以下の記事から読み始めて下さい。<br>
+→<a href="http://aviutl.info/intro/">AviUtl初心者が最初に読むべきページ【導入から使い方まで】</a>
+
+<!--TOC--></div>
+		</div>  </div>
+  
+</div></aside><!-- /#sidebar -->
+        </div><!-- /#body-in -->
+      </div><!-- /#body -->
+
+      <!-- footer -->
+      <div id="footer">
+        <div id="footer-in">
+
+                    <div id="footer-widget">
+             <div class="footer-left">
+             <div id="text-9" class="widget widget_text">			<div class="textwidget"><!-- admax -->
+<script src="http://adm.shinobi.jp/s/208862dcaa4907c019b59fefbb38c1f2"></script>
+<!-- admax --></div>
+		</div><div id="tag_cloud-2" class="widget widget_tag_cloud"><h4>タグ</h4><div class="tagcloud"><a href='http://aviutl.info/tag/wmv/' class='tag-link-115' title='4件のトピック' style='font-size: 9.0769230769231pt;'>.wmv</a>
+<a href='http://aviutl.info/tag/aacs/' class='tag-link-458' title='4件のトピック' style='font-size: 9.0769230769231pt;'>AACS</a>
+<a href='http://aviutl.info/tag/aviutl/' class='tag-link-3' title='79件のトピック' style='font-size: 22pt;'>AviUtl</a>
+<a href='http://aviutl.info/tag/dvd/' class='tag-link-276' title='4件のトピック' style='font-size: 9.0769230769231pt;'>DVD</a>
+<a href='http://aviutl.info/tag/ffdshow/' class='tag-link-218' title='5件のトピック' style='font-size: 9.9384615384615pt;'>ffdshow</a>
+<a href='http://aviutl.info/tag/gif/' class='tag-link-112' title='5件のトピック' style='font-size: 9.9384615384615pt;'>gif</a>
+<a href='http://aviutl.info/tag/ts%e6%8a%9c%e3%81%8d/' class='tag-link-473' title='7件のトピック' style='font-size: 11.230769230769pt;'>TS抜き</a>
+<a href='http://aviutl.info/tag/youtube/' class='tag-link-86' title='5件のトピック' style='font-size: 9.9384615384615pt;'>youtube</a>
+<a href='http://aviutl.info/tag/%e3%81%8a%e3%81%99%e3%81%99%e3%82%81/' class='tag-link-327' title='6件のトピック' style='font-size: 10.692307692308pt;'>おすすめ</a>
+<a href='http://aviutl.info/tag/%e3%81%95%e3%81%a4%e3%81%8d/' class='tag-link-386' title='6件のトピック' style='font-size: 10.692307692308pt;'>さつき</a>
+<a href='http://aviutl.info/tag/%e3%82%a2%e3%83%8b%e3%83%a1%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e5%8a%b9%e6%9e%9c/' class='tag-link-56' title='11件のトピック' style='font-size: 13.169230769231pt;'>アニメーション効果</a>
+<a href='http://aviutl.info/tag/%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab/' class='tag-link-17' title='10件のトピック' style='font-size: 12.738461538462pt;'>インストール</a>
+<a href='http://aviutl.info/tag/%e3%82%a8%e3%83%95%e3%82%a7%e3%82%af%e3%83%88/' class='tag-link-52' title='14件のトピック' style='font-size: 14.246153846154pt;'>エフェクト</a>
+<a href='http://aviutl.info/tag/%e3%82%a8%e3%83%b3%e3%82%b3%e3%83%bc%e3%83%89/' class='tag-link-91' title='10件のトピック' style='font-size: 12.738461538462pt;'>エンコード</a>
+<a href='http://aviutl.info/tag/%e3%82%ab%e3%83%83%e3%83%88/' class='tag-link-4' title='3件のトピック' style='font-size: 8pt;'>カット</a>
+<a href='http://aviutl.info/tag/%e3%82%b3%e3%83%bc%e3%83%87%e3%83%83%e3%82%af/' class='tag-link-81' title='6件のトピック' style='font-size: 10.692307692308pt;'>コーデック</a>
+<a href='http://aviutl.info/tag/%e3%82%b7%e3%83%bc%e3%83%b3%e3%83%81%e3%82%a7%e3%83%b3%e3%82%b8/' class='tag-link-100' title='4件のトピック' style='font-size: 9.0769230769231pt;'>シーンチェンジ</a>
+<a href='http://aviutl.info/tag/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%97%e3%83%88/' class='tag-link-45' title='12件のトピック' style='font-size: 13.492307692308pt;'>スクリプト</a>
+<a href='http://aviutl.info/tag/%e3%83%80%e3%82%a6%e3%83%b3%e3%83%ad%e3%83%bc%e3%83%89/' class='tag-link-68' title='5件のトピック' style='font-size: 9.9384615384615pt;'>ダウンロード</a>
+<a href='http://aviutl.info/tag/%e3%83%86%e3%82%a3%e3%83%a0/' class='tag-link-432' title='10件のトピック' style='font-size: 12.738461538462pt;'>ティム</a>
+<a href='http://aviutl.info/tag/%e3%83%87%e3%83%a1%e3%83%aa%e3%83%83%e3%83%88/' class='tag-link-478' title='4件のトピック' style='font-size: 9.0769230769231pt;'>デメリット</a>
+<a href='http://aviutl.info/tag/%e3%83%95%e3%82%a3%e3%83%ab%e3%82%bf%e3%83%bc/' class='tag-link-55' title='6件のトピック' style='font-size: 10.692307692308pt;'>フィルター</a>
+<a href='http://aviutl.info/tag/%e3%83%96%e3%83%ab%e3%83%bc%e3%83%ac%e3%82%a4/' class='tag-link-280' title='6件のトピック' style='font-size: 10.692307692308pt;'>ブルーレイ</a>
+<a href='http://aviutl.info/tag/%e3%83%97%e3%83%a9%e3%82%b0%e3%82%a4%e3%83%b3/' class='tag-link-122' title='4件のトピック' style='font-size: 9.0769230769231pt;'>プラグイン</a>
+<a href='http://aviutl.info/tag/%e3%83%a1%e3%83%aa%e3%83%83%e3%83%88/' class='tag-link-477' title='4件のトピック' style='font-size: 9.0769230769231pt;'>メリット</a>
+<a href='http://aviutl.info/tag/%e3%83%a2%e3%82%b6%e3%82%a4%e3%82%af/' class='tag-link-13' title='3件のトピック' style='font-size: 8pt;'>モザイク</a>
+<a href='http://aviutl.info/tag/%e3%83%aa%e3%82%b5%e3%82%a4%e3%82%ba/' class='tag-link-30' title='3件のトピック' style='font-size: 8pt;'>リサイズ</a>
+<a href='http://aviutl.info/tag/%e4%bd%9c%e3%82%8a%e6%96%b9/' class='tag-link-104' title='6件のトピック' style='font-size: 10.692307692308pt;'>作り方</a>
+<a href='http://aviutl.info/tag/%e4%bd%bf%e3%81%84%e6%96%b9/' class='tag-link-18' title='34件のトピック' style='font-size: 18.123076923077pt;'>使い方</a>
+<a href='http://aviutl.info/tag/%e5%85%a5%e5%8a%9b%e3%83%97%e3%83%a9%e3%82%b0%e3%82%a4%e3%83%b3/' class='tag-link-29' title='3件のトピック' style='font-size: 8pt;'>入力プラグイン</a>
+<a href='http://aviutl.info/tag/%e5%87%ba%e5%8a%9b/' class='tag-link-120' title='3件のトピック' style='font-size: 8pt;'>出力</a>
+<a href='http://aviutl.info/tag/%e5%8b%95%e7%94%bb/' class='tag-link-26' title='21件のトピック' style='font-size: 15.969230769231pt;'>動画</a>
+<a href='http://aviutl.info/tag/%e5%8b%95%e7%94%bb%e7%b7%a8%e9%9b%86/' class='tag-link-189' title='4件のトピック' style='font-size: 9.0769230769231pt;'>動画編集</a>
+<a href='http://aviutl.info/tag/%e5%90%88%e6%88%90/' class='tag-link-10' title='4件のトピック' style='font-size: 9.0769230769231pt;'>合成</a>
+<a href='http://aviutl.info/tag/%e5%9c%b0%e3%83%87%e3%82%b8/' class='tag-link-422' title='6件のトピック' style='font-size: 10.692307692308pt;'>地デジ</a>
+<a href='http://aviutl.info/tag/%e5%a4%89%e6%8f%9b/' class='tag-link-89' title='4件のトピック' style='font-size: 9.0769230769231pt;'>変換</a>
+<a href='http://aviutl.info/tag/%e5%ad%97%e5%b9%95/' class='tag-link-126' title='3件のトピック' style='font-size: 8pt;'>字幕</a>
+<a href='http://aviutl.info/tag/%e5%b0%8e%e5%85%a5%e6%96%b9%e6%b3%95/' class='tag-link-96' title='6件のトピック' style='font-size: 10.692307692308pt;'>導入方法</a>
+<a href='http://aviutl.info/tag/%e6%8b%a1%e5%bc%b5%e7%b7%a8%e9%9b%86/' class='tag-link-6' title='8件のトピック' style='font-size: 11.769230769231pt;'>拡張編集</a>
+<a href='http://aviutl.info/tag/%e6%af%94%e8%bc%83/' class='tag-link-223' title='5件のトピック' style='font-size: 9.9384615384615pt;'>比較</a>
+<a href='http://aviutl.info/tag/%e7%94%bb%e5%83%8f/' class='tag-link-40' title='3件のトピック' style='font-size: 8pt;'>画像</a>
+<a href='http://aviutl.info/tag/%e8%a8%ad%e5%ae%9a/' class='tag-link-92' title='13件のトピック' style='font-size: 13.923076923077pt;'>設定</a>
+<a href='http://aviutl.info/tag/%e9%81%95%e3%81%84/' class='tag-link-23' title='13件のトピック' style='font-size: 13.923076923077pt;'>違い</a>
+<a href='http://aviutl.info/tag/%e9%9f%b3%e5%a3%b0/' class='tag-link-27' title='4件のトピック' style='font-size: 9.0769230769231pt;'>音声</a>
+<a href='http://aviutl.info/tag/%e9%ab%98%e7%94%bb%e8%b3%aa/' class='tag-link-220' title='4件のトピック' style='font-size: 9.0769230769231pt;'>高画質</a></div>
+</div>             </div>
+             <div class="footer-center">
+             <div id="categories-2" class="widget widget_categories"><h4>カテゴリー</h4>		<ul>
+	<li class="cat-item cat-item-7"><a href="http://aviutl.info/category/%e5%b0%8e%e5%85%a5/" >導入</a>
+</li>
+	<li class="cat-item cat-item-94"><a href="http://aviutl.info/category/%e3%83%97%e3%83%a9%e3%82%b0%e3%82%a4%e3%83%b3/" >プラグイン</a>
+<ul class='children'>
+	<li class="cat-item cat-item-216"><a href="http://aviutl.info/category/%e3%83%97%e3%83%a9%e3%82%b0%e3%82%a4%e3%83%b3/%e5%85%a5%e5%8a%9b%e3%83%97%e3%83%a9%e3%82%b0%e3%82%a4%e3%83%b3/" >入力プラグイン</a>
+</li>
+	<li class="cat-item cat-item-215"><a href="http://aviutl.info/category/%e3%83%97%e3%83%a9%e3%82%b0%e3%82%a4%e3%83%b3/%e5%87%ba%e5%8a%9b%e3%83%97%e3%83%a9%e3%82%b0%e3%82%a4%e3%83%b3/" >出力プラグイン</a>
+</li>
+	<li class="cat-item cat-item-282"><a href="http://aviutl.info/category/%e3%83%97%e3%83%a9%e3%82%b0%e3%82%a4%e3%83%b3/%e3%83%aa%e3%82%b5%e3%82%a4%e3%82%ba%e3%83%97%e3%83%a9%e3%82%b0%e3%82%a4%e3%83%b3/" >リサイズプラグイン</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-25"><a href="http://aviutl.info/category/%e3%82%a8%e3%83%b3%e3%82%b3%e3%83%bc%e3%83%89%e9%96%a2%e4%bf%82/" >エンコード関係</a>
+</li>
+	<li class="cat-item cat-item-73"><a href="http://aviutl.info/category/%e6%9c%ac%e4%bd%93%e6%a9%9f%e8%83%bd%e8%ac%9b%e5%ba%a7/" >本体機能講座</a>
+</li>
+	<li class="cat-item cat-item-42"><a href="http://aviutl.info/category/%e6%8b%a1%e5%bc%b5%e7%b7%a8%e9%9b%86%e8%ac%9b%e5%ba%a7/" >拡張編集講座</a>
+<ul class='children'>
+	<li class="cat-item cat-item-232"><a href="http://aviutl.info/category/%e6%8b%a1%e5%bc%b5%e7%b7%a8%e9%9b%86%e8%ac%9b%e5%ba%a7/%e5%9f%ba%e6%9c%ac%e6%a9%9f%e8%83%bd/" >基本機能</a>
+</li>
+	<li class="cat-item cat-item-54"><a href="http://aviutl.info/category/%e6%8b%a1%e5%bc%b5%e7%b7%a8%e9%9b%86%e8%ac%9b%e5%ba%a7/%e3%82%a8%e3%83%95%e3%82%a7%e3%82%af%e3%83%88/" >エフェクト</a>
+	<ul class='children'>
+	<li class="cat-item cat-item-57"><a href="http://aviutl.info/category/%e6%8b%a1%e5%bc%b5%e7%b7%a8%e9%9b%86%e8%ac%9b%e5%ba%a7/%e3%82%a8%e3%83%95%e3%82%a7%e3%82%af%e3%83%88/%e3%82%a2%e3%83%8b%e3%83%a1%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e5%8a%b9%e6%9e%9c/" >アニメーション効果</a>
+</li>
+	</ul>
+</li>
+	<li class="cat-item cat-item-67"><a href="http://aviutl.info/category/%e6%8b%a1%e5%bc%b5%e7%b7%a8%e9%9b%86%e8%ac%9b%e5%ba%a7/%e3%82%aa%e3%83%96%e3%82%b8%e3%82%a7%e3%82%af%e3%83%88%e9%96%a2%e4%bf%82/" >オブジェクト関係</a>
+</li>
+	<li class="cat-item cat-item-36"><a href="http://aviutl.info/category/%e6%8b%a1%e5%bc%b5%e7%b7%a8%e9%9b%86%e8%ac%9b%e5%ba%a7/%e3%82%ab%e3%83%a1%e3%83%a9%e5%88%b6%e5%be%a1/" >カメラ制御</a>
+</li>
+	<li class="cat-item cat-item-44"><a href="http://aviutl.info/category/%e6%8b%a1%e5%bc%b5%e7%b7%a8%e9%9b%86%e8%ac%9b%e5%ba%a7/%e3%82%b9%e3%82%af%e3%83%aa%e3%83%97%e3%83%88%e5%88%b6%e5%be%a1/" >スクリプト制御</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-15"><a href="http://aviutl.info/category/%e7%9b%ae%e7%9a%84%e5%88%a5/" >目的別</a>
+<ul class='children'>
+	<li class="cat-item cat-item-198"><a href="http://aviutl.info/category/%e7%9b%ae%e7%9a%84%e5%88%a5/%e5%9f%ba%e6%9c%ac%e7%b7%a8%e9%9b%86/" >基本編集</a>
+</li>
+	<li class="cat-item cat-item-205"><a href="http://aviutl.info/category/%e7%9b%ae%e7%9a%84%e5%88%a5/%e3%83%97%e3%83%81%e5%bf%9c%e7%94%a8%e7%b7%a8%e9%9b%86/" >(プチ)応用編集</a>
+</li>
+	<li class="cat-item cat-item-119"><a href="http://aviutl.info/category/%e7%9b%ae%e7%9a%84%e5%88%a5/gif%e9%96%a2%e4%bf%82/" >gif関係</a>
+</li>
+	<li class="cat-item cat-item-97"><a href="http://aviutl.info/category/%e7%9b%ae%e7%9a%84%e5%88%a5/%e9%a1%94%e3%82%92%e9%9a%a0%e3%81%99-%e7%9b%ae%e7%9a%84%e5%88%a5/" >顔を隠す</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-384"><a href="http://aviutl.info/category/%e5%a4%96%e9%83%a8%e3%82%b9%e3%82%af%e3%83%aa%e3%83%97%e3%83%88/" >外部スクリプト</a>
+<ul class='children'>
+	<li class="cat-item cat-item-385"><a href="http://aviutl.info/category/%e5%a4%96%e9%83%a8%e3%82%b9%e3%82%af%e3%83%aa%e3%83%97%e3%83%88/%e3%81%95%e3%81%a4%e3%81%8d%e6%b0%8f%e9%85%8d%e5%b8%83%e3%82%b9%e3%82%af%e3%83%aa%e3%83%97%e3%83%88/" >さつき氏配布スクリプト</a>
+</li>
+	<li class="cat-item cat-item-437"><a href="http://aviutl.info/category/%e5%a4%96%e9%83%a8%e3%82%b9%e3%82%af%e3%83%aa%e3%83%97%e3%83%88/%e3%83%86%e3%82%a3%e3%83%a0%e6%b0%8f%e9%85%8d%e5%b8%83%e3%82%b9%e3%82%af%e3%83%aa%e3%83%97%e3%83%88/" >ティム氏配布スクリプト</a>
+</li>
+	<li class="cat-item cat-item-522"><a href="http://aviutl.info/category/%e5%a4%96%e9%83%a8%e3%82%b9%e3%82%af%e3%83%aa%e3%83%97%e3%83%88/%e3%83%86%e3%83%84%e6%b0%8f%e9%85%8d%e5%b8%83%e3%82%b9%e3%82%af%e3%83%aa%e3%83%97%e3%83%88/" >テツ氏配布スクリプト</a>
+</li>
+	<li class="cat-item cat-item-521"><a href="http://aviutl.info/category/%e5%a4%96%e9%83%a8%e3%82%b9%e3%82%af%e3%83%aa%e3%83%97%e3%83%88/%e7%99%bd%e6%b0%b4%e6%b0%8f%e9%85%8d%e5%b8%83%e3%82%b9%e3%82%af%e3%83%aa%e3%83%97%e3%83%88/" >白水氏配布スクリプト</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-35"><a href="http://aviutl.info/category/%e5%8b%95%e7%94%bb%e5%9f%ba%e7%a4%8e%e7%9f%a5%e8%ad%98/" >動画基礎知識</a>
+<ul class='children'>
+	<li class="cat-item cat-item-435"><a href="http://aviutl.info/category/%e5%8b%95%e7%94%bb%e5%9f%ba%e7%a4%8e%e7%9f%a5%e8%ad%98/%e3%82%a8%e3%83%b3%e3%82%b3%e3%83%bc%e3%83%89%e7%b3%bb/" >エンコード系</a>
+</li>
+	<li class="cat-item cat-item-398"><a href="http://aviutl.info/category/%e5%8b%95%e7%94%bb%e5%9f%ba%e7%a4%8e%e7%9f%a5%e8%ad%98/%e3%83%93%e3%83%83%e3%83%88%e3%83%ac%e3%83%bc%e3%83%88%e7%b3%bb/" >ビットレート系</a>
+</li>
+	<li class="cat-item cat-item-317"><a href="http://aviutl.info/category/%e5%8b%95%e7%94%bb%e5%9f%ba%e7%a4%8e%e7%9f%a5%e8%ad%98/%e3%83%95%e3%83%ac%e3%83%bc%e3%83%a0%e7%b3%bb/" >フレーム系</a>
+</li>
+	<li class="cat-item cat-item-397"><a href="http://aviutl.info/category/%e5%8b%95%e7%94%bb%e5%9f%ba%e7%a4%8e%e7%9f%a5%e8%ad%98/%e5%8b%95%e7%94%bb%e5%bd%a2%e5%bc%8f%e3%83%bb%e3%82%b3%e3%83%bc%e3%83%87%e3%83%83%e3%82%af/" >動画形式・コーデック</a>
+</li>
+	<li class="cat-item cat-item-527"><a href="http://aviutl.info/category/%e5%8b%95%e7%94%bb%e5%9f%ba%e7%a4%8e%e7%9f%a5%e8%ad%98/%e8%89%b2%e7%a9%ba%e9%96%93%e3%83%bb%e8%89%b2%e5%a4%89%e6%8f%9b/" >色空間・色変換</a>
+</li>
+	<li class="cat-item cat-item-558"><a href="http://aviutl.info/category/%e5%8b%95%e7%94%bb%e5%9f%ba%e7%a4%8e%e7%9f%a5%e8%ad%98/%e8%a6%8f%e6%a0%bc/" >規格</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-19"><a href="http://aviutl.info/category/%e3%83%88%e3%83%a9%e3%83%96%e3%83%ab%e3%82%b7%e3%83%a5%e3%83%bc%e3%83%86%e3%82%a3%e3%83%b3%e3%82%b0/" >トラブルシューティング</a>
+</li>
+	<li class="cat-item cat-item-207"><a href="http://aviutl.info/category/%e3%82%b3%e3%83%bc%e3%83%87%e3%83%83%e3%82%af/" >コーデック</a>
+<ul class='children'>
+	<li class="cat-item cat-item-211"><a href="http://aviutl.info/category/%e3%82%b3%e3%83%bc%e3%83%87%e3%83%83%e3%82%af/%e5%8f%af%e9%80%86%e5%9c%a7%e7%b8%ae/" >可逆圧縮</a>
+</li>
+	<li class="cat-item cat-item-213"><a href="http://aviutl.info/category/%e3%82%b3%e3%83%bc%e3%83%87%e3%83%83%e3%82%af/%e9%9d%9e%e5%8f%af%e9%80%86%e5%9c%a7%e7%b8%ae/" >非可逆圧縮</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-235"><a href="http://aviutl.info/category/%e3%82%b9%e3%83%88%e3%83%aa%e3%83%bc%e3%83%9f%e3%83%b3%e3%82%b0/" >ストリーミング</a>
+<ul class='children'>
+	<li class="cat-item cat-item-556"><a href="http://aviutl.info/category/%e3%82%b9%e3%83%88%e3%83%aa%e3%83%bc%e3%83%9f%e3%83%b3%e3%82%b0/youtube/" >Youtube</a>
+</li>
+	<li class="cat-item cat-item-549"><a href="http://aviutl.info/category/%e3%82%b9%e3%83%88%e3%83%aa%e3%83%bc%e3%83%9f%e3%83%b3%e3%82%b0/%e3%83%8b%e3%82%b3%e3%83%8b%e3%82%b3/" >ニコニコ</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-197"><a href="http://aviutl.info/category/%e5%8b%95%e7%94%bb%e9%96%a2%e4%bf%82%e5%85%a8%e8%88%ac/" >動画関係全般</a>
+<ul class='children'>
+	<li class="cat-item cat-item-389"><a href="http://aviutl.info/category/%e5%8b%95%e7%94%bb%e9%96%a2%e4%bf%82%e5%85%a8%e8%88%ac/%e3%82%a8%e3%83%b3%e3%82%b3%e3%83%bc%e3%83%89%e3%82%bd%e3%83%95%e3%83%88/" >エンコードソフト</a>
+</li>
+	<li class="cat-item cat-item-454"><a href="http://aviutl.info/category/%e5%8b%95%e7%94%bb%e9%96%a2%e4%bf%82%e5%85%a8%e8%88%ac/%e3%82%aa%e3%83%bc%e3%82%b5%e3%83%aa%e3%83%b3%e3%82%b0%e3%82%bd%e3%83%95%e3%83%88/" >オーサリングソフト</a>
+</li>
+	<li class="cat-item cat-item-217"><a href="http://aviutl.info/category/%e5%8b%95%e7%94%bb%e9%96%a2%e4%bf%82%e5%85%a8%e8%88%ac/%e3%82%ad%e3%83%a3%e3%83%97%e3%83%81%e3%83%a3%e3%82%bd%e3%83%95%e3%83%88/" >キャプチャソフト</a>
+</li>
+	<li class="cat-item cat-item-406"><a href="http://aviutl.info/category/%e5%8b%95%e7%94%bb%e9%96%a2%e4%bf%82%e5%85%a8%e8%88%ac/%e3%83%80%e3%82%a6%e3%83%b3%e3%83%ad%e3%83%bc%e3%83%89%e3%82%bd%e3%83%95%e3%83%88/" >ダウンロードソフト</a>
+</li>
+	<li class="cat-item cat-item-221"><a href="http://aviutl.info/category/%e5%8b%95%e7%94%bb%e9%96%a2%e4%bf%82%e5%85%a8%e8%88%ac/%e5%8b%95%e7%94%bb%e5%86%8d%e7%94%9f%e3%82%bd%e3%83%95%e3%83%88/" >動画再生ソフト</a>
+	<ul class='children'>
+	<li class="cat-item cat-item-309"><a href="http://aviutl.info/category/%e5%8b%95%e7%94%bb%e9%96%a2%e4%bf%82%e5%85%a8%e8%88%ac/%e5%8b%95%e7%94%bb%e5%86%8d%e7%94%9f%e3%82%bd%e3%83%95%e3%83%88/ffdshow/" >ffdshow</a>
+</li>
+	</ul>
+</li>
+	<li class="cat-item cat-item-390"><a href="http://aviutl.info/category/%e5%8b%95%e7%94%bb%e9%96%a2%e4%bf%82%e5%85%a8%e8%88%ac/%e5%8b%95%e7%94%bb%e7%b7%a8%e9%9b%86%e3%82%bd%e3%83%95%e3%83%88-%e5%8b%95%e7%94%bb%e9%96%a2%e4%bf%82%e5%85%a8%e8%88%ac/" >動画編集ソフト</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-303"><a href="http://aviutl.info/category/%e5%ae%b6%e9%9b%bb/" >家電</a>
+</li>
+	<li class="cat-item cat-item-491"><a href="http://aviutl.info/category/%e3%82%b9%e3%83%9e%e3%83%95%e3%82%a9/" >スマフォ</a>
+</li>
+	<li class="cat-item cat-item-557"><a href="http://aviutl.info/category/%e3%83%aa%e3%83%83%e3%83%94%e3%83%b3%e3%82%b0%ef%bd%a5%e3%82%b3%e3%83%94%e3%83%bc%e3%83%97%e3%83%ad%e3%83%86%e3%82%af%e3%83%88/" >リッピング･コピープロテクト</a>
+</li>
+	<li class="cat-item cat-item-472"><a href="http://aviutl.info/category/%e5%9c%b0%e3%83%87%e3%82%b8%ef%bd%a5bs%ef%bd%a5cs/" >地デジ･BS/CS</a>
+<ul class='children'>
+	<li class="cat-item cat-item-532"><a href="http://aviutl.info/category/%e5%9c%b0%e3%83%87%e3%82%b8%ef%bd%a5bs%ef%bd%a5cs/ts%e6%8a%9c%e3%81%8d%e3%82%bd%e3%83%95%e3%83%88/" >TS抜きソフト</a>
+</li>
+	<li class="cat-item cat-item-531"><a href="http://aviutl.info/category/%e5%9c%b0%e3%83%87%e3%82%b8%ef%bd%a5bs%ef%bd%a5cs/ts%e6%8a%9c%e3%81%8d%e7%9f%a5%e8%ad%98/" >TS抜き知識</a>
+</li>
+	<li class="cat-item cat-item-528"><a href="http://aviutl.info/category/%e5%9c%b0%e3%83%87%e3%82%b8%ef%bd%a5bs%ef%bd%a5cs/ts%e7%b7%a8%e9%9b%86/" >TS編集</a>
+</li>
+</ul>
+</li>
+		</ul>
+</div>             </div>
+             <div class="footer-right">
+             <div id="recent-comments-2" class="widget widget_recent_comments"><h4>最近のコメント</h4><ul id="recentcomments"><li class="recentcomments"><a href="http://aviutl.info/motiontracking/#comment-1110">【AviUtl】モーショントラッキングを使って顔を隠す方法【追跡機能】</a> に <span class="comment-author-link">匿名</span> より</li><li class="recentcomments"><a href="http://aviutl.info/thimu-11/#comment-1109">【AviUtl】ティム氏のスクリプトまとめ①【破壊･崩壊･燃焼･侵食系の効果】</a> に <span class="comment-author-link">adminadmin</span> より</li><li class="recentcomments"><a href="http://aviutl.info/thimu-11/#comment-1106">【AviUtl】ティム氏のスクリプトまとめ①【破壊･崩壊･燃焼･侵食系の効果】</a> に <span class="comment-author-link">F.I</span> より</li><li class="recentcomments"><a href="http://aviutl.info/x264guiex-intro/#comment-1105">【AviUtl】x264guiExの導入方法と使い方【MP4･MKV出力】</a> に <span class="comment-author-link">K_K</span> より</li><li class="recentcomments"><a href="http://aviutl.info/x264guiex-intro/#comment-1104">【AviUtl】x264guiExの導入方法と使い方【MP4･MKV出力】</a> に <span class="comment-author-link">adminadmin</span> より</li><li class="recentcomments"><a href="http://aviutl.info/zimaku-tekisuto/#comment-1103">【AviUtl】動画への字幕(テロップ)の入れ方【テキスト】</a> に <span class="comment-author-link">adminadmin</span> より</li><li class="recentcomments"><a href="http://aviutl.info/x264guiex-intro/#comment-1102">【AviUtl】x264guiExの導入方法と使い方【MP4･MKV出力】</a> に <span class="comment-author-link">K_K</span> より</li><li class="recentcomments"><a href="http://aviutl.info/zimaku-tekisuto/#comment-1101">【AviUtl】動画への字幕(テロップ)の入れ方【テキスト】</a> に <span class="comment-author-link">くらもち</span> より</li><li class="recentcomments"><a href="http://aviutl.info/vfr-cfr/#comment-1094">VFR（可変）とCFR（固定）の違い【フレームレート】</a> に <span class="comment-author-link">adminadmin</span> より</li><li class="recentcomments"><a href="http://aviutl.info/vfr-cfr/#comment-1093">VFR（可変）とCFR（固定）の違い【フレームレート】</a> に <span class="comment-author-link">ジミー</span> より</li><li class="recentcomments"><a href="http://aviutl.info/yukkuri-moviemaker/#comment-1084">【AviUtl】ゆっくりムービーメーカーの導入方法と使い方【解説実況】</a> に <span class="comment-author-link">はまそう</span> より</li><li class="recentcomments"><a href="http://aviutl.info/douga-player/#comment-1079">【情強向】おすすめ動画再生ソフト12選を比較した【ランキング】</a> に <span class="comment-author-link">匿名</span> より</li><li class="recentcomments"><a href="http://aviutl.info/l-smash-works/#comment-1076">【AviUtl】L-SMASH Worksとは？導入方法と使い方①【入力プラグイン】</a> に <span class="comment-author-link">adminadmin</span> より</li><li class="recentcomments"><a href="http://aviutl.info/l-smash-works/#comment-1075">【AviUtl】L-SMASH Worksとは？導入方法と使い方①【入力プラグイン】</a> に <span class="comment-author-link">匿名</span> より</li><li class="recentcomments"><a href="http://aviutl.info/hure-mure-to-hennkou/#comment-1069">【AviUtl】動画のフレームレート(fps)を変更する方法【落とす|上げる】</a> に <span class="comment-author-link">adminadmin</span> より</li><li class="recentcomments"><a href="http://aviutl.info/hure-mure-to-hennkou/#comment-1068">【AviUtl】動画のフレームレート(fps)を変更する方法【落とす|上げる】</a> に <span class="comment-author-link">匿名</span> より</li><li class="recentcomments"><a href="http://aviutl.info/ko-dekku-tigai/#comment-1057">動画コーデックの種類と違い(H.264･VP9･MPEG･Xvid･DivX･WMV等)【比較】</a> に <span class="comment-author-link">たまご</span> より</li><li class="recentcomments"><a href="http://aviutl.info/si-nntyennzi/#comment-1056">【AviUtl】シーンチェンジの使い方と種類について</a> に <span class="comment-author-link">adminadmin</span> より</li><li class="recentcomments"><a href="http://aviutl.info/si-nntyennzi/#comment-1053">【AviUtl】シーンチェンジの使い方と種類について</a> に <span class="comment-author-link">ミラデ</span> より</li><li class="recentcomments"><a href="http://aviutl.info/audacity/#comment-1045">Audacityの簡単な使い方と導入方法を解説</a> に <span class="comment-author-link">adminadmin</span> より</li><li class="recentcomments"><a href="http://aviutl.info/ag-desctoprecoder/#comment-1044">AG-デスクトップレコーダーの使い方と設定方法</a> に <span class="comment-author-link">adminadmin</span> より</li><li class="recentcomments"><a href="http://aviutl.info/ag-desctoprecoder/#comment-1042">AG-デスクトップレコーダーの使い方と設定方法</a> に <span class="comment-author-link">山田</span> より</li></ul></div>             </div>
+          </div>
+        
+        <div class="clear"></div>
+          <div id="copyright" class="wrapper">
+            WordPress Theme <a href="http://wp-simplicity.com/" rel="nofollow">Simplicity</a><br />
+
+            Copyright&copy;  <a href="http://aviutl.info">AviUtlの易しい使い方</a> All Rights Reserved.
+                      </div>
+      </div><!-- /#footer-in -->
+      </div><!-- /#footer -->
+      <div id="page-top">
+      <a id="move-page-top"><span class="fa fa-chevron-circle-up fa-2x"></span></a>
+  
+</div>
+          </div><!-- /#container -->
+            <script defer src="http://aviutl.info/wp-content/themes/simplicity/js/noteit.js"></script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    
+<script type="text/javascript">
+for (i=0; i<document.forms.length; i++) {
+    var f = document.forms[i];
+    if (f.comment_post_ID) {
+        f.encoding = "multipart/form-data";
+
+        break;
+    }
+}
+</script>
+	<div style="display:none">
+	</div>
+<script type='text/javascript' src='http://aviutl.info/wp-content/plugins/akismet/_inc/form.js'></script>
+<link rel='stylesheet' id='jquerytreeview_css-css'  href='http://aviutl.info/wp-content/plugins/treeview-on-contents/css/jquery.treeview.css' type='text/css' media='all' />
+<script type='text/javascript' src='http://aviutl.info/wp-includes/js/comment-reply.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var social_count_config = {"permalink":"http:\/\/aviutl.info\/twitter-movie\/","rss2_url":"http:\/\/aviutl.info\/feed\/","theme_url":"http:\/\/aviutl.info\/wp-content\/themes\/simplicity","all_sns_share_btns_visible":"1","all_share_count_visible":"1","twitter_btn_visible":"","facebook_btn_visible":"1","google_plus_btn_visible":"1","hatena_btn_visible":"1","pocket_btn_visible":"1","feedly_btn_visible":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://aviutl.info/wp-content/themes/simplicity/javascript.js'></script>
+<script type='text/javascript' src='http://aviutl.info/wp-content/themes/simplicity-child/javascript.js'></script>
+<script type='text/javascript' src='http://aviutl.info/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/aviutl.info\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptchaEmpty":"\u3042\u306a\u305f\u304c\u30ed\u30dc\u30c3\u30c8\u3067\u306f\u306a\u3044\u3053\u3068\u3092\u8a3c\u660e\u3057\u3066\u304f\u3060\u3055\u3044\u3002","sending":"\u9001\u4fe1\u4e2d ..."};
+var _wpcf7 = {"loaderUrl":"http:\/\/aviutl.info\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptchaEmpty":"\u3042\u306a\u305f\u304c\u30ed\u30dc\u30c3\u30c8\u3067\u306f\u306a\u3044\u3053\u3068\u3092\u8a3c\u660e\u3057\u3066\u304f\u3060\u3055\u3044\u3002","sending":"\u9001\u4fe1\u4e2d ..."};
+var _wpcf7 = {"loaderUrl":"http:\/\/aviutl.info\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptchaEmpty":"\u3042\u306a\u305f\u304c\u30ed\u30dc\u30c3\u30c8\u3067\u306f\u306a\u3044\u3053\u3068\u3092\u8a3c\u660e\u3057\u3066\u304f\u3060\u3055\u3044\u3002","sending":"\u9001\u4fe1\u4e2d ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://aviutl.info/wp-content/plugins/contact-form-7/includes/js/scripts.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var tocplus = {"visibility_show":"\u8868\u793a","visibility_hide":"\u96a0\u3059","width":"98%"};
+var tocplus = {"visibility_show":"\u8868\u793a","visibility_hide":"\u96a0\u3059","width":"98%"};
+var tocplus = {"visibility_show":"\u8868\u793a","visibility_hide":"\u96a0\u3059","width":"98%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://aviutl.info/wp-content/plugins/table-of-contents-plus/front.min.js'></script>
+<script type='text/javascript' src='http://aviutl.info/wp-includes/js/masonry.min.js'></script>
+<script type='text/javascript' src='http://aviutl.info/wp-includes/js/jquery/jquery.masonry.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WCShortcodes = {"ajaxurl":"http:\/\/aviutl.info\/wp-admin\/admin-ajax.php"};
+var WCShortcodes = {"ajaxurl":"http:\/\/aviutl.info\/wp-admin\/admin-ajax.php"};
+var WCShortcodes = {"ajaxurl":"http:\/\/aviutl.info\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://aviutl.info/wp-content/plugins/wc-shortcodes/includes/js/rsvp.js'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+var WPGroHo = {"my_hash":""};
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://aviutl.info/wp-content/plugins/jetpack/modules/wpgroho.js'></script>
+<script type='text/javascript' src='http://aviutl.info/wp-includes/js/wp-embed.min.js'></script>
+<script type='text/javascript' src='http://aviutl.info/wp-content/plugins/easy-fancybox/fancybox/jquery.fancybox-1.3.7.min.js'></script>
+<script type='text/javascript' src='http://stats.wp.com/e-201607.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:3.8.1',blog:'93371305',post:'13058',tz:'9',srv:'aviutl.info'} ]);
+	_stq.push([ 'clickTrackerInit', '93371305', '13058' ]);
+</script>
+
+<script type="text/javascript">
+jQuery(document).on('ready post-load', easy_fancybox_handler );
+</script>
+    
+<!-- Google Analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-45960166-6");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<!-- /Google Analytics -->
+
+    
+  </body>
+</html>

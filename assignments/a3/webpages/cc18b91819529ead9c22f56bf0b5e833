@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta property="og:title" content="『』ムービープラスで放送！" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.movieplus.jp/movie-detail/index.php?film_id=" />
+<meta property="og:image" content="http://www.movieplus.jp" />
+<meta property="og:description" content="" />
+<meta property="fb:app_id" content="391323690979427" />
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="imagetoolbar" content="no">
+<title>│映画専門チャンネル「ムービープラス」</title>
+<meta name="robots" content="index">
+<meta name="description" content="ハリウッドのメガヒットや世界の名作・話題作を続々とお届けする配信世帯数日本最大級の映画専門チャンネル。世界の映画祭、最新映画情報、オリジナル特番も！">
+<meta name="keywords" content="ムービープラス,movieplus,映画,スカパー,映画祭,番組表,240ch,スカパー加入,テレビ　映画,新作映画">
+<link rel="icon" href="http://www.movieplus.jp/favicon.ico" type="image/x-icon">
+<link rel="Shortcut Icon" type="image/x-icon" href="http://www.movieplus.jp/favicon.ico">
+<link rel="stylesheet" href="../common/css/import/movie-detail.css" type="text/css" media="all">
+<script type="text/javascript" src="../common/js/recommend/tlab-recommend.js"></script>
+<script type="text/javascript" src="../common/js/recommend/tlab-beacon.js"></script>
+<script type="text/javascript" src="../common/js/recommend/tlab-histrecord.js"></script>
+<script type="text/javascript" src="../common/js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../common/js/nav.js"></script>
+<script type="text/javascript" src="../common/js/jquery/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../common/js/recommend.js"></script>
+<!--[if IE 6]><script src="../common/js/jquery/DD_belatedPNG_0.0.8a-min.js"></script>
+<script>DD_belatedPNG.fix('#header h1 a, .GlobalNavi a, .nav2 a, .ttl h2');</script><![endif]-->
+</head>
+<body id="PageMovie-detail">
+
+<div id="wrap">
+	<div id="sitejack"></div><!-- sitejack --> 
+<div id="container">
+
+<div id="sitejackL">
+</div><!-- /.sitejackL -->
+<div id="contentsWrap">
+
+<div id="header">
+</div><!-- //#header -->
+
+
+<div id="nav">
+</div><!-- //#nav -->
+
+
+<div id="section">
+	<div class="ttl">
+	<h2>放送ラインナップ</h2>
+	<p>
+	<a href="/howto/">視聴方法</a>
+	</p>
+	</div><!-- /.ttl -->
+	
+	<div class="L main">
+
+		<div class="movidetail">
+		
+<!-- エラーがあった場合 -->
+<!-- <div class="md_ttl">毎月、月はじめに番組表を更新しています。お楽しみに！</div> -->
+<p class="error">毎月、月はじめに番組表を更新しています。お楽しみに！</p>
+		</div><!-- /.movidetail -->
+
+	</div><!-- .main -->
+	
+
+	<div class="sub R">
+		<div class="Back">
+			<p><a href="javascript:history.back()">前のページに戻る</a></p>
+		</div><!-- .Back -->
+		
+		<div class="subin">
+			<div id="Reccomend">
+			<h3>『』を好きなあなたにおすすめ！</h3>
+			<div class="in">
+				<div id="recommend_divid">
+				<script>(new TLAB.Recommend("recommend_divid", "CS-0000000200802656")).sendRequest();</script>
+				</div>
+				<div class="link"><a class="kotira" href="/lineup/">全作品一覧を見る</a></div>
+			</div><!-- .in -->
+			</div><!-- .Reccomend -->
+			
+		<div id="history">
+			<h3>最近チェックした番組・映画</h3>
+			<div id="jCarouselLite">
+				<div class="carousel heightLineParent">
+					<a href="#his" class="prev disabled">&nbsp;</a>
+					<div id="history_divid" class="jCarouselLite">
+					<script>(new TLAB.History("history_divid")).sendRequest();</script>
+					</div>
+					<a href="#his" class="next">&nbsp;</a>
+					<!-- <div class="clear"></div> -->
+				</div>
+			</div><!-- /#jCarouselLite -->
+			
+		</div><!-- /#history -->
+
+	</div><!-- .subin -->
+	
+	</div><!-- .Sub .R -->
+</div><!-- /#section -->
+
+</div><!-- //#contentsWrap -->
+<div id="sitejackR">
+</div><!-- /.sitejackR -->
+
+</div><!-- //#container> -->
+
+<div id="FootNaviReco" class="FootNaviReco">
+</div><!-- /#FootNaviReco -->
+
+<div id="footer">
+	<div class="in">
+		<div id="Press" class="Press">
+		</div><!-- .Press -->
+		
+		<div id="Copyright">
+		<p class="">このホームページに掲載されているデータを権利者の許諾なく使用することを禁じます。<br>
+Copyright&copy;2006 ムービープラス All Rights Reserved.</p>
+
+		<div id="recommendCopy"></div>
+		<script>(new TLAB.Recommend("recommendCopy", "CS-0000000200802656")).sendRequest();</script>
+
+		<div id="historyCopy"></div>
+		<script>(new TLAB.History("historyCopy")).sendRequest();</script>
+
+		</div><!-- Copyright -->
+	</div>
+</div><!-- //#footer -->
+
+</div><!-- //#wrap -->
+<script type="text/javascript" src="/common/js/ie/movie-detail.js"></script>
+<input type="hidden" value="No-1">
+<div id="beacon_divid"></div>
+<script>(new TLAB.Beacon("beacon_divid", "CS-0000000200802656")).sendRequest();</script>
+
+</body>
+</html>

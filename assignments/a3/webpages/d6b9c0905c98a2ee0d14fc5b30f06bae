@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://ogp.me/ns/fb#"><head><!-- MacLeod loves you! --><meta content="text/html; charset=utf-8" http-equiv="Content-Type"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UgQCVVdaGwAGU1VUAAE="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(){}function r(t){function e(t){return t&&t instanceof n?t:t?a(t,i,o):o()}function s(n,r,o){t&&t(n,r,o);for(var i=e(o),a=f(n),s=a.length,c=0;s>c;c++)a[c].apply(i,r);return i}function c(t,e){d[t]=f(t).concat(e)}function f(t){return d[t]||[]}function u(){return r(s)}var d={};return{on:c,emit:s,create:u,listeners:f,context:e,_events:d}}function o(){return new n}var i="nr@context",a=t("gos");e.exports=r()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:25,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,a){try{f?f-=1:r("err",[a||new UncaughtException(t,e,n)])}catch(c){try{r("ierr",[c,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof s?s.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=t("loader"),s=window.onerror,c=!1,f=0;a.features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(u){"stack"in u&&(t(1),t(2),"addEventListener"in window&&t(3),a.xhrWrappable&&t(4),c=!0)}i.on("fn-start",function(){c&&(f+=1)}),i.on("fn-err",function(t,e,r){c&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){c&&!this.thrown&&f>0&&(f-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:11,2:10,3:8,4:12,5:3,6:26,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){if(window.addEventListener){var e=t("handle"),n=t("ee");t(1),window.addEventListener("click",function(){e("inc",["ck"])},!1),window.addEventListener("hashchange",function(){e("inc",["hc"])},!1),n.on("pushState-start",function(){e("inc",["ps"])})}},{1:9,ee:"QJf3ax",handle:"D5DuLP"}],6:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],7:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3);var a=Event;n.on("fn-start",function(t){var e=t[0];e instanceof a&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof a&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.clearResourceTimings?window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1):window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:11,2:10,3:9,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){function n(t){for(var e=t;e&&!e.hasOwnProperty("addEventListener");)e=Object.getPrototypeOf(e);e&&r(e)}function r(t){a.inPlace(t,["addEventListener","removeEventListener"],"-",o)}function o(t){return t[1]}var i=t("ee").create(),a=t(1)(i),s=t("gos");e.exports=i,r(window),"getPrototypeOf"in Object?(n(document),n(XMLHttpRequest.prototype)):XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&r(XMLHttpRequest.prototype),i.on("addEventListener-start",function(t){if(t[1]){var e=t[1];if("function"==typeof e){var n=s(e,"nr@wrapped",function(){return a(e,"fn-",null,e.name||"anonymous")});this.wrapped=t[1]=n}else"function"==typeof e.handleEvent&&a.inPlace(e,["handleEvent"],"fn-")}}),i.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:27,ee:"QJf3ax",gos:"7eSDFh"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState","replaceState"],"-")},{1:27,ee:"QJf3ax"}],10:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:27,ee:"QJf3ax"}],11:[function(t,e){function n(t,e,n){t[0]=i(t[0],"fn-",null,n)}function r(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=i(t[0],"fn-",this,n)}var o=t("ee").create(),i=t(1)(o);e.exports=o,i.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),i.inPlace(window,["setInterval"],"setInterval-"),i.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),o.on("setInterval-start",n),o.on("setTimer-start",r)},{1:27,ee:"QJf3ax"}],12:[function(t,e){function n(){f.inPlace(this,l,"fn-",o)}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-",o)}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[e],e),e.hasOwnProperty("addEventListener")&&u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:8,2:27,ee:"QJf3ax"}],13:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;u>o;o++)t.removeEventListener(f[o],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=this.lastSize||n(t);if(i&&(r.rxSize=i),this.sameOrigin){var s=t.getResponseHeader("X-NewRelic-App-Data");s&&(e.cat=s.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,c.emit("xhr-done",[t],t),a("xhr",[e,r,this.startTime])}}}function n(t){var e=t.responseType,n="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return r(n)}function r(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function o(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var i=t("loader");if(i.xhrWrappable){var a=t("handle"),s=t(2),c=t("ee"),f=["load","error","abort","timeout"],u=f.length,d=t(1),l=t(3),p=window.XMLHttpRequest;i.features.xhr=!0,t(5),t(4),c.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=e,n.ended=!1,n.xhrGuids={},n.lastSize=0,l&&(l>34||10>l)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),c.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),c.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),c.on("send-xhr-start",function(t,e){var n=this.metrics,o=t[0],i=this;if(n&&o){var a=r(o);a&&(n.txSize=a)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{c.emit("internal-error",[n])}catch(r){}}};for(var s=0;u>s;s++)e.addEventListener(f[s],this.listener,!1)}),c.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),c.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),c.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),c.on("addEventListener-end",function(t,e){e instanceof p&&"load"===t[0]&&c.emit("xhr-load-added",[t[1],t[2]],e)}),c.on("removeEventListener-end",function(t,e){e instanceof p&&"load"===t[0]&&c.emit("xhr-load-removed",[t[1],t[2]],e)}),c.on("fn-start",function(t,e,n){e instanceof p&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),c.on("fn-end",function(t,e){this.xhrCbStart&&c.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:14,3:16,4:12,5:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],14:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],15:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:25,2:26,handle:"D5DuLP"}],16:[function(t,e){var n=0,r=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);r&&(n=+r[1]),e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){if(!h++){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){t[e]||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-852.min.js"},l=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),p=e.exports={offset:i(),origin:u,features:{},xhrWrappable:l};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()]);var h=0},{1:25,2:15,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],25:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],26:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],27:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@original",a=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,c;try{i=this,n=o(arguments),s="function"==typeof r?r(n,i):r||{}}catch(u){d([u,"",[n,i,a],s])}f(e+"start",[n,i,a],s);try{return c=t.apply(i,n)}catch(l){throw f(e+"err",[n,i,l],s),l}finally{f(e+"end",[n,i,c],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=t,u(t,nrWrapper),nrWrapper)}function c(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!s){s=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}s=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=c,e.flag=i,e}},{1:26,ee:"QJf3ax"}]},{},["G9z0Bl",4,13,7,6,5]);</script><meta content="en_US" http-equiv="Content-Language"><title>10 big-game fails that kicked off winning memes (pictures) - CNET</title><meta name="description" content="Standout Super Bowl moments from Left Shark to botched national anthem lyrics have inspired the Internet to make some of its most iconic memes. We're talking about you, Richard Sherman."><link rel="canonical" href="http://www.cnet.com/pictures/internet-memes-born-at-the-super-bowl/"><meta property="al:ios:app_name" content="CNET"><meta property="al:ios:app_store_id" content="383989837"><meta property="al:ios:url" content="http://www.cnet.com/pictures/internet-memes-born-at-the-super-bowl/?search=toapp"><link rel="alternate" hreflang="x-default" href="http://www.cnet.com/pictures/internet-memes-born-at-the-super-bowl/"><link rel="alternate" hreflang="en-au" href="http://www.cnet.com/au/pictures/internet-memes-born-at-the-super-bowl/"><link rel="alternate" hreflang="en-gb" href="http://www.cnet.com/uk/pictures/internet-memes-born-at-the-super-bowl/"><link rel="alternate" hreflang="en-ie" href="http://www.cnet.com/uk/pictures/internet-memes-born-at-the-super-bowl/"><link rel="alternate" hreflang="en-us" href="http://www.cnet.com/pictures/internet-memes-born-at-the-super-bowl/"><link rel="search" type="application/opensearchdescription+xml" title="CNET Search" href="http://www.cnet.com/opensearch.xml"><meta property="og:site_name" content="CNET"><meta property="og:title" content="10 big-game fails that kicked off winning memes (pictures)"><meta property="og:description" content="Standout Super Bowl moments from Left Shark to botched national anthem lyrics have inspired the Internet to make some of its most iconic memes. We're talking about you, Richard Sherman."><meta property="og:image" content="http://cnet4.cbsistatic.com/hub/i/r/2016/02/04/47175d31-b500-407e-bd1a-370601484fef/thumbnail/670x503/d75ac30a5ed2c4584d3044d492b9a131/left-shark.jpg"><meta property="og:type" content="Article"><meta property="og:url" content="http://www.cnet.com/pictures/internet-memes-born-at-the-super-bowl/"><meta property="fb:app_id" content="16995676698"><meta property="fb:admins" content="100001036810388"><meta property="article:publisher" content="https://www.facebook.com/cnet"><meta content="30261067" property="twitter:account_id"><meta content="photo" property="twitter:card"><meta content="http://www.cnet.com/pictures/internet-memes-born-at-the-super-bowl/" property="twitter:url"><meta content="10 big-game fails that kicked off winning memes (pictures)" property="twitter:title"><meta content="Standout Super Bowl moments from Left Shark to botched national anthem lyrics have inspired the Internet to make some of its most iconic memes. We're talking about you, Richard Sherman." property="twitter:description"><meta content="http://cnet4.cbsistatic.com/hub/i/r/2016/02/04/47175d31-b500-407e-bd1a-370601484fef/thumbnail/670x503/d75ac30a5ed2c4584d3044d492b9a131/left-shark.jpg" property="twitter:image"><meta content="670" property="twitter:image:width"><meta content="503" property="twitter:image:height"><meta content="@CNET" property="twitter:site"><meta content="@thisisdannyg" property="twitter:creator"><meta content="I1kHyfzmmG1fEVjq8GBUgkfCHc6PNtxce1_VyUuJhws" name="google-site-verification"><meta content="wNWLoFvk5wsdZQ-u75uCNiaHNa7FLFmNtH2t7dZbXmQ" name="google-site-verification"><meta content="47524839a64b83c951afca9ef6c838e0" name="p:domain_verify"><meta content="Product reviews and prices, software downloads, and tech news - CNET" name="msapplication-tooltip"><meta content="http://www.cnet.com/" name="msapplication-starturl"><meta content="width=1024;height=768" name="msapplication-window"><meta content="#424244" name="msapplication-navbutton-color"><meta content="name=Home; action-uri=http://www.cnet.com/; icon-uri=http://www.cnet.com/favicon.ico" name="msapplication-task"><meta content="name=Downloads; action-uri=http://download.cnet.com/; icon-uri=http://download.cnet.com/favicon.ico" name="msapplication-task"><meta content="name=News; action-uri=http://www.cnet.com/news/; icon-uri=http://www.cnet.com/favicon.ico" name="msapplication-task"><meta content="name=Reviews; action-uri=http://www.cnet.com/reviews/; icon-uri=http://www.cnet.com/favicon.ico" name="msapplication-task"><meta content="name=Videos; action-uri=http://www.cnet.com/videos/; icon-uri=http://www.cnet.com/favicon.ico" name="msapplication-task"><meta content="name=Forums; action-uri=http://forums.cnet.com/; icon-uri=http://www.cnet.com/favicon.ico" name="msapplication-task"><meta name="tp:baseUrl" content="http://cnet2.cbsistatic.com/fly/bundles/cnetmpxpdk/pdk"><meta name="viewport" content="width=device-width"><link rel="next" href="http://www.cnet.com/pictures/internet-memes-born-at-the-super-bowl/2/"><meta name="fragment" content="!"><link rel="manifest" href="/manifest.json"><link rel="stylesheet" href="http://cnet1.cbsistatic.com/fly/css/core/main.desktop-65720a2b23-rev.css"><link rel="stylesheet" id="galleryCSS" href="http://cnet2.cbsistatic.com/fly/css/image_gallery/single.desktop-ee228bea5c-rev.css"><!--[if IE 8]> <link rel="stylesheet" href="http://cnet3.cbsistatic.com/fly/css/core/ie/ie8-8b304ec002-rev.css" /> <![endif]--><!--[if IE 9]> <link rel="stylesheet" href="http://cnet2.cbsistatic.com/fly/css/core/ie/ie9-2df090d0d6-rev.css" /> <![endif]--><script>
+                (function(){
+    if(window.BOOMR && window.BOOMR.version){return;}
+
+    var dom,doc,where,iframe = document.createElement('iframe');
+
+    iframe.src = "javascript:false";
+    iframe.title = ""; iframe.role="presentation";
+    (iframe.frameElement || iframe).style.cssText = "width:0;height:0;border:0;display:none;";
+
+    where = document.getElementsByTagName('script')[0];
+    where.parentNode.insertBefore(iframe, where);
+
+    try {
+        doc = iframe.contentWindow.document;
+    } catch(e) {
+        dom = document.domain;
+        iframe.src="javascript:var d=document.open();d.domain='"+dom+"';void(0);";
+        doc = iframe.contentWindow.document;
+    }
+
+    doc.open()._l = function() {
+        var js = this.createElement("script");
+        if(dom) this.domain = dom;
+        js.id = "boomr-if-as";
+        js.src = '//c.go-mpulse.net/boomerang/' + '38QDY-8CT77-8XNH2-VJQTD-EK4YX';
+        BOOMR_lstart=new Date().getTime();
+        this.body.appendChild(js);
+    };
+
+    doc.write('<body onload="document._l();">');
+    doc.close();
+})();            </script><script type="text/javascript">
+
+    
+    window.CnetPageVars = {
+        ads: {
+            enabled: true,
+            data: {"gpt":{"targeting":{"section":"news","topics":["internet"],"mfr":"","tag":[],"collection":"crave","subcollection":"super-bowl","edition":"us","test":"||","device":"desktop","ptype":"image_gallery","cid":"internet-memes-born-at-the-super-bowl","env":"prod"},"adConfig":{"network":{"dev":8264,"prod":8264},"method":"async-inline","regions":[{"region":"uk","countries":["gb","ie","za","bh","kw","om","qa","sa","ae","iq","eg","ye","fr"]},{"region":"au","countries":["au","nz"]},{"region":"asia","countries":["sg","my","th","id","ph","hk","vn","in","tw"]}],"adUnits":{"intromercial":{"outOfPage":true,"collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"skin":{"sizes":[[1600,1000]],"position":"top","eventCallbacks":{"slotRenderEnded":"adSkinCallback"}},"resourceCenterTop":{"sizes":[[371,301]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"resourceCenterBottom":{"sizes":[[632,160]],"position":"bottom"},"mpuPlusTop":{"sizes":[[300,250],[300,600],[300,1050]],"position":"top","eventCallbacks":{"slotRenderEnded":"mpuPlusTopCallback"}},"marqueeTop":{"sizes":[[300,60]],"position":"top"},"mpuTop":{"sizes":[[300,250]],"position":"top","eventCallbacks":{"slotRenderEnded":"mpuTopCallback"}},"mpuBottom":{"sizes":[[300,250]],"position":"bottom"},"leaderPlusTop":{"sizes":[[970,66],[728,90],[970,250]],"position":"top","eventCallbacks":{"slotRenderEnded":"leaderboardTopPlusCallback"}},"leaderTop":{"sizes":[[970,66],[728,90]],"position":"top","eventCallbacks":{"slotRenderEnded":"leaderTopCallback"}},"buttonTop":{"sizes":[[88,31],[70,20],[155,40]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"omnibarTop":{"sizes":[[980,45]],"position":"top","eventCallbacks":{"slotRenderEnded":"omnibarTopCallback"},"collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"sponsoredSearchTop":{"sizes":[[501,11]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"dynamicTextLinkTop":{"sizes":[[1171,61]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"mpuMiddle":{"sizes":[[300,250]],"position":"middle","eventCallbacks":{"slotRenderEnded":"mpuMiddleCallback"}},"mpuMiddle2":{"sizes":[[300,250]],"position":"middle2"},"leaderPlusMiddle":{"sizes":[[970,66],[728,90],[970,250]],"position":"middle"},"leaderPlusMantle":{"sizes":[[970,66],[728,90],[970,250]],"position":"mantle","eventCallbacks":{"slotRenderEnded":"leaderPlusMantleCallback"}},"leaderMiddle":{"sizes":[[970,66],[728,90]],"position":"middle","eventCallbacks":{"slotRenderEnded":"leaderMiddleCallback"}},"leaderMiddle2":{"sizes":[[970,66],[728,90]],"position":"middle2"},"leaderBottom":{"sizes":[[970,66],[728,90]],"position":"bottom"},"leaderPlusBottom":{"sizes":[[970,66],[728,90]],"position":"bottom"},"dynamicShowcaseTop":{"sizes":[[371,771]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"infoBoardTop":{"sizes":[[771,201],[620,90]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"infoButtonsTop":{"sizes":[[771,61]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"socialLogoBottom":{"sizes":[[88,31]],"position":"bottom","eventCallbacks":{"slotRenderEnded":"sharebarCallback"},"collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"socialLogoTop":{"sizes":[[88,31]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"sponsoredFeedTop":{"sizes":[[571,121]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"inlineProductCarouselTop":{"sizes":[[621,221],[621,471],[321,31]],"position":"top","eventCallbacks":{"slotRenderEnded":"inlineProductCarouselTopCallback"},"collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"inpageVideoTop":{"sizes":[[641,321],[321,31]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"windowTop":{"sizes":[[120,90]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"windowBottom":{"sizes":[[120,90]],"position":"bottom","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"sponsoredMatchTop":{"sizes":[[971,201]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"replaySquareTop":{"sizes":[[271,271]],"position":"top","eventCallbacks":{"slotRenderEnded":"replaySquareCallBack"},"collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"replayWideTop":{"sizes":[[771,131],[11,11]],"position":"top","eventCallbacks":{"slotRenderEnded":"replayWideTopCallback"},"collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"replayWideBottom":{"sizes":[[771,131],[11,11]],"position":"bottom","eventCallbacks":{"slotRenderEnded":"replayWideBottomCallback"},"collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"replayWideEditorspicks":{"sizes":[[771,131],[11,11]],"position":"editorspicks","eventCallbacks":{"slotRenderEnded":"replayWideEditorspicksCallback"},"collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"replayShowcaseTop":{"sizes":[[371,291]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"nativeThisweekoncnet":{"sizes":[[11,11]],"position":"thisweekoncnet","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"nativeCompare":{"sizes":[[11,11]],"position":"compare","eventCallbacks":{"slotRenderEnded":"nativeCompareCallback"},"collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"overgifTop":{"sizes":[[251,11]],"position":"top","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"showcaseBottom":{"sizes":[[3,3],[728,90],[970,66]],"position":"bottom"},"showcaseTop":{"sizes":[[3,3],[728,90],[970,66]],"position":"top"},"videoThumbnailTop":{"sizes":[[171,231],[771,131],[11,11]],"position":"thumbnail","eventCallbacks":{"slotRenderEnded":"videoThumbnailTopCallback"},"collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"nativeToc":{"sizes":[[300,90],[11,11]],"position":"toc","eventCallbacks":{"slotRenderEnded":"nativeTocCallBack"},"collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"customAd":{"sizes":[[330,100],[330,59]],"position":"top"},"incontentAd":{"sizes":[[321,31]],"position":"top"}},"mobile":{"adUnits":{"hpto":{"outOfPage":true,"collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"mobileBannerTop":{"sizes":[[320,50],[6,1]],"position":"increment"},"mobileBannerMpuHptoOverlay":{"outOfPage":true},"mobileMpuBottom":{"sizes":[[300,250]],"position":"increment"},"mobileBanner":{"sizes":[[320,50]],"position":"increment"},"mobileCustomAd":{"sizes":[[330,100]],"position":"increment"},"mobileReplaySquare":{"sizes":[[271,271]],"position":"increment"},"mobileReplayWide":{"sizes":[[771,131],[11,11]],"position":"increment"},"mobileReplayWideInc":{"sizes":[[771,131],[11,11]],"position":"inc"},"mobileReplayWidePlus":{"sizes":[[771,131],[320,50],[11,11]],"position":"increment","eventCallbacks":{"slotRenderEnded":"mobileReplayWidePlusCallBack"}},"mobileBannerPlus":{"sizes":[[300,250],[320,50],[621,221]],"position":"increment"},"mobileMpu":{"sizes":[[300,250]],"position":"increment"},"mobileOvergif":{"sizes":[[251,11]],"position":"increment","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"mobileShowcase":{"sizes":[[3,3]],"position":"increment","collapseEmptyDiv":true,"collapseEmptyDivOnPageload":true},"mobileIncontentAd":{"sizes":[[321,31],[300,250]],"position":"increment"}}},"tablet":{"adUnits":{"resourceCenterTop":{"sizes":[[300,300]],"position":"top"},"resourceCenterBottom":{"sizes":[[632,160]],"position":"bottom"},"mpuPlusTop":{"sizes":[[300,600],[300,250]]},"marqueeTop":{"sizes":[[234,60]],"position":"top"},"mpuTop":{"sizes":[[300,250],[300,600]],"position":"top"},"mpuBottom":{"sizes":[[300,250]],"position":"bottom"},"leaderTop":{"sizes":[[728,90],[970,66]],"position":"bottom"},"leaderPlusTop":{"sizes":[[728,90],[970,66],[970,250]],"position":"top"}}},"siteName":"cnet","collapseEmptyDiv":false,"setRefreshUnfilledSlots":true,"setClearUnfilledSlots":false,"disableInitialLoad":false,"disableInitialLoadCompanions":false,"enableSingleRequest":true,"enableAsyncRendering":true,"defaultRegion":"aw","adOrder":["leader_top","leader_plus_top","mpu_top","mpu_plus_top","leader_plus_middle","leader_middle","leader_middle2","mpu_middle","mpu_middle2","mpu_bottom","leader_bottom","skin","incontent_ad","omnibar_top","marquee_top","window_top","window_bottom","inpage_video_top","intromercial","replay_wide_top","replay_wide_bottom","replay_wide_editorspicks","video_thumbnail_top","nativ_toc","native_compare","native_thisweekoncnet","inline_product_carousel_top","resource_center_top","social_logo_bottom","showcase_top","info_board_top","sponsored_feed_top","info_buttons_top","dynamic_text_link_top","dynamic_showcase_top","sponsored_search_top","custom_ad"],"disableInitialLoadRefresh":true,"deviceRegions":{"mobile":[{"region":"aw","countries":["all"]}],"desktop":[],"tablet":[]}},"containerId":"56c3a8e40964c","slotVars":{"network":"8264","siteName":"cnet","collapseEmptyDiv":"","topics":"internet","platform":"desktop"},"adType":"gpt","adDivIds":["social-logo-bottom-56c3a8e40964c","mpu-top-56c3a8e40964c","native-thisweekoncnet-56c3a8e40964c","mpu-middle-56c3a8e40964c","mpu-middle2-56c3a8e40964c","mpu-bottom-56c3a8e40964c","omnibar-top-56c3a8e40964c","skin-56c3a8e40964c","leader-top-56c3a8e40964c","intromercial-56c3a8e40964c"]},"cookieName":"cnet_ad","cookieServicePath":"http:\/\/www.cnet.com\/ad\/ad-cookie\/","session":4,"subSession":6}
+        },
+        assetsVersion: {
+            version: '2182-fly'
+        },
+        auto: false,
+        build: true,
+        cmsEdit: {
+            contentId: 'c723f0a0-b53b-45c3-8488-a4fa9e484a3b',
+            contentType: 'gallery'
+        },
+        device: 'desktop',
+        deviceOriginal: 'desktop',
+        edition: {
+            code: 'us'
+        },
+        environment: 'prod',
+        pageType: 'image_gallery',
+        promotionals: {
+            flyoutPromo:{
+                url: '/flyout-promo/'
+            }
+        },
+        tracking: {
+            enabled: true
+        },
+        txId: 'd36491f0-7704-489a-9ef8-28eb76e4ec80',
+        user: {
+            baseUrl: 'https://secure-fly.cnet.com',
+            'urls': {
+                'login': "https://secure-fly.cnet.com/user/login/",
+                'register': "https://secure-fly.cnet.com/user/registration/",
+                'confirmRegistration': "http://www.cnet.com/user/instructions-confirm-registration/",
+                'forgotPassword': "https://secure-fly.cnet.com/user/forgotten-password/",
+                'passwordSent': "http://www.cnet.com/user/password-sent/",
+                'createUsername': "http://www.cnet.com/user/create-username/",
+                'sendConfirmation': "http://www.cnet.com/user/send-confirmation/?registered=1",
+                'userData': "http://www.cnet.com/user/get-data/",
+                'socialAdditionalInformation': "http://www.cnet.com/user/social-additional-information/"
+            }
+        },
+        video: {
+            tpBaseUrl: 'http://cnet2.cbsistatic.com/fly/bundles/cnetmpxpdk/pdk',
+            playCount: 0
+        }
+    };
+
+
+    
+    
+    
+    
+    var utag_data = {"isEnabled":true,"articleAuthorId":["86738738-d32d-478b-85d7-f6ccd00a9967"],"articleAuthorName":["danny gallagher"],"articlePubDate":"2016-02-06 14:00:03","articleType":"gallery_inpage","collectionId":["849b21d8-3d06-452b-a349-9d80f6595f76"],"collectionName":["crave"],"deviceType":"desktop","isDev":"0","pageNum":"1","pageType":"image_gallery","photoGalleryId":"c723f0a0-b53b-45c3-8488-a4fa9e484a3b","photoGalleryTitle":"10 big-game fails that kicked off winning memes (pictures)","siteEdition":"us","siteHier":["news","internet"],"siteSection":"news","siteType":"responsive web","topicId":["1c1356b9-c387-11e2-8208-0291187b029a"],"topicName":["internet"],"dwAccount":"cbsicnetglobalsite","dwHost":"dw.cbsi.com","siteId":1,"reportSuiteId":"cbsicnetglobalsite","bkSiteId":3321,"limit":4,"brand":"cnet","collectionSlug":["crave"],"maxSlide":"10","photoGalleryType":"gallery_inpage","tagSlugs":[],"topicSlugs":["internet"],"siteName":"cnet","tealium":{"profile":"cnetglobalsite","env":"prod"},"soastaBucket":"","soastaPageType":"image_gallery"};
+</script><!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]--></head><body class="not-logged-in
+    us
+        
+    
+    
+    
+    image-gallery
+    
+" data-cms-edit='{"url":"http:\/\/cms-beta.cnet.com\/content\/gallery\/c723f0a0-b53b-45c3-8488-a4fa9e484a3b"}'>
+                
+    
+<header id="rbHeader" class="page-header"><div class="fixation fixed">
+                                    <div id="omnibar_top">
+                    
+                                    <div id="omnibar-top-56c3a8e40964c" class="ad-omnibar-top" data-ad="omnibar-top">
+    <script>
+        window.console && console.log && console.log("ADS: queuing omnibar-top-56c3a8e40964c for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("omnibar-top-56c3a8e40964c");
+    </script></div>
+                            </div>
+                        <div id="primary">
+                                    <a id="rbLogo" href="/">CNET</a>
+                
+                                        <form method="get" action="/search/" class="col-3 headerSearchForm single" data-auto-suggest-options='{"url":"\/autosuggest\/xhr\/"}' data-component='["formTrim","autoSuggest"]'>
+    <div class="searchBar">
+        <input type="text" placeholder="Search CNET" id="primarySearch" name="query" value="" autocomplete="off"><button type="submit" class="searchButton" value="Search"></button>
+    </div>
+</form>                
+                                    
+
+<nav id="primaryNav" section="brandnav"><div class="menu single" id="reviewsMenu" data-component="touchMenuHover">
+        <a class="menuHead" data-trigger="menu" href="/reviews/">Reviews</a>
+                    <div class="menuWrapper">
+                <!--[if lt IE 9]>
+                <noscript><div class="navTag"></noscript>
+                <![endif]-->
+                <nav><div class="navWrapper">
+                        <ul class="topCategories"><li class="hed">Top Categories</li>
+                            <li><a href="/cnet100/">CNET 100</a></li> <!-- debate with seo over editions, see footer -->
+                            <li><a href="/topics/appliances/">Appliances</a></li>
+                            <li><a href="/topics/audio/">Audio</a></li>
+                            <li><a href="/topics/cameras/">Cameras</a></li>
+                            <li><a href="/topics/desktops/">Desktops</a></li>
+                            <li><a href="/topics/headphones/">Headphones</a></li>
+                            <li><a href="/topics/laptops/">Laptops</a></li>
+                            <li><a href="/topics/networking/">Networking</a></li>
+                            <li><a href="/topics/phones/">Phones</a></li>
+                            <li><a href="/topics/printers/">Printers</a></li>
+                            <li><a href="/roadshow/" target="_blank">Roadshow</a></li>
+                            <li><a href="/smart-home/" data-vanity-rewritten="true">Smart Home</a></li>
+                            <li><a href="/topics/software/">Software</a></li>
+                            <li><a href="/topics/storage/">Storage</a></li>
+                            <li><a href="/topics/tablets/">Tablets</a></li>
+                            <li><a href="/topics/tvs/">TVs</a></li>
+                            <li><a href="/topics/wearable-tech/">Wearable Tech</a></li>
+                                                            <li><a href="/deals/">Deals</a></li>
+                                <li><a href="/web-hosting/" data-vanity-rewritten="true">Web Hosting</a></li>
+                                                        <li><a href="/forums/">Forums</a></li>
+                        </ul><ul class="topItems forums" data-menu="reviews-forums"><li class="hed">Popular Forums</li>
+<li class="topItem">
+    <a href="/forums/computer-help/">
+            <h3>Computer Help</h3>
+    </a>
+</li>
+<li class="topItem">
+    <a href="/forums/computer-newbies/">
+            <h3>Computer Newbies</h3>
+    </a>
+</li>
+<li class="topItem">
+    <a href="/forums/laptops/">
+            <h3>Laptops</h3>
+    </a>
+</li>
+<li class="topItem">
+    <a href="/forums/phones/">
+            <h3>Phones</h3>
+    </a>
+</li>
+<li class="topItem">
+    <a href="/forums/tvs-home-theaters/">
+            <h3>TVs &amp; Home Theaters</h3>
+    </a>
+</li>
+<li class="topItem">
+    <a href="/forums/networking-wireless/">
+            <h3>Networking &amp; Wireless</h3>
+    </a>
+</li>
+<li class="topItem">
+    <a href="/forums/windows-7/">
+            <h3>Windows 7</h3>
+    </a>
+</li>
+<li class="topItem">
+    <a href="/forums/windows-10/">
+            <h3>Windows 10</h3>
+    </a>
+</li>
+<li class="topItem">
+    <a href="/forums/cameras/">
+            <h3>Cameras</h3>
+    </a>
+</li>
+<li class="topItem">
+    <a href="/forums/">
+            <h3>All Forums</h3>
+    </a>
+</li>                        </ul></div>
+                </nav><!--[if lt IE 9]>
+                <noscript></div></noscript>
+                <![endif]--></div>
+            </div>
+    <div class="menu single active" id="newsMenu" data-component="touchMenuHover">
+        <a class="menuHead" data-trigger="menu" href="/news/">News</a>
+        <div class="menuWrapper">
+            <!--[if lt IE 9]>
+            <noscript><div class="navTag"></noscript>
+            <![endif]-->
+            <nav><div class="navWrapper">
+                    <ul class="topCategories"><li class="hed">Top Categories</li>
+                        <li><a href="/apple/" data-vanity-rewritten="true">Apple</a></li>
+                        <li><a href="/topics/computers/" data-vanity-rewritten="true">Computers</a></li>
+                        <li><a href="/crave/" data-vanity-rewritten="true">Crave</a></li>
+                                                    <li><a href="/deals/">Deals</a></li>
+                                                <li><a href="/google/" data-vanity-rewritten="true">Google</a></li>
+                        <li><a href="/topics/internet/" data-vanity-rewritten="true">Internet</a></li>
+                        <li><a href="/tags/microsoft/">Microsoft</a></li>
+                        <li><a href="/topics/mobile/" data-vanity-rewritten="true">Mobile</a></li>
+                        <li><a href="/topics/photography/" data-vanity-rewritten="true">Photography</a></li>
+                        <li><a href="/topics/security/" data-vanity-rewritten="true">Security</a></li>
+                        <li><a href="/topics/sci-tech/" data-vanity-rewritten="true">Sci-Tech</a></li>
+                        <li><a href="/topics/tech-culture/" data-vanity-rewritten="true">Tech Culture</a></li>
+                        <li><a href="/topics/tech-industry/" data-vanity-rewritten="true">Tech Industry</a></li>
+                        <li><a href="/pictures/">Photo Galleries</a></li>
+                        <li><a href="/videos/cnet-news/" data-vanity-rewritten="true">Video</a></li>
+                        <li><a href="/forums/">Forums</a></li>
+                    </ul><ul class="topItems forums" data-menu="news-forums"><li class="hed">Popular Forums</li>
+<li class="topItem">
+    <a href="/forums/computer-help/">
+            <h3>Computer Help</h3>
+    </a>
+</li>
+<li class="topItem">
+    <a href="/forums/computer-newbies/">
+            <h3>Computer Newbies</h3>
+    </a>
+</li>
+<li class="topItem">
+    <a href="/forums/laptops/">
+            <h3>Laptops</h3>
+    </a>
+</li>
+<li class="topItem">
+    <a href="/forums/phones/">
+            <h3>Phones</h3>
+    </a>
+</li>
+<li class="topItem">
+    <a href="/forums/tvs-home-theaters/">
+            <h3>TVs &amp; Home Theaters</h3>
+    </a>
+</li>
+<li class="topItem">
+    <a href="/forums/networking-wireless/">
+            <h3>Networking &amp; Wireless</h3>
+    </a>
+</li>
+<li class="topItem">
+    <a href="/forums/windows-7/">
+            <h3>Windows 7</h3>
+    </a>
+</li>
+<li class="topItem">
+    <a href="/forums/windows-10/">
+            <h3>Windows 10</h3>
+    </a>
+</li>
+<li class="topItem">
+    <a href="/forums/cameras/">
+            <h3>Cameras</h3>
+    </a>
+</li>
+<li class="topItem">
+    <a href="/forums/">
+            <h3>All Forums</h3>
+    </a>
+</li>                    </ul></div>
+            </nav><!--[if lt IE 9]>
+            <noscript></div></noscript>
+            <![endif]--></div>
+    </div>
+    <div class="menu single" id="videoMenu" data-component="touchMenuHover">
+        <a class="menuHead" data-trigger="menu" href="/videos/">Video</a>
+        <div class="menuWrapper">
+        <!--[if lt IE 9]>
+        <noscript><div class="navTag"></noscript>
+        <![endif]-->
+        <nav><div class="navWrapper">
+                <ul class="topCategories"><li class="hed">Top Categories</li>
+                    <li><a href="/apple-byte/" data-vanity-rewritten="true">Apple Byte</a></li>
+                    <li><a href="/carfection/" target="_blank" data-vanity-rewritten="true">Carfection</a></li>
+                    <li><a href="/cnet-top-5/" data-vanity-rewritten="true">CNET Top 5</a></li>
+                    <li><a href="/cnet-update/" data-vanity-rewritten="true">CNET Update</a></li>
+                    <li><a href="/googlicious/" data-vanity-rewritten="true">Googlicious</a></li>
+                    <li><a href="/how-to/videos/" data-vanity-rewritten="true">How To</a></li>
+                    <li><a href="/netpicks/" data-vanity-rewritten="true">Netpicks</a></li>
+                    <li><a href="/next-big-thing/" data-vanity-rewritten="true">Next Big Thing</a></li>
+                    <li><a href="/videos/cnet-news/" data-vanity-rewritten="true">News</a></li>
+                    <li><a href="/cnet-on-cars/" target="_blank" data-vanity-rewritten="true">On Cars</a></li>
+                    <li><a href="/topics/phones/videos/" data-vanity-rewritten="true">Phones</a></li>
+                    <li><a href="/prizefight/" data-vanity-rewritten="true">Prizefight</a></li>
+                    <li><a href="/topics/tablets/videos/" data-vanity-rewritten="true">Tablets</a></li>
+                    <li><a href="/tomorrow-daily/" data-vanity-rewritten="true">Tomorrow Daily</a></li>
+                    <li><a href="/cnet-podcasts/" data-vanity-rewritten="true">CNET Podcasts</a></li>
+                </ul></div>
+        </nav><!--[if lt IE 9]>
+        <noscript></div></noscript>
+        <![endif]--></div>
+    </div>
+    <div class="menu single" id="howtoMenu" data-component="touchMenuHover">
+        <a class="menuHead" data-trigger="menu" href="/how-to/">How To</a>
+        <div class="menuWrapper">
+            <!--[if lt IE 9]>
+            <noscript><div class="navTag"></noscript>
+            <![endif]-->
+            <nav><ul class="topCategories"><li class="hed">Top Categories</li>
+                    <li><a href="/topics/appliances/how-to/">Appliances</a></li>
+                    <li><a href="/topics/computers/how-to/">Computers</a></li>
+                    <li><a href="/topics/gaming/how-to/">Gaming</a></li>
+                    <li><a href="/topics/home-entertainment/how-to/">Home Entertainment</a></li>
+                    <li><a href="/topics/internet/how-to/">Internet</a></li>
+                    <li><a href="/topics/mobile-apps/how-to/">Mobile Apps</a></li>
+                    <li><a href="/topics/phones/how-to/">Phones</a></li>
+                    <li><a href="/topics/photography/how-to/">Photography</a></li>
+                    <li><a href="/topics/security/how-to/">Security</a></li>
+                    <li><a href="/topics/smart-home/how-to/">Smart Home</a></li>
+                    <li><a href="/topics/tablets/how-to/">Tablets</a></li>
+                    <li><a href="/topics/wearable-tech/how-to/">Wearable Tech</a></li>
+                    <li><a href="/forums/">Forums</a></li>
+                    <li><a href="/internet-speed-test/" data-vanity-rewritten="true">Speed Test</a></li>
+                </ul></nav><!--[if lt IE 9]>
+            <noscript></div></noscript>
+            <![endif]--></div>
+    </div>
+            <div class="menu single " id="dealsMenu" data-component="touchMenuHover">
+            <a class="menuHead" href="/deals/" data-vanity-rewritten="true">Deals</a>
+            <div class="menuWrapper">
+                <!--[if lt IE 9]>
+                <noscript><div class="navTag"></noscript>
+                <![endif]-->
+                <nav><ul class="topCategories"><li class="hed">Top Categories</li>
+                        <li><a href="/deals/" data-vanity-rewritten="true">All Deals</a></li>
+                        <li><a href="/cheapskate/" data-vanity-rewritten="true">Cheapskate</a></li>
+                        <li><a href="/holiday-gift-guide/under-50/" data-vanity-rewritten="true">Best tech under $50</a></li>
+                        <li><a href="/web-hosting/" data-vanity-rewritten="true">Web Hosting Deals</a></li>
+                    </ul></nav><!--[if lt IE 9]>
+                <noscript></div></noscript>
+                <![endif]--></div>
+        </div>
+        <div class="menu" id="download">
+        <a class="menuHead" href="http://download.cnet.com" data-user-action="legacy" data-component="trackDownload">Download</a>
+    </div>
+
+    
+                
+
+<div id="headerLogin" class="menu single headerLogin" data-component="touchMenuHover">
+    <div class="menuHead" data-trigger="menu">
+        <span data-user-var="userName">Log In / Join</span>
+        <div class="user-avatar" data-user-var="avatar"></div>
+            </div>
+    <div class="menuWrapper">
+        <nav><ul class="topCategories logged-out"><li>
+                    <a data-user-show='{"action":"login","params":{"appId":376},"suppressReload":false}'>Log In to CNET</a>
+                </li>
+                <li class="social-login">
+                    <span class="sign-in-with">Sign In with</span>
+                                            <span class="social-site sa-facebook" data-user-social='{"socialSite":"facebook","action":"login","params":{"appId":376}}'>Facebook
+                                                </span>
+                                            <span class="social-site sa-googleplus" data-user-social='{"socialSite":"googleplus","action":"login","params":{"appId":376}}'>Googleplus
+                                                </span>
+                                            <span class="social-site sa-yahoo" data-user-social='{"socialSite":"yahoo","action":"login","params":{"appId":376}}'>Yahoo
+                                                </span>
+                                    </li>
+                <li>
+                    <a data-user-show='{"action":"register","params":{"appId":376}}'>Join CNET</a>
+                </li>
+                <li><a href="/user/join-cnet/">Member Benefits</a></li>
+            </ul><ul class="topCategories logged-in"><li class="social-login">
+                    <span>
+                                            <span class="social-site sa-facebook" data-user-link="facebook">
+                            Facebook
+                                                    </span>
+                                            <span class="social-site sa-googleplus" data-user-link="googleplus">
+                            Googleplus
+                                                    </span>
+                                            <span class="social-site sa-yahoo" data-user-link="yahoo">
+                            Yahoo
+                                                    </span>
+                                        </span>
+                </li>
+                <li><a data-user-var="profileLink" data-template="/profiles/__username__/">My Profile</a></li>
+                <li><a href="/forums/">Forums</a></li>
+                <li><a href="/user/logout/" data-user-action="logout" data-user-suppress-refresh="false">Log Out</a></li>
+            </ul></nav></div>
+</div>
+
+    
+<div class="menu single" id="editionMenu" data-component="touchMenuHover">
+    <span class="menuHead" data-trigger="menu"><span id="selectedEdition">US</span> Edition</span>
+    <div class="menuWrapper">
+        <!--[if lt IE 9]>
+        <noscript><div class="navTag"></noscript>
+        <![endif]-->
+        <nav><ul class="topCategories" data-component="editionToggler"><li class="hed">Other editions</li>
+                                                    <li><a data-edition="uk" href="/uk/pictures/internet-memes-born-at-the-super-bowl/">United Kingdom</a></li>
+                                                    <li><a data-edition="au" href="/au/pictures/internet-memes-born-at-the-super-bowl/">Australia</a></li>
+                                <li><a target="_blank" href="http://www.cnetnews.com.cn/">China</a></li>
+                <li><a target="_blank" href="http://www.cnetfrance.fr/">France</a></li>
+                <li><a target="_blank" href="http://www.cnet.de/">Germany</a></li>
+                <li><a target="_blank" href="http://japan.cnet.com/">Japan</a></li>
+                <li><a target="_blank" href="http://www.cnet.co.kr/">Korea</a></li>
+                                    <li><a data-edition="es" href="/es/">CNET en Español</a></li>
+                            </ul></nav><!--[if lt IE 9]>
+        <noscript></div></noscript>
+        <![endif]--></div>
+</div>
+</nav></div>
+        </div>
+    </header><div id="rbSkin">
+                        <span id="adSkinLeft"></span>
+            <span id="adSkinRight"></span>
+            
+                                    <div id="skin-56c3a8e40964c" class="ad-skin" data-ad="skin">
+    <script>
+        window.console && console.log && console.log("ADS: queuing skin-56c3a8e40964c for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("skin-56c3a8e40964c");
+    </script></div>
+                                        <div id="leaderTopWrap">
+                                    
+                                    <div id="leader-top-56c3a8e40964c" class="ad-leader-top" data-ad="leader-top">
+    <script>
+        window.console && console.log && console.log("ADS: queuing leader-top-56c3a8e40964c for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("leader-top-56c3a8e40964c");
+    </script></div>
+                                        </div>
+                
+                                    <div id="intromercial-56c3a8e40964c" class="ad-intromercial" data-ad="intromercial">
+    <script>
+        window.console && console.log && console.log("ADS: queuing intromercial-56c3a8e40964c for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("intromercial-56c3a8e40964c");
+    </script></div>
+            
+                    <div id="rbContent" class="container ">
+                <ul class="breadcrumb" section="bc"><li class="first"><a href="/"><span>CNET</span></a></li>
+                                <li><a href="/topics/internet/"><span>Internet</span></a></li>
+                <li><span>10 big-game fails that kicked off winning memes (pictures)</span></li>
+</ul><div id="galleryPage">
+        <div class="container">
+    <div class="row">
+                <div class="col-8">
+                                                    
+                                                        
+                                            
+
+
+
+    
+
+<div class="image-gallery" data-component="imageGallery" data-image-gallery-options='{"count":10,"index":1,"pushState":{"route":"\/pictures\/internet-memes-born-at-the-super-bowl\/"},"nextOverride":"\/pictures\/","edition":"us"}'>
+
+    <div class="pageTools" data-component="touchMenuHover">
+                <div class="sharebarOuter">
+            
+
+
+
+    
+<div class="sharebarRedesign inline-view atTop" section="topSharebar" data-component="sharebar" data-sharebar-options='{"title":"10 big-game fails that kicked off winning memes (pictures)","description":"Standout Super Bowl moments from Left Shark to botched national anthem lyrics have inspired the Internet to make some of its most iconic memes. We\u0027re talking about you, Richard Sherman.","url":"http:\/\/www.cnet.com\/pictures\/internet-memes-born-at-the-super-bowl\/","popupWidth":780,"popupHeight":510,"data":{"media":""}}'>
+    <div class="sharebarWrapper col-8">
+        <ul class="sharebarContainer"><li class="share-button sharebarRedesignButton">
+        <a data-popup="facebook">
+            <div class="social-button-small-redesign facebook">
+                                    <div class="icon icon-small-facebook">facebook</div>
+                            </div>
+        </a>
+    </li>
+
+            
+                                        <li class="share-button sharebarRedesignButton">
+        <a data-popup="twitter">
+            <div class="social-button-small-redesign twitter">
+                                    <div class="icon icon-small-twitter">twitter</div>
+                            </div>
+        </a>
+    </li>
+
+            
+                                        <li class="share-button sharebarRedesignButton">
+        <a data-popup="pinterest">
+            <div class="social-button-small-redesign pinterest">
+                                    <div class="icon icon-small-pinterest">pinterest</div>
+                            </div>
+        </a>
+    </li>
+
+            
+                                        <li class="share-button sharebarRedesignButton">
+        <a data-popup="googleplus">
+            <div class="social-button-small-redesign googleplus">
+                                    <div class="icon icon-small-googleplus">googleplus</div>
+                            </div>
+        </a>
+    </li>
+
+            
+                                        <li class="share-button sharebarRedesignButton">
+        <a data-popup="email">
+            <div class="social-button-small-redesign email">
+                                    <div class="icon icon-small-email">email</div>
+                            </div>
+        </a>
+    </li>
+
+            
+            
+                            <li class="share-button sharebarRedesignButton moreButton" data-component="touchMenuHover">
+                    <span class="moreWrap">
+                                                <a>
+                            <div class="social-button-small-redesign more">
+                                                                    <div class="icon icon-small-more">more</div>
+                                                            </div>
+                        </a>
+                    </span>
+                    <div class="hoverWrap">
+                        <ul><li class="share-button sharebarRedesignButton">
+        <a data-popup="reddit">
+            <div class="social-button-small-redesign reddit">
+                                    <div class="icon icon-small-reddit">reddit</div>
+                            </div>
+        </a>
+    </li>
+
+                            
+                                                                        <li class="share-button sharebarRedesignButton">
+        <a data-popup="linkedin">
+            <div class="social-button-small-redesign linkedin">
+                                    <div class="icon icon-small-linkedin">linkedin</div>
+                            </div>
+        </a>
+    </li>
+
+                            
+                                                                        <li class="share-button sharebarRedesignButton">
+        <a data-popup="tumblr">
+            <div class="social-button-small-redesign tumblr">
+                                    <div class="icon icon-small-tumblr">tumblr</div>
+                            </div>
+        </a>
+    </li>
+
+                            
+                                                    </ul></div>
+                </li>
+                    </ul></div>
+
+                        <div id="sponsor_ad" class="sponsor">
+                
+                                    <div id="social-logo-bottom-56c3a8e40964c" class="ad-social-logo-bottom" data-ad="social-logo-bottom">
+    <script>
+        window.console && console.log && console.log("ADS: queuing social-logo-bottom-56c3a8e40964c for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("social-logo-bottom-56c3a8e40964c");
+    </script></div>
+                        </div>
+            </div>
+        </div>
+    </div>
+
+            <div class="viewport">
+                            <ul class="images"><li class="image selected" data-item="image" data-image-index="1">
+        <div>
+                                        
+                                <figure class=" img"><img src="http://cnet2.cbsistatic.com/hub/i/r/2016/02/04/47175d31-b500-407e-bd1a-370601484fef/resize/autox878/ae477ea81464fb7b3a398efd26415983/left-shark.jpg" class="" alt="" height="878" width="auto"></figure></div>
+    </li>
+    
+    
+        
+    <li class="image" data-item="image" data-image-index="2">
+        <div>
+                                    
+                    <figure class=" img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="" alt="" height="auto" width="1170" data-src="http://cnet2.cbsistatic.com/hub/i/r/2016/02/05/4559c635-6af7-4073-ac78-fed5e6d87aae/resize/1170xauto/8d4d512cdc2722003237a25415198938/katy-perry-lion-tiger.jpg"></figure></div>
+    </li>
+    
+    
+        
+    <li class="image" data-item="image" data-image-index="3">
+        <div>
+                                    
+                    <figure class=" img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="" alt="" height="auto" width="1170" data-src="http://cnet4.cbsistatic.com/hub/i/r/2016/02/05/70ba890a-b3a1-473a-8d17-b4caa37acabd/resize/1170xauto/d5e0454c7dcc8f26ee1f300ce332f996/super-bowl-shuffle.jpg"></figure></div>
+    </li>
+    
+    
+        
+    <li class="image" data-item="image" data-image-index="4">
+        <div>
+                                    
+                    <figure class=" img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="" alt="" height="auto" width="1170" data-src="http://cnet1.cbsistatic.com/hub/i/r/2016/02/05/b02ee4e7-19a5-44fa-a14d-2f3c5b0fc127/resize/1170xauto/48cf496879ec241a9ae81482a7181ad8/nannerpuss.jpg"></figure></div>
+    </li>
+    
+    
+        
+    <li class="image" data-item="image" data-image-index="5">
+        <div>
+                                    
+                    <figure class=" img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="" alt="" height="auto" width="1170" data-src="http://cnet3.cbsistatic.com/hub/i/r/2016/02/05/7e7051a9-df66-48b2-9d29-40256ef7d652/resize/1170xauto/e32b11eca057e5716fea1b9920759c2d/old-spice-guy.jpg"></figure></div>
+    </li>
+    
+    
+        
+    <li class="image" data-item="image" data-image-index="6">
+        <div>
+                                    
+                    <figure class=" img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="" alt="" height="auto" width="1170" data-src="http://cnet3.cbsistatic.com/hub/i/r/2016/02/05/db2e82ec-3347-42b6-8e3b-3930348332fd/resize/1170xauto/0e55f0334be0215dc8b092423b682d8e/unflattering-beyonce.jpg"></figure></div>
+    </li>
+    
+    
+        
+    <li class="image" data-item="image" data-image-index="7">
+        <div>
+                                    
+                    <figure class=" img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="" alt="" height="auto" width="1170" data-src="http://cnet3.cbsistatic.com/hub/i/r/2016/02/05/1b754f28-b794-405a-b548-a9f61361aec5/resize/1170xauto/e7489d7e79c4b82cf55d69c651dfea49/wrong-lyrics-christina.jpg"></figure></div>
+    </li>
+    
+    
+                    
+    <li class="image" data-item="image" data-image-index="8">
+        <div>
+                                    
+                    <figure class=" img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="" alt="" height="878" width="auto" data-src="http://cnet3.cbsistatic.com/hub/i/r/2016/02/05/9cdea3c8-d90f-42d3-b989-68eec4fc4fac/resize/autox878/ba84d36cb1631edeffe62901a071b590/richard-sherman-sad.jpg"></figure></div>
+    </li>
+    
+    
+        
+    <li class="image" data-item="image" data-image-index="9">
+        <div>
+                                    
+                    <figure class=" img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="" alt="" height="auto" width="1170" data-src="http://cnet4.cbsistatic.com/hub/i/r/2016/02/05/a443d781-df44-44d1-b172-fbef01fa8433/resize/1170xauto/7f6aa13b9798468e54b7396c7e2a710c/pete-carroll.jpg"></figure></div>
+    </li>
+    
+    
+        
+    <li class="image" data-item="image" data-image-index="10">
+        <div>
+                                    
+                    <figure class=" img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="" alt="" height="auto" width="1170" data-src="http://cnet1.cbsistatic.com/hub/i/r/2016/02/05/f052803b-b8b0-4055-a367-7475aec2174d/resize/1170xauto/c7de99910d55a144e43b417c87d1a53a/super-bowl-blackout-meme.jpg"></figure></div>
+    </li>
+                </ul><div class="slidecontrols">
+                    <a class="prev js disabled" data-to-image="previous" data-control-name="imageprev">
+                        <span class="arrow">
+                            Prev
+                        </span>
+                    </a>
+                    <a class="next js" data-to-image="next" data-control-name="imagenext">
+                        <span class="arrow">
+                            Next
+                        </span>
+                    </a>
+                    <noscript>
+                        <style>.slidecontrols a.js {display:none !important;}</style><a class="next" href="/pictures/internet-memes-born-at-the-super-bowl/2/">
+                            <span class="arrow">
+                                Next
+                            </span>
+                        </a>
+                    </noscript>
+                </div>
+                    </div>
+    
+                        
+<div class="thumbViewport" data-item="thumb-viewport">
+    <ul class="thumb-grid" data-item="thumb-grid" data-grid-index="1" section="imagethumbnail"><li class="thumb" data-item="thumb">
+                                    
+        <a href="http://www.cnet.com/pictures/internet-memes-born-at-the-super-bowl/" class=" selected" data-control-name="imagethumbnail" data-to-image="1">
+                                        
+                                <figure class=" img"><img src="http://cnet1.cbsistatic.com/hub/i/r/2016/02/04/47175d31-b500-407e-bd1a-370601484fef/thumbnail/100x75/0ea846f19ae69eca9ca577fac1c378dd/left-shark.jpg" class="" alt="" height="75" width="100"></figure></a>
+    </li>
+    <li class="thumb" data-item="thumb">
+                                    
+        <a href="http://www.cnet.com/pictures/internet-memes-born-at-the-super-bowl/2/" class="" data-control-name="imagethumbnail" data-to-image="2">
+                                        
+                                <figure class=" img"><img src="http://cnet4.cbsistatic.com/hub/i/r/2016/02/05/4559c635-6af7-4073-ac78-fed5e6d87aae/thumbnail/100x75/0388c5f42661bf347e6d658670b4dfca/katy-perry-lion-tiger.jpg" class="" alt="" height="75" width="100"></figure></a>
+    </li>
+    <li class="thumb" data-item="thumb">
+                                    
+        <a href="http://www.cnet.com/pictures/internet-memes-born-at-the-super-bowl/3/" class="" data-control-name="imagethumbnail" data-to-image="3">
+                                        
+                                <figure class=" img"><img src="http://cnet3.cbsistatic.com/hub/i/r/2016/02/05/70ba890a-b3a1-473a-8d17-b4caa37acabd/thumbnail/100x75/e30a3b9b71f2db242aeccc2e3500b8f5/super-bowl-shuffle.jpg" class="" alt="" height="75" width="100"></figure></a>
+    </li>
+    <li class="thumb" data-item="thumb">
+                                    
+        <a href="http://www.cnet.com/pictures/internet-memes-born-at-the-super-bowl/4/" class="" data-control-name="imagethumbnail" data-to-image="4">
+                                        
+                                <figure class=" img"><img src="http://cnet3.cbsistatic.com/hub/i/r/2016/02/05/b02ee4e7-19a5-44fa-a14d-2f3c5b0fc127/thumbnail/100x75/98ddc9e86fbdcf1978aae2dcc3f13aa8/nannerpuss.jpg" class="" alt="" height="75" width="100"></figure></a>
+    </li>
+    <li class="thumb" data-item="thumb">
+                                    
+        <a href="http://www.cnet.com/pictures/internet-memes-born-at-the-super-bowl/5/" class="" data-control-name="imagethumbnail" data-to-image="5">
+                                        
+                                <figure class=" img"><img src="http://cnet2.cbsistatic.com/hub/i/r/2016/02/05/7e7051a9-df66-48b2-9d29-40256ef7d652/thumbnail/100x75/8bd8d0cc5a1fd36c225ef7a5ebbd7593/old-spice-guy.jpg" class="" alt="" height="75" width="100"></figure></a>
+    </li>
+    <li class="thumb" data-item="thumb">
+                                    
+        <a href="http://www.cnet.com/pictures/internet-memes-born-at-the-super-bowl/6/" class="" data-control-name="imagethumbnail" data-to-image="6">
+                                        
+                                <figure class=" img"><img src="http://cnet2.cbsistatic.com/hub/i/r/2016/02/05/db2e82ec-3347-42b6-8e3b-3930348332fd/thumbnail/100x75/e6164e7cdd4cadfaff66646ed3b1de21/unflattering-beyonce.jpg" class="" alt="" height="75" width="100"></figure></a>
+    </li>
+    <li class="thumb" data-item="thumb">
+                                    
+        <a href="http://www.cnet.com/pictures/internet-memes-born-at-the-super-bowl/7/" class="" data-control-name="imagethumbnail" data-to-image="7">
+                                        
+                                <figure class=" img"><img src="http://cnet1.cbsistatic.com/hub/i/r/2016/02/05/1b754f28-b794-405a-b548-a9f61361aec5/thumbnail/100x75/916bbcac2d2c1ed9dfb30e139e007e45/wrong-lyrics-christina.jpg" class="" alt="" height="75" width="100"></figure></a>
+    </li>
+    <li class="thumb" data-item="thumb">
+                                    
+        <a href="http://www.cnet.com/pictures/internet-memes-born-at-the-super-bowl/8/" class="" data-control-name="imagethumbnail" data-to-image="8">
+                                        
+                                <figure class=" img"><img src="http://cnet2.cbsistatic.com/hub/i/r/2016/02/05/9cdea3c8-d90f-42d3-b989-68eec4fc4fac/thumbnail/100x75/b873a9c607e0019533ab8c4a9b358abf/richard-sherman-sad.jpg" class="" alt="" height="75" width="100"></figure></a>
+    </li>
+    <li class="thumb" data-item="thumb">
+                                    
+        <a href="http://www.cnet.com/pictures/internet-memes-born-at-the-super-bowl/9/" class="" data-control-name="imagethumbnail" data-to-image="9">
+                                        
+                                <figure class=" img"><img src="http://cnet4.cbsistatic.com/hub/i/r/2016/02/05/a443d781-df44-44d1-b172-fbef01fa8433/thumbnail/100x75/7d1c24d17f2fbe427bac115eb7d4bdfc/pete-carroll.jpg" class="" alt="" height="75" width="100"></figure></a>
+    </li>
+    <li class="thumb" data-item="thumb">
+                                    
+        <a href="http://www.cnet.com/pictures/internet-memes-born-at-the-super-bowl/10/" class="" data-control-name="imagethumbnail" data-to-image="10">
+                                    
+                    <figure class=" img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="" alt="" height="75" width="100" data-src="http://cnet2.cbsistatic.com/hub/i/r/2016/02/05/f052803b-b8b0-4055-a367-7475aec2174d/thumbnail/100x75/73d1b85ea4738003918970b73dfc7aed/super-bowl-blackout-meme.jpg"></figure></a>
+    </li>
+            </ul><div class="thumb-controls" data-item="grid-control">
+        <span class="prev-small" data-control-name="thumbPrev" data-to-grid="previous">Prev</span>
+        <span class="next-small" data-control-name="thumbNext" data-to-grid="next">Next</span>
+    </div>
+</div>
+            </div>
+                                                                    </div>
+            <div class="col-4">
+                                                    
+                                                        
+                                                <div class="gallery-controls">
+    <div class="count" data-item="image-count"><span data-item="index">1</span>  of <span>10</span></div>
+    </div>
+
+<div class="gallery-header-border"></div>
+
+
+    
+
+<div class="scroll-wrapper"> <div data-component="scrollbarArea" data-scrollbar-area-options='{"createWrapper":false,"disableBodyScroll":"true","scrollx":"false","extraScrollElement":"#galleryPage","verticalKeyboardScroll":true,"enableTracking":false}'> 
+    <header class="gallery-header"><div id="mpu-top" class="mpu">
+            
+                                    <div id="mpu-top-56c3a8e40964c" class="ad-mpu-top" data-ad="mpu-top">
+    <script>
+        window.console && console.log && console.log("ADS: queuing mpu-top-56c3a8e40964c for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("mpu-top-56c3a8e40964c");
+    </script></div>
+                    </div>
+
+        <h1 class="title">10 big-game fails that kicked off winning memes (pictures)</h1>
+
+                                                            <div class="open">
+            <p data-item="dek">Standout Super Bowl moments from Left Shark to botched national anthem lyrics have inspired the Internet to make some of its most iconic memes. We're talking about you, Richard Sherman.</p>
+            <div data-item="dekControl" data-text="Read More">Read Less</div>
+        </div>
+    </header><div class="image-meta selected" data-item="meta" data-custom-ad-vars='{"mfr":"","carrier":"","topics":["internet"]}'>
+                    <h2>The Left Shark</h2>
+        
+        <div class="caption" section="relatedreviewtext">
+            <p>If you don't have a team to root for, or even a reason to like football, going to Super Bowl parties can be as miserable as being a Cleveland Browns fan. Thankfully, the Internet usually jumps into the fray to pull out a gem or two as meme fodder. Here's a look back at some of the most memorable.</p><p>Last year, singer Katy Perry's ridiculously entertaining Super Bowl halftime show created several popular memes, but none was more famous than her cartilaginous backup dancer, who <a href="http://www.cnet.com/news/seahawks-lose-super-bowl-but-left-shark-wins-the-internet/">got most of the attention </a>because he seemed to be doing his own thing. </p>
+                    </div>
+
+        <div class="credits">
+                                                                    
+                            <div class="time">
+                    <strong>Published: </strong>
+                    <time datetime="February 6, 2016 6:00 AM PST">February 6, 2016 6:00 AM PST</time></div>
+            
+                            <strong>Photo by: </strong><span>Know Your Meme</span>
+            
+                            <strong> /                     Caption by:
+                </strong>
+                                    <a rel="author" href="/profiles/danny.gallagher/" itemprop="name" target="_blank">
+                                    Danny Gallagher</a>                    </div>
+
+        
+                                                                                    
+    <div class="relatedObject slide">
+        <a class="imageLinkWrapper" href="/news/seahawks-lose-super-bowl-but-left-shark-wins-the-internet/" target="_blank">
+                <div class="">
+            <span class="relatedTypeLabel">Related Article</span>
+                <h3>Seahawks lose Super Bowl, but Left Shark wins the Internet</h3>
+            </div>
+        </a>
+    </div>
+                        </div>
+                    
+    <div class="image-meta" data-item="meta" data-custom-ad-vars='{"mfr":"","carrier":"","topics":["internet"]}'>
+                    <h2>Katy Perry's lion, er, tiger...No wait, lion.</h2>
+        
+        <div class="caption" section="relatedreviewtext">
+            <p>The other animal at Katy Perry's halftime show that gained unexpected attention was considerably bigger than Left Shark. It also looked like something the crew stole from the set of the inevitable remake of "Logan's Run."</p><p>Perry rode a massive feline into the University of Phoenix Stadium in Glendale, Arizona, while singing her chart topper (what else?) "Roar." However, the Internet wasn't exactly sure if the animal was a lion, a tiger or some hideous mutation of the two. (I would have called it a "tion.") <a href="https://www.washingtonpost.com/news/arts-and-entertainment/wp/2015/02/01/five-very-important-questions-about-katy-perrys-super-bowl-halftime-show/">According to</a> The Washington Post, a Twitter debate about the statue's species erupted during the show and another meme was born. </p><p>A story that <a href="http://www.si.com/extra-mustard/2015/03/05/katy-perry-super-bowl-halftime-show-lion">appeared</a> on Sports Illustrated's Extra Mustard blog in March 2015 featured an interview with the artists who designed and built the float, and they confirmed it was a lion. That should have ended the debate, but the memes continued to roll in, much to the chagrin of Detroit Lions fans, who couldn't escape all the jokes about how this was the only time a "Lion" would appear at the Super Bowl. </p>
+                    </div>
+
+        <div class="credits">
+                                                                    
+                            <div class="time">
+                    <strong>Published: </strong>
+                    <time datetime="February 6, 2016 6:00 AM PST">February 6, 2016 6:00 AM PST</time></div>
+            
+                            <strong>Photo by: </strong><span>http://www.reddit.com/r/SubredditDrama</span>
+            
+                            <strong> /                     Caption by:
+                </strong>
+                                    <a rel="author" href="/profiles/danny.gallagher/" itemprop="name" target="_blank">
+                                    Danny Gallagher</a>                    </div>
+
+        
+            </div>
+                    
+    <div class="image-meta" data-item="meta" data-custom-ad-vars='{"mfr":"","carrier":"","topics":["internet"]}'>
+                    <h2>The Super Bowl shuffle</h2>
+        
+        <div class="caption" section="relatedreviewtext">
+            <p>In 1985, the Internet might not have been accessible to people without computer science doctorates, but those who would help build its most revered icons of mockery held on to the memory of this '80s rap anthem long enough to make it even more famous on the Web. </p><p>The Chicago Bears went to Super Bowl XX at the end of their stellar '85-'86 season, when they beat the New England Patriots to take home their first and only Lombardi trophy. Bears wide receiver Willie Gault got the bright idea to do a rap song before the big game to celebrate the team's season and raise money for a good cause. The song not only did that, it also became a certified hit, going platinum and even grabbing a Grammy nomination for best rhythm and blues performance by a group (it lost to Prince's "Kiss"). </p><p>When the music video found its way to YouTube, parodies starting popping up, like the "<a href="https://youtu.be/NVSVDO6QY7k">Super Broker Shuffle</a>" used to promote the Southern Food Brokerage Corporation. Another send-up starred members of the Chicago Bears Shufflin' Crew, including head coach Mike Ditka, in a new, commercial version on Funny or Die called "<a href="http://www.funnyordie.com/videos/1dd33584a4/superbowl-shuffle-2010?_cc=__d___&amp;_ccid=8642988831f18282">The Boost Mobile Shuffle</a>." The Comedy Central sketch-show "<a href="https://www.youtube.com/watch?v=7N8xwXUk_bY">Key &amp; Peele</a>," which became a hit due in part to its massive presence on YouTube, even spoofed the one-hit wonder using the ludicrously named players from their "East-West Bowl" series.</p>
+                    </div>
+
+        <div class="credits">
+                                                                    
+                            <div class="time">
+                    <strong>Published: </strong>
+                    <time datetime="February 6, 2016 6:00 AM PST">February 6, 2016 6:00 AM PST</time></div>
+            
+                            <strong>Photo by: </strong><span>EBaumsWorld video screenshot by Danny Gallagher/CNET</span>
+            
+                            <strong> /                     Caption by:
+                </strong>
+                                    <a rel="author" href="/profiles/danny.gallagher/" itemprop="name" target="_blank">
+                                    Danny Gallagher</a>                    </div>
+
+        
+            </div>
+                    
+    <div class="image-meta" data-item="meta" data-custom-ad-vars='{"mfr":"","carrier":"","topics":["internet"]}'>
+                    <h2>The Nannerpuss</h2>
+        
+        <div class="caption" section="relatedreviewtext">
+            <p>This breakfast creation looks like Cthulhu if he were part of a complete breakfast, but it was actually created for a short but effective Super Bowl commercial. </p><p>Diner chain Denny's bought time for its first Super Bowl ad to run during Super Bowl XLIII in 2009. The advertising agency Denny's hired came up with <a href="https://www.youtube.com/watch?v=4kK6F7t-x6E" target="_blank">a 15-second ad</a> that opened with the goofy breakfast creation before a title card crushed him and the voice of Burt Reynolds asked, "Isn't it about time for a serious breakfast?" </p><p>The goal may have been to get people to pay attention to the second half of the commercial, but the Internet glommed on to the first half. The term Nannerpuss earned an official entry in the <a href="http://www.urbandictionary.com/define.php?term=Nannerpus" target="_blank">Urban Dictionary</a>. The character also became the focus of <a href="https://www.facebook.com/nannerpussforeveryone/?fref=ts" target="_blank">a Facebook page</a>, which scored a bunch of followers when the 'puss became a candidate for the 2012 presidential election. A knit version of Nannerpuss also went viral after popping up on <a href="http://www.craftster.org/forum/index.php?topic=304342.0" target="_blank">a Craftster forum</a>. </p>
+                    </div>
+
+        <div class="credits">
+                                                                    
+                            <div class="time">
+                    <strong>Published: </strong>
+                    <time datetime="February 6, 2016 6:00 AM PST">February 6, 2016 6:00 AM PST</time></div>
+            
+                            <strong>Photo by: </strong><span>Video screenshot by Danny Gallagher/CNET</span>
+            
+                            <strong> /                     Caption by:
+                </strong>
+                                    <a rel="author" href="/profiles/danny.gallagher/" itemprop="name" target="_blank">
+                                    Danny Gallagher</a>                    </div>
+
+        
+                                                        
+    <div class="relatedObject slide">
+        <a class="imageLinkWrapper" href="/news/how-well-do-you-know-your-super-bowl-ads-quiz-yourself/" target="_blank">
+                    <div class="col-1">
+                
+                                            
+                    <figure class=" img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="" alt="" height="53" width="70" data-src="http://cnet3.cbsistatic.com/hub/i/r/2016/01/29/e20a6559-9264-4719-98c1-aabd4ee4296a/thumbnail/70x53/1ecc9b477cfa6f0dd17999b9d69653a0/super-bowl-50-9873.jpg"></figure></div>
+                <div class="col-3">
+            <span class="relatedTypeLabel">Related Article</span>
+                <h3>How well do you know your Super Bowl ads? Quiz yourself</h3>
+            </div>
+        </a>
+    </div>
+                        </div>
+                    
+    <div class="image-meta" data-item="meta" data-custom-ad-vars='{"mfr":"","carrier":"","topics":["internet"]}'>
+                    <h2>Isaiah 'The Old Spice Guy' Mustafa</h2>
+        
+        <div class="caption" section="relatedreviewtext">
+            <p>Old Spice practically reinvented its image with its <a href="https://www.youtube.com/watch?v=owGykVbfgUE" target="_blank">2010 Super Bowl ad</a>. The spot featured a shirtless Isaiah Mustafa as some kind of magical being who could alter time and space, changing clams into diamonds and suddenly appearing on a horse. </p><p>The ad became a viral hit, and Mustafa became a meme, thanks to lines like "Look at your man, now back at me" and "I'm on a horse." Meme makers co-opted the lines for their various causes and critiques. The ad also became the target of video parodies by YouTube users and shows like "<a href="https://www.youtube.com/watch?v=zkd5dJIVjgM" target="_blank">Sesame Street</a>" that featured a version with lovable, furry old  Grover teaching impressionable viewers about proper use of the preposition "on." </p>
+                    </div>
+
+        <div class="credits">
+                                                                    
+                            <div class="time">
+                    <strong>Published: </strong>
+                    <time datetime="February 6, 2016 6:00 AM PST">February 6, 2016 6:00 AM PST</time></div>
+            
+                            <strong>Photo by: </strong><span>Know Your Meme</span>
+            
+                            <strong> /                     Caption by:
+                </strong>
+                                    <a rel="author" href="/profiles/danny.gallagher/" itemprop="name" target="_blank">
+                                    Danny Gallagher</a>                    </div>
+
+        
+            </div>
+                    
+    <div class="image-meta" data-item="meta" data-custom-ad-vars='{"mfr":"","carrier":"","topics":["internet"]}'>
+                    <h2>Unflattering Beyonce</h2>
+        
+        <div class="caption" section="relatedreviewtext">
+            <p>The Internet loves taking celebrities down a peg or two. Beyonce found herself in the spotlight for the wrong reason when she became a meme during Super Bowl XLVII in 2013. </p><p>She and her former Destiny's Child bandmates reunited for the halftime show, and the cameras caught her making an unflattering face that looked like she got a big, juicy taste of sweaty gym sock. Memes started popping up featuring Beyonce's unconventional mug Photoshopped onto images of <a href="http://www.manolith.com/wp-content/uploads/2013/02/rambo-beyonce.jpg" target="_blank">Sylvester Stallone's Rambo</a> and actor Michael Ironside on the movie poster for "<a href="https://mikethemuse.files.wordpress.com/2013/02/zoe7pp1.jpg?w=640">Scanners</a>." One enterprising Photoshopper used the image to turn Beyonce into <a href="http://soundisstyle.com/wp-content/uploads/2013/02/zoidberg-beyonce-436x675.jpg" target="_blank">Dr. Zoidberg</a> from "Futurama." It only got worse (or better, depending on your point of view) when <a href="http://gawker.com/5981957/beyonces-publicist-wants-to-erase-these-six-unflattering-photos-from-the-internet" target="_blank">Beyonce's publicist</a> pulled a total Kanye by trying to remove the unflattering images of her client from the Internet. </p>
+                    </div>
+
+        <div class="credits">
+                                                                    
+                            <div class="time">
+                    <strong>Published: </strong>
+                    <time datetime="February 6, 2016 6:00 AM PST">February 6, 2016 6:00 AM PST</time></div>
+            
+                            <strong>Photo by: </strong><span>Know Your Meme</span>
+            
+                            <strong> /                     Caption by:
+                </strong>
+                                    <a rel="author" href="/profiles/danny.gallagher/" itemprop="name" target="_blank">
+                                    Danny Gallagher</a>                    </div>
+
+        
+            </div>
+                    
+    <div class="image-meta" data-item="meta" data-custom-ad-vars='{"mfr":"","carrier":"","topics":["internet"]}'>
+                    <h2>Wrong lyrics, Christina</h2>
+        
+        <div class="caption" section="relatedreviewtext">
+            <p>If you become a national pop sensation and you're asked to sing the national anthem where cameras are present, make sure you know the lyrics backward and forward, or the Internet will make you wish you did. <a href="https://www.youtube.com/watch?v=hj5NPNe3jNU" target="_blank">Singer Christina Aguilera</a> learned that lesson in 2011 when she messed up some of the lyrics to "The Star-Spangled Banner" before the start of Super Bowl XLV. </p><p>She later apologized for her mistake, but the Internet used the moment to celebrate every misheard lyric in pop song history with a series of memes dubbed "Wrong Lyrics Christina." The memes featured a head shot of the "Genie in a Bottle" singer on a pink background in midnote as she twisted the lyrics of songs like Elton John's "Tiny Dancer" into "Hold me closer, Tony Danza" and Rihanna's "Only Girl" into "Want to make you feel, like I'm the only squirrel in the world." </p>
+                    </div>
+
+        <div class="credits">
+                                                                    
+                            <div class="time">
+                    <strong>Published: </strong>
+                    <time datetime="February 6, 2016 6:00 AM PST">February 6, 2016 6:00 AM PST</time></div>
+            
+                            <strong>Photo by: </strong><span>Quickmeme</span>
+            
+                            <strong> /                     Caption by:
+                </strong>
+                                    <a rel="author" href="/profiles/danny.gallagher/" itemprop="name" target="_blank">
+                                    Danny Gallagher</a>                    </div>
+
+        
+            </div>
+                    
+    <div class="image-meta" data-item="meta" data-custom-ad-vars='{"mfr":"","carrier":"","topics":["internet"]}'>
+                    <h2>Sad Richard Sherman</h2>
+        
+        <div class="caption" section="relatedreviewtext">
+            <p>Seattle Seahawks' all-star cornerback Richard Sherman achieved Internet infamy in 2014 when he went off on San Francisco 49ers wide receiver Michael Crabtree in a postgame interview with Fox's Erin Andrews. Even though the Seahawks went on to win Super Bowl XLVIII in 2014, Sherman's infamous trash talking became a meme and Sherman critics were squirming in their Starters to get another chance to use Photoshop to stick it to him. </p><p>They got their chance the following year when the Seahawks lost Super Bowl XLIX to the New England Patriots and cameras captured Sherman's shocked face when he witnessed <a href="https://www.youtube.com/watch?v=U7rPIg7ZNQ8" target="_blank">the Pats' Malcolm Butler intercept a pass on the 1-yard line</a> that ended Seattle's chances of achieving back-to-back NFL championships. Meme makers didn't just use Sherman's look of pure, unflinching horror to throw some of Sherman's trash talking back in his horrified face. They also used the moment to express their displeasure over other minor inconveniences such as being charged extra for using guacamole as a topping at restaurants.</p>
+                    </div>
+
+        <div class="credits">
+                                                                    
+                            <div class="time">
+                    <strong>Published: </strong>
+                    <time datetime="February 6, 2016 6:00 AM PST">February 6, 2016 6:00 AM PST</time></div>
+            
+                            <strong>Photo by: </strong><span>Reddit, Imgur</span>
+            
+                            <strong> /                     Caption by:
+                </strong>
+                                    <a rel="author" href="/profiles/danny.gallagher/" itemprop="name" target="_blank">
+                                    Danny Gallagher</a>                    </div>
+
+        
+            </div>
+                    
+    <div class="image-meta" data-item="meta" data-custom-ad-vars='{"mfr":"","carrier":"","topics":["internet"]}'>
+                    <h2>Seahawks' coach Pete Carroll</h2>
+        
+        <div class="caption" section="relatedreviewtext">
+            <p>Seahawks cornerback Richard Sherman may have gotten ribbed following the team's Super Bowl loss in 2015, but head coach Pete Carroll received two extra scoops of meme hate. </p><p>Carroll became a prime meme target on account of his bewildering decision, with only four points keeping his team from a Super Bowl win, to pass the ball at the goal line instead of running it in. The Internet lambasted Carroll with memes featuring his smiling mug behind captions like "Second and goal?/YOLO" and "Superbowl win/Nah, I'll pass." </p><p>A photo later surfaced of the coach serving as a guest barista at a Seattle Starbucks as part of a benefit for his charity A Better Seattle. Pretty much all of the subsequent riffs ran with the same joke about whether he should hand the coffee to customers or "step back five yards and throw it for no reason." </p>
+                    </div>
+
+        <div class="credits">
+                                                                    
+                            <div class="time">
+                    <strong>Published: </strong>
+                    <time datetime="February 6, 2016 6:00 AM PST">February 6, 2016 6:00 AM PST</time></div>
+            
+                            <strong>Photo by: </strong><span>SportsGrid</span>
+            
+                            <strong> /                     Caption by:
+                </strong>
+                                    <a rel="author" href="/profiles/danny.gallagher/" itemprop="name" target="_blank">
+                                    Danny Gallagher</a>                    </div>
+
+        
+            </div>
+                    
+    <div class="image-meta" data-item="meta" data-custom-ad-vars='{"mfr":"","carrier":"","topics":["internet"]}'>
+                    <h2>Super Bowl blackout</h2>
+        
+        <div class="caption" section="relatedreviewtext">
+            <p>Super Bowl XLVII, in 2013, had a bit of an interruption that would have been hard for anyone to pardon. The game took place at the Superdome in New Orleans. At the 1:38 mark of the third quarter, a transformer blew out, causing the entire west side of the stadium to go dark and stay that way for more than 30 minutes, <a href="http://www.si.com/nfl/2015/12/22/super-bowl-xlvii-blackout-superdome">according to</a> an in-depth feature by Sports Illustrated's Greg Bishop. </p><p>Everyone watching at home also witnessed the midgame blackout, and people ran to their computers to turn the city's most embarrassing moment in sports history (if you don't count the New Orleans Saints' dismal 1980 season) into meme gold. </p><p>Some memes juxtaposed the blackout with famous movie scenes, like Clark Griswold trying to light his Christmas display in "National Lampoon's Christmas Vacation" or Johnny from "Airplane!" pulling out the plug to the runway lights just before looking to the camera and remarking "just kidding." Others simply featured pictures of pure black with the caption "Super Bowl XLVII." </p>
+                    </div>
+
+        <div class="credits">
+                                                                    
+                            <div class="time">
+                    <strong>Published: </strong>
+                    <time datetime="February 6, 2016 6:00 AM PST">February 6, 2016 6:00 AM PST</time></div>
+            
+                            <strong>Photo by: </strong><span>The Urban Daily</span>
+            
+                            <strong> /                     Caption by:
+                </strong>
+                                    <a rel="author" href="/profiles/danny.gallagher/" itemprop="name" target="_blank">
+                                    Danny Gallagher</a>                    </div>
+
+        
+            </div>
+
+                                                                                
+                                                        
+                                                                                        <div class="taboola " id="taboola-internet-memes-born-at-the-super-bowl-right-rail-thumbnails" data-component="taboola" data-taboola-options='{"mode":"alternating-thumbnails-e","container":"taboola-internet-memes-born-at-the-super-bowl-right-rail-thumbnails","canonicalUrl":"http:\/\/www.cnet.com\/pictures\/internet-memes-born-at-the-super-bowl\/","placement":"Right Rail Thumbnails"}'></div>
+                                                                                    
+                                                        
+                                            
+
+    
+
+
+<!--[if lt IE 9]> <noscript> <div class="sectionTag dontMissRight"> </noscript> <![endif]-->
+<section class="dontMissRight" section="dontMissRight"><h5><span>Hot Galleries</span>
+                            <div class="headingWrap" section="dontMissRightRail"><a href="/news/">See all</a></div>
+                    </h5>
+    
+            
+                                        <div class="asset">
+                    <div class="col-1 imageLinkWrapper">
+                        <a href="/pictures/easy-microwave-mug-meals-you-can-make-in-minutes/" data-component="imageGalleryModal" data-image-gallery-modal-options='{"url":"\/pictures\/easy-microwave-mug-meals-you-can-make-in-minutes\/xhr\/","index":1}'>
+                                        
+                                <figure class="col-1 img"><img src="http://cnet1.cbsistatic.com/hub/i/r/2013/09/19/658495e6-6788-11e3-846b-14feb5ca9861/thumbnail/70x53/073de4412b9809b5260898aee5bbb6db/2Z9A4224.jpg" class="" alt="" height="53" width="70"></figure></a>
+                    </div>
+                    <div class="col-3 desc ">
+                        <a href="/pictures/easy-microwave-mug-meals-you-can-make-in-minutes/" data-component="imageGalleryModal" data-image-gallery-modal-options='{"url":"\/pictures\/easy-microwave-mug-meals-you-can-make-in-minutes\/xhr\/","index":1}'>
+                            <h4 class="articleTitle">7 microwave snacks you can cook in a mug</h4>
+                        </a>
+                                                    <span class="blog"><a href="/topics/smart-home/">Smart Home</a></span>
+                                            </div>
+                </div>
+
+                                    
+                                        <div class="asset">
+                    <div class="col-1 imageLinkWrapper">
+                        <a href="/roadshow/pictures/hyundai-2017-santa-fe-crossover-pictures/" data-component="imageGalleryModal" data-image-gallery-modal-options='{"url":"\/roadshow\/pictures\/hyundai-2017-santa-fe-crossover-pictures\/xhr\/","index":1}'>
+                                        
+                                <figure class="col-1 img"><img src="http://cnet1.cbsistatic.com/hub/i/r/2016/02/12/dfb178fe-be81-4907-af4a-3a763576a17a/thumbnail/70x53/20bc64c3f081ee51a4f200402356bbaa/sf1.jpg" class="" alt="" height="53" width="70"></figure></a>
+                    </div>
+                    <div class="col-3 desc ">
+                        <a href="/roadshow/pictures/hyundai-2017-santa-fe-crossover-pictures/" data-component="imageGalleryModal" data-image-gallery-modal-options='{"url":"\/roadshow\/pictures\/hyundai-2017-santa-fe-crossover-pictures\/xhr\/","index":1}'>
+                            <h4 class="articleTitle">Hyundai updates its three-row Santa Fe crossover for 2017</h4>
+                        </a>
+                                                    <span class="blog"><a href="/roadshow/crossovers/">Crossovers</a></span>
+                                            </div>
+                </div>
+
+                                    
+                                        <div class="asset">
+                    <div class="col-1 imageLinkWrapper">
+                        <a href="/pictures/new-glimpses-of-game-of-thrones-season-6-pictures/" data-component="imageGalleryModal" data-image-gallery-modal-options='{"url":"\/pictures\/new-glimpses-of-game-of-thrones-season-6-pictures\/xhr\/","index":1}'>
+                                        
+                                <figure class="col-1 img"><img src="http://cnet4.cbsistatic.com/hub/i/r/2016/02/11/67f42564-0bb2-4078-8e93-e7acd5bae3f0/thumbnail/70x53/d95457821140350d8c3791cff1b06c9e/got-1.jpg" class="" alt="" height="53" width="70"></figure></a>
+                    </div>
+                    <div class="col-3 desc ">
+                        <a href="/pictures/new-glimpses-of-game-of-thrones-season-6-pictures/" data-component="imageGalleryModal" data-image-gallery-modal-options='{"url":"\/pictures\/new-glimpses-of-game-of-thrones-season-6-pictures\/xhr\/","index":1}'>
+                            <h4 class="articleTitle">New glimpses of 'Game of Thrones,' season 6</h4>
+                        </a>
+                                                    <span class="blog"><a href="/topics/digital-media/">Digital Media</a></span>
+                                            </div>
+                </div>
+
+                                    
+                                        <div class="asset">
+                    <div class="col-1 imageLinkWrapper">
+                        <a href="/roadshow/pictures/alpine-vision-concept-leaks-out-pictures/" data-component="imageGalleryModal" data-image-gallery-modal-options='{"url":"\/roadshow\/pictures\/alpine-vision-concept-leaks-out-pictures\/xhr\/","index":1}'>
+                                        
+                                <figure class="col-1 img"><img src="http://cnet4.cbsistatic.com/hub/i/r/2016/02/16/1e4413cb-dcc9-4416-b715-5c2b460fcdcd/thumbnail/70x53/b27f258b23d0ac74fe406cc2692e63dd/16-alpine-vision-concept-leak.jpg" class="" alt="" height="53" width="70"></figure></a>
+                    </div>
+                    <div class="col-3 desc ">
+                        <a href="/roadshow/pictures/alpine-vision-concept-leaks-out-pictures/" data-component="imageGalleryModal" data-image-gallery-modal-options='{"url":"\/roadshow\/pictures\/alpine-vision-concept-leaks-out-pictures\/xhr\/","index":1}'>
+                            <h4 class="articleTitle">Alpine Vision Concept looks ready to battle Porsche, Lotus</h4>
+                        </a>
+                                                    <span class="blog"><a href="/roadshow/concept-cars/">Concept Cars</a></span>
+                                            </div>
+                </div>
+
+                                    
+                                        <div class="asset">
+                    <div class="col-1 imageLinkWrapper">
+                        <a href="/pictures/sonys-2016-tvs-get-high-price-tags-to-go-with-high-dynamic-range-pictures/" data-component="imageGalleryModal" data-image-gallery-modal-options='{"url":"\/pictures\/sonys-2016-tvs-get-high-price-tags-to-go-with-high-dynamic-range-pictures\/xhr\/","index":1}'>
+                                        
+                                <figure class="col-1 img"><img src="http://cnet2.cbsistatic.com/hub/i/r/2016/02/12/41fce3a5-4f0a-4056-bcf3-450255b78758/thumbnail/70x53/3de8f737e87bc85c8dbd003b18ae6ac9/sony-tv-demo-feb12016-17.jpg" class="" alt="" height="53" width="70"></figure></a>
+                    </div>
+                    <div class="col-3 desc ">
+                        <a href="/pictures/sonys-2016-tvs-get-high-price-tags-to-go-with-high-dynamic-range-pictures/" data-component="imageGalleryModal" data-image-gallery-modal-options='{"url":"\/pictures\/sonys-2016-tvs-get-high-price-tags-to-go-with-high-dynamic-range-pictures\/xhr\/","index":1}'>
+                            <h4 class="articleTitle">Sony's 2016 TVs get high price tags to go with high dynamic range</h4>
+                        </a>
+                                                    <span class="blog"><a href="/topics/tvs/">TVs</a></span>
+                                            </div>
+                </div>
+
+                                    
+                                        <div class="asset">
+                    <div class="col-1 imageLinkWrapper">
+                        <a href="/pictures/lego-star-wars-unveiled-at-new-york-toy-fair-show-past-and-future-battles/" data-component="imageGalleryModal" data-image-gallery-modal-options='{"url":"\/pictures\/lego-star-wars-unveiled-at-new-york-toy-fair-show-past-and-future-battles\/xhr\/","index":1}'>
+                                        
+                                <figure class="col-1 img"><img src="http://cnet2.cbsistatic.com/hub/i/r/2016/02/14/32136c0e-d26c-4a8c-bfb9-26494a5eaeac/thumbnail/70x53/69da9ab9d8af7817d31c1f1aa23f2b1c/dsc01144.jpg" class="" alt="" height="53" width="70"></figure></a>
+                    </div>
+                    <div class="col-3 desc ">
+                        <a href="/pictures/lego-star-wars-unveiled-at-new-york-toy-fair-show-past-and-future-battles/" data-component="imageGalleryModal" data-image-gallery-modal-options='{"url":"\/pictures\/lego-star-wars-unveiled-at-new-york-toy-fair-show-past-and-future-battles\/xhr\/","index":1}'>
+                            <h4 class="articleTitle">Lego Star Wars sets at NY Toy Fair imagine past, future battles</h4>
+                        </a>
+                                                    <span class="blog"><a href="/topics/tech-culture/">Tech Culture</a></span>
+                                            </div>
+                </div>
+
+                                    
+                                        <div class="asset">
+                    <div class="col-1 imageLinkWrapper">
+                        <a href="/pictures/diy-phone-speakers-anyone-can-make/" data-component="imageGalleryModal" data-image-gallery-modal-options='{"url":"\/pictures\/diy-phone-speakers-anyone-can-make\/xhr\/","index":1}'>
+                                        
+                                <figure class="col-1 img"><img src="http://cnet3.cbsistatic.com/hub/i/r/2016/02/15/4dd351a6-5cb4-4581-aee4-7f5d8936d486/thumbnail/70x53/e21ee7f815749a1a684257b0a7423efd/img4978.jpg" class="" alt="" height="53" width="70"></figure></a>
+                    </div>
+                    <div class="col-3 desc ">
+                        <a href="/pictures/diy-phone-speakers-anyone-can-make/" data-component="imageGalleryModal" data-image-gallery-modal-options='{"url":"\/pictures\/diy-phone-speakers-anyone-can-make\/xhr\/","index":1}'>
+                            <h4 class="articleTitle">DIY phone speakers that rock (and a few to avoid)</h4>
+                        </a>
+                                                    <span class="blog"><a href="/topics/smart-home/">Smart Home</a></span>
+                                            </div>
+                </div>
+
+                                    
+                                        <div class="asset">
+                    <div class="col-1 imageLinkWrapper">
+                        <a href="/pictures/best-android-games-pictures/" data-component="imageGalleryModal" data-image-gallery-modal-options='{"url":"\/pictures\/best-android-games-pictures\/xhr\/","index":1}'>
+                                        
+                                <figure class="col-1 img"><img src="http://cnet4.cbsistatic.com/hub/i/r/2015/11/11/9e8c8cb9-f9f2-4b04-8b83-877ffbfefcbc/thumbnail/70x53/3d3dc05b880c6ce1a62748741022da3b/octodad-dadliest-catch.png" class="" alt="" height="53" width="70"></figure></a>
+                    </div>
+                    <div class="col-3 desc ">
+                        <a href="/pictures/best-android-games-pictures/" data-component="imageGalleryModal" data-image-gallery-modal-options='{"url":"\/pictures\/best-android-games-pictures\/xhr\/","index":1}'>
+                            <h4 class="articleTitle">Here are some of the best games for Android right now</h4>
+                        </a>
+                                                    <span class="blog"><a href="/topics/software/">Software</a></span>
+                                            </div>
+                </div>
+
+                                    
+                                    <div id="native-thisweekoncnet-56c3a8e40964c" class="ad-native-thisweekoncnet" data-ad="native-thisweekoncnet">
+    <script>
+        window.console && console.log && console.log("ADS: queuing native-thisweekoncnet-56c3a8e40964c for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("native-thisweekoncnet-56c3a8e40964c");
+    </script></div>
+                                                    </section><!--[if lt IE 9]> <noscript></div></noscript> <![endif]--><div id="mpu-middle-56c3a8e40964c" class="ad-mpu-middle" data-ad="mpu-middle">
+    <script>
+        window.console && console.log && console.log("ADS: queuing mpu-middle-56c3a8e40964c for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("mpu-middle-56c3a8e40964c");
+    </script></div>
+                                                                                                
+                                                        
+                                                    
+
+    
+    
+    
+<!--[if lt IE 9]> <noscript> <div id="promoUnit" class="sectionTag"> </noscript> <![endif]-->
+<section id="promoUnit" class="galleryPromoUnit"><div>
+            <div class="heading">
+                <span class="subtitle"></span>
+                <h4 class="title">EDITORS' PICKS</h4>
+            </div>
+
+                            <a href="http://www.cnet.com/roadshow/pictures/editors-picks-16000-used-suvs/#ftag=CAD30dd16f" class="thumb">
+                                
+                                <figure class=" img"><img src="http://cnet4.cbsistatic.com/hub/i/r/2016/02/13/488b1754-82bd-476b-8e03-d77c3f528196/thumbnail/370x208/4c53377c828f918547687721ef9f12c7/2010forester7.jpg" class="" alt="" height="208" width="370"></figure></a>
+            
+            <div class="content">
+                <p class="hed">$16,000 used SUVs</p>
+                <p class="dek">Whether you like your SUVs cute or capable, or some blend of the two, we've got a wide variety of choices in Roadshow's first collection of Editors' Used Picks.</p>
+                                    <div class="subscribeButton">
+                        <a href="http://www.cnet.com/roadshow/pictures/editors-picks-16000-used-suvs/#ftag=CAD30dd16f" class="btn-link signUp">SAVE ON BIG CARS</a>
+                    </div>
+                            </div>
+        </div>
+    </section><!--[if lt IE 9]> <noscript></div></noscript> <![endif]--><div id="mpu-middle2-56c3a8e40964c" class="ad-mpu-middle2" data-ad="mpu-middle2">
+    <script>
+        window.console && console.log && console.log("ADS: queuing mpu-middle2-56c3a8e40964c for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("mpu-middle2-56c3a8e40964c");
+    </script></div>
+                                                                                                
+                                                        
+                                            
+    
+    
+
+<div class="productList reviewListing" section="hotProducts">
+
+                <h5>Hot Products</h5>
+    
+    <ul><li>
+                <a class="col-1 imageLinkWrapper" href="/products/apple-iphone-6s/">
+                                
+                                <figure class="col-1 img"><img src="http://cnet4.cbsistatic.com/hub/i/r/2015/09/25/f5a224cf-5f9a-4bc5-a187-30682fc2c3f5/thumbnail/70x53/9d4b45982c769269debe85f0fb52e779/iphone-6s-13.jpg" class="" alt="" height="53" width="70"></figure></a>
+                <div class="col-3 infoContainer">
+                    <div class="description">
+                                                <a class="storyTitle" href="/products/apple-iphone-6s/"><h4>Apple iPhone 6S</h4></a>
+                                                        <span class="dek">
+                                                                            iPhone 6S review: Subtle upgrades make a superlative smartphone
+                                                                                                                                                                                                                                                                                                                                    <span class="officialPrice">MSRP</span>
+                                                                                                                           <a href="/products/apple-iphone-6s/prices/" class="price officialPrice">$199.00</a>
+                                                                                                            </span>
+                                                    <a href="/products/apple-iphone-6s/">
+                                                                            <span class="edRate s4h small"><span><span class="rating">4.5</span> stars</span></span>
+
+                                                            </a>
+                                            </div>
+                </div>
+            </li>
+                                                                                                            
+                        <li>
+                <a class="col-1 imageLinkWrapper" href="/products/microsoft-surface-pro-4/">
+                                
+                                <figure class="col-1 img"><img src="http://cnet1.cbsistatic.com/hub/i/r/2015/10/16/712b52d5-ef6c-48cf-9b55-10e8db5f3ff9/thumbnail/70x53/8480d55d83ccaaeda4d16348cc4171b7/microsoft-surface-pro-4-02.jpg" class="" alt="" height="53" width="70"></figure></a>
+                <div class="col-3 infoContainer">
+                    <div class="description">
+                                                <a class="storyTitle" href="/products/microsoft-surface-pro-4/"><h4>Microsoft Surface Pro 4</h4></a>
+                                                        <span class="dek">
+                                                                            Surface Pro 4 review: Still the king of tablet PCs
+                                                                                                                                                                                                                                                                                                                               <a href="/products/microsoft-surface-pro-4/prices/" class="price ">$797.99</a>
+                                                                                                            </span>
+                                                    <a href="/products/microsoft-surface-pro-4/">
+                                                                            <span class="edRate s4 small"><span><span class="rating">4</span> stars</span></span>
+
+                                                            </a>
+                                            </div>
+                </div>
+            </li>
+                                                                                                            
+                        <li>
+                <a class="col-1 imageLinkWrapper" href="/products/cree-connected-led-bulb/">
+                                
+                                <figure class="col-1 img"><img src="http://cnet1.cbsistatic.com/hub/i/r/2015/01/12/8b2e65ef-7811-4510-b99c-ca93c4d7fc46/thumbnail/70x53/f862e14061b73cb8b7614fe27be4ff8e/cree-connected-led-product-photos-1.jpg" class="" alt="" height="53" width="70"></figure></a>
+                <div class="col-3 infoContainer">
+                    <div class="description">
+                                                <a class="storyTitle" href="/products/cree-connected-led-bulb/"><h4>Cree Connected LED Bulb</h4></a>
+                                                        <span class="dek">
+                                                                            The right smart bulb for the right price
+                                                                                                                                                                                                                                                                                                                               <a href="/products/cree-connected-led-bulb/prices/" class="price ">$24.90</a>
+                                                                                                            </span>
+                                                    <a href="/products/cree-connected-led-bulb/">
+                                                                            <span class="edRate s4h small"><span><span class="rating">4.5</span> stars</span></span>
+
+                                                            </a>
+                                            </div>
+                </div>
+            </li>
+                                                                                                            
+                        <li>
+                <a class="col-1 imageLinkWrapper" href="/roadshow/auto/2016-honda-accord-sedan/">
+                                
+                                <figure class="col-1 img"><img src="http://cnet3.cbsistatic.com/hub/i/r/2015/09/22/015b5e90-042a-4fe2-b582-8914aaec15dc/thumbnail/70x53/38160c9c1615c934fed6cea6e9aeb44b/hondaaccord2016-10.jpg" class="" alt="" height="53" width="70"></figure></a>
+                <div class="col-3 infoContainer">
+                    <div class="description">
+                                                <a class="storyTitle" href="/roadshow/auto/2016-honda-accord-sedan/"><h4>2016 Honda Accord Sedan</h4></a>
+                                                        <span class="dek">
+                                                                            2016 Honda Accord: Now with Android Auto, Apple CarPlay
+                                                                                                                                                                                                                                                                                                                                    <span class="officialPrice">MSRP</span>
+                                                                                                                           <a href="/products/2016-honda-accord-sedan/prices/" class="price officialPrice">$22,105.00</a>
+                                                                                                            </span>
+                                                    <a href="/roadshow/auto/2016-honda-accord-sedan/">
+                                                                            <span class="edRate s3h small"><span><span class="rating">3.5</span> stars</span></span>
+
+                                                            </a>
+                                            </div>
+                </div>
+            </li>
+                                                                                                            
+                        <li>
+                <a class="col-1 imageLinkWrapper" href="/products/vizio-m-series-2015/">
+                                
+                                <figure class="col-1 img"><img src="http://cnet1.cbsistatic.com/hub/i/r/2015/07/16/b425d912-260c-4a63-8a96-4fe7f092f76d/thumbnail/70x53/1d15e12653a1688697e8b77442b83ffd/vizio-m-series-2015-m65-09.jpg" class="" alt="" height="53" width="70"></figure></a>
+                <div class="col-3 infoContainer">
+                    <div class="description">
+                                                <a class="storyTitle" href="/products/vizio-m-series-2015/"><h4>Vizio M series (2015)</h4></a>
+                                                        <span class="dek">
+                                                                            Vizio M series review: Great 4K picture quality at an affordable price
+                                                                                                                                                                                                                                                                                                                               <a href="/products/vizio-m-series-2015/prices/" class="price ">$1,499.99</a>
+                                                                                                            </span>
+                                                    <a href="/products/vizio-m-series-2015/">
+                                                                            <span class="edRate s4 small"><span><span class="rating">4</span> stars</span></span>
+
+                                                            </a>
+                                            </div>
+                </div>
+            </li>
+                                                                                                            
+                                                                                                
+                                                                                                
+                                                                                                
+                                                                                                
+                        </ul></div>
+                                                                                
+                                                        
+                                                        
+                                    <div id="mpu-bottom-56c3a8e40964c" class="ad-mpu-bottom" data-ad="mpu-bottom">
+    <script>
+        window.console && console.log && console.log("ADS: queuing mpu-bottom-56c3a8e40964c for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("mpu-bottom-56c3a8e40964c");
+    </script></div>
+                                                                                                
+                                                        
+                                            <!-- closes scroll-content --> </div> <!-- closes scroll-wrapper --> </div>
+                                                                    </div>
+        </div>
+</div>
+
+
+    </div>
+        </div>
+
+                    </div>
+                    <!--Visual Revenue Reader Response Tracking Script (v6) -->
+        
+        
+    <script type="text/javascript">
+        function vr_init() {
+            $('.load-more').trigger('click');
+        }
+
+        var _vrq = _vrq || [];
+        _vrq.push(['id', 514]);
+        _vrq.push(['automate', false]);
+        _vrq.push(['track', function(){}]);
+        (function(d, a){
+            var s = d.createElement(a),
+            x = d.getElementsByTagName(a)[0];
+            s.async = true;
+            s.src = 'http://a.visualrevenue.com/vrs.js';
+            x.parentNode.insertBefore(s, x);
+        })(document, 'script');
+    </script><!-- End of VR RR Tracking Script - All rights reserved --><div data-component="yahooBeacon" data-yahoo-beacon-options='{"yahooId":"3dea089e-a865-35a2-aee5-6271e85057cf","yahooClass":"YAD-3dea089e-a865-35a2-aee5-6271e85057cf"}'></div><script>
+    function addVars() {
+    BOOMR.addVar({
+            "txId": (window.CnetPageVars && window.CnetPageVars.txId) ? window.CnetPageVars.txId : ""
+            });
+    }
+
+if (document.addEventListener) {
+    document.addEventListener("onBoomerangLoaded", addVars);
+    }
+else if (document.attachEvent) {
+    document.attachEvent("onpropertychange", function(e) {
+            if (!e) e = window.event;
+            if (e && e.propertyName === "onBoomerangLoaded") {
+                    addVars();
+                    }
+            });
+    }
+
+/*! mpulse v0.0.2 */
+
+!function(a){"use strict";function b(b,c){j||("object"==typeof XDomainRequest?(r=!0,j=function(){return new XDomainRequest}):"function"==typeof XMLHttpRequest||"object"==typeof XMLHttpRequest?j=function(){return new XMLHttpRequest}:"function"==typeof require?j=function(){var a=require("xmlhttprequest").XMLHttpRequest;return new a}:a&&"undefined"!=typeof a.ActiveXObject&&(j=function(){return new a.ActiveXObject("Microsoft.XMLHTTP")}));var d=j();"function"==typeof c&&(r?d.onload=function(){c(d.responseText)}:d.onreadystatechange=function(){4===d.readyState&&c(d.responseText)}),d.open("GET",b,!0),d.send()}function c(){return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(a){var b=16*Math.random()|0,c="x"===a?b:3&b|8;return c.toString(16)})}function d(d,e){function f(b){return-1!==b.indexOf("http://")||-1!==b.indexOf("https://")?b:(Q?b="https:"+b:"undefined"==typeof a?-1===b.indexOf("http:")&&(b="http:"+b):"undefined"!=typeof a&&"file:"===a.location.protocol&&-1===b.indexOf("http:")&&(b="http:"+b),b)}function g(){var a=P;return a+=-1!==a.indexOf("?")?"&":"?",a+="key="+O,a+="&acao=",f(a)}function h(){var a=R.beacon_url;return a+=-1!==a.indexOf("?")?"&":"?",a+="acao=1",f(a)}function i(a){try{var b=JSON.parse(a);for(var c in b)b.hasOwnProperty(c)&&(R[c]=b[c])}catch(d){return void(T=!1)}if($||I(R.session_id),_={},ba={},Z={},R.PageParams){var e=R.PageParams.customMetrics,f=R.PageParams.customTimers,g=R.PageParams.customDimensions;if(e)for(q=0;q<e.length;q++){var h=e[q];_[h.name]=h.label}if(f)for(q=0;q<f.length;q++){var i=f[q];ba[i.name]=i.label}if(g)for(q=0;q<g.length;q++){var m=g[q];Z[m.name]=m.label}}T=!0,S=!0,setTimeout(j,l),k(r)}function j(){if(""!==P){var a=g();S&&(a+="&r="),b(a,i)}}function n(){var a={};for(var b in Y)Y.hasOwnProperty(b)&&(a[b]=Y[b]);return a}function o(a,b,c){U.push({type:a,name:b,value:c,group:W,ab:X,dimensions:n()})}function r(a){if(0!==U.length){if(!T)return void((!V||a)&&(V=!0,setTimeout(function(){r(!0)},m)));var b=U.shift(),c=b.type,d=b.name,e=b.value,f={};"boolean"!=typeof b.group&&(f["h.pg"]=b.group),"boolean"!=typeof b.ab&&(f["h.ab"]=b.ab);for(var g in b.dimensions)b.dimensions.hasOwnProperty(g)&&"undefined"!=typeof Z[g]&&(f[Z[g]]=b.dimensions[g]);"metric"===c?"undefined"!=typeof _[d]&&(f[_[d]]=e,t(f)):"timer"===c&&"undefined"!=typeof ba[d]&&(f.t_other=ba[d]+"|"+e,t(f)),k(r)}}function t(a){a.d=R.site_domain,a["h.key"]=R["h.key"],a["h.d"]=R["h.d"],a["h.cr"]=R["h.cr"],a["h.t"]=R["h.t"],a["http.initiator"]="api",$!==!1&&(a["rt.si"]=$,a["rt.ss"]=da,a["rt.sl"]=ea),a.api=1,a.v=1,a.u="http://"+R.site_domain,a.t_done=0,N("before_beacon",a);var c=[];for(var d in a)a.hasOwnProperty(d)&&c.push(encodeURIComponent(d)+"="+(void 0===a[d]||null===a[d]?"":encodeURIComponent(a[d])));var e=h(),f=e+(e.indexOf("?")>-1?"&":"?")+c.join("&");N("beacon",a),b(f)}function u(a){return"string"!=typeof a?-1:(ca++,aa[ca]={time:s(),name:a},ca)}function v(a){if("number"!=typeof a||0>a)return-1;var b=aa[a],c=0;return b?(c=Math.round(s()-b.time),w(b.name,c),delete aa[a],c):-1}function w(a,b){return"string"!=typeof a?-1:"number"!=typeof b||0>b?-1:(b=Math.round(b),o("timer",a,b),k(r),b)}function x(a,b){"string"==typeof a&&("undefined"==typeof b||"number"==typeof b)&&("undefined"==typeof b&&(b=1),o("metric",a,b),k(r))}function y(a){"string"==typeof a&&(W=a)}function z(){return W}function A(){W=!1}function B(a){return"string"!=typeof a?!1:/^[a-zA-Z0-9_ -]{1,25}$/.test(a)===!1?!1:(X=a,!0)}function C(){return X}function D(){X=!1}function E(a,b){return"undefined"!=typeof a?"undefined"==typeof b?void F(a):void(Y[a]=b):void 0}function F(a){"undefined"!=typeof a&&"undefined"!=typeof Y[a]&&delete Y[a]}function G(a){("string"==typeof a||"number"==typeof a)&&("number"==typeof a&&(a=""+a),$=a)}function H(){return $}function I(a){return G(a||c()),K(0),H()}function J(){ea++}function K(a){"number"!=typeof a||0>a||(ea=a)}function L(){return ea}function M(a,b){fa.hasOwnProperty(a)&&"function"==typeof b&&fa[a].push(b)}function N(a,b){for(var c=0;c<fa[a].length;c++)fa[a][c](b)}e=e||{};var O=d,P="//c.go-mpulse.net/api/config.json",Q=!1,R={},S=!1,T=!1,U=[],V=!1,W=!1,X=!1,Y={},Z={},$=!1,_={},aa={},ba={},ca=-1,da=s(),ea=0,fa={};for(q=0;q<p.length;q++)fa[p[q]]=[];"undefined"!=typeof e.configUrl&&(P=e.configUrl),e.forceSSL&&(Q=!0),j();var ga={startTimer:u,stopTimer:v,sendTimer:w,sendMetric:x,setPageGroup:y,getPageGroup:z,resetPageGroup:A,setABTest:B,getABTest:C,resetABTest:D,setDimension:E,resetDimension:F,setSessionID:G,getSessionID:H,startSession:I,incrementSessionLength:J,setSessionLength:K,getSessionLength:L,subscribe:M,parseConfig:i};return ga}function e(){return w.mPulse=x,v}function f(a,b){if(b=b||{},"undefined"!=typeof b.name&&"undefined"!=typeof z[b.name])return z[b.name];var c=d(a,b);if(y===!1){y=c;for(var e=0;e<o.length;e++){var f=o[e];v[f]=y[f]}}return"undefined"!=typeof b.name&&(z[b.name]=c),c}function g(a){return z[a]}function h(){}function i(a){"undefined"!=typeof z[a]&&delete z[a]}var j,k,l=3e5,m=5e3,n="0.0.1",o=["startTimer","stopTimer","sendTimer","sendMetric","setPageGroup","getPageGroup","resetPageGroup","setABTest","getABTest","resetABTest","setDimension","resetDimension","setSessionID","getSessionID","startSession","incrementSessionLength","setSessionLength","getSessionLength","subscribe"],p=["before_beacon","beacon"],q=0,r=!1,s=!1,t=+new Date;if(k="undefined"!=typeof process&&"function"==typeof process.nextTick?process.nextTick.bind(process):"undefined"!=typeof a?a.setImmediate?a.setImmediate.bind(a):a.msSetImmediate?a.msSetImmediate.bind(a):a.webkitSetImmediate?a.webkitSetImmediate.bind(a):a.mozSetImmediate?a.mozSetImmediate.bind(a):function(a){setTimeout(a,10)}:function(a){setTimeout(a,10)},"undefined"!=typeof a)if("undefined"!=typeof a.performance&&"function"==typeof a.performance.now)s=a.performance.now.bind(a.performance);else if("undefined"!=typeof a.performance){var u=["webkitNow","msNow","mozNow"];for(q=0;q<u.length;q++)if("function"==typeof a.performance[u[q]]){s=a.performance[u[q]];break}}s||("undefined"!=typeof a&&a.performance&&a.performance.timing&&a.performance.timing.navigationStart&&(t=a.performance.timing.navigationStart),s="undefined"!=typeof Date&&Date.now?function(){return Date.now()-t}:function(){return+new Date-t});var v,w,x,y=!1,z={};for("undefined"!=typeof a&&(w=a,x=w.mPulse),v={version:n,noConflict:e,init:f,getApp:g,stop:i},q=0;q<o.length;q++)v[o[q]]=h;"function"==typeof define&&define.amd?define([],function(){return v}):"undefined"!=typeof module&&module.exports?module.exports=v:"undefined"!=typeof w&&(w.mPulse=v)}("undefined"!=typeof window?window:void 0);
+
+(function(){
+    try {
+    window.mPulseApp = mPulse.init("38QDY-8CT77-8XNH2-VJQTD-EK4YX");
+    } catch(e) {}
+    })();
+
+mPulseApp.previousFullyLoadedTimer = null;
+mPulseApp.fullyLoadedTimer = setInterval(function() {
+    try{
+    var myTimer = performance.getEntriesByType('resource')[performance.getEntriesByType('resource').length - 1];
+    if(mPulseApp.previousFullyLoadedTimer === myTimer) {
+    mPulseApp.setSessionID(BOOMR.session.ID);
+    mPulseApp.setPageGroup(CnetPageVars.tracking.data.soastaPageType);
+    mPulseApp.setABTest(CnetPageVars.tracking.data.soastaBucket);
+    if(myTimer !== undefined) {
+    mPulseApp.sendTimer("page_full_load", myTimer.responseEnd);
+    }
+    clearInterval(mPulseApp.fullyLoadedTimer);
+    }
+    mPulseApp.previousFullyLoadedTimer = myTimer;
+    } catch(e) {
+    clearInterval(mPulseApp.fullyLoadedTimer);
+    }
+    }, 4000);
+
+document['addEventListener']?document['addEventListener']('DOMContentLoaded',mPulseApp.fullyLoadedTimer):window.attachEvent('onload',mPulseApp.fullyLoadedTimer);</script><script data-main="http://cnet3.cbsistatic.com/fly/2182-fly/js/main.default.js" src="http://cnet2.cbsistatic.com/fly/js/libs/require-2.1.2.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"252d33b7c9","applicationID":"3674670","transactionName":"Y1xRYUdUX0ICUUxaDloWclZBXF5fTFtVUgZRZlRUWVlUQxptS1oPU1VWG0BG","queueTime":0,"applicationTime":952,"atts":"TxtGFw9OTB1BUxoJGklE","errorBeacon":"bam.nr-data.net","agent":""}</script></body></html>

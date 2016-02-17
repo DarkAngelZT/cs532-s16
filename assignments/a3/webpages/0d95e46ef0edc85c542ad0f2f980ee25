@@ -1,0 +1,1455 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <style>
+
+    @font-face {
+        font-family: 'ArialBlack';
+        src: url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/ArialBlack.eot?15332104608416864017');
+        src: url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/ArialBlack.eot?%23iefix&15332104608416864017') format('embedded-opentype'),
+             url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/ArialBlack.woff?15332104608416864017') format('woff'),
+             url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/ArialBlack.ttf?15332104608416864017') format('truetype'),
+             url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/ArialBlack.svg%23ArialBlack?15332104608416864017') format('svg');
+        font-weight: 900;
+        font-style: normal
+    }
+
+    @font-face {
+        font-family: 'Colaborate';
+        src: url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/ColabMed.eot?15332104608416864017');
+        src: url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/ColabMed.eot?%23iefix&15332104608416864017') format('embedded-opentype'),
+            url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/ColabMed.woff?15332104608416864017') format('woff'),
+            url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/ColabMed.ttf?15332104608416864017') format('truetype'),
+            url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/ColabMed.svg%23ColabMed?15332104608416864017') format('svg');
+        font-weight: 400;
+        font-style: normal
+    }
+
+    @font-face {
+        font-family: 'Corporate';
+        src: url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/Corporate%20S%20W10%20Md%20Regular.eot?15332104608416864017');
+        src: url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/Corporate%20S%20W10%20Md%20Regular.eot?%23iefix&15332104608416864017') format('embedded-opentype'),
+            url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/Corporate%20S%20W10%20Md%20Regular.woff?15332104608416864017') format('woff'),
+            url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/Corporate%20S%20W10%20Md%20Regular.ttf?15332104608416864017') format('truetype'),
+            url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/Corporate%20S%20W10%20Md%20Regular.svg%23Corporate?15332104608416864017') format('svg');
+        font-weight: 400;
+        font-style: normal
+    }
+
+    @font-face {
+        font-family: 'Corporate';
+        src: url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/Corporate%20S%20W10%20Bold%20Regular.eot?15332104608416864017');
+        src: url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/Corporate%20S%20W10%20Bold%20Regular.eot?%23iefix&15332104608416864017') format('embedded-opentype'),
+            url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/Corporate%20S%20W10%20Bold%20Regular.woff?15332104608416864017') format('woff'),
+            url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/Corporate%20S%20W10%20Bold%20Regular.ttf?15332104608416864017') format('truetype'),
+            url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/Corporate%20S%20W10%20Bold%20Regular.svg%23Corporate?15332104608416864017') format('svg');
+        font-weight: 700;
+        font-style: normal
+    }
+
+    @font-face {
+        src: url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/fontello.eot?15332104608416864017');
+        src: url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/fontello.eot?%23iefix&15332104608416864017') format('embedded-opentype'),
+            url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/fontello.woff?15332104608416864017') format('woff'),
+            url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/fontello.ttf?15332104608416864017') format('truetype'),
+            url('//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/fontello.svg%23fontello?15332104608416864017') format('svg');
+        font-family: 'fontello';
+        font-weight: 400;
+        font-style: normal
+    }
+
+    header .logo {
+        padding: 0;
+        margin: 24px 0 19px 2px;
+    }
+
+    #footer-wrapper .social-media-footer a {
+        background: url(//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/New_Social_Icons_dark.png?15332104608416864017) no-repeat;
+        display: inline-block;
+        width: 88px;
+        margin-right: 55px;
+        height: 29px;
+    }
+
+    div.newsletter-box {
+        border-top: 1px solid #333333;
+        clear: both;
+        margin: 0 20px;
+        overflow: hidden;
+        padding: 27px 0 20px;
+    }
+
+    div.newsletter-box .alignleft {
+        width: 270px;
+        margin-right: 20px;
+    }
+
+    div.newsletter-box .alignright {
+        width: 100%;
+        margin-top: 7px;
+        text-align: right;
+    }
+
+    div.newsletter-box input[type="text"] {
+        background: none repeat scroll 0 0 #1A1A1A;
+        border: 1px solid #272727;
+        border-radius: 3px 3px 3px 3px;
+        color: #666666;
+        font-family: 'Droid Sans',sans-serif;
+        font-size: 13px;
+        height: 30px;
+        line-height: 21px;
+        margin: 0 5px 0 0;
+        padding: 3px 5px 2px;
+        width: 238px;
+    }
+
+
+    div.newsletter-box input[type="submit"] {
+        background: none repeat scroll 0 0 #AFC461;
+        border: 1px solid #8DA240;
+        border-radius: 3px 3px 3px 3px;
+        color: #333333;
+        font-family: 'Droid Sans',sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        height: 30px;
+        line-height: 30px;
+        margin: 0;
+        padding: 0 15px;
+        text-transform: capitalize;
+        width: 101px;
+    }
+
+    .row { margin: 0 0 0px 0!important; }
+
+    .footer-bg { background-color:#000000!important; max-width:996px!important;  width:100%!important; }
+
+    #footer-wrapper .social-media-footer { min-width: 910px; overflow: hidden; padding: 8px 20px 20px; text-align: center; }
+
+    #footer-wrapper .social-media-footer a.social-facebook { background-position: 0 3px; width: 86px; }
+
+    #footer-wrapper{width: 950px}
+    #footer-wrapper:after{border: 0}
+    #footer-wrapper .social-media-footer{min-width: 910px;overflow: hidden;padding: 8px 20px 20px;text-align: center;}
+    #footer-wrapper .social-media-footer a{background: url('img/social-icons.png') no-repeat;display: inline-block; width: 88px;margin-right: 55px; height: 29px}
+    #footer-wrapper .social-media-footer a.social-facebook{background-position: 0 3px;width: 86px}
+    #footer-wrapper .social-media-footer a.social-facebook:hover{background-position: 0 -26px}
+    #footer-wrapper .social-media-footer a.social-twitter{background-position: 0 -66px;width: 80px}
+    #footer-wrapper .social-media-footer a.social-twitter:hover{background-position: 0 -94px}
+    #footer-wrapper .social-media-footer a.social-flickr{background-position: 0 -132px;width: 56px}
+    #footer-wrapper .social-media-footer a.social-flickr:hover{background-position: 0 -160px}
+    #footer-wrapper .social-media-footer a.social-youtube{background-position: 0 -201px;width: 58px}
+    #footer-wrapper .social-media-footer a.social-youtube:hover{background-position: 0 -236px}
+    #footer-wrapper .social-media-footer a.social-vimeo{background-position: 0 -278px; width: 70px}
+    #footer-wrapper .social-media-footer a.social-vimeo:hover{background-position: 0 -310px}
+    #footer-wrapper .social-media-footer a.social-googleplus{background-position: 0 -352px; margin-right: 0;width: 86px}
+    #footer-wrapper .social-media-footer a.social-googleplus:hover{background-position: 0 -389px}
+    #footer{background: url("img/footer-seperator.jpg") no-repeat scroll 50% 0 transparent;color: #888888;font-family: 'droid sans',sans-serif;font-size: 13px;padding: 18px 0;}
+    #footer a{color: #888888;font-family: 'droid sans',sans-serif;font-size: 13px;text-decoration: none; border: 0}
+    #footer a:hover{text-decoration: underline }
+    #footer .private_login a{color: #AFC461;display: inline-block;float: none;font-family: 'Droid Serif',serif;font-size: 14px;height: 30px;list-style: none outside none;padding: 0;text-align: center;}
+    #footer .private_login a:hover{text-decoration: underline}
+
+    footer { max-width:980px; }
+
+    .soc-width  { width:90px; height:30px; margin-right: 50px; display:inline-block; }
+    .soc-footer { padding:20px; text-align:center; width:950px; }
+
+    .soc-fbk { background: url(//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/Facebook_dark.png?15332104608416864017) no-repeat; }
+    .soc-fbk:hover { background: url(//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/Facebook_light.png?15332104608416864017) no-repeat; }
+
+
+    .soc-twtr { background: url(//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/Twitter_dark.png?15332104608416864017) no-repeat; }
+    .soc-twtr:hover { background: url(//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/Twitter_light.png?15332104608416864017) no-repeat; }
+
+    .soc-flkr { background: url(//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/Flickr_dark.png?15332104608416864017) no-repeat; }
+    .soc-flkr:hover { background: url(//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/Flickr_light.png?15332104608416864017) no-repeat; }
+
+    .soc-you { background: url(//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/Youtube_dark.png?15332104608416864017) no-repeat; }
+    .soc-you:hover { background: url(//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/Youtube_light.png?15332104608416864017) no-repeat; }
+
+    .soc-vim { background: url(//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/Vimeo_dark.png?15332104608416864017) no-repeat; }
+    .soc-vim:hover { background: url(//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/Vimeo_light.png?15332104608416864017) no-repeat; }
+
+    .soc-ggl { background: url(//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/Google_dark.png?15332104608416864017) no-repeat; }
+    .soc-ggl:hover { background: url(//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/Google_light.png?15332104608416864017) no-repeat; }
+
+    /** Global **/
+    a:hover {text-decoration:underline}
+    .breadcrumb {margin: 15px 0px!important}
+
+    /** Homepage **/
+    .featured2img .span3 {display: inline-block;text-align: center}
+    #fp-images .span3  {text-align: center;}
+
+    #fp-images img, .featured2img img {
+        box-shadow: 0 0 0 #000;
+        -webkit-transition: all .5s ease 0s;
+        -moz-transition: all .5s ease 0s;
+        transition: all .5s ease 0s
+    }
+
+    #fp-images img:hover,
+    .featured2img img:hover {
+        opacity: .5
+    }
+
+    special-nav {display:block}
+    mob-nav {display:none}
+    .icon-cart {margin: 0px 10px 0 0!important;}
+
+    .footer-wrapper {
+        background: rgba(0, 0, 0, 0.4) !important
+    }
+
+    .header-wrapper-glow {
+        background-color: #ffffff;
+        height: 155px;
+        margin: 0 0 20px;
+        position: relative;
+        width: 100%;
+        z-index: 1001
+    }
+	.cart-section { 
+	width: 100%; 
+	background-color: #a1cf37;
+    height: 45px;
+	}
+	.cart-section a { color: #ffffff !important; }
+    .custom_cart {
+        float: right;
+        margin: 10px 40px -22px 0;
+        position: relative;
+        z-index: 99;
+    }
+    .custom_cart li {display: inline}
+
+    .wrapper {background: none !important}
+
+    #header-wrapper .header-wrapper-inner {
+        margin: 0 auto;
+        max-width: 950px;
+        width: 950px;
+        overflow: hidden;
+    }
+
+    #header-wrapper, #footer-wrapper {
+        position: relative;
+        z-index: 100;
+		border-bottom: 1px solid #CCC;
+    }
+
+    .rtp-container-12 {
+        max-width: 950px;
+    }
+
+    .rtp-container-12 {
+        max-width: 960px;
+    }
+
+    .rtp-container-12 {
+        clear: both;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 960px;
+    }
+
+    .header-wrapper-glow {
+        height: auto;
+        overflow: hidden;
+    }
+
+    header nav#rtp-primary-menu {
+        margin: 5px 0 0 !important;
+        padding: 0 !important;
+        width: auto !important;
+		float: right;
+    }
+    header nav > ul {
+        margin: 30;
+        padding: 0;
+        list-style: none
+    }
+
+    header nav > ul li {
+		max-width: 95px;
+        float: left;
+        position: relative
+    }
+
+	/**
+    header nav > ul li:after,
+    header nav > ul li:first-child:before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.04) 0%, #878787 50%, rgba(0, 0, 0, 0.04) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.04)), color-stop(50%, #878787), color-stop(100%, rgba(0, 0, 0, 0.04)));
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.04) 0%, #878787 50%, rgba(0, 0, 0, 0.04) 100%);
+        background: -o-linear-gradient(top, rgba(0, 0, 0, 0.04) 0%, #878787 50%, rgba(0, 0, 0, 0.04) 100%);
+        background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.04) 0%, #878787 50%, rgba(0, 0, 0, 0.04) 100%);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 0%, #878787 50%, rgba(0, 0, 0, 0.04) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#0a000000', endColorstr='#0a000000', GradientType=0)
+    }
+	**/
+
+    header nav > ul li:first-child:before {
+        left: 0;
+        right: auto
+    }
+
+    header nav > ul li a {
+        color: #000;
+        font: 400 14px/20px 'Colaborate', sans-serif;
+        padding: 44px 0 20px;
+        width: 111px;
+        text-align: center;
+        display: block;
+        text-transform: uppercase
+    }
+	/**
+    header nav > ul li a:before,
+    header nav > ul li a:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        background: url(//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/menu-hover.png?15332104608416864017) no-repeat 41px 2px;
+        opacity: 0
+    }
+	**/
+
+    header nav > ul li a:after {
+        background-position: -178px 2px
+    }
+
+    header nav > ul li a:hover {
+        text-decoration: underline
+    }
+
+    header nav > ul li a:hover:after {
+        opacity: 1
+    }
+
+    header nav > ul li.current_page_item a:before,
+    header nav > ul li.current-menu-item a:before {
+        opacity: 1
+    }
+
+    header nav > ul li.current_page_item a:after,
+    header nav > ul li.current-menu-item a:after {
+        opacity: 0 !important
+    }
+
+
+    #content h2 {
+        color: #fff;
+        font: 400 30px/1.25 "Corporate",sans-serif;
+        padding-bottom: 20px;
+    }
+    
+
+    #product h3.collection-title {
+        margin-top: 30px
+    }
+
+    h2.arrw,
+    #collection h1,
+    #product h3.collection-title{
+        color: #fff;
+        font: 700 24px/1.25 'Corporate', sans-serif;
+        position: relative;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        overflow: hidden;
+        float: none !important;
+        border: 0 !important;
+        padding: 0 !important;
+    }
+
+    h2.arrw:after,
+    #collection h1:after,
+    #product h3.collection-title:after {
+        background: #252525;
+        bottom: 9px;
+        content: "";
+        height: 1px;
+        position: absolute;
+        width: 100%;
+        margin-left: 15px;
+        -webkit-box-shadow: 0 1px 0 #4f4f4f;
+        -moz-box-shadow: 0 1px 0 #4f4f4f;
+        box-shadow: 0 1px 0 #4f4f4f
+    }
+
+    .product h4.title{
+        color: #fff;
+        font: 400 20px/1.25 "Corporate",sans-serif !important;
+        padding: 25px 0 10px;
+    }
+
+    .product img, .product .image a, .image a, .image a img {
+        border: 0;
+        box-shadow(0 0 0 #000);
+    }
+
+    h1 {
+        border-bottom: 1px solid #111;
+        box-shadow: 0 1px 0 #4f4f4f;
+        color: #fff;
+        display: block;
+        font: 700 36px/1.25 "Corporate",sans-serif !important;
+        margin-bottom: 20px !important;
+        padding: 0 0 20px;
+        text-transform: uppercase !important;
+    }
+
+    #add-item-form .product-options {
+        border-bottom: 1px solid #111;
+        border-top: 1px solid #111;
+        box-shadow: 0 1px 0 #4f4f4f, 0 -1px 0 #4f4f4f;
+        margin: -10px 0 22px;
+        padding: 25px 0;
+    }
+
+    /** Footer **/
+    .border-foot {background:url(//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/footer-seperator.jpg?15332104608416864017) no-repeat scroll 50% 0 transparent;
+        color: #888888;
+        font-family: 'droid sans',sans-serif;
+        font-size: 13px;
+        padding: 1px 0;}
+
+    .copy-links a,.copy-links a:hover, .copy-links p {color:#888888!important}
+    .private_login {padding-bottom: 10px;}
+    .priv-head {font-size: 17px;height: 30px}
+
+    /** RESPONSIVE LAYOUT **/
+    @media only screen and (max-width : 1026px) {
+        special-nav {display:none}
+        mob-nav {display:block}
+    }
+/*
+    @media only screen and (max-width : 1026px) and (min-width : 798px) {
+        #nav {padding-top: 100px;}
+    }
+*/
+#dev{text-align:center;padding:10px 0 12px}
+footer#custom_foo {
+  max-width: none;
+  width: 100%;
+  padding: 0
+}
+footer#custom_foo .social {
+    background: rgba(0, 0, 0, .4);
+    height: 120px;
+    text-align: center
+}
+
+footer#custom_foo .social a {
+    display: inline-block;
+    background: url(//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/social.png?15332104608416864017) no-repeat;
+    height: 39px;
+    margin: 0 20px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+    vertical-align: top;
+  float: none !important
+}
+
+footer#custom_foo .social a:hover {
+    opacity: 0.5
+}
+
+footer#custom_foo .social a.fb {
+    width: 120px;
+    background-position: 0 0
+}
+
+footer#custom_foo .social a.tw {
+    background-position: -123px 0;
+    width: 117px
+}
+
+footer#custom_foo .social a.fl {
+    background-position: -245px 0;
+    width: 76px
+}
+
+footer#custom_foo .social a.yt {
+    background-position: -330px 0;
+    width: 90px
+}
+
+footer#custom_foo .social a.vm {
+    background-position: -423px 0;
+    width: 79px
+}
+
+footer#custom_foo .social a.gp {
+    background-position: -505px 0;
+    width: 106px
+}
+
+footer#custom_foo .fmenu {
+    border-top: 1px solid #4f4f4f;
+    border-bottom: 1px solid #000;
+    background: #201f26;
+    text-align: center;
+    padding: 20px 0;
+  	margin: 0
+}
+
+footer#custom_foo .fmenu li {
+    display: inline-block;
+    margin: 0 20px
+}
+
+footer#custom_foo .fmenu li a {
+    color: #fff;
+    text-transform: uppercase
+}
+
+footer#custom_foo .fmenu li a:hover {
+    color: #bcce31
+}
+
+footer#custom_foo .f2 li {
+    margin: 0
+}
+
+footer#custom_foo .f2 li:before {
+    content: '|';
+    margin: 0 15px 0 10px
+}
+
+footer#custom_foo .f2 li:first-child:before {
+    display: none
+}
+
+footer#custom_foo .f2 li a {
+    text-transform: none
+}
+
+.footer-wrapper {display: none !important}
+
+
+
+/**** Franz Custom Styles ****/
+
+#collection h1, .breadcrumb a, .product h4.title, p, strong, .breadcrumb .arrow-space, #content h2 { color: #000000 !important; }
+
+.details .price { color: #a1cf37 !important; }
+
+h1.collection-title::after { height: 0 !important; }
+
+@media only screen and (max-width: 1026px) {
+  .cart-section { display: none; }
+}
+
+.span3 p { color: #84a92e !important; font-size: 20px !important; margin-top: 10px; }
+
+.span3 p:hover { color: #a1cf37; text-decoration: none; }
+
+html { padding-top: 0 !important; }
+
+#transparency { border-bottom: 1px solid #cccccc; }
+
+.span12 h2 { margin-top: 25px; }
+
+#collection {
+    background: none !important;
+}
+
+</style>
+
+  <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/favicon.png?15332104608416864017" type="image/png" />
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+  <title>
+    The True Cost &ndash; Life Is My Movie Entertainment
+  </title>
+
+  
+  <meta name="description" content="  This is a story about clothing. It’s about the clothes we wear, the people who make them and the impact it’s having on our world. The price of clothing has be" />
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="canonical" href="http://lifeismymovie.us/collections/the-true-cost" /> 
+
+  
+
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="The True Cost" />
+  
+    <meta property="og:image" content="http://cdn.shopify.com/s/files/1/0229/7761/t/4/assets/logo.png?15332104608416864017" />
+    <meta property="og:image:secure_url" content="https://cdn.shopify.com/s/files/1/0229/7761/t/4/assets/logo.png?15332104608416864017" />
+  
+
+
+
+<meta property="og:description" content="  This is a story about clothing. It’s about the clothes we wear, the people who make them and the impact it’s having on our world. The price of clothing has be" />
+
+<meta property="og:url" content="http://lifeismymovie.us/collections/the-true-cost" />
+<meta property="og:site_name" content="Life Is My Movie Entertainment" />
+  
+ 
+
+
+  <link href="//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/styles.css?15332104608416864017" rel="stylesheet" type="text/css"  media="all"  />
+  
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Arvo:300,400,700">
+  
+  
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans:300,400,700">
+  
+  <script src="//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/html5shiv.js?15332104608416864017" type="text/javascript"></script>
+
+  <link href="/collections/the-true-cost.atom" title="Feed" rel="alternate" type="application/atom+xml" />
+<link rel="alternate" type="application/json+oembed" href="http://lifeismymovie.us/collections/the-true-cost.oembed" />
+<script>
+//<![CDATA[
+      var Shopify = Shopify || {};
+      Shopify.shop = "lifeismymovie.myshopify.com";
+      Shopify.theme = {"name":"life-is-my-movie-theme","id":8120509,"theme_store_id":null,"role":"main"};
+
+//]]>
+</script>
+
+
+<script>
+//<![CDATA[
+    (function() {
+      function asyncLoad() {
+        var urls = ["https:\/\/cdn.beeketing.com\/dist\/js\/front\/loader\/shopify.js?shop=lifeismymovie.myshopify.com"];
+        for (var i = 0; i < urls.length; i++) {
+          var s = document.createElement('script');
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = urls[i];
+          var x = document.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(s, x);
+        }
+      }
+      window.attachEvent ? window.attachEvent('onload', asyncLoad) : window.addEventListener('load', asyncLoad, false);
+    })();
+
+//]]>
+</script>
+<script id="__st">
+//<![CDATA[
+var __st={"a":2297761,"offset":-18000,"reqid":"c7333ffd-ebd9-4105-b2d8-b549c9a7b286","pageurl":"lifeismymovie.us\/collections\/the-true-cost","u":"12d4f5a26c55","p":"collection","rtyp":"collection","rid":30225892};
+//]]>
+</script>
+<script>
+//<![CDATA[
+      (function() {
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+        s.src = '//cdn.shopify.com/s/javascripts/shopify_stats.js?v=6';
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+      })();
+
+//]]>
+</script>
+
+      <script type="text/javascript" class="analytics">
+        
+      window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+      window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+      window.ShopifyAnalytics.meta.currency = 'USD';
+    
+        (window.gaDevIds=window.gaDevIds||[]).push('BwiEti');
+        
+        (function () {
+          var customDocumentWrite = function(content) {
+            var jquery = null;
+
+            if (window.jQuery) {
+              jquery = window.jQuery;
+            } else if (window.Checkout && window.Checkout.$) {
+              jquery = window.Checkout.$;
+            }
+
+            if (jquery) {
+              jquery('body').append(content);
+            }
+          };
+
+          var analytics = document.createElement('script');
+          var loaded = false;
+          var onload = function() {
+            if (loaded) return;
+            loaded = true;
+            window.ShopifyAnalytics.lib = window.analytics.noConflict();
+            window.ShopifyAnalytics.lib.initialize(
+              {"Google Analytics":{"trackingId":"UA-40903147-10","domain":"auto","siteSpeedSampleRate":"10","enhancedEcommerce":true,"doubleClick":true,"includeSearch":true},"Performance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":0.01},"Trekkie":{"appName":"storefront","environment":"production","defaultAttributes":{"shopId":2297761}}}
+            );
+
+            window.ShopifyAnalytics.lib.ready(function() {
+              
+      ga('require', 'linker');
+      function addListener(element, type, callback) {
+        if (element.addEventListener) {
+          element.addEventListener(type, callback);
+        }
+        else if (element.attachEvent) {
+          element.attachEvent('on' + type, callback);
+        }
+      }
+      function decorate(event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement;
+        if (target && (target.getAttribute('action') || target.getAttribute('href'))) {
+          ga(function (tracker) {
+            var linkerParam = tracker.get('linkerParam');
+            document.cookie = '_shopify_ga=' + linkerParam + '; ' + 'path=/';
+          });
+        }
+      }
+      addListener(window, 'load', function(){
+        for (var i=0; i < document.forms.length; i++) {
+          var action = document.forms[i].getAttribute('action');
+          if(action && action.indexOf('/cart') >= 0) {
+            addListener(document.forms[i], 'submit', decorate);
+          }
+        }
+        for (var i=0; i < document.links.length; i++) {
+          var href = document.links[i].getAttribute('href');
+          if(href && href.indexOf('/checkout') >= 0) {
+            addListener(document.links[i], 'click', decorate);
+          }
+        }
+      });
+    
+
+              var originalDocumentWrite = document.write;
+              document.write = customDocumentWrite;
+              try {  } catch(e) {};
+              document.write = originalDocumentWrite;
+
+              
+        window.ShopifyAnalytics.lib.page(
+          null,
+          {}
+        );
+      
+              
+        window.ShopifyAnalytics.lib.track(
+          "Viewed Product Category",
+          {"category":"Collection: the-true-cost","nonInteraction":true}
+        );
+      
+            });
+          }
+          analytics.onload = onload;
+          analytics.onreadystatechange = function() {
+            if (!/complete|loaded/.test(analytics.readyState)) return;
+            onload();
+          }
+          analytics.async = true;
+          analytics.src = "https://cdn.shopify.com/s/javascripts/trekkie.storefront.min.js";
+          document.getElementsByTagName('head')[0].appendChild(analytics);
+          
+      var eventsListenerScript = document.createElement('script');
+      eventsListenerScript.async = true;
+      eventsListenerScript.src = "//cdn.shopify.com/s/assets/shop_events_listener-42562f2f1fbae08782550a8da750cb16faca43c65b93366a62e3848a8245fa14.js";
+      document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+    
+        })();
+      </script>
+    <script type="text/javascript" src="//cdn.shopify.com/s/assets/themes_support/ga_urchin_forms-0826cdefee6590321eb5c0c435eeebf7a8425a5493a9e95059c40e07e069ad52.js"></script>
+<meta id="amazon-payments-metadata" data-amazon-payments="true" data-amazon-payments-seller-id="A362APE1XUL5L6" data-amazon-payments-callback-url="https://checkout.shopify.com/2297761/amazon_payments/callback" data-amazon-payments-widget-library-url="https://static-na.payments-amazon.com/OffAmazonPayments/us/js/Widgets.js" /><script>
+//<![CDATA[
+  window.onAmazonLoginReady = function() {
+    amazon.Login.setSandboxMode(false);
+    amazon.Login.setClientId("amzn1.application-oa2-client.bce2812f6e404953bbf7708560ac6047");
+    amazon.Login.setRegion("US");
+    amazon.Login.setUseCookie(true);
+
+    
+  };
+
+//]]>
+</script><script src="//cdn.shopify.com/s/assets/amazon_payments-87f9e1f8929ea82a8232317d910abfc31f1475b8ba19ee0d09430c74432dab1e.js" crossorigin="anonymous"></script><script>
+//<![CDATA[
+amazonPaymentsButtonHandler.assign("cart")
+//]]>
+</script>
+
+
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  
+  <script src="//cdn.shopify.com/s/assets/themes_support/option_selection-04f21dade47c181126ac61b64d757485f84671daadfa90e4956a522cda4c2948.js" type="text/javascript"></script>
+  <script src="//cdn.shopify.com/s/assets/themes_support/api.jquery-5f52c6aafe08e99b5fd74bc04431f324d961490d08bb70ca69b5e05941aa4323.js" type="text/javascript"></script>
+
+  
+  
+<meta name="google-site-verification" content="GvjeKRlS-9SNQVbrq3LNe2XfUbEeCwwgTTmQr3ZtKO8" />
+<!-- start marketizator.com code -->
+<link rel="dns-prefetch" href="//app.marketizator.com"/>    
+<script>(function(m,k,t,z){m[z]=m[z]||[];var f=k.getElementsByTagName(t)[0],j=k.createElement(t);j.async=true;j.src='//d2tgfbvjf3q6hn.cloudfront.net/async/js/8068fe.js';f.parentNode.insertBefore(j,f);})(window,document,'script','_mktz');</script>
+<!-- end marketizator.com code -->
+</head>
+
+<body>
+      <!-- Begin below navigation -->
+
+  <mob-nav>
+   <div id="transparency" class="wrapper">
+    <div class="row" align="center">  
+      <div class="span12 clearfix">
+        <div class="logo">
+          
+          <a href="http://lifeismymovie.us"><img src="//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/logo.png?15332104608416864017" alt="Life Is My Movie Entertainment" /></a>
+          
+            
+        </div> 
+        
+        
+       <div class="cart-info" style="float:right;margin-top: 10px;">
+          
+          <span class="icon-cart"></span><a href="/cart" class="cart" title="Shopping Cart">Cart: 0</a>
+          
+  
+    <li id="customer-links">
+      <a href="/account/login" id="customer_login_link">Log in</a>
+      
+      <span class="or">or</span>
+      <a href="/account/register" id="customer_register_link">Create an account</a>
+      
+    </li>
+  
+
+           
+       </div>            
+        
+      
+      
+        <section id="nav" class="row">
+          <div>
+            <nav class="main">
+              
+<ul class="horizontal fr unstyled clearfix">
+
+
+  
+  
+  <li>
+    <a href="http://lifeismymovie.com/" class=""><span>Home</span></a>
+    
+    
+  </li>
+  
+  
+  
+  <li>
+    <a href="http://lifeismymovie.com/about-us/" class=""><span>Company</span></a>
+    
+    
+  </li>
+  
+  
+  
+  <li>
+    <a href="http://lifeismymovie.com/movies/" class=""><span>Movies</span></a>
+    
+    
+  </li>
+  
+  
+  
+  <li>
+    <a href="/" class=""><span>Shop</span></a>
+    
+    
+  </li>
+  
+  
+  
+  <li>
+    <a href="http://lifeismymovie.com/press/" class=""><span>Press</span></a>
+    
+    
+  </li>
+  
+  
+  
+  <li>
+    <a href="http://lifeismymovie.com/contact/" class=""><span>Contact</span></a>
+    
+    
+  </li>
+  
+  
+</ul>
+            </nav> <!-- /.main -->
+            <nav class="mobile clearfix">
+              
+<select name="main_navigation" id="main_navigation" class="fl">
+  
+
+  
+  
+  
+    
+    <option value="http://lifeismymovie.com/">Home</option>
+    
+  
+  
+  
+    
+    <option value="http://lifeismymovie.com/about-us/">Company</option>
+    
+  
+  
+  
+    
+    <option value="http://lifeismymovie.com/movies/">Movies</option>
+    
+  
+  
+  
+    
+    <option value="/">Shop</option>
+    
+  
+  
+  
+    
+    <option value="http://lifeismymovie.com/press/">Press</option>
+    
+  
+  
+  
+    
+    <option value="http://lifeismymovie.com/contact/">Contact</option>
+    
+  
+  
+
+  
+  
+  
+    
+    <option value="" selected="selected">The True Cost</option>
+    
+  
+  <option value="/cart">Your cart (0)</option>
+</select>
+            </nav> <!-- /.mobile -->
+          </div> 
+        </section> 
+      </div> 
+     </div>
+    </div>
+  </mob-nav>
+      <!-- End below navigation -->
+      <div class="cart-section">
+<div class="custom_cart">
+          
+          <span class="icon-cart"></span><a href="/cart" class="cart" title="Shopping Cart">Cart: 0</a>
+          
+  
+    <li id="customer-links">
+      <a href="/account/login" id="customer_login_link">Log in</a>
+      
+      <span class="or">or</span>
+      <a href="/account/register" id="customer_register_link">Create an account</a>
+      
+    </li>
+  
+
+          
+       </div>
+</div>
+
+<special-nav>
+  <header id="header-wrapper" role="banner" class="clearfix">
+   <div class="header-wrapper-glow clearfix">
+     <div class="wrapper">
+
+       
+       <div class="logo">
+         
+         <a href="http://lifeismymovie.us"><img src="//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/logo.png?15332104608416864017" alt="Life Is My Movie Entertainment" /></a>
+         
+         
+       </div>
+       <!-- #header -->
+      <nav id="rtp-primary-menu" role="navigation" class="span12 rtp-js">
+       <ul id="rtp-nav-menu" class="menu rtp-js">
+          
+            
+            <li id="menu-item" class="menu-item">
+              <a href="http://lifeismymovie.com/" class=""><span>Home</span></a>
+              
+              
+            </li>
+            
+          
+            
+            <li id="menu-item" class="menu-item">
+              <a href="http://lifeismymovie.com/about-us/" class=""><span>Company</span></a>
+              
+              
+            </li>
+            
+          
+            
+            <li id="menu-item" class="menu-item">
+              <a href="http://lifeismymovie.com/movies/" class=""><span>Movies</span></a>
+              
+              
+            </li>
+            
+          
+            
+            <li id="menu-item" class="menu-item">
+              <a href="/" class=""><span>Shop</span></a>
+              
+              
+            </li>
+            
+          
+            
+            <li id="menu-item" class="menu-item">
+              <a href="http://lifeismymovie.com/press/" class=""><span>Press</span></a>
+              
+              
+            </li>
+            
+          
+            
+            <li id="menu-item" class="menu-item">
+              <a href="http://lifeismymovie.com/contact/" class=""><span>Contact</span></a>
+              
+              
+            </li>
+            
+          
+        </ul>
+       </nav>
+    </div><!-- .header-wrapper-inner -->
+   </div><!-- .header-wrapper-glow -->
+  </header>
+</special-nav>
+<script type="text/javascript" charset="utf-8">
+//<![CDATA[
+jQuery(function() {
+  jQuery('#rtp-nav-menu li').each(function() {
+    var href = jQuery(this).find('a').attr('href');
+    if (href === window.location.pathname) {
+      jQuery(this).addClass('current-menu-item a');
+    }
+  });
+});
+//]]>
+</script>
+
+
+
+  
+
+  <div id="transparency" class="wrapper">
+    <div class="row" style="padding-top:10px">    
+      <!-- Begin content-->
+      <section id="content" class="clearfix">
+        <div id="collection">
+  
+  
+  <!-- Begin collection info -->
+  <div class="row">
+    <div class="span12">
+      
+      <!-- Begin breadcrumb -->
+      <div class="breadcrumb clearfix">
+        <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://lifeismymovie.us" title="Life Is My Movie Entertainment" itemprop="url"><span itemprop="title">Home</span></a></span> 
+        <span class="arrow-space">&#62;</span>
+        <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/collections/the-true-cost" title="The True Cost" itemprop="url"><span itemprop="title">The True Cost</span></a></span>       
+        
+        
+        
+              
+          <span class="arrow-space">&#62;</span> <strong>Page 1 of 1</strong>
+        
+      </div>
+      <!-- End breadcrumb -->
+      
+      <!-- Begin sort collection -->
+      <div class="clearfix">
+        <h1 class="collection-title">The True Cost</h1>
+        
+      </div>
+      <!-- End sort collection -->
+      
+      <!-- Begin collection description -->
+      
+        <p> </p>
+<meta charset="utf-8">
+<p>This is a story about clothing. It’s about the clothes we wear, the people who make them and the impact it’s having on our world. The price of clothing has been decreasing for decades, while the human and environmental costs have grown dramatically. <i>The True Cost</i> is a groundbreaking new documentary film that pulls back the curtain on an unseen part of our world and asks us each to consider, who pays the price for our clothing?</p>
+<p>Filmed in countries all over the world, from the brightest runways to the darkest slums and features interviews with the world’s leading influencers including Stella McCartney, Livia Firth, Vandana Shiva and many more. This unprecedented project invites us all on an eye opening journey around the world and into the lives of the many people and places behind our clothes.<strong> </strong></p>
+<p> </p>
+      
+      <!-- End collection description -->
+      
+    </div>
+  </div>
+  <!-- End collection info -->
+  
+  <!-- Begin no products -->
+  
+  
+  <div class="row products">
+    
+    
+
+<div class="product span3">
+  
+  
+  
+  <div class="image">
+    <a href="/collections/the-true-cost/products/the-true-cost-digital-download">
+      <img src="//cdn.shopify.com/s/files/1/0229/7761/products/TC_POSTER_24x70_ADJUSTED_69d82f3b-9ad5-40e8-98e3-bad05da50fad_large.jpg?v=1425951202" alt="The True Cost - Digital Download" />
+    </a>
+  </div>
+  
+  <div class="details">
+    <a href="/collections/the-true-cost/products/the-true-cost-digital-download" class="clearfix">
+      <h4 class="title">The True Cost - Digital Download</h4>
+      
+      
+      <span class="price">
+      
+        
+        
+        $9.99
+      
+      </span>
+      
+    </a>
+  </div>
+  
+</div>
+
+
+
+
+
+    
+    
+
+<div class="product span3">
+  
+  
+  
+  <div class="image">
+    <a href="/collections/the-true-cost/products/the-true-cost-standard-definition-dvd">
+      <img src="//cdn.shopify.com/s/files/1/0229/7761/products/TrueCostDVDDisc_large.jpeg?v=1429914151" alt="The True Cost - DVD (Standard Edition)" />
+    </a>
+  </div>
+  
+  <div class="details">
+    <a href="/collections/the-true-cost/products/the-true-cost-standard-definition-dvd" class="clearfix">
+      <h4 class="title">The True Cost - DVD (Standard Edition)</h4>
+      
+      
+      <span class="price">
+      
+        
+        
+        $12.99
+      
+      </span>
+      
+    </a>
+  </div>
+  
+</div>
+
+
+
+
+
+    
+    
+
+<div class="product span3">
+  
+  
+  
+  <div class="image">
+    <a href="/collections/the-true-cost/products/the-true-cost-dvd-blu-ray">
+      <img src="//cdn.shopify.com/s/files/1/0229/7761/products/TrueCostBluRayDisc_large.jpeg?v=1429913968" alt="The True Cost - BluRay (HD Edition)" />
+    </a>
+  </div>
+  
+  <div class="details">
+    <a href="/collections/the-true-cost/products/the-true-cost-dvd-blu-ray" class="clearfix">
+      <h4 class="title">The True Cost - BluRay (HD Edition)</h4>
+      
+      
+      <span class="price">
+      
+        
+        
+        $14.99
+      
+      </span>
+      
+    </a>
+  </div>
+  
+</div>
+
+
+
+
+
+    
+    
+
+<div class="product span3">
+  
+  
+  
+  <div class="image">
+    <a href="/collections/the-true-cost/products/the-true-cost-educational-edition">
+      <img src="//cdn.shopify.com/s/files/1/0229/7761/products/TC_POSTER_24x70_ADJUSTED_grande_916f09ae-1a30-4c1b-9a60-6fd668c129b7_large.jpg?v=1429667734" alt="The True Cost -  Educational Edition" />
+    </a>
+  </div>
+  
+  <div class="details">
+    <a href="/collections/the-true-cost/products/the-true-cost-educational-edition" class="clearfix">
+      <h4 class="title">The True Cost -  Educational Edition</h4>
+      
+      
+      <span class="price">
+      
+        
+        
+        $350.00
+      
+      </span>
+      
+    </a>
+  </div>
+  
+</div>
+
+<div style="clear:both;"></div>
+
+
+
+    
+  </div>
+  
+  
+
+  
+  <!-- End no products -->
+  
+</div>
+      </section>
+      <!-- End content-->
+        <div class="footer-bg row">
+          
+          <div class="newsletter-box">
+            <div class="span6 alignleft">
+                <h2 class="home-title">
+                    Newsletter                </h2>
+                <span>Subscribe for all the latest news.</span>
+            </div>
+            <div class="alignright">
+		<form action="http://lifeismymovie.us4.list-manage.com/subscribe/post?u=7bc012edd264360e22c039b21&amp;id=ffbf9896d1" method="post" id="subForm" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+                    <span class="user-name"><input type="text" id="name" class="required" name="FNAME" value="Name"></span>
+                    <span class="user-email"><input type="text" value="Email Address" name="EMAIL" id="phunk-phunk"></span>
+                    <span class="user-subscribe"><input type="submit" value="Subscribe"></span>
+                </form>
+            </div><!-- .rtp-limm-newsletter-box -->
+        </div>
+
+<!--
+<div class="p30">
+  <h4 align="center">Newsletter</h4>
+    <form align="center" action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
+     <input align="center" type="email" value="" placeholder="Email Address" name="EMAIL" id="mail" /><input type="submit" class="btn newsletter" value="Subscribe" name="subscribe" id="subscribe" />
+    </form>
+          </div> -->
+          
+        </div>      
+    </div>
+  </div>
+  <!-- End wrapper -->
+  
+  
+      
+
+
+
+
+
+
+<footer id="custom_foo">
+<div class="fmenu f2 cfx">
+  <ul style="margin-bottom:0">
+        
+        <li><a href="http://lifeismymovie.com/">Life Is My Movie Entertainment &copy; 2016</a></li>
+        
+	</ul>    
+</div>
+</footer>
+
+<style>
+  .footer-bg.row {display:none}
+  
+  <!-- Begin footer -->
+  <div class="footer-wrapper">
+    <footer>
+      
+
+      <div class="row">
+         <!-- Begin newsletter/social -->
+       <div>
+          <div class="clearfix">
+          
+          <!--
+<div class="span12">
+<h4 align="center">Follow us</h4>
+            <a align="center" href="http://www.flickr.com/photos/lifeismymovie" title="Life Is My Movie Entertainment on Twitter" class="icon-social twitter">Twitter</a>
+            <a align="center" href="https://www.twitter.com/lifeismymovie" title="Life Is My Movie Entertainment on Facebook" class="icon-social facebook">Facebook</a>
+            <a align="center" href="http://www.youtube.com/lifeismymovie" title="Life Is My Movie Entertainment on YouTube" class="icon-social youtube">YouTube</a>
+            
+            
+            
+            <a align="center" href="https://vimeo.com/lifeismymovie" title="Life Is My Movie Entertainment on Vimeo" class="icon-social vimeo">Vimeo</a>
+            
+            <a align="center" href="https://plus.google.com/s/life%20is%20my%20movie" title="Life Is My Movie Entertainment on Google+" class="icon-social google">Google+</a>
+<a align="center" href="http://www.flickr.com/photos/lifeismymovie" title="Life Is My Movie Entertainment on Flickr" class="icon-social flickr">Flickr</a>
+</div>
+-->
+
+<!--<div class="social-media-footer">
+                    <a href="https://www.facebook.com/lifeismymovie" class="social-facebook" title="Like on Facebook" target="_blank"></a>                    
+  <a href="https://www.twitter.com/lifeismymovie" class="social-twitter" title="Follow on Twitter" target="_blank"></a>                    
+  <a href="http://www.flickr.com/photos/lifeismymovie" class="social-flickr" title="Subscribe on Flickr" target="_blank"></a>                    
+  <a href="http://www.youtube.com/lifeismymovie" class="social-youtube" title="Subscribe on Youtube" target="_blank"></a>                    
+  <a href="https://vimeo.com/lifeismymovie" class="social-vimeo" title="Subscribe on Vimeo" target="_blank"></a>                    
+  <a href="https://plus.google.com/s/life%20is%20my%20movie" class="social-googleplus" title="Subscribe on Google Plus" target="_blank"></a>                        
+                </div> -->
+
+
+    
+<div class="span12 soc-footer soc-top">
+<a class="soc-width soc-fbk" href="https://www.twitter.com/lifeismymovie"target="_blank">
+</a>
+<a class="soc-width soc-twtr" href="http://www.flickr.com/photos/lifeismymovie"target="_blank">
+</a>
+<a class="soc-width soc-flkr" href="http://www.flickr.com/photos/lifeismymovie"target="_blank">
+</a>
+<a class="soc-width soc-you" href="http://www.youtube.com/lifeismymovie"target="_blank">
+</a>
+<a class="soc-width soc-vim" href="https://vimeo.com/lifeismymovie"target="_blank">
+</a>
+<a class="soc-width soc-ggl" href="https://plus.google.com/s/life%20is%20my%20movie"target="_blank">
+</a>
+</div>
+
+
+
+
+          
+        </div>
+        </div>
+        <!-- End newsletter/social -->
+        
+        <div class="border-foot"></div>
+        <!-- Begin copyright -->
+        <div class="span12 tc copyright" style="padding:0px!important">
+          <div class="private_login">
+             <a class="priv-head" href="http://lifeismymovie.com/private-login/" title="Login">Private Login</a>
+          </div>
+          
+         <div class="copy-links">
+          <p>
+            &copy;  2008 - 2016 Life Is My Movie Entertainment All rights reserved 
+           
+           </p>
+          
+          <ul class="credit-cards clearfix">
+            
+            <li><img width="50" src="//cdn.shopify.com/s/assets/global/payment_types/creditcards_amazon_payments-c5ecf301e8d791fd78f1170d4251876ffcf3253eb60bef139bb09a88d291542f.svg" /></li>
+            
+            <li><img width="50" src="//cdn.shopify.com/s/assets/global/payment_types/creditcards_american_express-54be4e6bfc1dbd42f93af603e102fde2356dfe2372a7dd851074964337533296.svg" /></li>
+            
+            <li><img width="50" src="//cdn.shopify.com/s/assets/global/payment_types/creditcards_diners_club-d07838507a213e5e52ef4272d3ccfe3da294642628264cd0934baf6878ceb197.svg" /></li>
+            
+            <li><img width="50" src="//cdn.shopify.com/s/assets/global/payment_types/creditcards_discover-96a6318d3deeede785ba12114a8d00bd23731f9f16e14ddcd0bdfd5e1d846307.svg" /></li>
+            
+            <li><img width="50" src="//cdn.shopify.com/s/assets/global/payment_types/creditcards_jcb-8f8079695e74d5688707997b208994c4d8078baa58b866ed47852cf9674d9332.svg" /></li>
+            
+            <li><img width="50" src="//cdn.shopify.com/s/assets/global/payment_types/creditcards_master-94df290d56a3c6424296953282e18e46895ba94bdef368640eb52f8349915610.svg" /></li>
+            
+            <li><img width="50" src="//cdn.shopify.com/s/assets/global/payment_types/creditcards_visa-e9f829d15f5ec3b1953ba8b9bc59b448ddb1ec9235ae70c7936178744cb31489.svg" /></li>
+            
+          </ul> <!-- /.credit-cards -->
+            
+        </div>
+        <!-- End copyright -->
+       </div>
+      </div> 
+    </footer>
+  </div>
+  <!-- End footer    -->
+
+
+  
+  
+  
+  
+  
+  
+    <script src="//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/jquery.zoom.js?15332104608416864017" type="text/javascript"></script>
+  
+  <script src="//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/jquery.tweet.js?15332104608416864017" type="text/javascript"></script>
+  <script src="//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/jquery.fancybox.js?15332104608416864017" type="text/javascript"></script>
+  <script src="//cdn.shopify.com/s/files/1/0229/7761/t/4/assets/scripts.js?15332104608416864017" type="text/javascript"></script>
+  
+  
+  
+<script>
+$('body').on('click', '[name="checkout"], [name="goto_pp"], [name="goto_gc"]', function() {
+  if ($('#agree').is(':checked')) {
+    $(this).submit();
+  }
+  else {
+    alert("You must agree with the terms and conditions of sales to check out.");
+    return false;
+  }
+});
+</script>
+
+</body>
+</html>

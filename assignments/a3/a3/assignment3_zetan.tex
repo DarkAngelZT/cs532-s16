@@ -225,10 +225,10 @@ in URIs (e.g., ``?", ``\&").  You might want to hash the URIs, like:\\
 \% echo -n ``\url{http://www.cs.odu.edu/show\_features.shtml?72}" $\vert$ md5
 41d5f125d13b4bb554e6e31b6b591eeb\\
 \\
-(``md5sum" on some machines; note the "-n" in echo -- this removes
+(``md5sum" on some machines; note the ``-n" in echo -- this removes
 the trailing newline.) \\
 \\
-Now use a tool to remove (most) of the HTML markup.  "lynx" will
+Now use a tool to remove (most) of the HTML markup.  ``lynx" will
 do a fair job:\\
 \\
 \% lynx -dump -force\_html \url{www.cnn.com > www.cnn.com.processed}\\
@@ -263,10 +263,10 @@ example:\\
 \\
 Table 1. 10 Hits for the term ``shadow", ranked by TFIDF.\\
 \\
-\tt TFIDF	TF	IDF	URI\\
-\tt -----	--	---	---\\
-\tt0.150	0.014	10.680	http://foo.com/\\
-\tt0.044	0.008	 5.510	http://bar.com/\\
+\texttt {TFIDF	TF	IDF	URI}\\
+\texttt {-----	--	---	---}\\
+\texttt{0.150	0.014	10.680	http://foo.com/}\\
+\texttt{0.044	0.008	 5.510	http://bar.com/}\\
 \\
 
 You can use Google or Bing for the DF estimation.  To count the
@@ -283,7 +283,7 @@ accurate methods if you'd like.  \\
 Don't forget the log base 2 for IDF, and mind your significant
 digits!\\
 \centerline{SOLUTION}
-To get IDF, we should search on the google to get the total amount of file contain the term we required. Here, we choose the term ``game'.\\
+To get IDF, we should search on the google to get the total amount of file contain the term we required. Here, we choose the term ``game".\\
 *Note: The data we use is from Feb 16, and the image we captured is in Feb 17, You can see the result increased.\\
 \pagebreak
 \begin{figure}[h]
@@ -344,7 +344,7 @@ Now rank the same 10 URIs from question \#2, but this time
 by their PageRank.  Use any of the free PR estimaters on the web,
 such as:\\
 \\
-\url{http://www.prchecker.info/check\_page_rank.php}\\
+\url{http://www.prchecker.info/check_page_rank.php}\\
 \url{http://www.seocentro.com/tools/search-engines/pagerank.html}\\
 \url{http://www.checkpagerank.net/}\\
 \\
@@ -355,10 +355,10 @@ they give you to be from 0 to 1.0.  Use the same tool on all 10
 \\
 Create a table similar to Table 1:\\
 \\
-Table 2.  10 hits for the term "shadow", ranked by PageRank.\\
+Table 2.  10 hits for the term ``shadow", ranked by PageRank.\\
 \\
 PageRank	URI\\
-\tt--------	---\\
+\texttt{--------	---}\\
 0.9		http://bar.com/\\
 0.5		http://foo.com/\\
 \\
@@ -429,7 +429,7 @@ http://PETERSUN19.rsscb.com&0\\
 \end{tabular}
 \end{table}
 \textbf{Compare}\\
-Because we use the domain name for page rank, so the accuracy is not so good. A domain may be popular but certain user page may not well-known. Additionally, as we can see, the facebook and youtube has high page rank, just because many websites have share link point to them, but if we point to certain video or post in their site, like the page contain ``game'' we picked from our own piggy bank, they do not have so much link refer to them, or even none, because our web tool cannot even find them, but they are more relevant to our search term(e.g the top 1 ranked web site in our selection, though with zero page rank, but it is really a game site).
+Because we use the domain name for page rank, so the accuracy is not so good. A domain may be popular but certain user page may not well-known. Additionally, as we can see, the facebook and youtube has high page rank, just because many websites have share link point to them, but if we point to certain video or post in their site, like the page contain ``game'' we picked from our own web database, they do not have so much link refer to them, or even none, because our web tool cannot even find them, but they are more relevant to our search term(e.g the top 1 ranked web site in our selection, though with zero page rank, but it is really a game site).
 \end{homeworkProblem}
 \pagebreak
 \bibliographystyle{plain}

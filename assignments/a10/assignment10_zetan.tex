@@ -1,0 +1,318 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Programming/Coding Assignment
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Original author:
+% Ted Pavlic (http://www.tedpavlic.com)
+%
+% Note:
+% The \lipsum[#] commands throughout this template generate dummy text
+% to fill the template out. These commands should all be removed when 
+% writing assignment content.
+%
+% This template uses a Perl script as an example snippet of code, most other
+% languages are also usable. Configure them in the "CODE INCLUSION 
+% CONFIGURATION" section.
+%
+%Assignment 9
+%Author Zetan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{extramarks} % Required for headers and footers
+\usepackage[usenames,dvipsnames]{color} % Required for custom colors
+\usepackage{graphicx} % Required to insert images
+\usepackage{listings} % Required for insertion of code
+\usepackage{courier} % Required for the courier font
+\usepackage{multirow}
+\usepackage{listings,multicol}
+\usepackage{pgfplots,pgfplotstable}
+ \usepackage{amssymb}
+ \usepackage{float}
+
+\usepackage{url}
+\usepackage{longtable}
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1} % Line spacing
+
+% Set up the header and footer
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName} % Top left header
+\chead{\hmwkClass\ (\hmwkClassInstructor\ \hmwkClassTime): \hmwkTitle} % Top center head
+\rhead{\firstxmark} % Top right header
+\lfoot{\lastxmark} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{Page\ \thepage\ of\ \protect\pageref{LastPage}} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+%----------------------------------------------------------------------------------------
+%	CODE INCLUSION CONFIGURATION
+%----------------------------------------------------------------------------------------
+\definecolor{lightgray}{rgb}{.9,.9,.9}
+\definecolor{darkgray}{rgb}{.4,.4,.4}
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82}
+\definecolor{MyDarkGreen}{rgb}{0.0,0.4,0.0} % This is the color used for comments
+\lstloadlanguages{Python} % Load python syntax for listings, for a list of other languagesftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/listings/listings.pdf supported see: 
+\lstdefinelanguage{JavaScript}{
+  keywords={break, case, catch, continue, debugger, default, delete, do, else, false, finally, for, function, if, in, instanceof, new, null, return, switch, this, throw, true, try, typeof, var, void, while, with},
+  morecomment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  morestring=[b]',
+  morestring=[b]",
+  ndkeywords={class, export, boolean, throw, implements, import, this},
+  keywordstyle=\color{blue}\bfseries,
+  ndkeywordstyle=\color{darkgray}\bfseries,
+  identifierstyle=\color{black},
+  commentstyle=\color{purple}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  sensitive=true
+}
+\lstset{
+        frame=single, % Single frame around code
+        basicstyle=\small\ttfamily, % Use small true type font
+        keywordstyle=[1]\color{Blue}\bf, % python functions bold and blue
+        keywordstyle=[2]\color{Purple}, % python function arguments purple
+        keywordstyle=[3]\color{Blue}\underbar, % Custom functions underlined and blue
+        identifierstyle=, % Nothing special about identifiers                                         
+        commentstyle=\usefont{T1}{pcr}{m}{sl}\color{MyDarkGreen}\small, % Comments small dark green courier font
+        stringstyle=\color{Purple}, % Strings are purple
+        showstringspaces=false, % Don't put marks in string spaces
+        tabsize=5, % 5 spaces per tab
+        breaklines=true,
+        %
+        % Put standard python functions not included in the default language here
+        morekeywords={rand},
+        %
+        % Put python function parameters here
+        morekeywords=[2]{on, off, interp},
+        %
+        % Put user defined functions here
+        morekeywords=[3]{test},
+       	%
+        morecomment=[l][\color{Blue}]{...}, % Line continuation (...) like blue comment
+        numbers=left, % Line numbers on left
+        firstnumber=1, % Line numbers start with line 1
+        numberstyle=\tiny\color{Blue}, % Line numbers are blue and small
+        stepnumber=5 % Line numbers go in steps of 5
+}
+
+% Creates a new command to include a pyton script, the first parameter is the filename of the script (without .py), the second parameter is the caption
+\newcommand{\pythonscript}[2]{
+\begin{itemize}
+\item[]\lstinputlisting[language=python,caption=#2,label=#1]{#1.py}
+\end{itemize}
+}
+% Creates a new command to include a shell script, the first parameter is the filename of the script (without .sh), the second parameter is the caption
+\newcommand{\shellscript}[2]{
+\begin{itemize}
+\item[]\lstinputlisting[language=bash,caption=#2,label=#1]{#1.sh}
+\end{itemize}
+}
+% Creates a new command to include a R script, the first parameter is the filename of the script (without .R), the second parameter is the caption
+\newcommand{\Rscript}[2]{
+\begin{itemize}
+\item[]\lstinputlisting[language=R,caption=#2,label=#1]{#1.R}
+\end{itemize}
+}
+% Creates a new command to include a java script, the first parameter is the filename of the script (without .R), the second parameter is the caption
+\newcommand{\jsscript}[2]{
+\begin{itemize}
+\item[]\lstinputlisting[language=JavaScript,caption=#2,label=#1]{#1.js}
+\end{itemize}
+}
+%----------------------------------------------------------------------------------------
+%	DOCUMENT STRUCTURE COMMANDS
+%	Skip this unless you know what you're doing
+%----------------------------------------------------------------------------------------
+
+% Header and footer for when a page split occurs within a problem environment
+\newcommand{\enterProblemHeader}[1]{
+\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+}
+
+% Header and footer for when a page split occurs between problem environments
+\newcommand{\exitProblemHeader}[1]{
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1}{}\nobreak
+}
+
+\setcounter{secnumdepth}{0} % Removes default section numbers
+\newcounter{homeworkProblemCounter} % Creates a counter to keep track of the number of problems
+
+\newcommand{\homeworkProblemName}{}
+\newenvironment{homeworkProblem}[1][Problem \arabic{homeworkProblemCounter}]{ % Makes a new environment called homeworkProblem which takes 1 argument (custom name) but the default is "Problem #"
+\stepcounter{homeworkProblemCounter} % Increase counter for number of problems
+\renewcommand{\homeworkProblemName}{#1} % Assign \homeworkProblemName the name of the problem
+\section{\homeworkProblemName} % Make a section in the document with the custom problem count
+\enterProblemHeader{\homeworkProblemName} % Header and footer within the environment
+}{
+\exitProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+
+\newcommand{\problemAnswer}[1]{ % Defines the problem answer command with the content as the only argument
+\noindent\framebox[\columnwidth][c]{\begin{minipage}{0.98\columnwidth}#1\end{minipage}} % Makes the box around the problem answer and puts the content inside
+}
+
+\newcommand{\homeworkSectionName}{}
+\newenvironment{homeworkSection}[1]{ % New environment for sections within homework problems, takes 1 argument - the name of the section
+\renewcommand{\homeworkSectionName}{#1} % Assign \homeworkSectionName to the name of the section from the environment argument
+\subsection{\homeworkSectionName} % Make a subsection with the custom name of the subsection
+\enterProblemHeader{\homeworkProblemName\ [\homeworkSectionName]} % Header and footer within the environment
+}{
+\enterProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CLASS SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\hmwkTitle}{Assignment\ \#10} % Assignment title
+\newcommand{\hmwkDueDate}{Saturday,\ April\ 30,\ 2016} % Due date
+\newcommand{\hmwkClass}{Web Science\ cs532} % Course/class
+\newcommand{\hmwkClassTime}{4:20pm} % Class/lecture time
+\newcommand{\hmwkClassInstructor}{Dr.Michael.L.Nelson} % Teacher/lecturer
+\newcommand{\hmwkAuthorName}{Zetan Li} % Your name
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{
+\vspace{2in}
+\textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+\normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate}\\
+\vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+\vspace{3in}
+}
+
+\author{\textbf{\hmwkAuthorName}}
+\date{} % Insert date here if you want it to appear below your name
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+%\setcounter{tocdepth}{1} % Uncomment this line if you don't want subsections listed in the ToC
+
+\newpage
+\tableofcontents
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 1
+%----------------------------------------------------------------------------------------
+
+% To have just one problem per page, simply put a \clearpage after each problem
+
+\begin{homeworkProblem}
+Using the data from A8:\\
+\\
+- Consider each row in the blog-term matrix as a 500 dimension vector, 
+corresponding to a blog.  \\
+\\
+- From chapter 8, replace numpredict.euclidean() with cosine as the 
+distance metric.  In other words, you'll be computing the cosine between
+vectors of 500 dimensions.  \\
+\\
+- Use knnestimate() to compute the nearest neighbors for both:\\
+\\
+\url{http://f-measure.blogspot.com/}\\
+\url{http://ws-dl.blogspot.com/}\\
+\\
+for k={1,2,5,10,20}.\\
+\\
+\centerline{SOLUTION}
+We copy the data file from assignment 8 to compute the knn of f-measure and ws\_blog.\\
+However, we have to implement the cosine ourselves so, we modified the interface of getdistance and knnestimate function to allow customized distance function.\\
+Another thing is, this cosine = 1 means two vector are overlap each other. So we have to sort the result in descent order. Thus in the code, we have to set the reverse to true when calling sort() in python.
+\pythonscript{numpredict}{Modified version of numpredict.py (New function cosine() and modified getdistance() )}
+\pythonscript{p1}{Code to compute k nearest neighbors of given blogs}
+Below is the result.\\
+The format is blog name / cosine value between two blogs.
+\lstinputlisting[caption=K nearest neighbor of two given blogs]{p1_output.txt}
+
+\end{homeworkProblem}
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 2
+%----------------------------------------------------------------------------------------
+\begin{homeworkProblem}
+Rerun A9, Q2 but this time using LIBSVM.  If you have n categories,
+you'll have to run it n times.  For example, if you're classifying music
+and have the categories:\\
+\\
+metal, electronic, ambient, folk, hip-hop, pop\\
+\\
+you'll have to classify things as:\\
+\\
+metal / not-metal\\
+electronic / not-electronic\\
+ambient / not-ambient\\
+\\
+etc.\\
+\\
+Use the 500 term vectors describing each blog as the features, and
+your mannally assigned classifications as the true values.  Use
+10-fold cross-validation (as per slide 46, which shows 4-fold
+cross-validation) and report the percentage correct for 
+each of your categories.\\
+\\
+\centerline{SOLUTION}
+First we have to run the word counting script in assignment 8, but this time we modified the word counting on every entries instead of feeds.\\
+Second, instead of use libsvm shown in the slide, we use the sklearn SVC, which implement based on libsvm but with more friendly interface, for classification.
+\pythonscript{p2_cluster}{Script to get word count data from one feed on each entries}
+Since we discovered the vocabulary to describe a game is so limited to a small scale, we counted all the words that appeared in summary and title, including stop word. Just to make up 500 different words.\\
+\pythonscript{p2}{svm classifacation based on scikit-learn}
+Table below is the result of percentage correct.\\
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[h]
+\centering
+\caption{Correctness of svm on each category}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+\textbf{Category} & \textbf{Fold 1} & \textbf{Fold 2} & \textbf{Fold 3} & \textbf{Fold 4} & \textbf{Fold 5} & \textbf{Fold 6} & \textbf{Fold 7} & \textbf{Fold 8} & \textbf{Fold 9} & \textbf{Fold 10} & \textbf{Mean} \\ \hline
+fighting & 0.90 & 0.90 & 0.90 & 0.90 & 0.90 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 \\ \hline
+sports & 0.90 & 0.90 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 \\ \hline
+rpg & 0.72 & 0.81 & 0.80 & 0.80 & 0.80 & 0.80 & 0.77 & 0.77 & 0.77 & 0.88 & 0.88 \\ \hline
+arpg & 0.90 & 0.90 & 0.90 & 0.90 & 0.90 & 0.90 & 0.90 & 0.90 & 0.90 & 1.00 & 1.00 \\ \hline
+racing & 0.90 & 0.90 & 0.90 & 0.90 & 0.90 & 0.90 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 \\ \hline
+platform & 0.80 & 0.90 & 0.80 & 0.80 & 0.80 & 0.80 & 0.80 & 0.70 & 0.77 & 0.66 & 0.66 \\ \hline
+action & 0.80 & 0.70 & 0.70 & 0.70 & 0.70 & 0.70 & 0.70 & 0.60 & 0.88 & 0.77 & 0.77 \\ \hline
+fps & 0.90 & 0.90 & 0.90 & 1.00 & 1.00 & 0.90 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 \\ \hline
+\end{tabular}%
+}
+\end{table}
+\end{homeworkProblem}
+%\bibliographystyle{plain}
+%\bibliography{ref}
+\end{document}
